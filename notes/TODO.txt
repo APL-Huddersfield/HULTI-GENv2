@@ -1,0 +1,3 @@
+// 2AFC
+[ ] Add test control steps
+    - There should be a pre play time interval, and between A and B time interval

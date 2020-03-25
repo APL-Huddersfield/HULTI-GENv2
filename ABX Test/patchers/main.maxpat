@@ -39,12 +39,59 @@
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
 				"box" : 				{
-					"id" : "obj-5",
+					"id" : "obj-31",
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 85.0, 419.0, 32.0, 22.0 ],
-					"text" : "print"
+					"patching_rect" : [ 192.0, 620.0, 89.0, 22.0 ],
+					"text" : "s toTestControl"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-30",
+					"maxclass" : "newobj",
+					"numinlets" : 0,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 550.0, 107.0, 87.0, 22.0 ],
+					"text" : "r toTestControl"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-29",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 81.0, 426.0, 89.0, 22.0 ],
+					"text" : "s toTestControl"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-25",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 295.0, 451.0, 143.0, 22.0 ],
+					"text" : "set A stim-A, set B stim-B"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-10",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 2,
+					"outlettype" : [ "", "" ],
+					"patching_rect" : [ 550.0, 140.0, 104.0, 22.0 ],
+					"text" : "testControl_2AFC"
 				}
 
 			}
@@ -246,8 +293,8 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 80.0, 29.0, 232.0, 22.0 ],
-					"text" : "hide 1, hide 2, show 0, ungrey 1, ungrey 2"
+					"patching_rect" : [ 80.0, 29.0, 273.0, 22.0 ],
+					"text" : "hide 1, hide 2, show 0, ungrey 1, ungrey 2, unlock"
 				}
 
 			}
@@ -278,7 +325,7 @@
 					"numoutlets" : 1,
 					"offset" : [ 0.0, 0.0 ],
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 81.0, 194.0, 495.0, 211.0 ],
+					"patching_rect" : [ 81.0, 193.0, 495.0, 211.0 ],
 					"viewvisibility" : 1
 				}
 
@@ -286,8 +333,22 @@
  ],
 		"lines" : [ 			{
 				"patchline" : 				{
-					"destination" : [ "obj-5", 0 ],
+					"destination" : [ "obj-29", 0 ],
 					"source" : [ "obj-1", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-1", 0 ],
+					"source" : [ "obj-10", 1 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-14", 0 ],
+					"source" : [ "obj-10", 0 ]
 				}
 
 			}
@@ -302,6 +363,13 @@
 				"patchline" : 				{
 					"destination" : [ "obj-8", 0 ],
 					"source" : [ "obj-13", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-31", 0 ],
+					"source" : [ "obj-14", 1 ]
 				}
 
 			}
@@ -350,6 +418,13 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-14", 0 ],
+					"source" : [ "obj-25", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-14", 0 ],
 					"source" : [ "obj-26", 0 ]
 				}
 
@@ -365,6 +440,13 @@
 				"patchline" : 				{
 					"destination" : [ "obj-8", 0 ],
 					"source" : [ "obj-3", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-10", 0 ],
+					"source" : [ "obj-30", 0 ]
 				}
 
 			}
@@ -406,6 +488,13 @@
 			}
 , 			{
 				"name" : "stimulusPlayer.maxpat",
+				"bootpath" : "~/Documents/Max 8/Projects/ABX Test/ABX Test/patchers",
+				"patcherrelativepath" : ".",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "testControl_2AFC.maxpat",
 				"bootpath" : "~/Documents/Max 8/Projects/ABX Test/ABX Test/patchers",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
