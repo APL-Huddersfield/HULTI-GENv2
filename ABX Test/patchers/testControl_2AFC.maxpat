@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 669.0, 484.0, 977.0, 591.0 ],
+		"rect" : [ 669.0, 370.0, 977.0, 591.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -692,12 +692,12 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-19",
-					"linecount" : 3,
+					"linecount" : 5,
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 598.0, 375.5, 273.0, 47.0 ],
-					"text" : "When 'play' is pressed:\n1. Hide 'Play' button, show A and B buttons, and lock interface from clicks"
+					"patching_rect" : [ 594.0, 373.5, 273.0, 74.0 ],
+					"text" : "When 'play' is pressed:\n1. Hide 'Play' button, show A and B buttons, and lock interface from clicks. \n\nWhen A has finished:"
 				}
 
 			}

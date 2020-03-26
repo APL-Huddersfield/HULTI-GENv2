@@ -2,7 +2,7 @@
 	"name" : "ABX Test",
 	"version" : 1,
 	"creationdate" : 3666872002,
-	"modificationdate" : 3667388331,
+	"modificationdate" : 3668083847,
 	"viewrect" : [ 25.0, 104.0, 300.0, 500.0 ],
 	"autoorganize" : 1,
 	"hideprojectwindow" : 0,
@@ -21,12 +21,17 @@
 				"local" : 1
 			}
 ,
+			"stimulusPlayer.maxpat" : 			{
+				"kind" : "patcher",
+				"local" : 1
+			}
+,
 			"testControl_2AFC.maxpat" : 			{
 				"kind" : "patcher",
 				"local" : 1
 			}
 ,
-			"stimulusPlayer.maxpat" : 			{
+			"ui_config.maxpat" : 			{
 				"kind" : "patcher",
 				"local" : 1
 			}

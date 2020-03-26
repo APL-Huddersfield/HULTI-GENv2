@@ -1,0 +1,17 @@
+{
+    "dateCreated" : "yyyymmdd",
+    "testSetup" : {
+        "paradigm" : "constants",
+        "responseMethod" : "2afc"
+    },
+    "sessions" : [{
+        "repetitions" : 10,
+        "testStimuli" : ["1a.wav", "1b.wav", "1c.wav", "1d.wav"],
+        "referenceStimulus" : "1a.wav"
+    },
+    {
+        "repetitions" : 10,
+        "stimuli" : ["2a.wav", "2b.wav", "2c.wav", "2d.wav"],
+        "referenceStimulus" : "1b.wav"
+    }]
+}
