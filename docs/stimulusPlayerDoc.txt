@@ -1,0 +1,20 @@
+// Messages
+play :
+    Args  : 0
+    Usage : "play"
+    Descr : Starts the player from the beginning.
+
+stop :
+    Args  : 0
+    Usage : "stop"
+    Descr : Stops the player.
+
+switch :
+    Args  : 1
+    Usage : "switch <player id>"
+    Descr : Crossfades between either players 0 or 1. <player id> is the player id the it should switch to (0 or 1).
+
+set :
+    Args  : 2
+    Usage : "set <player id> <buffer name>"
+    Descr : Sets the buffers that each player should point to. <player id> is the target player (0 or 1), and <buffer name> is the name of the buffer.
