@@ -1,8 +1,8 @@
 {
-	"name" : "ABX Test",
+	"name" : "PsychoBox",
 	"version" : 1,
 	"creationdate" : 3666872002,
-	"modificationdate" : 3668083847,
+	"modificationdate" : 3668406296,
 	"viewrect" : [ 25.0, 104.0, 300.0, 500.0 ],
 	"autoorganize" : 1,
 	"hideprojectwindow" : 0,
@@ -12,8 +12,7 @@
 		"patchers" : 		{
 			"main.maxpat" : 			{
 				"kind" : "patcher",
-				"local" : 1,
-				"toplevel" : 1
+				"local" : 1
 			}
 ,
 			"interface_2AFC.maxpat" : 			{

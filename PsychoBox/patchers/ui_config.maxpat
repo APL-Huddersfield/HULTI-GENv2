@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 436.0, 209.0, 682.0, 621.0 ],
+		"rect" : [ 343.0, 88.0, 845.0, 845.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -45,7 +45,6 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 199.0, 49.0, 383.0, 22.0 ],
-					"presentation_linecount" : 2,
 					"text" : "append sessions *, setparse sessions[1] repetitions: stimuli: reference:"
 				}
 
@@ -57,7 +56,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 273.666666666666629, 399.0, 47.0, 22.0 ],
+					"patching_rect" : [ 273.666666666666629, 388.0, 47.0, 22.0 ],
 					"text" : "zl.iter 1"
 				}
 
@@ -68,7 +67,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 179.0, 497.0, 32.0, 22.0 ],
+					"patching_rect" : [ 176.666666666666657, 487.0, 32.0, 22.0 ],
 					"text" : "print"
 				}
 
@@ -80,7 +79,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 4,
 					"outlettype" : [ "dictionary", "", "", "" ],
-					"patching_rect" : [ 176.666666666666657, 453.0, 50.5, 22.0 ],
+					"patching_rect" : [ 176.666666666666657, 442.0, 50.5, 22.0 ],
 					"saved_object_attributes" : 					{
 						"embed" : 0,
 						"parameter_enable" : 0,
@@ -98,7 +97,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 176.666666666666657, 356.0, 116.0, 22.0 ],
+					"patching_rect" : [ 176.666666666666657, 347.0, 116.0, 22.0 ],
 					"text" : "routepass dictionary"
 				}
 
@@ -110,7 +109,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 176.666666666666657, 312.0, 86.0, 22.0 ],
+					"patching_rect" : [ 176.666666666666657, 306.0, 86.0, 22.0 ],
 					"text" : "route sessions"
 				}
 
@@ -146,7 +145,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 404.0, 112.0, 35.0, 22.0 ],
+					"patching_rect" : [ 405.0, 150.0, 35.0, 22.0 ],
 					"text" : "clear"
 				}
 
@@ -227,6 +226,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-18", 0 ],
+					"midpoints" : [ 283.166666666666629, 425.5, 186.166666666666657, 425.5 ],
 					"source" : [ "obj-21", 0 ]
 				}
 
