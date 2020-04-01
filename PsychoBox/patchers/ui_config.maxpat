@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 343.0, 88.0, 845.0, 845.0 ],
+		"rect" : [ 34.0, 79.0, 1154.0, 937.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -44,7 +44,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 199.0, 49.0, 383.0, 22.0 ],
+					"patching_rect" : [ 285.0, 124.0, 383.0, 22.0 ],
 					"text" : "append sessions *, setparse sessions[1] repetitions: stimuli: reference:"
 				}
 
@@ -56,7 +56,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 273.666666666666629, 388.0, 47.0, 22.0 ],
+					"patching_rect" : [ 359.666666666666629, 405.0, 47.0, 22.0 ],
 					"text" : "zl.iter 1"
 				}
 
@@ -67,7 +67,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 176.666666666666657, 487.0, 32.0, 22.0 ],
+					"patching_rect" : [ 262.666666666666629, 504.0, 32.0, 22.0 ],
 					"text" : "print"
 				}
 
@@ -79,7 +79,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 4,
 					"outlettype" : [ "dictionary", "", "", "" ],
-					"patching_rect" : [ 176.666666666666657, 442.0, 50.5, 22.0 ],
+					"patching_rect" : [ 262.666666666666629, 459.0, 50.5, 22.0 ],
 					"saved_object_attributes" : 					{
 						"embed" : 0,
 						"parameter_enable" : 0,
@@ -97,7 +97,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 176.666666666666657, 347.0, 116.0, 22.0 ],
+					"patching_rect" : [ 262.666666666666629, 364.0, 116.0, 22.0 ],
 					"text" : "routepass dictionary"
 				}
 
@@ -109,7 +109,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 176.666666666666657, 306.0, 86.0, 22.0 ],
+					"patching_rect" : [ 262.666666666666629, 323.0, 86.0, 22.0 ],
 					"text" : "route sessions"
 				}
 
@@ -121,7 +121,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 281.25, 150.0, 75.0, 22.0 ],
+					"patching_rect" : [ 367.25, 225.0, 75.0, 22.0 ],
 					"text" : "get sessions"
 				}
 
@@ -133,7 +133,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 179.0, 150.0, 97.0, 22.0 ],
+					"patching_rect" : [ 265.0, 225.0, 97.0, 22.0 ],
 					"text" : "getsize sessions"
 				}
 
@@ -145,7 +145,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 405.0, 150.0, 35.0, 22.0 ],
+					"patching_rect" : [ 491.0, 225.0, 35.0, 22.0 ],
 					"text" : "clear"
 				}
 
@@ -157,7 +157,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 162.0, 99.0, 447.0, 22.0 ],
+					"patching_rect" : [ 248.0, 174.0, 447.0, 22.0 ],
 					"text" : "set sessions, append sessions, setparse sessions[0] repetitions: stimuli: reference:"
 				}
 
@@ -169,7 +169,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 4,
 					"outlettype" : [ "dictionary", "", "", "" ],
-					"patching_rect" : [ 162.0, 267.0, 63.0, 22.0 ],
+					"patching_rect" : [ 248.0, 284.0, 63.0, 22.0 ],
 					"saved_object_attributes" : 					{
 						"embed" : 0,
 						"parameter_enable" : 0,
@@ -226,7 +226,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-18", 0 ],
-					"midpoints" : [ 283.166666666666629, 425.5, 186.166666666666657, 425.5 ],
+					"midpoints" : [ 369.166666666666629, 442.5, 272.166666666666629, 442.5 ],
 					"source" : [ "obj-21", 0 ]
 				}
 
