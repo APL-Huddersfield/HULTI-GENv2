@@ -1,3 +1,7 @@
 // 2AFC
-[ ] Add test control steps
+[x] Add test control steps
     - There should be a pre play time interval, and between A and B time interval
+
+// Configuration
+[x] Create schema JSON
+[ ] Create schema cross-reference script

@@ -1,17 +1,261 @@
 {
-    "dateCreated" : "yyyymmdd",
-    "testSetup" : {
-        "paradigm" : "constants",
-        "responseMethod" : "2afc"
-    },
-    "sessions" : [{
-        "repetitions" : 10,
-        "testStimuli" : ["1a.wav", "1b.wav", "1c.wav", "1d.wav"],
-        "referenceStimulus" : "1a.wav"
-    },
-    {
-        "repetitions" : 10,
-        "stimuli" : ["2a.wav", "2b.wav", "2c.wav", "2d.wav"],
-        "referenceStimulus" : "1b.wav"
-    }]
+    "type" : "object",
+    "required" : [
+        "setup",
+        "sessions"
+    ],
+    "properties" : {
+        "setup" : {
+            "type" : "object",
+            "required" : [
+                "method",
+                "task",
+                "playback",
+                "gui"
+            ],
+            "properties" : {
+                "method" : {
+                    "type" : "itemlist",
+                    "choices" : [
+                        "constants",
+                        "staircase"
+                    ],
+                    "items" : {
+                        "constants" : {
+                            "type" : "object",
+                            "required" : [
+                                "repetitions"
+                            ],
+                            "properties" : {
+                                "repetitions" : {
+                                    "type" : "int",
+                                    "minimum" : 0,
+                                    "maximum" : -1
+                                }
+                            }
+                        },
+                        "staircase" : {
+                            "type" : "object",
+                            "required" : [
+                                "intialValue",
+                                "terminationRule",
+                                "paradigm"
+                            ],
+                            "properties" : {
+                                "intialValue" : {
+                                    "type" : "int",
+                                    "minimum" : 0,
+                                    "maximum" : -1
+                                },
+                                "terminationRule" : {
+                                    "type" : "itemlist",
+                                    "choices" : [
+                                        "afterNReversals",
+                                        "afterNTrials"
+                                    ],
+                                    "items" : {
+                                        "afterNReversals" : {
+                                            "type" : "object",
+                                            "required" : [
+                                                "reversals"
+                                            ],
+                                            "properties" : {
+                                                "reversals" : {
+                                                    "type" : "int",
+                                                    "minimum" : 1,
+                                                    "maximum" : -1
+                                                }
+                                            }
+                                        },
+                                        "afterNTrials" : {
+                                            "type" : "object",
+                                            "required" : [
+                                                "trials"
+                                            ],
+                                            "properties" : {
+                                                "trials" : {
+                                                    "type" : "int",
+                                                    "minimum" : 1,
+                                                    "maximum" : -1
+                                                }
+                                            }
+                                        }
+                                    }
+                                },
+                                "paradigm" : {
+                                    "type" : "itemlist",
+                                    "choices" : [
+                                        "transformed"
+                                    ],
+                                    "items" : {
+                                        "transformed" : {
+                                            "type" : "object",
+                                            "required" : [
+                                                "responseGroup",
+                                                "steppingRule"
+                                            ],
+                                            "properties" : {
+                                                "responseGroup" : {
+                                                    "type" : "object",
+                                                    "required" : [
+                                                        "up",
+                                                        "down"
+                                                    ],
+                                                    "properties" : {
+                                                        "up" : {
+                                                            "type" : "string",
+                                                            "example" : "+-"
+                                                        },
+                                                        "down" : {
+                                                            "type" : "string",
+                                                            "example" : "++"
+                                                        }
+                                                    }
+                                                },
+                                                "steppingRule" : {
+                                                    "type" : "itemlist",
+                                                    "choices" : [
+                                                        "fixed",
+                                                        "halveAfterNthRun",
+                                                        "halveEveryPowerOf2Runs",
+                                                    ],
+                                                    "items" : {
+                                                        "fixed" : {
+                                                            "type" : "empty"
+                                                        },
+                                                        "halveAfterNthRun" : {
+                                                            "type" : "object",
+                                                            "required" : [
+                                                                "nthRun"
+                                                            ],
+                                                            "properties" : {
+                                                                "nthRun" : {
+                                                                    "type" : "int",
+                                                                    "minimum" : 1,
+                                                                    "maximum" : -1
+                                                                }
+                                                            }
+                                                        },
+                                                        "halveEveryPowerOf2Runs" : {
+                                                            "type" : "object",
+                                                            "required" : [
+                                                                "limit",
+                                                            ],
+                                                            "properties" : {
+                                                                "limit" : {
+                                                                    "type" : "int",
+                                                                    "minimum" : 1,
+                                                                    "maximum" : -1
+                                                                }
+                                                            }
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                },
+                "task" : {
+                    "type" : "itemlist",
+                    "choices" : [
+                        "yesNo",
+                        "2afc",
+                        "ABX"
+                    ],
+                    "items" : {
+                        "yesNo" : {
+                            "type" : "object",
+                            "required" : [
+                                "question"
+                            ],
+                            "properties" : {
+                                "question" : {
+                                    "type" : "string"
+                                }
+                            }
+                        },
+                        "2afc" : {
+                            "type" : "object",
+                            "required" : [
+                                "question"
+                            ],
+                            "properties" : {
+                                "question" : {
+                                    "type" : "string"
+                                }
+                            }
+                        },
+                        "abx" : {
+                            "type" : "emtpy"
+                        }
+                    }
+                },
+                "playback" : {
+                    "type" : "object",
+                    "required" : [
+                        "pauses"
+                    ],
+                    "properties" : {
+                        "pauses" : {
+                            "type" : "object",
+                            "required" : [
+                                "beforePresentation",
+                                "betweenStimuli",
+                                "afterPresentation"
+                            ],
+                            "properties" : {
+                                "beforePresentation" : {
+                                    "type" : "int",
+                                    "minimum" : 0,
+                                    "maximum" : 5000
+                                }
+                            }
+                        }
+                    }
+                },
+                "gui" : {
+                    "type" : "object",
+                    "required" : [
+                        "showButtons",
+                        "showCorrectAnswer"
+                    ],
+                    "properties" : {
+                        "showButtons" : {
+                            "type" : "boolean"
+                        },
+                        "showCorrectAnswer" : {
+                            "type" : "boolean"
+                        }
+                    }
+                }
+            }
+        },
+        "sessions" : {
+            "type" : "array",
+            "element" : {
+                "type" : "object",
+                "required" : [
+                    "testStimuli"
+                ],
+                "optional" : [
+                    "referenceStimulus"
+                ],
+                "properties" : {
+                    "testStimuli" : {
+                        "type" : "array",
+                        "element" : {
+                            "type" : "string"
+                        }
+                    },
+                    "referenceStimulus" : {
+                        "type" : "string"
+                    }
+                }
+            }
+        }
+    }
 }
