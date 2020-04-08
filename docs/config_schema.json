@@ -117,7 +117,7 @@
                                                     "choices" : [
                                                         "fixed",
                                                         "halveAfterNthRun",
-                                                        "halveEveryPowerOf2Runs",
+                                                        "halveEveryPowerOf2Runs"
                                                     ],
                                                     "items" : {
                                                         "fixed" : {
@@ -139,7 +139,7 @@
                                                         "halveEveryPowerOf2Runs" : {
                                                             "type" : "object",
                                                             "required" : [
-                                                                "limit",
+                                                                "limit"
                                                             ],
                                                             "properties" : {
                                                                 "limit" : {
