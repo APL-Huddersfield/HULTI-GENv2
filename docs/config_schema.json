@@ -15,12 +15,12 @@
             ],
             "properties" : {
                 "method" : {
-                    "type" : "itemlist",
+                    "type" : "list",
                     "choices" : [
                         "constants",
                         "staircase"
                     ],
-                    "items" : {
+                    "properties" : {
                         "constants" : {
                             "type" : "object",
                             "required" : [
@@ -48,12 +48,12 @@
                                     "maximum" : -1
                                 },
                                 "terminationRule" : {
-                                    "type" : "itemlist",
+                                    "type" : "list",
                                     "choices" : [
                                         "afterNReversals",
                                         "afterNTrials"
                                     ],
-                                    "items" : {
+                                    "properties" : {
                                         "afterNReversals" : {
                                             "type" : "object",
                                             "required" : [
@@ -83,11 +83,11 @@
                                     }
                                 },
                                 "paradigm" : {
-                                    "type" : "itemlist",
+                                    "type" : "list",
                                     "choices" : [
                                         "transformed"
                                     ],
-                                    "items" : {
+                                    "properties" : {
                                         "transformed" : {
                                             "type" : "object",
                                             "required" : [
@@ -113,13 +113,13 @@
                                                     }
                                                 },
                                                 "steppingRule" : {
-                                                    "type" : "itemlist",
+                                                    "type" : "list",
                                                     "choices" : [
                                                         "fixed",
                                                         "halveAfterNthRun",
                                                         "halveEveryPowerOf2Runs"
                                                     ],
-                                                    "items" : {
+                                                    "properties" : {
                                                         "fixed" : {
                                                             "type" : "empty"
                                                         },
@@ -160,13 +160,13 @@
                     }
                 },
                 "task" : {
-                    "type" : "itemlist",
+                    "type" : "list",
                     "choices" : [
                         "yesNo",
                         "2afc",
-                        "ABX"
+                        "abx"
                     ],
-                    "items" : {
+                    "properties" : {
                         "yesNo" : {
                             "type" : "object",
                             "required" : [
@@ -190,7 +190,7 @@
                             }
                         },
                         "abx" : {
-                            "type" : "emtpy"
+                            "type" : "empty"
                         }
                     }
                 },
@@ -209,6 +209,16 @@
                             ],
                             "properties" : {
                                 "beforePresentation" : {
+                                    "type" : "int",
+                                    "minimum" : 0,
+                                    "maximum" : 5000
+                                },
+                                "betweenStimuli" : {
+                                    "type" : "int",
+                                    "minimum" : 0,
+                                    "maximum" : 5000
+                                },
+                                "afterPresentation" : {
                                     "type" : "int",
                                     "minimum" : 0,
                                     "maximum" : 5000
