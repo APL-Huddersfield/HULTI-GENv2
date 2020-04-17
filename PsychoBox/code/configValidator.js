@@ -469,6 +469,8 @@ function dictionaryIsValid(parentName, d, schema) {
 }
 
 function unpackKey(parentName, dict, key, s) {
+    post("Unpacking " + key + " in " + parentName + "\n");
+    post("Schema keys : " + s.getkeys() + "\n");
     var t = dict.gettype(key);
     var subDict = dict.get(key);
     if (t == "dictionary") {
@@ -531,15 +533,7 @@ function objectDictionaryIsValid(parentName, d, s) {
         if (n > 1) {
             key = req[i];
         }
-        post("Extracting key " + key + "\n");
-
-        // Preempt the key type here
         isValid = unpackKey(parentName, d, key, s);
-        // subDict = d.get(key)
-        // subSchema = s.get("properties::" + key);
-        // if(!dictionaryIsValid(parentName + "::" + key, subDict, subSchema)) {
-        //     isValid = false;
-        // }
     }
 
     return isValid;
@@ -571,26 +565,7 @@ function listDictionaryIsValid(parentName, d, s) {
         return false;
     }
 
-    // Enter choice sub-key and pass the associated sub-schema
-    var isValid = true;
-    var subSchema;
-
-    post("Extracing key " + key + "\n");
-
-    // Preempt the key type here
-    isValid = unpackKey(parentName, d, key, s);
-    // subDict = d.get(key)
-    // subSchema = s.get("properties::" + key);
-    // if(!dictionaryIsValid(parentName + "::" + key, subDict, subSchema)) {
-    //     isValid = false;
-    // }
-
-    // subSchema = s.get("properties::" + key);
-    // if(!dictionaryIsValid(parentName + "::" + key, choice, subSchema)) {
-    //     isValid = false;
-    // }
-
-    return isValid;
+    return unpackKey(parentName, d, key, s);
 }
 
 function arrayDictionaryIsValid(parentName, d, s) {
