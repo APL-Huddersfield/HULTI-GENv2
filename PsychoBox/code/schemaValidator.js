@@ -58,28 +58,17 @@ var types = [OBJECT_TYPE,
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////
 
-function validate(configName, schemaName) {
+function validate(schemaName) {
     // Check if both dictionaries exist
-
-    if (!dictExists(configName)) {
-        error("No such test dictionary named " + configName + "\n");
-        return;
-    }
     if(!dictExists(schemaName)) {
         error("No such schema dictionary named " + schemaName + "\n");
         return;
     }
 
-    var t = new Dict(configName);
     var s = new Dict(schemaName);
 
     if (!getProperty("root", s)) {
         error("Unable to validate schema\n");
-        return;
-    }
-
-    if(!dictionaryIsValid("root", t, s)) {
-        error("Unable to validate config\n");
         return;
     }
 }
@@ -429,177 +418,4 @@ function objectIsEmpty(i, k) {
 
 function terminateValidation(reason) {
     error("Terminating validation. " + reason + "\n");
-}
-
-////////////////////////////////////////////////////////////////////////////////////////////////////
-// Validate config against schema
-////////////////////////////////////////////////////////////////////////////////////////////////////
-//
-// The schema is driving the checking. The code should not recursively asking the schema if the
-// config keys match the type specified in the in schema. It should in fact be the schema checking
-// that the dictionary contains keys at a given hierachial level.
-//
-// Example :
-// The schema is checking an object. It should unpack the 'required' keys and check if the
-// dictionary contains them. If it does, then iteratively extract each sub-dictionary at each key,
-// whilst also un-packing the sub-schema for that particular key. Each check can be done recursively
-// by passing the sub-dictionary and sub-schema into the same function.
-//
-// Addendum :
-// The schema should be used to look-ahead at what the next set of keys should be. This is done
-// for arrays of dictionaries. The code should pass a dictionary name chain e.g setup::task::2afc
-
-function dictionaryIsValid(parentName, d, schema) {
-    post("Entering " + parentName + "\n");
-    var isValid = true;
-    var t = schema.get("type");
-
-    if (t == "object") {
-        isValid = objectDictionaryIsValid(parentName, d, schema);
-    }
-    else if (t == "list") {
-        isValid = listDictionaryIsValid(parentName, d, schema);
-    }
-
-    if (!isValid) {
-        error(parentName + " is invalid\n");
-    }
-
-    return isValid;
-}
-
-function unpackKey(parentName, dict, key, s) {
-    var t = dict.gettype(key);
-    var subDict = dict.get(key);
-    if (t == "dictionary") {
-        var subSchema = s.get("properties::" + key);
-        return dictionaryIsValid(parentName + "::" + key, subDict, subSchema);
-    }
-    else if (t == "array") {
-        var allElementsValid = true;
-        var n = subDict.length;
-        var elementName;
-        var elementDict;
-        var subSchema = s.get("properties::" + key + "::element");
-        for (var i = 0; i < n; ++i) {
-            elementName = key + "[" + i + "]";
-            elementDict = dict.get(elementName);
-            if (!dictionaryIsValid(parentName + "::" + elementName, elementDict, subSchema)) {
-                error("In " + parentName + " : element \"" + elementName + "\" is invalid\n");
-                allElementsValid = false;
-            }
-        }
-
-        return allElementsValid;
-    }
-    else {
-        post(parentName + "::" + key + " terminates here\n");
-        return true;
-    }
-}
-
-function objectDictionaryIsValid(parentName, d, s) {
-    var req = s.get("required");
-    var props = s.get("properties");
-
-    var key = req;
-    var n = 1;
-    if (s.gettype("required") == "array") {
-        n = req.length;
-    }
-
-    // Check that d contains each key listed in req
-    var missingKeys = false;
-    for (var i = 0; i < n; ++i) {
-        if (n > 1) {
-            key = req[i];
-        }
-        if (!d.contains(key)) {
-            error("In " + parentName + " : missing property key \"" + key + "\"\n");
-            missingKeys = true;
-        }
-    }
-    if (missingKeys) {
-        return false;
-    }
-
-    // Interatively enter each sub-key and pass the associated sub-schema
-    var isValid = true;
-    var subDict;
-    var subSchema;
-    for (var i = 0; i < n; ++i) {
-        if (n > 1) {
-            key = req[i];
-        }
-        post("Extracting key " + key + "\n");
-
-        // Preempt the key type here
-        isValid = unpackKey(parentName, d, key, s);
-        // subDict = d.get(key)
-        // subSchema = s.get("properties::" + key);
-        // if(!dictionaryIsValid(parentName + "::" + key, subDict, subSchema)) {
-        //     isValid = false;
-        // }
-    }
-
-    return isValid;
-}
-
-function listDictionaryIsValid(parentName, d, s) {
-    var choices = s.get("choices");
-    var props = s.get("properties");
-
-    var key = choices;
-    var n = 1;
-    if (s.gettype("choices") == "array") {
-        n = choices.length;
-    }
-
-    // Check that d contains a valid choice
-    var choiceValid = false;
-    for (var i = 0; i < n; ++i) {
-        if (n > 1) {
-            key = choices[i];
-        }
-        if (d.contains(key)) {
-            choiceValid = true;
-            break;
-        }
-    }
-    if (!choiceValid) {
-        error("In " + parentName + " : invalid choice key \"" + key + "\"\n");
-        return false;
-    }
-
-    // Enter choice sub-key and pass the associated sub-schema
-    var isValid = true;
-    var subSchema;
-
-    post("Extracing key " + key + "\n");
-
-    // Preempt the key type here
-    isValid = unpackKey(parentName, d, key, s);
-    // subDict = d.get(key)
-    // subSchema = s.get("properties::" + key);
-    // if(!dictionaryIsValid(parentName + "::" + key, subDict, subSchema)) {
-    //     isValid = false;
-    // }
-
-    // subSchema = s.get("properties::" + key);
-    // if(!dictionaryIsValid(parentName + "::" + key, choice, subSchema)) {
-    //     isValid = false;
-    // }
-
-    return isValid;
-}
-
-function arrayDictionaryIsValid(parentName, d, s) {
-    post("Trying to validate array\n");
-    // post("Validating array " + name + "\n");
-    // var element = s.get("element");
-    // var req = element.get("required");
-    // var props = element.get("properties");
-    //
-    // post(typeof(d[0]) + "\n");
-    return true;
 }

@@ -1,5 +1,4 @@
 {
-    "dateCreated" : "yyyymmdd",
     "setup" : {
         "method" : {
             "constants" : {
@@ -10,7 +9,7 @@
             "2afc" : {
                 "question" : "Which stimulus contained a tone?"
             }
-        }
+        },
         "playback" : {
             "pauses" : {
                 "beforePresentation" : 0,
