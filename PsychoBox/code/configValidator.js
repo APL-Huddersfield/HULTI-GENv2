@@ -447,13 +447,12 @@ function terminateValidation(reason) {
 //
 // Addendum :
 // The schema should be used to look-ahead at what the next set of keys should be. This is done
-// for arrays of dictionaries. The code should pass a dictionary name chain e.g setup::task::2afc
+// for arrays of dictionaries. The code could pass a dictionary name chain e.g setup::task::2afc
 
 function dictionaryIsValid(parentName, d, schema) {
-    post("Entering " + parentName + "\n");
     var isValid = true;
     var t = schema.get("type");
-
+    // post("Entering " + parentName + " (" + t + ")\n");
     if (t == "object") {
         isValid = objectDictionaryIsValid(parentName, d, schema);
     }
@@ -469,33 +468,61 @@ function dictionaryIsValid(parentName, d, schema) {
 }
 
 function unpackKey(parentName, dict, key, s) {
-    post("Unpacking " + key + " in " + parentName + "\n");
-    post("Schema keys : " + s.getkeys() + "\n");
+    // post("Unpacking " + key + " in " + parentName + "\n");
     var t = dict.gettype(key);
     var subDict = dict.get(key);
+    var subS = s.get("properties::" + key);
+    var expectedType = subS.get("type");
+    // post("Type : " + t + "\n");
     if (t == "dictionary") {
-        var subSchema = s.get("properties::" + key);
-        return dictionaryIsValid(parentName + "::" + key, subDict, subSchema);
+        var expectedType = subS.get("type");
+        if (expectedType == "object" || expectedType == "list") {
+            return dictionaryIsValid(parentName + "::" + key, subDict, subS);
+        }
+        else {
+            error("In " + parentName + " : key " + key + " does not match expected type " + expectedType + "\n");
+            return false;
+        }
     }
     else if (t == "array") {
-        var allElementsValid = true;
         var n = subDict.length;
         var elementName;
         var elementDict;
-        var subSchema = s.get("properties::" + key + "::element");
-        for (var i = 0; i < n; ++i) {
-            elementName = key + "[" + i + "]";
-            elementDict = dict.get(elementName);
-            if (!dictionaryIsValid(parentName + "::" + elementName, elementDict, subSchema)) {
-                error("In " + parentName + " : element \"" + elementName + "\" is invalid\n");
-                allElementsValid = false;
+        var allElementsValid = true;
+        if (expectedType == "array") {
+            subS = s.get("properties::" + key  + "::element");
+            for (var i = 0; i < n; ++i) {
+                elementName = key + "[" + i + "]";
+                elementDict = dict.get(elementName);
+                if (!dictionaryIsValid(parentName + "::" + elementName, elementDict, subS)) {
+                    error("In " + parentName + " : element \"" + elementName + "\" is invalid\n");
+                    allElementsValid = false;
+                }
             }
+            return allElementsValid;
         }
-
-        return allElementsValid;
+        error("In " + parentName + ": key " + key + " does not match expected type " + expectedType + "\n");
+        return false;
+    }
+    else if (t == "symbol") {
+        if (expectedType == "string") {
+            return true;
+        }
+        error("In " + parentName + ": key " + key + " does not match expected type " + expectedType + "\n");
+        return false;
+    }
+    else if (t == "int") {
+        if (expectedType == "int") {
+            return intValueIsValid(parentName + "::" + key, subDict, subS);
+        }
+        else if (expectedType == "boolean") {
+            return boolValueIsValid(parentName + "::" + key, subDict, subS);
+        }
+        error("In " + parentName + ": key " + key + " does not match expected type " + expectedType + "\n");
+        return false;
     }
     else {
-        post(parentName + "::" + key + " terminates here\n");
+        post("    " + parentName + "::" + key + " terminates here\n");
         return true;
     }
 }
@@ -568,13 +595,26 @@ function listDictionaryIsValid(parentName, d, s) {
     return unpackKey(parentName, d, key, s);
 }
 
-function arrayDictionaryIsValid(parentName, d, s) {
-    post("Trying to validate array\n");
-    // post("Validating array " + name + "\n");
-    // var element = s.get("element");
-    // var req = element.get("required");
-    // var props = element.get("properties");
-    //
-    // post(typeof(d[0]) + "\n");
+function intValueIsValid(parentName, i, s) {
+    var minimum = s.get("minimum");
+    var maximum = s.get("maximum");
+    var canBeInfinite = maximum == -1;
+
+    if (i < minimum) {
+        error("In " + parentName + " : value must be more than or equal to " + minimum + "\n");
+        return false;
+    }
+    if (!canBeInfinite && i > maximum) {
+        error("In " + parentName + " : value must be less than or equal to " + maximum + "\n");
+        return false;
+    }
+    return true;
+}
+
+function boolValueIsValid(parentName, b, s) {
+    if (b < 0 || b > 1) {
+        error("In " + parentName + " : boolean value must be either 0 or 1\n");
+        return false;
+    }
     return true;
 }
