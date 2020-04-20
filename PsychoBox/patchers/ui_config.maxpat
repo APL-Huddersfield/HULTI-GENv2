@@ -84,8 +84,8 @@
 					"id" : "obj-10",
 					"maxclass" : "newobj",
 					"numinlets" : 1,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
+					"numoutlets" : 2,
+					"outlettype" : [ "", "" ],
 					"patching_rect" : [ 365.0, 209.0, 99.0, 22.0 ],
 					"saved_object_attributes" : 					{
 						"filename" : "configValidator.js",

@@ -38,6 +38,8 @@
 //      present in the config file.
 //
 
+outlets = 2;
+
 var OBJECT_TYPE = 0;
 var LIST_TYPE = 1;
 var ARRAY_TYPE = 2;
@@ -70,18 +72,33 @@ function validate(configName, schemaName) {
         return;
     }
 
-    var t = new Dict(configName);
     var s = new Dict(schemaName);
+    var t = new Dict(configName);
+
+    if (s.getkeys() == null) {
+        error("Dictionary \"" + schemaName + "\" is empty\n");
+        outlet(1, "schemaempty");
+        return;
+    }
+
+    if (t.getkeys() == null) {
+        error("Dictionary \"" + configName + "\" is empty\n");
+        outlet(1, "configempty");
+        return;
+    }
 
     if (!getProperty("root", s)) {
         error("Unable to validate schema\n");
+        outlet(1, "schemainvalid");
         return;
     }
 
     if(!dictionaryIsValid("root", t, s)) {
         error("Unable to validate config\n");
+        outlet(1, "configinvalid");
         return;
     }
+    outlet(0, "bang");
 }
 
 function dictExists(dictName) {
