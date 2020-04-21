@@ -2,7 +2,7 @@
 	"name" : "PsychoBox",
 	"version" : 1,
 	"creationdate" : 3666872002,
-	"modificationdate" : 3669203267,
+	"modificationdate" : 3670246913,
 	"viewrect" : [ 1308.0, 407.0, 333.0, 567.0 ],
 	"autoorganize" : 1,
 	"hideprojectwindow" : 0,
@@ -48,12 +48,17 @@
 		}
 ,
 		"code" : 		{
+			"configValidator.js" : 			{
+				"kind" : "javascript",
+				"local" : 1
+			}
+,
 			"itemlist.js" : 			{
 				"kind" : "javascript",
 				"local" : 1
 			}
 ,
-			"configValidator.js" : 			{
+			"makeTemplate.js" : 			{
 				"kind" : "javascript",
 				"local" : 1
 			}
