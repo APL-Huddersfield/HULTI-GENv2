@@ -7,8 +7,6 @@
 // for each key defined in the schema file.
 //
 
-var schema;
-
 function make(destDictName, schemaName) {
     if (!dictExists(schemaName)) {
         error("schema dict \"" + schemaName + "\" does not exist\n");
@@ -18,14 +16,13 @@ function make(destDictName, schemaName) {
     var d = new Dict(destDictName);
     var s = new Dict(schemaName);
     d.clear();
-    unpackKeys(d, "", schema);
+    unpackKeys(d, "", s);
 }
 
 /** Unpacks the keys and generates the hierachial set message based on the
 supplied (sub-)schema 's'.
 */
 function unpackKeys(d, c, s) {
-    //post(c);
     t = s.get("type");
 
     if (t == "object") {
@@ -66,7 +63,6 @@ function makeObject(d, c, s) {
         }
         subKey += key;
         d.append(subKey, "");
-        post("Object : " + subKey + "\n");
         unpackKeys(d, subKey, subSchema);
     }
 }
@@ -86,7 +82,6 @@ function makeChoiceFromList(d, c, s) {
     }
     subKey += key;
     d.append(subKey);
-    post("Choice : " + subKey + "\n");
     unpackKeys(d, subKey, subSchema);
 }
 makeChoiceFromList.local = 1;
@@ -124,7 +119,6 @@ function makeDefaultArray(d, c, s) {
             if (l > 1) {
                 key = requiredKeys[i];
             }
-            post(arrayKey + "::" + key + ", " + properties.getkeys() + "\n");
             unpackKeys(d, arrayKey + "::" + key, properties.get(key));
         }
     }
