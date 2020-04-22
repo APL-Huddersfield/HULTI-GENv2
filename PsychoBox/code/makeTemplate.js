@@ -8,15 +8,15 @@
 //
 
 var schema;
-var schemaSet = false;
 
-function make(destDictName) {
-    if (!schemaSet) {
-        error("No schema has been set\n");
+function make(destDictName, schemaName) {
+    if (!dictExists(schemaName)) {
+        error("schema dict \"" + schemaName + "\" does not exist\n");
         return;
     }
 
-    var d = new Dict("config");
+    var d = new Dict(destDictName);
+    var s = new Dict(schemaName);
     d.clear();
     unpackKeys(d, "", schema);
 }
@@ -136,15 +136,6 @@ function makeDefaultArray(d, c, s) {
 makeDefaultArray.local = 1;
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////
-
-function setschema(s) {
-    if (!dictExists(s)) {
-        error("No such dictionary named " + s + "\n");
-        return;
-    }
-    schema = new Dict(s);
-    schemaSet = true;
-}
 
 function dictExists(dictName) {
     var x = new Dict;
