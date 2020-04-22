@@ -90,31 +90,43 @@ function makeChoiceFromList(d, c, s) {
 makeChoiceFromList.local = 1;
 
 function makeDefaultArray(d, c, s) {
-    d.set(c);
+    d.set(c); // Make an empty array
     d.append(c);
 
     var element = s.get("element");
-    var requiredKeys = element.get("required");
-
-    var key = requiredKeys;
-    var l = 1;
-    if (typeof(requiredKeys) != "string") {
-        l = requiredKeys.length;
-    }
-
+    var t = element.get("type");
     var arrayKey = c + "[0]";
-    var subKeys = key + ":";
-    for (var i = 1; i < l; ++i) {
-        key = requiredKeys[i];
-        subKeys += " " + key + ":";
-    }
-    d.setparse(arrayKey, subKeys);
 
-    // TODO : Unpack element sub-keys
-    for (var i = 0; i < l) {
-        if (l > 1) {
-            key = requiredKeys[i];
+    if (t == "object") {
+        var requiredKeys = element.get("required");
+        var properties = element.get("properties");
+
+        var key = requiredKeys;
+        var l = 1;
+        if (typeof(requiredKeys) != "string") {
+            l = requiredKeys.length;
         }
+
+        // I wonder if this same parsing principle could be applied to the makeObject function?
+        var subKeys = key + ":";
+        for (var i = 1; i < l; ++i) {
+            key = requiredKeys[i];
+            subKeys += " " + key + ":";
+        }
+        d.setparse(arrayKey, subKeys);
+
+        // TODO : Unpack element sub-keys
+        for (var i = 0; i < l; ++i) {
+            if (l > 1) {
+                key = requiredKeys[i];
+            }
+            post(arrayKey + "::" + key + ", " + properties.getkeys() + "\n");
+            unpackKeys(d, arrayKey + "::" + key, properties.get(key));
+        }
+    }
+    else if (t == "int" || t == "string" || t == "boolean") {
+        var defaultValue = element.get("default");
+        d.set(c + "[0]", defaultValue);
     }
 }
 makeDefaultArray.local = 1;
