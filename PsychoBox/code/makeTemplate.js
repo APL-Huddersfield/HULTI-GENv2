@@ -21,7 +21,9 @@ function make(destDictName) {
     unpackKeys(d, "", schema);
 }
 
-// TODO : Pass dictionary as argument in order to set keys
+/** Unpacks the keys and generates the hierachial set message based on the
+supplied (sub-)schema 's'.
+*/
 function unpackKeys(d, c, s) {
     //post(c);
     t = s.get("type");
@@ -89,6 +91,9 @@ function makeChoiceFromList(d, c, s) {
 }
 makeChoiceFromList.local = 1;
 
+/** Makes a default array from the schema, and includes object type handling to work around Max's
+lack of object embedding in JSON files.
+*/
 function makeDefaultArray(d, c, s) {
     d.set(c); // Make an empty array
     d.append(c);
@@ -115,7 +120,6 @@ function makeDefaultArray(d, c, s) {
         }
         d.setparse(arrayKey, subKeys);
 
-        // TODO : Unpack element sub-keys
         for (var i = 0; i < l; ++i) {
             if (l > 1) {
                 key = requiredKeys[i];
