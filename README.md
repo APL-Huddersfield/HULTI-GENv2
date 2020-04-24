@@ -1,2 +1,2 @@
-### PsychoBox
-A psychometric testing tool box for Max 8
+### HULTI-GEN
+A complete, universal listening test software package for Max 8
