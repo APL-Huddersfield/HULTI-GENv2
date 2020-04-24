@@ -4,4 +4,7 @@
 
 // Configuration
 [x] Create schema JSON
-[ ] Create schema cross-reference script
+[x] Create schema cross-reference script
+
+// Notes
+- Sessions should be split into sub-sessions e.g. Split 100 trials into 4 sub-sessions of 25 trials
