@@ -38,6 +38,8 @@
 //      present in the config file.
 //
 
+outlets = 2;
+
 var OBJECT_TYPE = 0;
 var LIST_TYPE = 1;
 var ARRAY_TYPE = 2;
@@ -59,7 +61,6 @@ var types = [OBJECT_TYPE,
 ////////////////////////////////////////////////////////////////////////////////////////////////////
 
 function validate(schemaName) {
-    // Check if both dictionaries exist
     if(!dictExists(schemaName)) {
         error("No such schema dictionary named " + schemaName + "\n");
         return;
@@ -67,10 +68,19 @@ function validate(schemaName) {
 
     var s = new Dict(schemaName);
 
-    if (!getProperty("root", s)) {
-        error("Unable to validate schema\n");
+    if (s.getkeys() == null) {
+        error("Dictionary \"" + schemaName + "\" is empty\n");
+        outlet(1, "schemaempty");
         return;
     }
+
+    if (!getProperty("root", s)) {
+        error("Unable to validate schema\n");
+        outlet(1, "schemainvalid");
+        return;
+    }
+
+    outlet(0, "bang");
 }
 
 function dictExists(dictName) {
@@ -253,41 +263,66 @@ function objectPropertiesAreValid(name, d) {
 ////////////////////////////////////////////////////////////////////////////////////////////////////
 
 function listIsValid(name, d) {
+    var isValid = true;
     var k = "choices";
     if (!d.contains(k)) {
         missingKeyError(name, k);
+        isValid = false;
     }
 
-    k = "properties";
+    k = "listType";
     if (!d.contains(k)) {
         missingKeyError(name, k);
+        isValid = false;
     }
 
     k = "choices";
     var x = d.get(k);
     if (typeof(x) != "object" && typeof(x) != "string") {
         incorrectTypeError(name, k, "object or string");
+        isValid = false;
     }
     if(x == null) {
         objectIsEmpty(name, k);
+        isValid = false;
     }
 
-    k = "properties";
+    if (!isValid) {
+        return false;
+    }
+
+    var t = d.get("listType");
+
+    if (t == "object") {
+        return objectListIsValid(name, d);
+    }
+    else if (t == "string") {
+        return true; // The choices ARE the items
+    }
+    return false;
+}
+
+function objectListIsValid(name, d) {
+    var k = "properties";
+    if (!d.contains(k)) {
+        missingKeyError(name, k);
+        return false;
+    }
+
     var x = d.get(k);
     if (typeof(x) != "object") {
         incorrectTypeError(name, k, "object");
+        return false;
     }
     if(x == null) {
         objectIsEmpty(name, k);
+        return false;
     }
 
-    return listPropertiesAreValid(name, d);
+    return objectListPropertiesAreValid(name, d);
 }
 
-function listPropertiesAreValid(name, d) {
-    // At this point this is where you get the keys in "required" and check if "properties" contains
-    // each key. If any are missing, then properties is invalid. Furthermore, if "optional" is
-    // present, do the same check.
+function objectListPropertiesAreValid(name, d) {
     var isValid = true;
     var choices = d.get("choices");
     var properties = d.get("properties");
@@ -321,7 +356,7 @@ function listPropertiesAreValid(name, d) {
 }
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////
-// Int functions
+// Array functions
 ////////////////////////////////////////////////////////////////////////////////////////////////////
 
 function arrayIsValid(name, d) {

@@ -70,19 +70,25 @@ makeObject.local = 1;
 
 function makeChoiceFromList(d, c, s) {
     var choices = s.get("choices");
-    var properties = s.get("properties");
-
-    // This will be eventually set by the user. The code should look and get a choice from the list
-
+    var t = s.get("listType");
     var key = s.get("default");
-    var subSchema = properties.get(key);
-    var subKey = "";
-    if (c != "") {
-        subKey = c + "::";
+
+    if (t == "object") {
+        var properties = s.get("properties");
+
+        // This will be eventually set by the user. The code should look and get a choice from the list
+        var subSchema = properties.get(key);
+        var subKey = "";
+        if (c != "") {
+            subKey = c + "::";
+        }
+        subKey += key;
+        d.append(subKey);
+        unpackKeys(d, subKey, subSchema);
     }
-    subKey += key;
-    d.append(subKey);
-    unpackKeys(d, subKey, subSchema);
+    else if (t == "string") {
+        d.set(c, key);
+    }
 }
 makeChoiceFromList.local = 1;
 

@@ -2,8 +2,8 @@
 	"name" : "PsychoBox",
 	"version" : 1,
 	"creationdate" : 3666872002,
-	"modificationdate" : 3670415409,
-	"viewrect" : [ 1308.0, 407.0, 333.0, 567.0 ],
+	"modificationdate" : 3671108214,
+	"viewrect" : [ 650.0, 761.0, 333.0, 567.0 ],
 	"autoorganize" : 1,
 	"hideprojectwindow" : 0,
 	"showdependencies" : 1,
@@ -30,17 +30,27 @@
 				"local" : 1
 			}
 ,
-			"ui_config.maxpat" : 			{
-				"kind" : "patcher",
-				"local" : 1
-			}
-,
 			"ui_loadStimuli.maxpat" : 			{
 				"kind" : "patcher",
 				"local" : 1
 			}
 ,
 			"itemlist_test.maxpat" : 			{
+				"kind" : "patcher",
+				"local" : 1
+			}
+,
+			"configValidation.maxpat" : 			{
+				"kind" : "patcher",
+				"local" : 1
+			}
+,
+			"proc_methodOfConstants.maxpat" : 			{
+				"kind" : "patcher",
+				"local" : 1
+			}
+,
+			"ui_config.maxpat" : 			{
 				"kind" : "patcher",
 				"local" : 1
 			}
@@ -58,12 +68,22 @@
 				"local" : 1
 			}
 ,
+			"makeOptions.js" : 			{
+				"kind" : "javascript",
+				"local" : 1
+			}
+,
+			"schemaValidator.js" : 			{
+				"kind" : "javascript",
+				"local" : 1
+			}
+,
 			"itemlist.js" : 			{
 				"kind" : "javascript",
 				"local" : 1
 			}
 ,
-			"makeOptions.js" : 			{
+			"schemaValidator2.js" : 			{
 				"kind" : "javascript",
 				"local" : 1
 			}

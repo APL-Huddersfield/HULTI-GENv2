@@ -67,6 +67,7 @@ function validate(configName, schemaName) {
         error("No such test dictionary named " + configName + "\n");
         return;
     }
+
     if(!dictExists(schemaName)) {
         error("No such schema dictionary named " + schemaName + "\n");
         return;
@@ -84,12 +85,6 @@ function validate(configName, schemaName) {
     if (t.getkeys() == null) {
         error("Dictionary \"" + configName + "\" is empty\n");
         outlet(1, "configempty");
-        return;
-    }
-
-    if (!getProperty("root", s)) {
-        error("Unable to validate schema\n");
-        outlet(1, "schemainvalid");
         return;
     }
 
@@ -113,340 +108,6 @@ function dictExists(dictName) {
     return false;
 }
 dictExists.local = 1;
-
-////////////////////////////////////////////////////////////////////////////////////////////////////
-// Schema gauntlet
-////////////////////////////////////////////////////////////////////////////////////////////////////
-
-function getProperty(name, d) {
-    var thisPropertyIsValid = true;
-
-    if (!d.contains("type")) {
-        missingKeyError(name, "type");
-        thisPropertyIsValid = false;
-    }
-
-    var t = d.get("type");
-    if (typeof(t) != "string") {
-        incorrectTypeError(name, "type", "string");
-        thisPropertyIsValid = false;
-    }
-
-    if(name == "root") {
-        if (t != "object") {
-            error("When root, \"type\" key must contain \"object\"");
-            thisPropertyIsValid = false;
-        }
-    }
-
-    var x = d.get("type");
-    var matchesKnownType = false;
-    for (var i = 0; i < typeList.length; ++i) {
-        if (x == typeList[i]) {
-            matchesKnownType = true;
-            break;
-        }
-    }
-    if (!matchesKnownType) {
-        doesNotMatchKnownTypeError(name, x);
-        thisPropertyIsValid = false;
-    }
-
-    if (x == "object") {
-        thisPropertyIsValid = objectIsValid(name, d);
-    }
-    else if (x == "list") {
-        thisPropertyIsValid = listIsValid(name, d);
-    }
-    else if (x == "array") {
-        thisPropertyIsValid = arrayIsValid(name, d);
-    }
-    else if (x == "int") {
-        thisPropertyIsValid = intIsValid(name, d);
-    }
-
-    if (!thisPropertyIsValid) {
-        error(name + " is invalid\n");
-    }
-
-    return thisPropertyIsValid;
-}
-
-////////////////////////////////////////////////////////////////////////////////////////////////////
-// Object functions
-////////////////////////////////////////////////////////////////////////////////////////////////////
-
-function objectIsValid(name, d) {
-    var k = "required";
-    if (!d.contains(k)) {
-        missingKeyError(name, k);
-    }
-
-    k = "properties";
-    if (!d.contains(k)) {
-        missingKeyError(name, k);
-    }
-
-    k = "required";
-    var x = d.get(k);
-    if (typeof(x) != "object" && typeof(x) != "string") {
-        incorrectTypeError(name, k, "object or string");
-    }
-    if(x == null) {
-        objectIsEmpty(name, k);
-    }
-
-    k = "properties";
-    var x = d.get(k);
-    if (typeof(x) != "object") {
-        incorrectTypeError(name, k, "object");
-    }
-    if(x == null) {
-        objectIsEmpty(name, k);
-    }
-
-    return objectPropertiesAreValid(name, d);
-}
-
-function objectPropertiesAreValid(name, d) {
-    // At this point this is where you get the keys in "required" and check if "properties" contains
-    // each key. If any are missing, then properties is invalid. Furthermore, if "optional" is
-    // present, do the same check.
-    var isValid = true;
-    var required = d.get("required");
-
-    var optional = 0;
-    if (d.contains("optional")) {
-        optional = d.get("optional");
-    }
-    var properties = d.get("properties");
-
-    var k;
-    var l = 1;
-    if (typeof(required) == "string") {
-        k = required;
-    }
-    else {
-        l = required.length;
-    }
-
-    for (var i = 0; i < l; ++i) {
-        if(l != 1) {
-            k = required[i];
-        }
-        if (!properties.contains(k)) {
-            missingKeyError(name + "::properties",k);
-            isValid = false;
-        }
-        else {
-            x = properties.get(k);
-            if (!getProperty(name + "::properties::" + k, x)) {
-                isValid = false;
-            }
-        }
-    }
-
-    l = 1;
-    if (typeof(optional) == "string") {
-        k = optional;
-    }
-    else if (typeof(optional) == "object") {
-        l = optional.length;
-    }
-    else {
-        l = 0;
-    }
-
-    for (var i = 0; i < l; ++i) {
-        if(l != 1) {
-            k = optional[i];
-        }
-        if (!properties.contains(k)) {
-            missingKeyError(name + "::properties",k);
-            isValid = false;
-        }
-        else {
-            x = properties.get(k);
-            if (!getProperty(name + "::properties::" + k, x)) {
-                isValid = false;
-            }
-        }
-    }
-
-    return isValid;
-}
-
-////////////////////////////////////////////////////////////////////////////////////////////////////
-// List functions
-////////////////////////////////////////////////////////////////////////////////////////////////////
-
-function listIsValid(name, d) {
-    var k = "choices";
-    if (!d.contains(k)) {
-        missingKeyError(name, k);
-    }
-
-    k = "properties";
-    if (!d.contains(k)) {
-        missingKeyError(name, k);
-    }
-
-    k = "choices";
-    var x = d.get(k);
-    if (typeof(x) != "object" && typeof(x) != "string") {
-        incorrectTypeError(name, k, "object or string");
-    }
-    if(x == null) {
-        objectIsEmpty(name, k);
-    }
-
-    k = "properties";
-    var x = d.get(k);
-    if (typeof(x) != "object") {
-        incorrectTypeError(name, k, "object");
-    }
-    if(x == null) {
-        objectIsEmpty(name, k);
-    }
-
-    return listPropertiesAreValid(name, d);
-}
-
-function listPropertiesAreValid(name, d) {
-    // At this point this is where you get the keys in "required" and check if "properties" contains
-    // each key. If any are missing, then properties is invalid. Furthermore, if "optional" is
-    // present, do the same check.
-    var isValid = true;
-    var choices = d.get("choices");
-    var properties = d.get("properties");
-
-    var k;
-    var l = 1;
-    if (typeof(choices) == "string") {
-        k = choices;
-    }
-    else {
-        l = choices.length;
-    }
-
-    for (var i = 0; i < l; ++i) {
-        if(l != 1) {
-            k = choices[i];
-        }
-        if (!properties.contains(k)) {
-            missingKeyError(name + "::properties", k);
-            isValid = false;
-        }
-        else {
-            x = properties.get(k);
-            if (!getProperty(name + "::properties::" + k, x)) {
-                isValid = false;
-            }
-        }
-    }
-
-    return isValid;
-}
-
-////////////////////////////////////////////////////////////////////////////////////////////////////
-// Int functions
-////////////////////////////////////////////////////////////////////////////////////////////////////
-
-function arrayIsValid(name, d) {
-    var isValid = true;
-    var k = "element";
-    if (!d.contains(k)) {
-        missingKeyError(name, k);
-        isValid = false;
-    }
-
-    var x = d.get(k);
-    if (typeof(x) != "object") {
-        incorrectTypeError(name, k, "object");
-        isValid = false;
-    }
-    if (x == null) {
-        objectIsEmpty(name, k);
-        return false;
-    }
-
-    if (!getProperty(name + "::element", x)) {
-        isValid = false;
-    }
-    return isValid;
-}
-arrayIsValid.local = 1;
-
-////////////////////////////////////////////////////////////////////////////////////////////////////
-// Int functions
-////////////////////////////////////////////////////////////////////////////////////////////////////
-
-function intIsValid(name, d) {
-    var isValid = true;
-
-    var k = "minimum";
-    if (!d.contains(k)) {
-        missingKeyError(i, k);
-        isValid = false;
-    }
-
-    k = "maximum";
-    if (!d.contains(k)) {
-        missingKeyError(i, k);
-        isValid = false;
-    }
-
-    k = "minimum";
-    var x = d.get(k);
-    if (typeof(x) != "number") {
-        incorrectTypeError(name, k, "number");
-        isValid = false;
-    }
-    if(x == null) {
-        objectIsEmpty(name, k);
-        isValid = false;
-    }
-
-    k = "maximum";
-    x = d.get(k);
-    if (typeof(x) != "number") {
-        incorrectTypeError(name, k, "number");
-        isValid = false;
-    }
-    if(x == null) {
-        objectIsEmpty(name, k);
-        isValid = false;
-    }
-    return isValid;
-}
-
-////////////////////////////////////////////////////////////////////////////////////////////////////
-// Errors
-////////////////////////////////////////////////////////////////////////////////////////////////////
-
-function doesNotMatchKnownTypeError(i, k) {
-    error("In \"" + i + "\" : unknown type \"" + k + "\"\n");
-}
-
-function missingKeyError(i, k) {
-    error("In \"" + i + "\" : missing \"" + k + "\" key\n");
-}
-
-function incorrectTypeError(i, k, t) {
-    error("In \"" + i + "\" : value type of key \"" + k + "\" is not a " + t + "\n");
-}
-
-function keyValueInvalid(i, k, v) {
-    error("In \"" + i + "\" : value of key \"" + k + "\" is not equal to \"" + v + "\"\n");
-}
-
-function objectIsEmpty(i, k) {
-    error("In \"" + i + "\" : key \"" + k + "\" is empty\n");
-}
-
-function terminateValidation(reason) {
-    error("Terminating validation. " + reason + "\n");
-}
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////
 // Validate config against schema
@@ -583,9 +244,9 @@ function objectDictionaryIsValid(parentName, d, s) {
     return isValid;
 }
 
+// TODO : Modify this to validate either object or string list types
 function listDictionaryIsValid(parentName, d, s) {
     var choices = s.get("choices");
-    var props = s.get("properties");
 
     var key = choices;
     var n = 1;
@@ -595,14 +256,21 @@ function listDictionaryIsValid(parentName, d, s) {
 
     // Check that d contains a valid choice
     var choiceValid = false;
-    for (var i = 0; i < n; ++i) {
-        if (n > 1) {
-            key = choices[i];
+
+    var t = s.get("listType");
+    if (t == "object") {
+        for (var i = 0; i < n; ++i) {
+            if (n > 1) {
+                key = choices[i];
+            }
+            if (d.contains(key)) {
+                choiceValid = true;
+                break;
+            }
         }
-        if (d.contains(key)) {
-            choiceValid = true;
-            break;
-        }
+    }
+    else {
+        post(d + "\n");
     }
     if (!choiceValid) {
         error("In " + parentName + " : invalid choice key \"" + key + "\"\n");
