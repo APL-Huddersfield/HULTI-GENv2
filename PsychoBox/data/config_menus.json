@@ -1,0 +1,51 @@
+{
+    "setup" : {
+        "procedure" : {
+            "title" : "Procedure",
+            "items" : ["nonAdaptive", "adaptive"],
+            "itemStrings" : ["Non Adaptive", "Adaptive"],
+            "keys" : {
+                "nonAdaptive" : {
+                    "title" : "Model",
+                    "items" : ["highThresholdTheory", "signalDetectionTheory"],
+                    "itemStrings"  : ["High Threshold Theory", "Signal Detection Theory"],
+                    "keys" : {
+                        "highThresholdTheory" : {
+                            "title" : "Tasks",
+                            "items" : ["methodOfConstants", "methodOfLimits", "methodOfAdjustment"],
+                            "itemStrings" : ["Method of Constants", "Method of Limits", "Method of Adjustment"],
+                            "keys" : {
+                                "methodOfConstants" : {
+                                    "paramWindow" : "paramsMOC"
+                                },
+                                "methodOfLimits" : {
+                                    "paramWindow" : "paramsMOC"
+                                },
+                                "methodOfAdjustment" : {
+                                    "paramWindow" : "paramsMOC"
+                                }
+                            }
+                        },
+                        "signalDetectionTheory" : {
+                            "title" : "Tasks",
+                            "items" : ["yesNo", "2afc", "abx"],
+                            "itemStrings" : ["Yes-No", "2AFC", "ABX"]
+                        }
+                    }
+                },
+                "adaptive" : {
+                    "title" : "Model",
+                    "items" : ["staircase"],
+                    "itemStrings"  : ["Transformed Staircase"],
+                    "keys" : {
+                        "staircase" : {
+                            "title" : "Tasks",
+                            "items" : ["yesNo", "2afc", "abx"],
+                            "itemStrings" : ["Yes-No", "2AFC", "ABX"]
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
