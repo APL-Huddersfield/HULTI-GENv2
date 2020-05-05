@@ -2,7 +2,7 @@
 	"name" : "PsychoBox",
 	"version" : 1,
 	"creationdate" : 3666872002,
-	"modificationdate" : 3671448474,
+	"modificationdate" : 3671453648,
 	"viewrect" : [ 2639.0, 152.0, 333.0, 567.0 ],
 	"autoorganize" : 1,
 	"hideprojectwindow" : 0,
@@ -114,6 +114,11 @@
 			}
 ,
 			"schemaValidator.js" : 			{
+				"kind" : "javascript",
+				"local" : 1
+			}
+,
+			"filelistManager.js" : 			{
 				"kind" : "javascript",
 				"local" : 1
 			}

@@ -10,8 +10,11 @@ var boxWidth = this.box.rect[2] - this.box.rect[0];
 var boxHeight = this.box.rect[3] - this.box.rect[1];
 
 var gridRGB = [0.5, 0.5, 0.5];
-var idleTextRGB = [0.8, 0.8, 0.8];
+var idleTextRGB = [0.0, 0.0, 0.0];
 var selectedTextRGB = [1.0, 1.0, 1.0];
+
+var idleItemRGBA = [0.0, 0.2882, 0.58, 0.0];
+var selectedItemRGBA = [0.0, 0.488235, 0.9, 1.0];
 
 var numRows = 32;
 var numCols = 2;
@@ -57,7 +60,7 @@ paint.local = 1;
 
 function drawBackground() {
     with (mgraphics) {
-        set_source_rgb(0.2, 0.2, 0.2);
+        set_source_rgba(0.2, 0.2, 0.2, 0.0);
         rectangle(0, 0, boxWidth, boxHeight);
         fill();
     }
@@ -67,7 +70,7 @@ drawBackground.local = 1;
 function drawHiglights(i) {
     if (idleItem >= 0) {
         with (mgraphics) {
-            set_source_rgb(0.0, 0.2882, 0.58);
+            set_source_rgba(idleItemRGBA);
             rectangle(0, idleItem * rowHeight, boxWidth, rowHeight);
             fill();
         }
@@ -75,7 +78,7 @@ function drawHiglights(i) {
 
     if (selectedItem >= 0) {
         with (mgraphics) {
-            set_source_rgb(0.0, 0.488235, 0.9);
+            set_source_rgba(selectedItemRGBA);
             rectangle(0, selectedItem * rowHeight, boxWidth, rowHeight);
             fill();
         }
@@ -204,10 +207,6 @@ function onresize(w, h) {
 }
 onresize.local = 1;
 
-function ondrag(x, y, but, cmd, shift, capslock, option, ctrl) {
-    post("drag\n");
-}
-
 function onidle(x, y, but, cmd, shift, capslock, option, ctrl) {
     getIdleItem(y);
     if (mouseDown && but == 0) {
@@ -218,13 +217,11 @@ function onidle(x, y, but, cmd, shift, capslock, option, ctrl) {
 onidle.local = 1;
 
 function onidleout(x, y, but, cmd, shift, capslock, option, ctrl) {
-    post("idleout\n");
     idleItem = -1;
 }
 onidleout.local = 1;
 
 function onclick(x, y, but, cmd, shift, capslock, option, ctrl) {
-    post("click\n");
     if (mouseDown == 0 && but) {
         mouseDown = but;
         getSelectedItem(y);

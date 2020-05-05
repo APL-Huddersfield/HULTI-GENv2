@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 443.0, 229.0, 1148.0, 1050.0 ],
+		"rect" : [ 34.0, 79.0, 1286.0, 937.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -44,15 +44,16 @@
 					"border" : 0,
 					"clickthrough" : 0,
 					"enablehscroll" : 0,
-					"enablevscroll" : 0,
+					"enablevscroll" : 1,
 					"id" : "obj-21",
 					"lockeddragscroll" : 0,
 					"maxclass" : "bpatcher",
 					"name" : "ui_filelist.maxpat",
-					"numinlets" : 0,
+					"numinlets" : 1,
 					"numoutlets" : 0,
 					"offset" : [ 0.0, 0.0 ],
-					"patching_rect" : [ 320.0, 590.0, 470.0, 200.0 ],
+					"patching_rect" : [ 778.0, 190.0, 336.0, 660.0 ],
+					"varname" : "ui_filelist",
 					"viewvisibility" : 1
 				}
 
