@@ -1,33 +1,64 @@
-var itemSelected = new Array(512);
+var maxNumItems = 512;
+var selectedItems = new Array(0);
+var itemText = new Array(0);
+
 var selectedItem = -1;
 var selectionStart = -1;
 var selectionEnd = -1;
-var numVisibleItems = 512;
-clear();
+var numVisibleItems = maxNumItems;
+
+// Flags
+
+var filterDuplicates = 0;
 
 function clear() {
-    for (var i = 0; i < 512; ++i) {
-        itemSelected[i] = 1;
+    selectedItems = new Array(0);
+    itemText = new Array(0);
+    for (var i = 0; i < maxNumItems; ++i) {
+        outlet(0, "patcher hide entry_" + i);
+        outlet(0, "item send entry_" + i);
+        outlet(0, "item text null");
+        outlet(0, "item highlight 0");
     }
-    remove(512);
-    deselect(-1);
 }
 
+function update() {
+    for (var i = 0; i < maxNumItems; ++i) {
+        outlet(0, "item send entry_" + i);
+        if (i < selectedItems.length) {
+            if (selectedItems[i]) {
+                outlet(0, "item highlight 1");
+            }
+            else {
+                outlet(0, "item highlight 0");
+            }
+            outlet(0, "item text " + itemText[i]);
+            outlet(0, "patcher show entry_" + i);
+        }
+        else {
+            outlet(0, "item highlight 0");
+            outlet(0, "patcher hide entry_" + i);
+        }
+    }
+}
+
+function filterduplicates(x) {
+    filterDuplicates = x >= 0 ? (x <= 1 ? x : 1) : 0;
+}
+
+////////////////////////////////////////////////////////////////////////////////////////////////////
+
 function select(item, shift, cmd) {
-    if (item < 0 || item >= 512) {
+    if (item < 0 || item >= selectedItems.length) {
         return;
     }
 
-    if (!cmd && !shift) { // No modifiers, deselect previous selection
-        if (item != lastSelectedItem) {
-            deselect(item);
-            selectItem(item, 1);
-        }
-        selectedItem = item;
-    }
-    else if (cmd) { // Select many, and override shift
+    if (cmd) { // Select many, and override shift
         toggleItem(item);
-        // selectedItem = item;
+        if (selectItem == -1) {
+            selectedItem = item;
+        }
+        selectedItem = selectedItems.indexOf(1);
     }
     else if (shift) { // Select a range of items
         selectionStart = selectedItem;
@@ -45,30 +76,39 @@ function select(item, shift, cmd) {
             selectItem(i, 1);
         }
     }
+    else {
+        if (item != selectedItem) {
+            deselect(item);
+            selectItem(item, 1);
+        }
+        selectedItem = selectedItems.indexOf(1);
+    }
 }
 
-// Deselect all but a single item. If except == -1, then all items will be deselected
+// Deselect all but a single item. If "except == -1", then all items will be deselected.
 function deselect(except) {
-    for (var i = 0; i < 512; ++i) {
+    for (var i = 0; i < selectedItems.length; ++i) {
         if (i == except) {
             continue;
         }
-        if (itemSelected[i]) {
-            itemSelected[i] = 0;
+        if (selectedItems[i]) {
+            selectedItems[i] = 0;
             outlet(0, "item send entry_" + i);
             outlet(0, "item highlight 0");
         }
     }
+    if (except == -1) {
+        selectedItem = -1;
+    }
 }
 
 function selectItem(item, x) {
-    if (item < 0 || item >= 512) {
+    if (item < 0 || item >= selectedItems.length) {
         return;
     }
 
-    //selectionStart = item;
-    if (x != itemSelected[item]) {
-        itemSelected[item] = x;
+    if (x != selectedItems[item]) {
+        selectedItems[item] = x;
         outlet(0, "item send entry_" + item);
         outlet(0, "item highlight " + x);
     }
@@ -76,48 +116,95 @@ function selectItem(item, x) {
 selectItem.local = 1;
 
 function toggleItem(item) {
-    if (item < 0 || item >= 512) {
+    if (item < 0 || item >= maxNumItems) {
         return;
     }
 
-    itemSelected[item] = 1 - itemSelected[item];
+    selectedItems[item] = 1 - selectedItems[item];
     outlet(0, "item send entry_" + item);
-    outlet(0, "item highlight " + itemSelected[item]);
+    outlet(0, "item highlight " + selectedItems[item]);
 }
 toggleItem.local = 1;
 
-function append(t) {
-    numVisibleItems++;
-    if (numVisibleItems > 512) {
-        numVisibleItems = 512;
+function selectall() {
+    if (selectedItems.length == 0) {
         return;
     }
-    var i = numVisibleItems - 1;
+    for (var i = 0; i < selectedItems.length; ++i) {
+        selectItem(i, 1);
+    }
+    selectedItem = 0;
+}
+
+////////////////////////////////////////////////////////////////////////////////////////////////////
+
+function append(t) {
+    if (selectedItems.length == maxNumItems) {
+        return;
+    }
+    if (filterDuplicates) {
+        if (itemText.indexOf(t) >= 0) {
+            return;
+        }
+    }
+
+    selectedItems.push(0);
+    itemText.push(t);
+    var i = selectedItems.length - 1;
     outlet(0, "item send entry_" + i);
     outlet(0, "item text " + t);
     outlet(0, "patcher show entry_" + i);
 }
 
-function remove(x) {
-    if (x < 1 || numVisibleItems == 0) {
+/** Finds the all the selected items and removes them.
+It achieves this by looking for the first selected item and removes it. It repeats this until no
+more selected items are found, by which the entry "display" is updated.
+*/
+function remove() {
+    if (selectedItems.length == 0) {
         return;
     }
 
-    var j = 0;
-    for (var i = 0; i < x; ++i) {
-        outlet(0, "patcher hide entry_" + (numVisibleItems - 1));
-        numVisibleItems--;
-        if (numVisibleItems == 0) {
-            break;
+    var i = selectedItems.indexOf(1);
+    while (i >= 0 && selectedItems.length) {
+        selectedItems.splice(i, 1);
+        itemText.splice(i, 1);
+        i = selectedItems.indexOf(1);
+    }
+    selectionStart = -1;
+    selectedItem = -1;
+    update();
+}
+
+function removeduplicates() {
+    var j = -1;
+    for (var i = 0; i < selectedItems.length; ++i) {
+        t = itemText[i];
+        j = itemText.indexOf(t, i + 1);
+        while (j > i) {
+            selectedItems.splice(j, 1);
+            itemText.splice(j, 1);
+            j = itemText.indexOf(t, i + 1);
         }
     }
+    update();
+}
+
+function rename(i, t) {
+    if (i < 0 || i >= selectedItems.length) {
+        return;
+    }
+
+    itemText[i] = t;
+    outlet(0, "item send entry_" + i);
+    outlet(0, "item text " + t);
 }
 
 function bang() {
-    for (var i = 0; i < 512; ++i) {
-        if (itemSelected[i]) {
+    for (var i = 0; i < selectedItems.length; ++i) {
+        if (selectedItems[i]) {
             outlet(0, "item send entry_" + i);
-            outlet(0, "item get")
+            outlet(0, "item get");
         }
     }
 }

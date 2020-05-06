@@ -2,8 +2,8 @@
 	"name" : "PsychoBox",
 	"version" : 1,
 	"creationdate" : 3666872002,
-	"modificationdate" : 3671453648,
-	"viewrect" : [ 2639.0, 152.0, 333.0, 567.0 ],
+	"modificationdate" : 3671622875,
+	"viewrect" : [ 1347.0, 152.0, 333.0, 567.0 ],
 	"autoorganize" : 1,
 	"hideprojectwindow" : 0,
 	"showdependencies" : 1,
@@ -84,6 +84,11 @@
 				"kind" : "patcher",
 				"local" : 1
 			}
+,
+			"ui_stimulusPool.maxpat" : 			{
+				"kind" : "patcher",
+				"local" : 1
+			}
 
 		}
 ,
@@ -94,6 +99,11 @@
 			}
 ,
 			"schemaValidator2.js" : 			{
+				"kind" : "javascript",
+				"local" : 1
+			}
+,
+			"filelistManager.js" : 			{
 				"kind" : "javascript",
 				"local" : 1
 			}
@@ -114,11 +124,6 @@
 			}
 ,
 			"schemaValidator.js" : 			{
-				"kind" : "javascript",
-				"local" : 1
-			}
-,
-			"filelistManager.js" : 			{
 				"kind" : "javascript",
 				"local" : 1
 			}
