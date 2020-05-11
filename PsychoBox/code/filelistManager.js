@@ -1,3 +1,5 @@
+outlets = 2;
+
 var maxNumItems = 512;
 var selectedItems = new Array(0);
 var itemText = new Array(0);
@@ -15,29 +17,29 @@ function clear() {
     selectedItems = new Array(0);
     itemText = new Array(0);
     for (var i = 0; i < maxNumItems; ++i) {
-        outlet(0, "patcher hide entry_" + i);
-        outlet(0, "item send entry_" + i);
-        outlet(0, "item text null");
-        outlet(0, "item highlight 0");
+        outlet(0, "patcher", "hide", "entry_" + i.toString());
+        outlet(0, "item", "send", "entry_" + i.toString());
+        outlet(0, "item", "text", "null");
+        outlet(0, "item", "highlight", 0);
     }
 }
 
 function update() {
     for (var i = 0; i < maxNumItems; ++i) {
-        outlet(0, "item send entry_" + i);
+        outlet(0, "item", "send", "entry_" + i.toString());
         if (i < selectedItems.length) {
             if (selectedItems[i]) {
-                outlet(0, "item highlight 1");
+                outlet(0, "item", "highlight", 1);
             }
             else {
-                outlet(0, "item highlight 0");
+                outlet(0, "item", "highlight", 0);
             }
-            outlet(0, "item text " + itemText[i]);
-            outlet(0, "patcher show entry_" + i);
+            outlet(0, "item", "text" + itemText[i]);
+            outlet(0, "patcher", "show", "entry_" + i.toString());
         }
         else {
-            outlet(0, "item highlight 0");
-            outlet(0, "patcher hide entry_" + i);
+            outlet(0, "item", "highlight", 0);
+            outlet(0, "patcher", "hide", "entry_" + i.toString());
         }
     }
 }
@@ -93,8 +95,8 @@ function deselect(except) {
         }
         if (selectedItems[i]) {
             selectedItems[i] = 0;
-            outlet(0, "item send entry_" + i);
-            outlet(0, "item highlight 0");
+            outlet(0, "item", "send", "entry_" + i.toString());
+            outlet(0, "item", "highlight", 0);
         }
     }
     if (except == -1) {
@@ -109,8 +111,8 @@ function selectItem(item, x) {
 
     if (x != selectedItems[item]) {
         selectedItems[item] = x;
-        outlet(0, "item send entry_" + item);
-        outlet(0, "item highlight " + x);
+        outlet(0, "item", "send", "entry_" + item.toString());
+        outlet(0, "item", "highlight", x);
     }
 }
 selectItem.local = 1;
@@ -121,8 +123,8 @@ function toggleItem(item) {
     }
 
     selectedItems[item] = 1 - selectedItems[item];
-    outlet(0, "item send entry_" + item);
-    outlet(0, "item highlight " + selectedItems[item]);
+    outlet(0, "item", "send", "entry_" + item.toString());
+    outlet(0, "item", "highlight", selectedItems[item]);
 }
 toggleItem.local = 1;
 
@@ -151,9 +153,9 @@ function append(t) {
     selectedItems.push(0);
     itemText.push(t);
     var i = selectedItems.length - 1;
-    outlet(0, "item send entry_" + i);
-    outlet(0, "item text " + t);
-    outlet(0, "patcher show entry_" + i);
+    outlet(0, "item", "send", "entry_" + i.toString());
+    outlet(0, "item", "text", t);
+    outlet(0, "patcher", "show", "entry_" + i.toString());
 }
 
 /** Finds the all the selected items and removes them.
@@ -196,15 +198,22 @@ function rename(i, t) {
     }
 
     itemText[i] = t;
-    outlet(0, "item send entry_" + i);
-    outlet(0, "item text " + t);
+    outlet(0, "item", "send", "entry_" + i.toString());
+    outlet(0, "item", "text", t);
 }
 
 function bang() {
     for (var i = 0; i < selectedItems.length; ++i) {
         if (selectedItems[i]) {
-            outlet(0, "item send entry_" + i);
-            outlet(0, "item get");
+            outlet(0, "item", "send", "entry_" + i);
+            outlet(0, "output", "selected", i, itemText[i]);
         }
+    }
+}
+
+function dump() {
+    for (var i = 0; i < selectedItems.length; ++i) {
+        outlet(0, "item", "send", "entry_" + i.toString());
+        outlet(0, "output", "entry", i, itemText[i]);
     }
 }

@@ -26,6 +26,9 @@
             }
         }
     },
+    "pool" : ["1a.wav", "1b.wav", "1c.wav", "1d.wav",
+              "2a.wav", "2b.wav", "2c.wav", "2d.wav",
+              "3a.wav", "3b.wav", "3c.wav", "3d.wav"],
     "sessions" : [{
         "testStimuli" : ["1a.wav", "1b.wav", "1c.wav", "1d.wav"]
     },
