@@ -2,8 +2,8 @@
 	"name" : "PsychoBox",
 	"version" : 1,
 	"creationdate" : 3666872002,
-	"modificationdate" : 3671707560,
-	"viewrect" : [ 1347.0, 152.0, 333.0, 567.0 ],
+	"modificationdate" : 3672142711,
+	"viewrect" : [ 1907.0, 779.0, 333.0, 567.0 ],
 	"autoorganize" : 1,
 	"hideprojectwindow" : 0,
 	"showdependencies" : 1,
@@ -45,12 +45,12 @@
 				"local" : 1
 			}
 ,
-			"ui_params_MOC.maxpat" : 			{
+			"configLoader.maxpat" : 			{
 				"kind" : "patcher",
 				"local" : 1
 			}
 ,
-			"configLoader.maxpat" : 			{
+			"ui_params_MOC.maxpat" : 			{
 				"kind" : "patcher",
 				"local" : 1
 			}
@@ -85,7 +85,27 @@
 				"local" : 1
 			}
 ,
+			"ui_config_sessions.maxpat" : 			{
+				"kind" : "patcher",
+				"local" : 1
+			}
+,
+			"ui_filelist_pool.maxpat" : 			{
+				"kind" : "patcher",
+				"local" : 1
+			}
+,
+			"ui_filelist_ref.maxpat" : 			{
+				"kind" : "patcher",
+				"local" : 1
+			}
+,
 			"ui_loadStimuli.maxpat" : 			{
+				"kind" : "patcher",
+				"local" : 1
+			}
+,
+			"be_config_getDependencies.maxpat" : 			{
 				"kind" : "patcher",
 				"local" : 1
 			}

@@ -3,6 +3,7 @@ outlets = 2;
 var maxNumItems = 512;
 var selectedItems = new Array(0);
 var itemText = new Array(0);
+var auxText = new Array(0);
 
 var selectedItem = -1;
 var selectionStart = -1;
@@ -20,6 +21,7 @@ function clear() {
         outlet(0, "patcher", "hide", "entry_" + i.toString());
         outlet(0, "item", "send", "entry_" + i.toString());
         outlet(0, "item", "text", "null");
+        outlet(0, "item", "auxtext", " ");
         outlet(0, "item", "highlight", 0);
     }
 }
@@ -34,7 +36,8 @@ function update() {
             else {
                 outlet(0, "item", "highlight", 0);
             }
-            outlet(0, "item", "text" + itemText[i]);
+            outlet(0, "item", "text", itemText[i]);
+            outlet(0, "item", "auxtext", auxText[i]);
             outlet(0, "patcher", "show", "entry_" + i.toString());
         }
         else {
@@ -152,9 +155,11 @@ function append(t) {
 
     selectedItems.push(0);
     itemText.push(t);
+    auxText.push(" ");
     var i = selectedItems.length - 1;
     outlet(0, "item", "send", "entry_" + i.toString());
     outlet(0, "item", "text", t);
+    outlet(0, "item", "auxtext", " ");
     outlet(0, "patcher", "show", "entry_" + i.toString());
 }
 
@@ -171,6 +176,7 @@ function remove() {
     while (i >= 0 && selectedItems.length) {
         selectedItems.splice(i, 1);
         itemText.splice(i, 1);
+        auxText.splice(i, 1);
         i = selectedItems.indexOf(1);
     }
     selectionStart = -1;
@@ -186,6 +192,7 @@ function removeduplicates() {
         while (j > i) {
             selectedItems.splice(j, 1);
             itemText.splice(j, 1);
+            auxText.splice(j, 1);
             j = itemText.indexOf(t, i + 1);
         }
     }
@@ -200,6 +207,16 @@ function rename(i, t) {
     itemText[i] = t;
     outlet(0, "item", "send", "entry_" + i.toString());
     outlet(0, "item", "text", t);
+}
+
+function auxtext(i, t) {
+    if (i < 0 || i >= selectedItems.length) {
+        return;
+    }
+
+    auxText[i] = t;
+    outlet(0, "item", "send", "entry_" + i.toString());
+    outlet(0, "item", "auxtext", t);
 }
 
 function bang() {
