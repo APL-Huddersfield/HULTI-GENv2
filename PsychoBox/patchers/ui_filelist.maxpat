@@ -37,32 +37,8 @@
 		"tags" : "",
 		"style" : "",
 		"subpatcher_template" : "",
-		"globalpatchername" : "u477014624[1][1][1]",
+		"globalpatchername" : "u477014624[1][1][1][2]",
 		"boxes" : [ 			{
-				"box" : 				{
-					"id" : "obj-23",
-					"maxclass" : "live.line",
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 609.0, 326.0, 5.0, 100.0 ],
-					"presentation" : 1,
-					"presentation_rect" : [ 320.0, 0.0, 5.0, 10240.0 ]
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-17",
-					"maxclass" : "live.line",
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 584.0, 326.0, 5.0, 100.0 ],
-					"presentation" : 1,
-					"presentation_rect" : [ 30.0, 0.0, 5.0, 10240.0 ]
-				}
-
-			}
-, 			{
 				"box" : 				{
 					"id" : "obj-19",
 					"maxclass" : "newobj",

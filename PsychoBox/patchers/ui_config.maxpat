@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 1290.0, 335.0, 1270.0, 734.0 ],
+		"rect" : [ 482.0, 204.0, 1491.0, 892.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -64,6 +64,7 @@
 					"clickthrough" : 0,
 					"enablehscroll" : 0,
 					"enablevscroll" : 0,
+					"hidden" : 1,
 					"id" : "obj-24",
 					"lockeddragscroll" : 0,
 					"maxclass" : "bpatcher",
@@ -71,9 +72,9 @@
 					"numinlets" : 0,
 					"numoutlets" : 0,
 					"offset" : [ 0.0, 0.0 ],
-					"patching_rect" : [ 62.0, 200.0, 449.0, 483.0 ],
+					"patching_rect" : [ 62.0, 200.0, 658.0, 503.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 318.0, 170.0, 449.0, 483.0 ],
+					"presentation_rect" : [ 318.0, 170.0, 658.0, 503.0 ],
 					"varname" : "uiStimulusPool",
 					"viewvisibility" : 1
 				}
@@ -86,7 +87,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "int", "bang" ],
-					"patching_rect" : [ 1080.0, 263.0, 29.5, 22.0 ],
+					"patching_rect" : [ 1283.0, 263.0, 29.5, 22.0 ],
 					"text" : "t i b"
 				}
 
@@ -98,7 +99,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 984.0, 365.0, 71.0, 22.0 ],
+					"patching_rect" : [ 1187.0, 365.0, 71.0, 22.0 ],
 					"text" : "uiTestSetup"
 				}
 
@@ -110,7 +111,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 948.0, 397.0, 88.0, 22.0 ],
+					"patching_rect" : [ 1151.0, 397.0, 88.0, 22.0 ],
 					"text" : "uiStimulusPool"
 				}
 
@@ -122,7 +123,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 948.0, 433.0, 84.0, 22.0 ],
+					"patching_rect" : [ 1151.0, 433.0, 84.0, 22.0 ],
 					"text" : "prepend show"
 				}
 
@@ -134,7 +135,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 1090.5, 433.0, 79.0, 22.0 ],
+					"patching_rect" : [ 1293.5, 433.0, 79.0, 22.0 ],
 					"text" : "prepend hide"
 				}
 
@@ -146,7 +147,7 @@
 					"numinlets" : 4,
 					"numoutlets" : 4,
 					"outlettype" : [ "bang", "bang", "bang", "" ],
-					"patching_rect" : [ 948.0, 324.0, 127.0, 22.0 ],
+					"patching_rect" : [ 1151.0, 324.0, 127.0, 22.0 ],
 					"text" : "sel 0 1 2"
 				}
 
@@ -158,7 +159,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 948.0, 490.0, 85.0, 22.0 ],
+					"patching_rect" : [ 1151.0, 490.0, 85.0, 22.0 ],
 					"text" : "prepend script"
 				}
 
@@ -170,7 +171,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 1090.5, 365.0, 157.0, 22.0 ],
+					"patching_rect" : [ 1293.5, 365.0, 157.0, 22.0 ],
 					"text" : "uiStimulusPool, uiTestSetup"
 				}
 
@@ -182,7 +183,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 948.0, 532.0, 67.0, 22.0 ],
+					"patching_rect" : [ 1151.0, 532.0, 67.0, 22.0 ],
 					"save" : [ "#N", "thispatcher", ";", "#Q", "end", ";" ],
 					"text" : "thispatcher"
 				}
@@ -203,7 +204,7 @@
 					"numinlets" : 0,
 					"numoutlets" : 0,
 					"offset" : [ 0.0, 0.0 ],
-					"patching_rect" : [ 536.0, 200.0, 360.0, 270.0 ],
+					"patching_rect" : [ 739.0, 200.0, 360.0, 270.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 318.0, 170.0, 360.0, 270.0 ],
 					"varname" : "uiTestSetup",
@@ -227,7 +228,7 @@
 					"numoutlets" : 1,
 					"offset" : [ 0.0, 0.0 ],
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 1080.0, 149.0, 127.0, 94.0 ],
+					"patching_rect" : [ 1283.0, 149.0, 127.0, 94.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 180.0, 170.0, 127.0, 94.0 ],
 					"viewvisibility" : 1
@@ -277,7 +278,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-9", 0 ],
-					"midpoints" : [ 1100.0, 472.0, 957.5, 472.0 ],
+					"midpoints" : [ 1303.0, 472.0, 1160.5, 472.0 ],
 					"source" : [ "obj-15", 0 ]
 				}
 
@@ -306,7 +307,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-13", 0 ],
-					"midpoints" : [ 1089.5, 309.0, 957.5, 309.0 ],
+					"midpoints" : [ 1292.5, 309.0, 1160.5, 309.0 ],
 					"source" : [ "obj-23", 0 ]
 				}
 

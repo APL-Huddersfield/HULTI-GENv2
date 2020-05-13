@@ -39,39 +39,78 @@
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-47",
+					"maxclass" : "live.line",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 635.0, 314.5, 168.0, 5.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 110.0, 20.0, 546.0, 5.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-20",
+					"maxclass" : "live.line",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 590.0, 317.0, 5.0, 27.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 429.0, 0.0, 8.0, 502.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-26",
+					"maxclass" : "live.line",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 565.0, 317.0, 5.0, 27.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 139.0, 0.0, 8.0, 502.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontface" : 1,
 					"id" : "obj-44",
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 431.0, 332.0, 79.0, 20.0 ],
+					"patching_rect" : [ 431.0, 332.0, 82.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 430.0, 0.0, 79.0, 20.0 ],
+					"presentation_rect" : [ 429.0, 0.0, 82.0, 20.0 ],
 					"text" : "Used by..."
 				}
 
 			}
 , 			{
 				"box" : 				{
+					"fontface" : 1,
 					"id" : "obj-41",
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 347.0, 332.0, 79.0, 20.0 ],
+					"patching_rect" : [ 347.0, 332.0, 84.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 140.0, 0.0, 79.0, 20.0 ],
+					"presentation_rect" : [ 139.0, 0.0, 84.0, 20.0 ],
 					"text" : "Filename"
 				}
 
 			}
 , 			{
 				"box" : 				{
+					"fontface" : 1,
 					"id" : "obj-36",
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 305.0, 332.0, 36.0, 20.0 ],
+					"patching_rect" : [ 305.0, 332.0, 38.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 110.0, 0.0, 37.0, 20.0 ],
+					"presentation_rect" : [ 109.0, 0.0, 39.0, 20.0 ],
 					"text" : "Pos."
 				}
 
@@ -822,7 +861,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 557.0, 26.5, 70.0, 47.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 110.0, 21.0, 546.0, 480.0 ],
+					"presentation_rect" : [ 110.0, 1.0, 546.0, 500.0 ],
 					"proportion" : 0.5,
 					"rounded" : 0,
 					"varname" : "dndGreyout"
@@ -865,7 +904,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 472.0, 26.5, 70.0, 47.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 109.0, 20.0, 548.0, 482.0 ],
+					"presentation_rect" : [ 109.0, 0.0, 548.0, 502.0 ],
 					"proportion" : 0.5,
 					"rounded" : 0
 				}
