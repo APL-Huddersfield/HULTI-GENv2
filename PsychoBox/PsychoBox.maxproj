@@ -2,7 +2,7 @@
 	"name" : "PsychoBox",
 	"version" : 1,
 	"creationdate" : 3666872002,
-	"modificationdate" : 3672212827,
+	"modificationdate" : 3672213355,
 	"viewrect" : [ 1988.0, 518.0, 333.0, 567.0 ],
 	"autoorganize" : 1,
 	"hideprojectwindow" : 0,
@@ -70,6 +70,11 @@
 				"local" : 1
 			}
 ,
+			"ui_config_sessions.maxpat" : 			{
+				"kind" : "patcher",
+				"local" : 1
+			}
+,
 			"ui_config_stimulusPool.maxpat" : 			{
 				"kind" : "patcher",
 				"local" : 1
@@ -85,7 +90,7 @@
 				"local" : 1
 			}
 ,
-			"ui_config_sessions.maxpat" : 			{
+			"ui_filelist_pool.maxpat" : 			{
 				"kind" : "patcher",
 				"local" : 1
 			}

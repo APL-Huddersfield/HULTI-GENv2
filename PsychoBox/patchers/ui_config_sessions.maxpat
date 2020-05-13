@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 1314.0, 79.0, 1212.0, 1327.0 ],
+		"rect" : [ 240.0, 79.0, 1618.0, 1022.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -38,6 +38,147 @@
 		"style" : "",
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
+				"box" : 				{
+					"bgmode" : 0,
+					"border" : 0,
+					"clickthrough" : 0,
+					"enablehscroll" : 0,
+					"enablevscroll" : 0,
+					"id" : "obj-12",
+					"lockeddragscroll" : 0,
+					"maxclass" : "bpatcher",
+					"name" : "ui_filelist_pool.maxpat",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"offset" : [ 0.0, 0.0 ],
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 1229.0, 197.0, 128.0, 128.0 ],
+					"varname" : "ui_filelist_pool",
+					"viewvisibility" : 1
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"angle" : 270.0,
+					"bgcolor" : [ 0.92156862745098, 0.92156862745098, 0.92156862745098, 0.0 ],
+					"border" : 1,
+					"bordercolor" : [ 0.0, 0.0, 0.0, 1.0 ],
+					"id" : "obj-11",
+					"maxclass" : "panel",
+					"mode" : 0,
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 461.0, 37.5, 70.0, 47.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 165.0, 557.0, 548.0, 502.0 ],
+					"proportion" : 0.5,
+					"rounded" : 0
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-47",
+					"maxclass" : "live.line",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 889.0, 317.5, 168.0, 5.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 166.0, 577.0, 546.0, 5.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-6",
+					"maxclass" : "live.line",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 877.0, 295.0, 5.0, 27.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 485.0, 557.0, 8.0, 502.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-26",
+					"maxclass" : "live.line",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 852.0, 295.0, 5.0, 27.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 195.0, 557.0, 8.0, 502.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontface" : 1,
+					"id" : "obj-44",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 758.0, 310.0, 82.0, 20.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 485.0, 557.0, 82.0, 20.0 ],
+					"text" : "Used by..."
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontface" : 1,
+					"id" : "obj-41",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 674.0, 310.0, 84.0, 20.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 195.0, 557.0, 84.0, 20.0 ],
+					"text" : "Filename"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontface" : 1,
+					"id" : "obj-36",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 632.0, 310.0, 38.0, 20.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 165.0, 557.0, 39.0, 20.0 ],
+					"text" : "Pos."
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"bgmode" : 0,
+					"border" : 0,
+					"clickthrough" : 0,
+					"enablehscroll" : 0,
+					"enablevscroll" : 1,
+					"id" : "obj-21",
+					"lockeddragscroll" : 0,
+					"maxclass" : "bpatcher",
+					"name" : "ui_filelist.maxpat",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"offset" : [ 0.0, 0.0 ],
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 569.0, 335.0, 546.0, 237.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 166.0, 578.0, 546.0, 480.0 ],
+					"varname" : "ui_filelist[2]",
+					"viewvisibility" : 1
+				}
+
+			}
+, 			{
 				"box" : 				{
 					"id" : "obj-10",
 					"maxclass" : "message",
@@ -126,7 +267,7 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 195.0, 335.0, 304.0, 337.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 645.0, 298.0, 304.0, 337.0 ],
+					"presentation_rect" : [ 861.0, 160.0, 304.0, 337.0 ],
 					"varname" : "ui_filelist[1]",
 					"viewvisibility" : 1
 				}
@@ -284,38 +425,8 @@
 				}
 
 			}
-, 			{
-				"box" : 				{
-					"bgmode" : 0,
-					"border" : 0,
-					"clickthrough" : 0,
-					"enablehscroll" : 0,
-					"enablevscroll" : 1,
-					"id" : "obj-1",
-					"lockeddragscroll" : 0,
-					"maxclass" : "bpatcher",
-					"name" : "ui_filelist.maxpat",
-					"numinlets" : 1,
-					"numoutlets" : 1,
-					"offset" : [ 0.0, 0.0 ],
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 569.0, 331.0, 346.0, 341.0 ],
-					"presentation" : 1,
-					"presentation_rect" : [ 179.0, 298.0, 331.0, 337.0 ],
-					"varname" : "ui_filelist",
-					"viewvisibility" : 1
-				}
-
-			}
  ],
 		"lines" : [ 			{
-				"patchline" : 				{
-					"destination" : [ "obj-7", 0 ],
-					"source" : [ "obj-1", 0 ]
-				}
-
-			}
-, 			{
 				"patchline" : 				{
 					"destination" : [ "obj-5", 0 ],
 					"midpoints" : [ 441.5, 321.0, 204.5, 321.0 ],
@@ -362,6 +473,13 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-7", 0 ],
+					"source" : [ "obj-21", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-20", 0 ],
 					"source" : [ "obj-23", 0 ]
 				}
@@ -383,14 +501,14 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-1", 0 ],
+					"destination" : [ "obj-21", 0 ],
 					"source" : [ "obj-30", 0 ]
 				}
 
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-1", 0 ],
+					"destination" : [ "obj-21", 0 ],
 					"midpoints" : [ 680.5, 260.0, 578.5, 260.0 ],
 					"source" : [ "obj-33", 1 ]
 				}
@@ -419,7 +537,7 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-1", 0 ],
+					"destination" : [ "obj-21", 0 ],
 					"source" : [ "obj-51", 0 ]
 				}
 
@@ -459,6 +577,13 @@
 				"bootpath" : "~/Documents/Max 8/Projects/PsychoBox/PsychoBox/code",
 				"patcherrelativepath" : "../code",
 				"type" : "TEXT",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "ui_filelist_pool.maxpat",
+				"bootpath" : "~/Documents/Max 8/Projects/PsychoBox/PsychoBox/patchers",
+				"patcherrelativepath" : ".",
+				"type" : "JSON",
 				"implicit" : 1
 			}
  ],
