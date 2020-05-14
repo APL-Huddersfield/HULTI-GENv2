@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 482.0, 204.0, 1491.0, 892.0 ],
+		"rect" : [ 550.0, 367.0, 1118.0, 783.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -64,7 +64,6 @@
 					"clickthrough" : 0,
 					"enablehscroll" : 0,
 					"enablevscroll" : 0,
-					"hidden" : 1,
 					"id" : "obj-24",
 					"lockeddragscroll" : 0,
 					"maxclass" : "bpatcher",
@@ -74,7 +73,7 @@
 					"offset" : [ 0.0, 0.0 ],
 					"patching_rect" : [ 62.0, 200.0, 658.0, 503.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 318.0, 170.0, 658.0, 503.0 ],
+					"presentation_rect" : [ 185.0, 97.0, 658.0, 503.0 ],
 					"varname" : "uiStimulusPool",
 					"viewvisibility" : 1
 				}
@@ -206,7 +205,7 @@
 					"offset" : [ 0.0, 0.0 ],
 					"patching_rect" : [ 739.0, 200.0, 360.0, 270.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 318.0, 170.0, 360.0, 270.0 ],
+					"presentation_rect" : [ 185.0, 97.0, 360.0, 270.0 ],
 					"varname" : "uiTestSetup",
 					"viewvisibility" : 1
 				}
@@ -230,7 +229,7 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 1283.0, 149.0, 127.0, 94.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 180.0, 170.0, 127.0, 94.0 ],
+					"presentation_rect" : [ 47.0, 97.0, 127.0, 94.0 ],
 					"viewvisibility" : 1
 				}
 
@@ -357,6 +356,13 @@
 			}
 , 			{
 				"name" : "ui_config_stimulusPool.maxpat",
+				"bootpath" : "~/Documents/Max 8/Projects/PsychoBox/PsychoBox/patchers",
+				"patcherrelativepath" : ".",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "ui_filelist_pool.maxpat",
 				"bootpath" : "~/Documents/Max 8/Projects/PsychoBox/PsychoBox/patchers",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",

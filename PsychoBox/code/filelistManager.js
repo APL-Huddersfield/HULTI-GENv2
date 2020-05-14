@@ -42,6 +42,7 @@ function update() {
         }
         else {
             outlet(0, "item", "highlight", 0);
+			outlet(0, "item", "auxtext", " ");
             outlet(0, "patcher", "hide", "entry_" + i.toString());
         }
     }
@@ -170,6 +171,12 @@ more selected items are found, by which the entry "display" is updated.
 function remove() {
     if (selectedItems.length == 0) {
         return;
+    }
+
+    for (var i = 0; i < selectedItems.length; ++i) {
+        if (selectedItems[i]) {
+            outlet(0, "output", "removed", i, itemText[i]);
+        }
     }
 
     var i = selectedItems.indexOf(1);

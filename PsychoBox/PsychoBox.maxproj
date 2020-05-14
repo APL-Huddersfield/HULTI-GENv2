@@ -2,8 +2,8 @@
 	"name" : "PsychoBox",
 	"version" : 1,
 	"creationdate" : 3666872002,
-	"modificationdate" : 3672213355,
-	"viewrect" : [ 1988.0, 518.0, 333.0, 567.0 ],
+	"modificationdate" : 3672313869,
+	"viewrect" : [ 1990.0, 435.0, 342.0, 642.0 ],
 	"autoorganize" : 1,
 	"hideprojectwindow" : 0,
 	"showdependencies" : 1,
@@ -70,17 +70,17 @@
 				"local" : 1
 			}
 ,
-			"ui_config_sessions.maxpat" : 			{
-				"kind" : "patcher",
-				"local" : 1
-			}
-,
 			"ui_config_stimulusPool.maxpat" : 			{
 				"kind" : "patcher",
 				"local" : 1
 			}
 ,
-			"ui_filelist.maxpat" : 			{
+			"ui_config_sessions.maxpat" : 			{
+				"kind" : "patcher",
+				"local" : 1
+			}
+,
+			"ui_filelist_pool.maxpat" : 			{
 				"kind" : "patcher",
 				"local" : 1
 			}
@@ -90,7 +90,22 @@
 				"local" : 1
 			}
 ,
-			"ui_filelist_pool.maxpat" : 			{
+			"ui_filelist.maxpat" : 			{
+				"kind" : "patcher",
+				"local" : 1
+			}
+,
+			"ui_filelist_entry_checkbox.maxpat" : 			{
+				"kind" : "patcher",
+				"local" : 1
+			}
+,
+			"ui_filelist_checkbox.maxpat" : 			{
+				"kind" : "patcher",
+				"local" : 1
+			}
+,
+			"ui_filelist_ref.maxpat" : 			{
 				"kind" : "patcher",
 				"local" : 1
 			}
@@ -147,6 +162,11 @@
 ,
 		"data" : 		{
 			"config_menus.json" : 			{
+				"kind" : "json",
+				"local" : 1
+			}
+,
+			"example_config.json" : 			{
 				"kind" : "json",
 				"local" : 1
 			}
