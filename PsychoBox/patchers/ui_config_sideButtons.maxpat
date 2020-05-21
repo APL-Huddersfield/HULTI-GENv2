@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 796.0, 401.0, 985.0, 702.0 ],
+		"rect" : [ 660.0, 349.0, 985.0, 702.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -91,13 +91,12 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-4",
-					"linecount" : 2,
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 687.0, 79.0, 183.0, 35.0 ],
-					"text" : "patcherargs Stimuli \"Test Setup\" Playback"
+					"patching_rect" : [ 687.0, 79.0, 232.0, 22.0 ],
+					"text" : "patcherargs Stimuli \"Test Setup\" Sessions"
 				}
 
 			}
