@@ -6,11 +6,13 @@ var itemXOffset = 10;
 var itemWidth = 128;
 var itemHeight = 20;
 
+var itemsToRemove = new Array();
+
 mgraphics.init();
 
 function Item() {
     this.level = 0;
-    this.hierarchy = new Array();
+    this.children = new Array();
     this.text = "New Item";
     this.expanded = false;
     this.visible = true;
@@ -70,6 +72,54 @@ function itemheight(h) {
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////
 
+function buildtree() {
+    var parent = -1;
+    var currentLevel = 0;
+    var hierachy = new Array();
+    var item;
+    var parentID;
+
+    for (var i = 0; i < items.length; ++i) {
+        items[i].children = new Array();
+    }
+
+    for (var i = 0; i < items.length; ++i) {
+        item = items[i];
+
+        // Deduce the current level and update the hierachy
+        if(item.level == 0) { // Top level
+            currentLevel = 0;
+            hierachy = new Array();
+            hierachy.push(i);
+        }
+        else if (item.level > currentLevel) { // Down a level
+            currentLevel++;
+            hierachy.push(i);
+
+        }
+        else if (item.level < currentLevel) { // Up a level
+            for (var j = 0; j < (currentLevel - item.level); ++j) {
+                currentLevel--;
+                hierachy.pop();
+            }
+        }
+
+        parentID = 0;
+        if (currentLevel > 0) {
+            parentID = hierachy[currentLevel - 1];
+        }
+
+        // Add to children array of parent item
+        if (item.level) {
+            items[parentID].children.push(i);
+        }
+        hierachy[hierachy.length - 1] = i;
+    }
+
+}
+
+////////////////////////////////////////////////////////////////////////////////////////////////////
+
 function append(level, text) {
     if (level < 0) {
         return ;
@@ -80,7 +130,7 @@ function append(level, text) {
     newItem.text = text;
     items.push(newItem);
 
-    buildHierarchy();
+    buildtree();
     updateItemVisibility();
     calcPositions();
     refresh();
@@ -96,67 +146,82 @@ function insert(i, level, text) {
     newItem.text = text;
     items.splice(i, 0, newItem);
 
-    buildHierarchy();
+    buildtree();
     updateItemVisibility();
     calcPositions();
     refresh();
 }
 
-function delete(i) {
+function remove(i) {
     if (i < 0 || i >= items.length) {
         return;
     }
-    items.splice(i, 1);
-    buildHierarchy();
+
+    itemsToRemove = new Array();
+    if (items[i].children.length) { // Delete children first
+        markChildrenForRemoval(i);
+    }
+    itemsToRemove.unshift(i);
+
+    itemsToRemove.sort(function(a, b) {
+        return a - b;
+    });
+    itemsToRemove.reverse();
+
+    for (var j = 0; j < itemsToRemove.length; ++j) {
+        items.splice(itemsToRemove[j], 1);
+    }
+
+    buildtree();
     updateItemVisibility();
     calcPositions();
     refresh();
 }
 
-function buildHierarchy() {
-    var parentPos = 0;
-    var hierarchy = new Array();
-    var currentLevel = 0;
-    for (var i = 0; i < items.length; ++i) {
-        if (items[i].level > currentLevel) {
-            hierarchy.push(i - 1); // Assume previous element is the parent
-            currentLevel = items[i].level;
+function markChildrenForRemoval(i) {
+    var k = 0;
+    for (var j = 0; j < items[i].children.length; ++j) {
+        k = items[i].children[j];
+        if(items[k].children.length) {
+            markChildrenForRemoval(k);
         }
-        else if(items[i].level < currentLevel) {
-            for (var j = 0; j < (currentLevel - items[i].level); ++j) {
-                hierarchy.pop();
-            }
-            currentLevel = items[i].level;
-        }
-
-        // FUCK OFF JS! Why is there no copy constructor?! Why is everything a fucking reference?!!?
-        items[i].hierarchy = new Array();
-        for (var j = 0; j < hierarchy.length; ++j) {
-            items[i].hierarchy.push(hierarchy[j]);
-        }
-        items[i].hierarchy.reverse();
+        itemsToRemove.unshift(k);
     }
 }
-buildHierarchy.local = 1;
 
 function updateItemVisibility() {
     for (var i = 0; i < items.length; ++i) {
-        items[i].visible = parentsOfItemExpanded(items[i]);
+        if (items[i].level == 0) {
+            if (items[i].expanded) {
+                setChildrenVisibility(i, true);
+            }
+            else {
+                setChildrenVisibility(i, false);
+            }
+        }
+        else {
+            continue;
+        }
     }
 }
 updateItemVisibility.local = 1;
 
-function parentsOfItemExpanded(x) {
-    var p = 0;
-    for (var i = 0; i < x.hierarchy.length; ++i) {
-        p = x.hierarchy[i];
-        if (!items[p].expanded) {
-            return false;
+function setChildrenVisibility(i, visible) {
+    var parentItem = items[i];
+    var childItem;
+    var k = 0;
+    for (var j = 0; j < parentItem.children.length; ++j) {
+        k = parentItem.children[j];
+        childItem = items[k];
+        childItem.visible = visible;
+        if (childItem.expanded && childItem.visible) {
+            setChildrenVisibility(k, true);
+        }
+        else {
+            setChildrenVisibility(k, false);
         }
     }
-    return true;
 }
-parentsOfItemExpanded.local = 1;
 
 function calcPositions() {
     var c = 0;
