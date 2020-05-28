@@ -2,8 +2,8 @@
 	"name" : "PsychoBox",
 	"version" : 1,
 	"creationdate" : 3666872002,
-	"modificationdate" : 3672392200,
-	"viewrect" : [ 1313.0, 630.0, 342.0, 642.0 ],
+	"modificationdate" : 3673436254,
+	"viewrect" : [ 1227.0, 283.0, 342.0, 642.0 ],
 	"autoorganize" : 1,
 	"hideprojectwindow" : 0,
 	"showdependencies" : 1,
@@ -164,6 +164,11 @@
 			}
 ,
 			"accordionMenu.js" : 			{
+				"kind" : "javascript",
+				"local" : 1
+			}
+,
+			"configSessionsSidemenu2.js" : 			{
 				"kind" : "javascript",
 				"local" : 1
 			}

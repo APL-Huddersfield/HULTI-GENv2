@@ -14,6 +14,8 @@ var VERT_ALIGN_TOP = 0;
 var VERT_ALIGN_CENTRE = 1;
 var VERT_ALIGN_BOTTOM = 2;
 
+
+// Bounds
 var boxWidth = this.box.rect[2] - this.box.rect[0];
 var boxHeight = this.box.rect[3] - this.box.rect[1];
 
@@ -21,24 +23,36 @@ var itemXOffset = 10;
 var itemWidth = 128;
 var itemHeight = 20;
 
+// Global colours
+var unselectedItemTextRGB = [0, 0, 0];
+var selectedItemTextRGB = [1, 1, 1];
+
+var unSelectedBgRGBA = [0, 0, 0, 0];
+var selectedBgRGBA = [0.000, 0.475, 0.996, 1.000];
+
+// Items variables
 var itemsToRemove = new Array();
+var selectedSession = -1;
+var selectedGroup = -1;
 
 mgraphics.init();
+
+// Item
+var SESSION_TYPE = 0;
+var GROUP_TYPE = 1;
 
 function Item() {
     this.level = 0;
     this.children = new Array();
-    this.expanded = false;
+    this.expanded = true;
     this.visible = true;
-    this.parentPos = -1;
 
     this.text = "New Item";
     this.horzAlign = HORZ_ALIGN_LEFT;
     this.vertAlign = VERT_ALIGN_CENTRE;
     this.isContainer = true;
 
-    this.expandedBgRGBA = [0.000, 0.475, 0.996, 1.000];
-    this.collapsedBgRGBA = [0, 0, 0, 0];
+    this.selected = false;
 
     this.x = 0;
     this.y = 0;
@@ -56,6 +70,7 @@ function paint() {
     }
 
     drawItems();
+    drawAddSessionButton(0, items.length * itemHeight);
 }
 
 function drawItems() {
@@ -72,10 +87,7 @@ function drawItems() {
             stroke();
 
             drawItemBackground(i);
-
-            set_source_rgba(0, 0, 0, 1);
-            select_font_face("Arial");
-            drawText(items[i].x + 2, items[i].y + 10, items[i].horzAlign, items[i].vertAlign, items[i].text);
+            drawItemText(i);
             if (items[i].isContainer) {
                 drawExpansionArrow(items[i].x, items[i].y, items[i].expanded);
             }
@@ -85,19 +97,29 @@ function drawItems() {
 
 function drawItemBackground(i) {
     with (mgraphics) {
-        if (items[i].expanded) {
-            set_source_rgba(items[i].expandedBgRGBA);
+        with (mgraphics) {
+            if (items[i].selected) {
+                set_source_rgba(selectedBgRGBA);
+            }
+            else {
+                set_source_rgba(unSelectedBgRGBA);
+            }
+            rectangle(items[i].x, items[i].y, itemWidth, itemHeight);
+            fill();
         }
-        else {
-            set_source_rgba(items[i].collapsedBgRGBA);
-        }
-        rectangle(items[i].x, items[i].y, itemWidth, itemHeight);
-        fill();
     }
 }
 
 function drawItemText(i) {
-    
+    with (mgraphics) {
+        if (items[i].selected) {
+            set_source_rgb(1, 1, 1);
+        }
+        else {
+            set_source_rgb(0, 0, 0);
+        }
+        drawText(items[i].x + 2, items[i].y + 10, items[i].horzAlign, items[i].vertAlign, items[i].text);
+    }
 }
 
 function drawExpansionArrow(x, y, expanded) {
@@ -141,6 +163,24 @@ function drawExpansionArrow(x, y, expanded) {
             line_to(x2 + x, y2);
             line_to(x3 + x, y3);
         }
+    }
+}
+
+function drawAddSessionButton(x, y) {
+    with (mgraphics) {
+        set_source_rgba(0, 0, 0, 1);
+        rectangle(x, y, itemWidth, itemHeight);
+        stroke();
+        drawText(itemWidth / 2.0, y + 10, HORZ_ALIGN_CENTRE, VERT_ALIGN_CENTRE, "Add Session +");
+    }
+}
+
+function drawAddGroupButton(x, y) {
+    with (mgraphics) {
+        set_source_rgba(0, 0, 0, 1);
+        rectangle(x, y, itemWidth, itemHeight);
+        stroke();
+        drawText(itemWidth / 2.0, y + 10, HORZ_ALIGN_CENTRE, VERT_ALIGN_CENTRE, "Add Group +");
     }
 }
 
@@ -205,7 +245,6 @@ function buildtree() {
         }
         hierarchy[hierarchy.length - 1] = i;
     }
-
 }
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -416,12 +455,28 @@ function getClickedBox(mX, mY) {
 }
 getClickedBox.local = 1;
 
+function selectItem(i) {
+    items[i].selected = true;
+    for (var j = 0; j < items.length; ++j) {
+        if (j == i) {
+            continue;
+        }
+        if (items[j].level == items[i].level) {
+            items[j].selected = false;
+        }
+    }
+
+    // If top level, select its first child
+    if (items[i].level == 0) {
+
+    }
+}
+
 function onclick(x, y, but, cmd, shift, capslock, option, ctrl) {
     i = getClickedBox(x, y);
+    selectedItem = i;
     if (i > -1) {
-        if (items[i].isContainer) {
-            items[i].expanded = !items[i].expanded;
-        }
+        selectItem(i);
         updateItemVisibility();
         calcPositions();
         outlet(0, i);
