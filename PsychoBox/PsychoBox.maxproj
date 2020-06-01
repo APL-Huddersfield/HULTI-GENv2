@@ -2,7 +2,7 @@
 	"name" : "PsychoBox",
 	"version" : 1,
 	"creationdate" : 3666872002,
-	"modificationdate" : 3673436254,
+	"modificationdate" : 3673603786,
 	"viewrect" : [ 1227.0, 283.0, 342.0, 642.0 ],
 	"autoorganize" : 1,
 	"hideprojectwindow" : 0,
@@ -70,12 +70,22 @@
 				"local" : 1
 			}
 ,
-			"ui_params_MOC.maxpat" : 			{
+			"ui_config_stimulusPool.maxpat" : 			{
 				"kind" : "patcher",
 				"local" : 1
 			}
 ,
-			"ui_config_stimulusPool.maxpat" : 			{
+			"ui_config_sessions.maxpat" : 			{
+				"kind" : "patcher",
+				"local" : 1
+			}
+,
+			"ui_config_sessions_sidemenu.maxpat" : 			{
+				"kind" : "patcher",
+				"local" : 1
+			}
+,
+			"be_config_getDependencies.maxpat" : 			{
 				"kind" : "patcher",
 				"local" : 1
 			}
@@ -95,16 +105,6 @@
 				"local" : 1
 			}
 ,
-			"be_config_getDependencies.maxpat" : 			{
-				"kind" : "patcher",
-				"local" : 1
-			}
-,
-			"ui_config_sessions.maxpat" : 			{
-				"kind" : "patcher",
-				"local" : 1
-			}
-,
 			"ui_filelist_ref.maxpat" : 			{
 				"kind" : "patcher",
 				"local" : 1
@@ -116,6 +116,11 @@
 			}
 ,
 			"ui_filelist_entry_checkbox.maxpat" : 			{
+				"kind" : "patcher",
+				"local" : 1
+			}
+,
+			"ui_params_MOC.maxpat" : 			{
 				"kind" : "patcher",
 				"local" : 1
 			}
@@ -134,6 +139,11 @@
 			}
 ,
 			"schemaValidator2.js" : 			{
+				"kind" : "javascript",
+				"local" : 1
+			}
+,
+			"configSessionsSidemenu3.js" : 			{
 				"kind" : "javascript",
 				"local" : 1
 			}
