@@ -246,14 +246,17 @@ function updateobjects() {
         for (var j = 0; j < sesh.groups.length; ++j) {
             group = sesh.groups[j];
             group.id = j;
-            if (sesh.expanded) {
+            if (sesh.selected) {
                 group.visible = true;
                 objects.push(group);
+            }
+            else {
+                group.visible = false;
             }
         }
         var newAddGroupButton = new AddGroup();
         newAddGroupButton.parentSession = sesh.id;
-        if(sesh.expanded) {
+        if(sesh.selected) {
             newAddGroupButton.visible = true;
             objects.push(newAddGroupButton);
         }
@@ -284,7 +287,7 @@ calcObjectPositions.local = 1;
 
 function addsession() {
     var newSesh = new Session();
-    newSesh.text = "Session " + sessions.length;
+    newSesh.text = "Session " + (sessions.length + 1);
     sessions.push(newSesh);
     addgroup(sessions.length - 1);
 }
@@ -410,8 +413,8 @@ function selectgroup(i, j) {
     sesh.groups[j].textColour = SELECTED_ITEM_TEXT_COLOUR;
 
     selectedSession = i;
+    updateobjects();
     refresh();
-    outlet(0, "selected", i, j);
 }
 
 function expand(i, expandFlag) {
@@ -451,26 +454,27 @@ function onObjectClicked(x, y, i) {
     var obj = objects[i];
     if (obj.type == SESSION_TYPE) {
         onSessionClicked(x, y, obj);
+        outlet(0, "selected", obj.id, 0);
     }
     else if (obj.type == GROUP_TYPE) {
         selectgroup(obj.parentSession, obj.id);
+        outlet(0, "selected", obj.parentSession, obj.id);
     }
     else if (obj.type == ADD_SESSION_TYPE) {
         addsession();
         outlet(0, "sessionadded", sessions.length - 1);
+        outlet(0, "selected", sessions.length - 1, 0);
     }
     else if (obj.type == ADD_GROUP_TYPE) {
         addgroup(obj.parentSession);
         var sesh = sessions[obj.parentSession];
         outlet(0, "groupadded", sesh.id, sesh.groups.length - 1);
+        outlet(0, "selected", sesh.id, sesh.groups.length - 1);
     }
 }
 onObjectClicked.local = 1;
 
 function onSessionClicked(x, y, sesh) {
     selectsession(sesh.id);
-    if (x >= (sesh.x + itemWidth - 20) && x <= (sesh.x + itemWidth)) {
-        expand(sesh.id, !sesh.expanded);
-    }
 }
 onSessionClicked.local = 1;

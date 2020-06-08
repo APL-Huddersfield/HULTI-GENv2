@@ -1,0 +1,28 @@
+{
+    "setup" : {
+        "model" : "htt",
+        "task" : {
+            "type" : "methodOfConstants",
+            "parameters" : {
+                "presentations" : 10
+            }
+        },
+        "interface" : {
+            "type" : "yesNo",
+            "question" : "Did you hear the tone?"
+        },
+        "gui" : {
+            "showButtons" : "true",
+            "showCorrectAnswer" : "false"
+        },
+        "playback" : {
+            "pauses" : {
+                "beforePresentation" : 0,
+                "betweenStimuli" : 250,
+                "afterPresentation" : 0
+            }
+        }
+    },
+    "pool" : "",
+    "sessions" : ""
+}
