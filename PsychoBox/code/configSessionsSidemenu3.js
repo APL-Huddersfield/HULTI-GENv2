@@ -430,11 +430,16 @@ function expand(i, expandFlag) {
 function onclick(x, y, but, cmd, shift, capslock, option, ctrl) {
     var objID = getClickedObject(x, y);
     if (objID > -1) {
-        onObjectClicked(x, y, objID);
+        onObjectClicked(x, y, objID, shift);
     }
     refresh();
 }
 onclick.local = 1;
+
+function onidle(x, y, but, cmd, shift, capslock, option, ctrl) {
+    // TODO : add code to highlight and modify item appearance based on modifier buttons
+
+}
 
 function getClickedObject(mX, mY) {
     var obj;
@@ -450,15 +455,13 @@ function getClickedObject(mX, mY) {
 }
 getClickedObject.local = 1;
 
-function onObjectClicked(x, y, i) {
+function onObjectClicked(x, y, i, shift) {
     var obj = objects[i];
     if (obj.type == SESSION_TYPE) {
-        onSessionClicked(x, y, obj);
-        outlet(0, "selected", obj.id, 0);
+        onSessionClicked(x, y, obj, shift);
     }
     else if (obj.type == GROUP_TYPE) {
-        selectgroup(obj.parentSession, obj.id);
-        outlet(0, "selected", obj.parentSession, obj.id);
+        onGroupClicked(x, y, obj, shift);
     }
     else if (obj.type == ADD_SESSION_TYPE) {
         addsession();
@@ -474,7 +477,24 @@ function onObjectClicked(x, y, i) {
 }
 onObjectClicked.local = 1;
 
-function onSessionClicked(x, y, sesh) {
-    selectsession(sesh.id);
+function onSessionClicked(x, y, sesh, shift) {
+    if (shift) {
+        outlet(0, "remove", "session", sesh.id);
+    }
+    else {
+        selectsession(sesh.id);
+        outlet(0, "selected", sesh.id, 0);
+    }
 }
 onSessionClicked.local = 1;
+
+function onGroupClicked(x, y, group, shift) {
+    if (shift) {
+        outlet(0, "remove", "group", group.parentSession, group.id);
+    }
+    else {
+        selectgroup(group.parentSession, group.id);
+        outlet(0, "selected", group.parentSession, group.id);
+    }
+}
+onGroupClicked.local = 1;

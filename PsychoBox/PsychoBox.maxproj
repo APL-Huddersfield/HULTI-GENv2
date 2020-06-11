@@ -2,8 +2,8 @@
 	"name" : "PsychoBox",
 	"version" : 1,
 	"creationdate" : 3666872002,
-	"modificationdate" : 3674475927,
-	"viewrect" : [ 1147.0, 593.0, 342.0, 642.0 ],
+	"modificationdate" : 3674733438,
+	"viewrect" : [ 1254.0, 615.0, 342.0, 549.0 ],
 	"autoorganize" : 1,
 	"hideprojectwindow" : 0,
 	"showdependencies" : 1,
@@ -100,17 +100,17 @@
 				"local" : 1
 			}
 ,
-			"ui_filelist_ref.maxpat" : 			{
-				"kind" : "patcher",
-				"local" : 1
-			}
-,
 			"ui_filelist_checkbox.maxpat" : 			{
 				"kind" : "patcher",
 				"local" : 1
 			}
 ,
 			"ui_filelist_entry_checkbox.maxpat" : 			{
+				"kind" : "patcher",
+				"local" : 1
+			}
+,
+			"ui_filelist_ref.maxpat" : 			{
 				"kind" : "patcher",
 				"local" : 1
 			}
@@ -132,6 +132,24 @@
 ,
 			"be_makeNewConfig.maxpat" : 			{
 				"kind" : "patcher",
+				"local" : 1
+			}
+,
+			"dialog_deleteSessionItem.maxpat" : 			{
+				"kind" : "patcher",
+				"local" : 1
+			}
+,
+			"be_dialogOpener.maxpat" : 			{
+				"kind" : "patcher",
+				"local" : 1
+			}
+
+		}
+,
+		"media" : 		{
+			"warning.png" : 			{
+				"kind" : "imagefile",
 				"local" : 1
 			}
 
