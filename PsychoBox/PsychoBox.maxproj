@@ -2,7 +2,7 @@
 	"name" : "PsychoBox",
 	"version" : 1,
 	"creationdate" : 3666872002,
-	"modificationdate" : 3675682071,
+	"modificationdate" : 3675686073,
 	"viewrect" : [ 1261.0, 677.0, 342.0, 549.0 ],
 	"autoorganize" : 1,
 	"hideprojectwindow" : 0,
@@ -60,22 +60,7 @@
 				"local" : 1
 			}
 ,
-			"ui_config_sideButtons.maxpat" : 			{
-				"kind" : "patcher",
-				"local" : 1
-			}
-,
-			"ui_config_testSetup.maxpat" : 			{
-				"kind" : "patcher",
-				"local" : 1
-			}
-,
-			"ui_params_MOC.maxpat" : 			{
-				"kind" : "patcher",
-				"local" : 1
-			}
-,
-			"ui_config_stimulusPool.maxpat" : 			{
+			"ui_config_sessions.maxpat" : 			{
 				"kind" : "patcher",
 				"local" : 1
 			}
@@ -91,16 +76,6 @@
 			}
 ,
 			"ui_filelist_entry.maxpat" : 			{
-				"kind" : "patcher",
-				"local" : 1
-			}
-,
-			"ui_testSetup_2AFC.maxpat" : 			{
-				"kind" : "patcher",
-				"local" : 1
-			}
-,
-			"ui_config_sessions.maxpat" : 			{
 				"kind" : "patcher",
 				"local" : 1
 			}
@@ -121,6 +96,31 @@
 			}
 ,
 			"be_config_getDependencies.maxpat" : 			{
+				"kind" : "patcher",
+				"local" : 1
+			}
+,
+			"ui_config_stimulusPool.maxpat" : 			{
+				"kind" : "patcher",
+				"local" : 1
+			}
+,
+			"ui_config_sideButtons.maxpat" : 			{
+				"kind" : "patcher",
+				"local" : 1
+			}
+,
+			"ui_config_testSetup.maxpat" : 			{
+				"kind" : "patcher",
+				"local" : 1
+			}
+,
+			"ui_testSetup_2AFC.maxpat" : 			{
+				"kind" : "patcher",
+				"local" : 1
+			}
+,
+			"ui_params_MOC.maxpat" : 			{
 				"kind" : "patcher",
 				"local" : 1
 			}
@@ -146,6 +146,11 @@
 			}
 ,
 			"be_dialogOpener.maxpat" : 			{
+				"kind" : "patcher",
+				"local" : 1
+			}
+,
+			"testcontrol_master.maxpat" : 			{
 				"kind" : "patcher",
 				"local" : 1
 			}
