@@ -499,8 +499,8 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 414.0, 375.0, 97.0, 22.0 ],
-					"text" : "s fromDialogBox"
+					"patching_rect" : [ 414.0, 375.0, 187.0, 22.0 ],
+					"text" : "s fromRemoveSessionItemDialog"
 				}
 
 			}
@@ -636,7 +636,7 @@
 					"presentation" : 1,
 					"presentation_linecount" : 2,
 					"presentation_rect" : [ 80.0, 10.0, 283.0, 33.0 ],
-					"text" : "This #1 contains stimuli. Are you sure you want to delete this #1?"
+					"text" : "This 0 contains stimuli. Are you sure you want to delete this 0?"
 				}
 
 			}

@@ -1,0 +1,12 @@
+1 [P] - Functionality of file list operations and side menu are disabled.
+        - Pass if session stimulus operations can be done, and no errors appear in the console. Presence
+            of keys should be detected, so that in the event of missing keys, no operations can be
+            performed.
+        - Fail if errors regarding missing keys in the config dictionary as this indicates that the menu
+            did not detect that keys were missing beforehand.
+
+2 [ ] - If keys are detected, update the side menu on view of the sessions screen.
+        - Pass if keys are correctly detected and the correct sessions and groups are displayed in
+            in the side menu.
+        - Fail if errors regarding missing or invalid access of keys, or if sessions and groups are
+            incorrectly displayed.

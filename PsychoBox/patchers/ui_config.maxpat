@@ -4,13 +4,13 @@
 		"appversion" : 		{
 			"major" : 8,
 			"minor" : 1,
-			"revision" : 3,
+			"revision" : 4,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 421.0, 342.0, 1300.0, 937.0 ],
+		"rect" : [ 709.0, 102.0, 1300.0, 591.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -38,16 +38,38 @@
 		"style" : "",
 		"subpatcher_template" : "",
 		"workspacedisabled" : 1,
+		"assistshowspatchername" : 0,
 		"globalpatchername" : "u379026324",
 		"boxes" : [ 			{
 				"box" : 				{
+					"bgmode" : 0,
+					"border" : 0,
+					"clickthrough" : 0,
+					"enablehscroll" : 0,
+					"enablevscroll" : 0,
 					"id" : "obj-7",
+					"lockeddragscroll" : 0,
+					"maxclass" : "bpatcher",
+					"name" : "ui_testSetup_2AFC.maxpat",
+					"numinlets" : 0,
+					"numoutlets" : 0,
+					"offset" : [ 0.0, 0.0 ],
+					"patching_rect" : [ 739.0, 372.0, 544.0, 235.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 185.0, 273.0, 544.0, 235.0 ],
+					"viewvisibility" : 1
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-4",
 					"maxclass" : "message",
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 840.0, 580.0, 69.0, 22.0 ],
-					"text" : "addsession"
+					"patching_rect" : [ 299.0, 66.0, 145.0, 22.0 ],
+					"text" : "read example_config.json"
 				}
 
 			}
@@ -208,7 +230,6 @@
 					"clickthrough" : 0,
 					"enablehscroll" : 0,
 					"enablevscroll" : 0,
-					"hidden" : 1,
 					"id" : "obj-18",
 					"lockeddragscroll" : 0,
 					"maxclass" : "bpatcher",
@@ -218,7 +239,7 @@
 					"offset" : [ 0.0, 0.0 ],
 					"patching_rect" : [ 739.0, 200.0, 360.0, 270.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 185.0, 97.0, 360.0, 270.0 ],
+					"presentation_rect" : [ 185.0, 97.0, 360.0, 174.0 ],
 					"varname" : "uiTestSetup",
 					"viewvisibility" : 1
 				}
@@ -333,6 +354,13 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-5", 0 ],
+					"source" : [ "obj-4", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-15", 0 ],
 					"source" : [ "obj-6", 0 ]
 				}
@@ -400,6 +428,13 @@
 				"bootpath" : "~/Documents/Max 8/Projects/PsychoBox/PsychoBox/code",
 				"patcherrelativepath" : "../code",
 				"type" : "TEXT",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "ui_testSetup_2AFC.maxpat",
+				"bootpath" : "~/Documents/Max 8/Projects/PsychoBox/PsychoBox/patchers",
+				"patcherrelativepath" : ".",
+				"type" : "JSON",
 				"implicit" : 1
 			}
  ],

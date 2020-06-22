@@ -1,0 +1,61 @@
+{
+    "setup" : {
+        "modelChoices" : ["htt", "sdt"],
+        "model" : "sdt",
+        "task" : {
+            "type" : "2afc",
+            "parameters" : {
+                "repetitions" : 10,
+                "objective" : "Select the stimulus with the loudest reverb",
+                "numStimuliPerGroup" : 20
+            }
+        },
+        "gui" : {
+            "showButtons" : "true",
+            "showCorrectAnswer" : "false"
+        },
+        "playback" : {
+            "pauses" : {
+                "beforePresentation" : 0,
+                "betweenStimuli" : 250,
+                "afterPresentation" : 0
+            }
+        }
+    },
+    "pool" : ["1a.wav", "1b.wav", "1c.wav", "1d.wav",
+              "2a.wav", "2b.wav", "2c.wav", "2d.wav",
+              "3a.wav", "3b.wav", "3c.wav", "3d.wav",
+              "4a.wav", "4b.wav", "4c.wav", "4d.wav",
+              "5a.wav", "5b.wav", "5c.wav", "5d.wav",
+              "6a.wav", "6b.wav", "6c.wav", "6d.wav"],
+    "sessions" : [{
+        "groups" : [{
+            "stimuli" : ["1a.wav", "1b.wav", "1c.wav", "1d.wav"],
+            "reference" : 0
+        },
+        {
+            "stimuli" : ["2a.wav", "2b.wav", "2c.wav", "2d.wav"],
+            "reference" : 0
+        }]
+    },
+    {
+        "groups" : [{
+            "stimuli" : ["3a.wav", "3b.wav", "3c.wav", "3d.wav"],
+            "reference" : 0
+        },
+        {
+            "stimuli" : ["4a.wav", "4b.wav", "4c.wav", "4d.wav"],
+            "reference" : 0
+        }]
+    },
+    {
+        "groups" : [{
+            "stimuli" : ["5a.wav", "5b.wav", "5c.wav", "5d.wav"],
+            "reference" : 0
+        },
+        {
+            "stimuli" : ["6a.wav", "6b.wav", "6c.wav", "6d.wav"],
+            "reference" : 0
+        }]
+    }]
+}

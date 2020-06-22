@@ -437,8 +437,7 @@ function onclick(x, y, but, cmd, shift, capslock, option, ctrl) {
 onclick.local = 1;
 
 function onidle(x, y, but, cmd, shift, capslock, option, ctrl) {
-    // TODO : add code to highlight and modify item appearance based on modifier buttons
-
+    // TODO : add code to highlight and modify item appearance based on modifier button
 }
 
 function getClickedObject(mX, mY) {
