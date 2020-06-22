@@ -4,15 +4,15 @@
 		"appversion" : 		{
 			"major" : 8,
 			"minor" : 1,
-			"revision" : 4,
+			"revision" : 5,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 676.0, 356.0, 1412.0, 750.0 ],
+		"rect" : [ 63.0, 213.0, 1300.0, 867.0 ],
 		"bglocked" : 0,
-		"openinpresentation" : 0,
+		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
 		"default_fontface" : 0,
 		"default_fontname" : "Arial",
@@ -46,7 +46,6 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 115.0, 131.0, 150.0, 60.0 ],
-					"presentation_linecount" : 3,
 					"text" : "Idea 2 : Define repetitions here rather than in test setup\n"
 				}
 
@@ -192,7 +191,7 @@
 						"appversion" : 						{
 							"major" : 8,
 							"minor" : 1,
-							"revision" : 4,
+							"revision" : 5,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -921,7 +920,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 1256.0, 393.0, 78.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 620.0, 15.5, 88.0, 20.0 ],
+					"presentation_rect" : [ 607.0, 3.5, 88.0, 20.0 ],
 					"text" : "Unselect",
 					"textoncolor" : [ 0.0, 0.0, 0.0, 1.0 ],
 					"textovercolor" : [ 0.101960784313725, 0.411764705882353, 0.796078431372549, 1.0 ],
@@ -941,7 +940,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 1197.5, 426.0, 78.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 530.0, 15.5, 88.0, 20.0 ],
+					"presentation_rect" : [ 517.0, 3.5, 88.0, 20.0 ],
 					"text" : "Select All",
 					"textoncolor" : [ 0.0, 0.0, 0.0, 1.0 ],
 					"textovercolor" : [ 0.101960784313725, 0.411764705882353, 0.796078431372549, 1.0 ],
@@ -1068,7 +1067,7 @@
 						"appversion" : 						{
 							"major" : 8,
 							"minor" : 1,
-							"revision" : 4,
+							"revision" : 5,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -1507,7 +1506,7 @@
 						"appversion" : 						{
 							"major" : 8,
 							"minor" : 1,
-							"revision" : 4,
+							"revision" : 5,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -2108,7 +2107,7 @@
 						"appversion" : 						{
 							"major" : 8,
 							"minor" : 1,
-							"revision" : 4,
+							"revision" : 5,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -2178,7 +2177,7 @@
 										"appversion" : 										{
 											"major" : 8,
 											"minor" : 1,
-											"revision" : 4,
+											"revision" : 5,
 											"architecture" : "x64",
 											"modernui" : 1
 										}
@@ -2497,7 +2496,7 @@
 										"appversion" : 										{
 											"major" : 8,
 											"minor" : 1,
-											"revision" : 4,
+											"revision" : 5,
 											"architecture" : "x64",
 											"modernui" : 1
 										}
@@ -3214,7 +3213,7 @@
 						"appversion" : 						{
 							"major" : 8,
 							"minor" : 1,
-							"revision" : 4,
+							"revision" : 5,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -3260,7 +3259,7 @@
 										"appversion" : 										{
 											"major" : 8,
 											"minor" : 1,
-											"revision" : 4,
+											"revision" : 5,
 											"architecture" : "x64",
 											"modernui" : 1
 										}
@@ -3558,7 +3557,7 @@
 														"appversion" : 														{
 															"major" : 8,
 															"minor" : 1,
-															"revision" : 4,
+															"revision" : 5,
 															"architecture" : "x64",
 															"modernui" : 1
 														}
@@ -3904,7 +3903,7 @@
 														"appversion" : 														{
 															"major" : 8,
 															"minor" : 1,
-															"revision" : 4,
+															"revision" : 5,
 															"architecture" : "x64",
 															"modernui" : 1
 														}
@@ -4010,7 +4009,7 @@
 																		"appversion" : 																		{
 																			"major" : 8,
 																			"minor" : 1,
-																			"revision" : 4,
+																			"revision" : 5,
 																			"architecture" : "x64",
 																			"modernui" : 1
 																		}
@@ -4900,7 +4899,7 @@
 										"appversion" : 										{
 											"major" : 8,
 											"minor" : 1,
-											"revision" : 4,
+											"revision" : 5,
 											"architecture" : "x64",
 											"modernui" : 1
 										}
@@ -5433,7 +5432,7 @@
 										"appversion" : 										{
 											"major" : 8,
 											"minor" : 1,
-											"revision" : 4,
+											"revision" : 5,
 											"architecture" : "x64",
 											"modernui" : 1
 										}
@@ -5912,7 +5911,7 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 517.166666999999961, 131.0, 127.0, 260.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 14.166666999999961, 41.0, 142.0, 502.0 ],
+					"presentation_rect" : [ 0.0, 29.0, 142.0, 502.0 ],
 					"viewvisibility" : 1
 				}
 
@@ -5969,7 +5968,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 260.0, 531.0, 210.0, 27.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 776.0, 12.0, 186.0, 27.0 ],
+					"presentation_rect" : [ 763.0, 0.0, 186.0, 27.0 ],
 					"text" : "Session 0 , Group 0"
 				}
 
@@ -5984,7 +5983,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 1120.5, 570.0, 134.0, 27.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 160.0, 12.0, 186.0, 27.0 ],
+					"presentation_rect" : [ 147.0, 0.0, 186.0, 27.0 ],
 					"text" : "Stimulus Pool"
 				}
 
@@ -6006,7 +6005,7 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 59.0, 574.0, 424.0, 150.5 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 776.0, 41.0, 454.0, 502.0 ],
+					"presentation_rect" : [ 763.0, 29.0, 454.0, 502.0 ],
 					"varname" : "ui_filelist_ref",
 					"viewvisibility" : 1
 				}
@@ -6029,7 +6028,7 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 684.0, 570.0, 424.0, 150.5 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 160.0, 41.0, 548.0, 502.0 ],
+					"presentation_rect" : [ 147.0, 29.0, 548.0, 502.0 ],
 					"varname" : "ui_filelist_pool",
 					"viewvisibility" : 1
 				}
@@ -6107,7 +6106,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 303.5, 354.0, 78.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 1142.0, 15.5, 88.0, 20.0 ],
+					"presentation_rect" : [ 1129.0, 3.5, 88.0, 20.0 ],
 					"text" : "Unselect",
 					"textoncolor" : [ 0.0, 0.0, 0.0, 1.0 ],
 					"textovercolor" : [ 0.101960784313725, 0.411764705882353, 0.796078431372549, 1.0 ],
@@ -6127,7 +6126,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 196.0, 354.0, 78.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 1052.0, 15.5, 88.0, 20.0 ],
+					"presentation_rect" : [ 1039.0, 3.5, 88.0, 20.0 ],
 					"text" : "Select All",
 					"textoncolor" : [ 0.0, 0.0, 0.0, 1.0 ],
 					"textovercolor" : [ 0.101960784313725, 0.411764705882353, 0.796078431372549, 1.0 ],
@@ -6147,7 +6146,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 59.0, 354.0, 100.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 716.0, 275.0, 52.0, 42.0 ],
+					"presentation_rect" : [ 703.0, 263.0, 52.0, 42.0 ],
 					"text" : "<<",
 					"textcolor" : [ 0.572549019607843, 0.572549019607843, 0.572549019607843, 1.0 ],
 					"textoncolor" : [ 0.0, 0.0, 0.0, 1.0 ],
@@ -6168,7 +6167,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 1020.0, 393.0, 100.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 716.0, 225.0, 52.0, 42.0 ],
+					"presentation_rect" : [ 703.0, 213.0, 52.0, 42.0 ],
 					"text" : ">>",
 					"textcolor" : [ 0.572549019607843, 0.572549019607843, 0.572549019607843, 1.0 ],
 					"textoncolor" : [ 0.0, 0.0, 0.0, 1.0 ],
@@ -6720,70 +6719,70 @@
  ],
 		"dependency_cache" : [ 			{
 				"name" : "ui_filelist_pool.maxpat",
-				"bootpath" : "~/Documents/Max 8/Projects/PsychoBox/PsychoBox/patchers",
+				"bootpath" : "~/Documents/Max 8/Projects/HULTI-GENv2/PsychoBox/patchers",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "ui_filelist.maxpat",
-				"bootpath" : "~/Documents/Max 8/Projects/PsychoBox/PsychoBox/patchers",
+				"bootpath" : "~/Documents/Max 8/Projects/HULTI-GENv2/PsychoBox/patchers",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "ui_filelist_entry.maxpat",
-				"bootpath" : "~/Documents/Max 8/Projects/PsychoBox/PsychoBox/patchers",
+				"bootpath" : "~/Documents/Max 8/Projects/HULTI-GENv2/PsychoBox/patchers",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "filelistManager.js",
-				"bootpath" : "~/Documents/Max 8/Projects/PsychoBox/PsychoBox/code",
+				"bootpath" : "~/Documents/Max 8/Projects/HULTI-GENv2/PsychoBox/code",
 				"patcherrelativepath" : "../code",
 				"type" : "TEXT",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "ui_filelist_ref.maxpat",
-				"bootpath" : "~/Documents/Max 8/Projects/PsychoBox/PsychoBox/patchers",
+				"bootpath" : "~/Documents/Max 8/Projects/HULTI-GENv2/PsychoBox/patchers",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "ui_filelist_checkbox.maxpat",
-				"bootpath" : "~/Documents/Max 8/Projects/PsychoBox/PsychoBox/patchers",
+				"bootpath" : "~/Documents/Max 8/Projects/HULTI-GENv2/PsychoBox/patchers",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "ui_filelist_entry_checkbox.maxpat",
-				"bootpath" : "~/Documents/Max 8/Projects/PsychoBox/PsychoBox/patchers",
+				"bootpath" : "~/Documents/Max 8/Projects/HULTI-GENv2/PsychoBox/patchers",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "ui_accordion.maxpat",
-				"bootpath" : "~/Documents/Max 8/Projects/PsychoBox/PsychoBox/patchers",
+				"bootpath" : "~/Documents/Max 8/Projects/HULTI-GENv2/PsychoBox/patchers",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "configSessionsSidemenu3.js",
-				"bootpath" : "~/Documents/Max 8/Projects/PsychoBox/PsychoBox/code",
+				"bootpath" : "~/Documents/Max 8/Projects/HULTI-GENv2/PsychoBox/code",
 				"patcherrelativepath" : "../code",
 				"type" : "TEXT",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "be_config_getDependencies.maxpat",
-				"bootpath" : "~/Documents/Max 8/Projects/PsychoBox/PsychoBox/patchers",
+				"bootpath" : "~/Documents/Max 8/Projects/HULTI-GENv2/PsychoBox/patchers",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
