@@ -2,8 +2,8 @@
 	"name" : "PsychoBox",
 	"version" : 1,
 	"creationdate" : 3666872002,
-	"modificationdate" : 3674816147,
-	"viewrect" : [ 1664.0, 510.0, 342.0, 549.0 ],
+	"modificationdate" : 3675682071,
+	"viewrect" : [ 1261.0, 677.0, 342.0, 549.0 ],
 	"autoorganize" : 1,
 	"hideprojectwindow" : 0,
 	"showdependencies" : 1,
@@ -95,6 +95,11 @@
 				"local" : 1
 			}
 ,
+			"ui_testSetup_2AFC.maxpat" : 			{
+				"kind" : "patcher",
+				"local" : 1
+			}
+,
 			"ui_config_sessions.maxpat" : 			{
 				"kind" : "patcher",
 				"local" : 1
@@ -141,11 +146,6 @@
 			}
 ,
 			"be_dialogOpener.maxpat" : 			{
-				"kind" : "patcher",
-				"local" : 1
-			}
-,
-			"ui_testSetup_2AFC.maxpat" : 			{
 				"kind" : "patcher",
 				"local" : 1
 			}
@@ -230,6 +230,11 @@
 			}
 ,
 			"example_config2.json" : 			{
+				"kind" : "json",
+				"local" : 1
+			}
+,
+			"example_2AFC_config.json" : 			{
 				"kind" : "json",
 				"local" : 1
 			}

@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 190.0, 144.0, 615.0, 747.0 ],
+		"rect" : [ 406.0, 327.0, 1102.0, 915.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -52,7 +52,7 @@
 					"numinlets" : 0,
 					"numoutlets" : 0,
 					"offset" : [ 0.0, 0.0 ],
-					"patching_rect" : [ 109.0, 345.0, 360.0, 70.0 ],
+					"patching_rect" : [ 10.0, 90.0, 500.0, 100.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 0.0, 200.0, 501.0, 101.0 ],
 					"viewvisibility" : 1
@@ -66,7 +66,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "bang" ],
-					"patching_rect" : [ 593.0, 43.0, 58.0, 22.0 ],
+					"patching_rect" : [ 670.0, 10.0, 58.0, 22.0 ],
 					"text" : "loadbang"
 				}
 
@@ -78,7 +78,7 @@
 					"maxclass" : "live.line",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 109.0, 43.0, 243.0, 5.0 ],
+					"patching_rect" : [ 10.0, 15.5, 243.0, 5.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 0.0, 0.0, 362.0, 5.0 ]
 				}
@@ -93,7 +93,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 109.0, 50.0, 243.0, 22.0 ],
+					"patching_rect" : [ 10.0, 22.5, 243.0, 22.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 0.0, 10.0, 151.0, 22.0 ],
 					"text" : "Test Setup"
@@ -109,7 +109,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 109.0, 87.5, 243.0, 22.0 ],
+					"patching_rect" : [ 10.0, 60.0, 243.0, 22.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 0.0, 170.0, 151.0, 22.0 ],
 					"text" : "Task Parameters"
@@ -123,7 +123,7 @@
 					"maxclass" : "live.line",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 109.0, 80.5, 243.0, 5.0 ],
+					"patching_rect" : [ 10.0, 53.0, 243.0, 5.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 0.0, 160.0, 360.0, 5.0 ]
 				}
@@ -496,7 +496,7 @@
  ]
 					}
 ,
-					"patching_rect" : [ 544.0, 298.0, 113.0, 22.0 ],
+					"patching_rect" : [ 621.0, 265.0, 113.0, 22.0 ],
 					"saved_object_attributes" : 					{
 						"description" : "",
 						"digest" : "",
@@ -875,7 +875,7 @@
  ]
 					}
 ,
-					"patching_rect" : [ 568.5, 196.0, 113.0, 22.0 ],
+					"patching_rect" : [ 645.5, 163.0, 113.0, 22.0 ],
 					"saved_object_attributes" : 					{
 						"description" : "",
 						"digest" : "",
@@ -1135,7 +1135,7 @@
  ]
 					}
 ,
-					"patching_rect" : [ 593.0, 94.0, 113.0, 22.0 ],
+					"patching_rect" : [ 670.0, 61.0, 113.0, 22.0 ],
 					"saved_object_attributes" : 					{
 						"description" : "",
 						"digest" : "",
@@ -1165,7 +1165,7 @@
 					"numoutlets" : 3,
 					"outlettype" : [ "int", "", "" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 568.5, 143.0, 162.0, 24.0 ],
+					"patching_rect" : [ 645.5, 110.0, 162.0, 24.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 160.0, 40.0, 200.0, 24.0 ],
 					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
@@ -1181,7 +1181,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 492.0, 344.0, 50.0, 22.0 ],
+					"patching_rect" : [ 569.0, 311.0, 50.0, 22.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 0.0, 120.0, 151.0, 22.0 ],
 					"text" : "Task"
@@ -1206,7 +1206,7 @@
 					"numoutlets" : 3,
 					"outlettype" : [ "int", "", "" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 544.0, 344.0, 162.0, 24.0 ],
+					"patching_rect" : [ 621.0, 311.0, 162.0, 24.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 160.0, 120.0, 200.0, 24.0 ],
 					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
@@ -1222,7 +1222,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 489.0, 245.0, 52.0, 22.0 ],
+					"patching_rect" : [ 566.0, 212.0, 52.0, 22.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 0.0, 80.0, 152.0, 22.0 ],
 					"text" : "Model"
@@ -1247,7 +1247,7 @@
 					"numoutlets" : 3,
 					"outlettype" : [ "int", "", "" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 544.0, 245.0, 162.0, 24.0 ],
+					"patching_rect" : [ 621.0, 212.0, 162.0, 24.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 160.0, 80.0, 200.0, 24.0 ],
 					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
@@ -1263,7 +1263,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 492.5, 143.0, 74.0, 22.0 ],
+					"patching_rect" : [ 569.5, 110.0, 74.0, 22.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 0.0, 40.0, 150.0, 22.0 ],
 					"text" : "Procedure"

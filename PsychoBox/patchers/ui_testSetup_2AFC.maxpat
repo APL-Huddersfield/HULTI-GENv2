@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 886.0, 588.0, 676.0, 617.0 ],
+		"rect" : [ 994.0, 192.0, 828.0, 757.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -40,12 +40,84 @@
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-66",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 168.0, 262.0, 72.0, 22.0 ],
+					"text" : "prepend set"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-64",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 445.0, 225.0, 71.0, 22.0 ],
+					"text" : "fromsymbol"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-63",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 168.0, 445.0, 272.0, 22.0 ],
+					"text" : "sprintf set setup::task::parameters::repetitions %d"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-52",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 445.0, 407.0, 57.0, 22.0 ],
+					"text" : "tosymbol"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-48",
+					"maxclass" : "newobj",
+					"numinlets" : 2,
+					"numoutlets" : 2,
+					"outlettype" : [ "", "" ],
+					"patching_rect" : [ 445.0, 370.0, 59.0, 22.0 ],
+					"text" : "route text"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-37",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 445.0, 445.0, 255.0, 22.0 ],
+					"text" : "prepend set setup::task::parameters::objective"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-22",
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 603.0, 239.0, 72.0, 22.0 ],
+					"patching_rect" : [ 445.0, 262.0, 72.0, 22.0 ],
 					"text" : "prepend set"
 				}
 
@@ -53,12 +125,11 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-19",
-					"linecount" : 2,
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 3,
 					"outlettype" : [ "", "", "" ],
-					"patching_rect" : [ 519.0, 179.0, 189.0, 35.0 ],
+					"patching_rect" : [ 288.0, 177.0, 333.0, 22.0 ],
 					"text" : "dict.unpack repetitions: objective: numStimuliPerGroup:"
 				}
 
@@ -70,7 +141,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 519.0, 59.0, 105.0, 22.0 ],
+					"patching_rect" : [ 288.0, 57.0, 105.0, 22.0 ],
 					"text" : "dict.unpack setup:"
 				}
 
@@ -82,7 +153,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 519.0, 19.0, 95.0, 22.0 ],
+					"patching_rect" : [ 288.0, 17.0, 95.0, 22.0 ],
 					"text" : "dictionary config"
 				}
 
@@ -94,7 +165,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 519.0, 99.0, 98.0, 22.0 ],
+					"patching_rect" : [ 288.0, 97.0, 98.0, 22.0 ],
 					"text" : "dict.unpack task:"
 				}
 
@@ -106,7 +177,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 519.0, 137.0, 137.0, 22.0 ],
+					"patching_rect" : [ 288.0, 135.0, 137.0, 22.0 ],
 					"text" : "dict.unpack parameters:"
 				}
 
@@ -118,7 +189,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 4,
 					"outlettype" : [ "dictionary", "", "", "" ],
-					"patching_rect" : [ 861.0, 89.0, 63.0, 22.0 ],
+					"patching_rect" : [ 168.0, 503.0, 63.0, 22.0 ],
 					"saved_object_attributes" : 					{
 						"embed" : 0,
 						"parameter_enable" : 0,
@@ -142,7 +213,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 171.0, 248.0, 54.0, 24.0 ],
+					"patching_rect" : [ 168.0, 300.0, 54.0, 24.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 160.0, 0.0, 54.0, 24.0 ],
 					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
@@ -159,7 +230,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 11.0, 248.0, 150.0, 38.0 ],
+					"patching_rect" : [ 19.5, 300.0, 146.0, 38.0 ],
 					"presentation" : 1,
 					"presentation_linecount" : 2,
 					"presentation_rect" : [ 0.0, 0.0, 150.0, 38.0 ],
@@ -176,9 +247,9 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 87.0, 299.0, 74.0, 22.0 ],
+					"patching_rect" : [ 372.0, 300.0, 68.0, 22.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 0.0, 40.0, 74.0, 22.0 ],
+					"presentation_rect" : [ 0.0, 50.0, 74.0, 22.0 ],
 					"text" : "Objective"
 				}
 
@@ -193,17 +264,25 @@
 					"numinlets" : 1,
 					"numoutlets" : 4,
 					"outlettype" : [ "", "int", "", "" ],
+					"outputmode" : 1,
 					"parameter_enable" : 0,
-					"patching_rect" : [ 171.0, 299.0, 372.0, 50.0 ],
+					"patching_rect" : [ 445.0, 300.0, 288.0, 50.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 160.0, 40.0, 330.0, 50.0 ],
-					"text" : "Select which stimulus you think is <attribute>",
+					"presentation_rect" : [ 0.0, 74.0, 360.0, 50.0 ],
+					"text" : "\"Select the stimulus with the loudest reverb\"",
 					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
 				}
 
 			}
  ],
 		"lines" : [ 			{
+				"patchline" : 				{
+					"destination" : [ "obj-63", 0 ],
+					"source" : [ "obj-12", 0 ]
+				}
+
+			}
+, 			{
 				"patchline" : 				{
 					"destination" : [ "obj-19", 0 ],
 					"source" : [ "obj-13", 0 ]
@@ -233,24 +312,72 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-12", 0 ],
-					"midpoints" : [ 528.5, 234.0, 180.5, 234.0 ],
-					"source" : [ "obj-19", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-22", 0 ],
+					"destination" : [ "obj-64", 0 ],
 					"source" : [ "obj-19", 1 ]
 				}
 
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-66", 0 ],
+					"source" : [ "obj-19", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-48", 0 ],
+					"source" : [ "obj-2", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-2", 0 ],
-					"midpoints" : [ 612.5, 285.0, 180.5, 285.0 ],
 					"source" : [ "obj-22", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-11", 0 ],
+					"midpoints" : [ 454.5, 485.5, 177.5, 485.5 ],
+					"source" : [ "obj-37", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-52", 0 ],
+					"source" : [ "obj-48", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-37", 0 ],
+					"source" : [ "obj-52", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-11", 0 ],
+					"source" : [ "obj-63", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-22", 0 ],
+					"source" : [ "obj-64", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-12", 0 ],
+					"source" : [ "obj-66", 0 ]
 				}
 
 			}

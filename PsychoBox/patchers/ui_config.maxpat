@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 45.0, 175.0, 1531.0, 1050.0 ],
+		"rect" : [ 224.0, 259.0, 1531.0, 1050.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -59,8 +59,8 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 259.0, 31.0, 152.0, 22.0 ],
-					"text" : "read example_config2.json"
+					"patching_rect" : [ 259.0, 31.0, 183.0, 22.0 ],
+					"text" : "read example_2AFC_config.json"
 				}
 
 			}
@@ -199,6 +199,7 @@
 					"clickthrough" : 0,
 					"enablehscroll" : 0,
 					"enablevscroll" : 0,
+					"hidden" : 1,
 					"id" : "obj-18",
 					"lockeddragscroll" : 0,
 					"maxclass" : "bpatcher",
@@ -208,7 +209,7 @@
 					"offset" : [ 0.0, 0.0 ],
 					"patching_rect" : [ 699.0, 118.0, 500.0, 370.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 185.0, 97.0, 505.0, 303.0 ],
+					"presentation_rect" : [ 185.0, 97.0, 368.0, 329.0 ],
 					"varname" : "uiTestSetup",
 					"viewvisibility" : 1
 				}
