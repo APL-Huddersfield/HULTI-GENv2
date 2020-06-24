@@ -1,0 +1,5 @@
+# Buttons
+bg 		:	D2D2D2
+text 		:	000000
+textOver	:	1A69CB
+
