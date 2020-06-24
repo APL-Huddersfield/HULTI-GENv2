@@ -2,7 +2,7 @@
 	"name" : "PsychoBox",
 	"version" : 1,
 	"creationdate" : 3666872002,
-	"modificationdate" : 3675850442,
+	"modificationdate" : 3675858538,
 	"viewrect" : [ 1915.0, 346.0, 342.0, 549.0 ],
 	"autoorganize" : 1,
 	"hideprojectwindow" : 0,
@@ -161,6 +161,11 @@
 			}
 ,
 			"be_programControl.maxpat" : 			{
+				"kind" : "patcher",
+				"local" : 1
+			}
+,
+			"dialog_overwriteConfig.maxpat" : 			{
 				"kind" : "patcher",
 				"local" : 1
 			}
