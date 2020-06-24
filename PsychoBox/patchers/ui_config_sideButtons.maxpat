@@ -4,13 +4,13 @@
 		"appversion" : 		{
 			"major" : 8,
 			"minor" : 1,
-			"revision" : 3,
+			"revision" : 5,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 660.0, 349.0, 985.0, 702.0 ],
+		"rect" : [ 558.0, 384.0, 985.0, 702.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -37,22 +37,8 @@
 		"tags" : "",
 		"style" : "",
 		"subpatcher_template" : "",
+		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
-				"box" : 				{
-					"id" : "obj-1",
-					"maxclass" : "textbutton",
-					"numinlets" : 1,
-					"numoutlets" : 3,
-					"outlettype" : [ "", "", "int" ],
-					"parameter_enable" : 0,
-					"patching_rect" : [ 64.0, 143.0, 100.0, 20.0 ],
-					"presentation" : 1,
-					"presentation_rect" : [ 71.0, 96.0, 56.0, 20.0 ],
-					"text" : "+"
-				}
-
-			}
-, 			{
 				"box" : 				{
 					"id" : "obj-30",
 					"maxclass" : "message",
@@ -234,7 +220,7 @@
 					"patching_rect" : [ 328.0, 307.0, 120.0, 30.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 7.0, 64.0, 120.0, 30.0 ],
-					"text" : "Playback",
+					"text" : "Sessions",
 					"textjustification" : 0,
 					"textoncolor" : [ 0.0, 0.0, 0.0, 1.0 ],
 					"textovercolor" : [ 0.101960784313725, 0.411764705882353, 0.796078431372549, 1.0 ],
