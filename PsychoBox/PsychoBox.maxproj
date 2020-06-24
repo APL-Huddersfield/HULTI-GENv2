@@ -2,8 +2,8 @@
 	"name" : "PsychoBox",
 	"version" : 1,
 	"creationdate" : 3666872002,
-	"modificationdate" : 3675838203,
-	"viewrect" : [ 1780.0, 770.0, 342.0, 549.0 ],
+	"modificationdate" : 3675849983,
+	"viewrect" : [ 1915.0, 346.0, 342.0, 549.0 ],
 	"autoorganize" : 1,
 	"hideprojectwindow" : 0,
 	"showdependencies" : 1,
@@ -156,6 +156,11 @@
 			}
 ,
 			"ui_mainMenu.maxpat" : 			{
+				"kind" : "patcher",
+				"local" : 1
+			}
+,
+			"be_programControl.maxpat .maxpat" : 			{
 				"kind" : "patcher",
 				"local" : 1
 			}
