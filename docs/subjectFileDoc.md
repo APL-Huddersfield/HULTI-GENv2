@@ -15,9 +15,9 @@ The *Model* and *Task* keys are clone from the associated config for the sake of
 ## Results data
 
 All result values in HULTI-GEN are sorted in the following way:
-
 ```
 session > group > trial > response value(s)
 ```
-
 As implied by the plural, a given trial can contain multiple response values, for example in MUSHRA test.
+
+Sessions and groups are object arrays, whilst trials are arrays of keys with an associated response value array.
