@@ -10,9 +10,9 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 843.0, 361.0, 894.0, 617.0 ],
+		"rect" : [ 432.0, 471.0, 981.0, 682.0 ],
 		"bglocked" : 0,
-		"openinpresentation" : 1,
+		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
 		"default_fontface" : 0,
 		"default_fontname" : "Arial",
@@ -45,8 +45,8 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 160.0, 278.0, 159.0, 22.0 ],
-					"text" : "prepend callback mainmenu"
+					"patching_rect" : [ 220.0, 268.0, 171.0, 22.0 ],
+					"text" : "prepend callback subjectmenu"
 				}
 
 			}
@@ -57,7 +57,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 380.0, 220.0, 35.0, 22.0 ],
+					"patching_rect" : [ 440.0, 210.0, 35.0, 22.0 ],
 					"text" : "open"
 				}
 
@@ -69,20 +69,8 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 160.0, 220.0, 50.0, 22.0 ],
-					"text" : "newtest"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-8",
-					"maxclass" : "newobj",
-					"numinlets" : 0,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 380.0, 48.0, 82.0, 22.0 ],
-					"text" : "r toMainMenu"
+					"patching_rect" : [ 220.0, 210.0, 69.0, 22.0 ],
+					"text" : "newsubject"
 				}
 
 			}
@@ -92,8 +80,20 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 160.0, 336.0, 113.0, 22.0 ],
+					"patching_rect" : [ 220.0, 326.0, 113.0, 22.0 ],
 					"text" : "s toProgramControl"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-4",
+					"maxclass" : "newobj",
+					"numinlets" : 0,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 760.0, 30.0, 96.0, 22.0 ],
+					"text" : "r toSubjectMenu"
 				}
 
 			}
@@ -107,7 +107,7 @@
 					"numoutlets" : 3,
 					"outlettype" : [ "", "", "int" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 380.0, 140.0, 200.0, 60.0 ],
+					"patching_rect" : [ 440.0, 120.0, 200.0, 60.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 220.0, 0.0, 200.0, 60.0 ],
 					"text" : "Open",
@@ -127,10 +127,10 @@
 					"numoutlets" : 3,
 					"outlettype" : [ "", "", "int" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 160.0, 140.0, 200.0, 60.0 ],
+					"patching_rect" : [ 220.0, 120.0, 200.0, 60.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 0.0, 0.0, 200.0, 60.0 ],
-					"text" : "New Test",
+					"text" : "New Subject",
 					"textoncolor" : [ 0.0, 0.0, 0.0, 1.0 ],
 					"textovercolor" : [ 0.101960784313725, 0.411764705882353, 0.796078431372549, 1.0 ],
 					"usetextovercolor" : 1
@@ -155,7 +155,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-3", 0 ],
-					"midpoints" : [ 389.5, 259.5, 169.5, 259.5 ],
+					"midpoints" : [ 449.5, 249.5, 229.5, 249.5 ],
 					"source" : [ "obj-18", 0 ]
 				}
 

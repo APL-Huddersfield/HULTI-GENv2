@@ -2,8 +2,8 @@
 	"name" : "PsychoBox",
 	"version" : 1,
 	"creationdate" : 3666872002,
-	"modificationdate" : 3675929683,
-	"viewrect" : [ 1999.0, 335.0, 342.0, 549.0 ],
+	"modificationdate" : 3675938555,
+	"viewrect" : [ 1556.0, 108.0, 342.0, 506.0 ],
 	"autoorganize" : 1,
 	"hideprojectwindow" : 0,
 	"showdependencies" : 1,
@@ -14,6 +14,126 @@
 				"kind" : "patcher",
 				"local" : 1,
 				"toplevel" : 1
+			}
+,
+			"ui_accordion.maxpat" : 			{
+				"kind" : "patcher",
+				"local" : 1
+			}
+,
+			"ui_config.maxpat" : 			{
+				"kind" : "patcher",
+				"local" : 1
+			}
+,
+			"ui_config_sessions.maxpat" : 			{
+				"kind" : "patcher",
+				"local" : 1
+			}
+,
+			"ui_config_sideButtons.maxpat" : 			{
+				"kind" : "patcher",
+				"local" : 1
+			}
+,
+			"ui_config_stimulusPool.maxpat" : 			{
+				"kind" : "patcher",
+				"local" : 1
+			}
+,
+			"ui_config_sessions_sidemenu.maxpat" : 			{
+				"kind" : "patcher",
+				"local" : 1
+			}
+,
+			"ui_config_testSetup.maxpat" : 			{
+				"kind" : "patcher",
+				"local" : 1
+			}
+,
+			"ui_filelist_pool.maxpat" : 			{
+				"kind" : "patcher",
+				"local" : 1
+			}
+,
+			"ui_filelist.maxpat" : 			{
+				"kind" : "patcher",
+				"local" : 1
+			}
+,
+			"ui_filelist_entry.maxpat" : 			{
+				"kind" : "patcher",
+				"local" : 1
+			}
+,
+			"ui_filelist_ref.maxpat" : 			{
+				"kind" : "patcher",
+				"local" : 1
+			}
+,
+			"ui_filelist_checkbox.maxpat" : 			{
+				"kind" : "patcher",
+				"local" : 1
+			}
+,
+			"ui_filelist_entry_checkbox.maxpat" : 			{
+				"kind" : "patcher",
+				"local" : 1
+			}
+,
+			"ui_loadStimuli.maxpat" : 			{
+				"kind" : "patcher",
+				"local" : 1
+			}
+,
+			"ui_mainMenu.maxpat" : 			{
+				"kind" : "patcher",
+				"local" : 1
+			}
+,
+			"ui_subjectMenu.maxpat" : 			{
+				"kind" : "patcher",
+				"local" : 1
+			}
+,
+			"ui_params_MOC.maxpat" : 			{
+				"kind" : "patcher",
+				"local" : 1
+			}
+,
+			"ui_testSetup_2AFC.maxpat" : 			{
+				"kind" : "patcher",
+				"local" : 1
+			}
+,
+			"be_config_getDependencies.maxpat" : 			{
+				"kind" : "patcher",
+				"local" : 1
+			}
+,
+			"be_mainUIControl.maxpat" : 			{
+				"kind" : "patcher",
+				"local" : 1
+			}
+,
+			"be_makeNewConfig.maxpat" : 			{
+				"kind" : "patcher",
+				"local" : 1
+			}
+,
+			"testcontrol_master.maxpat" : 			{
+				"kind" : "patcher",
+				"local" : 1
+			}
+,
+			"be_dialogOpener.maxpat" : 			{
+				"kind" : "patcher",
+				"local" : 1
+			}
+,
+			"dialog_overwriteConfig.maxpat" : 			{
+				"kind" : "patcher",
+				"local" : 1
 			}
 ,
 			"interface_2AFC.maxpat" : 			{
@@ -51,127 +171,7 @@
 				"local" : 1
 			}
 ,
-			"ui_accordion.maxpat" : 			{
-				"kind" : "patcher",
-				"local" : 1
-			}
-,
-			"ui_config.maxpat" : 			{
-				"kind" : "patcher",
-				"local" : 1
-			}
-,
-			"ui_config_sessions.maxpat" : 			{
-				"kind" : "patcher",
-				"local" : 1
-			}
-,
-			"ui_filelist_pool.maxpat" : 			{
-				"kind" : "patcher",
-				"local" : 1
-			}
-,
-			"ui_filelist.maxpat" : 			{
-				"kind" : "patcher",
-				"local" : 1
-			}
-,
-			"ui_filelist_entry.maxpat" : 			{
-				"kind" : "patcher",
-				"local" : 1
-			}
-,
-			"ui_filelist_ref.maxpat" : 			{
-				"kind" : "patcher",
-				"local" : 1
-			}
-,
-			"ui_filelist_checkbox.maxpat" : 			{
-				"kind" : "patcher",
-				"local" : 1
-			}
-,
-			"ui_filelist_entry_checkbox.maxpat" : 			{
-				"kind" : "patcher",
-				"local" : 1
-			}
-,
-			"be_config_getDependencies.maxpat" : 			{
-				"kind" : "patcher",
-				"local" : 1
-			}
-,
-			"ui_config_stimulusPool.maxpat" : 			{
-				"kind" : "patcher",
-				"local" : 1
-			}
-,
-			"ui_config_sideButtons.maxpat" : 			{
-				"kind" : "patcher",
-				"local" : 1
-			}
-,
-			"ui_config_testSetup.maxpat" : 			{
-				"kind" : "patcher",
-				"local" : 1
-			}
-,
-			"ui_testSetup_2AFC.maxpat" : 			{
-				"kind" : "patcher",
-				"local" : 1
-			}
-,
-			"ui_params_MOC.maxpat" : 			{
-				"kind" : "patcher",
-				"local" : 1
-			}
-,
-			"ui_config_sessions_sidemenu.maxpat" : 			{
-				"kind" : "patcher",
-				"local" : 1
-			}
-,
-			"ui_loadStimuli.maxpat" : 			{
-				"kind" : "patcher",
-				"local" : 1
-			}
-,
-			"be_makeNewConfig.maxpat" : 			{
-				"kind" : "patcher",
-				"local" : 1
-			}
-,
 			"dialog_deleteSessionItem.maxpat" : 			{
-				"kind" : "patcher",
-				"local" : 1
-			}
-,
-			"be_dialogOpener.maxpat" : 			{
-				"kind" : "patcher",
-				"local" : 1
-			}
-,
-			"testcontrol_master.maxpat" : 			{
-				"kind" : "patcher",
-				"local" : 1
-			}
-,
-			"ui_mainMenu.maxpat" : 			{
-				"kind" : "patcher",
-				"local" : 1
-			}
-,
-			"be_programControl.maxpat" : 			{
-				"kind" : "patcher",
-				"local" : 1
-			}
-,
-			"dialog_overwriteConfig.maxpat" : 			{
-				"kind" : "patcher",
-				"local" : 1
-			}
-,
-			"be_mainUIControl.maxpat" : 			{
 				"kind" : "patcher",
 				"local" : 1
 			}
@@ -187,12 +187,7 @@
 		}
 ,
 		"code" : 		{
-			"itemlist.js" : 			{
-				"kind" : "javascript",
-				"local" : 1
-			}
-,
-			"schemaValidator2.js" : 			{
+			"filelistManager.js" : 			{
 				"kind" : "javascript",
 				"local" : 1
 			}
@@ -202,7 +197,12 @@
 				"local" : 1
 			}
 ,
-			"filelistManager.js" : 			{
+			"itemlist.js" : 			{
+				"kind" : "javascript",
+				"local" : 1
+			}
+,
+			"schemaValidator2.js" : 			{
 				"kind" : "javascript",
 				"local" : 1
 			}
