@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 437.0, 330.0, 1733.0, 867.0 ],
+		"rect" : [ 71.0, 261.0, 1307.0, 982.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -44,7 +44,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 1632.0, 186.0, 79.0, 22.0 ],
+					"patching_rect" : [ 1154.0, 177.0, 79.0, 22.0 ],
 					"text" : "s toUIControl"
 				}
 
@@ -55,7 +55,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 1513.0, 186.0, 113.0, 22.0 ],
+					"patching_rect" : [ 1035.0, 177.0, 113.0, 22.0 ],
 					"text" : "s toProgramControl"
 				}
 
@@ -67,7 +67,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 1387.0, 186.0, 67.0, 22.0 ],
+					"patching_rect" : [ 909.0, 177.0, 67.0, 22.0 ],
 					"save" : [ "#N", "thispatcher", ";", "#Q", "end", ";" ],
 					"text" : "thispatcher"
 				}
@@ -80,7 +80,7 @@
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 1387.0, 93.0, 77.0, 22.0 ],
+					"patching_rect" : [ 909.0, 84.0, 77.0, 22.0 ],
 					"text" : "r toUIControl"
 				}
 
@@ -92,7 +92,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 1387.0, 137.0, 105.0, 22.0 ],
+					"patching_rect" : [ 909.0, 128.0, 105.0, 22.0 ],
 					"text" : "be_mainUIControl"
 				}
 
@@ -104,7 +104,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 1513.0, 137.0, 55.0, 22.0 ],
+					"patching_rect" : [ 1035.0, 128.0, 55.0, 22.0 ],
 					"text" : "mode $1"
 				}
 
@@ -116,7 +116,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 1632.0, 76.0, 54.0, 22.0 ],
+					"patching_rect" : [ 1154.0, 67.0, 54.0, 22.0 ],
 					"text" : "coldstart"
 				}
 
@@ -128,7 +128,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 1513.0, 76.0, 65.0, 22.0 ],
+					"patching_rect" : [ 1035.0, 67.0, 65.0, 22.0 ],
 					"text" : "mainmenu"
 				}
 
@@ -140,6 +140,7 @@
 					"clickthrough" : 0,
 					"enablehscroll" : 0,
 					"enablevscroll" : 0,
+					"hidden" : 1,
 					"id" : "obj-5",
 					"lockeddragscroll" : 0,
 					"maxclass" : "bpatcher",
@@ -147,7 +148,7 @@
 					"numinlets" : 0,
 					"numoutlets" : 0,
 					"offset" : [ 0.0, 0.0 ],
-					"patching_rect" : [ 405.0, 277.5, 420.0, 60.0 ],
+					"patching_rect" : [ 405.0, 530.5, 420.0, 60.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 405.0, 277.5, 420.0, 60.0 ],
 					"varname" : "ui_mainMenu",
@@ -162,18 +163,19 @@
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 1265.0, 93.0, 111.0, 22.0 ],
+					"patching_rect" : [ 787.0, 84.0, 111.0, 22.0 ],
 					"text" : "r toProgramControl"
 				}
 
 			}
 , 			{
 				"box" : 				{
+					"color" : [ 0.847058823529412, 0.0, 0.0, 1.0 ],
 					"id" : "obj-2",
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 1265.0, 137.0, 112.0, 22.0 ],
+					"patching_rect" : [ 787.0, 128.0, 112.0, 22.0 ],
 					"text" : "be_programControl"
 				}
 
@@ -185,7 +187,6 @@
 					"clickthrough" : 0,
 					"enablehscroll" : 0,
 					"enablevscroll" : 0,
-					"hidden" : 1,
 					"id" : "obj-6",
 					"lockeddragscroll" : 0,
 					"maxclass" : "bpatcher",
@@ -193,7 +194,7 @@
 					"numinlets" : 0,
 					"numoutlets" : 0,
 					"offset" : [ 0.0, 0.0 ],
-					"patching_rect" : [ 0.0, 0.0, 1230.0, 615.0 ],
+					"patching_rect" : [ 0.0, 253.0, 1230.0, 615.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 0.0, 0.0, 1230.0, 615.0 ],
 					"varname" : "ui_editConfig",

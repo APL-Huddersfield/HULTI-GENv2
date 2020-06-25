@@ -70,7 +70,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 541.0, 129.0, 110.0, 22.0 ],
+					"patching_rect" : [ 541.0, 129.0, 123.0, 22.0 ],
 					"text" : "v #0-visiblePatcher"
 				}
 
@@ -119,8 +119,8 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 197.25, 178.0, 57.0, 22.0 ],
-					"text" : "ui_config"
+					"patching_rect" : [ 197.25, 178.0, 79.0, 22.0 ],
+					"text" : "ui_editConfig"
 				}
 
 			}
@@ -155,7 +155,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 139.5, 282.0, 110.0, 22.0 ],
+					"patching_rect" : [ 139.5, 282.0, 123.0, 22.0 ],
 					"text" : "v #0-visiblePatcher"
 				}
 
