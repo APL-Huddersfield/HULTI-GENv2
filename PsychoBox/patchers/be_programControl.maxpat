@@ -95,7 +95,20 @@
 						"style" : "",
 						"subpatcher_template" : "",
 						"assistshowspatchername" : 0,
+						"visible" : 1,
 						"boxes" : [ 							{
+								"box" : 								{
+									"id" : "obj-14",
+									"linecount" : 5,
+									"maxclass" : "comment",
+									"numinlets" : 1,
+									"numoutlets" : 0,
+									"patching_rect" : [ 583.0, 209.0, 150.0, 74.0 ],
+									"text" : "Use opendialog as it has a cancel button, and the subsequent operations are only triggered if they hit Okay"
+								}
+
+							}
+, 							{
 								"box" : 								{
 									"id" : "obj-2",
 									"maxclass" : "message",
@@ -698,7 +711,7 @@
  ]
 									}
 ,
-									"patching_rect" : [ 192.0, 242.0, 69.0, 22.0 ],
+									"patching_rect" : [ 192.0, 255.0, 69.0, 22.0 ],
 									"saved_object_attributes" : 									{
 										"description" : "",
 										"digest" : "",
@@ -728,7 +741,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 320.0, 422.0, 150.0, 20.0 ],
+									"patching_rect" : [ 319.0, 422.0, 150.0, 20.0 ],
 									"text" : "The same as calling \"this\""
 								}
 
@@ -739,7 +752,7 @@
 									"maxclass" : "newobj",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 192.0, 422.0, 113.0, 22.0 ],
+									"patching_rect" : [ 192.0, 413.0, 113.0, 22.0 ],
 									"text" : "s toProgramControl"
 								}
 
@@ -751,7 +764,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 2,
 									"outlettype" : [ "bang", "" ],
-									"patching_rect" : [ 471.5, 242.0, 35.5, 22.0 ],
+									"patching_rect" : [ 471.5, 255.0, 35.5, 22.0 ],
 									"text" : "t b l"
 								}
 
@@ -793,7 +806,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 192.0, 140.0, 91.0, 22.0 ],
+									"patching_rect" : [ 192.0, 161.0, 91.0, 22.0 ],
 									"text" : "symbol Untitled"
 								}
 
@@ -805,7 +818,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 3,
 									"outlettype" : [ "", "bang", "bang" ],
-									"patching_rect" : [ 192.0, 188.0, 267.0, 22.0 ],
+									"patching_rect" : [ 192.0, 209.0, 267.0, 22.0 ],
 									"text" : "dialog \"Please enter a name for your new test\""
 								}
 
@@ -817,7 +830,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 2,
 									"outlettype" : [ "", "bang" ],
-									"patching_rect" : [ 471.5, 188.0, 103.0, 22.0 ],
+									"patching_rect" : [ 471.5, 209.0, 103.0, 22.0 ],
 									"text" : "opendialog JSON"
 								}
 
@@ -829,7 +842,7 @@
 									"numinlets" : 3,
 									"numoutlets" : 3,
 									"outlettype" : [ "bang", "bang", "" ],
-									"patching_rect" : [ 387.0, 73.0, 188.0, 22.0 ],
+									"patching_rect" : [ 387.0, 94.0, 188.0, 22.0 ],
 									"text" : "sel newtest open"
 								}
 
@@ -843,7 +856,7 @@
 									"numinlets" : 0,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 387.0, 13.0, 30.0, 30.0 ]
+									"patching_rect" : [ 387.0, 34.0, 30.0, 30.0 ]
 								}
 
 							}
@@ -900,7 +913,7 @@
 , 							{
 								"patchline" : 								{
 									"destination" : [ "obj-9", 0 ],
-									"midpoints" : [ 396.5, 117.0, 201.5, 117.0 ],
+									"midpoints" : [ 396.5, 138.0, 201.5, 138.0 ],
 									"source" : [ "obj-4", 0 ]
 								}
 
@@ -922,6 +935,7 @@
 , 							{
 								"patchline" : 								{
 									"destination" : [ "obj-12", 0 ],
+									"midpoints" : [ 392.5, 393.5, 201.5, 393.5 ],
 									"source" : [ "obj-8", 0 ]
 								}
 
