@@ -28,7 +28,7 @@
                         },
                         "signalDetectionTheory" : {
                             "title" : "Tasks",
-                            "items" : ["yesNo", "2afc", "abx"],
+                            "items" : ["yesNo", "twoAFC", "abx"],
                             "itemStrings" : ["Yes-No", "2AFC", "ABX"]
                         }
                     }
@@ -40,7 +40,7 @@
                     "keys" : {
                         "staircase" : {
                             "title" : "Tasks",
-                            "items" : ["yesNo", "2afc", "abx"],
+                            "items" : ["yesNo", "twoAFC", "abx"],
                             "itemStrings" : ["Yes-No", "2AFC", "ABX"]
                         }
                     }

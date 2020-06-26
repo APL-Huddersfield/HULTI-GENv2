@@ -3,7 +3,7 @@
         "modelChoices" : ["htt", "sdt"],
         "model" : "sdt",
         "task" : {
-            "type" : "2afc",
+            "type" : "twoAFC",
             "parameters" : {
                 "repetitions" : 10,
                 "objective" : "Select the stimulus with the loudest reverb",

@@ -1,0 +1,12 @@
+{
+	"testName" : "ASW Test",
+	"setup" : 	{
+		"model" : "",
+		"task" : "",
+		"gui" : "",
+		"playback" : ""
+	}
+,
+	"pool" : "",
+	"sessions" : ""
+}

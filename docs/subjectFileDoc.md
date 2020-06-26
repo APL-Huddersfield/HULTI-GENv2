@@ -21,3 +21,5 @@ session > group > trial > response value(s)
 As implied by the plural, a given trial can contain multiple response values, for example in MUSHRA test.
 
 Sessions and groups are object arrays, whilst trials are arrays of keys with an associated response value array.
+
+The number of trials in each group is determined by the test type and the number of repetitions for each stimulus.
