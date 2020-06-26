@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 210.0, 255.0, 1425.0, 982.0 ],
+		"rect" : [ 574.0, 276.0, 1608.0, 982.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -44,7 +44,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 660.0, 171.0, 132.0, 22.0 ],
+					"patching_rect" : [ 890.0, 152.0, 132.0, 22.0 ],
 					"text" : "print ToProgramControl"
 				}
 
@@ -55,7 +55,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 891.0, 212.0, 86.0, 22.0 ],
+					"patching_rect" : [ 1021.0, 202.0, 86.0, 22.0 ],
 					"text" : "print UIControl"
 				}
 
@@ -67,7 +67,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "bang" ],
-					"patching_rect" : [ 1174.0, 22.0, 58.0, 22.0 ],
+					"patching_rect" : [ 1304.0, 12.0, 58.0, 22.0 ],
 					"text" : "loadbang"
 				}
 
@@ -79,7 +79,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 1319.0, 67.0, 77.0, 22.0 ],
+					"patching_rect" : [ 1449.0, 57.0, 77.0, 22.0 ],
 					"text" : "subjectmenu"
 				}
 
@@ -98,9 +98,9 @@
 					"numinlets" : 0,
 					"numoutlets" : 0,
 					"offset" : [ 0.0, 0.0 ],
-					"patching_rect" : [ 440.0, 221.5, 420.0, 60.0 ],
+					"patching_rect" : [ 447.0, 143.0, 420.0, 140.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 405.0, 277.5, 420.0, 60.0 ],
+					"presentation_rect" : [ 405.0, 197.5, 420.0, 140.0 ],
 					"varname" : "ui_subjectMenu",
 					"viewvisibility" : 1
 				}
@@ -112,7 +112,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 1174.0, 177.0, 79.0, 22.0 ],
+					"patching_rect" : [ 1304.0, 167.0, 79.0, 22.0 ],
 					"text" : "s toUIControl"
 				}
 
@@ -123,7 +123,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 1055.0, 177.0, 113.0, 22.0 ],
+					"patching_rect" : [ 1185.0, 167.0, 113.0, 22.0 ],
 					"text" : "s toProgramControl"
 				}
 
@@ -135,7 +135,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 929.0, 177.0, 67.0, 22.0 ],
+					"patching_rect" : [ 1059.0, 167.0, 67.0, 22.0 ],
 					"save" : [ "#N", "thispatcher", ";", "#Q", "end", ";" ],
 					"text" : "thispatcher"
 				}
@@ -148,7 +148,7 @@
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 929.0, 84.0, 77.0, 22.0 ],
+					"patching_rect" : [ 1059.0, 74.0, 77.0, 22.0 ],
 					"text" : "r toUIControl"
 				}
 
@@ -160,7 +160,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 929.0, 128.0, 105.0, 22.0 ],
+					"patching_rect" : [ 1059.0, 118.0, 105.0, 22.0 ],
 					"text" : "be_mainUIControl"
 				}
 
@@ -172,7 +172,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 1055.0, 128.0, 55.0, 22.0 ],
+					"patching_rect" : [ 1185.0, 118.0, 55.0, 22.0 ],
 					"text" : "mode $1"
 				}
 
@@ -184,7 +184,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 1174.0, 67.0, 54.0, 22.0 ],
+					"patching_rect" : [ 1304.0, 57.0, 54.0, 22.0 ],
 					"text" : "coldstart"
 				}
 
@@ -196,7 +196,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 1237.0, 67.0, 65.0, 22.0 ],
+					"patching_rect" : [ 1367.0, 57.0, 65.0, 22.0 ],
 					"text" : "mainmenu"
 				}
 
@@ -231,7 +231,7 @@
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 787.0, 84.0, 111.0, 22.0 ],
+					"patching_rect" : [ 917.0, 74.0, 111.0, 22.0 ],
 					"text" : "r toProgramControl"
 				}
 
@@ -282,7 +282,6 @@
 						"style" : "",
 						"subpatcher_template" : "",
 						"assistshowspatchername" : 0,
-						"visible" : 1,
 						"boxes" : [ 							{
 								"box" : 								{
 									"id" : "obj-4",
@@ -328,7 +327,6 @@
 										"style" : "",
 										"subpatcher_template" : "",
 										"assistshowspatchername" : 0,
-										"visible" : 1,
 										"boxes" : [ 											{
 												"box" : 												{
 													"id" : "obj-3",
@@ -432,7 +430,6 @@
 																		"style" : "",
 																		"subpatcher_template" : "",
 																		"assistshowspatchername" : 0,
-																		"visible" : 1,
 																		"boxes" : [ 																			{
 																				"box" : 																				{
 																					"id" : "obj-18",
@@ -4500,7 +4497,7 @@
  ]
 					}
 ,
-					"patching_rect" : [ 787.0, 128.0, 122.0, 22.0 ],
+					"patching_rect" : [ 917.0, 118.0, 122.0, 22.0 ],
 					"saved_object_attributes" : 					{
 						"description" : "",
 						"digest" : "",

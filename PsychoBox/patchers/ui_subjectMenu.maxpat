@@ -40,6 +40,23 @@
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
 				"box" : 				{
+					"fontsize" : 24.0,
+					"id" : "obj-8",
+					"linecount" : 2,
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 178.0, 23.0, 291.0, 60.0 ],
+					"presentation" : 1,
+					"presentation_linecount" : 2,
+					"presentation_rect" : [ 0.0, 0.0, 420.0, 60.0 ],
+					"text" : "Start with new or continue with existing subject",
+					"textjustification" : 1
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-3",
 					"maxclass" : "newobj",
 					"numinlets" : 1,
@@ -109,7 +126,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 440.0, 120.0, 200.0, 60.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 220.0, 0.0, 200.0, 60.0 ],
+					"presentation_rect" : [ 220.0, 80.0, 200.0, 60.0 ],
 					"text" : "Open",
 					"textoncolor" : [ 0.0, 0.0, 0.0, 1.0 ],
 					"textovercolor" : [ 0.101960784313725, 0.411764705882353, 0.796078431372549, 1.0 ],
@@ -129,7 +146,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 220.0, 120.0, 200.0, 60.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 0.0, 0.0, 200.0, 60.0 ],
+					"presentation_rect" : [ 0.0, 80.0, 200.0, 60.0 ],
 					"text" : "New Subject",
 					"textoncolor" : [ 0.0, 0.0, 0.0, 1.0 ],
 					"textovercolor" : [ 0.101960784313725, 0.411764705882353, 0.796078431372549, 1.0 ],
