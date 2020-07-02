@@ -157,6 +157,7 @@
 					"clickthrough" : 0,
 					"enablehscroll" : 0,
 					"enablevscroll" : 0,
+					"hidden" : 1,
 					"id" : "obj-9",
 					"lockeddragscroll" : 0,
 					"maxclass" : "bpatcher",
@@ -274,7 +275,6 @@
 					"clickthrough" : 0,
 					"enablehscroll" : 0,
 					"enablevscroll" : 0,
-					"hidden" : 1,
 					"id" : "obj-5",
 					"lockeddragscroll" : 0,
 					"maxclass" : "bpatcher",
@@ -825,7 +825,6 @@
 																													"numoutlets" : 1,
 																													"outlettype" : [ "" ],
 																													"patching_rect" : [ 115.666666666666686, 620.0, 49.0, 22.0 ],
-																													"presentation_linecount" : 2,
 																													"text" : "append"
 																												}
 
@@ -1212,7 +1211,6 @@
 																									}
 ,
 																									"patching_rect" : [ 119.0, 219.0, 101.0, 22.0 ],
-																									"presentation_linecount" : 3,
 																									"saved_object_attributes" : 																									{
 																										"description" : "",
 																										"digest" : "",
@@ -7121,7 +7119,6 @@
 																					}
 ,
 																					"patching_rect" : [ 174.833333000000039, 543.0, 157.0, 22.0 ],
-																					"presentation_linecount" : 2,
 																					"saved_object_attributes" : 																					{
 																						"description" : "",
 																						"digest" : "",
