@@ -51,3 +51,12 @@ set session[0]::group[0]::stimuli[5]::response[0] 10
 The target session and group can still be randomised and pre-baked into the subject file as before, but the access method is test dependent and deduced at runtime. Presentation can either be pre-baked or calculated at run-time, though it doesn't matter, just as long as the data ends up in the correct place.
 
 The advantage of this method is that it reduces setup and run-time complexity, and improves readability as you can see the results on a per stimulus basis and still compare the values between stimuli vertically with your eyes. Finally, it resembles the output CSV file much more closely than the previous method.
+
+```mermaid
+graph TD;
+    A-->B;
+    A-->C;
+    B-->D;
+    C-->D;
+    C-->X;
+```

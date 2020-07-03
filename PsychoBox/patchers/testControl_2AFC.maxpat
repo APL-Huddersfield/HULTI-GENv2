@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 669.0, 370.0, 977.0, 591.0 ],
+		"rect" : [ 1178.0, 677.0, 1086.0, 591.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -39,6 +39,36 @@
 		"subpatcher_template" : "",
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
+				"box" : 				{
+					"id" : "obj-9",
+					"maxclass" : "newobj",
+					"numinlets" : 2,
+					"numoutlets" : 4,
+					"outlettype" : [ "dictionary", "", "", "" ],
+					"patching_rect" : [ 662.0, 219.0, 63.0, 22.0 ],
+					"saved_object_attributes" : 					{
+						"embed" : 0,
+						"parameter_enable" : 0,
+						"parameter_mappable" : 0
+					}
+,
+					"text" : "dict config"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-4",
+					"maxclass" : "newobj",
+					"numinlets" : 2,
+					"numoutlets" : 2,
+					"outlettype" : [ "", "" ],
+					"patching_rect" : [ 656.0, 101.0, 79.0, 22.0 ],
+					"text" : "route present"
+				}
+
+			}
+, 			{
 				"box" : 				{
 					"id" : "obj-12",
 					"maxclass" : "newobj",
@@ -71,7 +101,7 @@
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 221.0, 35.0, 30.0, 30.0 ]
+					"patching_rect" : [ 656.0, 25.0, 30.0, 30.0 ]
 				}
 
 			}
@@ -699,7 +729,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 594.0, 373.5, 273.0, 74.0 ],
+					"patching_rect" : [ 703.0, 458.5, 273.0, 74.0 ],
 					"text" : "When 'play' is pressed:\n1. Hide 'Play' button, show A and B buttons, and lock interface from clicks. \n\nWhen A has finished:"
 				}
 
@@ -773,7 +803,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 594.0, 200.0, 344.0, 167.0 ],
+					"patching_rect" : [ 703.0, 285.0, 344.0, 167.0 ],
 					"text" : "Order of operations\n\n1. Wait for user to press 'Play'\n2. When 'Play' is pressed, play 'A'.\n3. When 'A' has finished playing, wait for a given time interval.\n4. After time interval has elapsed, play 'B'.\n5. When 'B' has finished, unlock the buttons and wait for user input.\n6. When a button has been pressed, log the response and notify trial counter to advance.\n7. If the test is not over, the trial counter will notify 'this' to reset and goto step 1."
 				}
 
@@ -901,6 +931,15 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-1", 0 ],
+					"order" : 1,
+					"source" : [ "obj-27", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-4", 0 ],
+					"order" : 0,
 					"source" : [ "obj-27", 0 ]
 				}
 
