@@ -121,7 +121,7 @@
 				"local" : 1
 			}
 ,
-			"testcontrol_master.maxpat" : 			{
+			"testController.maxpat" : 			{
 				"kind" : "patcher",
 				"local" : 1
 			}
@@ -146,7 +146,7 @@
 				"local" : 1
 			}
 ,
-			"testControl_2AFC.maxpat" : 			{
+			"testWorker_2AFC.maxpat" : 			{
 				"kind" : "patcher",
 				"local" : 1
 			}
