@@ -2,8 +2,8 @@
 	"name" : "PsychoBox",
 	"version" : 1,
 	"creationdate" : 3666872002,
-	"modificationdate" : 3675938876,
-	"viewrect" : [ 1556.0, 108.0, 342.0, 506.0 ],
+	"modificationdate" : 3676889243,
+	"viewrect" : [ 67.0, 124.0, 342.0, 506.0 ],
 	"autoorganize" : 1,
 	"hideprojectwindow" : 0,
 	"showdependencies" : 1,
@@ -16,37 +16,12 @@
 				"toplevel" : 1
 			}
 ,
-			"ui_accordion.maxpat" : 			{
-				"kind" : "patcher",
-				"local" : 1
-			}
-,
 			"ui_config.maxpat" : 			{
 				"kind" : "patcher",
 				"local" : 1
 			}
 ,
 			"ui_config_sessions.maxpat" : 			{
-				"kind" : "patcher",
-				"local" : 1
-			}
-,
-			"ui_config_sideButtons.maxpat" : 			{
-				"kind" : "patcher",
-				"local" : 1
-			}
-,
-			"ui_config_stimulusPool.maxpat" : 			{
-				"kind" : "patcher",
-				"local" : 1
-			}
-,
-			"ui_config_sessions_sidemenu.maxpat" : 			{
-				"kind" : "patcher",
-				"local" : 1
-			}
-,
-			"ui_config_testSetup.maxpat" : 			{
 				"kind" : "patcher",
 				"local" : 1
 			}
@@ -81,27 +56,7 @@
 				"local" : 1
 			}
 ,
-			"ui_loadStimuli.maxpat" : 			{
-				"kind" : "patcher",
-				"local" : 1
-			}
-,
-			"ui_mainMenu.maxpat" : 			{
-				"kind" : "patcher",
-				"local" : 1
-			}
-,
-			"ui_subjectMenu.maxpat" : 			{
-				"kind" : "patcher",
-				"local" : 1
-			}
-,
-			"ui_params_MOC.maxpat" : 			{
-				"kind" : "patcher",
-				"local" : 1
-			}
-,
-			"ui_testSetup_2AFC.maxpat" : 			{
+			"ui_accordion.maxpat" : 			{
 				"kind" : "patcher",
 				"local" : 1
 			}
@@ -111,7 +66,57 @@
 				"local" : 1
 			}
 ,
+			"ui_config_stimulusPool.maxpat" : 			{
+				"kind" : "patcher",
+				"local" : 1
+			}
+,
+			"ui_config_sideButtons.maxpat" : 			{
+				"kind" : "patcher",
+				"local" : 1
+			}
+,
+			"ui_config_testSetup.maxpat" : 			{
+				"kind" : "patcher",
+				"local" : 1
+			}
+,
+			"ui_testSetup_2AFC.maxpat" : 			{
+				"kind" : "patcher",
+				"local" : 1
+			}
+,
+			"ui_mainMenu.maxpat" : 			{
+				"kind" : "patcher",
+				"local" : 1
+			}
+,
 			"be_mainUIControl.maxpat" : 			{
+				"kind" : "patcher",
+				"local" : 1
+			}
+,
+			"ui_subjectMenu.maxpat" : 			{
+				"kind" : "patcher",
+				"local" : 1
+			}
+,
+			"testWorker_2AFC.maxpat" : 			{
+				"kind" : "patcher",
+				"local" : 1
+			}
+,
+			"ui_config_sessions_sidemenu.maxpat" : 			{
+				"kind" : "patcher",
+				"local" : 1
+			}
+,
+			"ui_loadStimuli.maxpat" : 			{
+				"kind" : "patcher",
+				"local" : 1
+			}
+,
+			"ui_params_MOC.maxpat" : 			{
 				"kind" : "patcher",
 				"local" : 1
 			}
@@ -146,11 +151,6 @@
 				"local" : 1
 			}
 ,
-			"testWorker_2AFC.maxpat" : 			{
-				"kind" : "patcher",
-				"local" : 1
-			}
-,
 			"itemlist_test.maxpat" : 			{
 				"kind" : "patcher",
 				"local" : 1
@@ -172,6 +172,11 @@
 			}
 ,
 			"dialog_deleteSessionItem.maxpat" : 			{
+				"kind" : "patcher",
+				"local" : 1
+			}
+,
+			"ui_beginTestMenu.maxpat" : 			{
 				"kind" : "patcher",
 				"local" : 1
 			}
@@ -264,6 +269,10 @@
 				"kind" : "json",
 				"local" : 1
 			}
+
+		}
+,
+		"externals" : 		{
 
 		}
 
