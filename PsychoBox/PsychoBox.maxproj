@@ -2,7 +2,7 @@
 	"name" : "PsychoBox",
 	"version" : 1,
 	"creationdate" : 3666872002,
-	"modificationdate" : 3676889243,
+	"modificationdate" : 3676968163,
 	"viewrect" : [ 67.0, 124.0, 342.0, 506.0 ],
 	"autoorganize" : 1,
 	"hideprojectwindow" : 0,
@@ -91,17 +91,22 @@
 				"local" : 1
 			}
 ,
-			"be_mainUIControl.maxpat" : 			{
-				"kind" : "patcher",
-				"local" : 1
-			}
-,
 			"ui_subjectMenu.maxpat" : 			{
 				"kind" : "patcher",
 				"local" : 1
 			}
 ,
 			"testWorker_2AFC.maxpat" : 			{
+				"kind" : "patcher",
+				"local" : 1
+			}
+,
+			"ui_beginTestMenu.maxpat" : 			{
+				"kind" : "patcher",
+				"local" : 1
+			}
+,
+			"be_mainUIControl.maxpat" : 			{
 				"kind" : "patcher",
 				"local" : 1
 			}
@@ -176,7 +181,7 @@
 				"local" : 1
 			}
 ,
-			"ui_beginTestMenu.maxpat" : 			{
+			"ui_filesMissingDialog.maxpat" : 			{
 				"kind" : "patcher",
 				"local" : 1
 			}
