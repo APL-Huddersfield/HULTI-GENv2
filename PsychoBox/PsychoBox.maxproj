@@ -2,8 +2,8 @@
 	"name" : "PsychoBox",
 	"version" : 1,
 	"creationdate" : 3666872002,
-	"modificationdate" : 3676968163,
-	"viewrect" : [ 67.0, 124.0, 342.0, 506.0 ],
+	"modificationdate" : 3677064483,
+	"viewrect" : [ 1042.0, 195.0, 342.0, 506.0 ],
 	"autoorganize" : 1,
 	"hideprojectwindow" : 0,
 	"showdependencies" : 1,
@@ -106,6 +106,11 @@
 				"local" : 1
 			}
 ,
+			"ui_filesMissingDialog.maxpat" : 			{
+				"kind" : "patcher",
+				"local" : 1
+			}
+,
 			"be_mainUIControl.maxpat" : 			{
 				"kind" : "patcher",
 				"local" : 1
@@ -146,11 +151,6 @@
 				"local" : 1
 			}
 ,
-			"interface_2AFC.maxpat" : 			{
-				"kind" : "patcher",
-				"local" : 1
-			}
-,
 			"stimulusPlayer.maxpat" : 			{
 				"kind" : "patcher",
 				"local" : 1
@@ -181,7 +181,7 @@
 				"local" : 1
 			}
 ,
-			"ui_filesMissingDialog.maxpat" : 			{
+			"player_twoAFC.maxpat" : 			{
 				"kind" : "patcher",
 				"local" : 1
 			}
@@ -271,6 +271,11 @@
 			}
 ,
 			"example_2AFC_config.json" : 			{
+				"kind" : "json",
+				"local" : 1
+			}
+,
+			"testInterfaces.json" : 			{
 				"kind" : "json",
 				"local" : 1
 			}

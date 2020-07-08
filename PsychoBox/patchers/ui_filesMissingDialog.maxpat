@@ -49,7 +49,7 @@
 					"presentation" : 1,
 					"presentation_linecount" : 2,
 					"presentation_rect" : [ 0.0, 26.0, 345.0, 33.0 ],
-					"text" : "Please ensure that they are placed in the \"stimuli\" folder relative to you test config file"
+					"text" : "Please ensure that they are placed in the \"stimuli\" folder relative to your test config file"
 				}
 
 			}

@@ -1,0 +1,13 @@
+{
+    "htt" : {
+	"moc" : "interface_moc"
+    },
+    "sdt" : {
+	"twoAFC" : "interface_twoAFC",
+	"yesNo" : "interface_yesNo"
+    },
+    "mc" : {
+        "itu_r_1116" : "interface_itu_r_1116",
+	"mushra" : "interface_mushra"
+    }
+}
