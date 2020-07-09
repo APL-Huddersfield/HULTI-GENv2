@@ -2,7 +2,7 @@
 	"name" : "PsychoBox",
 	"version" : 1,
 	"creationdate" : 3666872002,
-	"modificationdate" : 3677064483,
+	"modificationdate" : 3677134575,
 	"viewrect" : [ 1042.0, 195.0, 342.0, 506.0 ],
 	"autoorganize" : 1,
 	"hideprojectwindow" : 0,
@@ -101,6 +101,11 @@
 				"local" : 1
 			}
 ,
+			"player_twoAFC.maxpat" : 			{
+				"kind" : "patcher",
+				"local" : 1
+			}
+,
 			"ui_beginTestMenu.maxpat" : 			{
 				"kind" : "patcher",
 				"local" : 1
@@ -181,7 +186,7 @@
 				"local" : 1
 			}
 ,
-			"player_twoAFC.maxpat" : 			{
+			"player_generalPurpose.maxpat" : 			{
 				"kind" : "patcher",
 				"local" : 1
 			}
