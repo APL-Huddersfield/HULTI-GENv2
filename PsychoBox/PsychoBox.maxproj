@@ -2,7 +2,7 @@
 	"name" : "PsychoBox",
 	"version" : 1,
 	"creationdate" : 3666872002,
-	"modificationdate" : 3677134575,
+	"modificationdate" : 3677234600,
 	"viewrect" : [ 1042.0, 195.0, 342.0, 506.0 ],
 	"autoorganize" : 1,
 	"hideprojectwindow" : 0,
@@ -190,6 +190,11 @@
 				"kind" : "patcher",
 				"local" : 1
 			}
+,
+			"player_eofHandler.maxpat" : 			{
+				"kind" : "patcher",
+				"local" : 1
+			}
 
 		}
 ,
@@ -301,7 +306,7 @@
 
 	}
 ,
-	"detailsvisible" : 0,
+	"detailsvisible" : 1,
 	"amxdtype" : 1633771873,
 	"readonly" : 0,
 	"devpathtype" : 0,
