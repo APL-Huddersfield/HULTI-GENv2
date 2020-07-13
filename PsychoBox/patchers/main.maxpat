@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 623.0, 145.0, 1624.0, 1204.0 ],
+		"rect" : [ 132.0, 118.0, 1529.0, 1204.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -100,7 +100,7 @@
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ 1092.0, 479.0, 791.0, 601.0 ],
+						"rect" : [ 593.0, 500.0, 791.0, 601.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -128,11 +128,12 @@
 						"style" : "",
 						"subpatcher_template" : "",
 						"assistshowspatchername" : 0,
+						"visible" : 1,
 						"boxes" : [  ],
 						"lines" : [  ]
 					}
 ,
-					"patching_rect" : [ 981.0, 104.0, 103.0, 22.0 ],
+					"patching_rect" : [ 923.0, 106.0, 103.0, 22.0 ],
 					"saved_object_attributes" : 					{
 						"description" : "",
 						"digest" : "",
@@ -151,7 +152,7 @@
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 1113.0, 60.0, 104.0, 22.0 ],
+					"patching_rect" : [ 1033.0, 62.0, 104.0, 22.0 ],
 					"text" : "r to_testController"
 				}
 
@@ -993,7 +994,7 @@
  ]
 					}
 ,
-					"patching_rect" : [ 1364.0, 104.0, 89.0, 22.0 ],
+					"patching_rect" : [ 1279.0, 106.0, 89.0, 22.0 ],
 					"saved_object_attributes" : 					{
 						"description" : "",
 						"digest" : "",
@@ -1012,7 +1013,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 1547.0, 60.0, 29.5, 22.0 ],
+					"patching_rect" : [ 1447.0, 62.0, 29.5, 22.0 ],
 					"text" : "edit"
 				}
 
@@ -1024,7 +1025,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 4,
 					"outlettype" : [ "dictionary", "", "", "" ],
-					"patching_rect" : [ 1547.0, 104.0, 69.0, 22.0 ],
+					"patching_rect" : [ 1447.0, 106.0, 69.0, 22.0 ],
 					"saved_object_attributes" : 					{
 						"embed" : 0,
 						"parameter_enable" : 0,
@@ -4079,7 +4080,7 @@
  ]
 					}
 ,
-					"patching_rect" : [ 1113.0, 104.0, 110.0, 22.0 ],
+					"patching_rect" : [ 1033.0, 106.0, 110.0, 22.0 ],
 					"saved_object_attributes" : 					{
 						"description" : "",
 						"digest" : "",
@@ -4098,7 +4099,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 1473.0, 60.0, 29.5, 22.0 ],
+					"patching_rect" : [ 1373.0, 62.0, 29.5, 22.0 ],
 					"text" : "edit"
 				}
 
@@ -4110,7 +4111,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 4,
 					"outlettype" : [ "dictionary", "", "", "" ],
-					"patching_rect" : [ 1473.0, 104.0, 63.0, 22.0 ],
+					"patching_rect" : [ 1373.0, 106.0, 63.0, 22.0 ],
 					"saved_object_attributes" : 					{
 						"embed" : 0,
 						"parameter_enable" : 0,
@@ -4197,7 +4198,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 1364.0, 146.5, 67.0, 22.0 ],
+					"patching_rect" : [ 1279.0, 148.5, 67.0, 22.0 ],
 					"save" : [ "#N", "thispatcher", ";", "#Q", "end", ";" ],
 					"text" : "thispatcher"
 				}
@@ -4210,7 +4211,7 @@
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 1364.0, 60.0, 77.0, 22.0 ],
+					"patching_rect" : [ 1279.0, 62.0, 77.0, 22.0 ],
 					"text" : "r toUIControl"
 				}
 
@@ -4280,7 +4281,7 @@
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 1230.0, 60.0, 111.0, 22.0 ],
+					"patching_rect" : [ 1150.0, 62.0, 111.0, 22.0 ],
 					"text" : "r toProgramControl"
 				}
 
@@ -19540,7 +19541,7 @@
  ]
 					}
 ,
-					"patching_rect" : [ 1230.0, 104.0, 122.0, 22.0 ],
+					"patching_rect" : [ 1150.0, 106.0, 122.0, 22.0 ],
 					"saved_object_attributes" : 					{
 						"description" : "",
 						"digest" : "",
