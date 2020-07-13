@@ -2,8 +2,8 @@
 	"name" : "PsychoBox",
 	"version" : 1,
 	"creationdate" : 3666872002,
-	"modificationdate" : 3677477971,
-	"viewrect" : [ 1042.0, 195.0, 474.0, 779.0 ],
+	"modificationdate" : 3677495776,
+	"viewrect" : [ 1065.0, 183.0, 490.0, 847.0 ],
 	"autoorganize" : 1,
 	"hideprojectwindow" : 0,
 	"showdependencies" : 1,
@@ -46,12 +46,12 @@
 				"local" : 1
 			}
 ,
-			"ui_filelist_checkbox.maxpat" : 			{
+			"ui_filelist_entry_checkbox.maxpat" : 			{
 				"kind" : "patcher",
 				"local" : 1
 			}
 ,
-			"ui_filelist_entry_checkbox.maxpat" : 			{
+			"ui_filelist_checkbox.maxpat" : 			{
 				"kind" : "patcher",
 				"local" : 1
 			}
@@ -97,11 +97,6 @@
 			}
 ,
 			"testWorker_2AFC.maxpat" : 			{
-				"kind" : "patcher",
-				"local" : 1
-			}
-,
-			"player_twoAFC.maxpat" : 			{
 				"kind" : "patcher",
 				"local" : 1
 			}
@@ -166,6 +161,11 @@
 				"local" : 1
 			}
 ,
+			"configLoader.maxpat" : 			{
+				"kind" : "patcher",
+				"local" : 1
+			}
+,
 			"configValidation.maxpat" : 			{
 				"kind" : "patcher",
 				"local" : 1
@@ -176,7 +176,12 @@
 				"local" : 1
 			}
 ,
-			"configLoader.maxpat" : 			{
+			"player_twoAFC.maxpat" : 			{
+				"kind" : "patcher",
+				"local" : 1
+			}
+,
+			"player_eofHandler.maxpat" : 			{
 				"kind" : "patcher",
 				"local" : 1
 			}
@@ -187,11 +192,6 @@
 			}
 ,
 			"player_generalPurpose.maxpat" : 			{
-				"kind" : "patcher",
-				"local" : 1
-			}
-,
-			"player_eofHandler.maxpat" : 			{
 				"kind" : "patcher",
 				"local" : 1
 			}
