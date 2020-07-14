@@ -2,8 +2,8 @@
 	"name" : "PsychoBox",
 	"version" : 1,
 	"creationdate" : 3666872002,
-	"modificationdate" : 3677495776,
-	"viewrect" : [ 1065.0, 183.0, 490.0, 847.0 ],
+	"modificationdate" : 3677567947,
+	"viewrect" : [ 1821.0, 185.0, 490.0, 847.0 ],
 	"autoorganize" : 1,
 	"hideprojectwindow" : 0,
 	"showdependencies" : 1,
@@ -46,12 +46,12 @@
 				"local" : 1
 			}
 ,
-			"ui_filelist_entry_checkbox.maxpat" : 			{
+			"ui_filelist_checkbox.maxpat" : 			{
 				"kind" : "patcher",
 				"local" : 1
 			}
 ,
-			"ui_filelist_checkbox.maxpat" : 			{
+			"ui_filelist_entry_checkbox.maxpat" : 			{
 				"kind" : "patcher",
 				"local" : 1
 			}
@@ -97,6 +97,11 @@
 			}
 ,
 			"testWorker_2AFC.maxpat" : 			{
+				"kind" : "patcher",
+				"local" : 1
+			}
+,
+			"player_generalPurpose.maxpat" : 			{
 				"kind" : "patcher",
 				"local" : 1
 			}
@@ -156,6 +161,11 @@
 				"local" : 1
 			}
 ,
+			"dialog_deleteSessionItem.maxpat" : 			{
+				"kind" : "patcher",
+				"local" : 1
+			}
+,
 			"itemlist_test.maxpat" : 			{
 				"kind" : "patcher",
 				"local" : 1
@@ -181,19 +191,19 @@
 				"local" : 1
 			}
 ,
-			"player_eofHandler.maxpat" : 			{
+			"player_eof_single.maxpat" : 			{
 				"kind" : "patcher",
 				"local" : 1
 			}
 ,
-			"dialog_deleteSessionItem.maxpat" : 			{
+			"player_eof_multi.maxpat" : 			{
 				"kind" : "patcher",
-				"local" : 1
-			}
-,
-			"player_generalPurpose.maxpat" : 			{
-				"kind" : "patcher",
-				"local" : 1
+				"local" : 1,
+				"singleton" : 				{
+					"bootpath" : "~/Documents/Max 8/Projects/HULTI-GENv2/PsychoBox/patchers",
+					"projectrelativepath" : "./patchers"
+				}
+
 			}
 
 		}
@@ -311,6 +321,6 @@
 	"readonly" : 0,
 	"devpathtype" : 0,
 	"devpath" : ".",
-	"sortmode" : 0,
+	"sortmode" : 1,
 	"viewmode" : 0
 }
