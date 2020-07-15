@@ -2,7 +2,7 @@
 	"name" : "PsychoBox",
 	"version" : 1,
 	"creationdate" : 3666872002,
-	"modificationdate" : 3677567947,
+	"modificationdate" : 3677661033,
 	"viewrect" : [ 1821.0, 185.0, 490.0, 847.0 ],
 	"autoorganize" : 1,
 	"hideprojectwindow" : 0,
@@ -204,6 +204,11 @@
 					"projectrelativepath" : "./patchers"
 				}
 
+			}
+,
+			"playerTester.maxpat" : 			{
+				"kind" : "patcher",
+				"local" : 1
 			}
 
 		}
