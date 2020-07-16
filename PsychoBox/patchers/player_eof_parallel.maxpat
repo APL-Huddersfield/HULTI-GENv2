@@ -40,17 +40,6 @@
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
 				"box" : 				{
-					"id" : "obj-7",
-					"maxclass" : "newobj",
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 221.0, 420.0, 116.0, 22.0 ],
-					"text" : "print playerProgress"
-				}
-
-			}
-, 			{
-				"box" : 				{
 					"id" : "obj-31",
 					"maxclass" : "newobj",
 					"numinlets" : 2,
@@ -92,8 +81,8 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 117.5, 830.0, 60.0, 22.0 ],
-					"text" : "stop, play"
+					"patching_rect" : [ 117.5, 830.0, 31.0, 22.0 ],
+					"text" : "play"
 				}
 
 			}
@@ -140,7 +129,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 139.5, 749.0, 102.0, 22.0 ],
+					"patching_rect" : [ 139.5, 749.0, 89.0, 22.0 ],
 					"text" : "v #0-loopDelay"
 				}
 
@@ -813,15 +802,6 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-16", 0 ],
-					"order" : 1,
-					"source" : [ "obj-15", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-7", 0 ],
-					"order" : 0,
 					"source" : [ "obj-15", 0 ]
 				}
 
