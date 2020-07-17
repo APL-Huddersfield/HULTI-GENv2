@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 57.0, 144.0, 1448.0, 821.0 ],
+		"rect" : [ 89.0, 212.0, 1448.0, 821.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -45,6 +45,7 @@
 					"clickthrough" : 0,
 					"enablehscroll" : 0,
 					"enablevscroll" : 0,
+					"hidden" : 1,
 					"id" : "obj-26",
 					"lockeddragscroll" : 0,
 					"maxclass" : "bpatcher",
@@ -1292,6 +1293,24 @@
 						"assistshowspatchername" : 0,
 						"boxes" : [ 							{
 								"box" : 								{
+									"id" : "obj-9",
+									"maxclass" : "newobj",
+									"numinlets" : 2,
+									"numoutlets" : 4,
+									"outlettype" : [ "dictionary", "", "", "" ],
+									"patching_rect" : [ 151.0, 294.0, 69.0, 22.0 ],
+									"saved_object_attributes" : 									{
+										"embed" : 0,
+										"parameter_enable" : 0,
+										"parameter_mappable" : 0
+									}
+,
+									"text" : "dict subject"
+								}
+
+							}
+, 							{
+								"box" : 								{
 									"id" : "obj-38",
 									"maxclass" : "newobj",
 									"numinlets" : 3,
@@ -1308,7 +1327,7 @@
 									"maxclass" : "newobj",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 436.0, 258.0, 92.0, 22.0 ],
+									"patching_rect" : [ 381.0, 294.0, 92.0, 22.0 ],
 									"text" : "s to_testWorker"
 								}
 
@@ -1319,7 +1338,7 @@
 									"maxclass" : "newobj",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 208.0, 219.0, 106.0, 22.0 ],
+									"patching_rect" : [ 241.0, 294.0, 106.0, 22.0 ],
 									"text" : "s to_testController"
 								}
 
@@ -1342,7 +1361,7 @@
 									"maxclass" : "newobj",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 151.0, 294.0, 32.0, 22.0 ],
+									"patching_rect" : [ 227.0, 336.0, 32.0, 22.0 ],
 									"text" : "print"
 								}
 
@@ -1641,7 +1660,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 1,
 									"outlettype" : [ "multichannelsignal" ],
-									"patching_rect" : [ 322.0, 294.0, 148.0, 22.0 ],
+									"patching_rect" : [ 267.0, 336.0, 148.0, 22.0 ],
 									"text" : "mc.resize~ 2 @replicate 1"
 								}
 
@@ -1652,7 +1671,7 @@
 									"maxclass" : "newobj",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 322.0, 351.0, 54.0, 22.0 ],
+									"patching_rect" : [ 267.0, 393.0, 54.0, 22.0 ],
 									"text" : "mc.dac~"
 								}
 
@@ -1677,7 +1696,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 2,
 									"outlettype" : [ "multichannelsignal", "" ],
-									"patching_rect" : [ 322.0, 219.0, 133.0, 22.0 ],
+									"patching_rect" : [ 267.0, 219.0, 133.0, 22.0 ],
 									"text" : "player_generalPurpose"
 								}
 
@@ -2374,7 +2393,7 @@
 									"maxclass" : "newobj",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 467.5, 219.0, 102.0, 22.0 ],
+									"patching_rect" : [ 480.5, 294.0, 102.0, 22.0 ],
 									"text" : "s to_testFrontend"
 								}
 
@@ -2574,7 +2593,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 3,
 									"outlettype" : [ "", "", "reset" ],
-									"patching_rect" : [ 382.5, 148.0, 104.0, 22.0 ],
+									"patching_rect" : [ 382.5, 148.0, 117.0, 22.0 ],
 									"text" : "testWorker_2AFC"
 								}
 
@@ -4190,6 +4209,15 @@
 , 							{
 								"patchline" : 								{
 									"destination" : [ "obj-18", 0 ],
+									"order" : 0,
+									"source" : [ "obj-16", 1 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-9", 0 ],
+									"order" : 1,
 									"source" : [ "obj-16", 1 ]
 								}
 
@@ -4267,7 +4295,7 @@
 , 							{
 								"patchline" : 								{
 									"destination" : [ "obj-2", 0 ],
-									"midpoints" : [ 521.0, 204.0, 331.5, 204.0 ],
+									"midpoints" : [ 521.0, 204.0, 276.5, 204.0 ],
 									"source" : [ "obj-6", 0 ]
 								}
 
@@ -4282,7 +4310,7 @@
 , 							{
 								"patchline" : 								{
 									"destination" : [ "obj-2", 0 ],
-									"midpoints" : [ 434.5, 204.0, 331.5, 204.0 ],
+									"midpoints" : [ 441.0, 204.0, 276.5, 204.0 ],
 									"source" : [ "obj-77", 1 ]
 								}
 
@@ -4290,7 +4318,7 @@
 , 							{
 								"patchline" : 								{
 									"destination" : [ "obj-36", 0 ],
-									"midpoints" : [ 392.0, 194.0, 217.5, 194.0 ],
+									"midpoints" : [ 392.0, 194.0, 250.5, 194.0 ],
 									"source" : [ "obj-77", 0 ]
 								}
 
@@ -4484,7 +4512,6 @@
 					"clickthrough" : 0,
 					"enablehscroll" : 0,
 					"enablevscroll" : 0,
-					"hidden" : 1,
 					"id" : "obj-5",
 					"lockeddragscroll" : 0,
 					"maxclass" : "bpatcher",
