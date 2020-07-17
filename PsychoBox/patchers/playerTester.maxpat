@@ -45,7 +45,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 510.0, 318.0, 31.0, 22.0 ],
+					"patching_rect" : [ 524.0, 350.0, 31.0, 22.0 ],
 					"text" : "stop"
 				}
 
@@ -56,7 +56,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 2,
 					"numoutlets" : 0,
-					"patching_rect" : [ 294.0, 460.0, 35.0, 22.0 ],
+					"patching_rect" : [ 245.0, 512.0, 35.0, 22.0 ],
 					"text" : "dac~"
 				}
 
@@ -80,8 +80,8 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 527.0, 350.0, 73.0, 22.0 ],
-					"text" : "isloaded 0 1"
+					"patching_rect" : [ 580.0, 350.0, 73.0, 22.0 ],
+					"text" : "docheck 0 1"
 				}
 
 			}
@@ -92,7 +92,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 429.0, 346.0, 32.0, 22.0 ],
+					"patching_rect" : [ 487.0, 350.0, 32.0, 22.0 ],
 					"text" : "start"
 				}
 
@@ -128,7 +128,7 @@
 					"numinlets" : 3,
 					"numoutlets" : 2,
 					"outlettype" : [ "signal", "signal" ],
-					"patching_rect" : [ 313.0, 355.0, 75.0, 22.0 ],
+					"patching_rect" : [ 264.0, 407.0, 75.0, 22.0 ],
 					"saved_object_attributes" : 					{
 						"basictuning" : 440,
 						"followglobaltempo" : 0,
@@ -156,7 +156,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "signal", "" ],
 					"patching_rect" : [ 369.0, 407.0, 137.0, 22.0 ],
-					"text" : "player_transport_multi 3"
+					"text" : "player_transport_multi 1"
 				}
 
 			}
@@ -394,14 +394,14 @@
  ],
 		"dependency_cache" : [ 			{
 				"name" : "player_generalPurpose.maxpat",
-				"bootpath" : "~/Documents/Max 8/Projects/HULTI-GENv2/PsychoBox/patchers",
+				"bootpath" : "~/Documents/Max 8/Projects/PsychoBox/PsychoBox/patchers",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "player_transport_multi.maxpat",
-				"bootpath" : "~/Documents/Max 8/Projects/HULTI-GENv2/PsychoBox/patchers",
+				"bootpath" : "~/Documents/Max 8/Projects/PsychoBox/PsychoBox/patchers",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
