@@ -2,8 +2,8 @@
 	"name" : "PsychoBox",
 	"version" : 1,
 	"creationdate" : 3666872002,
-	"modificationdate" : 3677761995,
-	"viewrect" : [ 876.0, 258.0, 490.0, 847.0 ],
+	"modificationdate" : 3677839357,
+	"viewrect" : [ 1306.0, 505.0, 490.0, 847.0 ],
 	"autoorganize" : 1,
 	"hideprojectwindow" : 0,
 	"showdependencies" : 1,
@@ -116,6 +116,11 @@
 				"local" : 1
 			}
 ,
+			"interface_twoAFC.maxpat" : 			{
+				"kind" : "patcher",
+				"local" : 1
+			}
+,
 			"be_mainUIControl.maxpat" : 			{
 				"kind" : "patcher",
 				"local" : 1
@@ -186,11 +191,6 @@
 				"local" : 1
 			}
 ,
-			"player_twoAFC.maxpat" : 			{
-				"kind" : "patcher",
-				"local" : 1
-			}
-,
 			"player_eof_single.maxpat" : 			{
 				"kind" : "patcher",
 				"local" : 1
@@ -216,6 +216,11 @@
 
 			}
 ,
+			"player_transport_multi.maxpat" : 			{
+				"kind" : "patcher",
+				"local" : 1
+			}
+,
 			"player_eof_parallel.maxpat" : 			{
 				"kind" : "patcher",
 				"local" : 1,
@@ -234,11 +239,6 @@
 					"projectrelativepath" : "./patchers"
 				}
 
-			}
-,
-			"player_transport_multi.maxpat" : 			{
-				"kind" : "patcher",
-				"local" : 1
 			}
 
 		}

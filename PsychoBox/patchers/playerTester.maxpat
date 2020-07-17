@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 444.0, 113.0, 1010.0, 655.0 ],
+		"rect" : [ 444.0, 113.0, 996.0, 655.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -39,6 +39,17 @@
 		"subpatcher_template" : "",
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
+				"box" : 				{
+					"id" : "obj-11",
+					"maxclass" : "newobj",
+					"numinlets" : 2,
+					"numoutlets" : 0,
+					"patching_rect" : [ 276.0, 296.0, 35.0, 22.0 ],
+					"text" : "dac~"
+				}
+
+			}
+, 			{
 				"box" : 				{
 					"id" : "obj-25",
 					"maxclass" : "message",
@@ -80,7 +91,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 580.0, 350.0, 73.0, 22.0 ],
+					"patching_rect" : [ 559.0, 350.0, 73.0, 22.0 ],
 					"text" : "docheck 0 1"
 				}
 
@@ -154,7 +165,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 2,
 					"numoutlets" : 2,
-					"outlettype" : [ "signal", "" ],
+					"outlettype" : [ "signal", "bang" ],
 					"patching_rect" : [ 369.0, 407.0, 137.0, 22.0 ],
 					"text" : "player_transport_multi 1"
 				}
@@ -167,7 +178,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 766.0, 185.0, 31.0, 22.0 ],
+					"patching_rect" : [ 688.0, 158.0, 31.0, 22.0 ],
 					"text" : "stop"
 				}
 
@@ -180,7 +191,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "int" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 671.0, 122.0, 24.0, 24.0 ]
+					"patching_rect" : [ 593.0, 95.0, 24.0, 24.0 ]
 				}
 
 			}
@@ -192,7 +203,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "int" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 852.0, 105.0, 24.0, 24.0 ]
+					"patching_rect" : [ 742.0, 78.0, 24.0, 24.0 ]
 				}
 
 			}
@@ -203,7 +214,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 845.0, 185.0, 59.0, 22.0 ],
+					"patching_rect" : [ 735.0, 158.0, 59.0, 22.0 ],
 					"text" : "switch $1"
 				}
 
@@ -215,8 +226,8 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 723.0, 185.0, 31.0, 22.0 ],
-					"text" : "play"
+					"patching_rect" : [ 645.0, 158.0, 32.0, 22.0 ],
+					"text" : "start"
 				}
 
 			}
@@ -227,7 +238,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 671.0, 185.0, 48.0, 22.0 ],
+					"patching_rect" : [ 593.0, 158.0, 48.0, 22.0 ],
 					"text" : "loop $1"
 				}
 
@@ -240,7 +251,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 509.0, 172.0, 156.0, 35.0 ],
+					"patching_rect" : [ 431.0, 145.0, 156.0, 35.0 ],
 					"text" : "load 0 tone_0_level_0.wav, load 1 tone_0_level_1.wav"
 				}
 
@@ -252,7 +263,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 370.0, 185.0, 131.0, 22.0 ],
+					"patching_rect" : [ 292.0, 158.0, 131.0, 22.0 ],
 					"text" : "setnumstimuli 2 1 multi"
 				}
 
@@ -263,14 +274,30 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 2,
-					"outlettype" : [ "multichannelsignal", "" ],
-					"patching_rect" : [ 370.0, 267.0, 133.0, 22.0 ],
+					"outlettype" : [ "multichannelsignal", "bang" ],
+					"patching_rect" : [ 292.0, 240.0, 133.0, 22.0 ],
 					"text" : "player_generalPurpose"
 				}
 
 			}
  ],
 		"lines" : [ 			{
+				"patchline" : 				{
+					"destination" : [ "obj-11", 1 ],
+					"order" : 0,
+					"source" : [ "obj-1", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-11", 0 ],
+					"order" : 1,
+					"source" : [ "obj-1", 0 ]
+				}
+
+			}
+, 			{
 				"patchline" : 				{
 					"destination" : [ "obj-1", 0 ],
 					"source" : [ "obj-10", 0 ]
@@ -293,20 +320,6 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-2", 1 ],
-					"source" : [ "obj-15", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-2", 1 ],
-					"source" : [ "obj-17", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
 					"destination" : [ "obj-21", 0 ],
 					"source" : [ "obj-2", 1 ]
 				}
@@ -323,13 +336,6 @@
 				"patchline" : 				{
 					"destination" : [ "obj-6", 0 ],
 					"source" : [ "obj-20", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-2", 1 ],
-					"source" : [ "obj-25", 0 ]
 				}
 
 			}
@@ -363,13 +369,6 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-2", 0 ],
-					"source" : [ "obj-7", 1 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
 					"destination" : [ "obj-22", 1 ],
 					"order" : 0,
 					"source" : [ "obj-7", 0 ]
@@ -394,14 +393,14 @@
  ],
 		"dependency_cache" : [ 			{
 				"name" : "player_generalPurpose.maxpat",
-				"bootpath" : "~/Documents/Max 8/Projects/PsychoBox/PsychoBox/patchers",
+				"bootpath" : "~/Documents/Max 8/Projects/HULTI-GENv2/PsychoBox/patchers",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "player_transport_multi.maxpat",
-				"bootpath" : "~/Documents/Max 8/Projects/PsychoBox/PsychoBox/patchers",
+				"bootpath" : "~/Documents/Max 8/Projects/HULTI-GENv2/PsychoBox/patchers",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
