@@ -2,8 +2,8 @@
 	"name" : "PsychoBox",
 	"version" : 1,
 	"creationdate" : 3666872002,
-	"modificationdate" : 3678099711,
-	"viewrect" : [ 1167.0, 374.0, 490.0, 847.0 ],
+	"modificationdate" : 3678104647,
+	"viewrect" : [ 1995.0, 198.0, 490.0, 847.0 ],
 	"autoorganize" : 1,
 	"hideprojectwindow" : 0,
 	"showdependencies" : 1,
@@ -242,6 +242,16 @@
 			}
 ,
 			"interface_abx.maxpat" : 			{
+				"kind" : "patcher",
+				"local" : 1,
+				"singleton" : 				{
+					"bootpath" : "~/Documents/Max 8/Projects/HULTI-GENv2/PsychoBox/patchers",
+					"projectrelativepath" : "./patchers"
+				}
+
+			}
+,
+			"testWorker_abx.maxpat" : 			{
 				"kind" : "patcher",
 				"local" : 1
 			}
