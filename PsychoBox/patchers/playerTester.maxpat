@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 444.0, 113.0, 996.0, 655.0 ],
+		"rect" : [ 444.0, 113.0, 996.0, 869.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -56,7 +56,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 524.0, 350.0, 31.0, 22.0 ],
+					"patching_rect" : [ 391.0, 306.0, 31.0, 22.0 ],
 					"text" : "stop"
 				}
 
@@ -67,7 +67,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 2,
 					"numoutlets" : 0,
-					"patching_rect" : [ 245.0, 512.0, 35.0, 22.0 ],
+					"patching_rect" : [ 112.0, 468.0, 35.0, 22.0 ],
 					"text" : "dac~"
 				}
 
@@ -80,7 +80,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 487.0, 467.0, 24.0, 24.0 ]
+					"patching_rect" : [ 354.0, 423.0, 24.0, 24.0 ]
 				}
 
 			}
@@ -91,7 +91,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 559.0, 350.0, 73.0, 22.0 ],
+					"patching_rect" : [ 426.0, 306.0, 73.0, 22.0 ],
 					"text" : "docheck 0 1"
 				}
 
@@ -103,7 +103,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 487.0, 350.0, 32.0, 22.0 ],
+					"patching_rect" : [ 354.0, 306.0, 32.0, 22.0 ],
 					"text" : "start"
 				}
 
@@ -115,7 +115,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 563.0, 418.0, 48.0, 22.0 ],
+					"patching_rect" : [ 430.0, 374.0, 48.0, 22.0 ],
 					"text" : "replace"
 				}
 
@@ -127,7 +127,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "float", "bang" ],
-					"patching_rect" : [ 563.0, 463.0, 69.0, 22.0 ],
+					"patching_rect" : [ 430.0, 419.0, 69.0, 22.0 ],
 					"text" : "buffer~ test"
 				}
 
@@ -139,7 +139,7 @@
 					"numinlets" : 3,
 					"numoutlets" : 2,
 					"outlettype" : [ "signal", "signal" ],
-					"patching_rect" : [ 264.0, 407.0, 75.0, 22.0 ],
+					"patching_rect" : [ 131.0, 363.0, 75.0, 22.0 ],
 					"saved_object_attributes" : 					{
 						"basictuning" : 440,
 						"followglobaltempo" : 0,
@@ -165,8 +165,8 @@
 					"maxclass" : "newobj",
 					"numinlets" : 2,
 					"numoutlets" : 2,
-					"outlettype" : [ "signal", "bang" ],
-					"patching_rect" : [ 369.0, 407.0, 137.0, 22.0 ],
+					"outlettype" : [ "signal", "" ],
+					"patching_rect" : [ 236.0, 363.0, 137.0, 22.0 ],
 					"text" : "player_transport_multi 1"
 				}
 
@@ -274,7 +274,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 2,
-					"outlettype" : [ "multichannelsignal", "bang" ],
+					"outlettype" : [ "", "" ],
 					"patching_rect" : [ 292.0, 240.0, 133.0, 22.0 ],
 					"text" : "player_generalPurpose"
 				}
