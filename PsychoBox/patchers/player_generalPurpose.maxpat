@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 67.0, 99.0, 1835.0, 654.0 ],
+		"rect" : [ 110.0, 694.0, 1835.0, 654.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -40,12 +40,24 @@
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-7",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 2,
+					"outlettype" : [ "", "" ],
+					"patching_rect" : [ 1576.0, 275.0, 121.0, 22.0 ],
+					"text" : "patcherargs 1 1 multi"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-10",
 					"maxclass" : "message",
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 1537.0, 470.0, 39.0, 22.0 ],
+					"patching_rect" : [ 1537.0, 472.0, 39.0, 22.0 ],
 					"text" : "ready"
 				}
 
@@ -57,8 +69,8 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 1410.599999999999909, 320.0, 131.0, 22.0 ],
-					"text" : "setnumstimuli 2 1 multi"
+					"patching_rect" : [ 1576.0, 320.0, 132.0, 22.0 ],
+					"text" : "setnumstimuli $1 $2 $3"
 				}
 
 			}
@@ -69,7 +81,7 @@
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 1503.5, 54.0, 97.0, 22.0 ],
+					"patching_rect" : [ 1486.5, 54.0, 97.0, 22.0 ],
 					"text" : "r #0-to_transport"
 				}
 
@@ -93,7 +105,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 1743.0, 320.0, 48.0, 22.0 ],
+					"patching_rect" : [ 1737.0, 320.0, 48.0, 22.0 ],
 					"text" : "destroy"
 				}
 
@@ -657,12 +669,11 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-11",
-					"linecount" : 2,
 					"maxclass" : "newobj",
 					"numinlets" : 6,
 					"numoutlets" : 6,
 					"outlettype" : [ "", "", "", "", "", "" ],
-					"patching_rect" : [ 1503.5, 107.0, 129.0, 35.0 ],
+					"patching_rect" : [ 1486.5, 107.0, 229.0, 22.0 ],
 					"text" : "routepass start stop switch loop docheck",
 					"varname" : "eofrouter"
 				}
@@ -4235,7 +4246,15 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-8", 0 ],
+					"source" : [ "obj-7", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-178", 0 ],
+					"midpoints" : [ 1585.5, 366.0, 1420.099999999999909, 366.0 ],
 					"source" : [ "obj-8", 0 ]
 				}
 
@@ -4243,7 +4262,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-11", 0 ],
-					"midpoints" : [ 1717.0, 91.0, 1513.0, 91.0 ],
+					"midpoints" : [ 1717.0, 91.0, 1496.0, 91.0 ],
 					"source" : [ "obj-9", 0 ]
 				}
 
