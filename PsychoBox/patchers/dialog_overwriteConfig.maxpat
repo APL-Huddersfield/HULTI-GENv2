@@ -40,6 +40,18 @@
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-5",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 218.0, 275.0, 183.0, 22.0 ],
+					"text" : "loadmess title \"Overwrite Config\""
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-68",
 					"maxclass" : "newobj",
 					"numinlets" : 1,
@@ -476,7 +488,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "wclose", "cancel" ],
-					"patching_rect" : [ 343.0, 275.0, 90.0, 22.0 ],
+					"patching_rect" : [ 407.0, 274.0, 90.0, 22.0 ],
 					"text" : "t wclose cancel"
 				}
 
@@ -488,7 +500,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "wclose", "okay" ],
-					"patching_rect" : [ 453.0, 275.0, 81.0, 22.0 ],
+					"patching_rect" : [ 517.0, 274.0, 81.0, 22.0 ],
 					"text" : "t wclose okay"
 				}
 
@@ -499,7 +511,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 414.0, 375.0, 162.0, 22.0 ],
+					"patching_rect" : [ 478.0, 374.0, 162.0, 22.0 ],
 					"text" : "s fromOverwriteConfigDialog"
 				}
 
@@ -602,7 +614,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "jit_matrix" ],
-					"patching_rect" : [ 311.0, 375.0, 84.0, 74.15625 ],
+					"patching_rect" : [ 375.0, 374.0, 84.0, 74.15625 ],
 					"pic" : "Macintosh HD:/Users/dale/Documents/Max 8/Projects/PsychoBox/PsychoBox/media/warning.png",
 					"presentation" : 1,
 					"presentation_rect" : [ 10.0, 14.0, 64.0, 56.5 ]
@@ -616,7 +628,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 343.0, 163.0, 244.0, 33.0 ],
+					"patching_rect" : [ 407.0, 162.0, 244.0, 33.0 ],
 					"presentation" : 1,
 					"presentation_linecount" : 2,
 					"presentation_rect" : [ 80.0, 43.0, 283.0, 33.0 ],
@@ -632,7 +644,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 343.0, 128.0, 283.0, 33.0 ],
+					"patching_rect" : [ 407.0, 127.0, 283.0, 33.0 ],
 					"presentation" : 1,
 					"presentation_linecount" : 2,
 					"presentation_rect" : [ 80.0, 10.0, 283.0, 33.0 ],
@@ -649,7 +661,7 @@
 					"numoutlets" : 3,
 					"outlettype" : [ "", "", "int" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 343.0, 233.0, 100.0, 20.0 ],
+					"patching_rect" : [ 407.0, 232.0, 100.0, 20.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 190.0, 90.0, 80.0, 20.0 ],
 					"rounded" : 8.0,
@@ -669,7 +681,7 @@
 					"mode" : 0,
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 562.5, 233.0, 70.0, 54.0 ],
+					"patching_rect" : [ 626.5, 232.0, 70.0, 54.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 280.0, 90.0, 80.0, 20.0 ],
 					"proportion" : 0.5
@@ -685,7 +697,7 @@
 					"numoutlets" : 3,
 					"outlettype" : [ "", "", "int" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 453.0, 233.0, 100.0, 20.0 ],
+					"patching_rect" : [ 517.0, 232.0, 100.0, 20.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 280.0, 90.0, 80.0, 20.0 ],
 					"rounded" : 8.0,
@@ -778,6 +790,13 @@
 				"patchline" : 				{
 					"destination" : [ "obj-7", 0 ],
 					"source" : [ "obj-48", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-7", 0 ],
+					"source" : [ "obj-5", 0 ]
 				}
 
 			}

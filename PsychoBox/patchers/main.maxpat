@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 89.0, 212.0, 1448.0, 821.0 ],
+		"rect" : [ 216.0, 383.0, 1448.0, 821.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -50,7 +50,7 @@
 					"lockeddragscroll" : 0,
 					"maxclass" : "bpatcher",
 					"name" : "interface_twoAFC.maxpat",
-					"numinlets" : 0,
+					"numinlets" : 1,
 					"numoutlets" : 0,
 					"offset" : [ 0.0, 0.0 ],
 					"patching_rect" : [ 458.0, 250.0, 507.0, 330.0 ],
@@ -1678,24 +1678,12 @@
 							}
 , 							{
 								"box" : 								{
-									"id" : "obj-6",
-									"maxclass" : "newobj",
-									"numinlets" : 0,
-									"numoutlets" : 1,
-									"outlettype" : [ "" ],
-									"patching_rect" : [ 511.5, 105.0, 86.0, 22.0 ],
-									"text" : "r to_testPlayer"
-								}
-
-							}
-, 							{
-								"box" : 								{
 									"color" : [ 0.843137254901961, 0.0, 0.0, 1.0 ],
 									"id" : "obj-2",
 									"maxclass" : "newobj",
 									"numinlets" : 1,
 									"numoutlets" : 2,
-									"outlettype" : [ "multichannelsignal", "" ],
+									"outlettype" : [ "", "" ],
 									"patching_rect" : [ 267.0, 219.0, 133.0, 22.0 ],
 									"text" : "player_generalPurpose"
 								}
@@ -2594,7 +2582,7 @@
 									"numoutlets" : 3,
 									"outlettype" : [ "", "", "reset" ],
 									"patching_rect" : [ 382.5, 148.0, 117.0, 22.0 ],
-									"text" : "testWorker_2AFC"
+									"text" : "worker_2AFC"
 								}
 
 							}
@@ -4289,14 +4277,6 @@
 								"patchline" : 								{
 									"destination" : [ "obj-62", 0 ],
 									"source" : [ "obj-38", 0 ]
-								}
-
-							}
-, 							{
-								"patchline" : 								{
-									"destination" : [ "obj-2", 0 ],
-									"midpoints" : [ 521.0, 204.0, 276.5, 204.0 ],
-									"source" : [ "obj-6", 0 ]
 								}
 
 							}
@@ -20062,7 +20042,7 @@
 				"implicit" : 1
 			}
 , 			{
-				"name" : "testWorker_2AFC.maxpat",
+				"name" : "worker_2AFC.maxpat",
 				"bootpath" : "~/Documents/Max 8/Projects/HULTI-GENv2/PsychoBox/patchers",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
@@ -20070,13 +20050,6 @@
 			}
 , 			{
 				"name" : "player_generalPurpose.maxpat",
-				"bootpath" : "~/Documents/Max 8/Projects/HULTI-GENv2/PsychoBox/patchers",
-				"patcherrelativepath" : ".",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "player_transport_multi.maxpat",
 				"bootpath" : "~/Documents/Max 8/Projects/HULTI-GENv2/PsychoBox/patchers",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
