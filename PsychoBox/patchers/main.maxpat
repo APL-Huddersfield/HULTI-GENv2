@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 216.0, 383.0, 1448.0, 821.0 ],
+		"rect" : [ 125.0, 351.0, 1448.0, 821.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -982,7 +982,6 @@
 					"clickthrough" : 0,
 					"enablehscroll" : 0,
 					"enablevscroll" : 0,
-					"hidden" : 1,
 					"id" : "obj-19",
 					"lockeddragscroll" : 0,
 					"maxclass" : "bpatcher",
@@ -1291,7 +1290,6 @@
 						"style" : "",
 						"subpatcher_template" : "",
 						"assistshowspatchername" : 0,
-						"visible" : 1,
 						"boxes" : [ 							{
 								"box" : 								{
 									"id" : "obj-9",
@@ -2597,7 +2595,6 @@
 										"style" : "",
 										"subpatcher_template" : "",
 										"assistshowspatchername" : 0,
-										"visible" : 1,
 										"boxes" : [ 											{
 												"box" : 												{
 													"id" : "obj-13",
@@ -4445,6 +4442,7 @@
 					"clickthrough" : 0,
 					"enablehscroll" : 0,
 					"enablevscroll" : 0,
+					"hidden" : 1,
 					"id" : "obj-5",
 					"lockeddragscroll" : 0,
 					"maxclass" : "bpatcher",
@@ -4490,7 +4488,7 @@
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ 845.0, 648.0, 1049.0, 475.0 ],
+						"rect" : [ 918.0, 750.0, 1049.0, 475.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -4518,6 +4516,7 @@
 						"style" : "",
 						"subpatcher_template" : "",
 						"assistshowspatchername" : 0,
+						"visible" : 1,
 						"boxes" : [ 							{
 								"box" : 								{
 									"id" : "obj-16",
@@ -5562,7 +5561,7 @@
 										}
 ,
 										"classnamespace" : "box",
-										"rect" : [ 925.0, 326.0, 640.0, 480.0 ],
+										"rect" : [ 799.0, 218.0, 640.0, 480.0 ],
 										"bglocked" : 0,
 										"openinpresentation" : 0,
 										"default_fontsize" : 12.0,
@@ -5590,6 +5589,7 @@
 										"style" : "",
 										"subpatcher_template" : "",
 										"assistshowspatchername" : 0,
+										"visible" : 1,
 										"boxes" : [ 											{
 												"box" : 												{
 													"id" : "obj-3",
@@ -5619,7 +5619,7 @@
 														}
 ,
 														"classnamespace" : "box",
-														"rect" : [ 707.0, 322.0, 1013.0, 464.0 ],
+														"rect" : [ 584.0, 272.0, 1013.0, 464.0 ],
 														"bglocked" : 0,
 														"openinpresentation" : 0,
 														"default_fontsize" : 12.0,
@@ -5647,6 +5647,7 @@
 														"style" : "",
 														"subpatcher_template" : "",
 														"assistshowspatchername" : 0,
+														"visible" : 1,
 														"boxes" : [ 															{
 																"box" : 																{
 																	"id" : "obj-15",
@@ -5654,7 +5655,7 @@
 																	"maxclass" : "comment",
 																	"numinlets" : 1,
 																	"numoutlets" : 0,
-																	"patching_rect" : [ 265.0, 263.0, 150.0, 33.0 ],
+																	"patching_rect" : [ 245.0, 252.0, 150.0, 33.0 ],
 																	"text" : "Perhaps make these external and test specific"
 																}
 
@@ -7231,7 +7232,7 @@
 																						}
 ,
 																						"classnamespace" : "box",
-																						"rect" : [ 1730.0, 222.0, 619.0, 525.0 ],
+																						"rect" : [ 772.0, 380.0, 619.0, 525.0 ],
 																						"bglocked" : 0,
 																						"openinpresentation" : 0,
 																						"default_fontsize" : 12.0,
@@ -9166,7 +9167,7 @@
 																						}
 ,
 																						"classnamespace" : "box",
-																						"rect" : [ 822.0, 346.0, 972.0, 637.0 ],
+																						"rect" : [ 576.0, 416.0, 972.0, 637.0 ],
 																						"bglocked" : 0,
 																						"openinpresentation" : 0,
 																						"default_fontsize" : 12.0,
@@ -10406,7 +10407,7 @@
 																									"numinlets" : 2,
 																									"numoutlets" : 1,
 																									"outlettype" : [ "" ],
-																									"patching_rect" : [ 92.0, 364.0, 323.0, 35.0 ],
+																									"patching_rect" : [ 92.0, 364.0, 327.0, 35.0 ],
 																									"text" : "sprintf setparse experimentData::sessions[%d]::groups[%d] reference: stimuli:"
 																								}
 
@@ -10594,7 +10595,7 @@
 , 																							{
 																								"patchline" : 																								{
 																									"destination" : [ "obj-12", 1 ],
-																									"midpoints" : [ 658.33335366666654, 296.0, 405.5, 296.0 ],
+																									"midpoints" : [ 658.33335366666654, 296.0, 409.5, 296.0 ],
 																									"order" : 1,
 																									"source" : [ "obj-40", 3 ]
 																								}
@@ -10760,7 +10761,7 @@
 																						}
 ,
 																						"classnamespace" : "box",
-																						"rect" : [ 1800.0, 743.0, 626.0, 564.0 ],
+																						"rect" : [ 739.0, 749.0, 626.0, 564.0 ],
 																						"bglocked" : 0,
 																						"openinpresentation" : 0,
 																						"default_fontsize" : 12.0,
@@ -16368,7 +16369,7 @@
 																					"numinlets" : 1,
 																					"numoutlets" : 1,
 																					"outlettype" : [ "" ],
-																					"patching_rect" : [ 429.0, 309.0, 131.0, 22.0 ],
+																					"patching_rect" : [ 429.0, 323.0, 131.0, 22.0 ],
 																					"text" : "dict.unpack repetitions:"
 																				}
 
@@ -16380,7 +16381,7 @@
 																					"numinlets" : 1,
 																					"numoutlets" : 1,
 																					"outlettype" : [ "" ],
-																					"patching_rect" : [ 429.0, 355.0, 119.0, 22.0 ],
+																					"patching_rect" : [ 429.0, 369.0, 119.0, 22.0 ],
 																					"text" : "v #0-numRepetitions"
 																				}
 
@@ -16434,7 +16435,7 @@
 																					"numinlets" : 1,
 																					"numoutlets" : 1,
 																					"outlettype" : [ "" ],
-																					"patching_rect" : [ 103.0, 252.0, 107.0, 22.0 ],
+																					"patching_rect" : [ 103.0, 255.0, 107.0, 22.0 ],
 																					"text" : "v #0-numSessions"
 																				}
 
@@ -16446,7 +16447,7 @@
 																					"numinlets" : 1,
 																					"numoutlets" : 1,
 																					"outlettype" : [ "" ],
-																					"patching_rect" : [ 576.0, 433.0, 159.0, 22.0 ],
+																					"patching_rect" : [ 576.0, 447.0, 159.0, 22.0 ],
 																					"text" : "sprintf replace task::type %s"
 																				}
 
@@ -16458,7 +16459,7 @@
 																					"numinlets" : 2,
 																					"numoutlets" : 1,
 																					"outlettype" : [ "" ],
-																					"patching_rect" : [ 156.0, 488.0, 55.0, 22.0 ],
+																					"patching_rect" : [ 156.0, 502.0, 55.0, 22.0 ],
 																					"text" : "join 2"
 																				}
 
@@ -16470,7 +16471,7 @@
 																					"numinlets" : 2,
 																					"numoutlets" : 2,
 																					"outlettype" : [ "", "" ],
-																					"patching_rect" : [ 156.0, 399.0, 55.0, 22.0 ],
+																					"patching_rect" : [ 156.0, 413.0, 55.0, 22.0 ],
 																					"text" : "zl.slice 1"
 																				}
 
@@ -16482,7 +16483,7 @@
 																					"numinlets" : 2,
 																					"numoutlets" : 1,
 																					"outlettype" : [ "" ],
-																					"patching_rect" : [ 156.0, 309.0, 141.0, 22.0 ],
+																					"patching_rect" : [ 156.0, 323.0, 141.0, 22.0 ],
 																					"text" : "dictionary #0-testParams"
 																				}
 
@@ -16494,7 +16495,7 @@
 																					"numinlets" : 1,
 																					"numoutlets" : 1,
 																					"outlettype" : [ "" ],
-																					"patching_rect" : [ 156.0, 355.0, 47.0, 22.0 ],
+																					"patching_rect" : [ 156.0, 369.0, 47.0, 22.0 ],
 																					"text" : "dict.iter"
 																				}
 
@@ -16519,7 +16520,7 @@
 																					"numinlets" : 1,
 																					"numoutlets" : 1,
 																					"outlettype" : [ "" ],
-																					"patching_rect" : [ 156.0, 439.0, 200.0, 22.0 ],
+																					"patching_rect" : [ 156.0, 453.0, 200.0, 22.0 ],
 																					"text" : "sprintf replace task::parameters::%s"
 																				}
 
@@ -16543,7 +16544,7 @@
 																					"numinlets" : 2,
 																					"numoutlets" : 4,
 																					"outlettype" : [ "dictionary", "", "", "" ],
-																					"patching_rect" : [ 310.0, 309.0, 109.0, 22.0 ],
+																					"patching_rect" : [ 375.0, 413.0, 109.0, 22.0 ],
 																					"saved_object_attributes" : 																					{
 																						"embed" : 0,
 																						"parameter_enable" : 0,
@@ -16561,7 +16562,7 @@
 																					"numinlets" : 1,
 																					"numoutlets" : 2,
 																					"outlettype" : [ "", "" ],
-																					"patching_rect" : [ 429.0, 241.0, 166.0, 22.0 ],
+																					"patching_rect" : [ 429.0, 255.0, 166.0, 22.0 ],
 																					"text" : "dict.unpack parameters: type:"
 																				}
 
@@ -16610,7 +16611,7 @@
 																					"maxclass" : "outlet",
 																					"numinlets" : 1,
 																					"numoutlets" : 0,
-																					"patching_rect" : [ 156.0, 545.0, 30.0, 30.0 ]
+																					"patching_rect" : [ 156.0, 559.0, 30.0, 30.0 ]
 																				}
 
 																			}
@@ -16618,7 +16619,7 @@
 																		"lines" : [ 																			{
 																				"patchline" : 																				{
 																					"destination" : [ "obj-63", 0 ],
-																					"midpoints" : [ 585.5, 530.0, 165.5, 530.0 ],
+																					"midpoints" : [ 585.5, 544.0, 165.5, 544.0 ],
 																					"source" : [ "obj-1", 0 ]
 																				}
 
@@ -16718,7 +16719,7 @@
 , 																			{
 																				"patchline" : 																				{
 																					"destination" : [ "obj-54", 0 ],
-																					"midpoints" : [ 438.5, 294.0, 319.5, 294.0 ],
+																					"midpoints" : [ 438.5, 308.0, 384.5, 308.0 ],
 																					"order" : 1,
 																					"source" : [ "obj-53", 0 ]
 																				}
