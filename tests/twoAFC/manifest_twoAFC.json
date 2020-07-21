@@ -1,0 +1,9 @@
+{
+    "worker" : "worker_twoAFC.maxpat",
+    "interface" : "interface_twoAFC.maxpat",
+    "player" : "player_generalPurpose.maxpat",
+    "model" : "sdt",
+    "setup" : {
+        
+    }
+}
