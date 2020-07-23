@@ -2547,7 +2547,7 @@
 									"numoutlets" : 3,
 									"outlettype" : [ "", "multichannelsignal", "reset" ],
 									"patching_rect" : [ 382.5, 148.0, 117.0, 22.0 ],
-									"text" : "worker_2AFC"
+									"text" : "worker_twoAFC"
 								}
 
 							}
@@ -14415,7 +14415,7 @@
 				"implicit" : 1
 			}
 , 			{
-				"name" : "worker_2AFC.maxpat",
+				"name" : "worker_twoAFC.maxpat",
 				"bootpath" : "~/Documents/Max 8/Projects/HULTI-GENv2/PsychoBox/patchers",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",

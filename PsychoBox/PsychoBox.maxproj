@@ -96,7 +96,7 @@
 				"local" : 1
 			}
 ,
-			"worker_2AFC.maxpat" : 			{
+			"worker_twoAFC.maxpat" : 			{
 				"kind" : "patcher",
 				"local" : 1
 			}
