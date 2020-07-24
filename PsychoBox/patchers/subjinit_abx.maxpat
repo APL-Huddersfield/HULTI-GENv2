@@ -121,7 +121,6 @@
 						"style" : "",
 						"subpatcher_template" : "",
 						"assistshowspatchername" : 0,
-						"visible" : 1,
 						"boxes" : [ 							{
 								"box" : 								{
 									"id" : "obj-11",
@@ -3629,7 +3628,7 @@
 										}
 ,
 										"classnamespace" : "box",
-										"rect" : [ 1300.0, 529.0, 1027.0, 575.0 ],
+										"rect" : [ 596.0, 486.0, 890.0, 614.0 ],
 										"bglocked" : 0,
 										"openinpresentation" : 0,
 										"default_fontsize" : 12.0,
@@ -3660,67 +3659,40 @@
 										"visible" : 1,
 										"boxes" : [ 											{
 												"box" : 												{
+													"id" : "obj-6",
+													"linecount" : 2,
+													"maxclass" : "comment",
+													"numinlets" : 1,
+													"numoutlets" : 0,
+													"patching_rect" : [ 76.0, 553.0, 52.0, 33.0 ],
+													"presentation_linecount" : 2,
+													"text" : "Subject Dict",
+													"textjustification" : 1
+												}
+
+											}
+, 											{
+												"box" : 												{
+													"id" : "obj-5",
+													"linecount" : 3,
+													"maxclass" : "comment",
+													"numinlets" : 1,
+													"numoutlets" : 0,
+													"patching_rect" : [ 12.5, 553.0, 59.0, 47.0 ],
+													"text" : "Chain current group",
+													"textjustification" : 1
+												}
+
+											}
+, 											{
+												"box" : 												{
 													"id" : "obj-15",
 													"maxclass" : "message",
 													"numinlets" : 2,
 													"numoutlets" : 1,
 													"outlettype" : [ "" ],
-													"patching_rect" : [ 401.0, 206.0, 112.0, 22.0 ],
-													"text" : "\"reference: stimuli:\""
-												}
-
-											}
-, 											{
-												"box" : 												{
-													"id" : "obj-14",
-													"maxclass" : "message",
-													"numinlets" : 2,
-													"numoutlets" : 1,
-													"outlettype" : [ "" ],
-													"patching_rect" : [ 293.0, 136.0, 79.0, 22.0 ],
-													"text" : "clear, set test"
-												}
-
-											}
-, 											{
-												"box" : 												{
-													"id" : "obj-13",
-													"maxclass" : "message",
-													"numinlets" : 2,
-													"numoutlets" : 1,
-													"outlettype" : [ "" ],
-													"patching_rect" : [ 156.0, 64.0, 112.0, 22.0 ],
-													"text" : "\"reference: stimuli:\""
-												}
-
-											}
-, 											{
-												"box" : 												{
-													"id" : "obj-9",
-													"maxclass" : "newobj",
-													"numinlets" : 2,
-													"numoutlets" : 4,
-													"outlettype" : [ "dictionary", "", "", "" ],
-													"patching_rect" : [ 127.0, 206.0, 78.0, 22.0 ],
-													"saved_object_attributes" : 													{
-														"embed" : 0,
-														"parameter_enable" : 0,
-														"parameter_mappable" : 0
-													}
-,
-													"text" : "dict dicktracy"
-												}
-
-											}
-, 											{
-												"box" : 												{
-													"id" : "obj-8",
-													"maxclass" : "newobj",
-													"numinlets" : 1,
-													"numoutlets" : 1,
-													"outlettype" : [ "" ],
-													"patching_rect" : [ 127.0, 136.0, 133.0, 22.0 ],
-													"text" : "sprintf setparse test %s"
+													"patching_rect" : [ 333.0, 320.0, 184.0, 22.0 ],
+													"text" : "\"reference: stimuli: wasA: wasX:\""
 												}
 
 											}
@@ -3730,7 +3702,7 @@
 													"maxclass" : "comment",
 													"numinlets" : 1,
 													"numoutlets" : 0,
-													"patching_rect" : [ 87.0, 230.0, 150.0, 20.0 ],
+													"patching_rect" : [ 355.0, 364.0, 130.0, 20.0 ],
 													"text" : "Keys instantiated here"
 												}
 
@@ -3742,7 +3714,7 @@
 													"maxclass" : "comment",
 													"numinlets" : 1,
 													"numoutlets" : 0,
-													"patching_rect" : [ 2.5, 7.0, 258.0, 33.0 ],
+													"patching_rect" : [ 2.5, 7.0, 260.0, 33.0 ],
 													"text" : "Instantiate reference and stimuli keys and ABX specific keys in each group for this session"
 												}
 
@@ -3768,7 +3740,7 @@
 													"maxclass" : "outlet",
 													"numinlets" : 1,
 													"numoutlets" : 0,
-													"patching_rect" : [ 47.0, 518.0, 30.0, 30.0 ]
+													"patching_rect" : [ 27.0, 518.0, 30.0, 30.0 ]
 												}
 
 											}
@@ -3973,22 +3945,15 @@
 											}
 , 											{
 												"patchline" : 												{
-													"destination" : [ "obj-8", 0 ],
-													"source" : [ "obj-13", 0 ]
-												}
-
-											}
-, 											{
-												"patchline" : 												{
-													"destination" : [ "obj-9", 0 ],
-													"source" : [ "obj-14", 0 ]
+													"destination" : [ "obj-12", 2 ],
+													"source" : [ "obj-15", 0 ]
 												}
 
 											}
 , 											{
 												"patchline" : 												{
 													"destination" : [ "obj-1", 0 ],
-													"midpoints" : [ 744.33335366666654, 276.0, 56.5, 276.0 ],
+													"midpoints" : [ 744.33335366666654, 276.0, 36.5, 276.0 ],
 													"source" : [ "obj-40", 0 ]
 												}
 
@@ -3999,6 +3964,15 @@
 													"midpoints" : [ 793.33335366666654, 296.0, 219.5, 296.0 ],
 													"order" : 2,
 													"source" : [ "obj-40", 3 ]
+												}
+
+											}
+, 											{
+												"patchline" : 												{
+													"destination" : [ "obj-15", 0 ],
+													"midpoints" : [ 760.666686999999911, 286.0, 342.5, 286.0 ],
+													"order" : 0,
+													"source" : [ "obj-40", 1 ]
 												}
 
 											}
@@ -4023,6 +3997,7 @@
 												"patchline" : 												{
 													"destination" : [ "obj-52", 0 ],
 													"midpoints" : [ 760.666686999999911, 286.0, 96.5, 286.0 ],
+													"order" : 1,
 													"source" : [ "obj-40", 1 ]
 												}
 
@@ -4126,13 +4101,6 @@
 												"patchline" : 												{
 													"destination" : [ "obj-51", 0 ],
 													"source" : [ "obj-60", 0 ]
-												}
-
-											}
-, 											{
-												"patchline" : 												{
-													"destination" : [ "obj-9", 0 ],
-													"source" : [ "obj-8", 0 ]
 												}
 
 											}
