@@ -2,7 +2,7 @@
 	"name" : "PsychoBox",
 	"version" : 1,
 	"creationdate" : 3666872002,
-	"modificationdate" : 3678438841,
+	"modificationdate" : 3678446585,
 	"viewrect" : [ 2136.0, 695.0, 389.0, 649.0 ],
 	"autoorganize" : 1,
 	"hideprojectwindow" : 0,
@@ -363,14 +363,6 @@
 	}
 ,
 	"searchpath" : 	{
-		"0" : 		{
-			"bootpath" : "~/Documents/Max 8/Projects/HULTI-GENv2/tests",
-			"projectrelativepath" : "../tests",
-			"label" : "tests",
-			"recursive" : 1,
-			"enabled" : 1,
-			"includeincollective" : 0
-		}
 
 	}
 ,

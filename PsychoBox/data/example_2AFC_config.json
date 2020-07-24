@@ -1,9 +1,7 @@
 {
     "setup" : {
-        "modelChoices" : ["htt", "sdt"],
-        "model" : "sdt",
         "task" : {
-            "type" : "twoAFC",
+            "plugin" : "sdt_twoAFC",
             "parameters" : {
                 "repetitions" : 10,
                 "objective" : "Select the stimulus with the loudest reverb",
