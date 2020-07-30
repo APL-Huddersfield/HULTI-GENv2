@@ -69,6 +69,7 @@
 					"clickthrough" : 0,
 					"enablehscroll" : 0,
 					"enablevscroll" : 0,
+					"hidden" : 1,
 					"id" : "obj-26",
 					"lockeddragscroll" : 0,
 					"maxclass" : "bpatcher",
@@ -1286,7 +1287,7 @@
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ 1267.0, 534.0, 1017.0, 671.0 ],
+						"rect" : [ 598.0, 631.0, 1017.0, 671.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -4526,7 +4527,6 @@
 					"clickthrough" : 0,
 					"enablehscroll" : 0,
 					"enablevscroll" : 0,
-					"hidden" : 1,
 					"id" : "obj-5",
 					"lockeddragscroll" : 0,
 					"maxclass" : "bpatcher",
@@ -4600,6 +4600,7 @@
 						"style" : "",
 						"subpatcher_template" : "",
 						"assistshowspatchername" : 0,
+						"visible" : 1,
 						"boxes" : [ 							{
 								"box" : 								{
 									"id" : "obj-16",
@@ -5672,6 +5673,7 @@
 										"style" : "",
 										"subpatcher_template" : "",
 										"assistshowspatchername" : 0,
+										"visible" : 1,
 										"boxes" : [ 											{
 												"box" : 												{
 													"id" : "obj-3",
@@ -5730,6 +5732,7 @@
 														"style" : "",
 														"subpatcher_template" : "",
 														"assistshowspatchername" : 0,
+														"visible" : 1,
 														"boxes" : [ 															{
 																"box" : 																{
 																	"id" : "obj-45",
@@ -5895,8 +5898,8 @@
 																					"numinlets" : 2,
 																					"numoutlets" : 2,
 																					"outlettype" : [ "", "" ],
-																					"patching_rect" : [ 416.5, 185.0, 169.0, 22.0 ],
-																					"text" : "combine methodName _setup"
+																					"patching_rect" : [ 416.5, 185.0, 177.0, 22.0 ],
+																					"text" : "combine methodName _subjinit"
 																				}
 
 																			}
@@ -12264,32 +12267,11 @@
 																}
 
 															}
-, 															{
-																"box" : 																{
-																	"id" : "obj-11",
-																	"linecount" : 2,
-																	"maxclass" : "newobj",
-																	"numinlets" : 1,
-																	"numoutlets" : 1,
-																	"outlettype" : [ "" ],
-																	"patching_rect" : [ 212.0, 286.0, 100.0, 0.0 ],
-																	"text" : "sdt_twoAFC_setup",
-																	"varname" : "setup"
-																}
-
-															}
  ],
 														"lines" : [ 															{
 																"patchline" : 																{
 																	"destination" : [ "obj-23", 0 ],
 																	"source" : [ "obj-1", 0 ]
-																}
-
-															}
-, 															{
-																"patchline" : 																{
-																	"destination" : [ "obj-2", 0 ],
-																	"source" : [ "obj-11", 0 ]
 																}
 
 															}
@@ -12403,13 +12385,6 @@
 																	"destination" : [ "obj-9", 0 ],
 																	"order" : 1,
 																	"source" : [ "obj-32", 0 ]
-																}
-
-															}
-, 															{
-																"patchline" : 																{
-																	"destination" : [ "obj-11", 0 ],
-																	"source" : [ "obj-45", 0 ]
 																}
 
 															}
@@ -13009,6 +12984,7 @@
 										"style" : "",
 										"subpatcher_template" : "",
 										"assistshowspatchername" : 0,
+										"visible" : 1,
 										"boxes" : [ 											{
 												"box" : 												{
 													"id" : "obj-7",
@@ -13066,6 +13042,7 @@
 														"style" : "",
 														"subpatcher_template" : "",
 														"assistshowspatchername" : 0,
+														"visible" : 1,
 														"boxes" : [ 															{
 																"box" : 																{
 																	"id" : "obj-44",
@@ -13172,6 +13149,7 @@
 																		"style" : "",
 																		"subpatcher_template" : "",
 																		"assistshowspatchername" : 0,
+																		"visible" : 1,
 																		"boxes" : [ 																			{
 																				"box" : 																				{
 																					"id" : "obj-54",
@@ -13224,7 +13202,7 @@
 																					"maxclass" : "comment",
 																					"numinlets" : 1,
 																					"numoutlets" : 0,
-																					"patching_rect" : [ 338.5, 120.0, 150.0, 33.0 ],
+																					"patching_rect" : [ 338.5, 120.0, 152.0, 33.0 ],
 																					"text" : "Format required filenames to <testmethod>_<asset>"
 																				}
 
@@ -13325,8 +13303,8 @@
 																					"numinlets" : 2,
 																					"numoutlets" : 1,
 																					"outlettype" : [ "" ],
-																					"patching_rect" : [ 390.0, 190.0, 155.0, 22.0 ],
-																					"text" : "manifest.json setup.maxpat"
+																					"patching_rect" : [ 390.0, 190.0, 163.0, 22.0 ],
+																					"text" : "manifest.json subjinit.maxpat"
 																				}
 
 																			}
@@ -16220,13 +16198,6 @@
 				"name" : "lookAboveThisDir.maxpat",
 				"bootpath" : "~/Documents/Max 8/Patches",
 				"patcherrelativepath" : "../../../../Patches",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "sdt_twoAFC_setup.maxpat",
-				"bootpath" : "~/Documents/Max 8/Projects/HULTI-GENv2/tests/sdt_twoAFC",
-				"patcherrelativepath" : "../../tests/sdt_twoAFC",
 				"type" : "JSON",
 				"implicit" : 1
 			}
