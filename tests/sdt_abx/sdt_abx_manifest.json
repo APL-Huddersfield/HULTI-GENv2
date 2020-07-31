@@ -1,9 +1,19 @@
 {
-    "worker" : "worker_twoAFC.maxpat",
-    "interface" : "interface_twoAFC.maxpat",
-    "player" : "player_generalPurpose.maxpat",
-    "model" : "sdt",
-    "setup" : {
-        
-    }
+    "slug" : "sdt_abx",
+    "parameterKeys" : [
+        "repetitions",
+        "randomisePresentationOrder"
+    ],
+    "groupingMode" : "sgft",
+    "extraResponseKeys" : [
+        "wasA",
+        "wasX",
+        "hits",
+        "falseAlarms",
+        "correctRejects",
+        "misses"
+    ],
+    "extraOrderKeys" : [
+        "presentationOrder"
+    ]
 }

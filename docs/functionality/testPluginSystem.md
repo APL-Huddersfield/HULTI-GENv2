@@ -94,7 +94,7 @@ Here are some example manifest.json files:
         "objective",
     ],
     "extraResponseKeys" : [
-    }
+    ],
     "orderingMode" : "session-group-stimulus"
 }
 ```
