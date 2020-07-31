@@ -2,8 +2,8 @@
 	"name" : "PsychoBox",
 	"version" : 1,
 	"creationdate" : 3666872002,
-	"modificationdate" : 3678965127,
-	"viewrect" : [ 2136.0, 695.0, 389.0, 649.0 ],
+	"modificationdate" : 3679050734,
+	"viewrect" : [ 2136.0, 694.0, 389.0, 649.0 ],
 	"autoorganize" : 1,
 	"hideprojectwindow" : 0,
 	"showdependencies" : 1,
@@ -98,7 +98,12 @@
 ,
 			"sdt_twoAFC_worker.maxpat" : 			{
 				"kind" : "patcher",
-				"local" : 1
+				"local" : 1,
+				"singleton" : 				{
+					"bootpath" : "~/Documents/Max 8/Projects/HULTI-GENv2/tests/sdt_twoAFC",
+					"projectrelativepath" : "../tests/sdt_twoAFC"
+				}
+
 			}
 ,
 			"player_generalPurpose.maxpat" : 			{
@@ -223,7 +228,12 @@
 ,
 			"interface_abx.maxpat" : 			{
 				"kind" : "patcher",
-				"local" : 1
+				"local" : 1,
+				"singleton" : 				{
+					"bootpath" : "~/Documents/Max 8/Projects/HULTI-GENv2/PsychoBox/patchers",
+					"projectrelativepath" : "./patchers"
+				}
+
 			}
 ,
 			"player_eof_parallel.maxpat" : 			{
@@ -258,7 +268,22 @@
 ,
 			"testcounter_SGT.maxpat" : 			{
 				"kind" : "patcher",
-				"local" : 1
+				"local" : 1,
+				"singleton" : 				{
+					"bootpath" : "~/Documents/Max 8/Projects/HULTI-GENv2/PsychoBox/patchers",
+					"projectrelativepath" : "./patchers"
+				}
+
+			}
+,
+			"subjinit_generalPurpose.maxpat" : 			{
+				"kind" : "patcher",
+				"local" : 1,
+				"singleton" : 				{
+					"bootpath" : "~/Documents/Max 8/Projects/HULTI-GENv2/PsychoBox/patchers",
+					"projectrelativepath" : "./patchers"
+				}
+
 			}
 
 		}
@@ -318,6 +343,11 @@
 			}
 ,
 			"configSessionsSidemenu2.js" : 			{
+				"kind" : "javascript",
+				"local" : 1
+			}
+,
+			"makeDefaultFromSchema.js" : 			{
 				"kind" : "javascript",
 				"local" : 1
 			}
