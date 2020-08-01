@@ -83,7 +83,15 @@
                     "type" : "empty"
                 },
                 "sessions" : {
-                    "type" : "empty"
+                    "type" : "object",
+                    "required" : [
+                        "groups"
+                    ],
+                    "properties" : {
+                        "groups" : {
+                            "type" : "empty"
+                        }
+                    }
                 }
             }
         },
@@ -98,7 +106,15 @@
                     "type" : "empty"
                 },
                 "sessions" : {
-                    "type" : "empty"
+                    "type" : "object",
+                    "required" : [
+                        "groups"
+                    ],
+                    "properties" : {
+                        "groups" : {
+                            "type" : "empty"
+                        }
+                    }
                 }
             }
         }
