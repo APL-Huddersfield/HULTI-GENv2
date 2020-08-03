@@ -45,15 +45,7 @@
             ],
             "properties" : {
                 "sessions" : {
-                    "type" : "object",
-                    "required" : [
-                        "groups"
-                    ],
-                    "properties" : {
-                        "groups" : {
-                            "type" : "empty"
-                        }
-                    }
+                    "type" : "empty"
                 }
             }
 
@@ -69,15 +61,7 @@
                     "type" : "empty"
                 },
                 "sessions" : {
-                    "type" : "object",
-                    "required" : [
-                        "groups"
-                    ],
-                    "properties" : {
-                        "groups" : {
-                            "type" : "empty"
-                        }
-                    }
+                    "type" : "empty"
                 }
             }
         },
@@ -92,15 +76,7 @@
                     "type" : "empty"
                 },
                 "sessions" : {
-                    "type" : "object",
-                    "required" : [
-                        "groups"
-                    ],
-                    "properties" : {
-                        "groups" : {
-                            "type" : "empty"
-                        }
-                    }
+                    "type" : "empty"
                 }
             }
         }
