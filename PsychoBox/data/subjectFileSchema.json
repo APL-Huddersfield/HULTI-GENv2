@@ -34,21 +34,7 @@
                     "default" : ""
                 },
                 "parameters" : {
-                    "type" : "object",
-                    "required" : [
-                        "repetitions",
-                        "objective"
-                    ],
-                    "properties" : {
-                        "repetitions" : {
-                            "type" : "int",
-                            "default" : 1
-                        },
-                        "objective" : {
-                            "type" : "string",
-                            "default" : ""
-                        }
-                    }
+                    "type" : "empty"
                 }
             }
         },

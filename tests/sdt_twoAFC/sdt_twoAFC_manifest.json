@@ -1,7 +1,8 @@
 {
     "slug" : "twoAFC",
     "parameters" : [
-        "numRepetitions",
+        "repetitions",
         "objective"
-    ]
+    ],
+    "groupingMode" : "sgft"
 }

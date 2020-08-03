@@ -1,0 +1,21 @@
+{
+    "type" : "object",
+    "required" : [
+        "slug",
+        "parameters",
+        "groupingMode"
+    ],
+    "properties" : {
+        "slug" : {
+            "type" : "string",
+            "default" : ""
+        },
+        "parameters" : {
+            "type" : "empty"
+        },
+        "groupingMode" : {
+            "type" : "string",
+            "default" : "sgft"
+        }
+    }
+}
