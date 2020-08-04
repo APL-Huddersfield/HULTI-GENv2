@@ -36,6 +36,8 @@ function initialise(subjectDictName, configDictName, manifestDictName) {
     else {
         initOrdersSFT(subjectDict, configDict, manifestDict);
     }
+
+    outlet(0, "bang");
 }
 
 function initSessions(subjectDict, configDict) {
@@ -74,20 +76,22 @@ function initExperimentData(subjectDict, configDict, session) {
 }
 
 function initStimuli(subjectDict, configDict, session, group) {
-    var configSubKey = "sessions[" + session + "]::groups[" + group + "]::stimuli";
-    var subjectSubKey = "experimentData::" + configSubKey;
-    var numStimuli = configDict.getsize(configSubKey);
+    var configSubKey = "sessions[" + session + "]::groups[" + group + "]";
+    var subjectStimuliKey = "experimentData::" + configSubKey + "::stimuli";
+    var numStimuli = configDict.getsize(configSubKey + "::stimuli");
+    var reference = configDict.get(configSubKey + "::reference");
+    subjectDict.set("experimentData::" + configSubKey + "::reference", reference);
 
     for (var i = 0; i < numStimuli; ++i) {
         if (i == 0) {
-            subjectDict.append(subjectSubKey);
+            subjectDict.append(subjectStimuliKey);
         }
         else {
-            subjectDict.append(subjectSubKey, "*");
+            subjectDict.append(subjectStimuliKey, "*");
         }
-        var filename = configDict.get(configSubKey + "[" + i + "]");
-        subjectDict.setparse(subjectSubKey + "[" + i + "]", "filename:");
-        subjectDict.set(subjectSubKey + "[" + i + "]::filename", filename);
+        var filename = configDict.get(configSubKey + "::stimuli[" + i + "]");
+        subjectDict.setparse(subjectStimuliKey + "[" + i + "]", "filename:");
+        subjectDict.set(subjectStimuliKey + "[" + i + "]::filename", filename);
     }
 }
 
@@ -129,9 +133,9 @@ function initOrdersSGFT(subjectDict, configDict, manifestDict) {
                 subjectDict.append(ordersSubKey + "::groups", "*");
                 subjectDict.append(ordersSubKey + "::groupOrder", groupUrn.get());
             }
-            subjectDict.setparse(ordersSubKey + "::groups[" + j + "]", "stimuliOrder: combination:");
 
-            initStimuliAndPresentationsSGFT(subjectDict, configDict, manifestDict i, j);
+            subjectDict.setparse(ordersSubKey + "::groups[" + j + "]", "stimuliOrder: combination:");
+            initStimuliAndPresentationsSGFT(subjectDict, configDict, manifestDict, i, j);
         }
     }
 }
@@ -142,21 +146,20 @@ function initStimuliAndPresentationsSGFT(subjectDict, configDict, manifestDict, 
     var numRepetitions = configDict.get("setup::task::parameters::repetitions");
     var numCombinations = manifestDict.get("ordering::combinationsPerRepetition");
     var reference = -1;
-    var requiresReference = (manifestDict.get("requiresReference") == "true");
+    var requiresReference = manifestDict.get("requiresReference");
     var omitReference = false;
 
     if (manifestDict.contains("ordering::omitReferenceAsTestStimulus")) {
-        omitReference = (manifestDict.get("ordering::omitReferenceAsTestStimulus") == "true");
+        omitReference = (manifestDict.get("ordering::omitReferenceAsTestStimulus"));
     }
 
     if (requiresReference) {
         reference = configDict.get(configStimuliKey + "::reference");
     }
 
-    // var numTrials = numStimuli * numRepetitions * numCombinations;
-
     // For each repetition and combination, generate a ramp of values from 0 to numStimuli, omitting
     // the reference if necessary.
+    // Note: numTrials = numStimuli * numRepetitions * numCombinations
 
     var stimuliOrder = new Array();
     var combinationOrder = new Array();
@@ -175,14 +178,18 @@ function initStimuliAndPresentationsSGFT(subjectDict, configDict, manifestDict, 
 
     // Now randomise the orders (numTrials == stimuliOrder.length)
     var urn = new Urn(stimuliOrder.length);
-    var randomisedStimulusOrder = new Array();
+    var randomisedStimuliOrder = new Array();
     var randomisedCombinationOrder = new Array();
     var j = 0;
     for (var i = 0; i < stimuliOrder.length; ++i) {
         j = urn.get();
-        randomisedStimulusOrder.push(stimuliOrder[j]);
+        randomisedStimuliOrder.push(stimuliOrder[j]);
         randomisedCombinationOrder.push(combinationOrder[j]);
     }
+
+    var ordersSubKey = "orders::sessions[" + session + "]::groups[" + group + "]";
+    subjectDict.set(ordersSubKey + "::stimuliOrder", randomisedStimuliOrder);
+    subjectDict.set(ordersSubKey + "::combination", randomisedCombinationOrder);
 }
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////

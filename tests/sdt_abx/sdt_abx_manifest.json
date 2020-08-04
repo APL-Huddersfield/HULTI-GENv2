@@ -1,9 +1,9 @@
 {
     "slug" : "sdt_abx",
     "parameters" : [
-        "repetitions",
+        "repetitions"
     ],
-    "requiresReference" : "true",
+    "requiresReference" : true,
     "groupingMode" : "sgft",
     "responseKeys" : [
         "wasA",
@@ -14,7 +14,7 @@
         "misses"
     ],
     "ordering" : {
-        "omitReferenceAsTestStimulus" : "true",
+        "omitReferenceAsTestStimulus" : true,
         "combinationsPerRepetition" : 4
     }
 }

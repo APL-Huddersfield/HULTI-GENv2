@@ -64,7 +64,9 @@ function inspectProperty(h, prop, schema) {
     }
     else if (t == "int") {
         return validateType(h, prop, "number");
-        return true;
+    }
+    else if (t == "boolean") {
+        return validateType(h, prop, "number");
     }
     else if (t == "empty") {
         return true;
@@ -76,7 +78,8 @@ function validateType(h, prop, t) {
     if (typeof(prop) == t) {
         return true;
     }
-    post("In " + h + ", value \"" + prop + "\" did not match expected type \"" + t + "\"\n");
+    post("In " + h + ", value \"" + prop + "\" with type " + typeof(prop) +
+         " did not match expected type \"" + t + "\"\n");
     return false;
 }
 

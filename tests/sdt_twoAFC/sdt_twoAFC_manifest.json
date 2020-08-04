@@ -4,7 +4,7 @@
         "repetitions",
         "objective"
     ],
-    "requiresReference" : "true",
+    "requiresReference" : true,
     "groupingMode" : "sgft",
     "ordering" : {
         "omitReferenceAsTestStimulus" : "true",
