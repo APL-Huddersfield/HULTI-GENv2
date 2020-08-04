@@ -199,12 +199,11 @@ function initStimuliAndPresentationsSGFT(subjectDict, configDict, manifestDict, 
 function initOrdersSFT(subjectDict, configDict, manifestDictName) {
     var numSessions = configDict.getsize("sessions");
     var sessionUrn = new Urn(numSessions);
-
     for (var i = 0; i < numSessions; ++i) {
+        var numRepetitions = configDict.get("setup::task::parameters::repetitions");
         var numGroups = configDict.getsize("sessions[" + i + "]::groups");
-        var groupUrn = new Urn(numGroups);
-        var ordersSubKey = "orders::sessions[" + i + "]";
 
+        var ordersSubKey = "orders::sessions[" + i + "]";
         if (i == 0) {
             subjectDict.append("orders::sessions");
             subjectDict.set("orders::sessionOrder", sessionUrn.get());
@@ -213,21 +212,20 @@ function initOrdersSFT(subjectDict, configDict, manifestDictName) {
             subjectDict.append("orders::sessions", "*");
             subjectDict.append("orders::sessionOrder", sessionUrn.get());
         }
-        subjectDict.setparse(ordersSubKey, "groupOrder: groups:");
+        subjectDict.setparse(ordersSubKey, "groupOrder:");
 
+        var groupUrn = new Urn(numGroups);
+
+        for (var r = 0; r < numRepetitions; ++r) {
+            var groupUrn = new Urn(numGroups);
+            for (var g = 0; g < numGroups; ++g) {
+                if (r == 0 && g == 0) {
+                    subjectDict.set(ordersSubKey + "::groupOrder", groupUrn.get());
+                }
+                else {
+                    subjectDict.append(ordersSubKey + "::groupOrder", groupUrn.get());
+                }
+            }
+        }
     }
-
-    // var numGroups = configDict.getsize("sessions[" + session + "]::groups");
-    // var ordersSubKey = "orders::sessions[" + session + "]";
-    // var groupUrn = new Urn(numGroups);
-    // subjectDict.setparse(ordersSubKey, "groupOrder:");
-    //
-    // for (var i = 0; i < numGroups; ++i) {
-    //     if (i == 0) {
-    //         subjectDict.set(ordersSubKey + "::groupOrder", groupUrn.get());
-    //     }
-    //     else {
-    //         subjectDict.append(ordersSubKey + "::groupOrder", groupUrn.get());
-    //     }
-    // }
 }
