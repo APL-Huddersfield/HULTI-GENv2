@@ -1,6 +1,7 @@
 function Urn(range) {
     this.range = range;
     this.arr = new Array();
+
     for (var i = 0; i < range; ++i) {
         this.arr.push(i);
     }
@@ -9,10 +10,16 @@ function Urn(range) {
         if (this.arr.length == 0) {
             return -1;
         }
-        var num = 0;
+
         var i = Math.floor(Math.random() * this.arr.length);
-        num = this.arr[i];
         return this.arr.splice(i, 1);
+    }
+
+    this.omit = function() {
+        if (this.arr.length == 0) {
+            return;
+        }
+
     }
 }
 
@@ -24,10 +31,10 @@ function initialise(subjectDictName, configDictName, manifestDictName) {
 
     initSessions(subjectDict, configDict);
     if (mode == "sgft") {
-        initOrdersSGFT(subjectDict, configDict);
+        initOrdersSGFT(subjectDict, configDict, manifestDict);
     }
     else {
-        initOrdersSFT(subjectDict, configDict);
+        initOrdersSFT(subjectDict, configDict, manifestDict);
     }
 }
 
@@ -92,10 +99,10 @@ function initProgress(subjectDict, configDict, session) {
 }
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////
-// Order Routines
+// "Session > Group > Finite Tirals" Ordering Routines
 ////////////////////////////////////////////////////////////////////////////////////////////////////
 
-function initOrdersSGFT(subjectDict, configDict) {
+function initOrdersSGFT(subjectDict, configDict, manifestDict) {
     var numSessions = configDict.getsize("sessions");
     var sessionUrn = new Urn(numSessions);
     for (var i = 0; i < numSessions; ++i) {
@@ -122,13 +129,67 @@ function initOrdersSGFT(subjectDict, configDict) {
                 subjectDict.append(ordersSubKey + "::groups", "*");
                 subjectDict.append(ordersSubKey + "::groupOrder", groupUrn.get());
             }
-        }
+            subjectDict.setparse(ordersSubKey + "::groups[" + j + "]", "stimuliOrder: combination:");
 
-        // TODO : Bake order based on manifest
+            initStimuliAndPresentationsSGFT(subjectDict, configDict, manifestDict i, j);
+        }
     }
 }
 
-function initOrdersSFT(subjectDict, configDict, session) {
+function initStimuliAndPresentationsSGFT(subjectDict, configDict, manifestDict, session, group) {
+    var configStimuliKey = "sessions[" + session + "]::groups["+ group + "]";
+    var numStimuli = configDict.getsize(configStimuliKey + "::stimuli");
+    var numRepetitions = configDict.get("setup::task::parameters::repetitions");
+    var numCombinations = manifestDict.get("ordering::combinationsPerRepetition");
+    var reference = -1;
+    var requiresReference = (manifestDict.get("requiresReference") == "true");
+    var omitReference = false;
+
+    if (manifestDict.contains("ordering::omitReferenceAsTestStimulus")) {
+        omitReference = (manifestDict.get("ordering::omitReferenceAsTestStimulus") == "true");
+    }
+
+    if (requiresReference) {
+        reference = configDict.get(configStimuliKey + "::reference");
+    }
+
+    // var numTrials = numStimuli * numRepetitions * numCombinations;
+
+    // For each repetition and combination, generate a ramp of values from 0 to numStimuli, omitting
+    // the reference if necessary.
+
+    var stimuliOrder = new Array();
+    var combinationOrder = new Array();
+
+    for (var i = 0; i < numRepetitions; ++i) {
+        for (var j = 0; j < numCombinations; ++j) {
+            for (var k = 0; k < numStimuli; ++k) {
+                if (omitReference && k == reference) {
+                    continue;
+                }
+                combinationOrder.push(j);
+                stimuliOrder.push(k);
+            }
+        }
+    }
+
+    // Now randomise the orders (numTrials == stimuliOrder.length)
+    var urn = new Urn(stimuliOrder.length);
+    var randomisedStimulusOrder = new Array();
+    var randomisedCombinationOrder = new Array();
+    var j = 0;
+    for (var i = 0; i < stimuliOrder.length; ++i) {
+        j = urn.get();
+        randomisedStimulusOrder.push(stimuliOrder[j]);
+        randomisedCombinationOrder.push(combinationOrder[j]);
+    }
+}
+
+////////////////////////////////////////////////////////////////////////////////////////////////////
+// "Session > Finite Trials" Ordering Routines
+////////////////////////////////////////////////////////////////////////////////////////////////////
+
+function initOrdersSFT(subjectDict, configDict, manifestDictName) {
     var numSessions = configDict.getsize("sessions");
     var sessionUrn = new Urn(numSessions);
 

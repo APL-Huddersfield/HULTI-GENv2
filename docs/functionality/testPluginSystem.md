@@ -37,13 +37,6 @@ worker --> rp[Response Parser]
 
 ```
 
-```mermaid
-graph TD
-A --> B
-A --> C
-A --> D
-```
-
 ## Manifest file
 
 The manifest file defines what the test actually is and informs HULTIGEN what is required in the configuration and subject files, and is in the form of a JSON file. There are a set of required keys and test specific keys.
@@ -86,16 +79,16 @@ Here are some example manifest.json files:
 ### Signal Detection Theory 2AFC
 ```json
 {
-    "model" : "sdt",
-    "type" : "twoAFC",
-    "parameterKeys" : [
+    "slug" : "twoAFC",
+    "parameters" : [
         "repetitions",
-        "randomisePresentationOrder",
-        "objective",
+        "objective"
     ],
-    "extraResponseKeys" : [
-    ],
-    "orderingMode" : "session-group-stimulus"
+    "groupingMode" : "sgft",
+    "ordering" : {
+        "omitReferenceAsTestStimulus" : "true",
+        "combinationsPerRepetition" : 2
+    }
 }
 ```
 
@@ -104,13 +97,13 @@ Whilst 2AFC is related to ABX, the latter requires more fields in order to funct
 
 ```json
 {
-    "model" : "sdt",
-    "type" : "abx",
-    "parameterKeys" : [
+    "slug" : "sdt_abx",
+    "parameters" : [
         "repetitions",
         "randomisePresentationOrder"
     ],
-    "extraResponseKeys" : [
+    "groupingMode" : "sgft",
+    "responseKeys" : [
         "wasA",
         "wasX",
         "hits",
@@ -118,10 +111,10 @@ Whilst 2AFC is related to ABX, the latter requires more fields in order to funct
         "correctRejects",
         "misses"
     ],
-    "orderingMode" : "session-group-stimulus",
-    "extraOrderKeys" : [
-        "presentationOrder"
-    ]
+    "ordering" : {
+        "omitReferenceAsTestStimulus" : "true",
+        "combinationsPerRepetition" : 4
+    }
 }
 ```
 
@@ -130,26 +123,17 @@ Staircase operates in a very different way to signal detection theory, so many t
 
 ```json
 {
-    "model" : "staircase",
-    "type" : "twoAFC",
-    "parameterKeys" : [
+    "type" : "staircase_twoAFC",
+    "parameters" : [
         "initialStepSize",
         "steppingRule",
         "terminationRule",
         "terminationRuleParam",
     ],
-    "orderingMode" : "session-group-stimulus"
+    "groupingMode" : "sgft"
 }
 ```
 
-```cpp
-#include <iostream>
-
-int i = 0;
-for (auto k = 0; k < 5; ++k) {
-//
-}
-```
 ## Subject file initialiser
 
 This is where the subject file should be initialised with the test specific parameters and experiment data fields.

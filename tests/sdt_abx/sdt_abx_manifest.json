@@ -1,11 +1,11 @@
 {
     "slug" : "sdt_abx",
-    "parameterKeys" : [
+    "parameters" : [
         "repetitions",
-        "randomisePresentationOrder"
     ],
+    "requiresReference" : "true",
     "groupingMode" : "sgft",
-    "extraResponseKeys" : [
+    "responseKeys" : [
         "wasA",
         "wasX",
         "hits",
@@ -13,7 +13,8 @@
         "correctRejects",
         "misses"
     ],
-    "extraOrderKeys" : [
-        "presentationOrder"
-    ]
+    "ordering" : {
+        "omitReferenceAsTestStimulus" : "true",
+        "combinationsPerRepetition" : 4
+    }
 }

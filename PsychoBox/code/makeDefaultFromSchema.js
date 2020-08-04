@@ -13,7 +13,7 @@ function inspectProperty(h, d, schema) {
     if (t == "object") {
         schemaValid = enterObject(h, d, schema);
     }
-    else if (t == "string" || t == "int") {
+    else if (t == "string" || t == "int" || t == "boolean") {
         schemaValid = initialiseVar(h, d, schema);
     }
     return schemaValid;

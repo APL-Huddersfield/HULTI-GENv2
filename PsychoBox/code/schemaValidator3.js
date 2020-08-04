@@ -18,7 +18,7 @@ function inspectDict(h, dict) {
     if (t == "object") {
         return validateObject(h, dict);
     }
-    else if (t == "string" || t == "int") {
+    else if (t == "string" || t == "int" || t == "boolean") {
         return validateBasicType(h, dict);
     }
     else if (t == "empty") {

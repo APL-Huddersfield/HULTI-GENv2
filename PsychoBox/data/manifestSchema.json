@@ -3,7 +3,9 @@
     "required" : [
         "slug",
         "parameters",
-        "groupingMode"
+        "requiresReference",
+        "groupingMode",
+        "ordering"
     ],
     "properties" : {
         "slug" : {
@@ -13,9 +15,16 @@
         "parameters" : {
             "type" : "empty"
         },
+        "requiresReference" : {
+            "type" : "boolean",
+            "default" : "false"
+        },
         "groupingMode" : {
             "type" : "string",
             "default" : "sgft"
+        },
+        "ordering" : {
+            "type" : "empty"
         }
     }
 }

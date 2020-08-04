@@ -4,5 +4,10 @@
         "repetitions",
         "objective"
     ],
-    "groupingMode" : "sgft"
+    "requiresReference" : "true",
+    "groupingMode" : "sgft",
+    "ordering" : {
+        "omitReferenceAsTestStimulus" : "true",
+        "combinationsPerRepetition" : 2
+    }
 }
