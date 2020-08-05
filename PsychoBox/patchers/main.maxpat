@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 183.0, 309.0, 1556.0, 911.0 ],
+		"rect" : [ 154.0, 112.0, 1556.0, 911.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -1024,6 +1024,7 @@
 					"clickthrough" : 0,
 					"enablehscroll" : 0,
 					"enablevscroll" : 0,
+					"hidden" : 1,
 					"id" : "obj-19",
 					"lockeddragscroll" : 0,
 					"maxclass" : "bpatcher",
@@ -1333,7 +1334,6 @@
 						"style" : "",
 						"subpatcher_template" : "",
 						"assistshowspatchername" : 0,
-						"visible" : 1,
 						"boxes" : [ 							{
 								"box" : 								{
 									"id" : "obj-12",
@@ -1379,7 +1379,6 @@
 										"style" : "",
 										"subpatcher_template" : "",
 										"assistshowspatchername" : 0,
-										"visible" : 1,
 										"boxes" : [ 											{
 												"box" : 												{
 													"id" : "obj-25",
@@ -1778,7 +1777,6 @@
 													}
 ,
 													"patching_rect" : [ 196.666667000000018, 367.0, 155.0, 22.0 ],
-													"presentation_linecount" : 2,
 													"saved_object_attributes" : 													{
 														"description" : "",
 														"digest" : "",
@@ -1798,7 +1796,6 @@
 													"numinlets" : 1,
 													"numoutlets" : 0,
 													"patching_rect" : [ 37.0, 29.0, 150.0, 114.0 ],
-													"presentation_linecount" : 8,
 													"text" : "Advance the group progress by 1.\n\nAfter advancing, if it is equal to max groups then advance the session counter and exit the test session"
 												}
 
@@ -1900,7 +1897,6 @@
 , 															{
 																"box" : 																{
 																	"bgcolor" : [ 0.196078431372549, 0.196078431372549, 0.196078431372549, 1.0 ],
-																	"color" : [ 0.501961, 0.501961, 0.501961, 1.0 ],
 																	"id" : "obj-19",
 																	"maxclass" : "newobj",
 																	"numinlets" : 2,
@@ -1914,7 +1910,6 @@
 , 															{
 																"box" : 																{
 																	"bgcolor" : [ 0.196078431372549, 0.196078431372549, 0.196078431372549, 1.0 ],
-																	"color" : [ 0.501961, 0.501961, 0.501961, 1.0 ],
 																	"id" : "obj-18",
 																	"maxclass" : "newobj",
 																	"numinlets" : 2,
@@ -1934,7 +1929,6 @@
 , 															{
 																"box" : 																{
 																	"bgcolor" : [ 0.196078431372549, 0.196078431372549, 0.196078431372549, 1.0 ],
-																	"color" : [ 0.501961, 0.501961, 0.501961, 1.0 ],
 																	"id" : "obj-32",
 																	"linecount" : 2,
 																	"maxclass" : "newobj",
@@ -1942,7 +1936,6 @@
 																	"numoutlets" : 1,
 																	"outlettype" : [ "" ],
 																	"patching_rect" : [ 625.0, 234.0, 167.0, 35.0 ],
-																	"presentation_linecount" : 2,
 																	"text" : "sprintf getsize orders::sessions[%d]::groups"
 																}
 
@@ -1967,9 +1960,7 @@
 																	"numinlets" : 1,
 																	"numoutlets" : 0,
 																	"patching_rect" : [ 465.333333333333258, 287.0, 108.0, 33.0 ],
-																	"presentation_linecount" : 2,
-																	"text" : "Advance group progress",
-																	"textjustification" : 0
+																	"text" : "Advance group progress"
 																}
 
 															}
@@ -1989,7 +1980,6 @@
 , 															{
 																"box" : 																{
 																	"bgcolor" : [ 0.196078431372549, 0.196078431372549, 0.196078431372549, 1.0 ],
-																	"color" : [ 0.501961, 0.501961, 0.501961, 1.0 ],
 																	"id" : "obj-20",
 																	"maxclass" : "newobj",
 																	"numinlets" : 2,
@@ -2003,7 +1993,6 @@
 , 															{
 																"box" : 																{
 																	"bgcolor" : [ 0.196078431372549, 0.196078431372549, 0.196078431372549, 1.0 ],
-																	"color" : [ 0.501961, 0.501961, 0.501961, 1.0 ],
 																	"id" : "obj-10",
 																	"maxclass" : "newobj",
 																	"numinlets" : 2,
@@ -2016,7 +2005,6 @@
 															}
 , 															{
 																"box" : 																{
-																	"color" : [ 0.501961, 0.501961, 0.501961, 1.0 ],
 																	"id" : "obj-6",
 																	"maxclass" : "newobj",
 																	"numinlets" : 2,
@@ -2047,7 +2035,6 @@
 															}
 , 															{
 																"box" : 																{
-																	"color" : [ 0.501961, 0.501961, 0.501961, 1.0 ],
 																	"id" : "obj-17",
 																	"linecount" : 2,
 																	"maxclass" : "newobj",
@@ -2061,7 +2048,6 @@
 															}
 , 															{
 																"box" : 																{
-																	"color" : [ 0.501961, 0.501961, 0.501961, 1.0 ],
 																	"id" : "obj-16",
 																	"maxclass" : "newobj",
 																	"numinlets" : 2,
@@ -2074,7 +2060,6 @@
 															}
 , 															{
 																"box" : 																{
-																	"color" : [ 0.501961, 0.501961, 0.501961, 1.0 ],
 																	"id" : "obj-13",
 																	"maxclass" : "newobj",
 																	"numinlets" : 2,
@@ -2087,7 +2072,6 @@
 															}
 , 															{
 																"box" : 																{
-																	"color" : [ 0.501961, 0.501961, 0.501961, 1.0 ],
 																	"id" : "obj-12",
 																	"linecount" : 2,
 																	"maxclass" : "newobj",
@@ -2113,7 +2097,6 @@
 															}
 , 															{
 																"box" : 																{
-																	"color" : [ 0.501961, 0.501961, 0.501961, 1.0 ],
 																	"id" : "obj-9",
 																	"maxclass" : "newobj",
 																	"numinlets" : 2,
@@ -4517,7 +4500,6 @@
 										"style" : "",
 										"subpatcher_template" : "",
 										"assistshowspatchername" : 0,
-										"visible" : 1,
 										"boxes" : [ 											{
 												"box" : 												{
 													"id" : "obj-20",
@@ -7212,7 +7194,6 @@
 					"clickthrough" : 0,
 					"enablehscroll" : 0,
 					"enablevscroll" : 0,
-					"hidden" : 1,
 					"id" : "obj-5",
 					"lockeddragscroll" : 0,
 					"maxclass" : "bpatcher",
