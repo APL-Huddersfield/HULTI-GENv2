@@ -2,7 +2,7 @@
 	"name" : "PsychoBox",
 	"version" : 1,
 	"creationdate" : 3666872002,
-	"modificationdate" : 3679310014,
+	"modificationdate" : 3679463384,
 	"viewrect" : [ 1493.0, 517.0, 389.0, 649.0 ],
 	"autoorganize" : 1,
 	"hideprojectwindow" : 0,
@@ -96,6 +96,16 @@
 				"local" : 1
 			}
 ,
+			"sdt_twoAFC_worker.maxpat" : 			{
+				"kind" : "patcher",
+				"local" : 1,
+				"singleton" : 				{
+					"bootpath" : "~/Documents/Max 8/Projects/PsychoBox/tests/sdt_twoAFC",
+					"projectrelativepath" : "../tests/sdt_twoAFC"
+				}
+
+			}
+,
 			"player_generalPurpose.maxpat" : 			{
 				"kind" : "patcher",
 				"local" : 1
@@ -119,16 +129,6 @@
 			"interface_twoAFC.maxpat" : 			{
 				"kind" : "patcher",
 				"local" : 1
-			}
-,
-			"sdt_twoAFC_worker.maxpat" : 			{
-				"kind" : "patcher",
-				"local" : 1,
-				"singleton" : 				{
-					"bootpath" : "~/Documents/Max 8/Projects/PsychoBox/tests/sdt_twoAFC",
-					"projectrelativepath" : "../tests/sdt_twoAFC"
-				}
-
 			}
 ,
 			"be_mainUIControl.maxpat" : 			{
@@ -285,6 +285,11 @@
 				}
 
 			}
+,
+			"ui_endOfGroup.maxpat" : 			{
+				"kind" : "patcher",
+				"local" : 1
+			}
 
 		}
 ,
@@ -308,6 +313,16 @@
 			}
 ,
 			"makeDefaultFromSchema.js" : 			{
+				"kind" : "javascript",
+				"local" : 1
+			}
+,
+			"schemaValidator3.js" : 			{
+				"kind" : "javascript",
+				"local" : 1
+			}
+,
+			"dictValidator.js" : 			{
 				"kind" : "javascript",
 				"local" : 1
 			}
@@ -348,16 +363,6 @@
 			}
 ,
 			"configSessionsSidemenu2.js" : 			{
-				"kind" : "javascript",
-				"local" : 1
-			}
-,
-			"schemaValidator3.js" : 			{
-				"kind" : "javascript",
-				"local" : 1
-			}
-,
-			"dictValidator.js" : 			{
 				"kind" : "javascript",
 				"local" : 1
 			}
