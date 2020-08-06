@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 1889.0, 164.0, 1530.0, 911.0 ],
+		"rect" : [ 1899.0, 257.0, 1238.0, 937.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -39,6 +39,18 @@
 		"subpatcher_template" : "",
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
+				"box" : 				{
+					"id" : "obj-30",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 3,
+					"outlettype" : [ "", "multichannelsignal", "reset" ],
+					"patching_rect" : [ 1196.0, 734.0, 149.0, 22.0 ],
+					"text" : "staircase_twoAFC_worker"
+				}
+
+			}
+, 			{
 				"box" : 				{
 					"id" : "obj-44",
 					"maxclass" : "message",
@@ -117,7 +129,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 1083.5, 612.0, 242.5, 35.0 ],
+					"patching_rect" : [ 1083.5, 612.0, 244.0, 35.0 ],
 					"text" : "clearseq both, append up 1 0, append up 0, append down 1 1, min 0, max 9, stepsize 1"
 				}
 
@@ -6961,7 +6973,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 3,
 									"outlettype" : [ "", "multichannelsignal", "reset" ],
-									"patching_rect" : [ 260.0, 150.0, 117.0, 22.0 ],
+									"patching_rect" : [ 262.0, 135.0, 117.0, 22.0 ],
 									"text" : "sdt_twoAFC_worker",
 									"varname" : "worker"
 								}
@@ -15590,6 +15602,13 @@
 				"name" : "stepper.maxpat",
 				"bootpath" : "~/Documents/Max 8/Library",
 				"patcherrelativepath" : "../../../../Library",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "staircase_twoAFC_worker.maxpat",
+				"bootpath" : "~/Documents/Max 8/Projects/PsychoBox/tests/staircase_twoAFC",
+				"patcherrelativepath" : "../../tests/staircase_twoAFC",
 				"type" : "JSON",
 				"implicit" : 1
 			}

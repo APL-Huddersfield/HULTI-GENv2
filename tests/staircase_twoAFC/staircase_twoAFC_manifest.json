@@ -1,0 +1,13 @@
+{
+    "slug" : "twoAFC",
+    "parameters" : [
+        "repetitions",
+        "objective"
+    ],
+    "requiresReference" : true,
+    "groupingMode" : "sgft",
+    "ordering" : {
+        "omitReferenceAsTestStimulus" : "true",
+        "combinationsPerRepetition" : 2
+    }
+}
