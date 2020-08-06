@@ -2,8 +2,8 @@
 	"name" : "PsychoBox",
 	"version" : 1,
 	"creationdate" : 3666872002,
-	"modificationdate" : 3679484962,
-	"viewrect" : [ 1493.0, 517.0, 389.0, 649.0 ],
+	"modificationdate" : 3679554749,
+	"viewrect" : [ 1611.0, 338.0, 389.0, 649.0 ],
 	"autoorganize" : 1,
 	"hideprojectwindow" : 0,
 	"showdependencies" : 1,
@@ -98,7 +98,12 @@
 ,
 			"sdt_twoAFC_worker.maxpat" : 			{
 				"kind" : "patcher",
-				"local" : 1
+				"local" : 1,
+				"singleton" : 				{
+					"bootpath" : "~/Documents/Max 8/Projects/PsychoBox/tests/sdt_twoAFC",
+					"projectrelativepath" : "../tests/sdt_twoAFC"
+				}
+
 			}
 ,
 			"player_generalPurpose.maxpat" : 			{
@@ -289,6 +294,16 @@
 					"projectrelativepath" : "./patchers"
 				}
 
+			}
+,
+			"staircaseCore.maxpat" : 			{
+				"kind" : "patcher",
+				"local" : 1
+			}
+,
+			"checkIfUniqueInColl.maxpat" : 			{
+				"kind" : "patcher",
+				"local" : 1
 			}
 
 		}
