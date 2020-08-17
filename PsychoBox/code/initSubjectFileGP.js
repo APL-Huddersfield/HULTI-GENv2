@@ -196,7 +196,7 @@ function initStimuliAndPresentationsSGFT(subjectDict, configDict, manifestDict, 
 }
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////
-// "Session > Group > Finite Trials" Ordering Routines
+// "Session > Group > Infinite Trials" (SGIT) Ordering Routines
 ////////////////////////////////////////////////////////////////////////////////////////////////////
 
 function initOrdersSGIT(subjectDict, configDict, manifestDict) {
@@ -215,20 +215,20 @@ function initOrdersSGIT(subjectDict, configDict, manifestDict) {
             subjectDict.append("orders::sessions", "*");
             subjectDict.append("orders::sessionOrder", sessionUrn.get());
         }
-        subjectDict.setparse(ordersSubKey, "groupOrder: groups:");
+        subjectDict.setparse(ordersSubKey, "groupOrder:");
 
         for (var j = 0; j < numGroups; ++j) {
             if (j == 0) {
-                subjectDict.append(ordersSubKey + "::groups");
+                //subjectDict.append(ordersSubKey + "::groups");
                 subjectDict.set(ordersSubKey + "::groupOrder", groupUrn.get());
             }
             else {
-                subjectDict.append(ordersSubKey + "::groups", "*");
+                //subjectDict.append(ordersSubKey + "::groups", "*");
                 subjectDict.append(ordersSubKey + "::groupOrder", groupUrn.get());
             }
 
-            subjectDict.setparse(ordersSubKey + "::groups[" + j + "]");
-            initStimuliAndPresentationsSGIT(subjectDict, configDict, manifestDict, i, j);
+            //subjectDict.setparse(ordersSubKey + "::groups[" + j + "]");
+            //initStimuliAndPresentationsSGIT(subjectDict, configDict, manifestDict, i, j);
         }
     }
 }

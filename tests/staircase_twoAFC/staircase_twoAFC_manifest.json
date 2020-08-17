@@ -3,7 +3,8 @@
     "parameters" : [
         "objective",
         "initialStep",
-        "initialStepSize"
+        "initialStepSize",
+        "steppingRule"
     ],
     "requiresReference" : true,
     "groupingMode" : "sgit",
