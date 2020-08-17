@@ -1,13 +1,13 @@
 {
-    "slug" : "twoAFC",
+    "slug" : "staircase_twoAFC",
     "parameters" : [
-        "repetitions",
-        "objective"
+        "objective",
+        "initialStep",
+        "initialStepSize"
     ],
     "requiresReference" : true,
-    "groupingMode" : "sgft",
+    "groupingMode" : "sgit",
     "ordering" : {
-        "omitReferenceAsTestStimulus" : "true",
-        "combinationsPerRepetition" : 2
+        "omitReferenceAsTestStimulus" : "true"
     }
 }

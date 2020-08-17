@@ -33,6 +33,9 @@ function initialise(subjectDictName, configDictName, manifestDictName) {
     if (mode == "sgft") {
         initOrdersSGFT(subjectDict, configDict, manifestDict);
     }
+    else if (mode == "sgit") {
+        initOrdersSGIT(subjectDict, configDict, manifestDict);
+    }
     else {
         initOrdersSFT(subjectDict, configDict, manifestDict);
     }
@@ -190,6 +193,44 @@ function initStimuliAndPresentationsSGFT(subjectDict, configDict, manifestDict, 
     var ordersSubKey = "orders::sessions[" + session + "]::groups[" + group + "]";
     subjectDict.set(ordersSubKey + "::stimuliOrder", randomisedStimuliOrder);
     subjectDict.set(ordersSubKey + "::combination", randomisedCombinationOrder);
+}
+
+////////////////////////////////////////////////////////////////////////////////////////////////////
+// "Session > Group > Finite Trials" Ordering Routines
+////////////////////////////////////////////////////////////////////////////////////////////////////
+
+function initOrdersSGIT(subjectDict, configDict, manifestDict) {
+    var numSessions = configDict.getsize("sessions");
+    var sessionUrn = new Urn(numSessions);
+    for (var i = 0; i < numSessions; ++i) {
+        var numGroups = configDict.getsize("sessions[" + i + "]::groups");
+        var groupUrn = new Urn(numGroups);
+        var ordersSubKey = "orders::sessions[" + i + "]";
+
+        if (i == 0) {
+            subjectDict.append("orders::sessions");
+            subjectDict.set("orders::sessionOrder", sessionUrn.get());
+        }
+        else {
+            subjectDict.append("orders::sessions", "*");
+            subjectDict.append("orders::sessionOrder", sessionUrn.get());
+        }
+        subjectDict.setparse(ordersSubKey, "groupOrder: groups:");
+
+        for (var j = 0; j < numGroups; ++j) {
+            if (j == 0) {
+                subjectDict.append(ordersSubKey + "::groups");
+                subjectDict.set(ordersSubKey + "::groupOrder", groupUrn.get());
+            }
+            else {
+                subjectDict.append(ordersSubKey + "::groups", "*");
+                subjectDict.append(ordersSubKey + "::groupOrder", groupUrn.get());
+            }
+
+            subjectDict.setparse(ordersSubKey + "::groups[" + j + "]");
+            initStimuliAndPresentationsSGIT(subjectDict, configDict, manifestDict, i, j);
+        }
+    }
 }
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////
