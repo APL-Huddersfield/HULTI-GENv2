@@ -29,7 +29,7 @@ function initialise(subjectDictName, configDictName, manifestDictName) {
     var manifestDict = new Dict(manifestDictName);
     var mode = manifestDict.get("groupingMode");
 
-    initSessions(subjectDict, configDict);
+    initSessions(subjectDict, configDict, manifestDict);
     if (mode == "sgft") {
         initOrdersSGFT(subjectDict, configDict, manifestDict);
     }
@@ -43,7 +43,7 @@ function initialise(subjectDictName, configDictName, manifestDictName) {
     outlet(0, "bang");
 }
 
-function initSessions(subjectDict, configDict) {
+function initSessions(subjectDict, configDict, manifestDict) {
     var numSessions = configDict.getsize("sessions");
     var sessionUrn = new Urn(numSessions);
     for (var i = 0; i < numSessions; ++i) {
@@ -56,14 +56,15 @@ function initSessions(subjectDict, configDict) {
             subjectDict.append("progress::sessions", "*");
         }
         subjectDict.set("progress::sessionProgress", 0);
-        initExperimentData(subjectDict, configDict, i);
+        initExperimentData(subjectDict, configDict, manifestDict, i);
         initProgress(subjectDict, configDict, i);
     }
 }
 
-function initExperimentData(subjectDict, configDict, session) {
+function initExperimentData(subjectDict, configDict, manifestDict, session) {
     var numGroups = configDict.getsize("sessions[" + session + "]::groups");
     var experimentDataSubKey = "experimentData::sessions[" + session + "]";
+    var mode = manifestDict.get("groupingMode");
     subjectDict.setparse(experimentDataSubKey, "groups:");
 
     for (var i = 0; i < numGroups; ++i) {
@@ -73,8 +74,16 @@ function initExperimentData(subjectDict, configDict, session) {
         else {
             subjectDict.append(experimentDataSubKey + "::groups", "*");
         }
-        subjectDict.setparse(experimentDataSubKey + "::groups[" + i + "]", "reference: stimuli:");
-        initStimuli(subjectDict, configDict, session, i);
+
+        if (mode == "sgft" || mode == "sft") {
+            subjectDict.setparse(experimentDataSubKey + "::groups[" + i + "]", "reference: stimuli:");
+            initStimuli(subjectDict, configDict, session, i);
+        }
+        else {
+            subjectDict.setparse(experimentDataSubKey + "::groups[" + i + "]", "responses: steps:");
+            subjectDict.set(experimentDataSubKey + "::groups[" + i + "]::responses", "");
+            subjectDict.set(experimentDataSubKey + "::groups[" + i + "]::steps", "");
+        }
     }
 }
 
