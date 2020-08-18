@@ -1,0 +1,90 @@
+{
+    "rules" : [
+        {
+            "name" : "levitt1971_entry1",
+            "up" : [
+                {
+                    "sequence" : [0]
+                }
+            ],
+            "down" : [
+                {
+                    "sequence" : [1]
+                }
+            ]
+        },
+        {
+            "name" : "levitt1971_entry2",
+            "up" : [
+                {
+                    "sequence" : [1, 0]
+                },
+                {
+                    "sequence" : [0]
+                }
+            ],
+            "down" : [
+                {
+                    "sequence" : [1, 1]
+                }
+            ]
+        },
+        {
+            "name" : "levitt1971_entry3",
+            "up" : [
+                {
+                    "sequence" : [0, 0]
+                }
+            ],
+            "down" : [
+                {
+                    "sequence" : [0, 1]
+                },
+                {
+                    "sequence" : [1]
+                }
+            ]
+        },
+        {
+            "name" : "levitt1971_entry4",
+            "up" : [
+                {
+                    "sequence" : [1, 1, 0]
+                },
+                {
+                    "sequence" : [1, 0]
+                },
+                {
+                    "sequence" : [0]
+                }
+            ],
+            "down" : [
+                {
+                    "sequence" : [1, 1, 1]
+                }
+            ]
+        },
+        {
+            "name" : "levitt1971_entry5",
+            "up" : [
+                {
+                    "sequence" : [1, 1, 1, 0]
+                },
+                {
+                    "sequence" : [1, 1, 0]
+                },
+                {
+                    "sequence" : [1, 0]
+                },
+                {
+                    "sequence" : [0]
+                }
+            ],
+            "down" : [
+                {
+                    "sequence" : [1, 1, 1, 1]
+                }
+            ]
+        }
+    ]
+}
