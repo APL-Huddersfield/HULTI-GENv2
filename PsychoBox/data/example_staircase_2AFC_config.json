@@ -4,7 +4,7 @@
             "plugin" : "staircase_twoAFC",
             "parameters" : {
                 "objective" : "Select the stimulus with the loudest reverb",
-                "initialStep" : 7,
+                "initialStep" : 9,
                 "initialStepSize" : 1,
                 "steppingRule" : 0
             }
@@ -21,28 +21,28 @@
             }
         }
     },
-    "pool" : ["tone_0_level_0.wav", "tone_0_level_1.wav", "tone_0_level_2.wav", "tone_0_level_3.wav", "tone_0_level_4.wav", "tone_0_level_5.wav", "tone_0_level_6.wav", "tone_0_level_7.wav",
-              "tone_1_level_0.wav", "tone_1_level_1.wav", "tone_1_level_2.wav", "tone_1_level_3.wav", "tone_1_level_4.wav", "tone_1_level_5.wav", "tone_1_level_6.wav", "tone_1_level_7.wav",
-              "tone_2_level_0.wav", "tone_2_level_1.wav", "tone_2_level_2.wav", "tone_2_level_3.wav", "tone_2_level_4.wav", "tone_2_level_5.wav", "tone_2_level_6.wav", "tone_2_level_7.wav",
-              "tone_3_level_0.wav", "tone_3_level_1.wav", "tone_3_level_2.wav", "tone_3_level_3.wav", "tone_3_level_4.wav", "tone_3_level_5.wav", "tone_3_level_6.wav", "tone_3_level_7.wav"],
+    "pool" : ["word_0.wav", "word_1.wav", "word_2.wav", "word_3.wav", "word_4.wav", "word_5.wav", "word_6.wav", "word_7.wav", "word_8.wav", "word_9.wav",
+              "word_0.wav", "word_1.wav", "word_2.wav", "word_3.wav", "word_4.wav", "word_5.wav", "word_6.wav", "word_7.wav", "word_8.wav", "word_9.wav",
+              "word_0.wav", "word_1.wav", "word_2.wav", "word_3.wav", "word_4.wav", "word_5.wav", "word_6.wav", "word_7.wav", "word_8.wav", "word_9.wav",
+              "word_0.wav", "word_1.wav", "word_2.wav", "word_3.wav", "word_4.wav", "word_5.wav", "word_6.wav", "word_7.wav", "word_8.wav", "word_9.wav"],
     "sessions" : [{
         "groups" : [{
-            "stimuli" : ["tone_0_level_0.wav", "tone_0_level_1.wav", "tone_0_level_2.wav", "tone_0_level_3.wav", "tone_0_level_4.wav", "tone_0_level_5.wav", "tone_0_level_6.wav", "tone_0_level_7.wav"],
-            "reference" : 7
+            "stimuli" : ["word_0.wav", "word_1.wav", "word_2.wav", "word_3.wav", "word_4.wav", "word_5.wav", "word_6.wav", "word_7.wav", "word_8.wav", "word_9.wav"],
+            "reference" : 0
         },
         {
-            "stimuli" : ["tone_1_level_0.wav", "tone_1_level_1.wav", "tone_1_level_2.wav", "tone_1_level_3.wav", "tone_1_level_4.wav", "tone_1_level_5.wav", "tone_1_level_6.wav", "tone_1_level_7.wav"],
-            "reference" : 7
+            "stimuli" : ["word_0.wav", "word_1.wav", "word_2.wav", "word_3.wav", "word_4.wav", "word_5.wav", "word_6.wav", "word_7.wav", "word_8.wav", "word_9.wav"],
+            "reference" : 0
         }]
     },
     {
         "groups" : [{
-            "stimuli" : ["tone_2_level_0.wav", "tone_2_level_1.wav", "tone_2_level_2.wav", "tone_2_level_3.wav", "tone_2_level_4.wav", "tone_2_level_5.wav", "tone_2_level_6.wav", "tone_2_level_7.wav"],
-            "reference" : 7
+            "stimuli" : ["word_0.wav", "word_1.wav", "word_2.wav", "word_3.wav", "word_4.wav", "word_5.wav", "word_6.wav", "word_7.wav", "word_8.wav", "word_9.wav"],
+            "reference" : 0
         },
         {
-            "stimuli" : ["tone_3_level_0.wav", "tone_3_level_1.wav", "tone_3_level_2.wav", "tone_3_level_3.wav", "tone_3_level_4.wav", "tone_3_level_5.wav", "tone_3_level_6.wav", "tone_3_level_7.wav"],
-            "reference" : 7
+            "stimuli" : ["word_0.wav", "word_1.wav", "word_2.wav", "word_3.wav", "word_4.wav", "word_5.wav", "word_6.wav", "word_7.wav", "word_8.wav", "word_9.wav"],
+            "reference" : 0
         }]
     }]
 }
