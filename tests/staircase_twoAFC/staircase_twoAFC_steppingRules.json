@@ -63,6 +63,28 @@
                     "sequence" : [1, 1, 1]
                 }
             ]
+        },
+        {
+            "name" : "levitt1971_entry5",
+            "up" : [
+                {
+                    "sequence" : [1, 1, 1, 0]
+                },
+                {
+                    "sequence" : [1, 1, 0]
+                },
+                {
+                    "sequence" : [1, 0]
+                },
+                {
+                    "sequence" : [0]
+                }
+            ],
+            "down" : [
+                {
+                    "sequence" : [1, 1, 1, 1]
+                }
+            ]
         }
     ]
 }
