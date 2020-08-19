@@ -6,7 +6,8 @@
                 "objective" : "Select the stimulus with the loudest reverb",
                 "initialStep" : 9,
                 "initialStepSize" : 1,
-                "steppingRule" : 1
+                "steppingRule" : 1,
+                "maxReversals" : 1
             }
         },
         "gui" : {

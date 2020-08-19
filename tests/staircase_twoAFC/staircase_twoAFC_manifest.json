@@ -4,11 +4,18 @@
         "objective",
         "initialStep",
         "initialStepSize",
-        "steppingRule"
+        "steppingRule",
+        "maxReversals"
     ],
     "requiresReference" : true,
     "groupingMode" : "sgit",
     "ordering" : {
         "omitReferenceAsTestStimulus" : "true"
+    },
+    "interface" : {
+        "window" : {
+            "width" : 500,
+            "height" : 280
+        }
     }
 }
