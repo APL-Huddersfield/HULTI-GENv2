@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 650.0, 443.0, 957.0, 653.0 ],
+		"rect" : [ 367.0, 271.0, 957.0, 653.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -85,7 +85,7 @@
 					"presentation" : 1,
 					"presentation_linecount" : 2,
 					"presentation_rect" : [ 0.0, 0.0, 450.0, 60.0 ],
-					"text" : "The test is now over.\nThank you for participating!",
+					"text" : "Session complete, the test is now over.\nThank you for participating!",
 					"textjustification" : 1
 				}
 
