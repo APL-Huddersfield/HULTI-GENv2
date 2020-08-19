@@ -2,8 +2,8 @@
 	"name" : "PsychoBox",
 	"version" : 1,
 	"creationdate" : 3666872002,
-	"modificationdate" : 3680593613,
-	"viewrect" : [ 1611.0, 338.0, 389.0, 649.0 ],
+	"modificationdate" : 3680694809,
+	"viewrect" : [ 2015.0, 493.0, 389.0, 649.0 ],
 	"autoorganize" : 1,
 	"hideprojectwindow" : 0,
 	"showdependencies" : 1,
@@ -96,22 +96,22 @@
 				"local" : 1
 			}
 ,
-			"staircaseCore.maxpat" : 			{
-				"kind" : "patcher",
-				"local" : 1
-			}
-,
-			"checkIfUniqueInColl.maxpat" : 			{
-				"kind" : "patcher",
-				"local" : 1
-			}
-,
 			"player_generalPurpose.maxpat" : 			{
 				"kind" : "patcher",
 				"local" : 1
 			}
 ,
 			"player_transport_multi.maxpat" : 			{
+				"kind" : "patcher",
+				"local" : 1
+			}
+,
+			"staircaseCore.maxpat" : 			{
+				"kind" : "patcher",
+				"local" : 1
+			}
+,
+			"checkIfUniqueInColl.maxpat" : 			{
 				"kind" : "patcher",
 				"local" : 1
 			}
@@ -305,6 +305,11 @@
 				}
 
 			}
+,
+			"ui_allComplete.maxpat" : 			{
+				"kind" : "patcher",
+				"local" : 1
+			}
 
 		}
 ,
@@ -338,6 +343,11 @@
 			}
 ,
 			"dictValidator.js" : 			{
+				"kind" : "javascript",
+				"local" : 1
+			}
+,
+			"containsSequence.js" : 			{
 				"kind" : "javascript",
 				"local" : 1
 			}
@@ -378,11 +388,6 @@
 			}
 ,
 			"configSessionsSidemenu2.js" : 			{
-				"kind" : "javascript",
-				"local" : 1
-			}
-,
-			"containsSequence.js" : 			{
 				"kind" : "javascript",
 				"local" : 1
 			}
