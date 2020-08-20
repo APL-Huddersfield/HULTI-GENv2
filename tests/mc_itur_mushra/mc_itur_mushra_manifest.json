@@ -1,0 +1,13 @@
+{
+    "slug" : "mc_itur_mushra",
+    "parameters" : [
+        "repetitions",
+        "objective"
+    ],
+    "parametersMenu" : "itur",
+    "requiresReference" : true,
+    "groupingMode" : "sft",
+    "ordering" : {
+        "omitReferenceAsTestStimulus" : false
+    }
+}
