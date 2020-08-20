@@ -22,10 +22,7 @@
             }
         }
     },
-    "pool" : ["word_0.wav", "word_1.wav", "word_2.wav", "word_3.wav", "word_4.wav", "word_5.wav", "word_6.wav", "word_7.wav", "word_8.wav", "word_9.wav",
-              "word_0.wav", "word_1.wav", "word_2.wav", "word_3.wav", "word_4.wav", "word_5.wav", "word_6.wav", "word_7.wav", "word_8.wav", "word_9.wav",
-              "word_0.wav", "word_1.wav", "word_2.wav", "word_3.wav", "word_4.wav", "word_5.wav", "word_6.wav", "word_7.wav", "word_8.wav", "word_9.wav",
-              "word_0.wav", "word_1.wav", "word_2.wav", "word_3.wav", "word_4.wav", "word_5.wav", "word_6.wav", "word_7.wav", "word_8.wav", "word_9.wav"],
+    "pool" : ["word_0.wav", "word_1.wav", "word_2.wav", "word_3.wav", "word_4.wav", "word_5.wav", "word_6.wav", "word_7.wav", "word_8.wav", "word_9.wav"],
     "sessions" : [{
         "groups" : [{
             "stimuli" : ["word_0.wav", "word_1.wav", "word_2.wav", "word_3.wav", "word_4.wav", "word_5.wav", "word_6.wav", "word_7.wav", "word_8.wav", "word_9.wav"],

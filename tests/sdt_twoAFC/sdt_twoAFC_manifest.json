@@ -7,7 +7,13 @@
     "requiresReference" : true,
     "groupingMode" : "sgft",
     "ordering" : {
-        "omitReferenceAsTestStimulus" : "true",
+        "omitReferenceAsTestStimulus" : true,
         "combinationsPerRepetition" : 2
+    },
+    "interface" : {
+        "window" : {
+            "width" : 500,
+            "height" : 280
+        }
     }
 }
