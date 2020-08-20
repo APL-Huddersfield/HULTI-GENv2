@@ -7,44 +7,7 @@
         "steppingRule",
         "maxReversals"
     ],
-    "parameterProperties" : {
-        "objective" : {
-            "type" : "textfield",
-            "default" : "Select which stimulus you think contains signal"
-        },
-        "initialStep" : {
-            "type" : "int",
-            "default" : 0,
-            "minimum" : 0,
-            "maximum" : 65535
-        },
-        "initialStepSize" : {
-            "type" : "int",
-            "default" : 0,
-            "minimum" : 1,
-            "maximum" : 20
-        },
-        "steppingRule" : {
-            "type" : "menu",
-            "default" : 0,
-            "items" : [
-                "Levitt 1971 Entry 1",
-                "Levitt 1971 Entry 2",
-                "Levitt 1971 Entry 3",
-                "Levitt 1971 Entry 4",
-                "Levitt 1971 Entry 5",
-                "Levitt 1971 Entry 6",
-                "Levitt 1971 Entry 7",
-                "Levitt 1971 Entry 8"
-            ]
-        },
-        "maxReversals" : {
-            "type" : "int",
-            "default" : 2,
-            "min" : 2,
-            "max" : 65535
-        }
-    },
+    "parametersMenu" : "staircase",
     "requiresReference" : true,
     "groupingMode" : "sgit",
     "ordering" : {

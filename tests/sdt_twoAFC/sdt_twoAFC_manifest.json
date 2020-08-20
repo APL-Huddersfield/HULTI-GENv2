@@ -1,9 +1,10 @@
 {
-    "slug" : "twoAFC",
+    "slug" : "sdt_twoAFC",
     "parameters" : [
         "repetitions",
         "objective"
     ],
+    "parametersMenu" : "sdt",
     "requiresReference" : true,
     "groupingMode" : "sgft",
     "ordering" : {
