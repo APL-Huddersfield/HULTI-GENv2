@@ -71,7 +71,8 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 51.0, 377.0, 209.0, 29.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 92.0, 0.0, 1290.0, 29.0 ],
+					"presentation_linecount" : 3,
+					"presentation_rect" : [ 92.0, 0.0, 90.0, 74.0 ],
 					"text" : "The Objective",
 					"textjustification" : 1,
 					"varname" : "objective"
@@ -124,7 +125,6 @@
 						"style" : "",
 						"subpatcher_template" : "",
 						"assistshowspatchername" : 0,
-						"visible" : 1,
 						"boxes" : [ 							{
 								"box" : 								{
 									"id" : "obj-5",
@@ -426,7 +426,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 727.0, 787.0, 70.0, 27.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 1382.0, 75.0, 70.0, 27.0 ],
+					"presentation_rect" : [ 182.0, 75.0, 70.0, 27.0 ],
 					"text" : "Next",
 					"textoncolor" : [ 0.0, 0.0, 0.0, 1.0 ],
 					"textovercolor" : [ 0.102, 0.412, 0.796, 1.0 ],
@@ -1706,7 +1706,7 @@
 					"outlettype" : [ "list", "" ],
 					"patching_rect" : [ 492.0, 224.0, 1290.0, 513.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 92.0, 75.0, 1290.0, 513.0 ],
+					"presentation_rect" : [ 92.0, 75.0, 90.0, 513.0 ],
 					"varname" : "sliderbank",
 					"viewvisibility" : 1
 				}
@@ -1746,7 +1746,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 159.0, 292.0, 200.0, 29.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 662.0, 597.0, 150.0, 29.0 ],
+					"presentation_rect" : [ 62.0, 597.0, 150.0, 29.0 ],
 					"text" : "Trial 1 of 20",
 					"textjustification" : 1,
 					"varname" : "trialcount"
