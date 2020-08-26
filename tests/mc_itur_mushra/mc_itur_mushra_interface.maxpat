@@ -803,7 +803,7 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 283.0, 237.0, 1292.0, 559.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 0.0, 75.0, 1292.0, 560.0 ],
+					"presentation_rect" : [ 525.0, 75.0, 242.0, 560.0 ],
 					"varname" : "subinterface",
 					"viewvisibility" : 1
 				}
@@ -996,14 +996,7 @@
 				"implicit" : 1
 			}
 , 			{
-				"name" : "mc_itur_mushra_sliderBank.maxpat",
-				"bootpath" : "~/Documents/Max 8/Projects/HULTI-GENv2/tests/mc_itur_mushra",
-				"patcherrelativepath" : ".",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "mc_itur_mushra_slider.maxpat",
+				"name" : "mc_itur_mushra_sliderbank.maxpat",
 				"bootpath" : "~/Documents/Max 8/Projects/HULTI-GENv2/tests/mc_itur_mushra",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
