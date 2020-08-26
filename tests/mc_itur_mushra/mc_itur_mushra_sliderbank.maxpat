@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ -10.0, 79.0, 1896.0, 1075.0 ],
+		"rect" : [ 34.0, 79.0, 1896.0, 1075.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -274,7 +274,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 1085.0, 228.5, 135.0, 22.0 ],
-									"text" : "expr $i1 * 90 - ($i2 * 10)"
+									"text" : "expr $i1 * 80 - ($i2 * 10)"
 								}
 
 							}
@@ -298,8 +298,8 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 389.0, 365.0, 178.0, 35.0 ],
-									"text" : "sprintf script sendbox slider%d presentation_rect %d 0 90 512"
+									"patching_rect" : [ 389.0, 365.0, 184.0, 35.0 ],
+									"text" : "sprintf script sendbox slider%d presentation_rect %d 0 80 512"
 								}
 
 							}
@@ -371,7 +371,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "int" ],
 									"patching_rect" : [ 883.5, 233.5, 30.0, 22.0 ],
-									"text" : "* 80"
+									"text" : "* 70"
 								}
 
 							}
@@ -395,7 +395,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 570.0, 428.0, 155.0, 22.0 ],
-									"text" : "sprintf size slider%d 90 512"
+									"text" : "sprintf size slider%d 80 512"
 								}
 
 							}
@@ -407,7 +407,7 @@
 									"numinlets" : 3,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 593.0, 365.0, 312.0, 49.0 ],
+									"patching_rect" : [ 593.0, 365.0, 309.5, 49.0 ],
 									"text" : "sprintf newobject newobj @text \\\"bpatcher @name mc_itur_mushra_slider @args %d\\\" @varname slider%d @patching_position %d 340 @presentation 1"
 								}
 
@@ -676,7 +676,7 @@
 , 							{
 								"patchline" : 								{
 									"destination" : [ "obj-26", 1 ],
-									"midpoints" : [ 893.0, 282.0, 557.5, 282.0 ],
+									"midpoints" : [ 893.0, 282.0, 563.5, 282.0 ],
 									"order" : 1,
 									"source" : [ "obj-34", 0 ]
 								}
@@ -693,7 +693,7 @@
 , 							{
 								"patchline" : 								{
 									"destination" : [ "obj-2", 1 ],
-									"midpoints" : [ 893.0, 220.0, 749.0, 220.0 ],
+									"midpoints" : [ 893.0, 220.0, 747.75, 220.0 ],
 									"order" : 1,
 									"source" : [ "obj-40", 2 ]
 								}

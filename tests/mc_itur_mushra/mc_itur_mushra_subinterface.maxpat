@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ -393.0, 128.0, 1806.0, 1087.0 ],
+		"rect" : [ 34.0, 128.0, 1806.0, 1087.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -82,7 +82,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 583.0, 116.0, 83.0, 22.0 ],
-					"text" : "numsliders 10"
+					"text" : "numsliders 16"
 				}
 
 			}
@@ -464,7 +464,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 526.0, 808.0, 70.0, 27.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 902.0, 486.0, 70.0, 27.0 ],
+					"presentation_rect" : [ 1222.0, 486.0, 70.0, 27.0 ],
 					"text" : "Next",
 					"textoncolor" : [ 0.0, 0.0, 0.0, 1.0 ],
 					"textovercolor" : [ 0.102, 0.412, 0.796, 1.0 ],
@@ -1019,7 +1019,6 @@
 													"numoutlets" : 1,
 													"outlettype" : [ "" ],
 													"patching_rect" : [ 192.75, 132.0, 213.0, 49.0 ],
-													"presentation_linecount" : 2,
 													"text" : "send parent::refbutton, bgcolor 0.825 0.825 0.825 1., textoncolor 0 0 0 1, textovercolor 0.102 0.412 0.796 1."
 												}
 
@@ -1033,7 +1032,6 @@
 													"numoutlets" : 1,
 													"outlettype" : [ "" ],
 													"patching_rect" : [ 136.0, 194.0, 196.0, 62.0 ],
-													"presentation_linecount" : 5,
 													"text" : "send parent::refbutton, bgcolor 0.145098 0.462746 0.862745 1, textoncolor 1 1 1 1, textovercolor 1 1 1 1"
 												}
 
@@ -1848,9 +1846,9 @@
 					"numoutlets" : 2,
 					"offset" : [ 0.0, 0.0 ],
 					"outlettype" : [ "list", "" ],
-					"patching_rect" : [ 384.0, 223.0, 1290.0, 513.0 ],
+					"patching_rect" : [ 384.0, 223.0, 1130.0, 513.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 92.0, 0.0, 810.0, 513.0 ],
+					"presentation_rect" : [ 92.0, 0.0, 1130.0, 513.0 ],
 					"varname" : "sliderbank",
 					"viewvisibility" : 1
 				}
@@ -1890,7 +1888,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 51.0, 291.0, 200.0, 29.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 422.0, 522.0, 150.0, 29.0 ],
+					"presentation_rect" : [ 582.0, 522.0, 150.0, 29.0 ],
 					"text" : "Trial 1 of 20",
 					"textjustification" : 1,
 					"varname" : "trialcount"
@@ -2100,7 +2098,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-78", 0 ],
-					"midpoints" : [ 1664.5, 774.5, 489.5, 774.5 ],
+					"midpoints" : [ 1504.5, 774.5, 489.5, 774.5 ],
 					"order" : 2,
 					"source" : [ "obj-42", 1 ]
 				}
@@ -2196,14 +2194,14 @@
  ],
 		"dependency_cache" : [ 			{
 				"name" : "mc_itur_mushra_sliderBank.maxpat",
-				"bootpath" : "~/Documents/Max 8/Projects/PsychoBox/tests/mc_itur_mushra",
+				"bootpath" : "~/Documents/Max 8/Projects/HULTI-GENv2/tests/mc_itur_mushra",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "mc_itur_mushra_slider.maxpat",
-				"bootpath" : "~/Documents/Max 8/Projects/PsychoBox/tests/mc_itur_mushra",
+				"bootpath" : "~/Documents/Max 8/Projects/HULTI-GENv2/tests/mc_itur_mushra",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1

@@ -9,5 +9,9 @@
     "groupingMode" : "sft",
     "ordering" : {
         "omitReferenceAsTestStimulus" : false
+    },
+    "interface" : {
+        "maxwidth" : 1314,
+        "maxheight" : 640
     }
 }
