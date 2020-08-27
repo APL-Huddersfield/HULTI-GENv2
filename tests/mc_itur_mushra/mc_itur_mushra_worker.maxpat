@@ -132,7 +132,7 @@
 									"patching_rect" : [ 511.5, 316.0, 133.0, 22.0 ],
 									"saved_object_attributes" : 									{
 										"embed" : 0,
-										"name" : "6167-sliderValues",
+										"name" : "#0-sliderValues",
 										"parameter_enable" : 0,
 										"parameter_mappable" : 0,
 										"range" : 101,
@@ -940,7 +940,7 @@
 				"box" : 				{
 					"comment" : "",
 					"id" : "obj-22",
-					"index" : 2,
+					"index" : 0,
 					"maxclass" : "outlet",
 					"numinlets" : 1,
 					"numoutlets" : 0,
@@ -965,7 +965,7 @@
 				"box" : 				{
 					"comment" : "",
 					"id" : "obj-25",
-					"index" : 1,
+					"index" : 0,
 					"maxclass" : "outlet",
 					"numinlets" : 1,
 					"numoutlets" : 0,
@@ -991,7 +991,7 @@
 				"box" : 				{
 					"comment" : "",
 					"id" : "obj-28",
-					"index" : 3,
+					"index" : 0,
 					"maxclass" : "outlet",
 					"numinlets" : 1,
 					"numoutlets" : 0,
@@ -1016,7 +1016,7 @@
 				"box" : 				{
 					"comment" : "",
 					"id" : "obj-31",
-					"index" : 4,
+					"index" : 0,
 					"maxclass" : "outlet",
 					"numinlets" : 1,
 					"numoutlets" : 0,
@@ -1672,6 +1672,18 @@
 						"assistshowspatchername" : 0,
 						"boxes" : [ 							{
 								"box" : 								{
+									"id" : "obj-8",
+									"maxclass" : "newobj",
+									"numinlets" : 1,
+									"numoutlets" : 3,
+									"outlettype" : [ "", "int", "int" ],
+									"patching_rect" : [ 354.333333333333314, 489.0, 62.0, 22.0 ],
+									"text" : "change -1"
+								}
+
+							}
+, 							{
+								"box" : 								{
 									"id" : "obj-7",
 									"maxclass" : "newobj",
 									"numinlets" : 1,
@@ -1718,7 +1730,7 @@
 									"patching_rect" : [ 564.0, 400.0, 133.0, 22.0 ],
 									"saved_object_attributes" : 									{
 										"embed" : 0,
-										"name" : "6167-sliderValues",
+										"name" : "#0-sliderValues",
 										"parameter_enable" : 0,
 										"parameter_mappable" : 0,
 										"range" : 101,
@@ -1738,7 +1750,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 354.333333333333314, 489.0, 83.0, 22.0 ],
+									"patching_rect" : [ 354.333333333333314, 531.0, 83.0, 22.0 ],
 									"text" : "numsliders $1"
 								}
 
@@ -1884,8 +1896,8 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 449.333333333333314, 531.0, 144.0, 22.0 ],
-									"text" : "setnumstimuli $1 $2 multi"
+									"patching_rect" : [ 449.333333333333314, 531.0, 173.0, 22.0 ],
+									"text" : "stop, setnumstimuli $1 $2 multi"
 								}
 
 							}
@@ -2147,7 +2159,7 @@
 , 							{
 								"patchline" : 								{
 									"destination" : [ "obj-42", 0 ],
-									"midpoints" : [ 363.833333333333314, 564.5, 44.300000000000125, 564.5 ],
+									"midpoints" : [ 363.833333333333314, 574.5, 44.300000000000125, 574.5 ],
 									"source" : [ "obj-2", 0 ]
 								}
 
@@ -2190,7 +2202,7 @@
 , 							{
 								"patchline" : 								{
 									"destination" : [ "obj-41", 0 ],
-									"midpoints" : [ 458.833333333333314, 577.0, 130.833333333333371, 577.0 ],
+									"midpoints" : [ 458.833333333333314, 585.0, 130.833333333333371, 585.0 ],
 									"source" : [ "obj-4", 0 ]
 								}
 
@@ -2268,15 +2280,6 @@
 							}
 , 							{
 								"patchline" : 								{
-									"destination" : [ "obj-2", 0 ],
-									"midpoints" : [ 458.833333333333314, 459.0, 363.833333333333314, 459.0 ],
-									"order" : 1,
-									"source" : [ "obj-67", 0 ]
-								}
-
-							}
-, 							{
-								"patchline" : 								{
 									"destination" : [ "obj-3", 0 ],
 									"order" : 0,
 									"source" : [ "obj-67", 1 ]
@@ -2304,6 +2307,15 @@
 									"midpoints" : [ 516.166666666666629, 351.0, 375.916666666666686, 351.0, 375.916666666666686, 245.0, 316.500000000000057, 245.0 ],
 									"order" : 1,
 									"source" : [ "obj-67", 1 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-8", 0 ],
+									"midpoints" : [ 458.833333333333314, 459.0, 363.833333333333314, 459.0 ],
+									"order" : 1,
+									"source" : [ "obj-67", 0 ]
 								}
 
 							}
@@ -2365,6 +2377,13 @@
 							}
 , 							{
 								"patchline" : 								{
+									"destination" : [ "obj-2", 0 ],
+									"source" : [ "obj-8", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
 									"destination" : [ "obj-13", 0 ],
 									"source" : [ "obj-9", 1 ]
 								}
@@ -2413,12 +2432,12 @@
 				"box" : 				{
 					"comment" : "",
 					"id" : "obj-27",
-					"index" : 1,
+					"index" : 0,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 1083.0, 93.0, 30.0, 30.0 ]
+					"patching_rect" : [ 1083.0, 61.0, 30.0, 30.0 ]
 				}
 
 			}
@@ -2536,7 +2555,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-32", 0 ],
-					"midpoints" : [ 390.833333333333258, 427.5, 837.516666666666652, 427.5, 837.516666666666652, 130.0, 694.200000000000045, 130.0 ],
+					"midpoints" : [ 390.833333333333258, 427.5, 839.516666666666652, 427.5, 839.516666666666652, 131.0, 694.200000000000045, 131.0 ],
 					"order" : 1,
 					"source" : [ "obj-20", 1 ]
 				}
@@ -2571,7 +2590,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-3", 0 ],
-					"midpoints" : [ 1092.5, 147.0, 483.5, 147.0 ],
+					"midpoints" : [ 1092.5, 117.0, 483.5, 117.0 ],
 					"order" : 3,
 					"source" : [ "obj-27", 0 ]
 				}
@@ -2696,7 +2715,23 @@
 				}
 
 			}
- ]
+ ],
+		"dependency_cache" : [ 			{
+				"name" : "player_generalPurpose.maxpat",
+				"bootpath" : "~/Documents/Max 8/Projects/HULTI-GENv2/PsychoBox/patchers",
+				"patcherrelativepath" : "../../PsychoBox/patchers",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "player_transport_multi.maxpat",
+				"bootpath" : "~/Documents/Max 8/Projects/HULTI-GENv2/PsychoBox/patchers",
+				"patcherrelativepath" : "../../PsychoBox/patchers",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+ ],
+		"autosave" : 0
 	}
 
 }

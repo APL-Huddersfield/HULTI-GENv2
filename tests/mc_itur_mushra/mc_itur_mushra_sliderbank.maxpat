@@ -94,7 +94,7 @@
 					"numoutlets" : 3,
 					"outlettype" : [ "bang", "bang", "int" ],
 					"patching_rect" : [ 1440.0, 136.0, 51.0, 22.0 ],
-					"text" : "uzi 24 0"
+					"text" : "uzi 12 0"
 				}
 
 			}
@@ -151,11 +151,11 @@
 				"box" : 				{
 					"id" : "obj-1129",
 					"maxclass" : "newobj",
-					"numinlets" : 16,
+					"numinlets" : 12,
 					"numoutlets" : 1,
 					"outlettype" : [ "list" ],
-					"patching_rect" : [ 190.0, 971.0, 176.5, 22.0 ],
-					"text" : "funnel 16 0",
+					"patching_rect" : [ 190.0, 971.0, 134.5, 22.0 ],
+					"text" : "funnel 12 0",
 					"varname" : "valueFunnel"
 				}
 
@@ -347,7 +347,7 @@
 									"numoutlets" : 3,
 									"outlettype" : [ "bang", "bang", "int" ],
 									"patching_rect" : [ 919.0, 183.0, 51.0, 22.0 ],
-									"text" : "uzi 16 0"
+									"text" : "uzi 12 0"
 								}
 
 							}
@@ -407,7 +407,7 @@
 									"numinlets" : 3,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 593.0, 365.0, 309.5, 49.0 ],
+									"patching_rect" : [ 593.0, 365.0, 312.0, 49.0 ],
 									"text" : "sprintf newobject newobj @text \\\"bpatcher @name mc_itur_mushra_slider @args %d\\\" @varname slider%d @patching_position %d 340 @presentation 1"
 								}
 
@@ -432,7 +432,7 @@
 									"numoutlets" : 3,
 									"outlettype" : [ "bang", "bang", "int" ],
 									"patching_rect" : [ 328.0, 183.0, 51.0, 22.0 ],
-									"text" : "uzi 16 0"
+									"text" : "uzi 12 0"
 								}
 
 							}
@@ -468,7 +468,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 1201.0, 76.0, 53.0, 22.0 ],
-									"text" : "clip 1 16"
+									"text" : "clip 1 12"
 								}
 
 							}
@@ -693,7 +693,7 @@
 , 							{
 								"patchline" : 								{
 									"destination" : [ "obj-2", 1 ],
-									"midpoints" : [ 893.0, 220.0, 747.75, 220.0 ],
+									"midpoints" : [ 893.0, 220.0, 749.0, 220.0 ],
 									"order" : 1,
 									"source" : [ "obj-40", 2 ]
 								}
@@ -836,11 +836,11 @@
 				"box" : 				{
 					"id" : "obj-23",
 					"maxclass" : "newobj",
-					"numinlets" : 16,
+					"numinlets" : 12,
 					"numoutlets" : 1,
 					"outlettype" : [ "list" ],
-					"patching_rect" : [ 261.0, 890.0, 176.5, 22.0 ],
-					"text" : "funnel 16 0",
+					"patching_rect" : [ 261.0, 890.0, 134.5, 22.0 ],
+					"text" : "funnel 12 0",
 					"varname" : "clickFunnel"
 				}
 
@@ -889,7 +889,7 @@
 					"numoutlets" : 3,
 					"outlettype" : [ "bang", "bang", "int" ],
 					"patching_rect" : [ 1334.0, 136.0, 51.0, 22.0 ],
-					"text" : "uzi 24 0"
+					"text" : "uzi 12 0"
 				}
 
 			}
@@ -898,10 +898,10 @@
 					"id" : "obj-52",
 					"maxclass" : "newobj",
 					"numinlets" : 1,
-					"numoutlets" : 16,
-					"outlettype" : [ "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "" ],
-					"patching_rect" : [ 1219.5, 230.0, 176.5, 22.0 ],
-					"text" : "spray 16 0 1",
+					"numoutlets" : 12,
+					"outlettype" : [ "", "", "", "", "", "", "", "", "", "", "", "" ],
+					"patching_rect" : [ 1219.5, 230.0, 134.5, 22.0 ],
+					"text" : "spray 12 1",
 					"varname" : "sprayer"
 				}
 
