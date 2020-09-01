@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 112.0, 207.0, 1424.0, 602.0 ],
+		"rect" : [ 753.0, 305.0, 1424.0, 602.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -1064,7 +1064,7 @@
 				"box" : 				{
 					"comment" : "",
 					"id" : "obj-8",
-					"index" : 2,
+					"index" : 0,
 					"maxclass" : "outlet",
 					"numinlets" : 1,
 					"numoutlets" : 0,
@@ -1104,8 +1104,8 @@
 					"id" : "obj-36",
 					"maxclass" : "newobj",
 					"numinlets" : 1,
-					"numoutlets" : 2,
-					"outlettype" : [ "", "" ],
+					"numoutlets" : 3,
+					"outlettype" : [ "", "", "" ],
 					"patcher" : 					{
 						"fileversion" : 1,
 						"appversion" : 						{
@@ -1117,7 +1117,7 @@
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ 1092.0, 539.0, 1217.0, 542.0 ],
+						"rect" : [ 1092.0, 539.0, 1091.0, 541.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -1147,13 +1147,37 @@
 						"assistshowspatchername" : 0,
 						"boxes" : [ 							{
 								"box" : 								{
+									"id" : "obj-7",
+									"maxclass" : "newobj",
+									"numinlets" : 1,
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
+									"patching_rect" : [ 416.333333333333314, 373.5, 103.0, 22.0 ],
+									"text" : "prepend objective"
+								}
+
+							}
+, 							{
+								"box" : 								{
 									"comment" : "",
-									"id" : "obj-4",
+									"id" : "obj-6",
 									"index" : 2,
 									"maxclass" : "outlet",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 457.0, 479.0, 30.0, 30.0 ]
+									"patching_rect" : [ 416.333333333333314, 479.0, 30.0, 30.0 ]
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"comment" : "",
+									"id" : "obj-4",
+									"index" : 3,
+									"maxclass" : "outlet",
+									"numinlets" : 1,
+									"numoutlets" : 0,
+									"patching_rect" : [ 631.0, 479.0, 30.0, 30.0 ]
 								}
 
 							}
@@ -1286,13 +1310,12 @@
 , 							{
 								"box" : 								{
 									"id" : "obj-1",
-									"linecount" : 2,
 									"maxclass" : "newobj",
 									"numinlets" : 1,
-									"numoutlets" : 3,
-									"outlettype" : [ "", "", "" ],
-									"patching_rect" : [ 309.0, 315.5, 167.0, 35.0 ],
-									"text" : "dict.unpack initialStep: steppingRule: maxReversals:"
+									"numoutlets" : 4,
+									"outlettype" : [ "", "", "", "" ],
+									"patching_rect" : [ 309.0, 315.5, 341.0, 22.0 ],
+									"text" : "dict.unpack initialStep: objective: steppingRule: maxReversals:"
 								}
 
 							}
@@ -1962,7 +1985,7 @@
  ]
 									}
 ,
-									"patching_rect" : [ 383.0, 416.0, 139.0, 22.0 ],
+									"patching_rect" : [ 523.666666666666629, 373.5, 139.0, 22.0 ],
 									"saved_object_attributes" : 									{
 										"description" : "",
 										"digest" : "",
@@ -1993,7 +2016,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 787.0, 373.5, 132.0, 22.0 ],
+									"patching_rect" : [ 941.0, 373.5, 132.0, 22.0 ],
 									"text" : "v #0-postPlayDelay"
 								}
 
@@ -2005,7 +2028,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 523.0, 373.5, 127.0, 22.0 ],
+									"patching_rect" : [ 677.0, 373.5, 127.0, 22.0 ],
 									"text" : "v #0-prePlayDelay"
 								}
 
@@ -2017,7 +2040,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 655.0, 373.5, 102.0, 22.0 ],
+									"patching_rect" : [ 809.0, 373.5, 102.0, 22.0 ],
 									"text" : "v #0-ABDelay"
 								}
 
@@ -2042,7 +2065,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 3,
 									"outlettype" : [ "", "", "" ],
-									"patching_rect" : [ 523.0, 315.5, 283.0, 35.0 ],
+									"patching_rect" : [ 677.0, 315.5, 283.0, 35.0 ],
 									"text" : "dict.unpack beforePresentation: betweenStimuli: afterPresentation:"
 								}
 
@@ -2054,7 +2077,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 523.0, 270.5, 115.0, 22.0 ],
+									"patching_rect" : [ 677.0, 270.5, 115.0, 22.0 ],
 									"text" : "dict.unpack pauses:"
 								}
 
@@ -2066,7 +2089,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 2,
 									"outlettype" : [ "", "" ],
-									"patching_rect" : [ 309.0, 222.0, 233.0, 22.0 ],
+									"patching_rect" : [ 309.0, 222.0, 387.0, 22.0 ],
 									"text" : "dict.unpack task: playback:"
 								}
 
@@ -2108,13 +2131,20 @@
 , 							{
 								"patchline" : 								{
 									"destination" : [ "obj-4", 0 ],
-									"source" : [ "obj-1", 2 ]
+									"source" : [ "obj-1", 3 ]
 								}
 
 							}
 , 							{
 								"patchline" : 								{
 									"destination" : [ "obj-52", 0 ],
+									"source" : [ "obj-1", 2 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-7", 0 ],
 									"source" : [ "obj-1", 1 ]
 								}
 
@@ -2268,8 +2298,15 @@
 , 							{
 								"patchline" : 								{
 									"destination" : [ "obj-3", 0 ],
-									"midpoints" : [ 392.5, 465.0, 70.5, 465.0 ],
+									"midpoints" : [ 533.166666666666629, 465.0, 70.5, 465.0 ],
 									"source" : [ "obj-52", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-6", 0 ],
+									"source" : [ "obj-7", 0 ]
 								}
 
 							}
@@ -2283,7 +2320,7 @@
  ]
 					}
 ,
-					"patching_rect" : [ 1115.0, 222.0, 86.0, 22.0 ],
+					"patching_rect" : [ 1115.0, 222.0, 48.0, 22.0 ],
 					"saved_object_attributes" : 					{
 						"description" : "",
 						"digest" : "",
@@ -2291,7 +2328,7 @@
 						"tags" : ""
 					}
 ,
-					"text" : "p setupWorker"
+					"text" : "p setup"
 				}
 
 			}
@@ -2568,7 +2605,7 @@
 				"box" : 				{
 					"comment" : "",
 					"id" : "obj-11",
-					"index" : 1,
+					"index" : 0,
 					"maxclass" : "outlet",
 					"numinlets" : 1,
 					"numoutlets" : 0,
@@ -2606,7 +2643,7 @@
 				"box" : 				{
 					"comment" : "",
 					"id" : "obj-6",
-					"index" : 3,
+					"index" : 0,
 					"maxclass" : "outlet",
 					"numinlets" : 1,
 					"numoutlets" : 0,
@@ -3509,7 +3546,7 @@
 				"box" : 				{
 					"comment" : "",
 					"id" : "obj-27",
-					"index" : 1,
+					"index" : 0,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
@@ -4189,7 +4226,7 @@
 				"box" : 				{
 					"comment" : "",
 					"id" : "obj-14",
-					"index" : 4,
+					"index" : 0,
 					"maxclass" : "outlet",
 					"numinlets" : 1,
 					"numoutlets" : 0,
@@ -4570,6 +4607,15 @@
 			}
 , 			{
 				"patchline" : 				{
+					"color" : [ 0.8, 0.0, 0.0, 1.0 ],
+					"destination" : [ "obj-14", 0 ],
+					"midpoints" : [ 1139.0, 359.5, 280.333333333333258, 359.5 ],
+					"source" : [ "obj-36", 1 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-32", 0 ],
 					"midpoints" : [ 1124.5, 285.0, 656.799999999999955, 285.0 ],
 					"source" : [ "obj-36", 0 ]
@@ -4579,8 +4625,8 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-5", 1 ],
-					"midpoints" : [ 1191.5, 411.0, 805.799999999999955, 411.0 ],
-					"source" : [ "obj-36", 1 ]
+					"midpoints" : [ 1153.5, 411.0, 805.799999999999955, 411.0 ],
+					"source" : [ "obj-36", 2 ]
 				}
 
 			}
@@ -4641,7 +4687,51 @@
 				}
 
 			}
- ]
+ ],
+		"dependency_cache" : [ 			{
+				"name" : "player_generalPurpose.maxpat",
+				"bootpath" : "~/Documents/Max 8/Projects/HULTI-GENv2/PsychoBox/patchers",
+				"patcherrelativepath" : "../../PsychoBox/patchers",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "player_transport_multi.maxpat",
+				"bootpath" : "~/Documents/Max 8/Projects/HULTI-GENv2/PsychoBox/patchers",
+				"patcherrelativepath" : "../../PsychoBox/patchers",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "staircaseCore.maxpat",
+				"bootpath" : "~/Documents/Max 8/Projects/HULTI-GENv2/PsychoBox/patchers",
+				"patcherrelativepath" : "../../PsychoBox/patchers",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "checkIfUniqueInColl.maxpat",
+				"bootpath" : "~/Documents/Max 8/Projects/HULTI-GENv2/PsychoBox/patchers",
+				"patcherrelativepath" : "../../PsychoBox/patchers",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "containsSequence.js",
+				"bootpath" : "~/Documents/Max 8/Projects/HULTI-GENv2/PsychoBox/code",
+				"patcherrelativepath" : "../../PsychoBox/code",
+				"type" : "TEXT",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "stepper.maxpat",
+				"bootpath" : "~/Documents/Max 8/Library",
+				"patcherrelativepath" : "../../../../Library",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+ ],
+		"autosave" : 0
 	}
 
 }

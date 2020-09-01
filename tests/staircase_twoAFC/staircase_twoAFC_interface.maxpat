@@ -524,7 +524,7 @@
 					"numoutlets" : 3,
 					"outlettype" : [ "", "", "" ],
 					"patching_rect" : [ 299.333333333333258, 393.0, 163.0, 22.0 ],
-					"text" : "route buttonstate setquestion"
+					"text" : "route buttonstate objective"
 				}
 
 			}
