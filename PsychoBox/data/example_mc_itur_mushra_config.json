@@ -19,27 +19,25 @@
             }
         }
     },
-    "pool" : ["tone_0_level_0.wav", "tone_0_level_1.wav", "tone_0_level_2.wav", "tone_0_level_3.wav", "tone_0_level_4.wav", "tone_0_level_5.wav", "tone_0_level_6.wav", "tone_0_level_7.wav",
-              "tone_1_level_0.wav", "tone_1_level_1.wav", "tone_1_level_2.wav", "tone_1_level_3.wav", "tone_1_level_4.wav", "tone_1_level_5.wav", "tone_1_level_6.wav", "tone_1_level_7.wav",
-              "tone_2_level_0.wav", "tone_2_level_1.wav", "tone_2_level_2.wav", "tone_2_level_3.wav", "tone_2_level_4.wav", "tone_2_level_5.wav", "tone_2_level_6.wav", "tone_2_level_7.wav",
-              "tone_3_level_0.wav", "tone_3_level_1.wav", "tone_3_level_2.wav", "tone_3_level_3.wav", "tone_3_level_4.wav", "tone_3_level_5.wav", "tone_3_level_6.wav", "tone_3_level_7.wav"],
+    "pool" : ["low_tone_1.wav", "low_tone_2.wav", "low_tone_3.wav", "low_tone_4.wav", "low_tone_5.wav", "low_tone_6.wav", "low_tone_7.wav", "low_tone_8.wav",
+              "high_tone_1.wav", "high_tone_2.wav", "high_tone_3.wav", "high_tone_4.wav", "high_tone_5.wav", "high_tone_6.wav", "high_tone_7.wav", "high_tone_8.wav"],
     "sessions" : [{
         "groups" : [{
-            "stimuli" : ["tone_0_level_0.wav", "tone_0_level_1.wav", "tone_0_level_2.wav", "tone_0_level_3.wav", "tone_0_level_4.wav", "tone_0_level_5.wav", "tone_0_level_6.wav", "tone_0_level_7.wav"],
+            "stimuli" : ["low_tone_1.wav", "low_tone_2.wav", "low_tone_3.wav", "low_tone_4.wav", "low_tone_5.wav", "low_tone_6.wav", "low_tone_7.wav", "low_tone_8.wav"],
             "reference" : 7
         },
         {
-            "stimuli" : ["tone_1_level_0.wav", "tone_1_level_1.wav", "tone_1_level_2.wav", "tone_1_level_3.wav", "tone_1_level_4.wav", "tone_1_level_5.wav", "tone_1_level_6.wav", "tone_1_level_7.wav"],
+            "stimuli" : ["high_tone_1.wav", "high_tone_2.wav", "high_tone_3.wav", "high_tone_4.wav", "high_tone_5.wav", "high_tone_6.wav", "high_tone_7.wav", "high_tone_8.wav"],
             "reference" : 7
         }]
     },
     {
         "groups" : [{
-            "stimuli" : ["tone_2_level_0.wav", "tone_2_level_1.wav", "tone_2_level_2.wav", "tone_2_level_3.wav", "tone_2_level_4.wav", "tone_2_level_5.wav", "tone_2_level_6.wav", "tone_2_level_7.wav"],
+            "stimuli" : ["low_tone_1.wav", "low_tone_2.wav", "low_tone_3.wav", "low_tone_4.wav", "low_tone_5.wav", "low_tone_6.wav", "low_tone_7.wav", "low_tone_8.wav"],
             "reference" : 7
         },
         {
-            "stimuli" : ["tone_3_level_0.wav", "tone_3_level_1.wav", "tone_3_level_2.wav", "tone_3_level_3.wav", "tone_3_level_4.wav", "tone_3_level_5.wav", "tone_3_level_6.wav", "tone_3_level_7.wav"],
+            "stimuli" : ["high_tone_1.wav", "high_tone_2.wav", "high_tone_3.wav", "high_tone_4.wav", "high_tone_5.wav", "high_tone_6.wav", "high_tone_7.wav", "high_tone_8.wav"],
             "reference" : 7
         }]
     }]
