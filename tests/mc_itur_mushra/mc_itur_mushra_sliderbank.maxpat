@@ -901,7 +901,7 @@
 					"numoutlets" : 12,
 					"outlettype" : [ "", "", "", "", "", "", "", "", "", "", "", "" ],
 					"patching_rect" : [ 1219.5, 230.0, 134.5, 22.0 ],
-					"text" : "spray 12 1",
+					"text" : "spray 12 0",
 					"varname" : "sprayer"
 				}
 
