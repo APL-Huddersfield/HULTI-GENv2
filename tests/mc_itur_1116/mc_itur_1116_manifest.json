@@ -1,0 +1,17 @@
+{
+    "slug" : "mc_itur_1116",
+    "parameters" : [
+        "repetitions",
+        "objective"
+    ],
+    "parametersMenu" : "itur",
+    "requiresReference" : true,
+    "groupingMode" : "sft",
+    "ordering" : {
+        "omitReferenceAsTestStimulus" : false
+    },
+    "interface" : {
+        "maxwidth" : 1005,
+        "maxheight" : 660
+    }
+}
