@@ -3,7 +3,7 @@
         "task" : {
             "plugin" : "mc_itur_mushra",
             "parameters" : {
-                "repetitions" : 10,
+                "repetitions" : 5,
                 "objective" : "Grade each stimulus in terms of ASW"
             }
         },

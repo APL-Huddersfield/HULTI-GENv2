@@ -1,11 +1,11 @@
 {
-	"identifier" : "Dale",
-	"configFilename" : "example_mc_itur_mushra_config.json",
-	"configSHA256" : "1bb8c23d574fa58bfc6a73fb2467f9a4a863cd0c5d5c4efbabb2f9c2d88983bc",
+	"identifier" : "Unnamed",
+	"configFilename" : "example_mc_itur_1116_config.json",
+	"configSHA256" : "a89de9c72b5255fc9f217d98958e755e5df4067eb61382c77558f17168876002",
 	"task" : 	{
-		"plugin" : "mc_itur_mushra",
+		"plugin" : "mc_itur_1116",
 		"parameters" : 		{
-			"repetitions" : 10,
+			"repetitions" : 5,
 			"objective" : "Grade each stimulus in terms of ASW"
 		}
 
@@ -14,58 +14,72 @@
 	"experimentData" : 	{
 		"sessions" : [ 			{
 				"groups" : [ 					{
-						"reference" : 7,
+						"reference" : 0,
 						"stimuli" : [ 							{
 								"filename" : "low_tone_1.wav"
 							}
 , 							{
 								"filename" : "low_tone_2.wav"
 							}
+ ]
+					}
+, 					{
+						"reference" : 0,
+						"stimuli" : [ 							{
+								"filename" : "low_tone_1.wav"
+							}
 , 							{
 								"filename" : "low_tone_3.wav"
-							}
-, 							{
-								"filename" : "low_tone_4.wav"
-							}
-, 							{
-								"filename" : "low_tone_5.wav"
-							}
-, 							{
-								"filename" : "low_tone_6.wav"
-							}
-, 							{
-								"filename" : "low_tone_7.wav"
-							}
-, 							{
-								"filename" : "low_tone_8.wav"
 							}
  ]
 					}
 , 					{
-						"reference" : 7,
+						"reference" : 0,
 						"stimuli" : [ 							{
-								"filename" : "high_tone_1.wav"
+								"filename" : "low_tone_1.wav"
 							}
 , 							{
-								"filename" : "high_tone_2.wav"
+								"filename" : "low_tone_4.wav"
+							}
+ ]
+					}
+, 					{
+						"reference" : 0,
+						"stimuli" : [ 							{
+								"filename" : "low_tone_1.wav"
 							}
 , 							{
-								"filename" : "high_tone_3.wav"
+								"filename" : "low_tone_5.wav"
+							}
+ ]
+					}
+, 					{
+						"reference" : 0,
+						"stimuli" : [ 							{
+								"filename" : "low_tone_1.wav"
 							}
 , 							{
-								"filename" : "high_tone_4.wav"
+								"filename" : "low_tone_6.wav"
+							}
+ ]
+					}
+, 					{
+						"reference" : 0,
+						"stimuli" : [ 							{
+								"filename" : "low_tone_1.wav"
 							}
 , 							{
-								"filename" : "high_tone_5.wav"
+								"filename" : "low_tone_7.wav"
+							}
+ ]
+					}
+, 					{
+						"reference" : 0,
+						"stimuli" : [ 							{
+								"filename" : "low_tone_1.wav"
 							}
 , 							{
-								"filename" : "high_tone_6.wav"
-							}
-, 							{
-								"filename" : "high_tone_7.wav"
-							}
-, 							{
-								"filename" : "high_tone_8.wav"
+								"filename" : "low_tone_8.wav"
 							}
  ]
 					}
@@ -73,55 +87,69 @@
 			}
 , 			{
 				"groups" : [ 					{
-						"reference" : 7,
-						"stimuli" : [ 							{
-								"filename" : "low_tone_1.wav"
-							}
-, 							{
-								"filename" : "low_tone_2.wav"
-							}
-, 							{
-								"filename" : "low_tone_3.wav"
-							}
-, 							{
-								"filename" : "low_tone_4.wav"
-							}
-, 							{
-								"filename" : "low_tone_5.wav"
-							}
-, 							{
-								"filename" : "low_tone_6.wav"
-							}
-, 							{
-								"filename" : "low_tone_7.wav"
-							}
-, 							{
-								"filename" : "low_tone_8.wav"
-							}
- ]
-					}
-, 					{
-						"reference" : 7,
+						"reference" : 0,
 						"stimuli" : [ 							{
 								"filename" : "high_tone_1.wav"
 							}
 , 							{
 								"filename" : "high_tone_2.wav"
 							}
+ ]
+					}
+, 					{
+						"reference" : 0,
+						"stimuli" : [ 							{
+								"filename" : "high_tone_1.wav"
+							}
 , 							{
 								"filename" : "high_tone_3.wav"
+							}
+ ]
+					}
+, 					{
+						"reference" : 0,
+						"stimuli" : [ 							{
+								"filename" : "high_tone_1.wav"
 							}
 , 							{
 								"filename" : "high_tone_4.wav"
 							}
+ ]
+					}
+, 					{
+						"reference" : 0,
+						"stimuli" : [ 							{
+								"filename" : "high_tone_1.wav"
+							}
 , 							{
 								"filename" : "high_tone_5.wav"
+							}
+ ]
+					}
+, 					{
+						"reference" : 0,
+						"stimuli" : [ 							{
+								"filename" : "high_tone_1.wav"
 							}
 , 							{
 								"filename" : "high_tone_6.wav"
 							}
+ ]
+					}
+, 					{
+						"reference" : 0,
+						"stimuli" : [ 							{
+								"filename" : "high_tone_1.wav"
+							}
 , 							{
 								"filename" : "high_tone_7.wav"
+							}
+ ]
+					}
+, 					{
+						"reference" : 0,
+						"stimuli" : [ 							{
+								"filename" : "high_tone_1.wav"
 							}
 , 							{
 								"filename" : "high_tone_8.wav"
@@ -134,12 +162,12 @@
 	}
 ,
 	"orders" : 	{
-		"sessionOrder" : [ 0, 1 ],
+		"sessionOrder" : [ 1, 0 ],
 		"sessions" : [ 			{
-				"groupOrder" : [ 1, 0, 0, 1, 1, 0, 0, 1, 0, 1, 1, 0, 1, 0, 0, 1, 0, 1, 1, 0 ]
+				"groupOrder" : [ 3, 6, 5, 0, 1, 4, 2, 5, 3, 0, 2, 4, 1, 6, 3, 4, 0, 1, 6, 5, 2, 6, 4, 0, 1, 5, 2, 3, 2, 5, 3, 0, 6, 4, 1 ]
 			}
 , 			{
-				"groupOrder" : [ 0, 1, 0, 1, 1, 0, 1, 0, 1, 0, 0, 1, 1, 0, 0, 1, 0, 1, 0, 1 ]
+				"groupOrder" : [ 0, 4, 1, 2, 3, 5, 6, 6, 5, 3, 4, 2, 0, 1, 3, 1, 4, 2, 0, 5, 6, 6, 2, 5, 4, 0, 1, 3, 5, 4, 1, 3, 0, 2, 6 ]
 			}
  ]
 	}

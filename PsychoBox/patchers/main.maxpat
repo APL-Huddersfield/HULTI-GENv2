@@ -57,17 +57,16 @@
 					"clickthrough" : 0,
 					"enablehscroll" : 0,
 					"enablevscroll" : 0,
-					"hidden" : 1,
 					"id" : "obj-26",
 					"lockeddragscroll" : 0,
 					"maxclass" : "bpatcher",
-					"name" : "mc_itur_mushra_interface.maxpat",
+					"name" : "mc_itur_1116_interface.maxpat",
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"offset" : [ 0.0, 0.0 ],
 					"patching_rect" : [ 449.5, 257.0, 474.5, 275.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 0.0, 0.0, 1005.0, 660.0 ],
+					"presentation_rect" : [ 0.0, 0.0, 1052.0, 660.0 ],
 					"varname" : "ui_testInterface",
 					"viewvisibility" : 1
 				}
@@ -1497,6 +1496,7 @@
 					"clickthrough" : 0,
 					"enablehscroll" : 0,
 					"enablevscroll" : 0,
+					"hidden" : 1,
 					"id" : "obj-19",
 					"lockeddragscroll" : 0,
 					"maxclass" : "bpatcher",
@@ -8639,14 +8639,14 @@
 							}
 , 							{
 								"box" : 								{
-									"id" : "obj-38",
+									"id" : "obj-2",
 									"linecount" : 2,
 									"maxclass" : "newobj",
 									"numinlets" : 1,
 									"numoutlets" : 4,
 									"outlettype" : [ "", "", "multichannelsignal", "reset" ],
 									"patching_rect" : [ 226.0, 135.0, 100.0, 0.0 ],
-									"text" : "mc_itur_mushra_worker",
+									"text" : "mc_itur_1116_worker",
 									"varname" : "worker"
 								}
 
@@ -8717,6 +8717,34 @@
 							}
 , 							{
 								"patchline" : 								{
+									"destination" : [ "obj-14", 0 ],
+									"source" : [ "obj-2", 2 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-36", 0 ],
+									"source" : [ "obj-2", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-5", 0 ],
+									"source" : [ "obj-2", 3 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-9", 0 ],
+									"source" : [ "obj-2", 1 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
 									"destination" : [ "obj-12", 0 ],
 									"source" : [ "obj-22", 0 ]
 								}
@@ -8760,14 +8788,6 @@
 							}
 , 							{
 								"patchline" : 								{
-									"destination" : [ "obj-38", 0 ],
-									"order" : 1,
-									"source" : [ "obj-3", 0 ]
-								}
-
-							}
-, 							{
-								"patchline" : 								{
 									"destination" : [ "obj-20", 0 ],
 									"source" : [ "obj-32", 0 ]
 								}
@@ -8777,34 +8797,6 @@
 								"patchline" : 								{
 									"destination" : [ "obj-16", 0 ],
 									"source" : [ "obj-35", 0 ]
-								}
-
-							}
-, 							{
-								"patchline" : 								{
-									"destination" : [ "obj-14", 0 ],
-									"source" : [ "obj-38", 2 ]
-								}
-
-							}
-, 							{
-								"patchline" : 								{
-									"destination" : [ "obj-36", 0 ],
-									"source" : [ "obj-38", 0 ]
-								}
-
-							}
-, 							{
-								"patchline" : 								{
-									"destination" : [ "obj-5", 0 ],
-									"source" : [ "obj-38", 3 ]
-								}
-
-							}
-, 							{
-								"patchline" : 								{
-									"destination" : [ "obj-9", 0 ],
-									"source" : [ "obj-38", 1 ]
 								}
 
 							}
@@ -8842,6 +8834,14 @@
 								"patchline" : 								{
 									"destination" : [ "obj-36", 0 ],
 									"source" : [ "", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-2", 0 ],
+									"order" : 1,
+									"source" : [ "obj-3", 0 ]
 								}
 
 							}
@@ -9101,7 +9101,6 @@
 						"style" : "",
 						"subpatcher_template" : "",
 						"assistshowspatchername" : 0,
-						"visible" : 1,
 						"boxes" : [ 							{
 								"box" : 								{
 									"id" : "obj-14",
@@ -15923,12 +15922,35 @@
 														"assistshowspatchername" : 0,
 														"boxes" : [ 															{
 																"box" : 																{
+																	"id" : "obj-7",
+																	"maxclass" : "newobj",
+																	"numinlets" : 1,
+																	"numoutlets" : 0,
+																	"patching_rect" : [ 228.0, 623.0, 69.0, 22.0 ],
+																	"text" : "print Addon"
+																}
+
+															}
+, 															{
+																"box" : 																{
+																	"id" : "obj-2",
+																	"maxclass" : "newobj",
+																	"numinlets" : 1,
+																	"numoutlets" : 1,
+																	"outlettype" : [ "" ],
+																	"patching_rect" : [ 228.0, 581.0, 114.0, 22.0 ],
+																	"text" : "sprintf Found \\\"%s\\\""
+																}
+
+															}
+, 															{
+																"box" : 																{
 																	"id" : "obj-6",
 																	"linecount" : 2,
 																	"maxclass" : "comment",
 																	"numinlets" : 1,
 																	"numoutlets" : 0,
-																	"patching_rect" : [ 249.0, 568.0, 150.0, 33.0 ],
+																	"patching_rect" : [ 61.0, 511.0, 150.0, 33.0 ],
 																	"text" : "Add valid plugin folders to the search path"
 																}
 
@@ -16304,7 +16326,7 @@
 																					"maxclass" : "comment",
 																					"numinlets" : 1,
 																					"numoutlets" : 0,
-																					"patching_rect" : [ 884.0, 562.0, 150.0, 20.0 ],
+																					"patching_rect" : [ 904.5, 267.0, 136.0, 20.0 ],
 																					"text" : "List files in plugin folder"
 																				}
 
@@ -16974,7 +16996,7 @@
 																	"numinlets" : 3,
 																	"numoutlets" : 2,
 																	"outlettype" : [ "", "" ],
-																	"patching_rect" : [ 79.0, 568.0, 168.0, 35.0 ],
+																	"patching_rect" : [ 35.0, 568.0, 168.0, 35.0 ],
 																	"text" : "combine hultigen-path /tests/ pluginpath @triggers 2"
 																}
 
@@ -17022,7 +17044,7 @@
 																	"numinlets" : 1,
 																	"numoutlets" : 1,
 																	"outlettype" : [ "" ],
-																	"patching_rect" : [ 79.0, 623.0, 96.0, 22.0 ],
+																	"patching_rect" : [ 35.0, 623.0, 96.0, 22.0 ],
 																	"text" : "prepend append"
 																}
 
@@ -17046,7 +17068,7 @@
 																	"numinlets" : 1,
 																	"numoutlets" : 1,
 																	"outlettype" : [ "" ],
-																	"patching_rect" : [ 79.0, 666.0, 97.0, 22.0 ],
+																	"patching_rect" : [ 35.0, 666.0, 97.0, 22.0 ],
 																	"text" : "filepath search 0"
 																}
 
@@ -17123,6 +17145,13 @@
 															}
 , 															{
 																"patchline" : 																{
+																	"destination" : [ "obj-7", 0 ],
+																	"source" : [ "obj-2", 0 ]
+																}
+
+															}
+, 															{
+																"patchline" : 																{
 																	"destination" : [ "obj-3", 0 ],
 																	"order" : 0,
 																	"source" : [ "obj-24", 0 ]
@@ -17162,7 +17191,16 @@
 															}
 , 															{
 																"patchline" : 																{
+																	"destination" : [ "obj-2", 0 ],
+																	"order" : 0,
+																	"source" : [ "obj-40", 0 ]
+																}
+
+															}
+, 															{
+																"patchline" : 																{
 																	"destination" : [ "obj-8", 2 ],
+																	"order" : 1,
 																	"source" : [ "obj-40", 0 ]
 																}
 
@@ -17221,7 +17259,7 @@
 , 															{
 																"patchline" : 																{
 																	"destination" : [ "obj-8", 0 ],
-																	"midpoints" : [ 332.0, 223.0, 88.5, 223.0 ],
+																	"midpoints" : [ 332.0, 223.0, 44.5, 223.0 ],
 																	"source" : [ "obj-9", 1 ]
 																}
 
@@ -19566,9 +19604,9 @@
 				"implicit" : 1
 			}
 , 			{
-				"name" : "mc_itur_mushra_worker.maxpat",
-				"bootpath" : "~/Documents/Max 8/Projects/HULTI-GENv2/tests/mc_itur_mushra",
-				"patcherrelativepath" : "../../tests/mc_itur_mushra",
+				"name" : "mc_itur_1116_worker.maxpat",
+				"bootpath" : "~/Documents/Max 8/Projects/HULTI-GENv2/tests/mc_itur_1116",
+				"patcherrelativepath" : "../../tests/mc_itur_1116",
 				"type" : "JSON",
 				"implicit" : 1
 			}
@@ -19622,30 +19660,30 @@
 				"implicit" : 1
 			}
 , 			{
-				"name" : "mc_itur_mushra_interface.maxpat",
-				"bootpath" : "~/Documents/Max 8/Projects/HULTI-GENv2/tests/mc_itur_mushra",
-				"patcherrelativepath" : "../../tests/mc_itur_mushra",
+				"name" : "mc_itur_1116_interface.maxpat",
+				"bootpath" : "~/Documents/Max 8/Projects/HULTI-GENv2/tests/mc_itur_1116",
+				"patcherrelativepath" : "../../tests/mc_itur_1116",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
-				"name" : "mc_itur_mushra_subinterface.maxpat",
-				"bootpath" : "~/Documents/Max 8/Projects/HULTI-GENv2/tests/mc_itur_mushra",
-				"patcherrelativepath" : "../../tests/mc_itur_mushra",
+				"name" : "mc_itur_1116_subinterface.maxpat",
+				"bootpath" : "~/Documents/Max 8/Projects/HULTI-GENv2/tests/mc_itur_1116",
+				"patcherrelativepath" : "../../tests/mc_itur_1116",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
-				"name" : "mc_itur_mushra_sliderbank.maxpat",
-				"bootpath" : "~/Documents/Max 8/Projects/HULTI-GENv2/tests/mc_itur_mushra",
-				"patcherrelativepath" : "../../tests/mc_itur_mushra",
+				"name" : "mc_itur_1116_sliderbank.maxpat",
+				"bootpath" : "~/Documents/Max 8/Projects/HULTI-GENv2/tests/mc_itur_1116",
+				"patcherrelativepath" : "../../tests/mc_itur_1116",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
-				"name" : "mc_itur_mushra_slider.maxpat",
-				"bootpath" : "~/Documents/Max 8/Projects/HULTI-GENv2/tests/mc_itur_mushra",
-				"patcherrelativepath" : "../../tests/mc_itur_mushra",
+				"name" : "mc_itur_1116_slider.maxpat",
+				"bootpath" : "~/Documents/Max 8/Projects/HULTI-GENv2/tests/mc_itur_1116",
+				"patcherrelativepath" : "../../tests/mc_itur_1116",
 				"type" : "JSON",
 				"implicit" : 1
 			}
