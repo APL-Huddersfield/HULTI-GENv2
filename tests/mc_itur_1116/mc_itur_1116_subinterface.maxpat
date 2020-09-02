@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 522.0, 402.0, 1350.0, 661.0 ],
+		"rect" : [ 350.0, 295.0, 1819.0, 1037.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -40,13 +40,13 @@
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
 				"box" : 				{
-					"id" : "obj-8",
-					"maxclass" : "message",
-					"numinlets" : 2,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 583.0, 59.0, 77.0, 22.0 ],
-					"text" : "numsliders 3"
+					"id" : "obj-46",
+					"linecount" : 2,
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 30.0, 762.5, 101.0, 33.0 ],
+					"text" : "Label + 'Next Button' width + 1"
 				}
 
 			}
@@ -81,7 +81,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 714.0, 18.0, 31.0, 22.0 ],
+					"patching_rect" : [ 559.0, 50.0, 31.0, 22.0 ],
 					"text" : "light"
 				}
 
@@ -93,7 +93,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 741.0, 71.0, 90.0, 22.0 ],
+					"patching_rect" : [ 559.0, 90.0, 90.0, 22.0 ],
 					"text" : "v global_theme"
 				}
 
@@ -105,7 +105,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 1460.0, 942.5, 67.0, 22.0 ],
+					"patching_rect" : [ 1495.0, 918.5, 67.0, 22.0 ],
 					"save" : [ "#N", "thispatcher", ";", "#Q", "end", ";" ],
 					"text" : "thispatcher"
 				}
@@ -129,7 +129,7 @@
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ 690.0, 254.0, 640.0, 480.0 ],
+						"rect" : [ 1466.0, 621.0, 640.0, 480.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -157,6 +157,7 @@
 						"style" : "",
 						"subpatcher_template" : "",
 						"assistshowspatchername" : 0,
+						"visible" : 1,
 						"boxes" : [ 							{
 								"box" : 								{
 									"id" : "obj-4",
@@ -189,7 +190,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "int" ],
 									"patching_rect" : [ 110.0, 250.0, 39.0, 22.0 ],
-									"text" : "+ 101"
+									"text" : "+ 148"
 								}
 
 							}
@@ -288,7 +289,7 @@
  ]
 					}
 ,
-					"patching_rect" : [ 1460.0, 886.0, 96.0, 22.0 ],
+					"patching_rect" : [ 1495.0, 862.0, 96.0, 22.0 ],
 					"saved_object_attributes" : 					{
 						"description" : "",
 						"digest" : "",
@@ -308,7 +309,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 93.0, 658.0, 24.0, 24.0 ]
+					"patching_rect" : [ 195.0, 658.0, 24.0, 24.0 ]
 				}
 
 			}
@@ -403,8 +404,8 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "int" ],
-					"patching_rect" : [ 31.0, 762.5, 39.0, 22.0 ],
-					"text" : "+ 155"
+					"patching_rect" : [ 133.0, 762.5, 39.0, 22.0 ],
+					"text" : "+ 202"
 				}
 
 			}
@@ -415,7 +416,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 31.0, 858.0, 210.0, 22.0 ],
+					"patching_rect" : [ 133.0, 858.0, 210.0, 22.0 ],
 					"text" : "pattrforward parent::subinterfacewidth"
 				}
 
@@ -486,7 +487,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 82.000020999999947, 240.0, 219.0, 22.0 ],
-									"text" : "refbutton presentation_rect 101 0 62 27"
+									"text" : "refbutton presentation_rect 148 0 62 27"
 								}
 
 							}
@@ -509,8 +510,8 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "int" ],
-									"patching_rect" : [ 568.000020999999947, 127.0, 32.0, 22.0 ],
-									"text" : "+ 92"
+									"patching_rect" : [ 568.000020999999947, 127.0, 39.0, 22.0 ],
+									"text" : "+ 139"
 								}
 
 							}
@@ -533,8 +534,8 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 610.000020999999947, 127.0, 236.0, 22.0 ],
-									"text" : "sliderbank presentation_rect 92 36 $1 513,"
+									"patching_rect" : [ 610.000020999999947, 127.0, 239.0, 22.0 ],
+									"text" : "sliderbank presentation_rect 139 36 $1 513"
 								}
 
 							}
@@ -557,8 +558,8 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "int" ],
-									"patching_rect" : [ 310.333353999999986, 202.0, 32.0, 22.0 ],
-									"text" : "+ 92"
+									"patching_rect" : [ 310.333353999999986, 202.0, 39.0, 22.0 ],
+									"text" : "+ 139"
 								}
 
 							}
@@ -723,7 +724,7 @@
  ]
 					}
 ,
-					"patching_rect" : [ 93.0, 762.5, 145.0, 22.0 ],
+					"patching_rect" : [ 195.0, 762.5, 145.0, 22.0 ],
 					"saved_object_attributes" : 					{
 						"description" : "",
 						"digest" : "",
@@ -738,12 +739,12 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-68",
-					"linecount" : 3,
+					"linecount" : 2,
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 151.0, 698.5, 224.0, 47.0 ],
-					"text" : "Slider bank width DO NOT DELETE!\nThis sliderbank uses this number to communicate its width up to this patcher"
+					"patching_rect" : [ 255.0, 711.0, 109.0, 33.0 ],
+					"text" : "Slider bank width DO NOT DELETE!"
 				}
 
 			}
@@ -754,7 +755,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 93.0, 815.5, 67.0, 22.0 ],
+					"patching_rect" : [ 195.0, 815.5, 67.0, 22.0 ],
 					"save" : [ "#N", "thispatcher", ";", "#Q", "end", ";" ],
 					"text" : "thispatcher"
 				}
@@ -769,7 +770,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 93.0, 711.0, 50.0, 22.0 ],
+					"patching_rect" : [ 195.0, 711.0, 50.0, 22.0 ],
 					"varname" : "totalwidth"
 				}
 
@@ -786,7 +787,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 526.0, 808.0, 70.0, 27.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 312.0, 522.0, 62.0, 27.0 ],
+					"presentation_rect" : [ 289.0, 522.0, 62.0, 27.0 ],
 					"text" : "Next",
 					"textoncolor" : [ 0.0, 0.0, 0.0, 1.0 ],
 					"textovercolor" : [ 0.102, 0.412, 0.796, 1.0 ],
@@ -1390,7 +1391,7 @@
 													"numinlets" : 2,
 													"numoutlets" : 1,
 													"outlettype" : [ "" ],
-													"patching_rect" : [ 296.0, 301.0, 215.0, 49.0 ],
+													"patching_rect" : [ 296.0, 301.0, 217.0, 49.0 ],
 													"text" : "send parent::nextbutton, bgcolor 0.825 0.825 0.825 1, textoncolor 0 0 0 1, textovercolor 0.102 0.412 0.796 1"
 												}
 
@@ -2072,7 +2073,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 833.0, 808.0, 62.0, 27.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 101.0, 0.0, 62.0, 27.0 ],
+					"presentation_rect" : [ 147.5, 0.0, 62.0, 27.0 ],
 					"text" : "Ref",
 					"textoncolor" : [ 0.0, 0.0, 0.0, 1.0 ],
 					"textovercolor" : [ 0.102, 0.412, 0.796, 1.0 ],
@@ -2084,13 +2085,14 @@
 				"box" : 				{
 					"fontsize" : 18.0,
 					"id" : "obj-37",
+					"linecount" : 2,
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 268.0, 631.0, 96.0, 27.0 ],
+					"patching_rect" : [ 268.0, 631.0, 96.0, 47.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 0.0, 489.0, 95.0, 27.0 ],
-					"text" : "Bad",
+					"presentation_rect" : [ 0.0, 489.0, 139.0, 27.0 ],
+					"text" : "Very annoying",
 					"textjustification" : 2,
 					"varname" : "label_4"
 				}
@@ -2105,7 +2107,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 269.0, 546.0, 94.0, 27.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 0.0, 381.0, 94.0, 27.0 ],
+					"presentation_rect" : [ 0.0, 381.0, 139.0, 27.0 ],
 					"text" : "Annoying",
 					"textjustification" : 2,
 					"varname" : "label_3"
@@ -2116,13 +2118,15 @@
 				"box" : 				{
 					"fontsize" : 18.0,
 					"id" : "obj-33",
+					"linecount" : 2,
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 269.0, 461.0, 93.0, 27.0 ],
+					"patching_rect" : [ 269.0, 461.0, 93.0, 47.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 0.0, 276.0, 93.0, 27.0 ],
-					"text" : "Fair",
+					"presentation_linecount" : 2,
+					"presentation_rect" : [ 0.0, 266.0, 139.0, 47.0 ],
+					"text" : "Slightly annoying",
 					"textjustification" : 2,
 					"varname" : "label_2"
 				}
@@ -2132,13 +2136,15 @@
 				"box" : 				{
 					"fontsize" : 18.0,
 					"id" : "obj-32",
+					"linecount" : 3,
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 269.0, 376.0, 93.0, 27.0 ],
+					"patching_rect" : [ 269.0, 376.0, 93.0, 67.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 0.0, 170.0, 93.0, 27.0 ],
-					"text" : "Good",
+					"presentation_linecount" : 2,
+					"presentation_rect" : [ 0.0, 161.0, 139.0, 47.0 ],
+					"text" : "Perceptible, but not annoying",
 					"textjustification" : 2,
 					"varname" : "label_1"
 				}
@@ -2148,13 +2154,14 @@
 				"box" : 				{
 					"fontsize" : 18.0,
 					"id" : "obj-29",
+					"linecount" : 2,
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 269.0, 291.0, 92.0, 27.0 ],
+					"patching_rect" : [ 269.0, 291.0, 92.0, 47.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 0.0, 65.0, 91.0, 27.0 ],
-					"text" : "Excellent",
+					"presentation_rect" : [ 0.0, 65.0, 139.0, 27.0 ],
+					"text" : "Imperceptible",
 					"textjustification" : 2,
 					"varname" : "label_0"
 				}
@@ -2189,7 +2196,7 @@
 					"outlettype" : [ "list", "" ],
 					"patching_rect" : [ 384.0, 223.0, 1130.0, 513.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 92.0, 36.0, 220.0, 513.0 ],
+					"presentation_rect" : [ 139.0, 36.0, 150.0, 513.0 ],
 					"varname" : "sliderbank",
 					"viewvisibility" : 1
 				}
@@ -2229,7 +2236,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 51.0, 291.0, 200.0, 29.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 127.0, 558.0, 150.0, 29.0 ],
+					"presentation_rect" : [ 138.5, 558.0, 150.0, 29.0 ],
 					"text" : "Trial 1 of 20",
 					"textjustification" : 1,
 					"varname" : "trialcount"
@@ -2312,6 +2319,15 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-31", 0 ],
+					"order" : 0,
+					"source" : [ "obj-11", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-42", 0 ],
+					"order" : 1,
 					"source" : [ "obj-11", 0 ]
 				}
 
@@ -2336,6 +2352,13 @@
 				"patchline" : 				{
 					"destination" : [ "obj-18", 1 ],
 					"source" : [ "obj-16", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-42", 0 ],
+					"source" : [ "obj-17", 0 ]
 				}
 
 			}
@@ -2395,6 +2418,13 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-42", 0 ],
+					"source" : [ "obj-23", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-56", 0 ],
 					"midpoints" : [ 1431.5, 915.0, 780.5, 915.0 ],
 					"source" : [ "obj-25", 0 ]
@@ -2434,6 +2464,29 @@
 				"patchline" : 				{
 					"destination" : [ "obj-39", 0 ],
 					"source" : [ "obj-41", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-11", 0 ],
+					"order" : 0,
+					"source" : [ "obj-42", 1 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-25", 0 ],
+					"order" : 1,
+					"source" : [ "obj-42", 1 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-77", 0 ],
+					"source" : [ "obj-42", 0 ]
 				}
 
 			}
@@ -2495,13 +2548,6 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-49", 0 ],
-					"source" : [ "obj-8", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
 					"destination" : [ "obj-78", 0 ],
 					"midpoints" : [ 679.083333000000039, 915.0, 489.5, 915.0 ],
 					"source" : [ "obj-82", 0 ]
@@ -2534,13 +2580,6 @@
  ],
 		"dependency_cache" : [ 			{
 				"name" : "mc_itur_1116_sliderbank.maxpat",
-				"bootpath" : "~/Documents/Max 8/Projects/HULTI-GENv2/tests/mc_itur_1116",
-				"patcherrelativepath" : ".",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "mc_itur_1116_slider.maxpat",
 				"bootpath" : "~/Documents/Max 8/Projects/HULTI-GENv2/tests/mc_itur_1116",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",

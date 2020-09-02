@@ -468,7 +468,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 1201.0, 76.0, 53.0, 22.0 ],
-									"text" : "clip 1 12"
+									"text" : "clip 2 12"
 								}
 
 							}
