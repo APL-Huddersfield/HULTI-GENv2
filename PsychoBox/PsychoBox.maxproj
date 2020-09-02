@@ -2,7 +2,7 @@
 	"name" : "PsychoBox",
 	"version" : 1,
 	"creationdate" : 3666872002,
-	"modificationdate" : 3681816596,
+	"modificationdate" : 3681910970,
 	"viewrect" : [ 1791.0, 204.0, 389.0, 649.0 ],
 	"autoorganize" : 1,
 	"hideprojectwindow" : 0,
@@ -96,22 +96,7 @@
 				"local" : 1
 			}
 ,
-			"player_generalPurpose.maxpat" : 			{
-				"kind" : "patcher",
-				"local" : 1
-			}
-,
-			"player_transport_multi.maxpat" : 			{
-				"kind" : "patcher",
-				"local" : 1
-			}
-,
-			"staircaseCore.maxpat" : 			{
-				"kind" : "patcher",
-				"local" : 1
-			}
-,
-			"checkIfUniqueInColl.maxpat" : 			{
+			"player_parallel.maxpat" : 			{
 				"kind" : "patcher",
 				"local" : 1
 			}
@@ -132,6 +117,26 @@
 			}
 ,
 			"ui_groupComplete.maxpat" : 			{
+				"kind" : "patcher",
+				"local" : 1
+			}
+,
+			"player_generalPurpose.maxpat" : 			{
+				"kind" : "patcher",
+				"local" : 1
+			}
+,
+			"player_transport_multi.maxpat" : 			{
+				"kind" : "patcher",
+				"local" : 1
+			}
+,
+			"staircaseCore.maxpat" : 			{
+				"kind" : "patcher",
+				"local" : 1
+			}
+,
+			"checkIfUniqueInColl.maxpat" : 			{
 				"kind" : "patcher",
 				"local" : 1
 			}
@@ -326,7 +331,7 @@
 
 			}
 ,
-			"player_parallel.maxpat" : 			{
+			"rating_slider.maxpat" : 			{
 				"kind" : "patcher",
 				"local" : 1
 			}

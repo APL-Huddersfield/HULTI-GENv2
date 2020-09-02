@@ -1,0 +1,17 @@
+{
+    "slug" : "mc_itur_bipolar",
+    "parameters" : [
+        "repetitions",
+        "objective"
+    ],
+    "parametersMenu" : "itur",
+    "requiresReference" : true,
+    "groupingMode" : "sft",
+    "ordering" : {
+        "omitReferenceAsTestStimulus" : false
+    },
+    "interface" : {
+        "maxwidth" : 1052,
+        "maxheight" : 660
+    }
+}
