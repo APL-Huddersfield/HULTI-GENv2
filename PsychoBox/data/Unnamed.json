@@ -1,11 +1,11 @@
 {
 	"identifier" : "Unnamed",
 	"configFilename" : "example_mc_itur_mushra_config.json",
-	"configSHA256" : "1bb8c23d574fa58bfc6a73fb2467f9a4a863cd0c5d5c4efbabb2f9c2d88983bc",
+	"configSHA256" : "b63fb3309fbb730c62419933933695d7498e64032d752bb69ea0a5616f1b0067",
 	"task" : 	{
 		"plugin" : "mc_itur_mushra",
 		"parameters" : 		{
-			"repetitions" : 10,
+			"repetitions" : 5,
 			"objective" : "Grade each stimulus in terms of ASW"
 		}
 
@@ -134,12 +134,12 @@
 	}
 ,
 	"orders" : 	{
-		"sessionOrder" : [ 0, 1 ],
+		"sessionOrder" : [ 1, 0 ],
 		"sessions" : [ 			{
-				"groupOrder" : [ 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 1, 0, 0, 1, 1, 0, 1, 0, 1, 0 ]
+				"groupOrder" : [ 1, 0, 0, 1, 0, 1, 1, 0, 1, 0 ]
 			}
 , 			{
-				"groupOrder" : [ 0, 1, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 0, 1, 1, 0, 0, 1, 1, 0 ]
+				"groupOrder" : [ 0, 1, 0, 1, 0, 1, 0, 1, 1, 0 ]
 			}
  ]
 	}
