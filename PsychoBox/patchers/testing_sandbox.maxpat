@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 449.0, 133.0, 972.0, 937.0 ],
+		"rect" : [ 34.0, 79.0, 1040.0, 1023.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -81,7 +81,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 409.0, 397.0, 560.0, 35.0 ],
+					"patching_rect" : [ 409.0, 397.0, 563.0, 35.0 ],
 					"text" : "@numsliders 2 @numticks 7 @labelwidth 170 @labelfontsize 20 @minimum -3 @maximum 3 @default 0 @labels \"Much better\" Better \"Slightly better\" \"About the same\" \"Slightly worse\" Worse \"Much worse\""
 				}
 
@@ -226,7 +226,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 409.0, 102.0, 569.0, 35.0 ],
+					"patching_rect" : [ 409.0, 102.0, 573.0, 35.0 ],
 					"text" : "@numsliders 2 @numticks 5 @labelwidth 150 @labelfontsize 20 @minimum 10 @maximum 50 @default 0 @labels Imperceptible \"Perceptible, but not annoying\" \"Slightly annoying\" Annoying \"Very annoying\""
 				}
 
@@ -238,7 +238,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 563.0, 879.0, 67.0, 22.0 ],
+					"patching_rect" : [ 51.0, 936.0, 67.0, 22.0 ],
 					"save" : [ "#N", "thispatcher", ";", "#Q", "end", ";" ],
 					"text" : "thispatcher"
 				}
@@ -251,7 +251,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 563.0, 839.0, 218.0, 22.0 ],
+					"patching_rect" : [ 51.0, 896.0, 218.0, 22.0 ],
 					"text" : "prepend script sendbox sliderbank args"
 				}
 
@@ -263,7 +263,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 790.0, 839.0, 524.0, 22.0 ],
+					"patching_rect" : [ 278.0, 896.0, 524.0, 22.0 ],
 					"text" : "@numsliders 12 @numticks 6 @labelwidth 120 @labelfontsize 18 @minimum 0 @maximum 100"
 				}
 
@@ -313,7 +313,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 563.0, 774.0, 605.0, 35.0 ],
+					"patching_rect" : [ 51.0, 831.0, 605.0, 35.0 ],
 					"text" : "@numsliders 2 @numticks 5 @labelwidth 150 @labelfontsize 18 @minimum 10 @maximum 50 @default 0 @labels Imperceptible \"Perceptible, but not annoying\" \"Slightly annoying\" Annoying \"Very annoying\""
 				}
 
