@@ -1348,7 +1348,6 @@
 									}
 ,
 									"patching_rect" : [ 50.0, 252.0, 86.0, 22.0 ],
-									"presentation_linecount" : 2,
 									"saved_object_attributes" : 									{
 										"description" : "",
 										"digest" : "",
@@ -1417,7 +1416,6 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 143.0, 252.0, 313.0, 35.0 ],
-									"presentation_linecount" : 2,
 									"text" : "script sendbox sliderbank patching_rect $1 20 $2 512, script sendbox sliderbank presentation_rect $1 0 $2 512"
 								}
 
@@ -2010,8 +2008,8 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 1343.0, 7.5, 311.0, 49.0 ],
-					"text" : "patcherargs @numsliders 1 @numticks 5 @minimum 0 @range 101 @precision 0 @divisor 1 @labels Excellent Good Fair Poor Bad @labelwidth 150 @labelfontsize 20"
+					"patching_rect" : [ 1343.0, 7.5, 397.0, 49.0 ],
+					"text" : "patcherargs @numsliders 1 @numticks 5 @minimum 0 @maximum 100 @precision 0 @divisor 1 @labels Excellent Good Fair Poor Bad @labelwidth 150 @labelfontsize 20"
 				}
 
 			}
@@ -2580,8 +2578,8 @@
 									"numinlets" : 1,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 272.699999999999989, 184.0, 78.0, 22.0 ],
-									"text" : "v #0-range"
+									"patching_rect" : [ 272.699999999999989, 184.0, 87.0, 22.0 ],
+									"text" : "v #0-maximum"
 								}
 
 							}
@@ -2606,7 +2604,7 @@
 									"numoutlets" : 11,
 									"outlettype" : [ "", "", "", "", "", "", "", "", "", "", "" ],
 									"patching_rect" : [ 147.0, 115.0, 438.0, 35.0 ],
-									"text" : "route numsliders numticks minimum range default precision divisor labelwidth labels labelfontsize"
+									"text" : "route numsliders numticks minimum maximum default precision divisor labelwidth labels labelfontsize"
 								}
 
 							}
@@ -2828,7 +2826,6 @@
 						"style" : "",
 						"subpatcher_template" : "",
 						"assistshowspatchername" : 0,
-						"visible" : 1,
 						"boxes" : [ 							{
 								"box" : 								{
 									"id" : "obj-5",
@@ -2956,8 +2953,8 @@
 													"numinlets" : 7,
 													"numoutlets" : 1,
 													"outlettype" : [ "" ],
-													"patching_rect" : [ 87.5, 334.5, 283.0, 49.0 ],
-													"text" : "sprintf script sendbox sliderbank args @numsliders %d @numticks %d @minimum %d @size %d @default %d @decimalplaces %d @divisor %d"
+													"patching_rect" : [ 87.5, 334.5, 286.0, 49.0 ],
+													"text" : "sprintf script sendbox sliderbank args @numsliders %d @numticks %d @minimum %d @maximum %d @default %d @decimalplaces %d @divisor %d"
 												}
 
 											}
@@ -3052,8 +3049,8 @@
 													"numinlets" : 1,
 													"numoutlets" : 1,
 													"outlettype" : [ "" ],
-													"patching_rect" : [ 219.0, 229.0, 79.0, 22.0 ],
-													"text" : "v #0-range"
+													"patching_rect" : [ 219.0, 229.0, 87.0, 22.0 ],
+													"text" : "v #0-maximum"
 												}
 
 											}
@@ -5026,7 +5023,7 @@
 , 			{
 				"box" : 				{
 					"fontsize" : 20.0,
-					"id" : "obj-293",
+					"id" : "obj-27",
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
@@ -5042,7 +5039,7 @@
 , 			{
 				"box" : 				{
 					"fontsize" : 20.0,
-					"id" : "obj-295",
+					"id" : "obj-30",
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
@@ -5058,7 +5055,7 @@
 , 			{
 				"box" : 				{
 					"fontsize" : 20.0,
-					"id" : "obj-297",
+					"id" : "obj-32",
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
@@ -5074,7 +5071,7 @@
 , 			{
 				"box" : 				{
 					"fontsize" : 20.0,
-					"id" : "obj-299",
+					"id" : "obj-35",
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
@@ -5090,7 +5087,7 @@
 , 			{
 				"box" : 				{
 					"fontsize" : 20.0,
-					"id" : "obj-301",
+					"id" : "obj-37",
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
@@ -5105,13 +5102,13 @@
 			}
 , 			{
 				"box" : 				{
-					"args" : [ "@numsliders", 1, "@numticks", 5, "@minimum", 0, "@size", 101, "@default", 0, "@decimalplaces", 0, "@divisor", 1 ],
+					"args" : [ "@numsliders", 1, "@numticks", 5, "@minimum", 0, "@maximum", 0, "@default", 0, "@decimalplaces", 0, "@divisor", 1 ],
 					"bgmode" : 0,
 					"border" : 0,
 					"clickthrough" : 0,
 					"enablehscroll" : 0,
 					"enablevscroll" : 0,
-					"id" : "obj-303",
+					"id" : "obj-39",
 					"lockeddragscroll" : 0,
 					"maxclass" : "bpatcher",
 					"name" : "rating_sliderbank.maxpat",
@@ -5153,7 +5150,7 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-303", 0 ],
+					"destination" : [ "obj-39", 0 ],
 					"source" : [ "obj-1183", 0 ]
 				}
 
@@ -5295,13 +5292,6 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-1183", 0 ],
-					"source" : [ "obj-303", 1 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
 					"destination" : [ "obj-1030", 0 ],
 					"midpoints" : [ 1604.5, 405.0, 1269.0, 405.0 ],
 					"source" : [ "obj-33", 1 ]
@@ -5313,6 +5303,13 @@
 					"destination" : [ "obj-19", 0 ],
 					"midpoints" : [ 1551.5, 392.5, 1127.0, 392.5 ],
 					"source" : [ "obj-33", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-1183", 0 ],
+					"source" : [ "obj-39", 1 ]
 				}
 
 			}
@@ -5367,74 +5364,6 @@
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
-			}
-, 			{
-				"name" : "live.guilib.mxo",
-				"type" : "iLaX"
-			}
-, 			{
-				"name" : "slider.mxo",
-				"type" : "iLaX"
-			}
-, 			{
-				"name" : "message.mxo",
-				"type" : "iLaX"
-			}
-, 			{
-				"name" : "comment.mxo",
-				"type" : "iLaX"
-			}
-, 			{
-				"name" : "uzi.mxo",
-				"type" : "iLaX"
-			}
-, 			{
-				"name" : "loadmess.mxo",
-				"type" : "iLaX"
-			}
-, 			{
-				"name" : "panel.mxo",
-				"type" : "iLaX"
-			}
-, 			{
-				"name" : "combine.mxo",
-				"type" : "iLaX"
-			}
-, 			{
-				"name" : "prepend.mxo",
-				"type" : "iLaX"
-			}
-, 			{
-				"name" : "number.mxo",
-				"type" : "iLaX"
-			}
-, 			{
-				"name" : "fromsymbol.mxo",
-				"type" : "iLaX"
-			}
-, 			{
-				"name" : "spray.mxo",
-				"type" : "iLaX"
-			}
-, 			{
-				"name" : "funnel.mxo",
-				"type" : "iLaX"
-			}
-, 			{
-				"name" : "coll.mxo",
-				"type" : "iLaX"
-			}
-, 			{
-				"name" : "button.mxo",
-				"type" : "iLaX"
-			}
-, 			{
-				"name" : "listfunnel.mxo",
-				"type" : "iLaX"
-			}
-, 			{
-				"name" : "zl.mxo",
-				"type" : "iLaX"
 			}
  ],
 		"autosave" : 0

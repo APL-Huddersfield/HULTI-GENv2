@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 914.0, 137.0, 972.0, 937.0 ],
+		"rect" : [ 449.0, 133.0, 972.0, 937.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -58,8 +58,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 409.0, 456.0, 580.0, 49.0 ],
-					"presentation_linecount" : 3,
-					"text" : "@numsliders 2 @numticks 9 @labelwidth 170 @labelfontsize 16 @minimum -4 @range 9 @default 0 @labels \"Like extremely\" \"Like very much\" \"Like moderately\" \"Like slightly\" \"Neither like nor dislike\" \"Dislike slightly\" \"Dislike moderately\" \"Dislike very much\" \"Dislike extremely\""
+					"text" : "@numsliders 2 @numticks 9 @labelwidth 170 @labelfontsize 16 @minimum -4 @maximum 4 @default 0 @labels \"Like extremely\" \"Like very much\" \"Like moderately\" \"Like slightly\" \"Neither like nor dislike\" \"Dislike slightly\" \"Dislike moderately\" \"Dislike very much\" \"Dislike extremely\""
 				}
 
 			}
@@ -70,7 +69,6 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 409.0, 375.0, 203.0, 20.0 ],
-					"presentation_linecount" : 2,
 					"text" : "Comparison Category Rating (CCR)"
 				}
 
@@ -83,9 +81,8 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 409.0, 397.0, 552.0, 35.0 ],
-					"presentation_linecount" : 2,
-					"text" : "@numsliders 2 @numticks 7 @labelwidth 170 @labelfontsize 20 @minimum -3 @range 7 @default 0 @labels \"Much better\" Better \"Slightly better\" \"About the same\" \"Slightly worse\" Worse \"Much worse\""
+					"patching_rect" : [ 409.0, 397.0, 560.0, 35.0 ],
+					"text" : "@numsliders 2 @numticks 7 @labelwidth 170 @labelfontsize 20 @minimum -3 @maximum 3 @default 0 @labels \"Much better\" Better \"Slightly better\" \"About the same\" \"Slightly worse\" Worse \"Much worse\""
 				}
 
 			}
@@ -96,7 +93,6 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 409.0, 316.0, 203.0, 20.0 ],
-					"presentation_linecount" : 2,
 					"text" : "Degredation Category Rating (DCR)"
 				}
 
@@ -110,8 +106,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 409.0, 338.0, 594.0, 35.0 ],
-					"presentation_linecount" : 2,
-					"text" : "@numsliders 2 @numticks 5 @labelwidth 170 @labelfontsize 20 @minimum 1 @range 5 @default 0 @labels Inaudible \"Audible, but not annoying\" \"Slightly annoying\" Annoying \"Very Annoying\""
+					"text" : "@numsliders 2 @numticks 5 @labelwidth 170 @labelfontsize 20 @minimum 1 @maximum 5 @default 0 @labels Inaudible \"Audible, but not annoying\" \"Slightly annoying\" Annoying \"Very Annoying\""
 				}
 
 			}
@@ -122,7 +117,6 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 409.0, 257.0, 185.0, 20.0 ],
-					"presentation_linecount" : 2,
 					"text" : "Absolute Category Rating (ACR)"
 				}
 
@@ -136,8 +130,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 409.0, 279.0, 594.0, 35.0 ],
-					"presentation_linecount" : 2,
-					"text" : "@numsliders 2 @numticks 5 @labelwidth 150 @labelfontsize 20 @minimum 1 @range 5 @default 0 @labels Excellent Good Fair Poor Bad"
+					"text" : "@numsliders 2 @numticks 5 @labelwidth 150 @labelfontsize 20 @minimum 1 @maximum 5 @default 0 @labels Excellent Good Fair Poor Bad"
 				}
 
 			}
@@ -161,8 +154,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 409.0, 220.0, 572.0, 35.0 ],
-					"presentation_linecount" : 2,
-					"text" : "@numsliders 2 @numticks 3 @labelwidth 150 @labelfontsize 20 @minimum -50 @range 101 @default 0 @labels Greater Same Lesser"
+					"text" : "@numsliders 2 @numticks 3 @labelwidth 150 @labelfontsize 20 @minimum -50 @maximum 50 @default 0 @labels Greater Same Lesser"
 				}
 
 			}
@@ -198,7 +190,6 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 409.0, 139.0, 157.0, 20.0 ],
-					"presentation_linecount" : 3,
 					"text" : "ITU-R BS.1534 (MUSHRA)"
 				}
 
@@ -212,8 +203,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 409.0, 161.0, 561.0, 35.0 ],
-					"presentation_linecount" : 2,
-					"text" : "@numsliders 2 @numticks 6 @labelwidth 150 @labelfontsize 20 @minimum 0 @range 101 @default 0 @labels \"100\" Excellent \"80\" Good \"60\" Fair \"40\" Poor \"20\" Bad \"0\""
+					"text" : "@numsliders 2 @numticks 6 @labelwidth 150 @labelfontsize 20 @minimum 0 @maximum 100 @default 0 @labels \"100\" Excellent \"80\" Good \"60\" Fair \"40\" Poor \"20\" Bad \"0\""
 				}
 
 			}
@@ -236,9 +226,8 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 409.0, 102.0, 561.0, 35.0 ],
-					"presentation_linecount" : 2,
-					"text" : "@numsliders 2 @numticks 5 @labelwidth 150 @labelfontsize 20 @minimum 10 @range 42 @default 0 @labels Imperceptible \"Perceptible, but not annoying\" \"Slightly annoying\" Annoying \"Very annoying\""
+					"patching_rect" : [ 409.0, 102.0, 569.0, 35.0 ],
+					"text" : "@numsliders 2 @numticks 5 @labelwidth 150 @labelfontsize 20 @minimum 10 @maximum 50 @default 0 @labels Imperceptible \"Perceptible, but not annoying\" \"Slightly annoying\" Annoying \"Very annoying\""
 				}
 
 			}
@@ -274,8 +263,8 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 790.0, 839.0, 503.0, 22.0 ],
-					"text" : "@numsliders 12 @numticks 6 @labelwidth 120 @labelfontsize 18 @minimum 0 @range 101"
+					"patching_rect" : [ 790.0, 839.0, 524.0, 22.0 ],
+					"text" : "@numsliders 12 @numticks 6 @labelwidth 120 @labelfontsize 18 @minimum 0 @maximum 100"
 				}
 
 			}
@@ -325,7 +314,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 563.0, 774.0, 605.0, 35.0 ],
-					"text" : "@numsliders 2 @numticks 5 @labelwidth 150 @labelfontsize 18 @minimum 10 @range 42 @default 0 @labels Imperceptible \"Perceptible, but not annoying\" \"Slightly annoying\" Annoying \"Very annoying\""
+					"text" : "@numsliders 2 @numticks 5 @labelwidth 150 @labelfontsize 18 @minimum 10 @maximum 50 @default 0 @labels Imperceptible \"Perceptible, but not annoying\" \"Slightly annoying\" Annoying \"Very annoying\""
 				}
 
 			}
@@ -367,7 +356,7 @@
 			}
 , 			{
 				"box" : 				{
-					"args" : [ "@numsliders", 2, "@numticks", 9, "@labelwidth", 170, "@labelfontsize", 16, "@minimum", -4, "@range", 9, "@default", 0, "@labels", "Like extremely", "Like very much", "Like moderately", "Like slightly", "Neither like nor dislike", "Dislike slightly", "Dislike moderately", "Dislike very much", "Dislike extremely" ],
+					"args" : [ "@numsliders", 2, "@numticks", 5, "@labelwidth", 150, "@labelfontsize", 20, "@minimum", 10, "@maximum", 50, "@default", 0, "@labels", "Imperceptible", "Perceptible, but not annoying", "Slightly annoying", "Annoying", "Very annoying" ],
 					"bgmode" : 0,
 					"border" : 0,
 					"clickthrough" : 0,
@@ -381,7 +370,7 @@
 					"numoutlets" : 1,
 					"offset" : [ 0.0, 0.0 ],
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 54.0, 80.0, 320.0, 512.0 ],
+					"patching_rect" : [ 54.0, 80.0, 300.0, 512.0 ],
 					"varname" : "sliderbank",
 					"viewvisibility" : 1
 				}
@@ -521,74 +510,6 @@
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
-			}
-, 			{
-				"name" : "live.guilib.mxo",
-				"type" : "iLaX"
-			}
-, 			{
-				"name" : "slider.mxo",
-				"type" : "iLaX"
-			}
-, 			{
-				"name" : "message.mxo",
-				"type" : "iLaX"
-			}
-, 			{
-				"name" : "comment.mxo",
-				"type" : "iLaX"
-			}
-, 			{
-				"name" : "uzi.mxo",
-				"type" : "iLaX"
-			}
-, 			{
-				"name" : "loadmess.mxo",
-				"type" : "iLaX"
-			}
-, 			{
-				"name" : "panel.mxo",
-				"type" : "iLaX"
-			}
-, 			{
-				"name" : "combine.mxo",
-				"type" : "iLaX"
-			}
-, 			{
-				"name" : "prepend.mxo",
-				"type" : "iLaX"
-			}
-, 			{
-				"name" : "number.mxo",
-				"type" : "iLaX"
-			}
-, 			{
-				"name" : "fromsymbol.mxo",
-				"type" : "iLaX"
-			}
-, 			{
-				"name" : "spray.mxo",
-				"type" : "iLaX"
-			}
-, 			{
-				"name" : "funnel.mxo",
-				"type" : "iLaX"
-			}
-, 			{
-				"name" : "coll.mxo",
-				"type" : "iLaX"
-			}
-, 			{
-				"name" : "button.mxo",
-				"type" : "iLaX"
-			}
-, 			{
-				"name" : "listfunnel.mxo",
-				"type" : "iLaX"
-			}
-, 			{
-				"name" : "zl.mxo",
-				"type" : "iLaX"
 			}
  ],
 		"autosave" : 0
