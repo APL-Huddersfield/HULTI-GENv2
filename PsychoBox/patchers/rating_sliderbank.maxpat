@@ -40,6 +40,18 @@
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-35",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 788.0, 36.0, 50.0, 22.0 ],
+					"text" : "select 0"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-87",
 					"maxclass" : "newobj",
 					"numinlets" : 1,
@@ -1627,7 +1639,7 @@
 			}
 , 			{
 				"box" : 				{
-					"args" : [ "@id", 1, "@numticks", 5, "@minimum", 0, "@maximum", 100, "@default", 0, "@decimalplaces", 0, "@resolution", 1 ],
+					"args" : [ "@id", 1, "@numticks", 5, "@minimum", 0, "@maximum", 100, "@default", 0, "@decimalplaces", 0, "@resolution", 1.0 ],
 					"bgmode" : 0,
 					"border" : 0,
 					"clickthrough" : 0,
@@ -1651,7 +1663,7 @@
 			}
 , 			{
 				"box" : 				{
-					"args" : [ "@id", 2, "@numticks", 5, "@minimum", 0, "@maximum", 100, "@default", 0, "@decimalplaces", 0, "@resolution", 1 ],
+					"args" : [ "@id", 2, "@numticks", 5, "@minimum", 0, "@maximum", 100, "@default", 0, "@decimalplaces", 0, "@resolution", 1.0 ],
 					"bgmode" : 0,
 					"border" : 0,
 					"clickthrough" : 0,
@@ -1675,7 +1687,7 @@
 			}
 , 			{
 				"box" : 				{
-					"args" : [ "@id", 3, "@numticks", 5, "@minimum", 0, "@maximum", 100, "@default", 0, "@decimalplaces", 0, "@resolution", 1 ],
+					"args" : [ "@id", 3, "@numticks", 5, "@minimum", 0, "@maximum", 100, "@default", 0, "@decimalplaces", 0, "@resolution", 1.0 ],
 					"bgmode" : 0,
 					"border" : 0,
 					"clickthrough" : 0,
@@ -1699,7 +1711,7 @@
 			}
 , 			{
 				"box" : 				{
-					"args" : [ "@id", 4, "@numticks", 5, "@minimum", 0, "@maximum", 100, "@default", 0, "@decimalplaces", 0, "@resolution", 1 ],
+					"args" : [ "@id", 4, "@numticks", 5, "@minimum", 0, "@maximum", 100, "@default", 0, "@decimalplaces", 0, "@resolution", 1.0 ],
 					"bgmode" : 0,
 					"border" : 0,
 					"clickthrough" : 0,
@@ -1723,7 +1735,7 @@
 			}
 , 			{
 				"box" : 				{
-					"args" : [ "@id", 5, "@numticks", 5, "@minimum", 0, "@maximum", 100, "@default", 0, "@decimalplaces", 0, "@resolution", 1 ],
+					"args" : [ "@id", 5, "@numticks", 5, "@minimum", 0, "@maximum", 100, "@default", 0, "@decimalplaces", 0, "@resolution", 1.0 ],
 					"bgmode" : 0,
 					"border" : 0,
 					"clickthrough" : 0,
@@ -1747,7 +1759,7 @@
 			}
 , 			{
 				"box" : 				{
-					"args" : [ "@id", 6, "@numticks", 5, "@minimum", 0, "@maximum", 100, "@default", 0, "@decimalplaces", 0, "@resolution", 1 ],
+					"args" : [ "@id", 6, "@numticks", 5, "@minimum", 0, "@maximum", 100, "@default", 0, "@decimalplaces", 0, "@resolution", 1.0 ],
 					"bgmode" : 0,
 					"border" : 0,
 					"clickthrough" : 0,
@@ -1771,7 +1783,7 @@
 			}
 , 			{
 				"box" : 				{
-					"args" : [ "@id", 7, "@numticks", 5, "@minimum", 0, "@maximum", 100, "@default", 0, "@decimalplaces", 0, "@resolution", 1 ],
+					"args" : [ "@id", 7, "@numticks", 5, "@minimum", 0, "@maximum", 100, "@default", 0, "@decimalplaces", 0, "@resolution", 1.0 ],
 					"bgmode" : 0,
 					"border" : 0,
 					"clickthrough" : 0,
@@ -1795,7 +1807,7 @@
 			}
 , 			{
 				"box" : 				{
-					"args" : [ "@id", 8, "@numticks", 5, "@minimum", 0, "@maximum", 100, "@default", 0, "@decimalplaces", 0, "@resolution", 1 ],
+					"args" : [ "@id", 8, "@numticks", 5, "@minimum", 0, "@maximum", 100, "@default", 0, "@decimalplaces", 0, "@resolution", 1.0 ],
 					"bgmode" : 0,
 					"border" : 0,
 					"clickthrough" : 0,
@@ -1819,7 +1831,7 @@
 			}
 , 			{
 				"box" : 				{
-					"args" : [ "@id", 9, "@numticks", 5, "@minimum", 0, "@maximum", 100, "@default", 0, "@decimalplaces", 0, "@resolution", 1 ],
+					"args" : [ "@id", 9, "@numticks", 5, "@minimum", 0, "@maximum", 100, "@default", 0, "@decimalplaces", 0, "@resolution", 1.0 ],
 					"bgmode" : 0,
 					"border" : 0,
 					"clickthrough" : 0,
@@ -1843,7 +1855,7 @@
 			}
 , 			{
 				"box" : 				{
-					"args" : [ "@id", 10, "@numticks", 5, "@minimum", 0, "@maximum", 100, "@default", 0, "@decimalplaces", 0, "@resolution", 1 ],
+					"args" : [ "@id", 10, "@numticks", 5, "@minimum", 0, "@maximum", 100, "@default", 0, "@decimalplaces", 0, "@resolution", 1.0 ],
 					"bgmode" : 0,
 					"border" : 0,
 					"clickthrough" : 0,
@@ -1867,7 +1879,7 @@
 			}
 , 			{
 				"box" : 				{
-					"args" : [ "@id", 11, "@numticks", 5, "@minimum", 0, "@maximum", 100, "@default", 0, "@decimalplaces", 0, "@resolution", 1 ],
+					"args" : [ "@id", 11, "@numticks", 5, "@minimum", 0, "@maximum", 100, "@default", 0, "@decimalplaces", 0, "@resolution", 1.0 ],
 					"bgmode" : 0,
 					"border" : 0,
 					"clickthrough" : 0,
@@ -1891,7 +1903,7 @@
 			}
 , 			{
 				"box" : 				{
-					"args" : [ "@id", 12, "@numticks", 5, "@minimum", 0, "@maximum", 100, "@default", 0, "@decimalplaces", 0, "@resolution", 1 ],
+					"args" : [ "@id", 12, "@numticks", 5, "@minimum", 0, "@maximum", 100, "@default", 0, "@decimalplaces", 0, "@resolution", 1.0 ],
 					"bgmode" : 0,
 					"border" : 0,
 					"clickthrough" : 0,
@@ -2169,6 +2181,13 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-4", 0 ],
+					"source" : [ "obj-35", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-1127", 0 ],
 					"source" : [ "obj-36", 0 ]
 				}
@@ -2325,7 +2344,7 @@
  ],
 		"dependency_cache" : [ 			{
 				"name" : "rating_slider.maxpat",
-				"bootpath" : "~/Documents/Max 8/Projects/PsychoBox/PsychoBox/patchers",
+				"bootpath" : "~/Documents/Max 8/Projects/HULTI-GENv2/PsychoBox/patchers",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
