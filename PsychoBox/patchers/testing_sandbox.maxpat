@@ -308,13 +308,13 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-14",
-					"linecount" : 4,
+					"linecount" : 2,
 					"maxclass" : "message",
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 51.0, 786.0, 308.0, 62.0 ],
-					"text" : "@numsliders 2 @numticks 5 @labelwidth 150 @labelfontsize 18 @minimum 10 @maximum 50 @default 0 @labels Imperceptible \"Perceptible, but not annoying\" \"Slightly annoying\" Annoying \"Very annoying\""
+					"patching_rect" : [ 51.0, 786.0, 905.0, 35.0 ],
+					"text" : "@numsliders 2 @numticks 5 @labelwidth 150 @labelfontsize 18 @minimum 1 @maximum 5 @default 0 @labels Imperceptible \"Perceptible, but not annoying\" \"Slightly annoying\" Annoying \"Very annoying\""
 				}
 
 			}
@@ -356,7 +356,7 @@
 			}
 , 			{
 				"box" : 				{
-					"args" : [ "@numsliders", 2, "@numticks", 3, "@labelwidth", 150, "@labelfontsize", 20, "@minimum", -50, "@maximum", 50, "@default", 0, "@labels", "Greater", "Same", "Lesser", "@resolution", 0.1 ],
+					"args" : [ "@numsliders", 2, "@numticks", 9, "@labelwidth", 170, "@labelfontsize", 16, "@minimum", -4, "@maximum", 4, "@default", 0, "@labels", "Like extremely", "Like very much", "Like moderately", "Like slightly", "Neither like nor dislike", "Dislike slightly", "Dislike moderately", "Dislike very much", "Dislike extremely" ],
 					"bgmode" : 0,
 					"border" : 0,
 					"clickthrough" : 0,
@@ -365,12 +365,12 @@
 					"id" : "obj-17",
 					"lockeddragscroll" : 0,
 					"maxclass" : "bpatcher",
-					"name" : "multicomp_interface.maxpat",
+					"name" : "multicomp_subinterface.maxpat",
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"offset" : [ 0.0, 0.0 ],
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 54.0, 80.0, 300.0, 512.0 ],
+					"patching_rect" : [ 54.0, 80.0, 320.0, 512.0 ],
 					"varname" : "sliderbank",
 					"viewvisibility" : 1
 				}
@@ -498,7 +498,7 @@
 			}
  ],
 		"dependency_cache" : [ 			{
-				"name" : "multicomp_interface.maxpat",
+				"name" : "multicomp_subinterface.maxpat",
 				"bootpath" : "~/Documents/Max 8/Projects/PsychoBox/PsychoBox/patchers",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",

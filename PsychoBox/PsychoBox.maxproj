@@ -2,8 +2,8 @@
 	"name" : "PsychoBox",
 	"version" : 1,
 	"creationdate" : 3666872002,
-	"modificationdate" : 3682253706,
-	"viewrect" : [ 1531.0, 142.0, 389.0, 649.0 ],
+	"modificationdate" : 3682283465,
+	"viewrect" : [ 587.0, 229.0, 389.0, 649.0 ],
 	"autoorganize" : 1,
 	"hideprojectwindow" : 0,
 	"showdependencies" : 0,
@@ -346,12 +346,17 @@
 
 			}
 ,
-			"multicomp_interface.maxpat" : 			{
+			"rating_sliderbank.maxpat" : 			{
 				"kind" : "patcher",
 				"local" : 1
 			}
 ,
-			"rating_sliderbank.maxpat" : 			{
+			"multicomp_subinterface.maxpat" : 			{
+				"kind" : "patcher",
+				"local" : 1
+			}
+,
+			"ui_genericGradingInterface.maxpat" : 			{
 				"kind" : "patcher",
 				"local" : 1
 			}
