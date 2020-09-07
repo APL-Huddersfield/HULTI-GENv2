@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 839.0, 143.0, 1102.0, 915.0 ],
+		"rect" : [ 406.0, 327.0, 1102.0, 915.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -40,50 +40,22 @@
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
 				"box" : 				{
-					"id" : "obj-14",
-					"linecolor" : [ 0.615686274509804, 0.611764705882353, 0.611764705882353, 1.0 ],
-					"maxclass" : "live.line",
-					"numinlets" : 1,
+					"bgmode" : 0,
+					"border" : 0,
+					"clickthrough" : 0,
+					"enablehscroll" : 0,
+					"enablevscroll" : 0,
+					"id" : "obj-7",
+					"lockeddragscroll" : 0,
+					"maxclass" : "bpatcher",
+					"name" : "ui_testSetup_2AFC.maxpat",
+					"numinlets" : 0,
 					"numoutlets" : 0,
-					"patching_rect" : [ 0.0, 142.0, 243.0, 5.0 ],
+					"offset" : [ 0.0, 0.0 ],
+					"patching_rect" : [ 10.0, 90.0, 500.0, 100.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 0.0, 152.0, 360.0, 5.0 ]
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"fontface" : 1,
-					"fontname" : "Arial",
-					"fontsize" : 18.0,
-					"id" : "obj-12",
-					"maxclass" : "comment",
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 2.0, 50.0, 309.0, 27.0 ],
-					"presentation" : 1,
-					"presentation_rect" : [ 0.0, 9.0, 193.0, 27.0 ],
-					"text" : "Testing method"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"bgcolor" : [ 0.75, 0.75, 0.75, 1.0 ],
-					"fontsize" : 12.0,
-					"id" : "obj-11",
-					"maxclass" : "textbutton",
-					"numinlets" : 1,
-					"numoutlets" : 3,
-					"outlettype" : [ "", "", "int" ],
-					"parameter_enable" : 0,
-					"patching_rect" : [ 574.0, 431.0, 100.0, 20.0 ],
-					"presentation" : 1,
-					"presentation_rect" : [ 260.0, 262.0, 100.0, 20.0 ],
-					"text" : "Next",
-					"textoncolor" : [ 0.0, 0.0, 0.0, 1.0 ],
-					"textovercolor" : [ 0.101960784313725, 0.411764705882353, 0.796078431372549, 1.0 ],
-					"usetextovercolor" : 1
+					"presentation_rect" : [ 0.0, 200.0, 501.0, 101.0 ],
+					"viewvisibility" : 1
 				}
 
 			}
@@ -101,6 +73,51 @@
 			}
 , 			{
 				"box" : 				{
+					"id" : "obj-17",
+					"linecolor" : [ 0.615686274509804, 0.611764705882353, 0.611764705882353, 1.0 ],
+					"maxclass" : "live.line",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 10.0, 15.5, 243.0, 5.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 0.0, 0.0, 362.0, 5.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontface" : 1,
+					"fontname" : "Arial",
+					"fontsize" : 14.0,
+					"id" : "obj-15",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 10.0, 22.5, 243.0, 22.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 0.0, 10.0, 151.0, 22.0 ],
+					"text" : "Test Setup"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontface" : 1,
+					"fontname" : "Arial",
+					"fontsize" : 14.0,
+					"id" : "obj-4",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 10.0, 60.0, 243.0, 22.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 0.0, 170.0, 151.0, 22.0 ],
+					"text" : "Task Parameters"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-1",
 					"linecolor" : [ 0.615686274509804, 0.611764705882353, 0.611764705882353, 1.0 ],
 					"maxclass" : "live.line",
@@ -108,7 +125,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 10.0, 53.0, 243.0, 5.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 0.0, 0.0, 360.0, 5.0 ]
+					"presentation_rect" : [ 0.0, 160.0, 360.0, 5.0 ]
 				}
 
 			}
@@ -1150,7 +1167,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 645.5, 110.0, 162.0, 24.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 160.0, 49.0, 200.0, 24.0 ],
+					"presentation_rect" : [ 160.0, 40.0, 200.0, 24.0 ],
 					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
 				}
 
@@ -1166,7 +1183,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 569.0, 311.0, 50.0, 22.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 0.0, 119.0, 152.0, 22.0 ],
+					"presentation_rect" : [ 0.0, 120.0, 151.0, 22.0 ],
 					"text" : "Task"
 				}
 
@@ -1183,7 +1200,7 @@
 					"bgfillcolor_type" : "color",
 					"fontsize" : 14.0,
 					"id" : "obj-10",
-					"items" : [ "Yes-No", ",", "2AFC", ",", "ABX" ],
+					"items" : [ "Method of Constants", ",", "Method of Limits", ",", "Method of Adjustment" ],
 					"maxclass" : "umenu",
 					"numinlets" : 1,
 					"numoutlets" : 3,
@@ -1191,7 +1208,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 621.0, 311.0, 162.0, 24.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 160.0, 119.0, 200.0, 24.0 ],
+					"presentation_rect" : [ 160.0, 120.0, 200.0, 24.0 ],
 					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
 				}
 
@@ -1207,7 +1224,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 566.0, 212.0, 52.0, 22.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 0.0, 84.0, 152.0, 22.0 ],
+					"presentation_rect" : [ 0.0, 80.0, 152.0, 22.0 ],
 					"text" : "Model"
 				}
 
@@ -1224,7 +1241,7 @@
 					"bgfillcolor_type" : "color",
 					"fontsize" : 14.0,
 					"id" : "obj-6",
-					"items" : "Transformed Staircase",
+					"items" : [ "High Threshold Theory", ",", "Signal Detection Theory" ],
 					"maxclass" : "umenu",
 					"numinlets" : 1,
 					"numoutlets" : 3,
@@ -1232,7 +1249,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 621.0, 212.0, 162.0, 24.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 160.0, 84.0, 200.0, 24.0 ],
+					"presentation_rect" : [ 160.0, 80.0, 200.0, 24.0 ],
 					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
 				}
 
@@ -1248,7 +1265,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 569.5, 110.0, 74.0, 22.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 0.0, 49.0, 152.0, 22.0 ],
+					"presentation_rect" : [ 0.0, 40.0, 150.0, 22.0 ],
 					"text" : "Procedure"
 				}
 
@@ -1311,7 +1328,14 @@
 
 			}
  ],
-		"dependency_cache" : [  ],
+		"dependency_cache" : [ 			{
+				"name" : "ui_testSetup_2AFC.maxpat",
+				"bootpath" : "~/Documents/Max 8/Projects/PsychoBox/PsychoBox/patchers",
+				"patcherrelativepath" : ".",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+ ],
 		"autosave" : 0
 	}
 

@@ -2,30 +2,9 @@
     "setup" : {
         "procedure" : {
             "title" : "Procedure",
-            "items" : ["multipleComparison", "nonAdaptive", "adaptive"],
-            "itemStrings" : ["Multiple Comparison", "Non Adaptive", "Adaptive"],
+            "items" : ["nonAdaptive", "adaptive"],
+            "itemStrings" : ["Non Adaptive", "Adaptive"],
             "keys" : {
-                "multipleComparison" : {
-                    "title" : "Interface",
-                    "items" : ["itur1116", "mushra", "bipolar", "ninePointHedonic"],
-                    "itemStrings" : [
-                        "ITU-R BS.1116-3 (ABC / HR)",
-                        "ITU-R BS.1534-2 (MUSHRA)",
-                        "Bipolar Scale with Ref.",
-                        "9-Point Hedonic Scale",
-                    ],
-                    "keys" : {
-                        "itur1116" : {
-                            "paramWindow" : "multipleComparison"
-                        },
-                        "mushra" : {
-                            "paramWindow" : "multipleComparison"
-                        },
-                        "bipolar" : {
-                            "paramWindow" : "multipleComparison"
-                        }
-                    }
-                },
                 "nonAdaptive" : {
                     "title" : "Model",
                     "items" : ["highThresholdTheory", "signalDetectionTheory"],
