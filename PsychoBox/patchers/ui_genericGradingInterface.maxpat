@@ -12,7 +12,7 @@
 		"classnamespace" : "box",
 		"rect" : [ 485.0, 110.0, 1692.0, 1173.0 ],
 		"bglocked" : 0,
-		"openinpresentation" : 0,
+		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
 		"default_fontface" : 0,
 		"default_fontname" : "Arial",
@@ -311,7 +311,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 114.0, 660.0, 516.0, 49.0 ],
+									"patching_rect" : [ 114.0, 660.0, 518.0, 49.0 ],
 									"text" : "@numsliders $1 @numticks 9 @labelwidth 170 @labelfontsize 16 @minimum -4 @maximum 4 @default 0 @labels \"Like extremely\" \"Like very much\" \"Like moderately\" \"Like slightly\" \"Neither like nor dislike\" \"Dislike slightly\" \"Dislike moderately\" \"Dislike very much\" \"Dislike extremely\""
 								}
 
@@ -335,7 +335,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 114.0, 587.0, 516.0, 49.0 ],
+									"patching_rect" : [ 114.0, 587.0, 518.0, 49.0 ],
 									"text" : "@numsliders $1 @numticks 7 @labelwidth 170 @labelfontsize 20 @minimum -3 @maximum 3 @default 0 @labels \"Much better\" Better \"Slightly better\" \"About the same\" \"Slightly worse\" Worse \"Much worse\""
 								}
 
@@ -383,8 +383,8 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 114.0, 455.0, 516.0, 35.0 ],
-									"text" : "@numsliders $1 @numticks 5 @labelwidth 150 @labelfontsize 20 @minimum 1 @maximum 5 @default 0 @labels Excellent Good Fair Poor Bad"
+									"patching_rect" : [ 114.0, 455.0, 514.0, 35.0 ],
+									"text" : "@numsliders $1 @numticks 5 @labelwidth 120 @labelfontsize 20 @minimum 1 @maximum 5 @default 0 @labels Excellent Good Fair Poor Bad"
 								}
 
 							}
@@ -407,8 +407,8 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 114.0, 396.0, 516.0, 35.0 ],
-									"text" : "@numsliders $1 @numticks 3 @labelwidth 150 @labelfontsize 20 @minimum -50 @maximum 50 @default 0 @labels Greater Same Lesser"
+									"patching_rect" : [ 114.0, 396.0, 532.0, 35.0 ],
+									"text" : "@numsliders $1 @numticks 3 @labelwidth 120 @labelfontsize 20 @minimum -50 @maximum 50 @default 0 @labels Greater Same Lesser"
 								}
 
 							}
@@ -431,8 +431,8 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 114.0, 337.0, 516.0, 35.0 ],
-									"text" : "@numsliders $1 @numticks 6 @labelwidth 150 @labelfontsize 20 @minimum 0 @maximum 100 @default 0 @labels \"100\" Excellent \"80\" Good \"60\" Fair \"40\" Poor \"20\" Bad \"0\""
+									"patching_rect" : [ 114.0, 337.0, 528.0, 35.0 ],
+									"text" : "@numsliders $1 @numticks 6 @labelwidth 120 @labelfontsize 20 @minimum 0 @maximum 100 @default 0 @labels \"100\" Excellent \"80\" Good \"60\" Fair \"40\" Poor \"20\" Bad \"0\""
 								}
 
 							}
@@ -455,8 +455,8 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 114.0, 264.0, 516.0, 49.0 ],
-									"text" : "@numsliders $1 @numticks 5 @labelwidth 150 @labelfontsize 20 @minimum 1 @maximum 5 @default 0 @labels Imperceptible \"Perceptible, but not annoying\" \"Slightly annoying\" Annoying \"Very annoying\" @resolution 0.1 @decimalplaces 2"
+									"patching_rect" : [ 114.0, 264.0, 546.0, 49.0 ],
+									"text" : "@numsliders $1 @numticks 5 @labelwidth 120 @labelfontsize 20 @minimum 1 @maximum 5 @default 0 @labels Imperceptible \"Perceptible, but not annoying\" \"Slightly annoying\" Annoying \"Very annoying\" @resolution 0.1 @decimalplaces 2"
 								}
 
 							}
