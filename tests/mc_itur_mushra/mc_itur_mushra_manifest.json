@@ -11,7 +11,7 @@
         "omitReferenceAsTestStimulus" : false
     },
     "interface" : {
-        "maxwidth" : 1005,
-        "maxheight" : 660
+        "maxwidth" : 1180,
+        "maxheight" : 680
     }
 }
