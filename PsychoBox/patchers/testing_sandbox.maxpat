@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 34.0, 79.0, 1040.0, 1023.0 ],
+		"rect" : [ 34.0, 79.0, 1007.0, 1087.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -39,6 +39,18 @@
 		"subpatcher_template" : "",
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
+				"box" : 				{
+					"id" : "obj-5",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 195.0, 19.0, 74.0, 22.0 ],
+					"text" : "resolution 1."
+				}
+
+			}
+, 			{
 				"box" : 				{
 					"id" : "obj-32",
 					"maxclass" : "comment",
@@ -105,8 +117,8 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 409.0, 338.0, 594.0, 35.0 ],
-					"text" : "@numsliders 2 @numticks 5 @labelwidth 170 @labelfontsize 20 @minimum 1 @maximum 5 @default 0 @labels Inaudible \"Audible, but not annoying\" \"Slightly annoying\" Annoying \"Very Annoying\""
+					"patching_rect" : [ 409.0, 338.0, 616.0, 35.0 ],
+					"text" : "@numsliders 2 @numticks 5 @labelwidth 170 @labelfontsize 20 @minimum 1 @maximum 5 @default 0 @labels Inaudible \"Audible, but not annoying\" \"Slightly annoying\" Annoying \"Very Annoying\" @resolution 1"
 				}
 
 			}
@@ -153,7 +165,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 409.0, 220.0, 572.0, 35.0 ],
+					"patching_rect" : [ 409.0, 220.0, 587.0, 35.0 ],
 					"text" : "@numsliders 2 @numticks 3 @labelwidth 150 @labelfontsize 20 @minimum -50 @maximum 50 @default 0 @labels Greater Same Lesser"
 				}
 
@@ -226,8 +238,8 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 409.0, 102.0, 573.0, 35.0 ],
-					"text" : "@numsliders 2 @numticks 5 @labelwidth 150 @labelfontsize 20 @minimum 10 @maximum 50 @default 0 @labels Imperceptible \"Perceptible, but not annoying\" \"Slightly annoying\" Annoying \"Very annoying\""
+					"patching_rect" : [ 409.0, 102.0, 616.0, 35.0 ],
+					"text" : "@numsliders 2 @numticks 5 @labelwidth 150 @labelfontsize 20 @minimum 1 @maximum 5 @default 0 @labels Imperceptible \"Perceptible, but not annoying\" \"Slightly annoying\" Annoying \"Very annoying\" @resolution 0.1"
 				}
 
 			}
@@ -253,18 +265,6 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 51.0, 896.0, 218.0, 22.0 ],
 					"text" : "prepend script sendbox sliderbank args"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-22",
-					"maxclass" : "message",
-					"numinlets" : 2,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 278.0, 896.0, 524.0, 22.0 ],
-					"text" : "@numsliders 12 @numticks 6 @labelwidth 120 @labelfontsize 18 @minimum 0 @maximum 100"
 				}
 
 			}
@@ -308,12 +308,12 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-14",
-					"linecount" : 2,
+					"linecount" : 4,
 					"maxclass" : "message",
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 51.0, 831.0, 605.0, 35.0 ],
+					"patching_rect" : [ 51.0, 786.0, 308.0, 62.0 ],
 					"text" : "@numsliders 2 @numticks 5 @labelwidth 150 @labelfontsize 18 @minimum 10 @maximum 50 @default 0 @labels Imperceptible \"Perceptible, but not annoying\" \"Slightly annoying\" Annoying \"Very annoying\""
 				}
 
@@ -349,14 +349,14 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 54.0, 32.0, 53.0, 22.0 ],
+					"patching_rect" : [ 54.0, 19.0, 53.0, 22.0 ],
 					"text" : "getwidth"
 				}
 
 			}
 , 			{
 				"box" : 				{
-					"args" : [ "@numsliders", 2, "@numticks", 5, "@labelwidth", 150, "@labelfontsize", 20, "@minimum", 10, "@maximum", 50, "@default", 0, "@labels", "Imperceptible", "Perceptible, but not annoying", "Slightly annoying", "Annoying", "Very annoying" ],
+					"args" : [ "@numsliders", 2, "@numticks", 3, "@labelwidth", 150, "@labelfontsize", 20, "@minimum", -50, "@maximum", 50, "@default", 0, "@labels", "Greater", "Same", "Lesser", "@resolution", 0.1 ],
 					"bgmode" : 0,
 					"border" : 0,
 					"clickthrough" : 0,
@@ -472,6 +472,13 @@
 				"patchline" : 				{
 					"destination" : [ "obj-15", 0 ],
 					"source" : [ "obj-33", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-17", 0 ],
+					"source" : [ "obj-5", 0 ]
 				}
 
 			}
