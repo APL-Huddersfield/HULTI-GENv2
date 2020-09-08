@@ -1,11 +1,11 @@
 {
 	"identifier" : "Unnamed",
-	"configFilename" : "example_mc_itur_mushra_config.json",
-	"configSHA256" : "b63fb3309fbb730c62419933933695d7498e64032d752bb69ea0a5616f1b0067",
+	"configFilename" : "example_itur_dcr_config.json",
+	"configSHA256" : "9f64a13691d8c073724db965bc3645aae3c4aca2a7ce67160441761fe47fb8fe",
 	"task" : 	{
-		"plugin" : "mc_itur_mushra",
+		"plugin" : "mc_itur_dcr",
 		"parameters" : 		{
-			"repetitions" : 5,
+			"repetitions" : 3,
 			"objective" : "Grade each stimulus in terms of ASW"
 		}
 
@@ -14,7 +14,7 @@
 	"experimentData" : 	{
 		"sessions" : [ 			{
 				"groups" : [ 					{
-						"reference" : 7,
+						"reference" : 0,
 						"stimuli" : [ 							{
 								"filename" : "low_tone_1.wav"
 							}
@@ -42,66 +42,7 @@
  ]
 					}
 , 					{
-						"reference" : 7,
-						"stimuli" : [ 							{
-								"filename" : "high_tone_1.wav"
-							}
-, 							{
-								"filename" : "high_tone_2.wav"
-							}
-, 							{
-								"filename" : "high_tone_3.wav"
-							}
-, 							{
-								"filename" : "high_tone_4.wav"
-							}
-, 							{
-								"filename" : "high_tone_5.wav"
-							}
-, 							{
-								"filename" : "high_tone_6.wav"
-							}
-, 							{
-								"filename" : "high_tone_7.wav"
-							}
-, 							{
-								"filename" : "high_tone_8.wav"
-							}
- ]
-					}
- ]
-			}
-, 			{
-				"groups" : [ 					{
-						"reference" : 7,
-						"stimuli" : [ 							{
-								"filename" : "low_tone_1.wav"
-							}
-, 							{
-								"filename" : "low_tone_2.wav"
-							}
-, 							{
-								"filename" : "low_tone_3.wav"
-							}
-, 							{
-								"filename" : "low_tone_4.wav"
-							}
-, 							{
-								"filename" : "low_tone_5.wav"
-							}
-, 							{
-								"filename" : "low_tone_6.wav"
-							}
-, 							{
-								"filename" : "low_tone_7.wav"
-							}
-, 							{
-								"filename" : "low_tone_8.wav"
-							}
- ]
-					}
-, 					{
-						"reference" : 7,
+						"reference" : 0,
 						"stimuli" : [ 							{
 								"filename" : "high_tone_1.wav"
 							}
@@ -134,12 +75,9 @@
 	}
 ,
 	"orders" : 	{
-		"sessionOrder" : [ 0, 1 ],
+		"sessionOrder" : 0,
 		"sessions" : [ 			{
-				"groupOrder" : [ 1, 0, 1, 0, 0, 1, 1, 0, 0, 1 ]
-			}
-, 			{
-				"groupOrder" : [ 0, 1, 0, 1, 1, 0, 1, 0, 0, 1 ]
+				"groupOrder" : [ 1, 0, 1, 0, 0, 1 ]
 			}
  ]
 	}
@@ -147,9 +85,6 @@
 	"progress" : 	{
 		"sessionProgress" : 0,
 		"sessions" : [ 			{
-				"groupProgress" : 0
-			}
-, 			{
 				"groupProgress" : 0
 			}
  ]

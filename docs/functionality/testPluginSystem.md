@@ -44,6 +44,7 @@ The manifest file defines what the test actually is and informs HULTIGEN what is
 The required keys are as follows:
 
 * model
+* name (this is what appears in the drop down menu)
 * type
 * parameterKeys
 
