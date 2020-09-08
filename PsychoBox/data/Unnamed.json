@@ -134,12 +134,12 @@
 	}
 ,
 	"orders" : 	{
-		"sessionOrder" : [ 1, 0 ],
+		"sessionOrder" : [ 0, 1 ],
 		"sessions" : [ 			{
-				"groupOrder" : [ 1, 0, 0, 1, 0, 1, 1, 0, 1, 0 ]
+				"groupOrder" : [ 1, 0, 1, 0, 0, 1, 1, 0, 0, 1 ]
 			}
 , 			{
-				"groupOrder" : [ 0, 1, 0, 1, 0, 1, 0, 1, 1, 0 ]
+				"groupOrder" : [ 0, 1, 0, 1, 1, 0, 1, 0, 0, 1 ]
 			}
  ]
 	}

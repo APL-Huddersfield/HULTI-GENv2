@@ -45,7 +45,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 508.0, 79.5, 97.0, 22.0 ],
+					"patching_rect" : [ 473.0, 79.5, 97.0, 22.0 ],
 					"text" : "route numsliders"
 				}
 
@@ -653,7 +653,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 508.0, 137.0, 103.0, 22.0 ],
+					"patching_rect" : [ 473.0, 137.0, 103.0, 22.0 ],
 					"text" : "v #0-numsliders 1"
 				}
 
@@ -665,7 +665,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 409.0, 193.0, 67.0, 22.0 ],
+					"patching_rect" : [ 374.0, 193.0, 67.0, 22.0 ],
 					"save" : [ "#N", "thispatcher", ";", "#Q", "end", ";" ],
 					"text" : "thispatcher"
 				}
@@ -1143,7 +1143,7 @@
  ]
 					}
 ,
-					"patching_rect" : [ 409.0, 137.0, 93.0, 22.0 ],
+					"patching_rect" : [ 374.0, 137.0, 93.0, 22.0 ],
 					"saved_object_attributes" : 					{
 						"description" : "",
 						"digest" : "",
@@ -1162,7 +1162,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 409.0, 79.5, 85.0, 22.0 ],
+					"patching_rect" : [ 374.0, 79.5, 85.0, 22.0 ],
 					"text" : "route template"
 				}
 
@@ -1749,7 +1749,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-11", 0 ],
-					"midpoints" : [ 739.333333333333371, 60.0, 517.5, 60.0 ],
+					"midpoints" : [ 739.333333333333371, 60.0, 482.5, 60.0 ],
 					"order" : 1,
 					"source" : [ "obj-25", 0 ]
 				}
@@ -1758,7 +1758,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-43", 0 ],
-					"midpoints" : [ 739.333333333333371, 60.0, 418.5, 60.0 ],
+					"midpoints" : [ 739.333333333333371, 60.0, 383.5, 60.0 ],
 					"order" : 2,
 					"source" : [ "obj-25", 0 ]
 				}
@@ -1796,7 +1796,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-17", 0 ],
-					"midpoints" : [ 484.5, 116.75, 41.5, 116.75 ],
+					"midpoints" : [ 449.5, 116.75, 41.5, 116.75 ],
 					"source" : [ "obj-43", 1 ]
 				}
 
