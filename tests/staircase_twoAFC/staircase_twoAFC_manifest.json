@@ -1,5 +1,6 @@
 {
     "slug" : "staircase_twoAFC",
+    "name" : "Staircase 2AFC",
     "parameters" : [
         "objective",
         "initialStep",

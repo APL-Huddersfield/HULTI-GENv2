@@ -1,5 +1,6 @@
 {
     "slug" : "mc_itur_mushra",
+    "name" : "ITU-R BS.1534-2 (MUSHRA)",
     "parameters" : [
         "repetitions",
         "objective"

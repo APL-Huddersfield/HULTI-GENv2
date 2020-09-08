@@ -1,5 +1,6 @@
 {
     "slug" : "mc_itur_1116",
+    "name" : "ITU-R BS.1116-3 (ABC)",
     "parameters" : [
         "repetitions",
         "objective"

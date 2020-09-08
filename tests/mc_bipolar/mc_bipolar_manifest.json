@@ -1,5 +1,6 @@
 {
     "slug" : "mc_bipolar",
+    "name" : "Bipolar with Ref",
     "parameters" : [
         "repetitions",
         "objective"

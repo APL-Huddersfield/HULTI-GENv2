@@ -1,5 +1,6 @@
 {
     "slug" : "mc_itur_acr",
+    "name" : "Absolute Category Rating (ACR)",
     "parameters" : [
         "repetitions",
         "objective"

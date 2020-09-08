@@ -1,5 +1,6 @@
 {
     "slug" : "mc_itur_dcr",
+    "name" : "Degradation Category Rating (DCR)",
     "parameters" : [
         "repetitions",
         "objective"
