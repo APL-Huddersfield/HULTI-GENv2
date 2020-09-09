@@ -2,7 +2,8 @@
     "slug" : "sdt_abx",
     "name" : "SDT ABX",
     "parameters" : [
-        "repetitions"
+        "repetitions",
+        "objective"
     ],
     "requiresReference" : true,
     "groupingMode" : "sgft",
@@ -17,5 +18,12 @@
     "ordering" : {
         "omitReferenceAsTestStimulus" : true,
         "combinationsPerRepetition" : 4
-    }
+    },
+    "interface" : {
+        "window" : {
+            "width" : 500,
+            "height" : 280
+        }
+    },
+    "paramsUI" : "sdt_abx"
 }

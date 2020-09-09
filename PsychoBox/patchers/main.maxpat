@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 320.0, 146.0, 1419.0, 874.0 ],
+		"rect" : [ 320.0, 146.0, 1008.0, 874.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -1147,8 +1147,8 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 1000.5, 195.0, 81.0, 22.0 ],
-									"text" : "delete worker"
+									"patching_rect" : [ 1000.5, 195.0, 113.0, 22.0 ],
+									"text" : "script delete worker"
 								}
 
 							}
@@ -8555,19 +8555,6 @@
 								}
 
 							}
-, 							{
-								"box" : 								{
-									"id" : "obj-31",
-									"maxclass" : "newobj",
-									"numinlets" : 1,
-									"numoutlets" : 4,
-									"outlettype" : [ "", "", "multichannelsignal", "reset" ],
-									"patching_rect" : [ 226.0, 135.0, 137.0, 22.0 ],
-									"text" : "mc_itur_mushra_worker",
-									"varname" : "worker"
-								}
-
-							}
  ],
 						"lines" : [ 							{
 								"patchline" : 								{
@@ -8685,36 +8672,7 @@
 , 							{
 								"patchline" : 								{
 									"destination" : [ "obj-26", 0 ],
-									"order" : 0,
 									"source" : [ "obj-3", 0 ]
-								}
-
-							}
-, 							{
-								"patchline" : 								{
-									"destination" : [ "obj-14", 0 ],
-									"source" : [ "obj-31", 2 ]
-								}
-
-							}
-, 							{
-								"patchline" : 								{
-									"destination" : [ "obj-36", 0 ],
-									"source" : [ "obj-31", 0 ]
-								}
-
-							}
-, 							{
-								"patchline" : 								{
-									"destination" : [ "obj-5", 0 ],
-									"source" : [ "obj-31", 3 ]
-								}
-
-							}
-, 							{
-								"patchline" : 								{
-									"destination" : [ "obj-9", 0 ],
-									"source" : [ "obj-31", 1 ]
 								}
 
 							}
@@ -8780,14 +8738,6 @@
 								"patchline" : 								{
 									"destination" : [ "obj-36", 0 ],
 									"source" : [ "", 0 ]
-								}
-
-							}
-, 							{
-								"patchline" : 								{
-									"destination" : [ "obj-31", 0 ],
-									"order" : 1,
-									"source" : [ "obj-3", 0 ]
 								}
 
 							}
@@ -9053,7 +9003,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 19.272727272727252, 9.0, 361.0, 127.0 ],
+									"patching_rect" : [ 19.272727272727252, 9.0, 364.0, 127.0 ],
 									"text" : "\"Program Control\" mananges the workflow of HULTI-GEN. It listens for changes in 'mode' and 'callbacks' from UI elements.\n\nA 'mode' must have a sub-patch that gives the mode some behaviour, even if it is simplistic.\n\nA UI element should have a dedicated callback subpatch. This is to separate program control duties from UI patchers, thus avoiding the \"UI is the code\" anti-pattern that Max allows to occur"
 								}
 
@@ -15928,7 +15878,7 @@
 																		}
 ,
 																		"classnamespace" : "box",
-																		"rect" : [ 429.0, 80.0, 642.0, 633.0 ],
+																		"rect" : [ 429.0, 80.0, 662.0, 701.0 ],
 																		"bglocked" : 0,
 																		"openinpresentation" : 0,
 																		"default_fontsize" : 12.0,
@@ -17605,7 +17555,7 @@
 , 															{
 																"patchline" : 																{
 																	"destination" : [ "obj-29", 0 ],
-																	"midpoints" : [ 720.5, 593.0, 29.5, 593.0 ],
+																	"midpoints" : [ 720.5, 603.0, 29.5, 603.0 ],
 																	"source" : [ "obj-31", 0 ]
 																}
 
@@ -19937,6 +19887,13 @@
 				"implicit" : 1
 			}
 , 			{
+				"name" : "ui_params_grading.maxpat",
+				"bootpath" : "~/Documents/Max 8/Projects/PsychoBox/PsychoBox/patchers",
+				"patcherrelativepath" : ".",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
 				"name" : "lookAboveThisDir.maxpat",
 				"bootpath" : "~/Documents/Max 8/Library",
 				"patcherrelativepath" : "../../../../Library",
@@ -19980,20 +19937,6 @@
 			}
 , 			{
 				"name" : "ui_subjectMenu.maxpat",
-				"bootpath" : "~/Documents/Max 8/Projects/PsychoBox/PsychoBox/patchers",
-				"patcherrelativepath" : ".",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "mc_itur_mushra_worker.maxpat",
-				"bootpath" : "~/Documents/Max 8/Projects/PsychoBox/tests/mc_itur_mushra",
-				"patcherrelativepath" : "../../tests/mc_itur_mushra",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "player_parallel.maxpat",
 				"bootpath" : "~/Documents/Max 8/Projects/PsychoBox/PsychoBox/patchers",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
@@ -20061,6 +20004,10 @@
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
+			}
+, 			{
+				"name" : "textedit.mxo",
+				"type" : "iLaX"
 			}
 , 			{
 				"name" : "hashbrown.mxo",

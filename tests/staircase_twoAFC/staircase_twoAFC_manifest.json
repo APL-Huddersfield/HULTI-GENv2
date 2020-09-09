@@ -19,5 +19,6 @@
             "width" : 500,
             "height" : 280
         }
-    }
+    },
+    "paramsUI" : "staircase_twoAFC"
 }

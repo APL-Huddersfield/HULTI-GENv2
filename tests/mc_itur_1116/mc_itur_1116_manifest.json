@@ -14,5 +14,6 @@
     "interface" : {
         "maxwidth" : 1180,
         "maxheight" : 680
-    }
+    },
+    "paramsUI" : "grading"
 }

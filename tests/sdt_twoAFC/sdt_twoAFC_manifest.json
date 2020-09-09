@@ -17,5 +17,6 @@
             "width" : 500,
             "height" : 280
         }
-    }
+    },
+    "paramsUI" : "sdt_twoAFC"
 }
