@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 320.0, 146.0, 1008.0, 874.0 ],
+		"rect" : [ 320.0, 146.0, 1430.0, 903.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -58,7 +58,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "bang" ],
-					"patching_rect" : [ 1539.5, 141.0, 58.0, 22.0 ],
+					"patching_rect" : [ 1539.5, 158.0, 58.0, 22.0 ],
 					"text" : "loadbang"
 				}
 
@@ -75,7 +75,7 @@
 					"lockeddragscroll" : 0,
 					"maxclass" : "bpatcher",
 					"name" : "mc_itur_mushra_interface.maxpat",
-					"numinlets" : 1,
+					"numinlets" : 0,
 					"numoutlets" : 0,
 					"offset" : [ 0.0, 0.0 ],
 					"patching_rect" : [ 449.5, 257.0, 474.5, 275.0 ],
@@ -93,7 +93,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 1585.5, 176.0, 32.0, 22.0 ],
+					"patching_rect" : [ 1585.5, 193.0, 32.0, 22.0 ],
 					"text" : "dark"
 				}
 
@@ -105,7 +105,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 1539.5, 176.0, 31.0, 22.0 ],
+					"patching_rect" : [ 1539.5, 193.0, 31.0, 22.0 ],
 					"text" : "light"
 				}
 
@@ -8923,6 +8923,7 @@
 					"clickthrough" : 0,
 					"enablehscroll" : 0,
 					"enablevscroll" : 0,
+					"hidden" : 1,
 					"id" : "obj-5",
 					"lockeddragscroll" : 0,
 					"maxclass" : "bpatcher",
@@ -9003,7 +9004,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 19.272727272727252, 9.0, 364.0, 127.0 ],
+									"patching_rect" : [ 19.272727272727252, 9.0, 367.0, 127.0 ],
 									"text" : "\"Program Control\" mananges the workflow of HULTI-GEN. It listens for changes in 'mode' and 'callbacks' from UI elements.\n\nA 'mode' must have a sub-patch that gives the mode some behaviour, even if it is simplistic.\n\nA UI element should have a dedicated callback subpatch. This is to separate program control duties from UI patchers, thus avoiding the \"UI is the code\" anti-pattern that Max allows to occur"
 								}
 
@@ -10224,7 +10225,7 @@
 										}
 ,
 										"classnamespace" : "box",
-										"rect" : [ 1783.0, 523.0, 640.0, 480.0 ],
+										"rect" : [ 1246.0, 523.0, 640.0, 480.0 ],
 										"bglocked" : 0,
 										"openinpresentation" : 0,
 										"default_fontsize" : 12.0,
@@ -15432,7 +15433,7 @@
 										}
 ,
 										"classnamespace" : "box",
-										"rect" : [ 764.0, 328.0, 640.0, 480.0 ],
+										"rect" : [ 942.0, 567.0, 640.0, 480.0 ],
 										"bglocked" : 0,
 										"openinpresentation" : 0,
 										"default_fontsize" : 12.0,
@@ -15462,13 +15463,36 @@
 										"assistshowspatchername" : 0,
 										"boxes" : [ 											{
 												"box" : 												{
+													"id" : "obj-7",
+													"maxclass" : "message",
+													"numinlets" : 2,
+													"numoutlets" : 1,
+													"outlettype" : [ "" ],
+													"patching_rect" : [ 186.0, 192.0, 79.0, 22.0 ],
+													"text" : "mode onview"
+												}
+
+											}
+, 											{
+												"box" : 												{
+													"id" : "obj-3",
+													"maxclass" : "newobj",
+													"numinlets" : 1,
+													"numoutlets" : 0,
+													"patching_rect" : [ 186.0, 252.0, 75.0, 22.0 ],
+													"text" : "s toUIConfig"
+												}
+
+											}
+, 											{
+												"box" : 												{
 													"id" : "obj-6",
 													"maxclass" : "button",
 													"numinlets" : 1,
 													"numoutlets" : 1,
 													"outlettype" : [ "bang" ],
 													"parameter_enable" : 0,
-													"patching_rect" : [ 525.0, 64.0, 24.0, 24.0 ]
+													"patching_rect" : [ 186.0, 127.0, 24.0, 24.0 ]
 												}
 
 											}
@@ -15479,7 +15503,7 @@
 													"numinlets" : 2,
 													"numoutlets" : 1,
 													"outlettype" : [ "" ],
-													"patching_rect" : [ 525.0, 108.0, 60.0, 22.0 ],
+													"patching_rect" : [ 93.0, 192.0, 60.0, 22.0 ],
 													"text" : "editconfig"
 												}
 
@@ -15490,7 +15514,7 @@
 													"maxclass" : "newobj",
 													"numinlets" : 1,
 													"numoutlets" : 0,
-													"patching_rect" : [ 525.0, 168.0, 79.0, 22.0 ],
+													"patching_rect" : [ 93.0, 252.0, 79.0, 22.0 ],
 													"text" : "s toUIControl"
 												}
 
@@ -15504,7 +15528,7 @@
 													"numinlets" : 0,
 													"numoutlets" : 1,
 													"outlettype" : [ "" ],
-													"patching_rect" : [ 525.0, 15.0, 30.0, 30.0 ]
+													"patching_rect" : [ 186.0, 78.0, 30.0, 30.0 ]
 												}
 
 											}
@@ -15526,7 +15550,23 @@
 , 											{
 												"patchline" : 												{
 													"destination" : [ "obj-4", 0 ],
+													"order" : 1,
 													"source" : [ "obj-6", 0 ]
+												}
+
+											}
+, 											{
+												"patchline" : 												{
+													"destination" : [ "obj-7", 0 ],
+													"order" : 0,
+													"source" : [ "obj-6", 0 ]
+												}
+
+											}
+, 											{
+												"patchline" : 												{
+													"destination" : [ "obj-3", 0 ],
+													"source" : [ "obj-7", 0 ]
 												}
 
 											}
@@ -19581,7 +19621,6 @@
 					"clickthrough" : 0,
 					"enablehscroll" : 0,
 					"enablevscroll" : 0,
-					"hidden" : 1,
 					"id" : "obj-6",
 					"lockeddragscroll" : 0,
 					"maxclass" : "bpatcher",
@@ -19591,7 +19630,7 @@
 					"offset" : [ 0.0, 0.0 ],
 					"patching_rect" : [ 20.0, 250.0, 420.0, 282.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 0.0, 0.0, 1230.0, 615.0 ],
+					"presentation_rect" : [ 0.0, 16.0, 1230.0, 743.0 ],
 					"varname" : "ui_editConfig",
 					"viewvisibility" : 1
 				}
@@ -19766,6 +19805,13 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-3", 0 ],
+					"source" : [ "obj-7", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-12", 0 ],
 					"order" : 1,
 					"source" : [ "obj-8", 0 ]
@@ -19873,13 +19919,6 @@
 				"implicit" : 1
 			}
 , 			{
-				"name" : "ui_config_sideButtons.maxpat",
-				"bootpath" : "~/Documents/Max 8/Projects/PsychoBox/PsychoBox/patchers",
-				"patcherrelativepath" : ".",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
 				"name" : "ui_config_testSetup.maxpat",
 				"bootpath" : "~/Documents/Max 8/Projects/PsychoBox/PsychoBox/patchers",
 				"patcherrelativepath" : ".",
@@ -19888,6 +19927,34 @@
 			}
 , 			{
 				"name" : "ui_params_grading.maxpat",
+				"bootpath" : "~/Documents/Max 8/Projects/PsychoBox/PsychoBox/patchers",
+				"patcherrelativepath" : ".",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "ui_config_interfaceCustomisation.maxpat",
+				"bootpath" : "~/Documents/Max 8/Projects/PsychoBox/PsychoBox/patchers",
+				"patcherrelativepath" : ".",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "multicomp_subinterface.maxpat",
+				"bootpath" : "~/Documents/Max 8/Projects/PsychoBox/PsychoBox/patchers",
+				"patcherrelativepath" : ".",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "rating_sliderbank.maxpat",
+				"bootpath" : "~/Documents/Max 8/Projects/PsychoBox/PsychoBox/patchers",
+				"patcherrelativepath" : ".",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "rating_slider.maxpat",
 				"bootpath" : "~/Documents/Max 8/Projects/PsychoBox/PsychoBox/patchers",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
@@ -19971,42 +20038,7 @@
 				"implicit" : 1
 			}
 , 			{
-				"name" : "mc_itur_mushra_interface.maxpat",
-				"bootpath" : "~/Documents/Max 8/Projects/PsychoBox/tests/mc_itur_mushra",
-				"patcherrelativepath" : "../../tests/mc_itur_mushra",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "ui_genericGradingInterface.maxpat",
-				"bootpath" : "~/Documents/Max 8/Projects/PsychoBox/PsychoBox/patchers",
-				"patcherrelativepath" : ".",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "multicomp_subinterface.maxpat",
-				"bootpath" : "~/Documents/Max 8/Projects/PsychoBox/PsychoBox/patchers",
-				"patcherrelativepath" : ".",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "rating_sliderbank.maxpat",
-				"bootpath" : "~/Documents/Max 8/Projects/PsychoBox/PsychoBox/patchers",
-				"patcherrelativepath" : ".",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "rating_slider.maxpat",
-				"bootpath" : "~/Documents/Max 8/Projects/PsychoBox/PsychoBox/patchers",
-				"patcherrelativepath" : ".",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "textedit.mxo",
+				"name" : "toggle.mxo",
 				"type" : "iLaX"
 			}
 , 			{
