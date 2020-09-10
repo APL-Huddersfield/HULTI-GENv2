@@ -8,7 +8,8 @@
     ],
     "properties" : {
         "testName" : {
-            "type" : "string"
+            "type" : "string",
+            "default" : "Unnamed Test"
         },
         "setup" : {
             "type" : "object",
@@ -18,7 +19,15 @@
                 "playback"
             ],
             "properties" : {
-                "type" : "empty"
+                "task" : {
+                    "type" : "empty"
+                },
+                "interface" : {
+                    "type" : "empty"
+                },
+                "playback" : {
+                    "type" : "empty"
+                }
             }
         },
         "pool" : {

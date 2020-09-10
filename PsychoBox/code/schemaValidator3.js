@@ -73,11 +73,15 @@ function objectHasRequiredKeys(h, dict) {
     }
 
     var propsDict = dict.get("properties");
+    var subH = h;
+    if (h != "") {
+        subH = h + "::";
+    }
     for (var i = 0; i < l; ++i) {
         if (l > 1) {
             requiredKey = required[i];
         }
-        if (!dictContains(h + "properties::" + requiredKey, propsDict, requiredKey)) {
+        if (!dictContains(subH + "properties::" + requiredKey, propsDict, requiredKey)) {
             hasRequiredKeys = false;
         }
     }
@@ -96,12 +100,16 @@ function inspectObjectProperties(h, dict) {
     }
 
     var subDict;
+    var subH = h;
+    if (h != "") {
+        subH = h + "::";
+    }
     for (var i = 0; i < l; ++i) {
         if (l > 1) {
             propertyKey = keys[i];
         }
         subDict = properties.get(propertyKey);
-        if (!validateDict(h + "::properties::" + propertyKey, subDict)) {
+        if (!validateDict(subH + "properties::" + propertyKey, subDict)) {
             isValid = false;
         }
     }
@@ -126,7 +134,7 @@ function validateBasicType(h, dict) {
 
 function dictContains(h, dict, key) {
     if (!dict.contains(key)) {
-        reportInvalidDict(h, "does not contain required key \"" + key + "\"\n");
+        reportInvalidDict(h, "does not contain required key \"" + key + "\"");
         return false;
     }
     return true;
