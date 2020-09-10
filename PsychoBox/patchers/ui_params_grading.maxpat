@@ -82,8 +82,8 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 686.0, 359.0, 83.0, 22.0 ],
-					"text" : "numstimuli $1"
+					"patching_rect" : [ 686.0, 359.0, 59.0, 22.0 ],
+					"text" : "stimuli $1"
 				}
 
 			}
@@ -94,8 +94,8 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 483.5, 359.0, 104.0, 22.0 ],
-					"text" : "numrepetitions $1"
+					"patching_rect" : [ 483.5, 359.0, 81.0, 22.0 ],
+					"text" : "repetitions $1"
 				}
 
 			}
@@ -106,8 +106,8 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 183.0, 359.0, 85.0, 22.0 ],
-					"text" : "numgroups $1"
+					"patching_rect" : [ 183.0, 359.0, 62.0, 22.0 ],
+					"text" : "groups $1"
 				}
 
 			}
@@ -118,8 +118,8 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 19.0, 359.0, 95.0, 22.0 ],
-					"text" : "numsessions $1"
+					"patching_rect" : [ 19.0, 359.0, 72.0, 22.0 ],
+					"text" : "sessions $1"
 				}
 
 			}
@@ -630,11 +630,7 @@
 
 			}
  ],
-		"dependency_cache" : [ 			{
-				"name" : "textedit.mxo",
-				"type" : "iLaX"
-			}
- ],
+		"dependency_cache" : [  ],
 		"autosave" : 0
 	}
 
