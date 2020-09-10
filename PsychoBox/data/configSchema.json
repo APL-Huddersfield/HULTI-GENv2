@@ -1,0 +1,27 @@
+{
+    "type" : "object",
+    "required" : [
+        "setup",
+        "pool",
+        "sessions"
+    ],
+    "properties" : {
+        "setup" : {
+            "type" : "object",
+            "required" : [
+                "task",
+                "interface",
+                "playback"
+            ],
+            "properties" : {
+                "type" : "empty"
+            }
+        },
+        "pool" : {
+            "type" : "array"
+        },
+        "sessions" : {
+            "type" : "array"
+        }
+    }
+}

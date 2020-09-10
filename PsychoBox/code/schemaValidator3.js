@@ -21,6 +21,9 @@ function inspectDict(h, dict) {
     else if (t == "string" || t == "int" || t == "boolean") {
         return validateBasicType(h, dict);
     }
+    else if (t == "array") {
+        return true;
+    }
     else if (t == "empty") {
         return true;
     }
