@@ -20,7 +20,20 @@
             ],
             "properties" : {
                 "task" : {
-                    "type" : "empty"
+                    "type" : "object",
+                    "required" : [
+                        "plugin",
+                        "parameters"
+                    ],
+                    "properties" : {
+                        "plugin" : {
+                            "type" : "string",
+                            "default" : ""
+                        },
+                        "parameters" : {
+                            "type" : "empty"
+                        }
+                    }
                 },
                 "interface" : {
                     "type" : "empty"
