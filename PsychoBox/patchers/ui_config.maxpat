@@ -168,7 +168,6 @@
 						"style" : "",
 						"subpatcher_template" : "",
 						"assistshowspatchername" : 0,
-						"visible" : 1,
 						"boxes" : [ 							{
 								"box" : 								{
 									"id" : "obj-20",
@@ -335,7 +334,6 @@
 									}
 ,
 									"patching_rect" : [ 1088.0, 249.0, 150.0, 22.0 ],
-									"presentation_linecount" : 3,
 									"saved_object_attributes" : 									{
 										"description" : "",
 										"digest" : "",
@@ -2701,15 +2699,14 @@
 										"style" : "",
 										"subpatcher_template" : "",
 										"assistshowspatchername" : 0,
-										"visible" : 1,
 										"boxes" : [ 											{
 												"box" : 												{
-													"id" : "obj-3",
+													"id" : "obj-11",
 													"maxclass" : "newobj",
 													"numinlets" : 1,
 													"numoutlets" : 0,
-													"patching_rect" : [ 322.0, 226.0, 28.0, 22.0 ],
-													"text" : "s to"
+													"patching_rect" : [ 326.0, 238.0, 76.0, 22.0 ],
+													"text" : "s toAssignUI"
 												}
 
 											}
@@ -2720,8 +2717,8 @@
 													"numinlets" : 2,
 													"numoutlets" : 1,
 													"outlettype" : [ "" ],
-													"patching_rect" : [ 326.0, 168.0, 128.0, 22.0 ],
-													"text" : "stimulusassign onview"
+													"patching_rect" : [ 326.0, 168.0, 46.0, 22.0 ],
+													"text" : "onview"
 												}
 
 											}
@@ -2786,6 +2783,13 @@
 												"patchline" : 												{
 													"destination" : [ "obj-2", 0 ],
 													"source" : [ "obj-31", 0 ]
+												}
+
+											}
+, 											{
+												"patchline" : 												{
+													"destination" : [ "obj-11", 0 ],
+													"source" : [ "obj-5", 0 ]
 												}
 
 											}
@@ -8636,7 +8640,7 @@
 				"implicit" : 1
 			}
 , 			{
-				"name" : "configSessionsSidemenu3.js",
+				"name" : "configSessionsSidemenu4.js",
 				"bootpath" : "~/Documents/Max 8/Projects/PsychoBox/PsychoBox/code",
 				"patcherrelativepath" : "../code",
 				"type" : "TEXT",

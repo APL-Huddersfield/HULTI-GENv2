@@ -2,8 +2,8 @@
 	"name" : "PsychoBox",
 	"version" : 1,
 	"creationdate" : 3666872002,
-	"modificationdate" : 3682601569,
-	"viewrect" : [ 1398.0, 492.0, 389.0, 649.0 ],
+	"modificationdate" : 3682677824,
+	"viewrect" : [ 1417.0, 378.0, 389.0, 649.0 ],
 	"autoorganize" : 1,
 	"hideprojectwindow" : 0,
 	"showdependencies" : 1,
@@ -97,6 +97,11 @@
 			}
 ,
 			"rating_slider.maxpat" : 			{
+				"kind" : "patcher",
+				"local" : 1
+			}
+,
+			"ui_config_chooseTest.maxpat" : 			{
 				"kind" : "patcher",
 				"local" : 1
 			}
@@ -407,12 +412,12 @@
 ,
 			"dialog_changeConfig.maxpat" : 			{
 				"kind" : "patcher",
-				"local" : 1
-			}
-,
-			"ui_config_chooseTest.maxpat" : 			{
-				"kind" : "patcher",
-				"local" : 1
+				"local" : 1,
+				"singleton" : 				{
+					"bootpath" : "~/Documents/Max 8/Projects/PsychoBox/PsychoBox/patchers",
+					"projectrelativepath" : "./patchers"
+				}
+
 			}
 
 		}
@@ -436,12 +441,12 @@
 				"local" : 1
 			}
 ,
-			"makeDefaultFromSchema.js" : 			{
+			"schemaValidator3.js" : 			{
 				"kind" : "javascript",
 				"local" : 1
 			}
 ,
-			"schemaValidator3.js" : 			{
+			"makeDefaultFromSchema.js" : 			{
 				"kind" : "javascript",
 				"local" : 1
 			}
@@ -497,6 +502,11 @@
 			}
 ,
 			"configSessionsSidemenu2.js" : 			{
+				"kind" : "javascript",
+				"local" : 1
+			}
+,
+			"configSessionsSidemenu4.js" : 			{
 				"kind" : "javascript",
 				"local" : 1
 			}

@@ -4,7 +4,7 @@
 		"appversion" : 		{
 			"major" : 8,
 			"minor" : 1,
-			"revision" : 4,
+			"revision" : 5,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
@@ -108,7 +108,7 @@
 				"implicit" : 1
 			}
 , 			{
-				"name" : "configSessionsSidemenu3.js",
+				"name" : "configSessionsSidemenu4.js",
 				"bootpath" : "~/Documents/Max 8/Projects/PsychoBox/PsychoBox/code",
 				"patcherrelativepath" : "../code",
 				"type" : "TEXT",

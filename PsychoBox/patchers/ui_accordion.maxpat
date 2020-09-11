@@ -4,7 +4,7 @@
 		"appversion" : 		{
 			"major" : 8,
 			"minor" : 1,
-			"revision" : 3,
+			"revision" : 5,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
@@ -37,6 +37,7 @@
 		"tags" : "",
 		"style" : "",
 		"subpatcher_template" : "",
+		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
 				"box" : 				{
 					"id" : "obj-18",
@@ -44,7 +45,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 312.0, 75.0, 208.0, 100.0 ],
+					"patching_rect" : [ 312.0, 75.0, 209.0, 100.0 ],
 					"text" : "// UI Accordion\n\nA wrapper patcher for the JSUI accordion menu that intercepts the 'totalheight' message and resizes the JSUI object to (hackedly and somewhat) enable vertical scrolling"
 				}
 
@@ -126,7 +127,7 @@
 , 			{
 				"box" : 				{
 					"border" : 0,
-					"filename" : "configSessionsSidemenu3.js",
+					"filename" : "Macintosh HD:/Users/dale/Documents/Max 8/Projects/PsychoBox/PsychoBox/code/configSessionsSidemenu4.js",
 					"id" : "obj-4",
 					"maxclass" : "jsui",
 					"numinlets" : 1,
@@ -194,7 +195,7 @@
 			}
  ],
 		"dependency_cache" : [ 			{
-				"name" : "configSessionsSidemenu3.js",
+				"name" : "configSessionsSidemenu4.js",
 				"bootpath" : "~/Documents/Max 8/Projects/PsychoBox/PsychoBox/code",
 				"patcherrelativepath" : "../code",
 				"type" : "TEXT",
