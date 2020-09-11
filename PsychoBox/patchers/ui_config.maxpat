@@ -47,7 +47,6 @@
 					"clickthrough" : 0,
 					"enablehscroll" : 0,
 					"enablevscroll" : 0,
-					"hidden" : 1,
 					"id" : "obj-14",
 					"lockeddragscroll" : 0,
 					"maxclass" : "bpatcher",
@@ -58,7 +57,7 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 30.0, 20.0, 700.0, 690.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 289.5, 0.0, 700.0, 690.0 ],
+					"presentation_rect" : [ 345.5, 0.0, 700.0, 690.0 ],
 					"varname" : "choosetest",
 					"viewvisibility" : 1
 				}
@@ -94,7 +93,7 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 71.0, 62.0, 700.0, 690.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 289.5, 0.0, 700.0, 690.0 ],
+					"presentation_rect" : [ 345.5, 0.0, 700.0, 690.0 ],
 					"varname" : "customisation",
 					"viewvisibility" : 1
 				}
@@ -117,7 +116,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 30.0, 803.0, 75.0, 22.0 ],
+					"patching_rect" : [ 30.0, 876.0, 75.0, 22.0 ],
 					"text" : "s toUIConfig"
 				}
 
@@ -8441,7 +8440,7 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 50.0, 40.0, 700.0, 690.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 289.5, 0.0, 700.0, 690.0 ],
+					"presentation_rect" : [ 345.5, 0.0, 700.0, 690.0 ],
 					"varname" : "testsetup",
 					"viewvisibility" : 1
 				}
@@ -8483,7 +8482,7 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 91.0, 90.5, 700.0, 690.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 289.5, 0.0, 700.0, 690.0 ],
+					"presentation_rect" : [ 345.5, 0.0, 700.0, 690.0 ],
 					"varname" : "stimuluspool",
 					"viewvisibility" : 1
 				}
@@ -8496,16 +8495,18 @@
 					"clickthrough" : 0,
 					"enablehscroll" : 0,
 					"enablevscroll" : 0,
+					"hidden" : 1,
 					"id" : "obj-7",
 					"lockeddragscroll" : 0,
 					"maxclass" : "bpatcher",
-					"name" : "ui_config_sessions.maxpat",
+					"name" : "ui_config_stimulusassign.maxpat",
 					"numinlets" : 1,
-					"numoutlets" : 0,
+					"numoutlets" : 1,
 					"offset" : [ 0.0, 0.0 ],
-					"patching_rect" : [ 211.0, 312.0, 610.0, 490.0 ],
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 121.0, 118.0, 700.0, 689.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 0.0, 0.0, 1219.0, 690.0 ],
+					"presentation_rect" : [ 89.0, 0.0, 1217.0, 690.0 ],
 					"varname" : "stimulusassign",
 					"viewvisibility" : 1
 				}
@@ -8575,9 +8576,16 @@
 				}
 
 			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-57", 0 ],
+					"source" : [ "obj-7", 0 ]
+				}
+
+			}
  ],
 		"dependency_cache" : [ 			{
-				"name" : "ui_config_sessions.maxpat",
+				"name" : "ui_config_stimulusassign.maxpat",
 				"bootpath" : "~/Documents/Max 8/Projects/PsychoBox/PsychoBox/patchers",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
