@@ -45,7 +45,7 @@
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 488.5, 77.0, 101.0, 22.0 ],
+					"patching_rect" : [ 542.5, 78.0, 101.0, 22.0 ],
 					"text" : "r toChooseTestUI"
 				}
 
@@ -57,7 +57,7 @@
 					"numinlets" : 3,
 					"numoutlets" : 3,
 					"outlettype" : [ "", "", "" ],
-					"patching_rect" : [ 488.5, 135.0, 165.0, 22.0 ],
+					"patching_rect" : [ 542.5, 136.0, 165.0, 22.0 ],
 					"text" : "route taskmenu gradingmenu"
 				}
 
@@ -69,8 +69,8 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 281.5, 212.0, 35.0, 22.0 ],
-					"text" : "set 0"
+					"patching_rect" : [ 281.5, 212.0, 29.5, 22.0 ],
+					"text" : "0"
 				}
 
 			}
@@ -203,11 +203,11 @@
 				"box" : 				{
 					"id" : "obj-15",
 					"maxclass" : "newobj",
-					"numinlets" : 2,
-					"numoutlets" : 2,
-					"outlettype" : [ "bang", "" ],
-					"patching_rect" : [ 443.5, 135.0, 43.0, 22.0 ],
-					"text" : "sel init"
+					"numinlets" : 3,
+					"numoutlets" : 3,
+					"outlettype" : [ "bang", "bang", "" ],
+					"patching_rect" : [ 443.5, 135.0, 63.0, 22.0 ],
+					"text" : "sel init get"
 				}
 
 			}
@@ -374,6 +374,13 @@
 					"destination" : [ "obj-14", 0 ],
 					"order" : 1,
 					"source" : [ "obj-15", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-16", 0 ],
+					"source" : [ "obj-15", 1 ]
 				}
 
 			}
