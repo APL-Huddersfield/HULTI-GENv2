@@ -70,7 +70,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 1141.0, 118.0, 134.0, 22.0 ],
+					"patching_rect" : [ 1198.0, 118.0, 134.0, 22.0 ],
 					"text" : "loadmess mode onview"
 				}
 
@@ -105,7 +105,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 1062.0, 242.0, 75.0, 22.0 ],
+					"patching_rect" : [ 1119.0, 242.0, 75.0, 22.0 ],
 					"text" : "s toUIConfig"
 				}
 
@@ -3313,6 +3313,29 @@
 										"assistshowspatchername" : 0,
 										"boxes" : [ 											{
 												"box" : 												{
+													"id" : "obj-4",
+													"maxclass" : "message",
+													"numinlets" : 2,
+													"numoutlets" : 1,
+													"outlettype" : [ "" ],
+													"patching_rect" : [ 316.0, 168.0, 45.0, 22.0 ],
+													"text" : "update"
+												}
+
+											}
+, 											{
+												"box" : 												{
+													"id" : "obj-56",
+													"maxclass" : "newobj",
+													"numinlets" : 1,
+													"numoutlets" : 0,
+													"patching_rect" : [ 316.0, 231.0, 110.0, 22.0 ],
+													"text" : "s toStimulusPoolUI"
+												}
+
+											}
+, 											{
+												"box" : 												{
 													"id" : "obj-1",
 													"maxclass" : "message",
 													"numinlets" : 2,
@@ -3342,7 +3365,7 @@
 													"numinlets" : 1,
 													"numoutlets" : 1,
 													"outlettype" : [ "" ],
-													"patching_rect" : [ 195.0, 273.0, 85.0, 22.0 ],
+													"patching_rect" : [ 195.0, 231.0, 85.0, 22.0 ],
 													"text" : "prepend script"
 												}
 
@@ -3356,7 +3379,7 @@
 													"numinlets" : 0,
 													"numoutlets" : 1,
 													"outlettype" : [ "bang" ],
-													"patching_rect" : [ 195.0, 94.0, 30.0, 30.0 ]
+													"patching_rect" : [ 316.0, 97.0, 30.0, 30.0 ]
 												}
 
 											}
@@ -3377,7 +3400,23 @@
 											}
 , 											{
 												"patchline" : 												{
+													"destination" : [ "obj-56", 0 ],
+													"source" : [ "obj-4", 0 ]
+												}
+
+											}
+, 											{
+												"patchline" : 												{
 													"destination" : [ "obj-1", 0 ],
+													"order" : 1,
+													"source" : [ "obj-6", 0 ]
+												}
+
+											}
+, 											{
+												"patchline" : 												{
+													"destination" : [ "obj-4", 0 ],
+													"order" : 0,
 													"source" : [ "obj-6", 0 ]
 												}
 
@@ -8355,7 +8394,7 @@
  ]
 					}
 ,
-					"patching_rect" : [ 1062.0, 196.0, 102.0, 22.0 ],
+					"patching_rect" : [ 1119.0, 196.0, 102.0, 22.0 ],
 					"saved_object_attributes" : 					{
 						"description" : "",
 						"digest" : "",
@@ -8374,7 +8413,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 1145.0, 242.0, 67.0, 22.0 ],
+					"patching_rect" : [ 1202.0, 242.0, 67.0, 22.0 ],
 					"save" : [ "#N", "thispatcher", ";", "#Q", "end", ";" ],
 					"text" : "thispatcher"
 				}
@@ -8387,7 +8426,7 @@
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 1062.0, 118.0, 73.0, 22.0 ],
+					"patching_rect" : [ 1119.0, 118.0, 73.0, 22.0 ],
 					"text" : "r toUIConfig"
 				}
 
@@ -8399,7 +8438,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 1062.0, 335.0, 183.0, 22.0 ],
+					"patching_rect" : [ 1119.0, 335.0, 183.0, 22.0 ],
 					"text" : "read example_2AFC_config.json"
 				}
 
@@ -8411,7 +8450,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 4,
 					"outlettype" : [ "dictionary", "", "", "" ],
-					"patching_rect" : [ 1062.0, 379.0, 63.0, 22.0 ],
+					"patching_rect" : [ 1119.0, 379.0, 63.0, 22.0 ],
 					"saved_object_attributes" : 					{
 						"embed" : 0,
 						"parameter_enable" : 0,
@@ -8453,7 +8492,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 4,
 					"outlettype" : [ "dictionary", "", "", "" ],
-					"patching_rect" : [ 1146.0, 379.0, 202.0, 22.0 ],
+					"patching_rect" : [ 1203.0, 379.0, 202.0, 22.0 ],
 					"saved_object_attributes" : 					{
 						"embed" : 0,
 						"parameter_enable" : 0,
@@ -8504,7 +8543,7 @@
 					"numoutlets" : 1,
 					"offset" : [ 0.0, 0.0 ],
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 121.0, 118.0, 700.0, 689.0 ],
+					"patching_rect" : [ 121.0, 118.0, 959.0, 691.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 89.0, 0.0, 1217.0, 690.0 ],
 					"varname" : "stimulusassign",

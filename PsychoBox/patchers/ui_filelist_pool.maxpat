@@ -4,7 +4,7 @@
 		"appversion" : 		{
 			"major" : 8,
 			"minor" : 1,
-			"revision" : 3,
+			"revision" : 5,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
@@ -37,6 +37,7 @@
 		"tags" : "",
 		"style" : "",
 		"subpatcher_template" : "",
+		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
 				"box" : 				{
 					"comment" : "",
@@ -76,18 +77,6 @@
 			}
 , 			{
 				"box" : 				{
-					"id" : "obj-20",
-					"maxclass" : "live.line",
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 380.0, 95.0, 5.0, 27.0 ],
-					"presentation" : 1,
-					"presentation_rect" : [ 320.0, 0.0, 8.0, 502.0 ]
-				}
-
-			}
-, 			{
-				"box" : 				{
 					"id" : "obj-26",
 					"maxclass" : "live.line",
 					"numinlets" : 1,
@@ -95,20 +84,6 @@
 					"patching_rect" : [ 355.0, 95.0, 5.0, 27.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 30.0, 0.0, 8.0, 502.0 ]
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"fontface" : 1,
-					"id" : "obj-44",
-					"maxclass" : "comment",
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 221.0, 110.0, 82.0, 20.0 ],
-					"presentation" : 1,
-					"presentation_rect" : [ 320.0, 0.0, 82.0, 20.0 ],
-					"text" : "Used by..."
 				}
 
 			}
