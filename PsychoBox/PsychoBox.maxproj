@@ -2,7 +2,7 @@
 	"name" : "PsychoBox",
 	"version" : 1,
 	"creationdate" : 3666872002,
-	"modificationdate" : 3682580100,
+	"modificationdate" : 3682601569,
 	"viewrect" : [ 1398.0, 492.0, 389.0, 649.0 ],
 	"autoorganize" : 1,
 	"hideprojectwindow" : 0,
@@ -403,6 +403,16 @@
 					"projectrelativepath" : "./patchers"
 				}
 
+			}
+,
+			"dialog_changeConfig.maxpat" : 			{
+				"kind" : "patcher",
+				"local" : 1
+			}
+,
+			"ui_config_chooseTest.maxpat" : 			{
+				"kind" : "patcher",
+				"local" : 1
 			}
 
 		}
