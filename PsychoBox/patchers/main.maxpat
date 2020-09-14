@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 303.0, 329.0, 1715.0, 964.0 ],
+		"rect" : [ 506.0, 198.0, 1334.0, 797.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -40,53 +40,6 @@
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
 				"box" : 				{
-					"id" : "obj-43",
-					"maxclass" : "message",
-					"numinlets" : 2,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 1119.0, 279.0, 123.0, 22.0 ],
-					"text" : "remove testee keys 0"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-38",
-					"maxclass" : "newobj",
-					"numinlets" : 2,
-					"numoutlets" : 4,
-					"outlettype" : [ "dictionary", "", "", "" ],
-					"patching_rect" : [ 1031.0, 254.0, 63.0, 22.0 ],
-					"saved_object_attributes" : 					{
-						"embed" : 0,
-						"parameter_enable" : 0,
-						"parameter_mappable" : 0
-					}
-,
-					"text" : "dict testee"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-37",
-					"maxclass" : "newobj",
-					"numinlets" : 1,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 1030.0, 347.0, 96.0, 22.0 ],
-					"saved_object_attributes" : 					{
-						"filename" : "dictArrayTools.js",
-						"parameter_enable" : 0
-					}
-,
-					"text" : "js dictArrayTools"
-				}
-
-			}
-, 			{
-				"box" : 				{
 					"bgmode" : 0,
 					"border" : 0,
 					"clickthrough" : 0,
@@ -115,7 +68,6 @@
 					"clickthrough" : 0,
 					"enablehscroll" : 0,
 					"enablevscroll" : 0,
-					"hidden" : 1,
 					"id" : "obj-5",
 					"lockeddragscroll" : 0,
 					"maxclass" : "bpatcher",
@@ -19162,7 +19114,7 @@
 																		}
 ,
 																		"classnamespace" : "box",
-																		"rect" : [ 476.0, 175.0, 745.0, 623.0 ],
+																		"rect" : [ 1247.0, 656.0, 659.0, 547.0 ],
 																		"bglocked" : 0,
 																		"openinpresentation" : 0,
 																		"default_fontsize" : 12.0,
@@ -19197,7 +19149,7 @@
 																					"numinlets" : 2,
 																					"numoutlets" : 2,
 																					"outlettype" : [ "bang", "" ],
-																					"patching_rect" : [ 70.0, 380.0, 34.0, 22.0 ],
+																					"patching_rect" : [ 57.0, 351.0, 34.0, 22.0 ],
 																					"text" : "sel 1"
 																				}
 
@@ -19209,7 +19161,7 @@
 																					"numinlets" : 2,
 																					"numoutlets" : 1,
 																					"outlettype" : [ "" ],
-																					"patching_rect" : [ 70.0, 305.0, 166.0, 22.0 ],
+																					"patching_rect" : [ 57.0, 276.0, 166.0, 22.0 ],
 																					"text" : "initialise config configSchema"
 																				}
 
@@ -19221,7 +19173,7 @@
 																					"numinlets" : 1,
 																					"numoutlets" : 1,
 																					"outlettype" : [ "" ],
-																					"patching_rect" : [ 70.0, 342.0, 160.0, 22.0 ],
+																					"patching_rect" : [ 57.0, 313.0, 160.0, 22.0 ],
 																					"saved_object_attributes" : 																					{
 																						"filename" : "makeDefaultFromSchema",
 																						"parameter_enable" : 0
@@ -19238,7 +19190,7 @@
 																					"numinlets" : 3,
 																					"numoutlets" : 3,
 																					"outlettype" : [ "bang", "bang", "" ],
-																					"patching_rect" : [ 263.0, 238.0, 44.0, 22.0 ],
+																					"patching_rect" : [ 250.0, 209.0, 44.0, 22.0 ],
 																					"text" : "sel 1 0"
 																				}
 
@@ -19250,7 +19202,7 @@
 																					"numinlets" : 2,
 																					"numoutlets" : 1,
 																					"outlettype" : [ "" ],
-																					"patching_rect" : [ 263.0, 155.0, 139.0, 22.0 ],
+																					"patching_rect" : [ 250.0, 126.0, 139.0, 22.0 ],
 																					"text" : "dictionary configSchema"
 																				}
 
@@ -19262,7 +19214,7 @@
 																					"numinlets" : 2,
 																					"numoutlets" : 4,
 																					"outlettype" : [ "dictionary", "", "", "" ],
-																					"patching_rect" : [ 421.0, 155.0, 211.0, 22.0 ],
+																					"patching_rect" : [ 408.0, 126.0, 211.0, 22.0 ],
 																					"saved_object_attributes" : 																					{
 																						"embed" : 0,
 																						"parameter_enable" : 0,
@@ -19280,7 +19232,7 @@
 																					"numinlets" : 1,
 																					"numoutlets" : 1,
 																					"outlettype" : [ "" ],
-																					"patching_rect" : [ 263.0, 199.0, 116.0, 22.0 ],
+																					"patching_rect" : [ 250.0, 170.0, 116.0, 22.0 ],
 																					"saved_object_attributes" : 																					{
 																						"filename" : "schemaValidator3",
 																						"parameter_enable" : 0
@@ -19297,7 +19249,7 @@
 																					"numinlets" : 2,
 																					"numoutlets" : 4,
 																					"outlettype" : [ "dictionary", "", "", "" ],
-																					"patching_rect" : [ 70.0, 535.0, 63.0, 22.0 ],
+																					"patching_rect" : [ 57.0, 506.0, 63.0, 22.0 ],
 																					"saved_object_attributes" : 																					{
 																						"embed" : 0,
 																						"parameter_enable" : 0,
@@ -19316,7 +19268,7 @@
 																					"numoutlets" : 1,
 																					"outlettype" : [ "bang" ],
 																					"parameter_enable" : 0,
-																					"patching_rect" : [ 263.0, 108.0, 24.0, 24.0 ]
+																					"patching_rect" : [ 250.0, 79.0, 24.0, 24.0 ]
 																				}
 
 																			}
@@ -19327,7 +19279,7 @@
 																					"numinlets" : 2,
 																					"numoutlets" : 1,
 																					"outlettype" : [ "" ],
-																					"patching_rect" : [ 263.0, 305.0, 35.0, 22.0 ],
+																					"patching_rect" : [ 250.0, 276.0, 35.0, 22.0 ],
 																					"text" : "clear"
 																				}
 
@@ -19339,7 +19291,7 @@
 																					"numinlets" : 1,
 																					"numoutlets" : 1,
 																					"outlettype" : [ "" ],
-																					"patching_rect" : [ 70.0, 420.0, 111.0, 22.0 ],
+																					"patching_rect" : [ 57.0, 391.0, 111.0, 22.0 ],
 																					"text" : "v #0-newTestName"
 																				}
 
@@ -19351,7 +19303,7 @@
 																					"numinlets" : 1,
 																					"numoutlets" : 1,
 																					"outlettype" : [ "" ],
-																					"patching_rect" : [ 70.0, 457.0, 127.0, 22.0 ],
+																					"patching_rect" : [ 57.0, 428.0, 127.0, 22.0 ],
 																					"text" : "prepend set testName"
 																				}
 
@@ -19365,7 +19317,7 @@
 																					"numinlets" : 0,
 																					"numoutlets" : 1,
 																					"outlettype" : [ "bang" ],
-																					"patching_rect" : [ 263.0, 64.0, 30.0, 30.0 ]
+																					"patching_rect" : [ 250.0, 35.0, 30.0, 30.0 ]
 																				}
 
 																			}
@@ -19380,7 +19332,7 @@
 , 																			{
 																				"patchline" : 																				{
 																					"destination" : [ "obj-15", 0 ],
-																					"midpoints" : [ 272.5, 291.0, 79.5, 291.0 ],
+																					"midpoints" : [ 259.5, 262.0, 66.5, 262.0 ],
 																					"order" : 1,
 																					"source" : [ "obj-11", 0 ]
 																				}
@@ -19418,7 +19370,7 @@
 , 																			{
 																				"patchline" : 																				{
 																					"destination" : [ "obj-4", 0 ],
-																					"midpoints" : [ 272.5, 503.0, 79.5, 503.0 ],
+																					"midpoints" : [ 259.5, 474.0, 66.5, 474.0 ],
 																					"source" : [ "obj-18", 0 ]
 																				}
 
@@ -20370,6 +20322,7 @@
 					"clickthrough" : 0,
 					"enablehscroll" : 0,
 					"enablevscroll" : 0,
+					"hidden" : 1,
 					"id" : "obj-6",
 					"lockeddragscroll" : 0,
 					"maxclass" : "bpatcher",
@@ -20554,13 +20507,6 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-37", 0 ],
-					"source" : [ "obj-43", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
 					"destination" : [ "obj-12", 0 ],
 					"order" : 1,
 					"source" : [ "obj-8", 0 ]
@@ -20679,6 +20625,13 @@
 				"bootpath" : "~/Documents/Max 8/Projects/HULTI-GENv2/PsychoBox/patchers",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "addRemoveSessions.js",
+				"bootpath" : "~/Documents/Max 8/Projects/HULTI-GENv2/PsychoBox/code",
+				"patcherrelativepath" : "../code",
+				"type" : "TEXT",
 				"implicit" : 1
 			}
 , 			{

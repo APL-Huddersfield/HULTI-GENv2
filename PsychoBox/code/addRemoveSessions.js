@@ -54,15 +54,11 @@ function addgroup(dictName, sessionID) {
 ////////////////////////////////////////////////////////////////////////////////////////////////////
 
 function shrinksessions(dictName, x) {
-    if (typeof(dictName) != "string") {
+    if (typeof(dictName) != "string" || typeof(x) != "number") {
         return;
     }
 
-    var shrinkAmount = 1;
-    if (typeof(x) == "number") {
-        shrinkAmount = x;
-    }
-
+    var shrinkAmount = x;
     var dict = new Dict(dictName);
     var oldDict = new Dict();
     oldDict.clone(dictName);
@@ -100,4 +96,28 @@ function shrinksessions(dictName, x) {
             dict.set(key, oldDict.get(key));
         }
     }
+}
+
+function shrinkgroups(dictName, sessionID, x) {
+    if (typeof(dictName) != "string" || typeof(sessionID) != "number") {
+        return;
+    }
+
+    var shrinkAmount = x;
+    var dict = new Dict(dictName);
+    var oldDict = new Dict();
+    oldDict.clone(dictName);
+
+    var sessionsStr = "sessions[" + sessionID + "]";
+    var newNumGroups = dict.getsize(sessionsStr + "::groups[0]") - shrinkAmount;
+
+    dict.setparse(sessionsStr, "groups:");
+    addgroup(dictName, sessionID);
+    // for (var i = 0; i < newNumGroups; i++) {
+    //     key = sessionsStr + "::groups[" + i + "]::stimuli";
+    //     dict.set(key, oldDict.get(key));
+    //
+    //     key = sessionsStr + "::groups[" + i + "]::reference";
+    //     dict.set(key, oldDict.get(key));
+    // }
 }
