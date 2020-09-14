@@ -84,4 +84,20 @@ function shrinksessions(dictName, x) {
             }
         }
     }
+
+    // Reconstruct groups in each remaining session
+    var sessionsStr;
+    var key;
+
+    for (var i = 0; i < newNumSessions; i++) {
+        sessionsStr = "sessions[" + i + "]";
+        numGroups = dict.getsize(sessionsStr + "::groups");
+        for (var j = 0; j < numGroups; j++) {
+            key = sessionsStr + "::groups[" + j + "]::stimuli";
+            dict.set(key, oldDict.get(key));
+
+            key = sessionsStr + "::groups[" + j + "]::reference";
+            dict.set(key, oldDict.get(key));
+        }
+    }
 }
