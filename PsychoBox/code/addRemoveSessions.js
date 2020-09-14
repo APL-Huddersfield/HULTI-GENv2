@@ -27,7 +27,15 @@ function addgroup(dictName, sessionID) {
     }
     var dict = new Dict(dictName);
 
+    if (!dict.contains("sessions")) {
+        return;
+    }
+
     if (sessionID < 0 || sessionID >= dict.getsize("sessions")) {
+        return;
+    }
+
+    if (typeof(dict.get("sessions")) == "string") {
         return;
     }
 
@@ -62,6 +70,11 @@ function shrinksessions(dictName, x) {
     var dict = new Dict(dictName);
     var oldDict = new Dict();
     oldDict.clone(dictName);
+
+    if (!dict.contains("sessions")) {
+        return;
+    }
+
     dict.set("sessions");
 
     var newNumSessions = oldDict.getsize("sessions") - shrinkAmount;
@@ -108,16 +121,24 @@ function shrinkgroups(dictName, sessionID, x) {
     var oldDict = new Dict();
     oldDict.clone(dictName);
 
+    if (!dict.contains("sessions")) {
+        return;
+    }
+
     var sessionsStr = "sessions[" + sessionID + "]";
-    var newNumGroups = dict.getsize(sessionsStr + "::groups[0]") - shrinkAmount;
+    var newNumGroups = dict.getsize(sessionsStr + "::groups") - shrinkAmount;
+    if (newNumGroups < 1) {
+        return;
+    }
 
     dict.setparse(sessionsStr, "groups:");
-    addgroup(dictName, sessionID);
-    // for (var i = 0; i < newNumGroups; i++) {
-    //     key = sessionsStr + "::groups[" + i + "]::stimuli";
-    //     dict.set(key, oldDict.get(key));
-    //
-    //     key = sessionsStr + "::groups[" + i + "]::reference";
-    //     dict.set(key, oldDict.get(key));
-    // }
+
+    for (var i = 0; i < newNumGroups; i++) {
+        addgroup(dictName, sessionID);
+        key = sessionsStr + "::groups[" + i + "]::stimuli";
+        dict.set(key, oldDict.get(key));
+
+        key = sessionsStr + "::groups[" + i + "]::reference";
+        dict.set(key, oldDict.get(key));
+    }
 }
