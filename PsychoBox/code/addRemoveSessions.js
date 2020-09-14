@@ -7,15 +7,17 @@ function addsession(dictName) {
 
     var sessions = dict.get("sessions");
     var sessionID = 0;
+
     if (typeof(sessions) == "string") {
-        // Sessions is empty
+        // Sessions array is empty
         dict.append("sessions");
     }
     else if (typeof(sessions) == "object" || typeof(sessions) == "array") {
         dict.append("sessions", "*");
         sessionID = dict.getsize("sessions") - 1;
     }
-    dict.setparse("sessions[" + sessionID.toString() + "]", "groups:");
+
+    dict.setparse("sessions[" + sessionID + "]", "groups:");
     addgroup(dictName, sessionID);
 }
 
@@ -30,13 +32,13 @@ function addgroup(dictName, sessionID) {
     }
 
     var dict = new Dict(dictName);
-    var sessionsStr= "sessions[" + sessionID.toString() + "]";
+    var sessionsStr= "sessions[" + sessionID + "]";
     var groupsStr = sessionsStr + "::groups";
     var groups = dict.get(groupsStr);
     var groupID = 0;
 
     if (typeof(groups) == "string") {
-        // Sessions is empty
+        // Groups array is empty
         dict.append(groupsStr);
     }
     else if (typeof(groups) == "object" || typeof(groups) == "array") {
@@ -44,15 +46,42 @@ function addgroup(dictName, sessionID) {
         groupID = dict.getsize(groupsStr) - 1;
 
     }
-    dict.setparse(groupsStr + "[" + groupID.toString() + "]", "stimuli: reference:");
-    dict.set(groupsStr + "[" + groupID.toString() + "]::reference", -1);
+
+    dict.setparse(groupsStr + "[" + groupID + "]", "stimuli: reference:");
+    dict.set(groupsStr + "[" + groupID + "]::reference", -1);
 }
 
-function remove() {
-    if (arguments.length < 2) {
+////////////////////////////////////////////////////////////////////////////////////////////////////
+
+function shrinksessions(dictName, x) {
+    if (typeof(dictName) != "string") {
         return;
     }
-    var dictName = arguments[0];
-    var opType = arguments[1];
+
+    var shrinkAmount = 1;
+    if (typeof(x) == "number") {
+        shrinkAmount = x;
+    }
+
     var dict = new Dict(dictName);
+    var oldDict = new Dict();
+    oldDict.clone(dictName);
+    dict.set("sessions");
+
+    var newNumSessions = oldDict.getsize("sessions") - shrinkAmount;
+    if (newNumSessions < 1) {
+        return;
+    }
+
+    // Reconstruct remaining sessions
+    var numGroups = 1;
+    for (var i = 0; i < newNumSessions; i++) {
+        addsession(dictName);
+        numGroups = oldDict.getsize("sessions[" + i + "]::groups");
+        if (numGroups > 1) {
+            for (var j = 0; j < numGroups - 1; j++) {
+                addgroup(dictName, i);
+            }
+        }
+    }
 }
