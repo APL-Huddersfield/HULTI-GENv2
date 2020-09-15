@@ -85,7 +85,7 @@ function expandallgroups(dictName, expansionAmount) {
     var dict = new Dict(dictName);
     var numSessions = 0;
 
-    if (typeof(dict.get("sessions")) == "string") {
+    if (typeof(dict.get("sessions")) == "string" || typeof(expansionAmount) != "number") {
         return;
     }
     else {
@@ -168,7 +168,7 @@ function shrinkgroup(dictName, sessionID, x) {
     var sessionsStr = "sessions[" + sessionID + "]";
     var newNumGroups = dict.getsize(sessionsStr + "::groups") - shrinkAmount;
     if (newNumGroups < 1) {
-        return;
+        newNumGroups = 1;
     }
 
     dict.setparse(sessionsStr, "groups:");
@@ -180,5 +180,21 @@ function shrinkgroup(dictName, sessionID, x) {
 
         key = sessionsStr + "::groups[" + i + "]::reference";
         dict.set(key, oldDict.get(key));
+    }
+}
+
+function shrinkallgroups(dictName, x) {
+    var dict = new Dict(dictName);
+    var numSessions = 0;
+
+    if (typeof(dict.get("sessions")) == "string" || typeof(x) != "number") {
+        return;
+    }
+    else {
+        numSessions = dict.getsize("sessions");
+    }
+
+    for (var i = 0; i < numSessions; ++i) {
+        shrinkgroup(dictName, i, x);
     }
 }
