@@ -43,10 +43,13 @@ The manifest file defines what the test actually is and informs HULTIGEN what is
 
 The required keys are as follows:
 
-* model
+* model (deprecated)
 * name (this is what appears in the drop down menu)
-* type
+* type (deprecated)
+* tag
 * parameterKeys
+
+***START OF DEPRECATED***
 
 "model" defines what model the test will follow, and informs HULTIGEN what built-in testing types to load and how to layout the results file. The models include:
 
@@ -73,7 +76,19 @@ If the experimenter uses any model except custom, HULTIGEN will use its own, bui
 
 Again, if the experimenter uses any type except custom, HULTIGEN will use the built in test setup functions. Otherwise, they must define their own.
 
+***END OF DEPRECATED***
+
 "parameterKeys" is where the test specific parameters and associated JSON file keys shall be defined. The built in HULTIGEN tests will have these predefined, but for custom test these must be defined.
+
+### Test Type Tagging
+
+***Replaces deprecated model and task keys***
+
+To allow for straightforward grouping and (un-)hashing of test types so that the correct configurator parameters can be displayed, the manifest should contain a 'tag' key. The following values for 'tag' are used as of writing:
+
+* grading
+* nonAdaptivePsychometric
+* adaptivePsychometric
 
 Here are some example manifest.json files:
 
