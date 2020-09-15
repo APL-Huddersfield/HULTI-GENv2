@@ -61,6 +61,46 @@ function addgroup(dictName, sessionID) {
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////
 
+function expandsessions(dictName, expansionAmount) {
+    if (typeof(dictName) != "string" || typeof(expansionAmount) != "number") {
+        return;
+    }
+
+    for (var i = 0; i < expansionAmount; i++) {
+        addsession(dictName);
+    }
+}
+
+function expandgroup(dictName, sessionID, expansionAmount) {
+    if (typeof(dictName) != "string" || typeof(expansionAmount) != "number") {
+        return;
+    }
+
+    for (var i = 0; i < expansionAmount; i++) {
+        addgroup(dictName, sessionID);
+    }
+}
+
+function expandallgroups(dictName, expansionAmount) {
+    var dict = new Dict(dictName);
+    var numSessions = 0;
+
+    if (typeof(dict.get("sessions")) == "string") {
+        return;
+    }
+    else {
+        numSessions = dict.getsize("sessions");
+    }
+
+    for (var i = 0; i < numSessions; ++i) {
+        for (var j = 0; j < expansionAmount; ++j) {
+            addgroup(dictName, i);
+        }
+    }
+}
+
+////////////////////////////////////////////////////////////////////////////////////////////////////
+
 function shrinksessions(dictName, x) {
     if (typeof(dictName) != "string" || typeof(x) != "number") {
         return;
@@ -111,7 +151,7 @@ function shrinksessions(dictName, x) {
     }
 }
 
-function shrinkgroups(dictName, sessionID, x) {
+function shrinkgroup(dictName, sessionID, x) {
     if (typeof(dictName) != "string" || typeof(sessionID) != "number") {
         return;
     }
