@@ -31,11 +31,11 @@ function addgroup(dictName, sessionID) {
         return;
     }
 
-    if (sessionID < 0 || sessionID >= dict.getsize("sessions")) {
+    if (typeof(dict.get("sessions")) == "string") {
         return;
     }
 
-    if (typeof(dict.get("sessions")) == "string") {
+    if (sessionID < 0 || sessionID >= dict.getsize("sessions")) {
         return;
     }
 
@@ -57,6 +57,102 @@ function addgroup(dictName, sessionID) {
 
     dict.setparse(groupsStr + "[" + groupID + "]", "stimuli: reference:");
     dict.set(groupsStr + "[" + groupID + "]::reference", -1);
+}
+
+////////////////////////////////////////////////////////////////////////////////////////////////////
+
+function resizesessions(dictName, x) {
+    if (typeof(dictName) != "string" || typeof(x) != "number") {
+        return;
+    }
+    var dict = new Dict(dictName);
+
+    if (!dict.contains("sessions")) {
+        return;
+    }
+
+    if (typeof(dict.get("sessions")) == "string") {
+        return;
+    }
+
+    if (x < 1) {
+        return;
+    }
+
+    var numSessions = dict.getsize("sessions");
+    var resizeAmount = x - numSessions;
+
+    if (resizeAmount < 0) {
+        shrinksessions(dictName, Math.abs(resizeAmount));
+    }
+    else if (resizeAmount > 0) {
+        expandsessions(dictName, Math.abs(resizeAmount));
+    }
+}
+
+function resizegroup(dictName, sessionID, x) {
+    if (typeof(dictName) != "string" || typeof(sessionID) != "number" || typeof(x) != "number") {
+        return;
+    }
+    var dict = new Dict(dictName);
+
+    if (!dict.contains("sessions")) {
+        return;
+    }
+
+    if (typeof(dict.get("sessions")) == "string") {
+        return;
+    }
+
+    if (sessionID < 0 || sessionID >= dict.getsize("sessions")) {
+        return;
+    }
+
+    var numGroups = dict.getsize("sessions[" + sessionIDm + "]::groups");
+    var resizeAmount = x - numGroups;
+    if (resizeAmount < 0) {
+        shrinkgroup(dictName, sessionID, Math.abs(resizeAmount));
+    }
+    else if (resizeAmount > 0) {
+        expandgroup(dictName, sessionID, Math.abs(resizeAmount));
+    }
+}
+
+function resizeallgroups(dictName, x) {
+    if (typeof(dictName) != "string" || typeof(x) != "number") {
+        return;
+    }
+    var dict = new Dict(dictName);
+
+    if (!dict.contains("sessions")) {
+        return;
+    }
+
+    if (typeof(dict.get("sessions")) == "string") {
+        return;
+    }
+
+    if (x < 1) {
+        return;
+    }
+
+    var numSessions = dict.getsize("sessions");
+    var sizeOfGroup = 0;
+    var resizeAmount = 0;
+    for (var i = 0; i < numSessions; i++) {
+        sizeOfGroup = dict.getsize("sessions["+ i + "]::groups");
+
+        resizeAmount = x - sizeOfGroup;
+        if (resizeAmount < 0) {
+            if (sizeOfGroup == 1) {
+                continue;
+            }
+            shrinkgroup(dictName, i, Math.abs(resizeAmount));
+        }
+        else if (resizeAmount > 0) {
+            expandgroup(dictName, i, Math.abs(resizeAmount));
+        }
+    }
 }
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////
