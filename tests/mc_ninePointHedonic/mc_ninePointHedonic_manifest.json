@@ -3,7 +3,8 @@
     "name" : "9-point Hedonic Scale",
     "parameters" : [
         "repetitions",
-        "objective"
+        "objective",
+        "stimuliPerTrial"
     ],
     "parametersMenu" : "itur",
     "requiresReference" : true,

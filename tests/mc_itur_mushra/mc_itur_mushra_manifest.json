@@ -3,7 +3,8 @@
     "name" : "ITU-R BS.1534-2 (MUSHRA)",
     "parameters" : [
         "repetitions",
-        "objective"
+        "objective",
+        "stimuliPerTrial"
     ],
     "parametersMenu" : "itur",
     "requiresReference" : true,

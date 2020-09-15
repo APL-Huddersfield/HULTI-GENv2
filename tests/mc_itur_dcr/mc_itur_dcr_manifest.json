@@ -3,7 +3,8 @@
     "name" : "Degradation Category Rating (DCR)",
     "parameters" : [
         "repetitions",
-        "objective"
+        "objective",
+        "stimuliPerTrial"
     ],
     "parametersMenu" : "itur",
     "requiresReference" : true,

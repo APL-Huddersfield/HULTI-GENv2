@@ -3,7 +3,8 @@
     "name" : "Bipolar with Ref",
     "parameters" : [
         "repetitions",
-        "objective"
+        "objective",
+        "stimuliPerTrial"
     ],
     "parametersMenu" : "itur",
     "requiresReference" : true,

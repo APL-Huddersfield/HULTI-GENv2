@@ -3,7 +3,8 @@
     "name" : "ITU-R BS.1116-3 (ABC)",
     "parameters" : [
         "repetitions",
-        "objective"
+        "objective",
+        "stimuliPerTrial"
     ],
     "parametersMenu" : "itur",
     "requiresReference" : true,
