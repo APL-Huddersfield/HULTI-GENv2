@@ -71,15 +71,15 @@ function resizesessions(dictName, x) {
         return;
     }
 
-    if (typeof(dict.get("sessions")) == "string") {
-        return;
-    }
-
     if (x < 1) {
         return;
     }
 
-    var numSessions = dict.getsize("sessions");
+    var numSessions = 0;
+    if (typeof(dict.get("sessions")) != "string") {
+        numSessions = dict.getsize("sessions");
+    }
+    
     var resizeAmount = x - numSessions;
 
     if (resizeAmount < 0) {
