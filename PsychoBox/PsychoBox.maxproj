@@ -2,8 +2,8 @@
 	"name" : "PsychoBox",
 	"version" : 1,
 	"creationdate" : 3666872002,
-	"modificationdate" : 3682920853,
-	"viewrect" : [ 1417.0, 378.0, 389.0, 649.0 ],
+	"modificationdate" : 3683028713,
+	"viewrect" : [ 1417.0, 377.0, 389.0, 649.0 ],
 	"autoorganize" : 1,
 	"hideprojectwindow" : 0,
 	"showdependencies" : 1,
@@ -141,17 +141,17 @@
 				"kind" : "patcher"
 			}
 ,
-			"player_parallel.maxpat" : 			{
-				"kind" : "patcher",
-				"local" : 1
-			}
-,
 			"ui_mainMenu.maxpat" : 			{
 				"kind" : "patcher",
 				"local" : 1
 			}
 ,
 			"ui_sessionComplete.maxpat" : 			{
+				"kind" : "patcher",
+				"local" : 1
+			}
+,
+			"player_parallel.maxpat" : 			{
 				"kind" : "patcher",
 				"local" : 1
 			}
@@ -420,6 +420,11 @@
 				}
 
 			}
+,
+			"dialog_changeTestType.maxpat" : 			{
+				"kind" : "patcher",
+				"local" : 1
+			}
 
 		}
 ,
@@ -514,7 +519,12 @@
 ,
 			"dictArrayTools.js" : 			{
 				"kind" : "javascript",
-				"local" : 1
+				"local" : 1,
+				"singleton" : 				{
+					"bootpath" : "~/Documents/Max 8/Projects/HULTI-GENv2/PsychoBox/patchers",
+					"projectrelativepath" : "./patchers"
+				}
+
 			}
 
 		}

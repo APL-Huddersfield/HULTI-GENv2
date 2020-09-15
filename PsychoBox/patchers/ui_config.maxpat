@@ -1640,7 +1640,7 @@
 										}
 ,
 										"classnamespace" : "box",
-										"rect" : [ 1030.0, 445.0, 945.0, 550.0 ],
+										"rect" : [ 1030.0, 445.0, 845.0, 501.0 ],
 										"bglocked" : 0,
 										"openinpresentation" : 0,
 										"default_fontsize" : 12.0,
@@ -1670,12 +1670,24 @@
 										"assistshowspatchername" : 0,
 										"boxes" : [ 											{
 												"box" : 												{
+													"id" : "obj-12",
+													"maxclass" : "button",
+													"numinlets" : 1,
+													"numoutlets" : 1,
+													"outlettype" : [ "bang" ],
+													"parameter_enable" : 0,
+													"patching_rect" : [ 246.0, 312.0, 24.0, 24.0 ]
+												}
+
+											}
+, 											{
+												"box" : 												{
 													"id" : "obj-6",
 													"maxclass" : "newobj",
 													"numinlets" : 3,
 													"numoutlets" : 3,
 													"outlettype" : [ "bang", "bang", "" ],
-													"patching_rect" : [ 406.5, 277.0, 44.0, 22.0 ],
+													"patching_rect" : [ 395.5, 206.0, 44.0, 22.0 ],
 													"text" : "sel 1 0"
 												}
 
@@ -1687,7 +1699,7 @@
 													"numinlets" : 1,
 													"numoutlets" : 1,
 													"outlettype" : [ "" ],
-													"patching_rect" : [ 406.5, 238.0, 105.0, 22.0 ],
+													"patching_rect" : [ 395.5, 166.0, 105.0, 22.0 ],
 													"text" : "v #0-testTypeDirty"
 												}
 
@@ -1794,8 +1806,8 @@
 																	"numinlets" : 0,
 																	"numoutlets" : 1,
 																	"outlettype" : [ "" ],
-																	"patching_rect" : [ 183.0, 135.0, 178.0, 22.0 ],
-																	"text" : "r fromChangeParametersDialog"
+																	"patching_rect" : [ 183.0, 135.0, 164.0, 22.0 ],
+																	"text" : "r fromChangeTestTypeDialog"
 																}
 
 															}
@@ -1806,8 +1818,8 @@
 																	"numinlets" : 2,
 																	"numoutlets" : 1,
 																	"outlettype" : [ "" ],
-																	"patching_rect" : [ 126.0, 89.0, 226.0, 22.0 ],
-																	"text" : "loadunique dialog_changeConfig.maxpat"
+																	"patching_rect" : [ 126.0, 89.0, 239.0, 22.0 ],
+																	"text" : "loadunique dialog_changeTestType.maxpat"
 																}
 
 															}
@@ -1862,7 +1874,7 @@
  ]
 													}
 ,
-													"patching_rect" : [ 406.5, 320.0, 70.0, 22.0 ],
+													"patching_rect" : [ 395.5, 258.0, 70.0, 22.0 ],
 													"saved_object_attributes" : 													{
 														"description" : "",
 														"digest" : "",
@@ -1881,7 +1893,7 @@
 													"maxclass" : "comment",
 													"numinlets" : 1,
 													"numoutlets" : 0,
-													"patching_rect" : [ 669.5, 300.0, 230.0, 167.0 ],
+													"patching_rect" : [ 579.5, 252.0, 230.0, 167.0 ],
 													"text" : "TODO:\n\nDetected when values have been added to the config, so that when the procedure / task is changed, the user is warned that this will reinialise the following:\n\n- Parameters\n- Sessions / groups (?, maybe, but if test specific information is kept in the parameters section, then these will not have be altered)"
 												}
 
@@ -1893,7 +1905,7 @@
 													"numinlets" : 2,
 													"numoutlets" : 1,
 													"outlettype" : [ "" ],
-													"patching_rect" : [ 270.0, 238.0, 29.5, 22.0 ],
+													"patching_rect" : [ 246.0, 371.0, 29.5, 22.0 ],
 													"text" : "init"
 												}
 
@@ -1904,7 +1916,7 @@
 													"maxclass" : "newobj",
 													"numinlets" : 1,
 													"numoutlets" : 0,
-													"patching_rect" : [ 270.0, 277.0, 93.0, 22.0 ],
+													"patching_rect" : [ 246.0, 410.0, 93.0, 22.0 ],
 													"text" : "s toTestSetupUI"
 												}
 
@@ -2269,7 +2281,7 @@
  ]
 													}
 ,
-													"patching_rect" : [ 419.0, 372.5, 140.0, 22.0 ],
+													"patching_rect" : [ 408.0, 324.5, 140.0, 22.0 ],
 													"saved_object_attributes" : 													{
 														"description" : "",
 														"digest" : "",
@@ -2288,7 +2300,7 @@
 													"numinlets" : 1,
 													"numoutlets" : 1,
 													"outlettype" : [ "" ],
-													"patching_rect" : [ 566.999999999999886, 198.0, 108.0, 22.0 ],
+													"patching_rect" : [ 555.999999999999886, 166.0, 108.0, 22.0 ],
 													"text" : "prepend taskmenu"
 												}
 
@@ -2299,7 +2311,7 @@
 													"maxclass" : "newobj",
 													"numinlets" : 1,
 													"numoutlets" : 0,
-													"patching_rect" : [ 566.999999999999886, 238.0, 103.0, 22.0 ],
+													"patching_rect" : [ 555.999999999999886, 206.0, 103.0, 22.0 ],
 													"text" : "s toChooseTestUI"
 												}
 
@@ -2656,7 +2668,7 @@
  ]
 													}
 ,
-													"patching_rect" : [ 471.749999999999943, 155.0, 69.0, 22.0 ],
+													"patching_rect" : [ 460.749999999999943, 123.0, 69.0, 22.0 ],
 													"saved_object_attributes" : 													{
 														"description" : "",
 														"digest" : "",
@@ -3489,7 +3501,7 @@
  ]
 													}
 ,
-													"patching_rect" : [ 566.999999999999886, 155.0, 100.0, 22.0 ],
+													"patching_rect" : [ 555.999999999999886, 123.0, 100.0, 22.0 ],
 													"saved_object_attributes" : 													{
 														"description" : "",
 														"digest" : "",
@@ -3508,7 +3520,7 @@
 													"numinlets" : 2,
 													"numoutlets" : 1,
 													"outlettype" : [ "" ],
-													"patching_rect" : [ 147.0, 238.0, 91.0, 22.0 ],
+													"patching_rect" : [ 130.0, 371.0, 91.0, 22.0 ],
 													"text" : "mode testsetup"
 												}
 
@@ -3520,7 +3532,7 @@
 													"numinlets" : 2,
 													"numoutlets" : 1,
 													"outlettype" : [ "" ],
-													"patching_rect" : [ 60.0, 238.0, 77.0, 22.0 ],
+													"patching_rect" : [ 41.0, 371.0, 77.0, 22.0 ],
 													"text" : "mode cancel"
 												}
 
@@ -3532,7 +3544,7 @@
 													"numinlets" : 3,
 													"numoutlets" : 3,
 													"outlettype" : [ "bang", "bang", "" ],
-													"patching_rect" : [ 376.5, 155.0, 79.0, 22.0 ],
+													"patching_rect" : [ 365.5, 123.0, 79.0, 22.0 ],
 													"text" : "sel back next"
 												}
 
@@ -3544,7 +3556,7 @@
 													"numinlets" : 2,
 													"numoutlets" : 4,
 													"outlettype" : [ "dictionary", "", "", "" ],
-													"patching_rect" : [ 683.166666666666629, 155.0, 76.0, 22.0 ],
+													"patching_rect" : [ 672.166666666666629, 123.0, 76.0, 22.0 ],
 													"saved_object_attributes" : 													{
 														"embed" : 0,
 														"parameter_enable" : 0,
@@ -3562,7 +3574,7 @@
 													"numinlets" : 4,
 													"numoutlets" : 4,
 													"outlettype" : [ "", "", "", "" ],
-													"patching_rect" : [ 376.5, 105.0, 304.749999999999886, 22.0 ],
+													"patching_rect" : [ 365.5, 73.0, 304.749999999999886, 22.0 ],
 													"text" : "route buttonpressed task procedure"
 												}
 
@@ -3575,7 +3587,7 @@
 													"maxclass" : "outlet",
 													"numinlets" : 1,
 													"numoutlets" : 0,
-													"patching_rect" : [ 60.0, 372.5, 30.0, 30.0 ]
+													"patching_rect" : [ 41.0, 435.5, 30.0, 30.0 ]
 												}
 
 											}
@@ -3588,7 +3600,7 @@
 													"numinlets" : 0,
 													"numoutlets" : 1,
 													"outlettype" : [ "" ],
-													"patching_rect" : [ 376.5, 47.0, 31.0, 31.0 ]
+													"patching_rect" : [ 365.5, 15.0, 31.0, 31.0 ]
 												}
 
 											}
@@ -3597,6 +3609,23 @@
 												"patchline" : 												{
 													"destination" : [ "obj-7", 0 ],
 													"source" : [ "obj-1", 0 ]
+												}
+
+											}
+, 											{
+												"patchline" : 												{
+													"destination" : [ "obj-13", 0 ],
+													"order" : 0,
+													"source" : [ "obj-12", 0 ]
+												}
+
+											}
+, 											{
+												"patchline" : 												{
+													"destination" : [ "obj-65", 0 ],
+													"midpoints" : [ 255.5, 353.0, 139.5, 353.0 ],
+													"order" : 1,
+													"source" : [ "obj-12", 0 ]
 												}
 
 											}
@@ -3623,7 +3652,17 @@
 											}
 , 											{
 												"patchline" : 												{
+													"destination" : [ "obj-12", 0 ],
+													"midpoints" : [ 417.5, 244.0, 255.5, 244.0 ],
+													"order" : 1,
+													"source" : [ "obj-6", 1 ]
+												}
+
+											}
+, 											{
+												"patchline" : 												{
 													"destination" : [ "obj-4", 0 ],
+													"order" : 0,
 													"source" : [ "obj-6", 1 ]
 												}
 
@@ -3637,17 +3676,7 @@
 											}
 , 											{
 												"patchline" : 												{
-													"destination" : [ "obj-13", 0 ],
-													"midpoints" : [ 416.0, 225.0, 279.5, 225.0 ],
-													"order" : 1,
-													"source" : [ "obj-62", 1 ]
-												}
-
-											}
-, 											{
-												"patchline" : 												{
 													"destination" : [ "obj-3", 0 ],
-													"order" : 0,
 													"source" : [ "obj-62", 1 ]
 												}
 
@@ -3655,17 +3684,8 @@
 , 											{
 												"patchline" : 												{
 													"destination" : [ "obj-64", 0 ],
-													"midpoints" : [ 386.0, 207.0, 69.5, 207.0 ],
+													"midpoints" : [ 375.0, 175.0, 50.5, 175.0 ],
 													"source" : [ "obj-62", 0 ]
-												}
-
-											}
-, 											{
-												"patchline" : 												{
-													"destination" : [ "obj-65", 0 ],
-													"midpoints" : [ 416.0, 225.0, 156.5, 225.0 ],
-													"order" : 2,
-													"source" : [ "obj-62", 1 ]
 												}
 
 											}
@@ -3706,7 +3726,18 @@
 											}
 , 											{
 												"patchline" : 												{
+													"destination" : [ "obj-12", 0 ],
+													"midpoints" : [ 456.0, 298.0, 255.5, 298.0 ],
+													"order" : 1,
+													"source" : [ "obj-71", 1 ]
+												}
+
+											}
+, 											{
+												"patchline" : 												{
 													"destination" : [ "obj-4", 0 ],
+													"midpoints" : [ 456.0, 298.75, 417.5, 298.75 ],
+													"order" : 0,
 													"source" : [ "obj-71", 1 ]
 												}
 
