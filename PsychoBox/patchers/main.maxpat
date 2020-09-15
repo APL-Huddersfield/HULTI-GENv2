@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 506.0, 198.0, 1334.0, 797.0 ],
+		"rect" : [ 506.0, 198.0, 1334.0, 857.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -68,6 +68,7 @@
 					"clickthrough" : 0,
 					"enablehscroll" : 0,
 					"enablevscroll" : 0,
+					"hidden" : 1,
 					"id" : "obj-5",
 					"lockeddragscroll" : 0,
 					"maxclass" : "bpatcher",
@@ -8968,6 +8969,7 @@
 						"style" : "",
 						"subpatcher_template" : "",
 						"assistshowspatchername" : 0,
+						"visible" : 1,
 						"boxes" : [ 							{
 								"box" : 								{
 									"id" : "obj-10",
@@ -15962,7 +15964,7 @@
 														}
 ,
 														"classnamespace" : "box",
-														"rect" : [ 339.0, 140.0, 802.0, 798.0 ],
+														"rect" : [ 577.0, 212.0, 802.0, 798.0 ],
 														"bglocked" : 0,
 														"openinpresentation" : 0,
 														"default_fontsize" : 12.0,
@@ -15991,6 +15993,127 @@
 														"subpatcher_template" : "",
 														"assistshowspatchername" : 0,
 														"boxes" : [ 															{
+																"box" : 																{
+																	"id" : "obj-13",
+																	"linecount" : 2,
+																	"maxclass" : "comment",
+																	"numinlets" : 1,
+																	"numoutlets" : 0,
+																	"patching_rect" : [ 23.5, 66.0, 150.0, 33.0 ],
+																	"text" : "These are currently baked into HULTI-GEN for now. "
+																}
+
+															}
+, 															{
+																"box" : 																{
+																	"coll_data" : 																	{
+																		"count" : 1,
+																		"data" : [ 																			{
+																				"key" : 0,
+																				"value" : [ "staircase_twoAFC" ]
+																			}
+ ]
+																	}
+,
+																	"id" : "obj-22",
+																	"linecount" : 2,
+																	"maxclass" : "newobj",
+																	"numinlets" : 1,
+																	"numoutlets" : 4,
+																	"outlettype" : [ "", "", "", "" ],
+																	"patching_rect" : [ 23.5, 200.0, 151.0, 35.0 ],
+																	"saved_object_attributes" : 																	{
+																		"embed" : 1,
+																		"precision" : 6
+																	}
+,
+																	"text" : "coll adaptivePsychometric @embed 1"
+																}
+
+															}
+, 															{
+																"box" : 																{
+																	"coll_data" : 																	{
+																		"count" : 2,
+																		"data" : [ 																			{
+																				"key" : 0,
+																				"value" : [ "sdt_twoAFC" ]
+																			}
+, 																			{
+																				"key" : 1,
+																				"value" : [ "sdt_abx" ]
+																			}
+ ]
+																	}
+,
+																	"id" : "obj-19",
+																	"linecount" : 2,
+																	"maxclass" : "newobj",
+																	"numinlets" : 1,
+																	"numoutlets" : 4,
+																	"outlettype" : [ "", "", "", "" ],
+																	"patching_rect" : [ 23.5, 152.0, 172.0, 35.0 ],
+																	"saved_object_attributes" : 																	{
+																		"embed" : 1,
+																		"precision" : 6
+																	}
+,
+																	"text" : "coll nonAdaptivePsychometric @embed 1"
+																}
+
+															}
+, 															{
+																"box" : 																{
+																	"coll_data" : 																	{
+																		"count" : 7,
+																		"data" : [ 																			{
+																				"key" : 0,
+																				"value" : [ "mc_itur_1116" ]
+																			}
+, 																			{
+																				"key" : 1,
+																				"value" : [ "mc_itur_mushra" ]
+																			}
+, 																			{
+																				"key" : 2,
+																				"value" : [ "mc_bipolar" ]
+																			}
+, 																			{
+																				"key" : 3,
+																				"value" : [ "mc_itur_acr" ]
+																			}
+, 																			{
+																				"key" : 4,
+																				"value" : [ "mc_itur_dcr" ]
+																			}
+, 																			{
+																				"key" : 5,
+																				"value" : [ "mc_itur_ccr" ]
+																			}
+, 																			{
+																				"key" : 6,
+																				"value" : [ "mc_ninePointHedonic" ]
+																			}
+ ]
+																	}
+,
+																	"id" : "obj-10",
+																	"linecount" : 2,
+																	"maxclass" : "newobj",
+																	"numinlets" : 1,
+																	"numoutlets" : 4,
+																	"outlettype" : [ "", "", "", "" ],
+																	"patching_rect" : [ 23.5, 104.0, 106.0, 35.0 ],
+																	"saved_object_attributes" : 																	{
+																		"embed" : 1,
+																		"precision" : 6
+																	}
+,
+																	"text" : "coll gradingTests @embed 1"
+																}
+
+															}
+, 															{
 																"box" : 																{
 																	"id" : "obj-31",
 																	"maxclass" : "message",
@@ -17804,7 +17927,7 @@
  ]
 													}
 ,
-													"patching_rect" : [ 313.0, 256.0, 179.0, 22.0 ],
+													"patching_rect" : [ 313.0, 256.0, 104.0, 22.0 ],
 													"saved_object_attributes" : 													{
 														"description" : "",
 														"digest" : "",
@@ -17812,7 +17935,7 @@
 														"tags" : ""
 													}
 ,
-													"text" : "p scanTestMethodPluginsFolder"
+													"text" : "p pluginsManager"
 												}
 
 											}
@@ -20322,7 +20445,6 @@
 					"clickthrough" : 0,
 					"enablehscroll" : 0,
 					"enablevscroll" : 0,
-					"hidden" : 1,
 					"id" : "obj-6",
 					"lockeddragscroll" : 0,
 					"maxclass" : "bpatcher",
