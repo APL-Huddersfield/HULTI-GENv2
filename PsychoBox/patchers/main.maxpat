@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 506.0, 198.0, 1334.0, 857.0 ],
+		"rect" : [ 389.0, 319.0, 1334.0, 857.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -8969,7 +8969,6 @@
 						"style" : "",
 						"subpatcher_template" : "",
 						"assistshowspatchername" : 0,
-						"visible" : 1,
 						"boxes" : [ 							{
 								"box" : 								{
 									"id" : "obj-10",
@@ -9360,7 +9359,7 @@
  ]
 									}
 ,
-									"patching_rect" : [ 797.833333333333258, 252.0, 164.0, 22.0 ],
+									"patching_rect" : [ 791.499999999999886, 252.0, 164.0, 22.0 ],
 									"saved_object_attributes" : 									{
 										"description" : "",
 										"digest" : "",
@@ -15942,7 +15941,7 @@
 													"numinlets" : 1,
 													"numoutlets" : 1,
 													"outlettype" : [ "" ],
-													"patching_rect" : [ 313.0, 196.0, 54.0, 22.0 ],
+													"patching_rect" : [ 313.0, 200.0, 54.0, 22.0 ],
 													"text" : "deferlow"
 												}
 
