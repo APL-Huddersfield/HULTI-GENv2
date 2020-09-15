@@ -39,7 +39,7 @@
 		"subpatcher_template" : "",
 		"workspacedisabled" : 1,
 		"assistshowspatchername" : 0,
-		"globalpatchername" : "u379026324[1][1][1][1][1][1][1][1][1][1][1][1][1][1]",
+		"globalpatchername" : "u379026324[1][1][1][1][1][1][1][1][1][1][1][1][1][1][1]",
 		"boxes" : [ 			{
 				"box" : 				{
 					"bgmode" : 0,
@@ -168,6 +168,7 @@
 						"style" : "",
 						"subpatcher_template" : "",
 						"assistshowspatchername" : 0,
+						"visible" : 1,
 						"boxes" : [ 							{
 								"box" : 								{
 									"id" : "obj-20",
@@ -3730,7 +3731,7 @@
 , 											{
 												"patchline" : 												{
 													"destination" : [ "obj-13", 0 ],
-													"midpoints" : [ 456.0, 297.0, 255.5, 297.0 ],
+													"midpoints" : [ 456.0, 298.0, 255.5, 298.0 ],
 													"order" : 2,
 													"source" : [ "obj-71", 1 ]
 												}
@@ -3750,6 +3751,23 @@
 													"midpoints" : [ 456.0, 298.75, 296.5, 298.75 ],
 													"order" : 1,
 													"source" : [ "obj-71", 1 ]
+												}
+
+											}
+, 											{
+												"patchline" : 												{
+													"destination" : [ "obj-65", 0 ],
+													"midpoints" : [ 456.0, 298.0, 139.5, 298.0 ],
+													"order" : 3,
+													"source" : [ "obj-71", 1 ]
+												}
+
+											}
+, 											{
+												"patchline" : 												{
+													"destination" : [ "obj-65", 0 ],
+													"midpoints" : [ 405.0, 298.0, 139.5, 298.0 ],
+													"source" : [ "obj-71", 0 ]
 												}
 
 											}
