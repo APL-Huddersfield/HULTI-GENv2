@@ -2,7 +2,7 @@
 	"name" : "PsychoBox",
 	"version" : 1,
 	"creationdate" : 3666872002,
-	"modificationdate" : 3683111234,
+	"modificationdate" : 3683115674,
 	"viewrect" : [ 1417.0, 377.0, 389.0, 649.0 ],
 	"autoorganize" : 1,
 	"hideprojectwindow" : 0,
@@ -380,6 +380,21 @@
 
 			}
 ,
+			"ui_filelist_entry_multicheckbox.maxpat" : 			{
+				"kind" : "patcher",
+				"local" : 1,
+				"singleton" : 				{
+					"bootpath" : "~/Documents/Max 8/Projects/PsychoBox/PsychoBox/patchers",
+					"projectrelativepath" : "./patchers"
+				}
+
+			}
+,
+			"ui_checkbox.maxpat" : 			{
+				"kind" : "patcher",
+				"local" : 1
+			}
+,
 			"ui_params_sdt_twoAFC.maxpat" : 			{
 				"kind" : "patcher",
 				"local" : 1,
@@ -430,24 +445,9 @@
 
 			}
 ,
-			"ui_checkbox.maxpat" : 			{
+			"ui_filelist_multicheckbox.maxpat" : 			{
 				"kind" : "patcher",
-				"local" : 1,
-				"singleton" : 				{
-					"bootpath" : "~/Documents/Max 8/Projects/PsychoBox/PsychoBox/patchers",
-					"projectrelativepath" : "./patchers"
-				}
-
-			}
-,
-			"ui_filelist_entry_multicheckbox.maxpat" : 			{
-				"kind" : "patcher",
-				"local" : 1,
-				"singleton" : 				{
-					"bootpath" : "~/Documents/Max 8/Projects/PsychoBox/PsychoBox/patchers",
-					"projectrelativepath" : "./patchers"
-				}
-
+				"local" : 1
 			}
 
 		}
@@ -554,6 +554,11 @@
 					"projectrelativepath" : "./patchers"
 				}
 
+			}
+,
+			"filelistManagerMultiCheckbox.js" : 			{
+				"kind" : "javascript",
+				"local" : 1
 			}
 
 		}

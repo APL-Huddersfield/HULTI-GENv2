@@ -12,6 +12,14 @@ var selectionStart = -1;
 var selectionEnd = -1;
 var numVisibleItems = maxNumItems;
 
+// Column selection modes
+
+var CHECK_MODE_TOGGLE = 0;
+var CHECK_MODE_RADIO = 1;
+var NUM_CHECK_MODES = CHECK_MODE_RADIO + 1;
+
+var checkMode = CHECK_MODE_TOGGLE;
+
 // Flags
 
 var filterDuplicates = 0;
@@ -58,6 +66,59 @@ function update() {
 
 function filterduplicates(x) {
     filterDuplicates = x >= 0 ? (x <= 1 ? x : 1) : 0;
+}
+
+function numcolumns(x) {
+    if (x < 1 || x > 3) {
+        return;
+    }
+
+    for (var i = 0; i < maxNumItems; ++i) {
+        outlet(0, "item", "send", "entry_" + i.toString());
+        outlet(0, "item", "numcolumns", x);
+    }
+}
+
+function columnoffset(x) {
+    for (var i = 0; i < maxNumItems; ++i) {
+        outlet(0, "item", "send", "entry_" + i.toString());
+        outlet(0, "item", "columnoffset", x);
+    }
+}
+
+function columnwidth(x) {
+    for (var i = 0; i < maxNumItems; ++i) {
+        outlet(0, "item", "send", "entry_" + i.toString());
+        outlet(0, "item", "columnwidth", x);
+    }
+}
+
+function checkmode(mode) {
+    if (mode < 0 || mode >= NUM_CHECK_MODES || mode == checkMode) {
+        return;
+    }
+
+    checkMode = mode;
+
+    for (var i = 0; i < maxNumItems; ++i) {
+        checkbox0[i] = 0;
+        checkbox1[i] = 0;
+        checkbox2[i] = 0;
+
+        outlet(0, "item", "send", "entry_" + i.toString());
+        outlet(0, "item", "check", 0, 0);
+        outlet(0, "item", "check", 1, 0);
+        outlet(0, "item", "check", 2, 0);
+    }
+
+    checkbox0[0] = 1;
+    checkbox1[0] = 1;
+    checkbox2[0] = 1;
+
+    outlet(0, "item", "send", "entry_0");
+    outlet(0, "item", "check", 0, 1);
+    outlet(0, "item", "check", 1, 1);
+    outlet(0, "item", "check", 2, 1);
 }
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -242,21 +303,64 @@ function auxtext(i, t) {
     // outlet(0, "item", "auxtext", t);
 }
 
-function check(i, column, x) {
+function check(i, column) {
     if (i < 0 || i >= selectedItems.length) {
         return;
     }
 
-    switch(column) {
-        case 0 : checkbox0[i] = x; break;
-        case 1 : checkbox1[i] = x; break;
-        case 2 : checkbox2[i] = x; break;
+    if (column < 0 || column > 2) {
+        return;
     }
 
+    var checkbox;
+    switch(column) {
+        case 0 : checkbox = checkbox0; break;
+        case 1 : checkbox = checkbox1; break;
+        case 2 : checkbox = checkbox2; break;
+    }
+
+    if (checkMode == CHECK_MODE_TOGGLE) {
+        checkbox[i] = 1 - checkbox[i];
+    }
+    else {
+        for (var j = 0; j < selectedItems.length; ++j) {
+            checkbox[j] = 0;
+            outlet(0, "item", "send", "entry_" + j.toString());
+            outlet(0, "item", "check", column, 0);
+        }
+        checkbox[i] = 1;
+    }
+    
     outlet(0, "item", "send", "entry_" + i.toString());
-    outlet(0, "item", "check0", 0, checkbox0[i]);
-    outlet(0, "item", "check0", 1, checkbox1[i]);
-    outlet(0, "item", "check0", 2, checkbox2[i]);
+    outlet(0, "item", "check", column, checkbox[i]);
+}
+
+function setcheck(i, column, x) {
+    if (i < 0 || i >= selectedItems.length) {
+        return;
+    }
+
+    var checkbox;
+    switch(column) {
+        case 0 : checkbox = checkbox0; break;
+        case 1 : checkbox = checkbox1; break;
+        case 2 : checkbox = checkbox2; break;
+    }
+
+    if (checkMode == CHECK_MODE_RADIO) {
+        for (var j = 0; j < selectedItems.length; ++j) {
+            checkbox[j] = 0;
+            outlet(0, "item", "send", "entry_" + j.toString());
+            outlet(0, "item", "check", column, 0);
+        }
+    }
+
+    checkbox[i] = x;
+
+    outlet(0, "item", "send", "entry_" + i.toString());
+    outlet(0, "item", "check", 0, checkbox0[i]);
+    outlet(0, "item", "check", 1, checkbox1[i]);
+    outlet(0, "item", "check", 2, checkbox2[i]);
 }
 
 function bang() {
