@@ -408,8 +408,15 @@ function selectsession(i) {
     }
     deselectall();
     sessions[i].selected = true;
-    sessions[i].expanded = !sessions[i].expanded;
     selectgroup(i, 0);
+}
+
+function expandsession(i) {
+    if (i < 0 || i >= sessions.length) {
+        return;
+    }
+    sessions[i].expanded = !sessions[i].expanded;
+    selectsession(i);
 }
 
 function selectgroup(i, j) {
@@ -484,7 +491,12 @@ function onObjectClicked(x, y, i, shift) {
 onObjectClicked.local = 1;
 
 function onSessionClicked(x, y, sesh, shift) {
-    selectsession(sesh.id);
+    if (x < 20) {
+        expandsession(sesh.id);
+    }
+    else {
+        selectsession(sesh.id);
+    }
     outlet(0, "selected", sesh.id, 0);
 }
 onSessionClicked.local = 1;
