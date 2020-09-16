@@ -3,7 +3,9 @@ outlets = 2;
 var maxNumItems = 512;
 var selectedItems = new Array(0);
 var itemText = new Array(0);
-var auxText = new Array(0);
+var checkbox0 = new Array(0);
+var checkbox1 = new Array(0);
+var checkbox2 = new Array(0);
 
 var selectedItem = -1;
 var selectionStart = -1;
@@ -21,7 +23,9 @@ function clear() {
         outlet(0, "patcher", "hide", "entry_" + i.toString());
         outlet(0, "item", "send", "entry_" + i.toString());
         outlet(0, "item", "text", "null");
-        outlet(0, "item", "auxtext", " ");
+        outlet(0, "item", "check", 0, 0);
+        outlet(0, "item", "check", 1, 0);
+        outlet(0, "item", "check", 2, 0);
         outlet(0, "item", "highlight", 0);
     }
 }
@@ -37,12 +41,16 @@ function update() {
                 outlet(0, "item", "highlight", 0);
             }
             outlet(0, "item", "text", itemText[i]);
-            outlet(0, "item", "auxtext", auxText[i]);
+            outlet(0, "item", "check", 0, checkbox0[i]);
+            outlet(0, "item", "check", 1, checkbox1[i]);
+            outlet(0, "item", "check", 2, checkbox2[i]);
             outlet(0, "patcher", "show", "entry_" + i.toString());
         }
         else {
             outlet(0, "item", "highlight", 0);
-			outlet(0, "item", "auxtext", " ");
+            outlet(0, "item", "check", 0, 0);
+            outlet(0, "item", "check", 1, 0);
+            outlet(0, "item", "check", 2, 0);
             outlet(0, "patcher", "hide", "entry_" + i.toString());
         }
     }
@@ -156,11 +164,15 @@ function append(t) {
 
     selectedItems.push(0);
     itemText.push(t);
-    auxText.push(" ");
+    checkbox0.push(0);
+    checkbox1.push(0);
+    checkbox2.push(0);
     var i = selectedItems.length - 1;
     outlet(0, "item", "send", "entry_" + i.toString());
     outlet(0, "item", "text", t);
-    outlet(0, "item", "auxtext", " ");
+    outlet(0, "item", "check", 0, 0);
+    outlet(0, "item", "check", 1, 0);
+    outlet(0, "item", "check", 2, 0);
     outlet(0, "patcher", "show", "entry_" + i.toString());
 }
 
@@ -183,7 +195,9 @@ function remove() {
     while (i >= 0 && selectedItems.length) {
         selectedItems.splice(i, 1);
         itemText.splice(i, 1);
-        auxText.splice(i, 1);
+        checkbox0.splice(i, 1);
+        checkbox1.splice(i, 1);
+        checkbox2.splice(i, 1);
         i = selectedItems.indexOf(1);
     }
     selectionStart = -1;
@@ -199,7 +213,9 @@ function removeduplicates() {
         while (j > i) {
             selectedItems.splice(j, 1);
             itemText.splice(j, 1);
-            auxText.splice(j, 1);
+            checkbox0.splice(j, 1);
+            checkbox1.splice(j, 1);
+            checkbox2.splice(j, 1);
             j = itemText.indexOf(t, i + 1);
         }
     }
@@ -220,10 +236,27 @@ function auxtext(i, t) {
     if (i < 0 || i >= selectedItems.length) {
         return;
     }
+    // DEPRECATED
+    // auxText[i] = t;
+    // outlet(0, "item", "send", "entry_" + i.toString());
+    // outlet(0, "item", "auxtext", t);
+}
 
-    auxText[i] = t;
+function check(i, column, x) {
+    if (i < 0 || i >= selectedItems.length) {
+        return;
+    }
+
+    switch(column) {
+        case 0 : checkbox0[i] = x; break;
+        case 1 : checkbox1[i] = x; break;
+        case 2 : checkbox2[i] = x; break;
+    }
+
     outlet(0, "item", "send", "entry_" + i.toString());
-    outlet(0, "item", "auxtext", t);
+    outlet(0, "item", "check0", 0, checkbox0[i]);
+    outlet(0, "item", "check0", 1, checkbox1[i]);
+    outlet(0, "item", "check0", 2, checkbox2[i]);
 }
 
 function bang() {
@@ -231,6 +264,9 @@ function bang() {
         if (selectedItems[i]) {
             outlet(0, "item", "send", "entry_" + i);
             outlet(0, "output", "selected", i, itemText[i]);
+            outlet(0, "output", "check", 0, checkbox0[i]);
+            outlet(0, "output", "check", 1, checkbox1[i]);
+            outlet(0, "output", "check", 2, checkbox2[i]);
         }
     }
 }
@@ -239,5 +275,8 @@ function dump() {
     for (var i = 0; i < selectedItems.length; ++i) {
         outlet(0, "item", "send", "entry_" + i.toString());
         outlet(0, "output", "entry", i, itemText[i]);
+        outlet(0, "output", "check", 0, checkbox0[i]);
+        outlet(0, "output", "check", 1, checkbox1[i]);
+        outlet(0, "output", "check", 2, checkbox2[i]);
     }
 }
