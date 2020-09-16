@@ -79,7 +79,7 @@ function resizesessions(dictName, x) {
     if (typeof(dict.get("sessions")) != "string") {
         numSessions = dict.getsize("sessions");
     }
-    
+
     var resizeAmount = x - numSessions;
 
     if (resizeAmount < 0) {
@@ -108,7 +108,7 @@ function resizegroup(dictName, sessionID, x) {
         return;
     }
 
-    var numGroups = dict.getsize("sessions[" + sessionIDm + "]::groups");
+    var numGroups = dict.getsize("sessions[" + sessionID + "]::groups");
     var resizeAmount = x - numGroups;
     if (resizeAmount < 0) {
         shrinkgroup(dictName, sessionID, Math.abs(resizeAmount));

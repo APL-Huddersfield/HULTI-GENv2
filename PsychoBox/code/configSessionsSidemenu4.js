@@ -16,7 +16,16 @@ var VERT_ALIGN_BOTTOM = 2;
 
 // Colours
 var SELECTED_SESSION_BG_COLOUR = [0, 0.475, 0.996, 1];
-var UNSELECTED_SESSION_BG_COLOUR = [0, 0, 0, 0];
+var SELECTED_SESSION_TEXT_COLOUR = [1, 1, 1, 1];
+var UNSELECTED_SESSION_BG_COLOUR = [0, 0.370, 0.780, 0];
+var UNSELECTED_SESSION_TEXT_COLOUR = [0, 0, 0, 1];
+
+//var SELECTED_GROUP_BG_COLOUR = [0.8, 0.8, 0.8, 1];
+var SELECTED_GROUP_BG_COLOUR = [0, 0.675, 1, 1];
+//var SELECTED_GROUP_TEXT_COLOUR = [0, 0.475, 0.996, 1];
+var SELECTED_GROUP_TEXT_COLOUR = [1, 1, 1, 1];
+var UNSELECTED_GROUP_BG_COLOUR = [0, 0, 0, 0];
+var UNSELECTED_GROUP_TEXT_COLOUR = [0, 0, 0, 1];
 
 var SELECTED_ITEM_TEXT_COLOUR = [1, 1, 1, 1];
 var UNSELECTED_ITEM_TEXT_COLOUR = [0, 0, 0, 1];
@@ -28,8 +37,8 @@ var UNSELECTED_ITEM_EXP_ICON_COLOUR = [0, 0, 0, 1];
 var boxWidth = this.box.rect[2] - this.box.rect[0];
 var boxHeight = this.box.rect[3] - this.box.rect[1];
 
-var itemXOffset = 0;
-var itemWidth = 127;
+var itemXOffset = 12;
+var itemWidth = boxWidth;
 var itemHeight = 20;
 
 // List Objects
@@ -45,10 +54,10 @@ function Session() {
     this.text = "";
     this.horzAlign = HORZ_ALIGN_LEFT;
     this.vertAlign = VERT_ALIGN_CENTRE;
-    this.textXOffset = 4;
+    this.textXOffset = 20;
 
     this.fillColour = [0, 0, 0, 0];
-    this.borderColour = [0, 0, 0, 1];
+    this.borderColour = [0, 0, 0, 0];
     this.textColour = [0, 0, 0, 1];
     this.expIconColour = [0, 0, 0, 1];
 
@@ -59,6 +68,8 @@ function Session() {
 
     this.x = 0;
     this.y = 0;
+    this.width = itemWidth;
+    this.height = itemHeight;
 }
 Session.local = 1;
 
@@ -81,6 +92,8 @@ function Group() {
 
     this.x = itemXOffset;
     this.y = 0;
+    this.width = itemWidth - itemXOffset;
+    this.height = itemHeight;
 }
 Group.local = 1;
 
@@ -100,6 +113,8 @@ function AddSession() {
     this.visible = true;
     this.x = 0;
     this.y = 0;
+    this.width = itemWidth;
+    this.height = itemHeight;
 }
 AddSession.local = 1;
 
@@ -121,6 +136,8 @@ function AddGroup() {
 
     this.x = itemXOffset;
     this.y = 0;
+    this.width = itemWidth - itemXOffset;
+    this.height = itemHeight;
 }
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -134,6 +151,11 @@ mgraphics.init();
 
 function paint() {
     drawObjects();
+    with (mgraphics) {
+        set_source_rgba(0, 0, 0, 1);
+        rectangle(0, 0, boxWidth, boxHeight);
+        stroke();
+    }
 }
 
 function drawObjects() {
@@ -144,6 +166,12 @@ function drawObjects() {
         }
         drawItem(objects[i]);
         if (objects[i].type == SESSION_TYPE) {
+            with (mgraphics) {
+                set_source_rgba(0.7, 0.7, 0.7, 1);
+                move_to(0, objects[i].y);
+                line_to(boxWidth, objects[i].y);
+                stroke();
+            }
             drawExpansionIcon(objects[i]);
         }
     }
@@ -152,11 +180,11 @@ function drawObjects() {
 function drawItem(obj) {
     with (mgraphics) {
         set_source_rgba(obj.fillColour);
-        rectangle(obj.x, obj.y, itemWidth, itemHeight);
+        rectangle(obj.x, obj.y, obj.width, obj.height);
         fill();
 
         set_source_rgba(obj.borderColour);
-        rectangle(obj.x, obj.y, itemWidth, itemHeight);
+        rectangle(obj.x, obj.y, obj.width, obj.height);
         stroke();
 
         set_source_rgba(obj.textColour);
@@ -169,9 +197,9 @@ function drawExpansionIcon(obj) {
     var margin = 5;
     var lineLength = itemHeight - margin * 2;
 
-    var horzLineX = obj.x + (itemWidth - margin) - lineLength;
+    var horzLineX = margin;
     var horzLineY = obj.y + itemHeight / 2;
-    var vertLineX = obj.x + (itemWidth - margin) - (lineLength / 2);
+    var vertLineX = margin + (lineLength / 2);
     var vertLineY = obj.y + margin;
 
     with(mgraphics) {
@@ -203,7 +231,7 @@ function drawText(x, y, horzAlign, vertAlign, text) {
                 xt = x - extents[0] / 2.0;
                 break;
             default:
-                xt = x- extents[0];
+                xt = x - extents[0];
                 break;
         }
 
@@ -243,7 +271,7 @@ function updateobjects() {
         for (var j = 0; j < sesh.groups.length; ++j) {
             group = sesh.groups[j];
             group.id = j;
-            if (sesh.selected) {
+            if (sesh.expanded) {
                 group.visible = true;
                 objects.push(group);
             }
@@ -363,13 +391,13 @@ function deselectall() {
         sesh = sessions[i];
         sesh.selected = false;
         sesh.fillColour = UNSELECTED_SESSION_BG_COLOUR;
-        sesh.textColour = UNSELECTED_ITEM_TEXT_COLOUR;
+        sesh.textColour = UNSELECTED_SESSION_TEXT_COLOUR;
         sesh.expIconColour = UNSELECTED_ITEM_EXP_ICON_COLOUR;
         for (var j = 0; j < sesh.groups.length; ++j) {
             group = sesh.groups[j];
             group.selected = false;
-            group.fillColour = UNSELECTED_SESSION_BG_COLOUR;
-            group.textColour = UNSELECTED_ITEM_TEXT_COLOUR;
+            group.fillColour = UNSELECTED_GROUP_BG_COLOUR;
+            group.textColour = UNSELECTED_GROUP_TEXT_COLOUR;
         }
     }
 }
@@ -378,9 +406,9 @@ function selectsession(i) {
     if (i < 0 || i >= sessions.length) {
         return;
     }
-    if (sessions[i].selected) {
-        return;
-    }
+    deselectall();
+    sessions[i].selected = true;
+    sessions[i].expanded = !sessions[i].expanded;
     selectgroup(i, 0);
 }
 
@@ -395,11 +423,12 @@ function selectgroup(i, j) {
     var sesh = sessions[i];
     sesh.selected = true;
     sesh.groups[j].selected = true;
+
     sesh.fillColour = SELECTED_SESSION_BG_COLOUR;
-    sesh.textColour = SELECTED_ITEM_TEXT_COLOUR;
+    sesh.textColour = SELECTED_SESSION_TEXT_COLOUR;
     sesh.expIconColour = SELECTED_ITEM_EXP_ICON_COLOUR;
-    sesh.groups[j].fillColour = SELECTED_SESSION_BG_COLOUR;
-    sesh.groups[j].textColour = SELECTED_ITEM_TEXT_COLOUR;
+    sesh.groups[j].fillColour = SELECTED_GROUP_BG_COLOUR;
+    sesh.groups[j].textColour = SELECTED_GROUP_TEXT_COLOUR;
 
     selectedSession = i;
     updateobjects();
