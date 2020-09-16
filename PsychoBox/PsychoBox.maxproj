@@ -2,7 +2,7 @@
 	"name" : "PsychoBox",
 	"version" : 1,
 	"creationdate" : 3666872002,
-	"modificationdate" : 3683108604,
+	"modificationdate" : 3683111234,
 	"viewrect" : [ 1417.0, 377.0, 389.0, 649.0 ],
 	"autoorganize" : 1,
 	"hideprojectwindow" : 0,
@@ -18,8 +18,7 @@
 ,
 			"ui_config.maxpat" : 			{
 				"kind" : "patcher",
-				"local" : 1,
-				"toplevel" : 1
+				"local" : 1
 			}
 ,
 			"ui_config_stimulusassign.maxpat" : 			{
@@ -433,12 +432,22 @@
 ,
 			"ui_checkbox.maxpat" : 			{
 				"kind" : "patcher",
-				"local" : 1
+				"local" : 1,
+				"singleton" : 				{
+					"bootpath" : "~/Documents/Max 8/Projects/PsychoBox/PsychoBox/patchers",
+					"projectrelativepath" : "./patchers"
+				}
+
 			}
 ,
 			"ui_filelist_entry_multicheckbox.maxpat" : 			{
 				"kind" : "patcher",
-				"local" : 1
+				"local" : 1,
+				"singleton" : 				{
+					"bootpath" : "~/Documents/Max 8/Projects/PsychoBox/PsychoBox/patchers",
+					"projectrelativepath" : "./patchers"
+				}
+
 			}
 
 		}
@@ -458,6 +467,11 @@
 			}
 ,
 			"configSessionsSidemenu4.js" : 			{
+				"kind" : "javascript",
+				"local" : 1
+			}
+,
+			"addRemoveSessions.js" : 			{
 				"kind" : "javascript",
 				"local" : 1
 			}
