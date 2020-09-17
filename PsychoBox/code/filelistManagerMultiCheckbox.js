@@ -40,6 +40,10 @@ function clear() {
         outlet(0, "item", "check", 2, 0);
         outlet(0, "item", "highlight", 0);
     }
+
+    selectedItem = -1;
+    selectionStart = -1;
+    selectionEnd = -1;
 }
 
 function update() {
@@ -224,7 +228,7 @@ function remove() {
 
     for (var i = 0; i < selectedItems.length; ++i) {
         if (selectedItems[i]) {
-            outlet(0, "output", "removed", i, itemText[i]);
+            outlet(0, "output", "removed", i, itemText[i], checkbox0[i], checkbox1[i], checkbox2[i]);
         }
     }
 
@@ -309,6 +313,7 @@ function check(i, column) {
 
     outlet(0, "item", "send", "entry_" + i.toString());
     outlet(0, "item", "check", column, checkbox[i]);
+    outlet(0, "output", "check", i, column, checkbox[i]);
 }
 
 function setcheck(i, column, x) {
@@ -334,9 +339,7 @@ function setcheck(i, column, x) {
     checkbox[i] = x;
 
     outlet(0, "item", "send", "entry_" + i.toString());
-    outlet(0, "item", "check", 0, checkbox0[i]);
-    outlet(0, "item", "check", 1, checkbox1[i]);
-    outlet(0, "item", "check", 2, checkbox2[i]);
+    outlet(0, "item", "check", column, checkbox[i]);
 }
 
 function checkmode(mode) {
@@ -383,9 +386,9 @@ function bang() {
         if (selectedItems[i]) {
             outlet(0, "item", "send", "entry_" + i);
             outlet(0, "output", "selected", i, itemText[i]);
-            outlet(0, "output", "check", 0, checkbox0[i]);
-            outlet(0, "output", "check", 1, checkbox1[i]);
-            outlet(0, "output", "check", 2, checkbox2[i]);
+            outlet(0, "output", "check", i, 0, checkbox0[i]);
+            outlet(0, "output", "check", i, 1, checkbox1[i]);
+            outlet(0, "output", "check", i, 2, checkbox2[i]);
         }
     }
 }
@@ -394,8 +397,8 @@ function dump() {
     for (var i = 0; i < selectedItems.length; ++i) {
         outlet(0, "item", "send", "entry_" + i.toString());
         outlet(0, "output", "entry", i, itemText[i]);
-        outlet(0, "output", "check", 0, checkbox0[i]);
-        outlet(0, "output", "check", 1, checkbox1[i]);
-        outlet(0, "output", "check", 2, checkbox2[i]);
+        outlet(0, "output", "check", i, 0, checkbox0[i]);
+        outlet(0, "output", "check", i, 1, checkbox1[i]);
+        outlet(0, "output", "check", i, 2, checkbox2[i]);
     }
 }
