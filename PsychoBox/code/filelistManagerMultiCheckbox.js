@@ -27,6 +27,10 @@ var filterDuplicates = 0;
 function clear() {
     selectedItems = new Array(0);
     itemText = new Array(0);
+    checkbox0 = new Array(0);
+    checkbox1 = new Array(0);
+    checkbox2 = new Array(0);
+
     for (var i = 0; i < maxNumItems; ++i) {
         outlet(0, "patcher", "hide", "entry_" + i.toString());
         outlet(0, "item", "send", "entry_" + i.toString());
