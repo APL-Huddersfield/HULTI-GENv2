@@ -39,7 +39,7 @@
 		"subpatcher_template" : "",
 		"workspacedisabled" : 1,
 		"assistshowspatchername" : 0,
-		"globalpatchername" : "u379026324[1][1][1][1][1][1][1][1][1][1][1][1][1][1][1]",
+		"globalpatchername" : "u379026324[1][1][1][1][1][1][1][1][1][1][1][1][1][1][1][1]",
 		"boxes" : [ 			{
 				"box" : 				{
 					"bgmode" : 0,
@@ -841,7 +841,7 @@
 																			}
 , 																			{
 																				"key" : 2,
-																				"value" : [ "mc_bipolar" ]
+																				"value" : [ "mc_itur_bipolar" ]
 																			}
 , 																			{
 																				"key" : 3,
@@ -1007,7 +1007,7 @@
 																			}
 , 																			{
 																				"key" : 2,
-																				"value" : [ "mc_bipolar" ]
+																				"value" : [ "mc_itur_bipolar" ]
 																			}
 , 																			{
 																				"key" : 3,
@@ -3268,7 +3268,7 @@
 																			}
 , 																			{
 																				"key" : 2,
-																				"value" : [ "mc_bipolar" ]
+																				"value" : [ "mc_itur_bipolar" ]
 																			}
 , 																			{
 																				"key" : 3,
@@ -8327,7 +8327,6 @@
 					"clickthrough" : 0,
 					"enablehscroll" : 0,
 					"enablevscroll" : 0,
-					"hidden" : 1,
 					"id" : "obj-7",
 					"lockeddragscroll" : 0,
 					"maxclass" : "bpatcher",

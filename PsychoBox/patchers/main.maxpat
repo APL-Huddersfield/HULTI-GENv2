@@ -68,6 +68,7 @@
 					"clickthrough" : 0,
 					"enablehscroll" : 0,
 					"enablevscroll" : 0,
+					"hidden" : 1,
 					"id" : "obj-5",
 					"lockeddragscroll" : 0,
 					"maxclass" : "bpatcher",
@@ -15997,7 +15998,7 @@
 																	"maxclass" : "comment",
 																	"numinlets" : 1,
 																	"numoutlets" : 0,
-																	"patching_rect" : [ 23.5, 66.0, 150.0, 33.0 ],
+																	"patching_rect" : [ 23.5, 66.0, 151.0, 33.0 ],
 																	"text" : "These are currently baked into HULTI-GEN for now. "
 																}
 
@@ -16074,7 +16075,7 @@
 																			}
 , 																			{
 																				"key" : 2,
-																				"value" : [ "mc_bipolar" ]
+																				"value" : [ "mc_itur_bipolar" ]
 																			}
 , 																			{
 																				"key" : 3,
@@ -20443,7 +20444,6 @@
 					"clickthrough" : 0,
 					"enablehscroll" : 0,
 					"enablevscroll" : 0,
-					"hidden" : 1,
 					"id" : "obj-6",
 					"lockeddragscroll" : 0,
 					"maxclass" : "bpatcher",
