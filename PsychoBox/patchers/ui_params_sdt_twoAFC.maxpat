@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 59.0, 104.0, 1883.0, 983.0 ],
+		"rect" : [ 3.0, 104.0, 1502.0, 983.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -49,14 +49,15 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 923.0, 470.0, 150.0, 22.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 190.5, 191.0, 156.0, 22.0 ],
+					"presentation_rect" : [ 240.0, 150.0, 156.0, 22.0 ],
 					"text" : "Presentation Mode",
-					"textjustification" : 2
+					"textjustification" : 0
 				}
 
 			}
 , 			{
 				"box" : 				{
+					"fontsize" : 14.0,
 					"id" : "obj-48",
 					"items" : [ "Equal", "number", "per", "presentation", "number", ",", "Randomised" ],
 					"maxclass" : "umenu",
@@ -64,9 +65,9 @@
 					"numoutlets" : 3,
 					"outlettype" : [ "int", "", "" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 1076.0, 470.0, 245.0, 22.0 ],
+					"patching_rect" : [ 1076.0, 470.0, 245.0, 24.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 348.5, 191.0, 245.0, 22.0 ]
+					"presentation_rect" : [ 240.0, 174.0, 275.0, 24.0 ]
 				}
 
 			}
@@ -615,7 +616,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 821.0, 304.0, 440.0, 124.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 200.0, 24.0, 440.0, 124.0 ],
+					"presentation_rect" : [ 240.0, 24.0, 440.0, 124.0 ],
 					"text" : "Choose the stimulus that contained the tone",
 					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
 				}
@@ -632,7 +633,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 1181.0, 277.0, 80.0, 22.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 200.0, 0.0, 160.0, 22.0 ],
+					"presentation_rect" : [ 240.0, 0.0, 160.0, 22.0 ],
 					"text" : "Objective"
 				}
 
@@ -705,8 +706,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 441.5, 304.0, 150.0, 38.0 ],
 					"presentation" : 1,
-					"presentation_linecount" : 2,
-					"presentation_rect" : [ 0.0, 100.0, 184.0, 38.0 ],
+					"presentation_rect" : [ 0.0, 100.0, 228.0, 22.0 ],
 					"text" : "Number of stimulus pairs per group"
 				}
 
