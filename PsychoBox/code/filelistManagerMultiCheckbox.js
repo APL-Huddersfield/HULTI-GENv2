@@ -93,34 +93,6 @@ function columnwidth(x) {
     }
 }
 
-function checkmode(mode) {
-    if (mode < 0 || mode >= NUM_CHECK_MODES || mode == checkMode) {
-        return;
-    }
-
-    checkMode = mode;
-
-    for (var i = 0; i < maxNumItems; ++i) {
-        checkbox0[i] = 0;
-        checkbox1[i] = 0;
-        checkbox2[i] = 0;
-
-        outlet(0, "item", "send", "entry_" + i.toString());
-        outlet(0, "item", "check", 0, 0);
-        outlet(0, "item", "check", 1, 0);
-        outlet(0, "item", "check", 2, 0);
-    }
-
-    checkbox0[0] = 1;
-    checkbox1[0] = 1;
-    checkbox2[0] = 1;
-
-    outlet(0, "item", "send", "entry_0");
-    outlet(0, "item", "check", 0, 1);
-    outlet(0, "item", "check", 1, 1);
-    outlet(0, "item", "check", 2, 1);
-}
-
 ////////////////////////////////////////////////////////////////////////////////////////////////////
 
 function select(item, shift, cmd) {
@@ -330,7 +302,7 @@ function check(i, column) {
         }
         checkbox[i] = 1;
     }
-    
+
     outlet(0, "item", "send", "entry_" + i.toString());
     outlet(0, "item", "check", column, checkbox[i]);
 }
@@ -362,6 +334,45 @@ function setcheck(i, column, x) {
     outlet(0, "item", "check", 1, checkbox1[i]);
     outlet(0, "item", "check", 2, checkbox2[i]);
 }
+
+function checkmode(mode) {
+    if (mode < 0 || mode >= NUM_CHECK_MODES || mode == checkMode) {
+        return;
+    }
+
+    checkMode = mode;
+
+    var firstCheck = [false, false, false];
+    for (var i = 0; i < selectedItems.length; ++i) {
+        if (checkbox0[i] && !firstCheck[0]) {
+            firstCheck[0] = true;
+        }
+        else {
+            checkbox0[i] = 0;
+        }
+
+        if (checkbox1[i] && !firstCheck[1]) {
+            firstCheck[1] = true;
+        }
+        else {
+            checkbox1[i] = 0;
+        }
+
+        if (checkbox2[i] && !firstCheck[2]) {
+            firstCheck[2] = true;
+        }
+        else {
+            checkbox2[i] = 0;
+        }
+
+        outlet(0, "item", "send", "entry_" + i.toString());
+        outlet(0, "item", "check", 0, checkbox0[i]);
+        outlet(0, "item", "check", 1, checkbox1[i]);
+        outlet(0, "item", "check", 2, checkbox2[i]);
+    }
+}
+
+////////////////////////////////////////////////////////////////////////////////////////////////////
 
 function bang() {
     for (var i = 0; i < selectedItems.length; ++i) {
