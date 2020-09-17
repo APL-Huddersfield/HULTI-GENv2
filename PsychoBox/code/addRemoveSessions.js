@@ -55,8 +55,10 @@ function addgroup(dictName, sessionID) {
 
     }
 
-    dict.setparse(groupsStr + "[" + groupID + "]", "stimuli: reference:");
+    dict.setparse(groupsStr + "[" + groupID + "]", "stimuli: reference: high: low:");
     dict.set(groupsStr + "[" + groupID + "]::reference", -1);
+    dict.set(groupsStr + "[" + groupID + "]::high", -1);
+    dict.set(groupsStr + "[" + groupID + "]::low", -1);
 }
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////
