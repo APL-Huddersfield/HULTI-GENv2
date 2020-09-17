@@ -6,7 +6,8 @@
         "initialStep",
         "initialStepSize",
         "steppingRule",
-        "maxReversals"
+        "maxReversals",
+        "maxTrials"
     ],
     "parametersMenu" : "staircase",
     "requiresReference" : true,
