@@ -4,7 +4,10 @@
     "parameters" : [
         "repetitions",
         "objective",
-        "stimuliPerTrial"
+        "stimuliPerTrial",
+        "useReference",
+        "useHighAnchor",
+        "useLowAnchor"
     ],
     "parametersMenu" : "itur",
     "requiresReference" : true,
