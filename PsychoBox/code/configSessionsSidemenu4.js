@@ -361,8 +361,8 @@ function clear() {
     selectedSession = -1;
     selectedGroup = -1;
 
-    var initAddSessionButton = new AddSession();
-    objects.push(initAddSessionButton);
+//    var initAddSessionButton = new AddSession();
+//    objects.push(initAddSessionButton);
 
     refresh();
 }
