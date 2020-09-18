@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 69.0, 79.0, 1402.0, 1012.0 ],
+		"rect" : [ 732.0, 237.0, 1402.0, 1012.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -41,12 +41,13 @@
 		"boxes" : [ 			{
 				"box" : 				{
 					"id" : "obj-64",
+					"linecount" : 2,
 					"maxclass" : "message",
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 274.0, 287.0, 371.0, 22.0 ],
-					"text" : "numsessions 1, numgroups 1, initstepsize 1, initstep 1, numsteps 10"
+					"patching_rect" : [ 274.0, 287.0, 287.0, 35.0 ],
+					"text" : "numsessions 1, numgroups 1, initstepsize 1, initstep 1, numsteps 10, maxreversals 1, maxtrials 100"
 				}
 
 			}
@@ -61,15 +62,15 @@
 					"restore" : 					{
 						"initstep" : [ 1 ],
 						"maxreversals" : [ 1 ],
-						"maxtrials" : [ 0 ],
+						"maxtrials" : [ 100 ],
 						"numgroups" : [ 1 ],
 						"numsessions" : [ 1 ],
-						"numsteps" : [ 2 ],
+						"numsteps" : [ 10 ],
 						"stepsize" : [ 2 ]
 					}
 ,
 					"text" : "autopattr",
-					"varname" : "u790062966"
+					"varname" : "u378039861"
 				}
 
 			}
@@ -93,7 +94,6 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 596.5, 601.0, 97.0, 22.0 ],
-					"presentation_linecount" : 2,
 					"text" : "maxreversals $1"
 				}
 
@@ -463,7 +463,7 @@
 					"bgfillcolor_type" : "gradient",
 					"fontsize" : 14.0,
 					"id" : "obj-53",
-					"items" : [ "1-Down 1-Up", ",", "2-Down 1-Up", ",", "1-Down 2-Up", ",", "3-Down 1-Up", ",", "4-Down 1-Up", ",", "1-Down 4-Up", ",", "Levitt 1971 Entry 8" ],
+					"items" : "<empty>",
 					"maxclass" : "umenu",
 					"numinlets" : 1,
 					"numoutlets" : 3,
