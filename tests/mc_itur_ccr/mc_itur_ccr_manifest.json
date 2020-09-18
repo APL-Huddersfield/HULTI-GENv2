@@ -13,7 +13,8 @@
     },
     "interface" : {
         "maxwidth" : 1180,
-        "maxheight" : 680
+        "maxheight" : 680,
+        "customisable" : true
     },
     "paramsUI" : "grading"
 }

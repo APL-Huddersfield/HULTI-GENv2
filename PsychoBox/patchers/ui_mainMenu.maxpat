@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 372.0, 352.0, 813.0, 661.0 ],
+		"rect" : [ 372.0, 352.0, 1230.0, 852.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -40,12 +40,42 @@
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
 				"box" : 				{
+					"fontsize" : 24.0,
+					"id" : "obj-11",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 473.5, 454.0, 293.0, 33.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 0.0, 34.0, 420.0, 33.0 ],
+					"text" : "Version 2.0a",
+					"textjustification" : 1
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontsize" : 30.0,
+					"id" : "obj-9",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 542.0, 133.0, 361.0, 40.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 0.0, 0.0, 420.0, 40.0 ],
+					"text" : "Welcome to HULTI-GEN",
+					"textjustification" : 1
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-6",
 					"maxclass" : "message",
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 602.0, 220.0, 32.0, 22.0 ],
+					"patching_rect" : [ 586.0, 462.0, 32.0, 22.0 ],
 					"text" : "start"
 				}
 
@@ -60,9 +90,9 @@
 					"numoutlets" : 3,
 					"outlettype" : [ "", "", "int" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 602.0, 140.0, 200.0, 60.0 ],
+					"patching_rect" : [ 586.0, 382.0, 200.0, 60.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 110.0, 85.0, 200.0, 60.0 ],
+					"presentation_rect" : [ 110.0, 180.0, 200.0, 60.0 ],
 					"text" : "Start Test",
 					"textoncolor" : [ 0.0, 0.0, 0.0, 1.0 ],
 					"textovercolor" : [ 0.101960784313725, 0.411764705882353, 0.796078431372549, 1.0 ],
@@ -77,7 +107,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 160.0, 278.0, 159.0, 22.0 ],
+					"patching_rect" : [ 144.0, 520.0, 159.0, 22.0 ],
 					"text" : "prepend callback mainmenu"
 				}
 
@@ -89,7 +119,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 380.0, 220.0, 35.0, 22.0 ],
+					"patching_rect" : [ 364.0, 462.0, 35.0, 22.0 ],
 					"text" : "open"
 				}
 
@@ -101,7 +131,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 160.0, 220.0, 50.0, 22.0 ],
+					"patching_rect" : [ 144.0, 462.0, 50.0, 22.0 ],
 					"text" : "newtest"
 				}
 
@@ -124,7 +154,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 160.0, 336.0, 113.0, 22.0 ],
+					"patching_rect" : [ 144.0, 578.0, 113.0, 22.0 ],
 					"text" : "s toProgramControl"
 				}
 
@@ -139,9 +169,9 @@
 					"numoutlets" : 3,
 					"outlettype" : [ "", "", "int" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 380.0, 140.0, 200.0, 60.0 ],
+					"patching_rect" : [ 364.0, 382.0, 200.0, 60.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 220.0, 0.0, 200.0, 60.0 ],
+					"presentation_rect" : [ 220.0, 95.0, 200.0, 60.0 ],
 					"text" : "Open",
 					"textoncolor" : [ 0.0, 0.0, 0.0, 1.0 ],
 					"textovercolor" : [ 0.101960784313725, 0.411764705882353, 0.796078431372549, 1.0 ],
@@ -159,9 +189,9 @@
 					"numoutlets" : 3,
 					"outlettype" : [ "", "", "int" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 160.0, 140.0, 200.0, 60.0 ],
+					"patching_rect" : [ 144.0, 382.0, 200.0, 60.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 0.0, 0.0, 200.0, 60.0 ],
+					"presentation_rect" : [ 0.0, 95.0, 200.0, 60.0 ],
 					"text" : "Create",
 					"textoncolor" : [ 0.0, 0.0, 0.0, 1.0 ],
 					"textovercolor" : [ 0.101960784313725, 0.411764705882353, 0.796078431372549, 1.0 ],
@@ -187,7 +217,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-3", 0 ],
-					"midpoints" : [ 389.5, 259.5, 169.5, 259.5 ],
+					"midpoints" : [ 373.5, 501.5, 153.5, 501.5 ],
 					"source" : [ "obj-18", 0 ]
 				}
 
@@ -216,7 +246,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-3", 0 ],
-					"midpoints" : [ 611.5, 259.5, 169.5, 259.5 ],
+					"midpoints" : [ 595.5, 501.5, 153.5, 501.5 ],
 					"source" : [ "obj-6", 0 ]
 				}
 
