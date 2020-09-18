@@ -2,7 +2,7 @@
 	"name" : "PsychoBox",
 	"version" : 1,
 	"creationdate" : 3666872002,
-	"modificationdate" : 3683176770,
+	"modificationdate" : 3683230612,
 	"viewrect" : [ 1403.0, 251.0, 461.0, 826.0 ],
 	"autoorganize" : 1,
 	"hideprojectwindow" : 0,
@@ -41,17 +41,22 @@
 				"local" : 1
 			}
 ,
-			"ui_filelist_ref.maxpat" : 			{
+			"ui_filelist_itur.maxpat" : 			{
 				"kind" : "patcher",
 				"local" : 1
 			}
 ,
-			"ui_filelist_checkbox.maxpat" : 			{
+			"ui_filelist_multicheckbox.maxpat" : 			{
 				"kind" : "patcher",
 				"local" : 1
 			}
 ,
-			"ui_filelist_entry_checkbox.maxpat" : 			{
+			"ui_filelist_entry_multicheckbox.maxpat" : 			{
+				"kind" : "patcher",
+				"local" : 1
+			}
+,
+			"ui_checkbox.maxpat" : 			{
 				"kind" : "patcher",
 				"local" : 1
 			}
@@ -146,6 +151,21 @@
 			}
 ,
 			"ui_sessionComplete.maxpat" : 			{
+				"kind" : "patcher",
+				"local" : 1
+			}
+,
+			"ui_filelist_ref.maxpat" : 			{
+				"kind" : "patcher",
+				"local" : 1
+			}
+,
+			"ui_filelist_checkbox.maxpat" : 			{
+				"kind" : "patcher",
+				"local" : 1
+			}
+,
+			"ui_filelist_entry_checkbox.maxpat" : 			{
 				"kind" : "patcher",
 				"local" : 1
 			}
@@ -380,16 +400,6 @@
 
 			}
 ,
-			"ui_filelist_entry_multicheckbox.maxpat" : 			{
-				"kind" : "patcher",
-				"local" : 1
-			}
-,
-			"ui_checkbox.maxpat" : 			{
-				"kind" : "patcher",
-				"local" : 1
-			}
-,
 			"ui_params_sdt_twoAFC.maxpat" : 			{
 				"kind" : "patcher",
 				"local" : 1,
@@ -440,17 +450,7 @@
 
 			}
 ,
-			"ui_filelist_multicheckbox.maxpat" : 			{
-				"kind" : "patcher",
-				"local" : 1,
-				"singleton" : 				{
-					"bootpath" : "~/Documents/Max 8/Projects/PsychoBox/PsychoBox/patchers",
-					"projectrelativepath" : "./patchers"
-				}
-
-			}
-,
-			"ui_filelist_itur.maxpat" : 			{
+			"ui_params_staircase_twoAFC.maxpat" : 			{
 				"kind" : "patcher",
 				"local" : 1
 			}
@@ -467,6 +467,11 @@
 ,
 		"code" : 		{
 			"filelistManager.js" : 			{
+				"kind" : "javascript",
+				"local" : 1
+			}
+,
+			"filelistManagerMultiCheckbox.js" : 			{
 				"kind" : "javascript",
 				"local" : 1
 			}
@@ -512,11 +517,6 @@
 			}
 ,
 			"schemaValidator2.js" : 			{
-				"kind" : "javascript",
-				"local" : 1
-			}
-,
-			"filelistManagerMultiCheckbox.js" : 			{
 				"kind" : "javascript",
 				"local" : 1
 			}
@@ -600,6 +600,11 @@
 			}
 ,
 			"configSchema.json" : 			{
+				"kind" : "json",
+				"local" : 1
+			}
+,
+			"staircase_steppingRules.json" : 			{
 				"kind" : "json",
 				"local" : 1
 			}

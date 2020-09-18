@@ -140,7 +140,7 @@
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ 560.0, 585.0, 1326.0, 558.0 ],
+						"rect" : [ 359.0, 452.0, 1326.0, 558.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -168,7 +168,6 @@
 						"style" : "",
 						"subpatcher_template" : "",
 						"assistshowspatchername" : 0,
-						"visible" : 1,
 						"boxes" : [ 							{
 								"box" : 								{
 									"id" : "obj-20",
@@ -1641,7 +1640,7 @@
 										}
 ,
 										"classnamespace" : "box",
-										"rect" : [ 1397.0, 418.0, 845.0, 501.0 ],
+										"rect" : [ 1041.0, 418.0, 845.0, 501.0 ],
 										"bglocked" : 0,
 										"openinpresentation" : 0,
 										"default_fontsize" : 12.0,
@@ -1951,7 +1950,7 @@
 														}
 ,
 														"classnamespace" : "box",
-														"rect" : [ 1502.0, 496.0, 694.0, 559.0 ],
+														"rect" : [ 1192.0, 496.0, 694.0, 559.0 ],
 														"bglocked" : 0,
 														"openinpresentation" : 0,
 														"default_fontsize" : 12.0,
@@ -2711,7 +2710,7 @@
 														}
 ,
 														"classnamespace" : "box",
-														"rect" : [ 310.0, 197.0, 1247.0, 927.0 ],
+														"rect" : [ 310.0, 197.0, 864.0, 797.0 ],
 														"bglocked" : 0,
 														"openinpresentation" : 0,
 														"default_fontsize" : 12.0,
@@ -2740,6 +2739,18 @@
 														"subpatcher_template" : "",
 														"assistshowspatchername" : 0,
 														"boxes" : [ 															{
+																"box" : 																{
+																	"id" : "obj-3",
+																	"linecount" : 3,
+																	"maxclass" : "comment",
+																	"numinlets" : 1,
+																	"numoutlets" : 0,
+																	"patching_rect" : [ 135.0, 120.0, 150.0, 47.0 ],
+																	"text" : "Get the different lists of tests for each procedure group"
+																}
+
+															}
+, 															{
 																"box" : 																{
 																	"id" : "obj-38",
 																	"maxclass" : "newobj",
@@ -8327,6 +8338,7 @@
 					"clickthrough" : 0,
 					"enablehscroll" : 0,
 					"enablevscroll" : 0,
+					"hidden" : 1,
 					"id" : "obj-7",
 					"lockeddragscroll" : 0,
 					"maxclass" : "bpatcher",
