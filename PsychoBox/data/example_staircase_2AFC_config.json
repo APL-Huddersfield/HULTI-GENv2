@@ -7,7 +7,8 @@
                 "initialStep" : 9,
                 "initialStepSize" : 1,
                 "steppingRule" : 1,
-                "maxReversals" : 1
+                "maxReversals" : 1,
+		"maxTrials" : 100
             }
         },
         "gui" : {
@@ -22,6 +23,7 @@
             }
         }
     },
+    "numStimuliPerGroup" : 10,
     "pool" : ["word_0.wav", "word_1.wav", "word_2.wav", "word_3.wav", "word_4.wav", "word_5.wav", "word_6.wav", "word_7.wav", "word_8.wav", "word_9.wav"],
     "sessions" : [{
         "groups" : [{
