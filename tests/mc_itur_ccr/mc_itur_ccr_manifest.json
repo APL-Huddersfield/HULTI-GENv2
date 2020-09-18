@@ -3,8 +3,7 @@
     "name" : "Comparison Category Rating (CCR)",
     "parameters" : [
         "repetitions",
-        "objective",
-        "stimuliPerTrial"
+        "objective"
     ],
     "parametersMenu" : "itur",
     "requiresReference" : true,

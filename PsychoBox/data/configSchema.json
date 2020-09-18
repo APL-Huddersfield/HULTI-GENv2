@@ -3,6 +3,7 @@
     "required" : [
         "testName",
         "setup",
+        "numStimuliPerGroup",
         "pool",
         "sessions"
     ],
@@ -42,6 +43,10 @@
                     "type" : "empty"
                 }
             }
+        },
+        "numStimuliPerGroup" : {
+            "type" : "int",
+            "default" : 1
         },
         "pool" : {
             "type" : "array"

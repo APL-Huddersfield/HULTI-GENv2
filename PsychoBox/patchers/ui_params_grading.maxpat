@@ -434,7 +434,7 @@
 									"numoutlets" : 3,
 									"outlettype" : [ "", "", "" ],
 									"patching_rect" : [ 611.0, 188.0, 267.0, 22.0 ],
-									"text" : "dict.unpack repetitions: stimuliPerTrial: objective:"
+									"text" : "dict.unpack repetitions: numStimuliPerGroup: objective:"
 								}
 
 							}
