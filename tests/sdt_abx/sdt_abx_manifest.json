@@ -17,7 +17,7 @@
     ],
     "ordering" : {
         "omitReferenceAsTestStimulus" : true,
-        "combinationsPerRepetition" : 4
+        "combinationsPerRepetition" : 2
     },
     "interface" : {
         "window" : {
