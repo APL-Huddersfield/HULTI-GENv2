@@ -1,0 +1,46 @@
+{
+    "rules" : [
+        {
+            "slug" : "levitt1971_entry1",
+            "name" : "1-Down 1-Up",
+            "up" : ["0"],
+            "down" : ["1"]
+        },
+        {
+            "slug" : "levitt1971_entry2",
+            "name" : "2-Down 1-Up",
+            "up" : ["1 0", "0"],
+            "down" : ["1 1"]
+        },
+        {
+            "slug" : "levitt1971_entry3",
+            "name" : "1-Down 2-Up",
+            "up" : ["0 0"],
+            "down" : ["0 1", "1"]
+        },
+        {
+            "slug" : "levitt1971_entry4",
+            "name" : "3-Down 1-Up",
+            "up" : ["1 1 0", "1 0", "0"],
+            "down" : ["1 1 1"]
+        },
+        {
+            "slug" : "levitt1971_entries5and7",
+            "name" : "4-Down 1-Up",
+            "up" : ["0"],
+            "down" : ["1 1 1 1"]
+        },
+        {
+            "slug" : "levitt1971_entry6",
+            "name" : "1-Down 4-Up",
+            "up" : ["0 0 0 0"],
+            "down" : ["0 0 0 1", "0 0 1", "0 1", "1"]
+        },
+        {
+            "slug" : "levitt1971_entry8",
+            "name" : "Levitt 1971 Entry 8",
+            "up" : ["0 0", "0 1 0", "1 0 0"],
+            "down" : ["1 1", "1 0 1", "0 1 1"]
+        }
+    ]
+}

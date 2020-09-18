@@ -1,0 +1,23 @@
+{
+    "slug" : "mc_itur_bipolar",
+    "name" : "Bipolar with Ref",
+    "parameters" : [
+        "repetitions",
+        "objective",
+        "stimuliPerTrial",
+        "useReference",
+        "useHighAnchor",
+        "useLowAnchor"
+    ],
+    "parametersMenu" : "itur",
+    "requiresReference" : true,
+    "groupingMode" : "sft",
+    "ordering" : {
+        "omitReferenceAsTestStimulus" : false
+    },
+    "interface" : {
+        "maxwidth" : 1180,
+        "maxheight" : 680
+    },
+    "paramsUI" : "grading"
+}
