@@ -117,6 +117,7 @@ function selectItem(item, x) {
         selectedItems[item] = x;
         outlet(0, "item", "send", "entry_" + item.toString());
         outlet(0, "item", "highlight", x);
+        outlet(0, "output", "selected", item);
     }
 }
 selectItem.local = 1;
