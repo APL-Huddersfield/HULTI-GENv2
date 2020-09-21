@@ -250,6 +250,34 @@ function moveup(i) {
     selectItem(x - 1, 1);
 }
 
+function movedown(i) {
+    var x;
+    if (typeof(i) != "number") {
+        x = selectedItem;
+    }
+    else {
+        x = i;
+    }
+    if (x < 0 || x >= selectedItems.length - 1) { //Cannot move Nth item any further down
+        return;
+    }
+
+    deselect(x);
+
+    var tempItemText = itemText[x + 1];
+    itemText[x + 1] = itemText[x];
+    itemText[x] = tempItemText;
+
+    outlet(0, "item", "send", "entry_" + x.toString());
+    outlet(0, "item", "text", itemText[x]);
+    outlet(0, "item", "send", "entry_" + (x + 1).toString());
+    outlet(0, "item", "text", itemText[x + 1]);
+
+    selectedItem = x + 1;
+    selectItem(x, 0);
+    selectItem(x + 1, 1);
+}
+
 function auxtext(i, t) {
     if (i < 0 || i >= selectedItems.length) {
         return;
