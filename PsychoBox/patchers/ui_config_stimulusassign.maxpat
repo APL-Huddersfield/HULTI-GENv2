@@ -148,7 +148,7 @@
 					"numoutlets" : 1,
 					"offset" : [ 0.0, 0.0 ],
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 853.0, 908.25, 550.166666999999961, 300.5 ],
+					"patching_rect" : [ 843.5, 906.25, 550.166666999999961, 300.5 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 998.0, 693.0, 548.0, 502.0 ],
 					"varname" : "ui_filelist_psychometric",

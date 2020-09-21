@@ -24,6 +24,10 @@ function clear() {
         outlet(0, "item", "auxtext", " ");
         outlet(0, "item", "highlight", 0);
     }
+
+    selectedItem = -1;
+    selectionStart = -1;
+    selectionEnd = -1;
 }
 
 function update() {
@@ -81,6 +85,7 @@ function select(item, shift, cmd) {
         for (var i = a; i <= b; ++i) {
             selectItem(i, 1);
         }
+        selectedItem = selectedItems.indexOf(1);
     }
     else {
         if (item != selectedItem) {
@@ -215,6 +220,34 @@ function rename(i, t) {
     itemText[i] = t;
     outlet(0, "item", "send", "entry_" + i.toString());
     outlet(0, "item", "text", t);
+}
+
+function moveup(i) {
+    var x;
+    if (typeof(i) != "number") {
+        x = selectedItem;
+    }
+    else {
+        x = i;
+    }
+    if (x < 1 || x >= selectedItems.length) { // Note the 1! Cannot move 0th item any further up
+        return;
+    }
+
+    deselect(x);
+
+    var tempItemText = itemText[x - 1];
+    itemText[x - 1] = itemText[x];
+    itemText[x] = tempItemText;
+
+    outlet(0, "item", "send", "entry_" + x.toString());
+    outlet(0, "item", "text", itemText[x]);
+    outlet(0, "item", "send", "entry_" + (x - 1).toString());
+    outlet(0, "item", "text", itemText[x - 1]);
+
+    selectedItem = x - 1;
+    selectItem(x, 0);
+    selectItem(x - 1, 1);
 }
 
 function auxtext(i, t) {
