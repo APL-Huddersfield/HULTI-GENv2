@@ -365,3 +365,7 @@ function numselected() {
     }
     outlet(0, "output", "numselected", numSelected);
 }
+
+function getsize() {
+    outlet(0, "output", "size", selectedItems.length);
+}
