@@ -10,6 +10,8 @@ var selectionStart = -1;
 var selectionEnd = -1;
 var numVisibleItems = maxNumItems;
 
+var rangeselected = false;
+
 // Flags
 
 var filterDuplicates = 0;
@@ -88,11 +90,25 @@ function select(item, shift, cmd) {
         selectedItem = selectedItems.indexOf(1);
     }
     else {
-        if (item != selectedItem) {
+        if (item != selectedItem || !rangeselected) {
             deselect(item);
             selectItem(item, 1);
         }
+        else {
+            outlet(0, "output", "selected", item);
+        }
         selectedItem = selectedItems.indexOf(1);
+    }
+
+    var numMatches = 0;
+    rangeselected = false;
+    for (var i = 0; i < selectedItems.length; ++i) {
+        if (itemText[i] == 1) {
+            numMatches++;
+        }
+    }
+    if (numMatches > 1) {
+        rangeselected = true;
     }
 }
 
@@ -117,6 +133,9 @@ function selectItem(item, x) {
     if (item < 0 || item >= selectedItems.length) {
         return;
     }
+
+    x = x < 0 ? 0 : x;
+    x = x > 1 ? 1 : x;
 
     if (x != selectedItems[item]) {
         selectedItems[item] = x;
@@ -192,6 +211,25 @@ function remove() {
         auxText.splice(i, 1);
         i = selectedItems.indexOf(1);
     }
+    selectionStart = -1;
+    selectedItem = -1;
+    update();
+}
+
+function removeitem(i) {
+    if (selectedItems.length == 0) {
+        return;
+    }
+    if (i < 0 || i >= selectedItems.length) {
+        return;
+    }
+    deselect(-1);
+
+    selectedItems.splice(i, 1);
+    itemText.splice(i, 1);
+    auxText.splice(i, 1);
+    i = selectedItems.indexOf(1);
+
     selectionStart = -1;
     selectedItem = -1;
     update();
@@ -302,4 +340,28 @@ function dump() {
         outlet(0, "item", "send", "entry_" + i.toString());
         outlet(0, "output", "entry", i, itemText[i]);
     }
+}
+
+function nummatch(t) {
+    if (typeof(t) != "string") {
+        return;
+    }
+
+    var numMatches = 0;
+    for (var i = 0; i < selectedItems.length; ++i) {
+        if (itemText[i] == t) {
+            numMatches++;
+        }
+    }
+    outlet(0, "output", "nummatch", numMatches);
+}
+
+function numselected() {
+    var numSelected = 0;
+    for (var i = 0; i < selectedItems.length; ++i) {
+        if (selectedItems[i]) {
+            numSelected++;
+        }
+    }
+    outlet(0, "output", "numselected", numSelected);
 }
