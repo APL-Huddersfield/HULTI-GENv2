@@ -12,6 +12,8 @@ var selectionStart = -1;
 var selectionEnd = -1;
 var numVisibleItems = maxNumItems;
 
+var rangeselected = false;
+
 // Column selection modes
 
 var CHECK_MODE_TOGGLE = 0;
@@ -132,11 +134,25 @@ function select(item, shift, cmd) {
         }
     }
     else {
-        if (item != selectedItem) {
+        if (item != selectedItem || !rangeselected) {
             deselect(item);
             selectItem(item, 1);
         }
+        else {
+            outlet(0, "output", "selected", item);
+        }
         selectedItem = selectedItems.indexOf(1);
+    }
+
+    var numMatches = 0;
+    rangeselected = false;
+    for (var i = 0; i < selectedItems.length; ++i) {
+        if (itemText[i] == 1) {
+            numMatches++;
+        }
+    }
+    if (numMatches > 1) {
+        rangeselected = true;
     }
 }
 
@@ -162,10 +178,14 @@ function selectItem(item, x) {
         return;
     }
 
+    x = x < 0 ? 0 : x;
+    x = x > 1 ? 1 : x;
+
     if (x != selectedItems[item]) {
         selectedItems[item] = x;
         outlet(0, "item", "send", "entry_" + item.toString());
         outlet(0, "item", "highlight", x);
+        outlet(0, "output", "selected", item);
     }
 }
 selectItem.local = 1;
@@ -281,6 +301,64 @@ function auxtext(i, t) {
     // auxText[i] = t;
     // outlet(0, "item", "send", "entry_" + i.toString());
     // outlet(0, "item", "auxtext", t);
+}
+
+function moveup(i) {
+    var x;
+    if (typeof(i) != "number") {
+        x = selectedItem;
+    }
+    else {
+        x = i;
+    }
+    if (x < 1 || x >= selectedItems.length) { // Note the 1! Cannot move 0th item any further up
+        return;
+    }
+
+    deselect(x);
+
+    var tempItemText = itemText[x - 1];
+    itemText[x - 1] = itemText[x];
+    itemText[x] = tempItemText;
+
+    outlet(0, "item", "send", "entry_" + x.toString());
+    outlet(0, "item", "text", itemText[x]);
+
+    outlet(0, "item", "send", "entry_" + (x - 1).toString());
+    outlet(0, "item", "text", itemText[x - 1]);
+
+    selectedItem = x - 1;
+    selectItem(x, 0);
+    selectItem(x - 1, 1);
+}
+
+function movedown(i) {
+    var x;
+    if (typeof(i) != "number") {
+        x = selectedItem;
+    }
+    else {
+        x = i;
+    }
+    if (x < 0 || x >= selectedItems.length - 1) { //Cannot move Nth item any further down
+        return;
+    }
+
+    deselect(x);
+
+    var tempItemText = itemText[x + 1];
+    itemText[x + 1] = itemText[x];
+    itemText[x] = tempItemText;
+
+    outlet(0, "item", "send", "entry_" + x.toString());
+    outlet(0, "item", "text", itemText[x]);
+
+    outlet(0, "item", "send", "entry_" + (x + 1).toString());
+    outlet(0, "item", "text", itemText[x + 1]);
+
+    selectedItem = x + 1;
+    selectItem(x, 0);
+    selectItem(x + 1, 1);
 }
 
 function check(i, column) {
@@ -399,6 +477,30 @@ function dump() {
         outlet(0, "output", "check", 1, i, checkbox1[i]);
         outlet(0, "output", "check", 2, i, checkbox2[i]);
     }
+}
+
+function nummatch(t) {
+    if (typeof(t) != "string") {
+        return;
+    }
+
+    var numMatches = 0;
+    for (var i = 0; i < selectedItems.length; ++i) {
+        if (itemText[i] == t) {
+            numMatches++;
+        }
+    }
+    outlet(0, "output", "nummatch", numMatches);
+}
+
+function numselected() {
+    var numSelected = 0;
+    for (var i = 0; i < selectedItems.length; ++i) {
+        if (selectedItems[i]) {
+            numSelected++;
+        }
+    }
+    outlet(0, "output", "numselected", numSelected);
 }
 
 function getsize() {
