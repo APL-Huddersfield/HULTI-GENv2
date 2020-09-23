@@ -369,3 +369,11 @@ function numselected() {
 function getsize() {
     outlet(0, "output", "size", selectedItems.length);
 }
+
+function indexof(t) {
+    if (typeof(t) != "string") {
+        return;
+    }
+
+    outlet(0, "output", "indexof", itemText.indexOf(t));
+}
