@@ -217,7 +217,7 @@ function append(t) {
     if (selectedItems.length == maxNumItems) {
         return;
     }
-    if (filterDuplicates) {
+    if (filterDuplicates && t != " ") {
         if (itemText.indexOf(t) >= 0) {
             return;
         }
@@ -286,6 +286,12 @@ function removeduplicates() {
 function rename(i, t) {
     if (i < 0 || i >= selectedItems.length) {
         return;
+    }
+
+    if (filterDuplicates && t != " ") {
+        if (itemText.indexOf(t) >= 0) {
+            return;
+        }
     }
 
     itemText[i] = t;
