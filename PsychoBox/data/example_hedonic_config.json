@@ -19,6 +19,7 @@
             }
         }
     },
+    "numStimuliPerGroup" : 8,
     "pool" : ["low_tone_1.wav", "low_tone_2.wav", "low_tone_3.wav", "low_tone_4.wav", "low_tone_5.wav", "low_tone_6.wav", "low_tone_7.wav", "low_tone_8.wav",
               "high_tone_1.wav", "high_tone_2.wav", "high_tone_3.wav", "high_tone_4.wav", "high_tone_5.wav", "high_tone_6.wav", "high_tone_7.wav", "high_tone_8.wav"],
     "sessions" : [{

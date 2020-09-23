@@ -20,6 +20,7 @@
             }
         }
     },
+    "numStimuliPerGroup" : 8,
     "pool" : ["tone_0_level_0.wav", "tone_0_level_1.wav", "tone_0_level_2.wav", "tone_0_level_3.wav", "tone_0_level_4.wav", "tone_0_level_5.wav", "tone_0_level_6.wav", "tone_0_level_7.wav",
               "tone_1_level_0.wav", "tone_1_level_1.wav", "tone_1_level_2.wav", "tone_1_level_3.wav", "tone_1_level_4.wav", "tone_1_level_5.wav", "tone_1_level_6.wav", "tone_1_level_7.wav",
               "tone_2_level_0.wav", "tone_2_level_1.wav", "tone_2_level_2.wav", "tone_2_level_3.wav", "tone_2_level_4.wav", "tone_2_level_5.wav", "tone_2_level_6.wav", "tone_2_level_7.wav",
