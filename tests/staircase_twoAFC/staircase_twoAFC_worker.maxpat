@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 753.0, 305.0, 1424.0, 602.0 ],
+		"rect" : [ 462.0, 305.0, 1424.0, 602.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -2339,8 +2339,8 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "multichannelsignal", "" ],
-					"patching_rect" : [ 223.333333333333258, 401.5, 181.0, 22.0 ],
-					"text" : "player_generalPurpose 2 1 multi"
+					"patching_rect" : [ 223.333333333333258, 401.5, 123.0, 22.0 ],
+					"text" : "player_sequential 2 1"
 				}
 
 			}
@@ -2620,8 +2620,8 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 893.0, 298.0, 131.0, 22.0 ],
-					"text" : "setnumstimuli 2 1 multi"
+					"patching_rect" : [ 893.0, 298.0, 76.0, 22.0 ],
+					"text" : "numstimuli 2"
 				}
 
 			}
@@ -2670,7 +2670,7 @@
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ 1546.0, 421.0, 867.0, 734.0 ],
+						"rect" : [ 1019.0, 421.0, 867.0, 734.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -3702,13 +3702,12 @@
 , 							{
 								"box" : 								{
 									"id" : "obj-8",
-									"linecount" : 2,
 									"maxclass" : "message",
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 103.0, 282.0, 137.0, 35.0 ],
-									"text" : "switch 1, docheck 1 0, docheck 0 1, start"
+									"patching_rect" : [ 103.0, 282.0, 82.0, 22.0 ],
+									"text" : "switch 1, start"
 								}
 
 							}
@@ -3996,13 +3995,12 @@
 , 							{
 								"box" : 								{
 									"id" : "obj-8",
-									"linecount" : 2,
 									"maxclass" : "message",
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 57.0, 253.0, 136.0, 35.0 ],
-									"text" : "switch 0, docheck 0 1, docheck 1 0, start"
+									"patching_rect" : [ 57.0, 253.0, 82.0, 22.0 ],
+									"text" : "switch 0, start"
 								}
 
 							}
@@ -4433,7 +4431,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-1", 0 ],
-					"midpoints" : [ 394.833333333333258, 461.5, 1094.5, 461.5, 1094.5, 94.0, 529.799999999999955, 94.0 ],
+					"midpoints" : [ 336.833333333333258, 461.5, 1094.5, 461.5, 1094.5, 94.0, 529.799999999999955, 94.0 ],
 					"order" : 1,
 					"source" : [ "obj-20", 1 ]
 				}
@@ -4442,7 +4440,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-18", 0 ],
-					"midpoints" : [ 394.833333333333258, 461.5, 1094.5, 461.5, 1094.5, 94.0, 902.5, 94.0 ],
+					"midpoints" : [ 336.833333333333258, 461.5, 1094.5, 461.5, 1094.5, 94.0, 902.5, 94.0 ],
 					"order" : 0,
 					"source" : [ "obj-20", 1 ]
 				}
@@ -4689,36 +4687,29 @@
 			}
  ],
 		"dependency_cache" : [ 			{
-				"name" : "player_generalPurpose.maxpat",
-				"bootpath" : "~/Documents/Max 8/Projects/HULTI-GENv2/PsychoBox/patchers",
-				"patcherrelativepath" : "../../PsychoBox/patchers",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "player_transport_multi.maxpat",
-				"bootpath" : "~/Documents/Max 8/Projects/HULTI-GENv2/PsychoBox/patchers",
+				"name" : "player_sequential.maxpat",
+				"bootpath" : "~/Documents/Max 8/Projects/PsychoBox/PsychoBox/patchers",
 				"patcherrelativepath" : "../../PsychoBox/patchers",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "staircaseCore.maxpat",
-				"bootpath" : "~/Documents/Max 8/Projects/HULTI-GENv2/PsychoBox/patchers",
+				"bootpath" : "~/Documents/Max 8/Projects/PsychoBox/PsychoBox/patchers",
 				"patcherrelativepath" : "../../PsychoBox/patchers",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "checkIfUniqueInColl.maxpat",
-				"bootpath" : "~/Documents/Max 8/Projects/HULTI-GENv2/PsychoBox/patchers",
+				"bootpath" : "~/Documents/Max 8/Projects/PsychoBox/PsychoBox/patchers",
 				"patcherrelativepath" : "../../PsychoBox/patchers",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "containsSequence.js",
-				"bootpath" : "~/Documents/Max 8/Projects/HULTI-GENv2/PsychoBox/code",
+				"bootpath" : "~/Documents/Max 8/Projects/PsychoBox/PsychoBox/code",
 				"patcherrelativepath" : "../../PsychoBox/code",
 				"type" : "TEXT",
 				"implicit" : 1
