@@ -2,7 +2,7 @@
 	"name" : "PsychoBox",
 	"version" : 1,
 	"creationdate" : 3666872002,
-	"modificationdate" : 3683749297,
+	"modificationdate" : 3683822652,
 	"viewrect" : [ 1192.0, 246.0, 461.0, 826.0 ],
 	"autoorganize" : 1,
 	"hideprojectwindow" : 0,
@@ -26,7 +26,7 @@
 				"local" : 1
 			}
 ,
-			"ui_filelist_pool.maxpat" : 			{
+			"ui_filelist_pool_withDependencies.maxpat" : 			{
 				"kind" : "patcher",
 				"local" : 1
 			}
@@ -37,26 +37,6 @@
 			}
 ,
 			"ui_filelist_entry.maxpat" : 			{
-				"kind" : "patcher",
-				"local" : 1
-			}
-,
-			"ui_filelist_itur.maxpat" : 			{
-				"kind" : "patcher",
-				"local" : 1
-			}
-,
-			"ui_filelist_multicheckbox.maxpat" : 			{
-				"kind" : "patcher",
-				"local" : 1
-			}
-,
-			"ui_filelist_entry_multicheckbox.maxpat" : 			{
-				"kind" : "patcher",
-				"local" : 1
-			}
-,
-			"ui_checkbox.maxpat" : 			{
 				"kind" : "patcher",
 				"local" : 1
 			}
@@ -72,6 +52,11 @@
 			}
 ,
 			"ui_config_stimulusPool.maxpat" : 			{
+				"kind" : "patcher",
+				"local" : 1
+			}
+,
+			"ui_filelist_pool.maxpat" : 			{
 				"kind" : "patcher",
 				"local" : 1
 			}
@@ -107,6 +92,26 @@
 			}
 ,
 			"ui_config_chooseTest.maxpat" : 			{
+				"kind" : "patcher",
+				"local" : 1
+			}
+,
+			"ui_filelist_itur.maxpat" : 			{
+				"kind" : "patcher",
+				"local" : 1
+			}
+,
+			"ui_filelist_multicheckbox.maxpat" : 			{
+				"kind" : "patcher",
+				"local" : 1
+			}
+,
+			"ui_filelist_entry_multicheckbox.maxpat" : 			{
+				"kind" : "patcher",
+				"local" : 1
+			}
+,
+			"ui_checkbox.maxpat" : 			{
 				"kind" : "patcher",
 				"local" : 1
 			}
@@ -224,7 +229,7 @@
 				"kind" : "patcher",
 				"local" : 1,
 				"singleton" : 				{
-					"bootpath" : "~/Documents/Max 8/Projects/PsychoBox/tests/sdt_twoAFC",
+					"bootpath" : "~/Documents/Max 8/Projects/HULTI-GENv2/tests/sdt_twoAFC",
 					"projectrelativepath" : "../tests/sdt_twoAFC"
 				}
 
@@ -309,7 +314,7 @@
 				"kind" : "patcher",
 				"local" : 1,
 				"singleton" : 				{
-					"bootpath" : "~/Documents/Max 8/Projects/PsychoBox/PsychoBox/patchers",
+					"bootpath" : "~/Documents/Max 8/Projects/HULTI-GENv2/PsychoBox/patchers",
 					"projectrelativepath" : "./patchers"
 				}
 
@@ -319,7 +324,7 @@
 				"kind" : "patcher",
 				"local" : 1,
 				"singleton" : 				{
-					"bootpath" : "~/Documents/Max 8/Projects/PsychoBox/PsychoBox/patchers",
+					"bootpath" : "~/Documents/Max 8/Projects/HULTI-GENv2/PsychoBox/patchers",
 					"projectrelativepath" : "./patchers"
 				}
 
@@ -329,7 +334,7 @@
 				"kind" : "patcher",
 				"local" : 1,
 				"singleton" : 				{
-					"bootpath" : "~/Documents/Max 8/Projects/PsychoBox/PsychoBox/patchers",
+					"bootpath" : "~/Documents/Max 8/Projects/HULTI-GENv2/PsychoBox/patchers",
 					"projectrelativepath" : "./patchers"
 				}
 
@@ -339,7 +344,7 @@
 				"kind" : "patcher",
 				"local" : 1,
 				"singleton" : 				{
-					"bootpath" : "~/Documents/Max 8/Projects/PsychoBox/PsychoBox/patchers",
+					"bootpath" : "~/Documents/Max 8/Projects/HULTI-GENv2/PsychoBox/patchers",
 					"projectrelativepath" : "./patchers"
 				}
 
@@ -349,7 +354,7 @@
 				"kind" : "patcher",
 				"local" : 1,
 				"singleton" : 				{
-					"bootpath" : "~/Documents/Max 8/Projects/PsychoBox/PsychoBox/patchers",
+					"bootpath" : "~/Documents/Max 8/Projects/HULTI-GENv2/PsychoBox/patchers",
 					"projectrelativepath" : "./patchers"
 				}
 
@@ -359,7 +364,7 @@
 				"kind" : "patcher",
 				"local" : 1,
 				"singleton" : 				{
-					"bootpath" : "~/Documents/Max 8/Projects/PsychoBox/PsychoBox/patchers",
+					"bootpath" : "~/Documents/Max 8/Projects/HULTI-GENv2/PsychoBox/patchers",
 					"projectrelativepath" : "./patchers"
 				}
 
@@ -369,7 +374,7 @@
 				"kind" : "patcher",
 				"local" : 1,
 				"singleton" : 				{
-					"bootpath" : "~/Documents/Max 8/Projects/PsychoBox/PsychoBox/patchers",
+					"bootpath" : "~/Documents/Max 8/Projects/HULTI-GENv2/PsychoBox/patchers",
 					"projectrelativepath" : "./patchers"
 				}
 
@@ -379,7 +384,7 @@
 				"kind" : "patcher",
 				"local" : 1,
 				"singleton" : 				{
-					"bootpath" : "~/Documents/Max 8/Projects/PsychoBox/PsychoBox/patchers",
+					"bootpath" : "~/Documents/Max 8/Projects/HULTI-GENv2/PsychoBox/patchers",
 					"projectrelativepath" : "./patchers"
 				}
 
@@ -389,7 +394,7 @@
 				"kind" : "patcher",
 				"local" : 1,
 				"singleton" : 				{
-					"bootpath" : "~/Documents/Max 8/Projects/PsychoBox/PsychoBox/patchers",
+					"bootpath" : "~/Documents/Max 8/Projects/HULTI-GENv2/PsychoBox/patchers",
 					"projectrelativepath" : "./patchers"
 				}
 
@@ -399,17 +404,22 @@
 				"kind" : "patcher",
 				"local" : 1,
 				"singleton" : 				{
-					"bootpath" : "~/Documents/Max 8/Projects/PsychoBox/PsychoBox/patchers",
+					"bootpath" : "~/Documents/Max 8/Projects/HULTI-GENv2/PsychoBox/patchers",
 					"projectrelativepath" : "./patchers"
 				}
 
+			}
+,
+			"player_sequential.maxpat" : 			{
+				"kind" : "patcher",
+				"local" : 1
 			}
 ,
 			"ui_params_sdt_twoAFC.maxpat" : 			{
 				"kind" : "patcher",
 				"local" : 1,
 				"singleton" : 				{
-					"bootpath" : "~/Documents/Max 8/Projects/PsychoBox/PsychoBox/patchers",
+					"bootpath" : "~/Documents/Max 8/Projects/HULTI-GENv2/PsychoBox/patchers",
 					"projectrelativepath" : "./patchers"
 				}
 
@@ -419,7 +429,7 @@
 				"kind" : "patcher",
 				"local" : 1,
 				"singleton" : 				{
-					"bootpath" : "~/Documents/Max 8/Projects/PsychoBox/PsychoBox/patchers",
+					"bootpath" : "~/Documents/Max 8/Projects/HULTI-GENv2/PsychoBox/patchers",
 					"projectrelativepath" : "./patchers"
 				}
 
@@ -429,7 +439,7 @@
 				"kind" : "patcher",
 				"local" : 1,
 				"singleton" : 				{
-					"bootpath" : "~/Documents/Max 8/Projects/PsychoBox/PsychoBox/patchers",
+					"bootpath" : "~/Documents/Max 8/Projects/HULTI-GENv2/PsychoBox/patchers",
 					"projectrelativepath" : "./patchers"
 				}
 
@@ -439,7 +449,7 @@
 				"kind" : "patcher",
 				"local" : 1,
 				"singleton" : 				{
-					"bootpath" : "~/Documents/Max 8/Projects/PsychoBox/PsychoBox/patchers",
+					"bootpath" : "~/Documents/Max 8/Projects/HULTI-GENv2/PsychoBox/patchers",
 					"projectrelativepath" : "./patchers"
 				}
 
@@ -449,7 +459,7 @@
 				"kind" : "patcher",
 				"local" : 1,
 				"singleton" : 				{
-					"bootpath" : "~/Documents/Max 8/Projects/PsychoBox/PsychoBox/patchers",
+					"bootpath" : "~/Documents/Max 8/Projects/HULTI-GENv2/PsychoBox/patchers",
 					"projectrelativepath" : "./patchers"
 				}
 
@@ -459,15 +469,10 @@
 				"kind" : "patcher",
 				"local" : 1,
 				"singleton" : 				{
-					"bootpath" : "~/Documents/Max 8/Projects/PsychoBox/PsychoBox/patchers",
+					"bootpath" : "~/Documents/Max 8/Projects/HULTI-GENv2/PsychoBox/patchers",
 					"projectrelativepath" : "./patchers"
 				}
 
-			}
-,
-			"player_sequential.maxpat" : 			{
-				"kind" : "patcher",
-				"local" : 1
 			}
 
 		}
@@ -486,17 +491,17 @@
 				"local" : 1
 			}
 ,
-			"filelistManagerMultiCheckbox.js" : 			{
-				"kind" : "javascript",
-				"local" : 1
-			}
-,
 			"configSessionsSidemenu4.js" : 			{
 				"kind" : "javascript",
 				"local" : 1
 			}
 ,
 			"addRemoveSessions.js" : 			{
+				"kind" : "javascript",
+				"local" : 1
+			}
+,
+			"filelistManagerMultiCheckbox.js" : 			{
 				"kind" : "javascript",
 				"local" : 1
 			}
@@ -575,7 +580,7 @@
 				"kind" : "javascript",
 				"local" : 1,
 				"singleton" : 				{
-					"bootpath" : "~/Documents/Max 8/Projects/PsychoBox/PsychoBox/patchers",
+					"bootpath" : "~/Documents/Max 8/Projects/HULTI-GENv2/PsychoBox/patchers",
 					"projectrelativepath" : "./patchers"
 				}
 
