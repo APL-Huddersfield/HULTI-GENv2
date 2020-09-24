@@ -1,6 +1,7 @@
 {
     "slug" : "sdt_abx",
     "name" : "SDT ABX",
+    "tag" : "psychometric",
     "parameters" : [
         "repetitions",
         "objective"

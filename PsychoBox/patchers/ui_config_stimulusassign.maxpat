@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 257.0, 96.0, 1674.0, 1028.0 ],
+		"rect" : [ 478.0, 129.0, 1938.0, 1131.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -40,12 +40,24 @@
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
 				"box" : 				{
+					"color" : [ 0.0, 0.709803921568627, 0.847058823529412, 1.0 ],
+					"id" : "obj-7",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 33.0, 363.0, 116.0, 22.0 ],
+					"text" : "s #0-toSessionPane"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-66",
 					"maxclass" : "message",
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 1098.0, 646.5, 109.0, 22.0 ],
+					"patching_rect" : [ 1659.0, 166.0, 109.0, 22.0 ],
 					"text" : "dictionary manifest"
 				}
 
@@ -57,7 +69,7 @@
 					"numinlets" : 3,
 					"numoutlets" : 3,
 					"outlettype" : [ "bang", "bang", "" ],
-					"patching_rect" : [ 1098.0, 729.5, 151.0, 22.0 ],
+					"patching_rect" : [ 1659.0, 278.0, 151.0, 22.0 ],
 					"text" : "sel grading psychometric"
 				}
 
@@ -69,20 +81,8 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 1098.0, 688.0, 93.0, 22.0 ],
+					"patching_rect" : [ 1659.0, 223.0, 93.0, 22.0 ],
 					"text" : "dict.unpack tag:"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-60",
-					"maxclass" : "message",
-					"numinlets" : 2,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 1351.0, 616.0, 155.0, 22.0 ],
-					"text" : "read sdt_abx_manifest.json"
 				}
 
 			}
@@ -93,7 +93,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 1037.0, 784.5, 120.0, 22.0 ],
+					"patching_rect" : [ 1598.0, 333.0, 120.0, 22.0 ],
 					"text" : "ui_filelist_itur.maxpat"
 				}
 
@@ -105,26 +105,8 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 1164.0, 784.5, 175.0, 22.0 ],
+					"patching_rect" : [ 1725.0, 333.0, 175.0, 22.0 ],
 					"text" : "ui_filelist_psychometric.maxpat"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-53",
-					"maxclass" : "newobj",
-					"numinlets" : 2,
-					"numoutlets" : 4,
-					"outlettype" : [ "dictionary", "", "", "" ],
-					"patching_rect" : [ 1351.0, 665.0, 76.0, 22.0 ],
-					"saved_object_attributes" : 					{
-						"embed" : 0,
-						"parameter_enable" : 0,
-						"parameter_mappable" : 0
-					}
-,
-					"text" : "dict manifest"
 				}
 
 			}
@@ -135,7 +117,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 1037.0, 906.5, 67.0, 22.0 ],
+					"patching_rect" : [ 1598.0, 477.0, 67.0, 22.0 ],
 					"save" : [ "#N", "thispatcher", ";", "#Q", "end", ";" ],
 					"text" : "thispatcher"
 				}
@@ -144,12 +126,13 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-14",
+					"linecount" : 3,
 					"maxclass" : "message",
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 1037.0, 849.0, 216.0, 22.0 ],
-					"text" : "script sendbox sessionpane replace $1"
+					"patching_rect" : [ 1598.0, 397.5, 261.0, 49.0 ],
+					"text" : "script sendbox sessionpane replace $1, script connect tosessionpane 0 sessionpane 0, script connect sessionpane 0 configdata 0"
 				}
 
 			}
@@ -605,7 +588,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 149.0, 824.0, 31.0, 22.0 ],
+					"patching_rect" : [ 149.0, 925.0, 31.0, 22.0 ],
 					"text" : "next"
 				}
 
@@ -617,7 +600,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 34.0, 824.0, 34.0, 22.0 ],
+					"patching_rect" : [ 34.0, 925.0, 34.0, 22.0 ],
 					"text" : "back"
 				}
 
@@ -629,7 +612,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 34.0, 922.5, 187.0, 22.0 ],
+					"patching_rect" : [ 34.0, 1023.5, 187.0, 22.0 ],
 					"text" : "prepend callbacks stimulusassign"
 				}
 
@@ -641,7 +624,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 34.0, 877.5, 132.0, 22.0 ],
+					"patching_rect" : [ 34.0, 978.5, 132.0, 22.0 ],
 					"text" : "prepend buttonpressed"
 				}
 
@@ -665,7 +648,7 @@
 					"maxclass" : "outlet",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 34.0, 963.0, 30.0, 30.0 ]
+					"patching_rect" : [ 34.0, 1064.0, 30.0, 30.0 ]
 				}
 
 			}
@@ -679,7 +662,7 @@
 					"numoutlets" : 3,
 					"outlettype" : [ "", "", "int" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 34.0, 784.5, 100.0, 24.0 ],
+					"patching_rect" : [ 34.0, 885.5, 100.0, 24.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 256.5, 660.0, 100.0, 24.0 ],
 					"text" : "<< Back",
@@ -696,7 +679,7 @@
 					"maxclass" : "live.line",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 33.0, 774.5, 216.0, 5.0 ],
+					"patching_rect" : [ 33.0, 875.5, 216.0, 5.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 0.0, 650.0, 1250.0, 5.0 ]
 				}
@@ -712,7 +695,7 @@
 					"numoutlets" : 3,
 					"outlettype" : [ "", "", "int" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 149.0, 784.5, 100.0, 24.0 ],
+					"patching_rect" : [ 149.0, 885.5, 100.0, 24.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 856.5, 660.0, 100.0, 24.0 ],
 					"text" : "Finish",
@@ -729,7 +712,7 @@
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 1509.0, 67.0, 74.0, 22.0 ],
+					"patching_rect" : [ 1668.0, 36.0, 74.0, 22.0 ],
 					"text" : "r toAssignUI"
 				}
 
@@ -738,11 +721,11 @@
 				"box" : 				{
 					"id" : "obj-9",
 					"maxclass" : "newobj",
-					"numinlets" : 2,
-					"numoutlets" : 2,
-					"outlettype" : [ "bang", "" ],
-					"patching_rect" : [ 1468.0, 129.0, 65.0, 22.0 ],
-					"text" : "sel onview"
+					"numinlets" : 3,
+					"numoutlets" : 3,
+					"outlettype" : [ "bang", "bang", "" ],
+					"patching_rect" : [ 1627.0, 98.0, 83.0, 22.0 ],
+					"text" : "sel onview init"
 				}
 
 			}
@@ -755,7 +738,7 @@
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 1468.0, 59.0, 30.0, 30.0 ]
+					"patching_rect" : [ 1627.0, 28.0, 30.0, 30.0 ]
 				}
 
 			}
@@ -2086,8 +2069,9 @@
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 59.0, 353.0, 114.0, 22.0 ],
-					"text" : "r #0-toSessionPane"
+					"patching_rect" : [ 33.0, 448.0, 114.0, 22.0 ],
+					"text" : "r #0-toSessionPane",
+					"varname" : "tosessionpane"
 				}
 
 			}
@@ -2098,7 +2082,7 @@
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 125.0, 700.0, 109.0, 22.0 ],
+					"patching_rect" : [ 125.0, 801.0, 109.0, 22.0 ],
 					"text" : "r #0-removeStimuli"
 				}
 
@@ -2823,7 +2807,7 @@
  ]
 					}
 ,
-					"patching_rect" : [ 33.0, 739.0, 111.0, 22.0 ],
+					"patching_rect" : [ 33.0, 840.0, 111.0, 22.0 ],
 					"saved_object_attributes" : 					{
 						"description" : "",
 						"digest" : "",
@@ -2831,7 +2815,8 @@
 						"tags" : ""
 					}
 ,
-					"text" : "p addDataToConfig"
+					"text" : "p addDataToConfig",
+					"varname" : "configdata"
 				}
 
 			}
@@ -6926,12 +6911,10 @@
 					"id" : "obj-13",
 					"lockeddragscroll" : 0,
 					"maxclass" : "bpatcher",
-					"name" : "ui_filelist_itur.maxpat",
-					"numinlets" : 1,
-					"numoutlets" : 2,
+					"numinlets" : 0,
+					"numoutlets" : 0,
 					"offset" : [ 0.0, 0.0 ],
-					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 33.0, 407.0, 502.0, 268.5 ],
+					"patching_rect" : [ 33.0, 508.0, 502.0, 268.5 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 748.0, 29.0, 502.0, 502.0 ],
 					"varname" : "sessionpane",
@@ -7142,7 +7125,7 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-13", 0 ],
+					"destination" : [ "obj-7", 0 ],
 					"midpoints" : [ 287.0, 336.0, 42.5, 336.0 ],
 					"source" : [ "obj-10", 0 ]
 				}
@@ -7175,13 +7158,6 @@
 				"patchline" : 				{
 					"destination" : [ "obj-92", 1 ],
 					"source" : [ "obj-12", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-47", 0 ],
-					"source" : [ "obj-13", 0 ]
 				}
 
 			}
@@ -7324,17 +7300,17 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-13", 0 ],
-					"midpoints" : [ 411.666666999999961, 336.0, 42.5, 336.0 ],
-					"source" : [ "obj-35", 0 ]
+					"destination" : [ "obj-41", 0 ],
+					"midpoints" : [ 470.666666999999961, 350.0, 243.5, 350.0 ],
+					"source" : [ "obj-35", 1 ]
 				}
 
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-41", 0 ],
-					"midpoints" : [ 470.666666999999961, 350.0, 243.5, 350.0 ],
-					"source" : [ "obj-35", 1 ]
+					"destination" : [ "obj-7", 0 ],
+					"midpoints" : [ 411.666666999999961, 336.0, 42.5, 336.0 ],
+					"source" : [ "obj-35", 0 ]
 				}
 
 			}
@@ -7433,15 +7409,8 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-13", 0 ],
-					"source" : [ "obj-55", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
 					"destination" : [ "obj-14", 0 ],
-					"midpoints" : [ 1173.5, 827.25, 1046.5, 827.25 ],
+					"midpoints" : [ 1734.5, 375.75, 1607.5, 375.75 ],
 					"source" : [ "obj-56", 0 ]
 				}
 
@@ -7449,7 +7418,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-45", 0 ],
-					"midpoints" : [ 158.5, 863.5, 43.5, 863.5 ],
+					"midpoints" : [ 158.5, 964.5, 43.5, 964.5 ],
 					"source" : [ "obj-57", 0 ]
 				}
 
@@ -7465,13 +7434,6 @@
 				"patchline" : 				{
 					"destination" : [ "obj-38", 0 ],
 					"source" : [ "obj-6", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-53", 0 ],
-					"source" : [ "obj-60", 0 ]
 				}
 
 			}
@@ -7499,7 +7461,6 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-58", 0 ],
-					"midpoints" : [ 1107.5, 767.5, 1046.5, 767.5 ],
 					"source" : [ "obj-63", 0 ]
 				}
 
@@ -7520,7 +7481,7 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-13", 0 ],
+					"destination" : [ "obj-7", 0 ],
 					"source" : [ "obj-70", 0 ]
 				}
 
@@ -7534,7 +7495,7 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-13", 0 ],
+					"destination" : [ "obj-7", 0 ],
 					"midpoints" : [ 179.5, 336.0, 42.5, 336.0 ],
 					"source" : [ "obj-8", 0 ]
 				}
@@ -7606,6 +7567,13 @@
 				"patchline" : 				{
 					"destination" : [ "obj-95", 0 ],
 					"source" : [ "obj-87", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-66", 0 ],
+					"source" : [ "obj-9", 1 ]
 				}
 
 			}
@@ -7703,48 +7671,6 @@
 				"bootpath" : "~/Documents/Max 8/Projects/HULTI-GENv2/PsychoBox/code",
 				"patcherrelativepath" : "../code",
 				"type" : "TEXT",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "ui_filelist_itur.maxpat",
-				"bootpath" : "~/Documents/Max 8/Projects/HULTI-GENv2/PsychoBox/patchers",
-				"patcherrelativepath" : ".",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "ui_filelist_multicheckbox.maxpat",
-				"bootpath" : "~/Documents/Max 8/Projects/HULTI-GENv2/PsychoBox/patchers",
-				"patcherrelativepath" : ".",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "ui_filelist_entry_multicheckbox.maxpat",
-				"bootpath" : "~/Documents/Max 8/Projects/HULTI-GENv2/PsychoBox/patchers",
-				"patcherrelativepath" : ".",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "ui_checkbox.maxpat",
-				"bootpath" : "~/Documents/Max 8/Projects/HULTI-GENv2/PsychoBox/patchers",
-				"patcherrelativepath" : ".",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "filelistManagerMultiCheckbox.js",
-				"bootpath" : "~/Documents/Max 8/Projects/HULTI-GENv2/PsychoBox/code",
-				"patcherrelativepath" : "../code",
-				"type" : "TEXT",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "warning.png",
-				"bootpath" : "~/Documents/Max 8/Projects/HULTI-GENv2/PsychoBox/media",
-				"patcherrelativepath" : "../media",
-				"type" : "PNG",
 				"implicit" : 1
 			}
 , 			{

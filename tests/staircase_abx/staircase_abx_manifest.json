@@ -1,6 +1,7 @@
 {
     "slug" : "staircase_abx",
     "name" : "Staircase ABX",
+    "tag" : "psychometric",
     "parameters" : [
         "objective",
         "initialStep",

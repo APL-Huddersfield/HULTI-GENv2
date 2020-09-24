@@ -1,6 +1,7 @@
 {
     "slug" : "sdt_twoAFC",
     "name" : "SDT 2AFC",
+    "tag" : "psychometric",
     "parameters" : [
         "repetitions",
         "objective"

@@ -1,6 +1,7 @@
 {
     "slug" : "mc_itur_ccr",
     "name" : "Comparison Category Rating (CCR)",
+    "tag" : "grading",
     "parameters" : [
         "repetitions",
         "objective"
