@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 133.0, 157.0, 1493.0, 908.0 ],
+		"rect" : [ 54.0, 92.0, 1271.0, 893.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -39,7 +39,7 @@
 		"subpatcher_template" : "",
 		"workspacedisabled" : 1,
 		"assistshowspatchername" : 0,
-		"globalpatchername" : "u379026324[1][1][1][1][1][1][1][1][1][1][1][1][1][1][1][1][1]",
+		"globalpatchername" : "u379026324[1][1][1][1][1][1][1][1][1][1][1][1][1][1][1][1][1][1]",
 		"boxes" : [ 			{
 				"box" : 				{
 					"bgmode" : 0,
@@ -71,7 +71,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 1198.0, 118.0, 112.0, 22.0 ],
+					"patching_rect" : [ 1120.0, 150.0, 112.0, 22.0 ],
 					"text" : "loadmess mode init"
 				}
 
@@ -106,7 +106,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 1119.0, 242.0, 75.0, 22.0 ],
+					"patching_rect" : [ 1094.0, 274.0, 75.0, 22.0 ],
 					"text" : "s toUIConfig"
 				}
 
@@ -117,7 +117,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 30.0, 876.0, 75.0, 22.0 ],
+					"patching_rect" : [ 30.0, 842.0, 75.0, 22.0 ],
 					"text" : "s toUIConfig"
 				}
 
@@ -140,7 +140,7 @@
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ 359.0, 452.0, 1326.0, 558.0 ],
+						"rect" : [ 1037.0, 622.0, 1326.0, 558.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -6347,7 +6347,7 @@
 										}
 ,
 										"classnamespace" : "box",
-										"rect" : [ 923.0, 486.0, 745.0, 740.0 ],
+										"rect" : [ 944.0, 559.0, 745.0, 740.0 ],
 										"bglocked" : 0,
 										"openinpresentation" : 0,
 										"default_fontsize" : 12.0,
@@ -6536,7 +6536,7 @@
 														}
 ,
 														"classnamespace" : "box",
-														"rect" : [ 216.0, 101.0, 632.0, 838.0 ],
+														"rect" : [ 303.0, 489.0, 632.0, 838.0 ],
 														"bglocked" : 0,
 														"openinpresentation" : 0,
 														"default_fontsize" : 12.0,
@@ -8699,7 +8699,7 @@
  ]
 					}
 ,
-					"patching_rect" : [ 1119.0, 196.0, 102.0, 22.0 ],
+					"patching_rect" : [ 1094.0, 228.0, 102.0, 22.0 ],
 					"saved_object_attributes" : 					{
 						"description" : "",
 						"digest" : "",
@@ -8718,7 +8718,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 1202.0, 242.0, 67.0, 22.0 ],
+					"patching_rect" : [ 1177.0, 274.0, 67.0, 22.0 ],
 					"save" : [ "#N", "thispatcher", ";", "#Q", "end", ";" ],
 					"text" : "thispatcher"
 				}
@@ -8731,7 +8731,7 @@
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 1119.0, 118.0, 73.0, 22.0 ],
+					"patching_rect" : [ 1094.0, 118.0, 73.0, 22.0 ],
 					"text" : "r toUIConfig"
 				}
 
@@ -8743,7 +8743,6 @@
 					"clickthrough" : 0,
 					"enablehscroll" : 0,
 					"enablevscroll" : 0,
-					"hidden" : 1,
 					"id" : "obj-18",
 					"lockeddragscroll" : 0,
 					"maxclass" : "bpatcher",
@@ -8986,7 +8985,7 @@
 				"implicit" : 1
 			}
 , 			{
-				"name" : "ui_params_grading.maxpat",
+				"name" : "ui_params_sdt_abx.maxpat",
 				"bootpath" : "~/Documents/Max 8/Projects/HULTI-GENv2/PsychoBox/patchers",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",

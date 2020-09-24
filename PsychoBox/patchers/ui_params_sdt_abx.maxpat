@@ -812,7 +812,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 366.0, 627.0, 87.0, 28.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 0.0, 240.0, 54.0, 24.0 ],
+					"presentation_rect" : [ 320.0, 74.0, 54.0, 24.0 ],
 					"proportion" : 0.5,
 					"rounded" : 0
 				}
@@ -833,7 +833,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 312.5, 627.0, 54.0, 24.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 0.0, 240.0, 54.0, 24.0 ],
+					"presentation_rect" : [ 320.0, 74.0, 54.0, 24.0 ],
 					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ],
 					"triangle" : 0
 				}
@@ -850,7 +850,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 312.5, 603.0, 194.0, 22.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 0.0, 216.0, 191.0, 22.0 ],
+					"presentation_rect" : [ 320.0, 50.0, 191.0, 22.0 ],
 					"text" : "Total trials per stimulus group"
 				}
 
@@ -868,7 +868,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 323.25, 701.0, 87.0, 28.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 0.0, 290.0, 54.0, 24.0 ],
+					"presentation_rect" : [ 320.0, 124.0, 54.0, 24.0 ],
 					"proportion" : 0.5,
 					"rounded" : 0
 				}
@@ -998,7 +998,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 267.25, 701.0, 54.0, 24.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 0.0, 290.0, 54.0, 24.0 ],
+					"presentation_rect" : [ 320.0, 124.0, 54.0, 24.0 ],
 					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ],
 					"triangle" : 0
 				}
@@ -1015,7 +1015,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 267.25, 675.0, 150.0, 22.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 0.0, 266.0, 156.0, 22.0 ],
+					"presentation_rect" : [ 320.0, 100.0, 156.0, 22.0 ],
 					"text" : "Total trials per session"
 				}
 
@@ -1051,8 +1051,8 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 459.0, 715.0, 83.0, 22.0 ],
-					"text" : "numstimuli $1"
+					"patching_rect" : [ 459.0, 715.0, 59.0, 22.0 ],
+					"text" : "stimuli $1"
 				}
 
 			}
@@ -1075,8 +1075,8 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 162.5, 504.0, 85.0, 22.0 ],
-					"text" : "numgroups $1"
+					"patching_rect" : [ 162.5, 504.0, 62.0, 22.0 ],
+					"text" : "groups $1"
 				}
 
 			}
@@ -1087,8 +1087,8 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 53.0, 504.0, 95.0, 22.0 ],
-					"text" : "numsessions $1"
+					"patching_rect" : [ 53.0, 504.0, 72.0, 22.0 ],
+					"text" : "sessions $1"
 				}
 
 			}
@@ -1166,7 +1166,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 611.5, 373.0, 54.0, 24.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 0.0, 190.0, 54.0, 24.0 ],
+					"presentation_rect" : [ 320.0, 24.0, 54.0, 24.0 ],
 					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
 				}
 
@@ -1181,9 +1181,9 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 667.5, 373.0, 77.0, 38.0 ],
+					"patching_rect" : [ 667.5, 373.0, 78.0, 38.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 0.0, 166.0, 156.0, 22.0 ],
+					"presentation_rect" : [ 320.0, 0.0, 156.0, 22.0 ],
 					"text" : "Number of repetitions"
 				}
 
@@ -1204,7 +1204,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 819.0, 370.0, 440.0, 124.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 200.0, 24.0, 440.0, 124.0 ],
+					"presentation_rect" : [ 10.0, 194.0, 620.0, 124.0 ],
 					"text" : "Choose the stimulus that resembled X the most",
 					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
 				}
@@ -1221,7 +1221,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 1179.0, 343.0, 80.0, 22.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 200.0, 0.0, 160.0, 22.0 ],
+					"presentation_rect" : [ 10.0, 170.0, 160.0, 22.0 ],
 					"text" : "Objective"
 				}
 
@@ -1241,7 +1241,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 53.0, 373.0, 54.0, 24.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 0.0, 24.0, 54.0, 24.0 ],
+					"presentation_rect" : [ 10.0, 24.0, 54.0, 24.0 ],
 					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
 				}
 
@@ -1257,7 +1257,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 113.0, 373.0, 81.0, 22.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 0.0, 0.0, 160.0, 22.0 ],
+					"presentation_rect" : [ 10.0, 0.0, 160.0, 22.0 ],
 					"text" : "Sessions"
 				}
 
@@ -1277,7 +1277,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 448.5, 373.0, 54.0, 24.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 0.0, 140.0, 54.0, 24.0 ],
+					"presentation_rect" : [ 10.0, 124.0, 54.0, 24.0 ],
 					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
 				}
 
@@ -1294,8 +1294,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 504.5, 373.0, 97.0, 53.0 ],
 					"presentation" : 1,
-					"presentation_linecount" : 2,
-					"presentation_rect" : [ 0.0, 100.0, 123.0, 38.0 ],
+					"presentation_rect" : [ 10.0, 100.0, 211.0, 22.0 ],
 					"text" : "No. stimulus pairs (Ref. vs Test)"
 				}
 
@@ -1315,7 +1314,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 267.0, 373.0, 54.0, 24.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 0.0, 74.0, 54.0, 24.0 ],
+					"presentation_rect" : [ 10.0, 74.0, 54.0, 24.0 ],
 					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
 				}
 
@@ -1332,7 +1331,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 327.25, 373.0, 109.0, 38.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 0.0, 50.0, 180.0, 22.0 ],
+					"presentation_rect" : [ 10.0, 50.0, 180.0, 22.0 ],
 					"text" : "Number of stimulus groups"
 				}
 

@@ -462,7 +462,7 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 389.0, 176.0, 548.0, 260.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 0.0, 50.0, 700.0, 260.0 ],
+					"presentation_rect" : [ 0.0, 50.0, 700.0, 593.0 ],
 					"varname" : "params",
 					"viewvisibility" : 1
 				}
@@ -581,7 +581,7 @@
  ],
 		"dependency_cache" : [ 			{
 				"name" : "ui_params_grading.maxpat",
-				"bootpath" : "~/Documents/Max 8/Projects/PsychoBox/PsychoBox/patchers",
+				"bootpath" : "~/Documents/Max 8/Projects/HULTI-GENv2/PsychoBox/patchers",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
