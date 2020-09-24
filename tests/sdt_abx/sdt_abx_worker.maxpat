@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 104.0, 295.0, 1371.0, 479.0 ],
+		"rect" : [ 389.0, 476.0, 1371.0, 479.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -44,9 +44,9 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 2,
-					"outlettype" : [ "multichannelsignal", "" ],
-					"patching_rect" : [ 191.0, 347.5, 181.0, 22.0 ],
-					"text" : "player_generalPurpose 2 1 multi"
+					"outlettype" : [ "", "" ],
+					"patching_rect" : [ 191.0, 347.5, 123.0, 22.0 ],
+					"text" : "player_sequential 3 1"
 				}
 
 			}
@@ -104,7 +104,6 @@
 									"numinlets" : 1,
 									"numoutlets" : 0,
 									"patching_rect" : [ 21.0, 285.0, 117.0, 20.0 ],
-									"presentation_linecount" : 2,
 									"text" : "Switch to what is X",
 									"textjustification" : 2
 								}
@@ -748,8 +747,8 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 852.0, 257.0, 131.0, 22.0 ],
-					"text" : "setnumstimuli 2 1 multi"
+					"patching_rect" : [ 852.0, 257.0, 76.0, 22.0 ],
+					"text" : "numstimuli 3"
 				}
 
 			}
@@ -825,7 +824,6 @@
 						"style" : "",
 						"subpatcher_template" : "",
 						"assistshowspatchername" : 0,
-						"visible" : 1,
 						"boxes" : [ 							{
 								"box" : 								{
 									"id" : "obj-32",
@@ -2583,7 +2581,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-1", 0 ],
-					"midpoints" : [ 362.5, 379.5, 801.850000000000023, 379.5, 801.850000000000023, 65.0, 443.200000000000045, 65.0 ],
+					"midpoints" : [ 304.5, 379.5, 801.850000000000023, 379.5, 801.850000000000023, 65.0, 443.200000000000045, 65.0 ],
 					"source" : [ "obj-20", 1 ]
 				}
 
@@ -2820,21 +2818,7 @@
 
 			}
  ],
-		"dependency_cache" : [ 			{
-				"name" : "player_generalPurpose.maxpat",
-				"bootpath" : "~/Documents/Max 8/Projects/HULTI-GENv2/PsychoBox/patchers",
-				"patcherrelativepath" : ".",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "player_transport_multi.maxpat",
-				"bootpath" : "~/Documents/Max 8/Projects/HULTI-GENv2/PsychoBox/patchers",
-				"patcherrelativepath" : ".",
-				"type" : "JSON",
-				"implicit" : 1
-			}
- ],
+		"dependency_cache" : [  ],
 		"autosave" : 0
 	}
 
