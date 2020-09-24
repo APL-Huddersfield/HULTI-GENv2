@@ -1,75 +1,102 @@
-function addsession(dictName) {
-    if (typeof(dictName) != "string") {
-        return;
-    }
+var configDict;
+var manifestDict;
 
-    var dict = new Dict(dictName);
+var configDictName = "";
 
-    var sessions = dict.get("sessions");
-    var sessionID = 0;
+var configDictSet = false;
+var manifestDictSet = false;
 
-    if (typeof(sessions) == "string") {
-        // Sessions array is empty
-        dict.append("sessions");
-    }
-    else if (typeof(sessions) == "object" || typeof(sessions) == "array") {
-        dict.append("sessions", "*");
-        sessionID = dict.getsize("sessions") - 1;
-    }
-
-    dict.setparse("sessions[" + sessionID + "]", "groups:");
-    addgroup(dictName, sessionID);
+function setconfigdict(newConfigDictName) {
+    configDictName = newConfigDictName;
+    configDict = new Dict(configDictName);
+    configDictSet = true;
 }
 
-function addgroup(dictName, sessionID) {
-    if (typeof(dictName) != "string" || typeof(sessionID) != "number") {
-        return;
-    }
-    var dict = new Dict(dictName);
-
-    if (!dict.contains("sessions")) {
-        return;
-    }
-
-    if (typeof(dict.get("sessions")) == "string") {
-        return;
-    }
-
-    if (sessionID < 0 || sessionID >= dict.getsize("sessions")) {
-        return;
-    }
-
-    var dict = new Dict(dictName);
-    var sessionsStr= "sessions[" + sessionID + "]";
-    var groupsStr = sessionsStr + "::groups";
-    var groups = dict.get(groupsStr);
-    var groupID = 0;
-
-    if (typeof(groups) == "string") {
-        // Groups array is empty
-        dict.append(groupsStr);
-    }
-    else if (typeof(groups) == "object" || typeof(groups) == "array") {
-        dict.append(groupsStr, "*");
-        groupID = dict.getsize(groupsStr) - 1;
-
-    }
-
-    dict.setparse(groupsStr + "[" + groupID + "]", "stimuli: reference: high: low:");
-    dict.set(groupsStr + "[" + groupID + "]::reference", -1);
-    dict.set(groupsStr + "[" + groupID + "]::high", -1);
-    dict.set(groupsStr + "[" + groupID + "]::low", -1);
+function setmanifestdict(manifestDictName) {
+    manifestDict = new Dict(manifestDictName);
+    manifestDictSet = true;
 }
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////
 
-function resizesessions(dictName, x) {
-    if (typeof(dictName) != "string" || typeof(x) != "number") {
+function addsession() {
+    if (!configDictSet) {
         return;
     }
-    var dict = new Dict(dictName);
 
-    if (!dict.contains("sessions")) {
+    var sessions = configDict.get("sessions");
+    var sessionID = 0;
+
+    if (typeof(sessions) == "string") {
+        // Sessions array is empty
+        configDict.append("sessions");
+    }
+    else if (typeof(sessions) == "object" || typeof(sessions) == "array") {
+        configDict.append("sessions", "*");
+        sessionID = configDict.getsize("sessions") - 1;
+    }
+
+    configDict.setparse("sessions[" + sessionID + "]", "groups:");
+    addgroup(sessionID);
+}
+
+function addgroup(sessionID) {
+    if (!configDictSet || !manifestDictSet || typeof(sessionID) != "number") {
+        return;
+    }
+
+    if (!configDict.contains("sessions")) {
+        return;
+    }
+
+    if (typeof(configDict.get("sessions")) == "string") {
+        return;
+    }
+
+    if (sessionID < 0 || sessionID >= configDict.getsize("sessions")) {
+        return;
+    }
+
+    var sessionsStr= "sessions[" + sessionID + "]";
+    var groupsStr = sessionsStr + "::groups";
+    var groups = configDict.get(groupsStr);
+    var groupID = 0;
+
+    if (typeof(groups) == "string") {
+        // Groups array is empty
+        configDict.append(groupsStr);
+    }
+    else if (typeof(groups) == "object" || typeof(groups) == "array") {
+        configDict.append(groupsStr, "*");
+        groupID = configDict.getsize(groupsStr) - 1;
+
+    }
+
+    var tag = manifestDict.get("tag");
+
+    if (tag == "grading") {
+        configDict.setparse(groupsStr + "[" + groupID + "]", "stimuli: reference: high: low:");
+        configDict.set(groupsStr + "[" + groupID + "]::reference", -1);
+        configDict.set(groupsStr + "[" + groupID + "]::high", -1);
+        configDict.set(groupsStr + "[" + groupID + "]::low", -1);
+    }
+    else if (tag == "psychometric") {
+        configDict.setparse(groupsStr + "[" + groupID + "]", "stimuli: reference:");
+        configDict.set(groupsStr + "[" + groupID + "]::reference", 0);
+    }
+    else {
+        configDict.setparse(groupsStr + "[" + groupID + "]", "stimuli:");
+    }
+}
+
+////////////////////////////////////////////////////////////////////////////////////////////////////
+
+function resizesessions(x) {
+    if (!configDictSet || typeof(x) != "number") {
+        return;
+    }
+
+    if (!configDict.contains("sessions")) {
         return;
     }
 
@@ -78,59 +105,57 @@ function resizesessions(dictName, x) {
     }
 
     var numSessions = 0;
-    if (typeof(dict.get("sessions")) != "string") {
-        numSessions = dict.getsize("sessions");
+    if (typeof(configDict.get("sessions")) != "string") {
+        numSessions = configDict.getsize("sessions");
     }
 
     var resizeAmount = x - numSessions;
 
     if (resizeAmount < 0) {
-        shrinksessions(dictName, Math.abs(resizeAmount));
+        shrinksessions(Math.abs(resizeAmount));
     }
     else if (resizeAmount > 0) {
-        expandsessions(dictName, Math.abs(resizeAmount));
+        expandsessions(Math.abs(resizeAmount));
     }
 }
 
-function resizegroup(dictName, sessionID, x) {
-    if (typeof(dictName) != "string" || typeof(sessionID) != "number" || typeof(x) != "number") {
-        return;
-    }
-    var dict = new Dict(dictName);
-
-    if (!dict.contains("sessions")) {
+function resizegroup(sessionID, x) {
+    if (!configDictSet || typeof(sessionID) != "number" || typeof(x) != "number") {
         return;
     }
 
-    if (typeof(dict.get("sessions")) == "string") {
+    if (!configDict.contains("sessions")) {
         return;
     }
 
-    if (sessionID < 0 || sessionID >= dict.getsize("sessions")) {
+    if (typeof(configDict.get("sessions")) == "string") {
         return;
     }
 
-    var numGroups = dict.getsize("sessions[" + sessionID + "]::groups");
+    if (sessionID < 0 || sessionID >= configDict.getsize("sessions")) {
+        return;
+    }
+
+    var numGroups = configDict.getsize("sessions[" + sessionID + "]::groups");
     var resizeAmount = x - numGroups;
     if (resizeAmount < 0) {
-        shrinkgroup(dictName, sessionID, Math.abs(resizeAmount));
+        shrinkgroup(sessionID, Math.abs(resizeAmount));
     }
     else if (resizeAmount > 0) {
-        expandgroup(dictName, sessionID, Math.abs(resizeAmount));
+        expandgroup(sessionID, Math.abs(resizeAmount));
     }
 }
 
-function resizeallgroups(dictName, x) {
-    if (typeof(dictName) != "string" || typeof(x) != "number") {
-        return;
-    }
-    var dict = new Dict(dictName);
-
-    if (!dict.contains("sessions")) {
+function resizeallgroups(x) {
+    if (!configDictSet || typeof(x) != "number") {
         return;
     }
 
-    if (typeof(dict.get("sessions")) == "string") {
+    if (!configDict.contains("sessions")) {
+        return;
+    }
+
+    if (typeof(configDict.get("sessions")) == "string") {
         return;
     }
 
@@ -138,84 +163,82 @@ function resizeallgroups(dictName, x) {
         return;
     }
 
-    var numSessions = dict.getsize("sessions");
+    var numSessions = configDict.getsize("sessions");
     var sizeOfGroup = 0;
     var resizeAmount = 0;
     for (var i = 0; i < numSessions; i++) {
-        sizeOfGroup = dict.getsize("sessions["+ i + "]::groups");
+        sizeOfGroup = configDict.getsize("sessions["+ i + "]::groups");
 
         resizeAmount = x - sizeOfGroup;
         if (resizeAmount < 0) {
             if (sizeOfGroup == 1) {
                 continue;
             }
-            shrinkgroup(dictName, i, Math.abs(resizeAmount));
+            shrinkgroup(i, Math.abs(resizeAmount));
         }
         else if (resizeAmount > 0) {
-            expandgroup(dictName, i, Math.abs(resizeAmount));
+            expandgroup(i, Math.abs(resizeAmount));
         }
     }
 }
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////
 
-function expandsessions(dictName, expansionAmount) {
-    if (typeof(dictName) != "string" || typeof(expansionAmount) != "number") {
+function expandsessions(expansionAmount) {
+    if (!configDictSet || typeof(expansionAmount) != "number") {
         return;
     }
 
     for (var i = 0; i < expansionAmount; i++) {
-        addsession(dictName);
+        addsession();
     }
 }
 
-function expandgroup(dictName, sessionID, expansionAmount) {
-    if (typeof(dictName) != "string" || typeof(expansionAmount) != "number") {
+function expandgroup(sessionID, expansionAmount) {
+    if (!configDictSet || typeof(expansionAmount) != "number") {
         return;
     }
 
     for (var i = 0; i < expansionAmount; i++) {
-        addgroup(dictName, sessionID);
+        addgroup(sessionID);
     }
 }
 
-function expandallgroups(dictName, expansionAmount) {
-    var dict = new Dict(dictName);
+function expandallgroups(expansionAmount) {
     var numSessions = 0;
 
-    if (typeof(dict.get("sessions")) == "string" || typeof(expansionAmount) != "number") {
+    if (typeof(configDict.get("sessions")) == "string" || typeof(expansionAmount) != "number") {
         return;
     }
     else {
-        numSessions = dict.getsize("sessions");
+        numSessions = configDict.getsize("sessions");
     }
 
     for (var i = 0; i < numSessions; ++i) {
         for (var j = 0; j < expansionAmount; ++j) {
-            addgroup(dictName, i);
+            addgroup(i);
         }
     }
 }
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////
 
-function shrinksessions(dictName, x) {
-    if (typeof(dictName) != "string" || typeof(x) != "number") {
+function shrinksessions(x) {
+    if (!configDictSet || typeof(x) != "number") {
         return;
     }
 
     var shrinkAmount = x;
-    var dict = new Dict(dictName);
     var oldDict = new Dict();
-    oldDict.clone(dictName);
+    oldConfigDict.clone(configDictName);
 
-    if (!dict.contains("sessions")) {
+    if (!configDict.contains("sessions")) {
         return;
     }
 
-    dict.set("sessions");
+    configDict.set("sessions");
 
-    var newNumSessions = oldDict.getsize("sessions") - shrinkAmount;
+    var newNumSessions = oldConfigDict.getsize("sessions") - shrinkAmount;
     if (newNumSessions < 1) {
         return;
     }
@@ -223,11 +246,11 @@ function shrinksessions(dictName, x) {
     // Reconstruct remaining sessions
     var numGroups = 1;
     for (var i = 0; i < newNumSessions; i++) {
-        addsession(dictName);
-        numGroups = oldDict.getsize("sessions[" + i + "]::groups");
+        addsession();
+        numGroups = oldConfigDict.getsize("sessions[" + i + "]::groups");
         if (numGroups > 1) {
             for (var j = 0; j < numGroups - 1; j++) {
-                addgroup(dictName, i);
+                addgroup(i);
             }
         }
     }
@@ -238,61 +261,61 @@ function shrinksessions(dictName, x) {
 
     for (var i = 0; i < newNumSessions; i++) {
         sessionsStr = "sessions[" + i + "]";
-        numGroups = dict.getsize(sessionsStr + "::groups");
+        numGroups = configDict.getsize(sessionsStr + "::groups");
         for (var j = 0; j < numGroups; j++) {
             key = sessionsStr + "::groups[" + j + "]::stimuli";
-            dict.set(key, oldDict.get(key));
+            configDict.set(key, oldConfigDict.get(key));
 
             key = sessionsStr + "::groups[" + j + "]::reference";
-            dict.set(key, oldDict.get(key));
+            configDict.set(key, oldConfigDict.get(key));
         }
     }
 }
 
-function shrinkgroup(dictName, sessionID, x) {
-    if (typeof(dictName) != "string" || typeof(sessionID) != "number") {
+function shrinkgroup(sessionID, x) {
+    if (!configDictSet || typeof(sessionID) != "number") {
         return;
     }
 
     var shrinkAmount = x;
-    var dict = new Dict(dictName);
     var oldDict = new Dict();
-    oldDict.clone(dictName);
+    oldConfigDict.clone(configDictName);
 
-    if (!dict.contains("sessions")) {
+    if (!configDict.contains("sessions")) {
         return;
     }
 
     var sessionsStr = "sessions[" + sessionID + "]";
-    var newNumGroups = dict.getsize(sessionsStr + "::groups") - shrinkAmount;
+    var newNumGroups = configDict.getsize(sessionsStr + "::groups") - shrinkAmount;
     if (newNumGroups < 1) {
         newNumGroups = 1;
     }
 
-    dict.setparse(sessionsStr, "groups:");
+    configDict.setparse(sessionsStr, "groups:");
 
+    // TODO : Look at the keys present in each group of the old dict, and rebuild the dict based
+    // on the found keys rather than hard coding them in
     for (var i = 0; i < newNumGroups; i++) {
-        addgroup(dictName, sessionID);
+        addgroup(sessionID);
         key = sessionsStr + "::groups[" + i + "]::stimuli";
-        dict.set(key, oldDict.get(key));
+        configDict.set(key, oldConfigDict.get(key));
 
         key = sessionsStr + "::groups[" + i + "]::reference";
-        dict.set(key, oldDict.get(key));
+        configDict.set(key, oldConfigDict.get(key));
     }
 }
 
-function shrinkallgroups(dictName, x) {
-    var dict = new Dict(dictName);
+function shrinkallgroups(x) {
     var numSessions = 0;
 
-    if (typeof(dict.get("sessions")) == "string" || typeof(x) != "number") {
+    if (typeof(configDict.get("sessions")) == "string" || typeof(x) != "number") {
         return;
     }
     else {
-        numSessions = dict.getsize("sessions");
+        numSessions = configDict.getsize("sessions");
     }
 
     for (var i = 0; i < numSessions; ++i) {
-        shrinkgroup(dictName, i, x);
+        shrinkgroup(i, x);
     }
 }
