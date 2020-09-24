@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 34.0, 79.0, 576.0, 674.0 ],
+		"rect" : [ 34.0, 79.0, 576.0, 795.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -58,7 +58,7 @@
 					"maxclass" : "outlet",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 150.0, 534.0, 30.0, 30.0 ]
+					"patching_rect" : [ 150.0, 613.0, 30.0, 30.0 ]
 				}
 
 			}
@@ -83,7 +83,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 24.0, 602.0, 107.0, 35.0 ],
+					"patching_rect" : [ 26.0, 681.0, 107.0, 35.0 ],
 					"text" : "presentation_rect 0. 0. 127. $1"
 				}
 
@@ -95,7 +95,7 @@
 					"numinlets" : 3,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 24.0, 567.0, 90.0, 22.0 ],
+					"patching_rect" : [ 26.0, 646.0, 90.0, 22.0 ],
 					"text" : "clip 400 1000 0"
 				}
 
@@ -107,7 +107,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 24.0, 534.0, 95.0, 22.0 ],
+					"patching_rect" : [ 26.0, 613.0, 95.0, 22.0 ],
 					"text" : "route totalheight"
 				}
 
@@ -134,7 +134,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 150.0, 75.0, 127.0, 400.0 ],
+					"patching_rect" : [ 150.0, 75.0, 127.0, 502.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 0.0, 0.0, 127.0, 400.0 ],
 					"varname" : "accordion"
@@ -196,7 +196,7 @@
  ],
 		"dependency_cache" : [ 			{
 				"name" : "configSessionsSidemenu4.js",
-				"bootpath" : "~/Documents/Max 8/Projects/PsychoBox/PsychoBox/code",
+				"bootpath" : "~/Documents/Max 8/Projects/HULTI-GENv2/PsychoBox/code",
 				"patcherrelativepath" : "../code",
 				"type" : "TEXT",
 				"implicit" : 1

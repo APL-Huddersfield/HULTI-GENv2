@@ -1510,6 +1510,7 @@
 			}
 , 			{
 				"box" : 				{
+					"active" : 0,
 					"bgcolor" : [ 0.75, 0.75, 0.75, 1.0 ],
 					"fontsize" : 12.0,
 					"id" : "obj-86",
@@ -1530,6 +1531,7 @@
 			}
 , 			{
 				"box" : 				{
+					"active" : 0,
 					"bgcolor" : [ 0.75, 0.75, 0.75, 1.0 ],
 					"fontsize" : 12.0,
 					"id" : "obj-87",
@@ -6862,7 +6864,7 @@
 					"id" : "obj-12",
 					"lockeddragscroll" : 0,
 					"maxclass" : "bpatcher",
-					"name" : "ui_filelist_pool.maxpat",
+					"name" : "ui_filelist_pool_withDependencies.maxpat",
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"offset" : [ 0.0, 0.0 ],
@@ -6901,6 +6903,7 @@
 			}
 , 			{
 				"box" : 				{
+					"active" : 0,
 					"bgcolor" : [ 0.75, 0.75, 0.75, 1.0 ],
 					"fontsize" : 12.0,
 					"id" : "obj-4",
@@ -6921,6 +6924,7 @@
 			}
 , 			{
 				"box" : 				{
+					"active" : 0,
 					"bgcolor" : [ 0.75, 0.75, 0.75, 1.0 ],
 					"fontsize" : 12.0,
 					"id" : "obj-3",
@@ -6941,6 +6945,7 @@
 			}
 , 			{
 				"box" : 				{
+					"active" : 0,
 					"bgcolor" : [ 0.75, 0.75, 0.75, 1.0 ],
 					"fontsize" : 20.0,
 					"id" : "obj-2",
@@ -6962,6 +6967,7 @@
 			}
 , 			{
 				"box" : 				{
+					"active" : 0,
 					"bgcolor" : [ 0.75, 0.75, 0.75, 1.0 ],
 					"fontsize" : 20.0,
 					"id" : "obj-51",
@@ -7536,7 +7542,7 @@
 			}
  ],
 		"dependency_cache" : [ 			{
-				"name" : "ui_filelist_pool.maxpat",
+				"name" : "ui_filelist_pool_withDependencies.maxpat",
 				"bootpath" : "~/Documents/Max 8/Projects/HULTI-GENv2/PsychoBox/patchers",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
