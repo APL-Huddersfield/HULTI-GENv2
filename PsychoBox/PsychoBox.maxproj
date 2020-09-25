@@ -2,8 +2,8 @@
 	"name" : "PsychoBox",
 	"version" : 1,
 	"creationdate" : 3666872002,
-	"modificationdate" : 3683822652,
-	"viewrect" : [ 1192.0, 246.0, 461.0, 826.0 ],
+	"modificationdate" : 3683885676,
+	"viewrect" : [ 1718.0, 233.0, 461.0, 826.0 ],
 	"autoorganize" : 1,
 	"hideprojectwindow" : 0,
 	"showdependencies" : 1,
@@ -51,6 +51,11 @@
 				"local" : 1
 			}
 ,
+			"ui_filelist_psychometric.maxpat" : 			{
+				"kind" : "patcher",
+				"local" : 1
+			}
+,
 			"ui_config_stimulusPool.maxpat" : 			{
 				"kind" : "patcher",
 				"local" : 1
@@ -67,6 +72,11 @@
 			}
 ,
 			"ui_params_grading.maxpat" : 			{
+				"kind" : "patcher",
+				"local" : 1
+			}
+,
+			"ui_params_sdt_abx.maxpat" : 			{
 				"kind" : "patcher",
 				"local" : 1
 			}
@@ -151,11 +161,6 @@
 			}
 ,
 			"ui_sessionComplete.maxpat" : 			{
-				"kind" : "patcher",
-				"local" : 1
-			}
-,
-			"ui_filelist_psychometric.maxpat" : 			{
 				"kind" : "patcher",
 				"local" : 1
 			}
@@ -425,16 +430,6 @@
 
 			}
 ,
-			"ui_params_sdt_abx.maxpat" : 			{
-				"kind" : "patcher",
-				"local" : 1,
-				"singleton" : 				{
-					"bootpath" : "~/Documents/Max 8/Projects/HULTI-GENv2/PsychoBox/patchers",
-					"projectrelativepath" : "./patchers"
-				}
-
-			}
-,
 			"interface_abx.maxpat" : 			{
 				"kind" : "patcher",
 				"local" : 1,
@@ -473,6 +468,11 @@
 					"projectrelativepath" : "./patchers"
 				}
 
+			}
+,
+			"dialog_groupsNotFilled.maxpat" : 			{
+				"kind" : "patcher",
+				"local" : 1
 			}
 
 		}
