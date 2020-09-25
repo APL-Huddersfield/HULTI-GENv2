@@ -1,0 +1,22 @@
+{
+    "slug" : "moc_abx",
+    "name" : "Method Of Constants ABX",
+    "tag" : "psychometric",
+    "parameters" : [
+        "repetitions",
+        "objective"
+    ],
+    "requiresReference" : true,
+    "groupingMode" : "sgft",
+    "ordering" : {
+        "omitReferenceAsTestStimulus" : true,
+        "combinationsPerRepetition" : 2
+    },
+    "interface" : {
+        "window" : {
+            "width" : 500,
+            "height" : 280
+        }
+    },
+    "paramsUI" : "moc_abx"
+}

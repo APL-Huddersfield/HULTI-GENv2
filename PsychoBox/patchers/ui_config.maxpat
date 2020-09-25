@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 367.0, 202.0, 1408.0, 893.0 ],
+		"rect" : [ 367.0, 202.0, 1557.0, 913.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -76,7 +76,7 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 30.0, 20.0, 700.0, 690.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 345.5, 0.0, 700.0, 690.0 ],
+					"presentation_rect" : [ 256.5, 0.0, 700.0, 690.0 ],
 					"varname" : "choosetest",
 					"viewvisibility" : 1
 				}
@@ -112,7 +112,7 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 71.0, 62.0, 700.0, 690.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 345.5, 0.0, 700.0, 690.0 ],
+					"presentation_rect" : [ 256.5, 0.0, 700.0, 690.0 ],
 					"varname" : "customisation",
 					"viewvisibility" : 1
 				}
@@ -186,7 +186,6 @@
 						"style" : "",
 						"subpatcher_template" : "",
 						"assistshowspatchername" : 0,
-						"visible" : 1,
 						"boxes" : [ 							{
 								"box" : 								{
 									"id" : "obj-20",
@@ -10854,7 +10853,7 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 50.0, 40.0, 700.0, 690.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 345.5, 0.0, 700.0, 690.0 ],
+					"presentation_rect" : [ 256.5, 0.0, 700.0, 690.0 ],
 					"varname" : "testsetup",
 					"viewvisibility" : 1
 				}
@@ -10878,7 +10877,7 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 91.0, 90.5, 700.0, 690.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 345.5, 0.0, 700.0, 690.0 ],
+					"presentation_rect" : [ 256.5, 0.0, 700.0, 690.0 ],
 					"varname" : "stimuluspool",
 					"viewvisibility" : 1
 				}
@@ -10902,7 +10901,7 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 121.0, 118.0, 959.0, 691.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 89.0, 0.0, 1250.0, 690.0 ],
+					"presentation_rect" : [ 0.0, 0.0, 1250.0, 690.0 ],
 					"varname" : "stimulusassign",
 					"viewvisibility" : 1
 				}

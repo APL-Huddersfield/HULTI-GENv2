@@ -1,0 +1,23 @@
+{
+    "slug" : "moc_twoAFC",
+    "name" : "Method of Constants 2AFC",
+    "tag" : "psychometric",
+    "parameters" : [
+        "repetitions",
+        "objective"
+    ],
+    "parametersMenu" : "sdt",
+    "requiresReference" : true,
+    "groupingMode" : "sgft",
+    "ordering" : {
+        "omitReferenceAsTestStimulus" : true,
+        "combinationsPerRepetition" : 1
+    },
+    "interface" : {
+        "window" : {
+            "width" : 500,
+            "height" : 280
+        }
+    },
+    "paramsUI" : "moc_twoAFC"
+}
