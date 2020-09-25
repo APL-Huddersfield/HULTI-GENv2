@@ -8,14 +8,6 @@
     ],
     "requiresReference" : true,
     "groupingMode" : "sgft",
-    "responseKeys" : [
-        "wasA",
-        "wasX",
-        "hits",
-        "falseAlarms",
-        "correctRejects",
-        "misses"
-    ],
     "ordering" : {
         "omitReferenceAsTestStimulus" : true,
         "combinationsPerRepetition" : 2

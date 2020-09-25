@@ -16,7 +16,6 @@
             "type" : "object",
             "required" : [
                 "task",
-                "interface",
                 "playback"
             ],
             "properties" : {
@@ -35,9 +34,6 @@
                             "type" : "empty"
                         }
                     }
-                },
-                "interface" : {
-                    "type" : "empty"
                 },
                 "playback" : {
                     "type" : "empty"
