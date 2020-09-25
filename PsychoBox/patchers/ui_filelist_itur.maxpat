@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 34.0, 79.0, 1471.0, 1087.0 ],
+		"rect" : [ 390.0, 181.0, 1487.0, 1075.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -45,33 +45,9 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 1472.0, 188.5, 67.0, 22.0 ],
+					"patching_rect" : [ 1395.0, 175.5, 67.0, 22.0 ],
 					"save" : [ "#N", "thispatcher", ";", "#Q", "end", ";" ],
 					"text" : "thispatcher"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-55",
-					"maxclass" : "button",
-					"numinlets" : 1,
-					"numoutlets" : 1,
-					"outlettype" : [ "bang" ],
-					"parameter_enable" : 0,
-					"patching_rect" : [ 1251.0, 13.5, 24.0, 24.0 ]
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-50",
-					"maxclass" : "message",
-					"numinlets" : 2,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 777.0, 33.0, 41.0, 22.0 ],
-					"text" : "init 10"
 				}
 
 			}
@@ -94,7 +70,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 1418.0, 235.5, 73.0, 22.0 ],
+					"patching_rect" : [ 1341.0, 222.5, 73.0, 22.0 ],
 					"text" : "pattrforward"
 				}
 
@@ -249,7 +225,6 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 660.916666666666629, 510.0, 31.0, 22.0 ],
-									"presentation_linecount" : 2,
 									"text" : "high"
 								}
 
@@ -298,7 +273,6 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 452.75, 629.0, 85.0, 22.0 ],
-									"presentation_linecount" : 2,
 									"text" : "script show $1"
 								}
 
@@ -324,7 +298,6 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 778.25, 469.0, 188.0, 35.0 ],
-									"presentation_linecount" : 2,
 									"text" : "refNotSetWarn, highNotSetWarn, lowNotSetWarn, col0, col1, col2"
 								}
 
@@ -493,7 +466,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 383.75, 383.0, 99.0, 49.0 ],
+									"patching_rect" : [ 383.75, 383.0, 100.0, 49.0 ],
 									"text" : "send ui_filelist, numcolumns $1, columnoffset $2"
 								}
 
@@ -817,7 +790,7 @@
  ]
 					}
 ,
-					"patching_rect" : [ 1418.0, 145.5, 73.0, 22.0 ],
+					"patching_rect" : [ 1341.0, 132.5, 73.0, 22.0 ],
 					"saved_object_attributes" : 					{
 						"description" : "",
 						"digest" : "",
@@ -837,7 +810,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 1251.0, 62.5, 186.0, 35.0 ],
+					"patching_rect" : [ 1174.0, 58.5, 186.0, 35.0 ],
 					"text" : "patcherargs @columnlabels Ref. @numcolumns 1"
 				}
 
@@ -1899,7 +1872,7 @@
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ 59.0, 104.0, 640.0, 480.0 ],
+						"rect" : [ 1285.0, 363.0, 640.0, 480.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -4498,8 +4471,8 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 165.0, 305.0, 339.0, 22.0 ],
-					"text" : "checkmode 1, numcolumns 3, columnwidth 65, columnoffset 0"
+					"patching_rect" : [ 165.0, 305.0, 170.0, 22.0 ],
+					"text" : "checkmode 1, columnwidth 65"
 				}
 
 			}
@@ -4865,13 +4838,6 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-65", 0 ],
-					"source" : [ "obj-50", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
 					"destination" : [ "obj-4", 0 ],
 					"midpoints" : [ 845.5, 241.0, 174.5, 241.0 ],
 					"source" : [ "obj-51", 0 ]
@@ -4901,13 +4867,6 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-17", 0 ],
-					"source" : [ "obj-55", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
 					"destination" : [ "obj-65", 0 ],
 					"source" : [ "obj-6", 0 ]
 				}
@@ -4923,8 +4882,8 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-66", 0 ],
-					"midpoints" : [ 877.5, 120.0, 1158.833333333333258, 120.0 ],
+					"destination" : [ "obj-43", 0 ],
+					"midpoints" : [ 877.5, 120.0, 1350.5, 120.0 ],
 					"order" : 0,
 					"source" : [ "obj-65", 4 ]
 				}
@@ -4932,8 +4891,17 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-89", 0 ],
+					"destination" : [ "obj-66", 0 ],
+					"midpoints" : [ 877.5, 120.0, 1158.833333333333258, 120.0 ],
 					"order" : 1,
+					"source" : [ "obj-65", 4 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-89", 0 ],
+					"order" : 2,
 					"source" : [ "obj-65", 4 ]
 				}
 
@@ -5153,35 +5121,35 @@
  ],
 		"dependency_cache" : [ 			{
 				"name" : "ui_filelist_multicheckbox.maxpat",
-				"bootpath" : "~/Documents/Max 8/Projects/PsychoBox/PsychoBox/patchers",
+				"bootpath" : "~/Documents/Max 8/Projects/HULTI-GENv2/PsychoBox/patchers",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "ui_filelist_entry_multicheckbox.maxpat",
-				"bootpath" : "~/Documents/Max 8/Projects/PsychoBox/PsychoBox/patchers",
+				"bootpath" : "~/Documents/Max 8/Projects/HULTI-GENv2/PsychoBox/patchers",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "ui_checkbox.maxpat",
-				"bootpath" : "~/Documents/Max 8/Projects/PsychoBox/PsychoBox/patchers",
+				"bootpath" : "~/Documents/Max 8/Projects/HULTI-GENv2/PsychoBox/patchers",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "filelistManagerMultiCheckbox.js",
-				"bootpath" : "~/Documents/Max 8/Projects/PsychoBox/PsychoBox/code",
+				"bootpath" : "~/Documents/Max 8/Projects/HULTI-GENv2/PsychoBox/code",
 				"patcherrelativepath" : "../code",
 				"type" : "TEXT",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "warning.png",
-				"bootpath" : "~/Documents/Max 8/Projects/PsychoBox/PsychoBox/media",
+				"bootpath" : "~/Documents/Max 8/Projects/HULTI-GENv2/PsychoBox/media",
 				"patcherrelativepath" : "../media",
 				"type" : "PNG",
 				"implicit" : 1

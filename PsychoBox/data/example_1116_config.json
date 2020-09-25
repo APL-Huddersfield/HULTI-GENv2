@@ -4,7 +4,10 @@
             "plugin" : "mc_itur_1116",
             "parameters" : {
                 "repetitions" : 5,
-                "objective" : "Grade each stimulus in terms of ASW"
+                "objective" : "Grade each stimulus in terms of ASW",
+                "useReference" : "",
+                "useLowAnchor" : 0,
+                "useHighAnchor" : 0
             }
         },
         "gui" : {
