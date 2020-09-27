@@ -2,8 +2,8 @@
 	"name" : "PsychoBox",
 	"version" : 1,
 	"creationdate" : 3666872002,
-	"modificationdate" : 3683890010,
-	"viewrect" : [ 1094.0, 293.0, 461.0, 826.0 ],
+	"modificationdate" : 3684075390,
+	"viewrect" : [ 2064.0, 476.0, 461.0, 826.0 ],
 	"autoorganize" : 1,
 	"hideprojectwindow" : 0,
 	"showdependencies" : 1,
@@ -472,7 +472,12 @@
 ,
 			"ui_params_staircase.maxpat" : 			{
 				"kind" : "patcher",
-				"local" : 1
+				"local" : 1,
+				"singleton" : 				{
+					"bootpath" : "~/Documents/Max 8/Projects/HULTI-GENv2/PsychoBox/patchers",
+					"projectrelativepath" : "./patchers"
+				}
+
 			}
 
 		}
@@ -626,6 +631,21 @@
 ,
 			"staircase_steppingRules.json" : 			{
 				"kind" : "json",
+				"local" : 1
+			}
+,
+			"nonAdaptivePsychometric.txt" : 			{
+				"kind" : "textfile",
+				"local" : 1
+			}
+,
+			"gradingTests.txt" : 			{
+				"kind" : "textfile",
+				"local" : 1
+			}
+,
+			"adaptivePsychometric.txt" : 			{
+				"kind" : "textfile",
 				"local" : 1
 			}
 

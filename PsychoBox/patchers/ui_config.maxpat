@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 367.0, 202.0, 1557.0, 913.0 ],
+		"rect" : [ 304.0, 362.0, 1557.0, 913.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -39,7 +39,6 @@
 		"subpatcher_template" : "",
 		"workspacedisabled" : 1,
 		"assistshowspatchername" : 0,
-		"globalpatchername" : "u379026324[1][1][1][1][1][1][1][1][1][1][1][1][1][1][1][1][1][1][1][1][1]",
 		"boxes" : [ 			{
 				"box" : 				{
 					"id" : "obj-1",
@@ -232,7 +231,6 @@
 										"style" : "",
 										"subpatcher_template" : "",
 										"assistshowspatchername" : 0,
-										"visible" : 1,
 										"boxes" : [ 											{
 												"box" : 												{
 													"id" : "obj-17",
@@ -2047,15 +2045,6 @@
 															}
 , 															{
 																"box" : 																{
-																	"coll_data" : 																	{
-																		"count" : 1,
-																		"data" : [ 																			{
-																				"key" : 0,
-																				"value" : [ "staircase_twoAFC" ]
-																			}
- ]
-																	}
-,
 																	"id" : "obj-60",
 																	"maxclass" : "newobj",
 																	"numinlets" : 1,
@@ -2063,7 +2052,7 @@
 																	"outlettype" : [ "", "", "", "" ],
 																	"patching_rect" : [ 481.25, 643.5, 147.0, 22.0 ],
 																	"saved_object_attributes" : 																	{
-																		"embed" : 1,
+																		"embed" : 0,
 																		"precision" : 6
 																	}
 ,
@@ -2074,13 +2063,21 @@
 , 															{
 																"box" : 																{
 																	"coll_data" : 																	{
-																		"count" : 2,
+																		"count" : 4,
 																		"data" : [ 																			{
 																				"key" : 0,
-																				"value" : [ "sdt_twoAFC" ]
+																				"value" : [ "moc_twoAFC" ]
 																			}
 , 																			{
 																				"key" : 1,
+																				"value" : [ "moc_abx" ]
+																			}
+, 																			{
+																				"key" : 2,
+																				"value" : [ "sdt_twoAFC" ]
+																			}
+, 																			{
+																				"key" : 3,
 																				"value" : [ "sdt_abx" ]
 																			}
  ]
@@ -2151,39 +2148,6 @@
 															}
 , 															{
 																"box" : 																{
-																	"coll_data" : 																	{
-																		"count" : 7,
-																		"data" : [ 																			{
-																				"key" : 0,
-																				"value" : [ "mc_itur_1116" ]
-																			}
-, 																			{
-																				"key" : 1,
-																				"value" : [ "mc_itur_mushra" ]
-																			}
-, 																			{
-																				"key" : 2,
-																				"value" : [ "mc_itur_bipolar" ]
-																			}
-, 																			{
-																				"key" : 3,
-																				"value" : [ "mc_itur_acr" ]
-																			}
-, 																			{
-																				"key" : 4,
-																				"value" : [ "mc_itur_dcr" ]
-																			}
-, 																			{
-																				"key" : 5,
-																				"value" : [ "mc_itur_ccr" ]
-																			}
-, 																			{
-																				"key" : 6,
-																				"value" : [ "mc_ninePointHedonic" ]
-																			}
- ]
-																	}
-,
 																	"id" : "obj-40",
 																	"maxclass" : "newobj",
 																	"numinlets" : 1,
@@ -2191,7 +2155,7 @@
 																	"outlettype" : [ "", "", "", "" ],
 																	"patching_rect" : [ 456.25, 408.5, 98.0, 22.0 ],
 																	"saved_object_attributes" : 																	{
-																		"embed" : 1,
+																		"embed" : 0,
 																		"precision" : 6
 																	}
 ,
@@ -2261,15 +2225,6 @@
 															}
 , 															{
 																"box" : 																{
-																	"coll_data" : 																	{
-																		"count" : 1,
-																		"data" : [ 																			{
-																				"key" : 0,
-																				"value" : [ "staircase_twoAFC" ]
-																			}
- ]
-																	}
-,
 																	"id" : "obj-22",
 																	"maxclass" : "newobj",
 																	"numinlets" : 1,
@@ -2277,7 +2232,7 @@
 																	"outlettype" : [ "", "", "", "" ],
 																	"patching_rect" : [ 733.25, 408.5, 147.0, 22.0 ],
 																	"saved_object_attributes" : 																	{
-																		"embed" : 1,
+																		"embed" : 0,
 																		"precision" : 6
 																	}
 ,
@@ -2288,13 +2243,21 @@
 , 															{
 																"box" : 																{
 																	"coll_data" : 																	{
-																		"count" : 2,
+																		"count" : 4,
 																		"data" : [ 																			{
 																				"key" : 0,
-																				"value" : [ "sdt_twoAFC" ]
+																				"value" : [ "moc_twoAFC" ]
 																			}
 , 																			{
 																				"key" : 1,
+																				"value" : [ "moc_abx" ]
+																			}
+, 																			{
+																				"key" : 2,
+																				"value" : [ "sdt_twoAFC" ]
+																			}
+, 																			{
+																				"key" : 3,
 																				"value" : [ "sdt_abx" ]
 																			}
  ]
@@ -2317,39 +2280,6 @@
 															}
 , 															{
 																"box" : 																{
-																	"coll_data" : 																	{
-																		"count" : 7,
-																		"data" : [ 																			{
-																				"key" : 0,
-																				"value" : [ "mc_itur_1116" ]
-																			}
-, 																			{
-																				"key" : 1,
-																				"value" : [ "mc_itur_mushra" ]
-																			}
-, 																			{
-																				"key" : 2,
-																				"value" : [ "mc_itur_bipolar" ]
-																			}
-, 																			{
-																				"key" : 3,
-																				"value" : [ "mc_itur_acr" ]
-																			}
-, 																			{
-																				"key" : 4,
-																				"value" : [ "mc_itur_dcr" ]
-																			}
-, 																			{
-																				"key" : 5,
-																				"value" : [ "mc_itur_ccr" ]
-																			}
-, 																			{
-																				"key" : 6,
-																				"value" : [ "mc_ninePointHedonic" ]
-																			}
- ]
-																	}
-,
 																	"id" : "obj-5",
 																	"maxclass" : "newobj",
 																	"numinlets" : 1,
@@ -2357,7 +2287,7 @@
 																	"outlettype" : [ "", "", "", "" ],
 																	"patching_rect" : [ 197.25, 643.5, 98.0, 22.0 ],
 																	"saved_object_attributes" : 																	{
-																		"embed" : 1,
+																		"embed" : 0,
 																		"precision" : 6
 																	}
 ,
@@ -3027,17 +2957,6 @@
 										"subpatcher_template" : "",
 										"assistshowspatchername" : 0,
 										"boxes" : [ 											{
-												"box" : 												{
-													"id" : "obj-3",
-													"maxclass" : "newobj",
-													"numinlets" : 1,
-													"numoutlets" : 0,
-													"patching_rect" : [ 555.0, 96.0, 115.0, 22.0 ],
-													"text" : "print cb_chooseTest"
-												}
-
-											}
-, 											{
 												"box" : 												{
 													"id" : "obj-23",
 													"maxclass" : "newobj",
@@ -5035,7 +4954,7 @@
 														}
 ,
 														"classnamespace" : "box",
-														"rect" : [ 1486.0, 602.0, 864.0, 797.0 ],
+														"rect" : [ 1129.0, 509.0, 1201.0, 728.0 ],
 														"bglocked" : 0,
 														"openinpresentation" : 0,
 														"default_fontsize" : 12.0,
@@ -5064,6 +4983,139 @@
 														"subpatcher_template" : "",
 														"assistshowspatchername" : 0,
 														"boxes" : [ 															{
+																"box" : 																{
+																	"id" : "obj-4",
+																	"maxclass" : "message",
+																	"numinlets" : 2,
+																	"numoutlets" : 1,
+																	"outlettype" : [ "" ],
+																	"patching_rect" : [ 994.0, 133.0, 169.0, 22.0 ],
+																	"text" : "read adaptivePsychometric.txt"
+																}
+
+															}
+, 															{
+																"box" : 																{
+																	"id" : "obj-8",
+																	"maxclass" : "message",
+																	"numinlets" : 2,
+																	"numoutlets" : 1,
+																	"outlettype" : [ "" ],
+																	"patching_rect" : [ 669.0, 133.0, 120.0, 22.0 ],
+																	"text" : "read gradingTests.txt"
+																}
+
+															}
+, 															{
+																"box" : 																{
+																	"id" : "obj-9",
+																	"maxclass" : "newobj",
+																	"numinlets" : 1,
+																	"numoutlets" : 1,
+																	"outlettype" : [ "bang" ],
+																	"patching_rect" : [ 994.0, 60.0, 58.0, 22.0 ],
+																	"text" : "loadbang"
+																}
+
+															}
+, 															{
+																"box" : 																{
+																	"id" : "obj-10",
+																	"maxclass" : "message",
+																	"numinlets" : 2,
+																	"numoutlets" : 1,
+																	"outlettype" : [ "" ],
+																	"patching_rect" : [ 798.0, 133.0, 191.0, 22.0 ],
+																	"text" : "read nonAdaptivePsychometric.txt"
+																}
+
+															}
+, 															{
+																"box" : 																{
+																	"id" : "obj-14",
+																	"linecount" : 2,
+																	"maxclass" : "comment",
+																	"numinlets" : 1,
+																	"numoutlets" : 0,
+																	"patching_rect" : [ 831.5, 60.0, 151.0, 33.0 ],
+																	"text" : "These are currently baked into HULTI-GEN for now. "
+																}
+
+															}
+, 															{
+																"box" : 																{
+																	"id" : "obj-16",
+																	"linecount" : 2,
+																	"maxclass" : "newobj",
+																	"numinlets" : 1,
+																	"numoutlets" : 4,
+																	"outlettype" : [ "", "", "", "" ],
+																	"patching_rect" : [ 994.0, 170.5, 151.0, 35.0 ],
+																	"saved_object_attributes" : 																	{
+																		"embed" : 0,
+																		"precision" : 6
+																	}
+,
+																	"text" : "coll adaptivePsychometric @embed 1"
+																}
+
+															}
+, 															{
+																"box" : 																{
+																	"coll_data" : 																	{
+																		"count" : 4,
+																		"data" : [ 																			{
+																				"key" : 0,
+																				"value" : [ "moc_twoAFC" ]
+																			}
+, 																			{
+																				"key" : 1,
+																				"value" : [ "moc_abx" ]
+																			}
+, 																			{
+																				"key" : 2,
+																				"value" : [ "sdt_twoAFC" ]
+																			}
+, 																			{
+																				"key" : 3,
+																				"value" : [ "sdt_abx" ]
+																			}
+ ]
+																	}
+,
+																	"id" : "obj-18",
+																	"maxclass" : "newobj",
+																	"numinlets" : 1,
+																	"numoutlets" : 4,
+																	"outlettype" : [ "", "", "", "" ],
+																	"patching_rect" : [ 798.0, 170.5, 169.0, 22.0 ],
+																	"saved_object_attributes" : 																	{
+																		"embed" : 1,
+																		"precision" : 6
+																	}
+,
+																	"text" : "coll nonAdaptivePsychometric"
+																}
+
+															}
+, 															{
+																"box" : 																{
+																	"id" : "obj-28",
+																	"maxclass" : "newobj",
+																	"numinlets" : 1,
+																	"numoutlets" : 4,
+																	"outlettype" : [ "", "", "", "" ],
+																	"patching_rect" : [ 669.0, 170.5, 98.0, 22.0 ],
+																	"saved_object_attributes" : 																	{
+																		"embed" : 0,
+																		"precision" : 6
+																	}
+,
+																	"text" : "coll gradingTests"
+																}
+
+															}
+, 															{
 																"box" : 																{
 																	"id" : "obj-2",
 																	"maxclass" : "newobj",
@@ -5202,15 +5254,6 @@
 															}
 , 															{
 																"box" : 																{
-																	"coll_data" : 																	{
-																		"count" : 1,
-																		"data" : [ 																			{
-																				"key" : 0,
-																				"value" : [ "staircase_twoAFC" ]
-																			}
- ]
-																	}
-,
 																	"id" : "obj-22",
 																	"maxclass" : "newobj",
 																	"numinlets" : 1,
@@ -5218,7 +5261,7 @@
 																	"outlettype" : [ "", "", "", "" ],
 																	"patching_rect" : [ 384.5, 262.0, 147.0, 22.0 ],
 																	"saved_object_attributes" : 																	{
-																		"embed" : 1,
+																		"embed" : 0,
 																		"precision" : 6
 																	}
 ,
@@ -5241,13 +5284,21 @@
 , 															{
 																"box" : 																{
 																	"coll_data" : 																	{
-																		"count" : 2,
+																		"count" : 4,
 																		"data" : [ 																			{
 																				"key" : 0,
-																				"value" : [ "sdt_twoAFC" ]
+																				"value" : [ "moc_twoAFC" ]
 																			}
 , 																			{
 																				"key" : 1,
+																				"value" : [ "moc_abx" ]
+																			}
+, 																			{
+																				"key" : 2,
+																				"value" : [ "sdt_twoAFC" ]
+																			}
+, 																			{
+																				"key" : 3,
 																				"value" : [ "sdt_abx" ]
 																			}
  ]
@@ -5336,39 +5387,6 @@
 															}
 , 															{
 																"box" : 																{
-																	"coll_data" : 																	{
-																		"count" : 7,
-																		"data" : [ 																			{
-																				"key" : 0,
-																				"value" : [ "mc_itur_1116" ]
-																			}
-, 																			{
-																				"key" : 1,
-																				"value" : [ "mc_itur_mushra" ]
-																			}
-, 																			{
-																				"key" : 2,
-																				"value" : [ "mc_itur_bipolar" ]
-																			}
-, 																			{
-																				"key" : 3,
-																				"value" : [ "mc_itur_acr" ]
-																			}
-, 																			{
-																				"key" : 4,
-																				"value" : [ "mc_itur_dcr" ]
-																			}
-, 																			{
-																				"key" : 5,
-																				"value" : [ "mc_itur_ccr" ]
-																			}
-, 																			{
-																				"key" : 6,
-																				"value" : [ "mc_ninePointHedonic" ]
-																			}
- ]
-																	}
-,
 																	"id" : "obj-5",
 																	"maxclass" : "newobj",
 																	"numinlets" : 1,
@@ -5376,7 +5394,7 @@
 																	"outlettype" : [ "", "", "", "" ],
 																	"patching_rect" : [ 90.0, 262.0, 98.0, 22.0 ],
 																	"saved_object_attributes" : 																	{
-																		"embed" : 1,
+																		"embed" : 0,
 																		"precision" : 6
 																	}
 ,
@@ -5402,6 +5420,13 @@
 																"patchline" : 																{
 																	"destination" : [ "obj-21", 0 ],
 																	"source" : [ "obj-1", 0 ]
+																}
+
+															}
+, 															{
+																"patchline" : 																{
+																	"destination" : [ "obj-18", 0 ],
+																	"source" : [ "obj-10", 0 ]
 																}
 
 															}
@@ -5572,6 +5597,13 @@
 															}
 , 															{
 																"patchline" : 																{
+																	"destination" : [ "obj-16", 0 ],
+																	"source" : [ "obj-4", 0 ]
+																}
+
+															}
+, 															{
+																"patchline" : 																{
 																	"destination" : [ "obj-12", 0 ],
 																	"source" : [ "obj-5", 0 ]
 																}
@@ -5588,6 +5620,37 @@
 																"patchline" : 																{
 																	"destination" : [ "obj-6", 0 ],
 																	"source" : [ "obj-7", 0 ]
+																}
+
+															}
+, 															{
+																"patchline" : 																{
+																	"destination" : [ "obj-28", 0 ],
+																	"source" : [ "obj-8", 0 ]
+																}
+
+															}
+, 															{
+																"patchline" : 																{
+																	"destination" : [ "obj-10", 0 ],
+																	"order" : 1,
+																	"source" : [ "obj-9", 0 ]
+																}
+
+															}
+, 															{
+																"patchline" : 																{
+																	"destination" : [ "obj-4", 0 ],
+																	"order" : 0,
+																	"source" : [ "obj-9", 0 ]
+																}
+
+															}
+, 															{
+																"patchline" : 																{
+																	"destination" : [ "obj-8", 0 ],
+																	"order" : 2,
+																	"source" : [ "obj-9", 0 ]
 																}
 
 															}
@@ -5700,16 +5763,7 @@
  ],
 										"lines" : [ 											{
 												"patchline" : 												{
-													"destination" : [ "obj-3", 0 ],
-													"order" : 0,
-													"source" : [ "obj-1", 0 ]
-												}
-
-											}
-, 											{
-												"patchline" : 												{
 													"destination" : [ "obj-7", 0 ],
-													"order" : 1,
 													"source" : [ "obj-1", 0 ]
 												}
 
@@ -11102,6 +11156,27 @@
 				"name" : "addRemoveSessions.js",
 				"bootpath" : "~/Documents/Max 8/Projects/HULTI-GENv2/PsychoBox/code",
 				"patcherrelativepath" : "../code",
+				"type" : "TEXT",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "gradingTests.txt",
+				"bootpath" : "~/Documents/Max 8/Projects/HULTI-GENv2/PsychoBox/data",
+				"patcherrelativepath" : "../data",
+				"type" : "TEXT",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "nonAdaptivePsychometric.txt",
+				"bootpath" : "~/Documents/Max 8/Projects/HULTI-GENv2/PsychoBox/data",
+				"patcherrelativepath" : "../data",
+				"type" : "TEXT",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "adaptivePsychometric.txt",
+				"bootpath" : "~/Documents/Max 8/Projects/HULTI-GENv2/PsychoBox/data",
+				"patcherrelativepath" : "../data",
 				"type" : "TEXT",
 				"implicit" : 1
 			}

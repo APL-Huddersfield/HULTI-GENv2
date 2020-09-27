@@ -1,0 +1,7 @@
+0, mc_itur_1116;
+1, mc_itur_mushra;
+2, mc_itur_bipolar;
+3, mc_itur_acr;
+4, mc_itur_dcr;
+5, mc_itur_ccr;
+6, mc_ninePointHedonic;
