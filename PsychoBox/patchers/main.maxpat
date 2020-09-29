@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 418.0, 239.0, 1478.0, 885.0 ],
+		"rect" : [ 1047.0, 170.0, 1478.0, 890.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -40,6 +40,18 @@
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-37",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 4,
+					"outlettype" : [ "", "", "multichannelsignal", "reset" ],
+					"patching_rect" : [ 1022.0, 339.0, 149.0, 22.0 ],
+					"text" : "staircase_twoAFC_worker"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"bgmode" : 0,
 					"border" : 0,
 					"clickthrough" : 0,
@@ -68,7 +80,6 @@
 					"clickthrough" : 0,
 					"enablehscroll" : 0,
 					"enablevscroll" : 0,
-					"hidden" : 1,
 					"id" : "obj-5",
 					"lockeddragscroll" : 0,
 					"maxclass" : "bpatcher",
@@ -1097,6 +1108,7 @@
 						"style" : "",
 						"subpatcher_template" : "",
 						"assistshowspatchername" : 0,
+						"visible" : 1,
 						"boxes" : [ 							{
 								"box" : 								{
 									"id" : "obj-38",
@@ -2841,7 +2853,7 @@
 										}
 ,
 										"classnamespace" : "box",
-										"rect" : [ 453.0, 546.0, 915.0, 626.0 ],
+										"rect" : [ 1112.0, 656.0, 915.0, 626.0 ],
 										"bglocked" : 0,
 										"openinpresentation" : 0,
 										"default_fontsize" : 12.0,
@@ -4402,7 +4414,7 @@
 										}
 ,
 										"classnamespace" : "box",
-										"rect" : [ 437.0, 129.0, 1246.0, 487.0 ],
+										"rect" : [ 1012.0, 237.0, 1246.0, 487.0 ],
 										"bglocked" : 0,
 										"openinpresentation" : 0,
 										"default_fontsize" : 12.0,
@@ -6432,7 +6444,7 @@
 														}
 ,
 														"classnamespace" : "box",
-														"rect" : [ 217.0, 127.0, 964.0, 563.0 ],
+														"rect" : [ 1252.0, 284.0, 964.0, 563.0 ],
 														"bglocked" : 0,
 														"openinpresentation" : 0,
 														"default_fontsize" : 12.0,
@@ -7545,7 +7557,7 @@
 														}
 ,
 														"classnamespace" : "box",
-														"rect" : [ 635.0, 212.0, 977.0, 795.0 ],
+														"rect" : [ 1070.0, 287.0, 977.0, 795.0 ],
 														"bglocked" : 0,
 														"openinpresentation" : 0,
 														"default_fontsize" : 12.0,
@@ -8573,19 +8585,6 @@
 								}
 
 							}
-, 							{
-								"box" : 								{
-									"id" : "obj-2",
-									"maxclass" : "newobj",
-									"numinlets" : 1,
-									"numoutlets" : 4,
-									"outlettype" : [ "", "", "multichannelsignal", "reset" ],
-									"patching_rect" : [ 226.0, 135.0, 137.0, 22.0 ],
-									"text" : "mc_itur_mushra_worker",
-									"varname" : "worker"
-								}
-
-							}
  ],
 						"lines" : [ 							{
 								"patchline" : 								{
@@ -8652,34 +8651,6 @@
 							}
 , 							{
 								"patchline" : 								{
-									"destination" : [ "obj-14", 0 ],
-									"source" : [ "obj-2", 2 ]
-								}
-
-							}
-, 							{
-								"patchline" : 								{
-									"destination" : [ "obj-36", 0 ],
-									"source" : [ "obj-2", 0 ]
-								}
-
-							}
-, 							{
-								"patchline" : 								{
-									"destination" : [ "obj-5", 0 ],
-									"source" : [ "obj-2", 3 ]
-								}
-
-							}
-, 							{
-								"patchline" : 								{
-									"destination" : [ "obj-9", 0 ],
-									"source" : [ "obj-2", 1 ]
-								}
-
-							}
-, 							{
-								"patchline" : 								{
 									"destination" : [ "obj-12", 0 ],
 									"source" : [ "obj-22", 0 ]
 								}
@@ -8731,7 +8702,6 @@
 , 							{
 								"patchline" : 								{
 									"destination" : [ "obj-26", 0 ],
-									"order" : 0,
 									"source" : [ "obj-3", 0 ]
 								}
 
@@ -8798,14 +8768,6 @@
 								"patchline" : 								{
 									"destination" : [ "obj-36", 0 ],
 									"source" : [ "", 0 ]
-								}
-
-							}
-, 							{
-								"patchline" : 								{
-									"destination" : [ "obj-2", 0 ],
-									"order" : 1,
-									"source" : [ "obj-3", 0 ]
 								}
 
 							}
@@ -8991,7 +8953,7 @@
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ 497.0, 432.0, 1109.0, 519.0 ],
+						"rect" : [ 1165.0, 418.0, 1109.0, 519.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -9308,7 +9270,7 @@
 										}
 ,
 										"classnamespace" : "box",
-										"rect" : [ 594.0, 468.0, 640.0, 480.0 ],
+										"rect" : [ 1365.0, 598.0, 640.0, 480.0 ],
 										"bglocked" : 0,
 										"openinpresentation" : 0,
 										"default_fontsize" : 12.0,
@@ -9438,7 +9400,7 @@
 										}
 ,
 										"classnamespace" : "box",
-										"rect" : [ 683.0, 408.0, 1201.0, 805.0 ],
+										"rect" : [ 1151.0, 397.0, 1201.0, 805.0 ],
 										"bglocked" : 0,
 										"openinpresentation" : 0,
 										"default_fontsize" : 12.0,
@@ -10830,7 +10792,7 @@
 													"numinlets" : 2,
 													"numoutlets" : 1,
 													"outlettype" : [ "int" ],
-													"patching_rect" : [ 848.833333333333485, 366.0, 29.5, 22.0 ],
+													"patching_rect" : [ 838.833333333333485, 366.0, 29.5, 22.0 ],
 													"text" : "+ 1"
 												}
 
@@ -10843,8 +10805,8 @@
 													"numinlets" : 1,
 													"numoutlets" : 1,
 													"outlettype" : [ "" ],
-													"patching_rect" : [ 520.833333333333371, 319.0, 137.0, 22.0 ],
-													"text" : "v global_currentSession"
+													"patching_rect" : [ 520.833333333333371, 319.0, 145.0, 22.0 ],
+													"text" : "v global_sessionProgress"
 												}
 
 											}
@@ -10932,8 +10894,8 @@
 													"numinlets" : 1,
 													"numoutlets" : 1,
 													"outlettype" : [ "" ],
-													"patching_rect" : [ 848.833333333333485, 319.0, 127.0, 22.0 ],
-													"text" : "v global_currentGroup"
+													"patching_rect" : [ 838.833333333333485, 319.0, 135.0, 22.0 ],
+													"text" : "v global_groupProgress"
 												}
 
 											}
@@ -10958,7 +10920,7 @@
 													"numinlets" : 2,
 													"numoutlets" : 1,
 													"outlettype" : [ "" ],
-													"patching_rect" : [ 848.833333333333485, 407.0, 46.0, 22.0 ],
+													"patching_rect" : [ 838.833333333333485, 407.0, 46.0, 22.0 ],
 													"text" : "pack i i"
 												}
 
@@ -10984,7 +10946,7 @@
 													"numinlets" : 1,
 													"numoutlets" : 1,
 													"outlettype" : [ "" ],
-													"patching_rect" : [ 848.833333333333485, 445.0, 103.0, 22.0 ],
+													"patching_rect" : [ 838.833333333333485, 445.0, 103.0, 22.0 ],
 													"text" : "prepend progress"
 												}
 
@@ -10996,7 +10958,7 @@
 													"maxclass" : "newobj",
 													"numinlets" : 1,
 													"numoutlets" : 0,
-													"patching_rect" : [ 848.833333333333485, 481.0, 129.0, 22.0 ],
+													"patching_rect" : [ 838.833333333333485, 481.0, 129.0, 22.0 ],
 													"text" : "s to_uiGroupComplete"
 												}
 
@@ -11172,7 +11134,7 @@
 , 											{
 												"patchline" : 												{
 													"destination" : [ "obj-24", 1 ],
-													"midpoints" : [ 991.833333333333485, 394.0, 885.333333333333485, 394.0 ],
+													"midpoints" : [ 991.833333333333485, 394.0, 875.333333333333485, 394.0 ],
 													"source" : [ "obj-25", 0 ]
 												}
 
@@ -21645,7 +21607,7 @@
 					"id" : "obj-26",
 					"lockeddragscroll" : 0,
 					"maxclass" : "bpatcher",
-					"name" : "mc_itur_mushra_interface.maxpat",
+					"name" : "staircase_twoAFC_interface.maxpat",
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"offset" : [ 0.0, 0.0 ],
@@ -21756,6 +21718,7 @@
 					"clickthrough" : 0,
 					"enablehscroll" : 0,
 					"enablevscroll" : 0,
+					"hidden" : 1,
 					"id" : "obj-9",
 					"lockeddragscroll" : 0,
 					"maxclass" : "bpatcher",
@@ -22021,45 +21984,10 @@
 				"implicit" : 1
 			}
 , 			{
-				"name" : "ui_filelist_itur.maxpat",
+				"name" : "ui_filelist_psychometric.maxpat",
 				"bootpath" : "~/Documents/Max 8/Projects/HULTI-GENv2/PsychoBox/patchers",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "ui_filelist_multicheckbox.maxpat",
-				"bootpath" : "~/Documents/Max 8/Projects/HULTI-GENv2/PsychoBox/patchers",
-				"patcherrelativepath" : ".",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "ui_filelist_entry_multicheckbox.maxpat",
-				"bootpath" : "~/Documents/Max 8/Projects/HULTI-GENv2/PsychoBox/patchers",
-				"patcherrelativepath" : ".",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "ui_checkbox.maxpat",
-				"bootpath" : "~/Documents/Max 8/Projects/HULTI-GENv2/PsychoBox/patchers",
-				"patcherrelativepath" : ".",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "filelistManagerMultiCheckbox.js",
-				"bootpath" : "~/Documents/Max 8/Projects/HULTI-GENv2/PsychoBox/code",
-				"patcherrelativepath" : "../code",
-				"type" : "TEXT",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "warning.png",
-				"bootpath" : "~/Documents/Max 8/Projects/HULTI-GENv2/PsychoBox/media",
-				"patcherrelativepath" : "../media",
-				"type" : "PNG",
 				"implicit" : 1
 			}
 , 			{
@@ -22105,7 +22033,7 @@
 				"implicit" : 1
 			}
 , 			{
-				"name" : "ui_params_grading.maxpat",
+				"name" : "ui_params_staircase.maxpat",
 				"bootpath" : "~/Documents/Max 8/Projects/HULTI-GENv2/PsychoBox/patchers",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
@@ -22210,16 +22138,9 @@
 				"implicit" : 1
 			}
 , 			{
-				"name" : "mc_itur_mushra_interface.maxpat",
-				"bootpath" : "~/Documents/Max 8/Projects/HULTI-GENv2/tests/mc_itur_mushra",
-				"patcherrelativepath" : "../../tests/mc_itur_mushra",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "ui_genericGradingInterface.maxpat",
-				"bootpath" : "~/Documents/Max 8/Projects/HULTI-GENv2/PsychoBox/patchers",
-				"patcherrelativepath" : ".",
+				"name" : "staircase_twoAFC_interface.maxpat",
+				"bootpath" : "~/Documents/Max 8/Projects/HULTI-GENv2/tests/staircase_twoAFC",
+				"patcherrelativepath" : "../../tests/staircase_twoAFC",
 				"type" : "JSON",
 				"implicit" : 1
 			}
@@ -22259,20 +22180,6 @@
 				"implicit" : 1
 			}
 , 			{
-				"name" : "mc_itur_mushra_worker.maxpat",
-				"bootpath" : "~/Documents/Max 8/Projects/HULTI-GENv2/tests/mc_itur_mushra",
-				"patcherrelativepath" : "../../tests/mc_itur_mushra",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "player_parallel.maxpat",
-				"bootpath" : "~/Documents/Max 8/Projects/HULTI-GENv2/PsychoBox/patchers",
-				"patcherrelativepath" : ".",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
 				"name" : "ui_mainMenu.maxpat",
 				"bootpath" : "~/Documents/Max 8/Projects/HULTI-GENv2/PsychoBox/patchers",
 				"patcherrelativepath" : ".",
@@ -22283,6 +22190,48 @@
 				"name" : "ui_sessionComplete.maxpat",
 				"bootpath" : "~/Documents/Max 8/Projects/HULTI-GENv2/PsychoBox/patchers",
 				"patcherrelativepath" : ".",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "staircase_twoAFC_worker.maxpat",
+				"bootpath" : "~/Documents/Max 8/Projects/HULTI-GENv2/tests/staircase_twoAFC",
+				"patcherrelativepath" : "../../tests/staircase_twoAFC",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "player_sequential.maxpat",
+				"bootpath" : "~/Documents/Max 8/Projects/HULTI-GENv2/PsychoBox/patchers",
+				"patcherrelativepath" : ".",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "staircaseCore.maxpat",
+				"bootpath" : "~/Documents/Max 8/Projects/HULTI-GENv2/PsychoBox/patchers",
+				"patcherrelativepath" : ".",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "checkIfUniqueInColl.maxpat",
+				"bootpath" : "~/Documents/Max 8/Projects/HULTI-GENv2/PsychoBox/patchers",
+				"patcherrelativepath" : ".",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "containsSequence.js",
+				"bootpath" : "~/Documents/Max 8/Projects/HULTI-GENv2/PsychoBox/code",
+				"patcherrelativepath" : "../code",
+				"type" : "TEXT",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "stepper.maxpat",
+				"bootpath" : "~/Documents/Max 8/Library",
+				"patcherrelativepath" : "../../../../Library",
 				"type" : "JSON",
 				"implicit" : 1
 			}

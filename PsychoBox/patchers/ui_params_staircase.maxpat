@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 900.0, 444.0, 1430.0, 754.0 ],
+		"rect" : [ 1065.0, 218.0, 1430.0, 754.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -45,8 +45,8 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 432.0, 511.0, 48.0, 22.0 ],
-					"text" : "max $1"
+					"patching_rect" : [ 432.0, 511.0, 87.0, 22.0 ],
+					"text" : "max $1, set $1"
 				}
 
 			}
@@ -80,7 +80,7 @@
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ 111.0, 146.0, 780.0, 698.0 ],
+						"rect" : [ 1293.0, 437.0, 780.0, 698.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -824,8 +824,8 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 627.0, 233.0, 289.0, 35.0 ],
-					"text" : "numsessions 1, numgroups 1, initstepsize 1, initstep 1, numsteps 10, maxreversals 1, maxtrials 100"
+					"patching_rect" : [ 627.0, 233.0, 290.0, 35.0 ],
+					"text" : "numsessions 1, numgroups 1, initstepsize 1, initstep 10, numsteps 10, maxreversals 1, maxtrials 100"
 				}
 
 			}
@@ -838,18 +838,18 @@
 					"outlettype" : [ "", "", "", "" ],
 					"patching_rect" : [ 627.0, 302.0, 56.0, 22.0 ],
 					"restore" : 					{
-						"initialStep" : [ 1 ],
-						"initialStepSize" : [ 1 ],
-						"maxReversals" : [ 1 ],
-						"maxTrials" : [ 100 ],
-						"numStimuliPerGroup" : [ 14 ],
+						"initstep" : [ 10 ],
+						"initstepsize" : [ 1 ],
+						"maxreversals" : [ 1 ],
+						"maxtrials" : [ 100 ],
 						"numgroups" : [ 1 ],
 						"numsessions" : [ 1 ],
+						"numsteps" : [ 10 ],
 						"steppingRule" : [ 0 ]
 					}
 ,
 					"text" : "autopattr",
-					"varname" : "u318046016"
+					"varname" : "u089052179"
 				}
 
 			}
@@ -1272,7 +1272,7 @@
 					"presentation" : 1,
 					"presentation_rect" : [ 240.0, 224.0, 54.0, 24.0 ],
 					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ],
-					"varname" : "maxTrials"
+					"varname" : "maxtrials"
 				}
 
 			}
@@ -1308,7 +1308,7 @@
 					"presentation" : 1,
 					"presentation_rect" : [ 240.0, 174.0, 54.0, 24.0 ],
 					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ],
-					"varname" : "maxReversals"
+					"varname" : "maxreversals"
 				}
 
 			}
@@ -1358,7 +1358,7 @@
 					"presentation" : 1,
 					"presentation_rect" : [ 0.0, 224.0, 54.0, 24.0 ],
 					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ],
-					"varname" : "initialStepSize"
+					"varname" : "initstepsize"
 				}
 
 			}
@@ -1506,7 +1506,7 @@
 					"htricolor" : [ 0.0, 0.376470588235294, 0.690196078431373, 1.0 ],
 					"id" : "obj-4",
 					"maxclass" : "number",
-					"maximum" : 14,
+					"maximum" : 10,
 					"minimum" : 1,
 					"numinlets" : 1,
 					"numoutlets" : 2,
@@ -1516,7 +1516,7 @@
 					"presentation" : 1,
 					"presentation_rect" : [ 0.0, 174.0, 54.0, 24.0 ],
 					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ],
-					"varname" : "initialStep"
+					"varname" : "initstep"
 				}
 
 			}
@@ -1628,7 +1628,7 @@
 					"presentation" : 1,
 					"presentation_rect" : [ 0.0, 124.0, 54.0, 24.0 ],
 					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ],
-					"varname" : "numStimuliPerGroup"
+					"varname" : "numsteps"
 				}
 
 			}
