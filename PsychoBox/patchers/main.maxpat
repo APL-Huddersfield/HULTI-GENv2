@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 896.0, 439.0, 1478.0, 885.0 ],
+		"rect" : [ 418.0, 239.0, 1478.0, 885.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -8580,8 +8580,8 @@
 									"numinlets" : 1,
 									"numoutlets" : 4,
 									"outlettype" : [ "", "", "multichannelsignal", "reset" ],
-									"patching_rect" : [ 226.0, 135.0, 117.0, 22.0 ],
-									"text" : "sdt_twoAFC_worker",
+									"patching_rect" : [ 226.0, 135.0, 137.0, 22.0 ],
+									"text" : "mc_itur_mushra_worker",
 									"varname" : "worker"
 								}
 
@@ -9438,7 +9438,7 @@
 										}
 ,
 										"classnamespace" : "box",
-										"rect" : [ 1117.0, 559.0, 1201.0, 805.0 ],
+										"rect" : [ 683.0, 408.0, 1201.0, 805.0 ],
 										"bglocked" : 0,
 										"openinpresentation" : 0,
 										"default_fontsize" : 12.0,
@@ -9483,7 +9483,7 @@
 														}
 ,
 														"classnamespace" : "box",
-														"rect" : [ 673.0, 121.0, 448.0, 397.0 ],
+														"rect" : [ 673.0, 121.0, 536.0, 409.0 ],
 														"bglocked" : 0,
 														"openinpresentation" : 0,
 														"default_fontsize" : 12.0,
@@ -9512,6 +9512,79 @@
 														"subpatcher_template" : "",
 														"assistshowspatchername" : 0,
 														"boxes" : [ 															{
+																"box" : 																{
+																	"id" : "obj-4",
+																	"maxclass" : "newobj",
+																	"numinlets" : 0,
+																	"numoutlets" : 0,
+																	"patcher" : 																	{
+																		"fileversion" : 1,
+																		"appversion" : 																		{
+																			"major" : 8,
+																			"minor" : 1,
+																			"revision" : 5,
+																			"architecture" : "x64",
+																			"modernui" : 1
+																		}
+,
+																		"classnamespace" : "box",
+																		"rect" : [ 948.0, 702.0, 640.0, 480.0 ],
+																		"bglocked" : 0,
+																		"openinpresentation" : 0,
+																		"default_fontsize" : 12.0,
+																		"default_fontface" : 0,
+																		"default_fontname" : "Arial",
+																		"gridonopen" : 1,
+																		"gridsize" : [ 15.0, 15.0 ],
+																		"gridsnaponopen" : 1,
+																		"objectsnaponopen" : 1,
+																		"statusbarvisible" : 2,
+																		"toolbarvisible" : 1,
+																		"lefttoolbarpinned" : 0,
+																		"toptoolbarpinned" : 0,
+																		"righttoolbarpinned" : 0,
+																		"bottomtoolbarpinned" : 0,
+																		"toolbars_unpinned_last_save" : 0,
+																		"tallnewobj" : 0,
+																		"boxanimatetime" : 200,
+																		"enablehscroll" : 1,
+																		"enablevscroll" : 1,
+																		"devicewidth" : 0.0,
+																		"description" : "",
+																		"digest" : "",
+																		"tags" : "",
+																		"style" : "",
+																		"subpatcher_template" : "",
+																		"assistshowspatchername" : 0,
+																		"boxes" : [  ],
+																		"lines" : [  ]
+																	}
+,
+																	"patching_rect" : [ 351.0, 200.0, 80.0, 22.0 ],
+																	"saved_object_attributes" : 																	{
+																		"description" : "",
+																		"digest" : "",
+																		"globalpatchername" : "",
+																		"tags" : ""
+																	}
+,
+																	"text" : "p exportSGIT"
+																}
+
+															}
+, 															{
+																"box" : 																{
+																	"id" : "obj-3",
+																	"maxclass" : "newobj",
+																	"numinlets" : 4,
+																	"numoutlets" : 4,
+																	"outlettype" : [ "bang", "bang", "bang", "" ],
+																	"patching_rect" : [ 223.0, 97.0, 85.0, 22.0 ],
+																	"text" : "sel sgft sft sgit"
+																}
+
+															}
+, 															{
 																"box" : 																{
 																	"id" : "obj-138",
 																	"maxclass" : "message",
@@ -9565,7 +9638,7 @@
 																	"maxclass" : "newobj",
 																	"numinlets" : 1,
 																	"numoutlets" : 1,
-																	"outlettype" : [ "cr" ],
+																	"outlettype" : [ "clear" ],
 																	"patcher" : 																	{
 																		"fileversion" : 1,
 																		"appversion" : 																		{
@@ -9577,7 +9650,7 @@
 																		}
 ,
 																		"classnamespace" : "box",
-																		"rect" : [ 1233.0, 240.0, 818.0, 915.0 ],
+																		"rect" : [ 1315.0, 246.0, 818.0, 915.0 ],
 																		"bglocked" : 0,
 																		"openinpresentation" : 0,
 																		"default_fontsize" : 12.0,
@@ -10580,7 +10653,7 @@
  ]
 																	}
 ,
-																	"patching_rect" : [ 223.0, 151.0, 84.0, 22.0 ],
+																	"patching_rect" : [ 223.0, 200.0, 113.0, 22.0 ],
 																	"saved_object_attributes" : 																	{
 																		"description" : "",
 																		"digest" : "",
@@ -10588,19 +10661,7 @@
 																		"tags" : ""
 																	}
 ,
-																	"text" : "p exportSGFT"
-																}
-
-															}
-, 															{
-																"box" : 																{
-																	"id" : "obj-98",
-																	"maxclass" : "button",
-																	"numinlets" : 1,
-																	"numoutlets" : 1,
-																	"outlettype" : [ "bang" ],
-																	"parameter_enable" : 0,
-																	"patching_rect" : [ 223.0, 97.0, 24.0, 24.0 ]
+																	"text" : "p exportSGFT_SFT"
 																}
 
 															}
@@ -10611,7 +10672,7 @@
 																	"numinlets" : 1,
 																	"numoutlets" : 3,
 																	"outlettype" : [ "", "bang", "int" ],
-																	"patching_rect" : [ 47.0, 257.0, 40.0, 22.0 ],
+																	"patching_rect" : [ 47.0, 267.0, 40.0, 22.0 ],
 																	"text" : "text"
 																}
 
@@ -10632,7 +10693,7 @@
 														"lines" : [ 															{
 																"patchline" : 																{
 																	"destination" : [ "obj-30", 0 ],
-																	"midpoints" : [ 232.5, 235.0, 56.5, 235.0 ],
+																	"midpoints" : [ 232.5, 252.0, 56.5, 252.0 ],
 																	"source" : [ "obj-101", 0 ]
 																}
 
@@ -10668,7 +10729,14 @@
 , 															{
 																"patchline" : 																{
 																	"destination" : [ "obj-101", 0 ],
-																	"source" : [ "obj-98", 0 ]
+																	"source" : [ "obj-3", 1 ]
+																}
+
+															}
+, 															{
+																"patchline" : 																{
+																	"destination" : [ "obj-101", 0 ],
+																	"source" : [ "obj-3", 0 ]
 																}
 
 															}
@@ -21573,16 +21641,17 @@
 					"clickthrough" : 0,
 					"enablehscroll" : 0,
 					"enablevscroll" : 0,
+					"hidden" : 1,
 					"id" : "obj-26",
 					"lockeddragscroll" : 0,
 					"maxclass" : "bpatcher",
-					"name" : "sdt_twoAFC_interface.maxpat",
+					"name" : "mc_itur_mushra_interface.maxpat",
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"offset" : [ 0.0, 0.0 ],
 					"patching_rect" : [ 449.5, 257.0, 474.5, 275.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 363.0, 142.5, 1180.0, 680.0 ],
+					"presentation_rect" : [ 0.0, 0.0, 1180.0, 680.0 ],
 					"varname" : "ui_testInterface",
 					"viewvisibility" : 1
 				}
@@ -21687,7 +21756,6 @@
 					"clickthrough" : 0,
 					"enablehscroll" : 0,
 					"enablevscroll" : 0,
-					"hidden" : 1,
 					"id" : "obj-9",
 					"lockeddragscroll" : 0,
 					"maxclass" : "bpatcher",
@@ -22142,9 +22210,16 @@
 				"implicit" : 1
 			}
 , 			{
-				"name" : "sdt_twoAFC_interface.maxpat",
-				"bootpath" : "~/Documents/Max 8/Projects/HULTI-GENv2/tests/sdt_twoAFC",
-				"patcherrelativepath" : "../../tests/sdt_twoAFC",
+				"name" : "mc_itur_mushra_interface.maxpat",
+				"bootpath" : "~/Documents/Max 8/Projects/HULTI-GENv2/tests/mc_itur_mushra",
+				"patcherrelativepath" : "../../tests/mc_itur_mushra",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "ui_genericGradingInterface.maxpat",
+				"bootpath" : "~/Documents/Max 8/Projects/HULTI-GENv2/PsychoBox/patchers",
+				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
@@ -22184,14 +22259,14 @@
 				"implicit" : 1
 			}
 , 			{
-				"name" : "sdt_twoAFC_worker.maxpat",
-				"bootpath" : "~/Documents/Max 8/Projects/HULTI-GENv2/tests/sdt_twoAFC",
-				"patcherrelativepath" : "../../tests/sdt_twoAFC",
+				"name" : "mc_itur_mushra_worker.maxpat",
+				"bootpath" : "~/Documents/Max 8/Projects/HULTI-GENv2/tests/mc_itur_mushra",
+				"patcherrelativepath" : "../../tests/mc_itur_mushra",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
-				"name" : "player_sequential.maxpat",
+				"name" : "player_parallel.maxpat",
 				"bootpath" : "~/Documents/Max 8/Projects/HULTI-GENv2/PsychoBox/patchers",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",

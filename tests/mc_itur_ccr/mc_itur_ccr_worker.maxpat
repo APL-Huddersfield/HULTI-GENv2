@@ -537,7 +537,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 45.5, 401.0, 485.0, 22.0 ],
-									"text" : "sprintf %s experimentData::sessions[%d]::groups[%d]::stimuli[%d]::response %d"
+									"text" : "sprintf %s experimentData::sessions[%d]::groups[%d]::stimuli[%d]::responses %d"
 								}
 
 							}
