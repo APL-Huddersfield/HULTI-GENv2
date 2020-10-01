@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 61.0, 80.0, 1015.0, 921.0 ],
+		"rect" : [ 1415.0, 464.0, 933.0, 889.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -45,7 +45,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 473.0, 79.5, 97.0, 22.0 ],
+					"patching_rect" : [ 460.0, 79.5, 97.0, 22.0 ],
 					"text" : "route numsliders"
 				}
 
@@ -57,7 +57,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 111.0, 781.0, 111.0, 22.0 ],
+					"patching_rect" : [ 98.0, 757.0, 111.0, 22.0 ],
 					"text" : "buttonpressed next"
 				}
 
@@ -72,7 +72,7 @@
 					"numoutlets" : 3,
 					"outlettype" : [ "", "", "int" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 111.0, 716.0, 70.0, 27.0 ],
+					"patching_rect" : [ 98.0, 700.0, 70.0, 27.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 705.0, 602.0, 62.0, 27.0 ],
 					"text" : "Next",
@@ -89,7 +89,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 839.0, 260.5, 90.0, 22.0 ],
+					"patching_rect" : [ 826.0, 260.5, 90.0, 22.0 ],
 					"text" : "v global_theme"
 				}
 
@@ -100,7 +100,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 4,
 					"numoutlets" : 0,
-					"patching_rect" : [ 761.0, 380.0, 50.5, 22.0 ],
+					"patching_rect" : [ 748.0, 380.0, 50.5, 22.0 ],
 					"text" : "bgcolor"
 				}
 
@@ -112,7 +112,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "bang" ],
-					"patching_rect" : [ 839.0, 215.0, 58.0, 22.0 ],
+					"patching_rect" : [ 826.0, 215.0, 58.0, 22.0 ],
 					"text" : "loadbang"
 				}
 
@@ -124,7 +124,7 @@
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 761.0, 260.5, 72.0, 22.0 ],
+					"patching_rect" : [ 748.0, 260.5, 72.0, 22.0 ],
 					"text" : "r set_theme"
 				}
 
@@ -585,7 +585,7 @@
  ]
 					}
 ,
-					"patching_rect" : [ 761.0, 332.0, 57.0, 22.0 ],
+					"patching_rect" : [ 748.0, 332.0, 57.0, 22.0 ],
 					"saved_object_attributes" : 					{
 						"description" : "",
 						"digest" : "",
@@ -604,7 +604,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 761.0, 162.5, 67.0, 22.0 ],
+					"patching_rect" : [ 748.0, 162.5, 67.0, 22.0 ],
 					"save" : [ "#N", "thispatcher", ";", "#Q", "end", ";" ],
 					"text" : "thispatcher"
 				}
@@ -617,7 +617,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 761.0, 118.5, 121.0, 22.0 ],
+					"patching_rect" : [ 748.0, 118.5, 121.0, 22.0 ],
 					"text" : "script hide sliderbank"
 				}
 
@@ -629,7 +629,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "bang" ],
-					"patching_rect" : [ 761.0, 79.5, 63.0, 22.0 ],
+					"patching_rect" : [ 748.0, 79.5, 63.0, 22.0 ],
 					"text" : "closebang"
 				}
 
@@ -641,7 +641,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 233.0, 781.0, 127.0, 22.0 ],
+					"patching_rect" : [ 220.0, 757.0, 127.0, 22.0 ],
 					"text" : "script show sliderbank"
 				}
 
@@ -653,7 +653,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 473.0, 137.0, 103.0, 22.0 ],
+					"patching_rect" : [ 460.0, 137.0, 103.0, 22.0 ],
 					"text" : "v #0-numsliders 1"
 				}
 
@@ -665,7 +665,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 374.0, 193.0, 67.0, 22.0 ],
+					"patching_rect" : [ 361.0, 193.0, 67.0, 22.0 ],
 					"save" : [ "#N", "thispatcher", ";", "#Q", "end", ";" ],
 					"text" : "thispatcher"
 				}
@@ -689,7 +689,7 @@
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ 59.0, 104.0, 665.0, 846.0 ],
+						"rect" : [ 1172.0, 314.0, 665.0, 846.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -1143,7 +1143,7 @@
  ]
 					}
 ,
-					"patching_rect" : [ 374.0, 137.0, 93.0, 22.0 ],
+					"patching_rect" : [ 361.0, 137.0, 93.0, 22.0 ],
 					"saved_object_attributes" : 					{
 						"description" : "",
 						"digest" : "",
@@ -1162,7 +1162,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 374.0, 79.5, 85.0, 22.0 ],
+					"patching_rect" : [ 361.0, 79.5, 85.0, 22.0 ],
 					"text" : "route template"
 				}
 
@@ -1175,7 +1175,7 @@
 					"maxclass" : "outlet",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 32.0, 842.0, 30.0, 30.0 ]
+					"patching_rect" : [ 19.0, 842.0, 30.0, 30.0 ]
 				}
 
 			}
@@ -1490,7 +1490,7 @@
  ]
 					}
 ,
-					"patching_rect" : [ 365.5, 828.0, 133.0, 22.0 ],
+					"patching_rect" : [ 352.5, 804.0, 133.0, 22.0 ],
 					"saved_object_attributes" : 					{
 						"description" : "",
 						"digest" : "",
@@ -1509,7 +1509,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 624.5, 679.0, 72.0, 22.0 ],
+					"patching_rect" : [ 611.5, 675.0, 72.0, 22.0 ],
 					"text" : "prepend set"
 				}
 
@@ -1521,7 +1521,7 @@
 					"numinlets" : 4,
 					"numoutlets" : 4,
 					"outlettype" : [ "", "", "", "" ],
-					"patching_rect" : [ 729.833333333333371, 545.0, 161.0, 22.0 ],
+					"patching_rect" : [ 716.833333333333371, 545.0, 161.0, 22.0 ],
 					"text" : "route objective trial numtrials"
 				}
 
@@ -1535,7 +1535,7 @@
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 729.833333333333371, 10.0, 30.0, 30.0 ]
+					"patching_rect" : [ 716.833333333333371, 10.0, 30.0, 30.0 ]
 				}
 
 			}
@@ -1546,7 +1546,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "bang" ],
-					"patching_rect" : [ 479.5, 635.0, 58.0, 22.0 ],
+					"patching_rect" : [ 466.5, 635.0, 58.0, 22.0 ],
 					"text" : "loadbang"
 				}
 
@@ -1558,7 +1558,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 479.5, 781.0, 29.5, 22.0 ],
+					"patching_rect" : [ 466.5, 757.0, 29.5, 22.0 ],
 					"text" : "$3"
 				}
 
@@ -1570,7 +1570,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 3,
 					"outlettype" : [ "", "", "" ],
-					"patching_rect" : [ 479.5, 679.0, 139.0, 22.0 ],
+					"patching_rect" : [ 466.5, 675.0, 139.0, 22.0 ],
 					"text" : "getattr presentation_rect"
 				}
 
@@ -1583,7 +1583,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 539.5, 789.0, 255.0, 74.0 ],
+					"patching_rect" : [ 526.5, 757.0, 255.0, 74.0 ],
 					"presentation" : 1,
 					"presentation_linecount" : 3,
 					"presentation_rect" : [ 0.0, 0.0, 1180.0, 74.0 ],
@@ -1600,7 +1600,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 702.5, 750.0, 194.0, 29.0 ],
+					"patching_rect" : [ 689.5, 715.0, 194.0, 29.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 0.0, 641.0, 1180.0, 29.0 ],
 					"text" : "Trial 1 of 1",
@@ -1616,7 +1616,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 702.5, 679.0, 141.0, 22.0 ],
+					"patching_rect" : [ 689.5, 675.0, 141.0, 22.0 ],
 					"text" : "sprintf set Trial %d of %d"
 				}
 
@@ -1628,7 +1628,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 233.0, 886.0, 67.0, 22.0 ],
+					"patching_rect" : [ 220.0, 854.0, 67.0, 22.0 ],
 					"save" : [ "#N", "thispatcher", ";", "#Q", "end", ";" ],
 					"text" : "thispatcher"
 				}
@@ -1642,7 +1642,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 365.5, 781.0, 50.0, 22.0 ]
+					"patching_rect" : [ 352.5, 757.0, 50.0, 22.0 ]
 				}
 
 			}
@@ -1653,7 +1653,7 @@
 					"numinlets" : 3,
 					"numoutlets" : 3,
 					"outlettype" : [ "", "", "" ],
-					"patching_rect" : [ 326.5, 716.0, 97.0, 22.0 ],
+					"patching_rect" : [ 313.5, 705.0, 97.0, 22.0 ],
 					"text" : "route done width"
 				}
 
@@ -1674,7 +1674,7 @@
 					"numoutlets" : 2,
 					"offset" : [ 0.0, 0.0 ],
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 32.0, 137.0, 313.5, 548.0 ],
+					"patching_rect" : [ 19.0, 137.0, 313.5, 548.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 475.0, 82.0, 230.0, 548.0 ],
 					"varname" : "sliderbank",
@@ -1749,7 +1749,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-11", 0 ],
-					"midpoints" : [ 739.333333333333371, 60.0, 482.5, 60.0 ],
+					"midpoints" : [ 726.333333333333371, 60.0, 469.5, 60.0 ],
 					"order" : 1,
 					"source" : [ "obj-25", 0 ]
 				}
@@ -1758,7 +1758,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-43", 0 ],
-					"midpoints" : [ 739.333333333333371, 60.0, 383.5, 60.0 ],
+					"midpoints" : [ 726.333333333333371, 60.0, 370.5, 60.0 ],
 					"order" : 2,
 					"source" : [ "obj-25", 0 ]
 				}
@@ -1782,6 +1782,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-18", 0 ],
+					"midpoints" : [ 362.0, 839.5, 229.5, 839.5 ],
 					"source" : [ "obj-37", 0 ]
 				}
 
@@ -1796,7 +1797,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-17", 0 ],
-					"midpoints" : [ 449.5, 116.75, 41.5, 116.75 ],
+					"midpoints" : [ 436.5, 116.75, 28.5, 116.75 ],
 					"source" : [ "obj-43", 1 ]
 				}
 
@@ -1874,6 +1875,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-56", 0 ],
+					"midpoints" : [ 323.0, 741.5, 229.5, 741.5 ],
 					"source" : [ "obj-9", 0 ]
 				}
 
@@ -1909,21 +1911,21 @@
  ],
 		"dependency_cache" : [ 			{
 				"name" : "multicomp_subinterface.maxpat",
-				"bootpath" : "~/Documents/Max 8/Projects/PsychoBox/PsychoBox/patchers",
+				"bootpath" : "~/Documents/Max 8/Projects/HULTI-GENv2/PsychoBox/patchers",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "rating_sliderbank.maxpat",
-				"bootpath" : "~/Documents/Max 8/Projects/PsychoBox/PsychoBox/patchers",
+				"bootpath" : "~/Documents/Max 8/Projects/HULTI-GENv2/PsychoBox/patchers",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "rating_slider.maxpat",
-				"bootpath" : "~/Documents/Max 8/Projects/PsychoBox/PsychoBox/patchers",
+				"bootpath" : "~/Documents/Max 8/Projects/HULTI-GENv2/PsychoBox/patchers",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
