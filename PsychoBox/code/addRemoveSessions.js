@@ -229,7 +229,7 @@ function shrinksessions(x) {
     }
 
     var shrinkAmount = x;
-    var oldDict = new Dict();
+    var oldConfigDict = new Dict();
     oldConfigDict.clone(configDictName);
 
     if (!configDict.contains("sessions")) {
@@ -278,7 +278,7 @@ function shrinkgroup(sessionID, x) {
     }
 
     var shrinkAmount = x;
-    var oldDict = new Dict();
+    var oldConfigDict = new Dict();
     oldConfigDict.clone(configDictName);
 
     if (!configDict.contains("sessions")) {
