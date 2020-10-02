@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 122.0, 85.0, 1445.0, 1081.0 ],
+		"rect" : [ 122.0, 85.0, 1445.0, 1188.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -40,13 +40,24 @@
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-4",
+					"maxclass" : "newobj",
+					"numinlets" : 2,
+					"numoutlets" : 2,
+					"outlettype" : [ "", "" ],
+					"patching_rect" : [ 188.0, 79.0, 91.0, 22.0 ],
+					"text" : "routepass bang"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-8",
 					"maxclass" : "message",
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 146.0, 209.0, 74.0, 22.0 ],
-					"presentation_linecount" : 2,
+					"patching_rect" : [ 146.0, 264.0, 74.0, 22.0 ],
 					"text" : "numtrials $1"
 				}
 
@@ -58,7 +69,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 24.0, 209.0, 45.0, 22.0 ],
+					"patching_rect" : [ 24.0, 264.0, 45.0, 22.0 ],
 					"text" : "trial $1"
 				}
 
@@ -70,7 +81,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "int" ],
-					"patching_rect" : [ 24.0, 171.0, 29.5, 22.0 ],
+					"patching_rect" : [ 24.0, 226.0, 29.5, 22.0 ],
 					"text" : "+ 1"
 				}
 
@@ -82,7 +93,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 146.0, 134.0, 109.0, 22.0 ],
+					"patching_rect" : [ 146.0, 189.0, 109.0, 22.0 ],
 					"text" : "v global_numTrials"
 				}
 
@@ -94,7 +105,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 24.0, 134.0, 117.0, 22.0 ],
+					"patching_rect" : [ 24.0, 189.0, 117.0, 22.0 ],
 					"text" : "v global_currentTrial"
 				}
 
@@ -106,7 +117,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 24.0, 1004.0, 132.0, 22.0 ],
+					"patching_rect" : [ 24.0, 1059.0, 132.0, 22.0 ],
 					"text" : "prepend buttonpressed"
 				}
 
@@ -118,7 +129,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 24.0, 963.0, 73.0, 22.0 ],
+					"patching_rect" : [ 24.0, 1018.0, 73.0, 22.0 ],
 					"text" : "route button"
 				}
 
@@ -269,7 +280,7 @@
  ]
 					}
 ,
-					"patching_rect" : [ 1224.333333000000039, 222.0, 81.0, 22.0 ],
+					"patching_rect" : [ 1224.333333000000039, 277.0, 81.0, 22.0 ],
 					"saved_object_attributes" : 					{
 						"description" : "",
 						"digest" : "",
@@ -288,7 +299,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 360.0, 80.0, 119.0, 22.0 ],
+					"patching_rect" : [ 360.0, 135.0, 119.0, 22.0 ],
 					"text" : "loadmess template 2"
 				}
 
@@ -300,7 +311,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 260.0, 134.0, 35.0, 22.0 ],
+					"patching_rect" : [ 260.0, 189.0, 35.0, 22.0 ],
 					"text" : "reset"
 				}
 
@@ -320,7 +331,7 @@
 					"numoutlets" : 1,
 					"offset" : [ 0.0, 0.0 ],
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 24.0, 260.0, 1180.0, 683.0 ],
+					"patching_rect" : [ 24.0, 315.0, 1180.0, 683.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 0.0, 0.0, 1180.0, 680.0 ],
 					"viewvisibility" : 1
@@ -334,7 +345,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "bang" ],
-					"patching_rect" : [ 1303.0, 106.0, 58.0, 22.0 ],
+					"patching_rect" : [ 1303.0, 161.0, 58.0, 22.0 ],
 					"text" : "loadbang"
 				}
 
@@ -346,7 +357,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 1303.0, 171.0, 90.0, 22.0 ],
+					"patching_rect" : [ 1303.0, 226.0, 90.0, 22.0 ],
 					"text" : "v global_theme"
 				}
 
@@ -358,7 +369,7 @@
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 1224.333333000000039, 171.0, 72.0, 22.0 ],
+					"patching_rect" : [ 1224.333333000000039, 226.0, 72.0, 22.0 ],
 					"text" : "r set_theme"
 				}
 
@@ -369,7 +380,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 4,
 					"numoutlets" : 0,
-					"patching_rect" : [ 1224.333333000000039, 266.5, 50.5, 22.0 ],
+					"patching_rect" : [ 1224.333333000000039, 321.5, 50.5, 22.0 ],
 					"text" : "bgcolor"
 				}
 
@@ -381,7 +392,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 2,
 					"outlettype" : [ "bang", "" ],
-					"patching_rect" : [ 260.0, 80.0, 69.0, 22.0 ],
+					"patching_rect" : [ 260.0, 135.0, 69.0, 22.0 ],
 					"text" : "sel nexttrial"
 				}
 
@@ -390,7 +401,7 @@
 				"box" : 				{
 					"comment" : "",
 					"id" : "obj-21",
-					"index" : 0,
+					"index" : 1,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
@@ -417,7 +428,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 24.0, 1046.5, 92.0, 22.0 ],
+					"patching_rect" : [ 24.0, 1101.5, 92.0, 22.0 ],
 					"text" : "s to_testWorker"
 				}
 
@@ -433,7 +444,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-1", 0 ],
-					"midpoints" : [ 369.5, 246.0, 33.5, 246.0 ],
+					"midpoints" : [ 369.5, 301.0, 33.5, 301.0 ],
 					"source" : [ "obj-10", 0 ]
 				}
 
@@ -468,9 +479,23 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-49", 0 ],
-					"midpoints" : [ 385.833333333333258, 65.0, 269.5, 65.0 ],
+					"destination" : [ "obj-4", 0 ],
+					"midpoints" : [ 385.833333333333258, 65.0, 197.5, 65.0 ],
 					"source" : [ "obj-21", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-1", 0 ],
+					"source" : [ "obj-4", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-49", 0 ],
+					"source" : [ "obj-4", 1 ]
 				}
 
 			}
@@ -484,7 +509,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-1", 0 ],
-					"midpoints" : [ 319.5, 246.0, 33.5, 246.0 ],
+					"midpoints" : [ 319.5, 301.0, 33.5, 301.0 ],
 					"source" : [ "obj-49", 1 ]
 				}
 
@@ -492,7 +517,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-16", 0 ],
-					"midpoints" : [ 269.5, 117.0, 155.5, 117.0 ],
+					"midpoints" : [ 269.5, 172.0, 155.5, 172.0 ],
 					"order" : 1,
 					"source" : [ "obj-49", 0 ]
 				}
@@ -501,7 +526,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-20", 0 ],
-					"midpoints" : [ 269.5, 117.5, 33.5, 117.5 ],
+					"midpoints" : [ 269.5, 172.5, 33.5, 172.5 ],
 					"order" : 2,
 					"source" : [ "obj-49", 0 ]
 				}
@@ -517,8 +542,8 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-49", 0 ],
-					"midpoints" : [ 269.5, 65.0, 269.5, 65.0 ],
+					"destination" : [ "obj-4", 0 ],
+					"midpoints" : [ 269.5, 65.0, 197.5, 65.0 ],
 					"source" : [ "obj-5", 0 ]
 				}
 
@@ -568,7 +593,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-1", 0 ],
-					"midpoints" : [ 155.5, 246.0, 33.5, 246.0 ],
+					"midpoints" : [ 155.5, 301.0, 33.5, 301.0 ],
 					"source" : [ "obj-8", 0 ]
 				}
 
@@ -576,42 +601,12 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-1", 0 ],
-					"midpoints" : [ 269.5, 246.0, 33.5, 246.0 ],
+					"midpoints" : [ 269.5, 301.0, 33.5, 301.0 ],
 					"source" : [ "obj-9", 0 ]
 				}
 
 			}
- ],
-		"dependency_cache" : [ 			{
-				"name" : "ui_genericGradingInterface.maxpat",
-				"bootpath" : "~/Documents/Max 8/Projects/PsychoBox/PsychoBox/patchers",
-				"patcherrelativepath" : "../../PsychoBox/patchers",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "multicomp_subinterface.maxpat",
-				"bootpath" : "~/Documents/Max 8/Projects/PsychoBox/PsychoBox/patchers",
-				"patcherrelativepath" : "../../PsychoBox/patchers",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "rating_sliderbank.maxpat",
-				"bootpath" : "~/Documents/Max 8/Projects/PsychoBox/PsychoBox/patchers",
-				"patcherrelativepath" : "../../PsychoBox/patchers",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "rating_slider.maxpat",
-				"bootpath" : "~/Documents/Max 8/Projects/PsychoBox/PsychoBox/patchers",
-				"patcherrelativepath" : "../../PsychoBox/patchers",
-				"type" : "JSON",
-				"implicit" : 1
-			}
- ],
-		"autosave" : 0
+ ]
 	}
 
 }
