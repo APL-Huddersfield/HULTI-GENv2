@@ -7080,11 +7080,11 @@
 				"box" : 				{
 					"id" : "obj-1200",
 					"maxclass" : "newobj",
-					"numinlets" : 2,
-					"numoutlets" : 2,
-					"outlettype" : [ "bang", "" ],
-					"patching_rect" : [ 1186.250000000000227, 71.5, 54.0, 22.0 ],
-					"text" : "sel reset"
+					"numinlets" : 3,
+					"numoutlets" : 3,
+					"outlettype" : [ "bang", "bang", "" ],
+					"patching_rect" : [ 1153.750000000000227, 70.0, 84.0, 22.0 ],
+					"text" : "sel bang reset"
 				}
 
 			}
@@ -9880,6 +9880,13 @@
 				"patchline" : 				{
 					"destination" : [ "obj-1208", 0 ],
 					"order" : 0,
+					"source" : [ "obj-1200", 1 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-43", 0 ],
 					"source" : [ "obj-1200", 0 ]
 				}
 
@@ -9888,7 +9895,7 @@
 				"patchline" : 				{
 					"destination" : [ "obj-49", 0 ],
 					"order" : 1,
-					"source" : [ "obj-1200", 0 ]
+					"source" : [ "obj-1200", 1 ]
 				}
 
 			}
