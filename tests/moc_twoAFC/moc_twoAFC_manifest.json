@@ -4,7 +4,10 @@
     "tag" : "psychometric",
     "parameters" : [
         "repetitions",
-        "objective"
+        "objective",
+        "beforePresentationDelay",
+        "betweenStimuliDelay",
+        "afterPresentationDelay"
     ],
     "parametersMenu" : "sdt",
     "requiresReference" : true,

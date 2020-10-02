@@ -46,7 +46,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 1158.0, 715.0, 117.0, 22.0 ],
-					"text" : "afterPresentation $1"
+					"text" : "afterPresentationDelay $1"
 				}
 
 			}
@@ -110,7 +110,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 1010.0, 715.0, 107.0, 22.0 ],
-					"text" : "betweenStimuli $1"
+					"text" : "betweenStimuliDelay $1"
 				}
 
 			}
@@ -122,7 +122,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 836.0, 715.0, 127.0, 22.0 ],
-					"text" : "beforePresentation $1"
+					"text" : "beforePresentationDelay $1"
 				}
 
 			}

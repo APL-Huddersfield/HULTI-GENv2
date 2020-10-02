@@ -8,7 +8,10 @@
         "initialStepSize",
         "steppingRule",
         "maxReversals",
-        "maxTrials"
+        "maxTrials",
+        "beforePresentationDelay",
+        "betweenStimuliDelay",
+        "afterPresentationDelay"
     ],
     "parametersMenu" : "staircase",
     "requiresReference" : true,

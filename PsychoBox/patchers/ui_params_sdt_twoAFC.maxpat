@@ -47,7 +47,7 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 1136.0, 688.0, 117.0, 22.0 ],
 					"presentation_linecount" : 2,
-					"text" : "afterPresentation $1"
+					"text" : "afterPresentationDelay $1"
 				}
 
 			}
@@ -111,7 +111,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 988.0, 688.0, 107.0, 22.0 ],
-					"text" : "betweenStimuli $1"
+					"text" : "betweenStimuliDelay $1"
 				}
 
 			}
@@ -123,7 +123,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 814.0, 688.0, 127.0, 22.0 ],
-					"text" : "beforePresentation $1"
+					"text" : "beforePresentationDelay $1"
 				}
 
 			}
@@ -136,7 +136,7 @@
 					"numoutlets" : 3,
 					"outlettype" : [ "", "", "" ],
 					"patching_rect" : [ 882.0, 539.0, 195.0, 35.0 ],
-					"text" : "dict.unpack beforePresentation: betweenStimuli: afterPresentation:"
+					"text" : "dict.unpack beforePresentationDelay: betweenStimuliDelay: afterPresentationDelay:"
 				}
 
 			}
