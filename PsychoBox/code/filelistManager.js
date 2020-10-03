@@ -292,6 +292,7 @@ function moveup(i) {
     selectedItem = x - 1;
     selectItem(x, 0);
     selectItem(x - 1, 1);
+    outlet(0, "output", "swapped", x, x - 1);
 }
 
 function movedown(i) {
@@ -320,6 +321,7 @@ function movedown(i) {
     selectedItem = x + 1;
     selectItem(x, 0);
     selectItem(x + 1, 1);
+    outlet(0, "output", "swapped", x, x + 1);
 }
 
 function auxtext(i, t) {
