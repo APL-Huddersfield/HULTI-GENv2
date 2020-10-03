@@ -2,7 +2,7 @@
 	"name" : "PsychoBox",
 	"version" : 1,
 	"creationdate" : 3666872002,
-	"modificationdate" : 3684439702,
+	"modificationdate" : 3684602761,
 	"viewrect" : [ 1290.0, 186.0, 461.0, 826.0 ],
 	"autoorganize" : 1,
 	"hideprojectwindow" : 0,
@@ -71,6 +71,11 @@
 				"local" : 1
 			}
 ,
+			"ui_filelist_psychometric.maxpat" : 			{
+				"kind" : "patcher",
+				"local" : 1
+			}
+,
 			"ui_config_stimulusPool.maxpat" : 			{
 				"kind" : "patcher",
 				"local" : 1
@@ -87,6 +92,11 @@
 			}
 ,
 			"ui_params_grading.maxpat" : 			{
+				"kind" : "patcher",
+				"local" : 1
+			}
+,
+			"ui_params_moc_twoAFC.maxpat" : 			{
 				"kind" : "patcher",
 				"local" : 1
 			}
@@ -150,11 +160,6 @@
 				"kind" : "patcher"
 			}
 ,
-			"player_parallel.maxpat" : 			{
-				"kind" : "patcher",
-				"local" : 1
-			}
-,
 			"ui_mainMenu.maxpat" : 			{
 				"kind" : "patcher",
 				"local" : 1
@@ -165,17 +170,17 @@
 				"local" : 1
 			}
 ,
-			"ui_filelist_psychometric.maxpat" : 			{
+			"player_sequential.maxpat" : 			{
+				"kind" : "patcher",
+				"local" : 1
+			}
+,
+			"player_parallel.maxpat" : 			{
 				"kind" : "patcher",
 				"local" : 1
 			}
 ,
 			"ui_params_staircase.maxpat" : 			{
-				"kind" : "patcher",
-				"local" : 1
-			}
-,
-			"player_sequential.maxpat" : 			{
 				"kind" : "patcher",
 				"local" : 1
 			}
@@ -482,10 +487,20 @@
 ,
 			"ui_params_moc_abx.maxpat" : 			{
 				"kind" : "patcher",
+				"local" : 1,
+				"singleton" : 				{
+					"bootpath" : "~/Documents/Max 8/Projects/PsychoBox/PsychoBox/patchers",
+					"projectrelativepath" : "./patchers"
+				}
+
+			}
+,
+			"be_batchCompileResults.maxpat" : 			{
+				"kind" : "patcher",
 				"local" : 1
 			}
 ,
-			"ui_params_moc_twoAFC.maxpat" : 			{
+			"ui_batchCompileResults.maxpat" : 			{
 				"kind" : "patcher",
 				"local" : 1
 			}
