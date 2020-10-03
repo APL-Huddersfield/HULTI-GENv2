@@ -40,6 +40,18 @@
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-42",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 4,
+					"outlettype" : [ "", "", "multichannelsignal", "reset" ],
+					"patching_rect" : [ 1034.0, 293.0, 100.0, 22.0 ],
+					"text" : "moc_abx_worker"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-46",
 					"maxclass" : "newobj",
 					"numinlets" : 1,
@@ -23552,6 +23564,20 @@
 			}
 , 			{
 				"name" : "ui_sessionComplete.maxpat",
+				"bootpath" : "~/Documents/Max 8/Projects/HULTI-GENv2/PsychoBox/patchers",
+				"patcherrelativepath" : ".",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "moc_abx_worker.maxpat",
+				"bootpath" : "~/Documents/Max 8/Projects/HULTI-GENv2/tests/moc_abx",
+				"patcherrelativepath" : "../../tests/moc_abx",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "player_sequential.maxpat",
 				"bootpath" : "~/Documents/Max 8/Projects/HULTI-GENv2/PsychoBox/patchers",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
