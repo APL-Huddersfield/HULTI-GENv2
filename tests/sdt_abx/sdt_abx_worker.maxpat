@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 935.0, 811.0, 1434.0, 463.0 ],
+		"rect" : [ 314.0, 393.0, 1434.0, 463.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -890,7 +890,7 @@
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ 503.0, 706.0, 640.0, 480.0 ],
+						"rect" : [ 337.0, 344.0, 640.0, 480.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -926,7 +926,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 165.0, 184.0, 29.5, 22.0 ],
-									"text" : "0"
+									"text" : "1"
 								}
 
 							}
@@ -938,7 +938,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 130.0, 184.0, 29.5, 22.0 ],
-									"text" : "1"
+									"text" : "0"
 								}
 
 							}
@@ -962,7 +962,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 200.0, 184.0, 113.0, 22.0 ],
+									"patching_rect" : [ 200.0, 184.0, 111.0, 35.0 ],
 									"text" : "v #0-stimuliOrder"
 								}
 
@@ -1174,7 +1174,7 @@
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ 52.0, 605.0, 1026.0, 772.0 ],
+						"rect" : [ 761.0, 155.0, 1026.0, 772.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -1234,7 +1234,6 @@
 									"numinlets" : 1,
 									"numoutlets" : 0,
 									"patching_rect" : [ 380.0, 635.0, 125.0, 47.0 ],
-									"presentation_linecount" : 3,
 									"text" : "When order is 0:\nA = 0 = Reference\nB = 1 = Test"
 								}
 
@@ -1517,7 +1516,6 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 573.0, 208.5, 189.0, 49.0 ],
-									"presentation_linecount" : 3,
 									"text" : "sprintf get orders::sessions[%d]::groups[%d]::combination[%d]"
 								}
 
@@ -1549,7 +1547,6 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 781.0, 208.5, 189.0, 49.0 ],
-									"presentation_linecount" : 3,
 									"text" : "sprintf get orders::sessions[%d]::groups[%d]::stimuliOrder[%d]"
 								}
 
@@ -1580,7 +1577,6 @@
 									"numinlets" : 1,
 									"numoutlets" : 0,
 									"patching_rect" : [ 662.666666666666515, 544.0, 97.0, 47.0 ],
-									"presentation_linecount" : 3,
 									"text" : "Randomised A-B assignment per presentation"
 								}
 
