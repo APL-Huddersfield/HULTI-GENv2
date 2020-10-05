@@ -1,3 +1,5 @@
+var verboseMode = false;
+
 function validate(dictName, schemaName) {
     var dict = new Dict(dictName);
     var schema = new Dict(schemaName);
@@ -21,8 +23,10 @@ function validateObject(h, dict, schema) {
             requiredKey = required[i];
         }
         if (!dict.contains(requiredKey)) {
-            post("In " + h + ", missing required key\"" + requiredKey + "\"\n");
-            isValid = false;
+			if (verboseMode) {
+            	post("In " + h + ", missing required key\"" + requiredKey + "\"\n");
+            }
+			isValid = false;
         }
     }
 
@@ -78,8 +82,10 @@ function validateType(h, prop, t) {
     if (typeof(prop) == t) {
         return true;
     }
-    post("In " + h + ", value \"" + prop + "\" with type " + typeof(prop) +
-         " did not match expected type \"" + t + "\"\n");
+	if (verboseMode) {
+    	post("In " + h + ", value \"" + prop + "\" with type " + typeof(prop) +
+         	 " did not match expected type \"" + t + "\"\n");
+	}
     return false;
 }
 
@@ -88,4 +94,8 @@ function formSubKey(h, key) {
         return key;
     }
     return h + "::" + key;
+}
+
+function verbose(v) {
+	verboseMode = v > 0;
 }
