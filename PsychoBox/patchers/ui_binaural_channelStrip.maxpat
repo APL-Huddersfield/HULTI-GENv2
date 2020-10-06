@@ -90,7 +90,7 @@
 				"box" : 				{
 					"comment" : "",
 					"id" : "obj-44",
-					"index" : 0,
+					"index" : 1,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
@@ -155,8 +155,8 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 270.0, 223.0, 209.0, 22.0 ],
-					"text" : "sprintf set %d_%d_sigToChannelStrip"
+					"patching_rect" : [ 270.0, 223.0, 185.0, 22.0 ],
+					"text" : "sprintf set %d_%d_sigToChannel"
 				}
 
 			}
@@ -167,8 +167,8 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "signal" ],
-					"patching_rect" : [ 270.0, 269.0, 182.0, 22.0 ],
-					"text" : "receive~ 0_0_sigToChannelStrip"
+					"patching_rect" : [ 270.0, 269.0, 157.0, 22.0 ],
+					"text" : "receive~ 0_0_sigToChannel"
 				}
 
 			}
@@ -222,7 +222,7 @@
 					}
 ,
 					"text" : "autopattr",
-					"varname" : "u853059835"
+					"varname" : "u820049847"
 				}
 
 			}
@@ -572,26 +572,6 @@
 
 			}
  ],
-		"parameters" : 		{
-			"obj-1::obj-114" : [ "solo", "Solo", 0 ],
-			"obj-1::obj-115" : [ "mute", "Active", 0 ],
-			"obj-1::obj-38" : [ "live.gain~", "live.gain~", 0 ],
-			"parameterbanks" : 			{
-
-			}
-,
-			"inherited_shortname" : 1
-		}
-,
-		"dependency_cache" : [ 			{
-				"name" : "ui_binaural_fader.maxpat",
-				"bootpath" : "~/Documents/Max 8/Projects/PsychoBox/PsychoBox/patchers",
-				"patcherrelativepath" : ".",
-				"type" : "JSON",
-				"implicit" : 1
-			}
- ],
-		"autosave" : 0,
 		"styles" : [ 			{
 				"name" : "Audiomix",
 				"default" : 				{
@@ -612,9 +592,9 @@
 , 			{
 				"name" : "Default M4L",
 				"default" : 				{
-					"fontname" : [ "Arial Bold" ],
+					"fontsize" : [ 11.0 ],
 					"patchlinecolor" : [ 0.290196, 0.309804, 0.301961, 0.85 ],
-					"fontsize" : [ 11.0 ]
+					"fontname" : [ "Arial Bold" ]
 				}
 ,
 				"parentstyle" : "",
@@ -623,9 +603,9 @@
 , 			{
 				"name" : "Default M4L Poletti",
 				"default" : 				{
-					"fontname" : [ "Arial Bold" ],
+					"fontsize" : [ 10.0 ],
 					"patchlinecolor" : [ 0.290196, 0.309804, 0.301961, 0.85 ],
-					"fontsize" : [ 10.0 ]
+					"fontname" : [ "Arial Bold" ]
 				}
 ,
 				"parentstyle" : "",
@@ -634,7 +614,8 @@
 , 			{
 				"name" : "Default M4L-1",
 				"default" : 				{
-					"fontname" : [ "Arial" ],
+					"fontface" : [ 1 ],
+					"fontsize" : [ 11.0 ],
 					"bgfillcolor" : 					{
 						"type" : "gradient",
 						"color1" : [ 0.376471, 0.384314, 0.4, 1.0 ],
@@ -644,8 +625,7 @@
 						"proportion" : 0.39
 					}
 ,
-					"fontface" : [ 1 ],
-					"fontsize" : [ 11.0 ]
+					"fontname" : [ "Arial" ]
 				}
 ,
 				"parentstyle" : "",

@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 193.0, 215.0, 1329.0, 782.0 ],
+		"rect" : [ 826.0, 366.0, 1329.0, 782.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -38,7 +38,7 @@
 		"style" : "",
 		"subpatcher_template" : "",
 		"assistshowspatchername" : 0,
-		"globalpatchername" : "u175001441[1]",
+		"globalpatchername" : "u175001441[1][1]",
 		"boxes" : [ 			{
 				"box" : 				{
 					"id" : "obj-39",
@@ -723,7 +723,7 @@
 					"outlettype" : [ "", "", "", "" ],
 					"patching_rect" : [ 1119.0, 135.5, 56.0, 22.0 ],
 					"text" : "autopattr",
-					"varname" : "u012050414"
+					"varname" : "u806054276"
 				}
 
 			}
@@ -3548,14 +3548,14 @@
 ,
 		"dependency_cache" : [ 			{
 				"name" : "ui_binaural_channelStrip.maxpat",
-				"bootpath" : "~/Documents/Max 8/Projects/PsychoBox/PsychoBox/patchers",
+				"bootpath" : "~/Documents/Max 8/Projects/HULTI-GENv2/PsychoBox/patchers",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "ui_binaural_fader.maxpat",
-				"bootpath" : "~/Documents/Max 8/Projects/PsychoBox/PsychoBox/patchers",
+				"bootpath" : "~/Documents/Max 8/Projects/HULTI-GENv2/PsychoBox/patchers",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
