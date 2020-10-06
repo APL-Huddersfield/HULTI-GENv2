@@ -2,7 +2,7 @@
 	"name" : "PsychoBox",
 	"version" : 1,
 	"creationdate" : 3666872002,
-	"modificationdate" : 3684602761,
+	"modificationdate" : 3684790571,
 	"viewrect" : [ 1290.0, 186.0, 461.0, 826.0 ],
 	"autoorganize" : 1,
 	"hideprojectwindow" : 0,
@@ -160,6 +160,11 @@
 				"kind" : "patcher"
 			}
 ,
+			"player_parallel.maxpat" : 			{
+				"kind" : "patcher",
+				"local" : 1
+			}
+,
 			"ui_mainMenu.maxpat" : 			{
 				"kind" : "patcher",
 				"local" : 1
@@ -171,11 +176,6 @@
 			}
 ,
 			"player_sequential.maxpat" : 			{
-				"kind" : "patcher",
-				"local" : 1
-			}
-,
-			"player_parallel.maxpat" : 			{
 				"kind" : "patcher",
 				"local" : 1
 			}
@@ -497,10 +497,50 @@
 ,
 			"be_batchCompileResults.maxpat" : 			{
 				"kind" : "patcher",
-				"local" : 1
+				"local" : 1,
+				"singleton" : 				{
+					"bootpath" : "~/Documents/Max 8/Projects/PsychoBox/PsychoBox/patchers",
+					"projectrelativepath" : "./patchers"
+				}
+
 			}
 ,
 			"ui_batchCompileResults.maxpat" : 			{
+				"kind" : "patcher",
+				"local" : 1,
+				"singleton" : 				{
+					"bootpath" : "~/Documents/Max 8/Projects/PsychoBox/PsychoBox/patchers",
+					"projectrelativepath" : "./patchers"
+				}
+
+			}
+,
+			"audioEngine.maxpat" : 			{
+				"kind" : "patcher",
+				"local" : 1,
+				"singleton" : 				{
+					"bootpath" : "~/Documents/Max 8/Projects/PsychoBox/PsychoBox/patchers",
+					"projectrelativepath" : "./patchers"
+				}
+
+			}
+,
+			"ui_binaural_channelStrip.maxpat" : 			{
+				"kind" : "patcher",
+				"local" : 1,
+				"singleton" : 				{
+					"bootpath" : "~/Documents/Max 8/Projects/PsychoBox/PsychoBox/patchers",
+					"projectrelativepath" : "./patchers"
+				}
+
+			}
+,
+			"ui_binaural_fader.maxpat" : 			{
+				"kind" : "patcher",
+				"local" : 1
+			}
+,
+			"ui_binaural_channelList.maxpat" : 			{
 				"kind" : "patcher",
 				"local" : 1
 			}
