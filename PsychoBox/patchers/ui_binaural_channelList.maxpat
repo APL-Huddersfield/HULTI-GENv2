@@ -38,7 +38,7 @@
 		"style" : "",
 		"subpatcher_template" : "",
 		"assistshowspatchername" : 0,
-		"globalpatchername" : "u175001441[1][1][1]",
+		"globalpatchername" : "u175001441[1][1][1][1]",
 		"boxes" : [ 			{
 				"box" : 				{
 					"id" : "obj-39",
@@ -723,7 +723,7 @@
 					"outlettype" : [ "", "", "", "" ],
 					"patching_rect" : [ 1119.0, 135.5, 56.0, 22.0 ],
 					"text" : "autopattr",
-					"varname" : "u405044492"
+					"varname" : "u503054751"
 				}
 
 			}
@@ -892,6 +892,7 @@
 					"clickthrough" : 0,
 					"enablehscroll" : 0,
 					"enablevscroll" : 0,
+					"hidden" : 1,
 					"id" : "obj-5",
 					"lockeddragscroll" : 0,
 					"maxclass" : "bpatcher",
