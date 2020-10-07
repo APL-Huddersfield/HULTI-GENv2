@@ -90,7 +90,7 @@
 				"box" : 				{
 					"comment" : "",
 					"id" : "obj-44",
-					"index" : 1,
+					"index" : 0,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
@@ -222,7 +222,7 @@
 					}
 ,
 					"text" : "autopattr",
-					"varname" : "u820049847"
+					"varname" : "u071052019"
 				}
 
 			}
@@ -363,7 +363,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 482.0, 223.0, 57.0, 31.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 0.0, 0.0, 387.0, 30.0 ],
+					"presentation_rect" : [ 0.0, 0.0, 402.0, 30.0 ],
 					"proportion" : 0.5,
 					"rounded" : 0
 				}
@@ -572,6 +572,26 @@
 
 			}
  ],
+		"parameters" : 		{
+			"obj-1::obj-114" : [ "solo", "Solo", 0 ],
+			"obj-1::obj-115" : [ "mute", "Active", 0 ],
+			"obj-1::obj-38" : [ "live.gain~", "live.gain~", 0 ],
+			"parameterbanks" : 			{
+
+			}
+,
+			"inherited_shortname" : 1
+		}
+,
+		"dependency_cache" : [ 			{
+				"name" : "ui_binaural_fader.maxpat",
+				"bootpath" : "~/Documents/Max 8/Projects/HULTI-GENv2/PsychoBox/patchers",
+				"patcherrelativepath" : ".",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+ ],
+		"autosave" : 0,
 		"styles" : [ 			{
 				"name" : "Audiomix",
 				"default" : 				{
@@ -592,8 +612,8 @@
 , 			{
 				"name" : "Default M4L",
 				"default" : 				{
-					"fontsize" : [ 11.0 ],
 					"patchlinecolor" : [ 0.290196, 0.309804, 0.301961, 0.85 ],
+					"fontsize" : [ 11.0 ],
 					"fontname" : [ "Arial Bold" ]
 				}
 ,
@@ -603,8 +623,8 @@
 , 			{
 				"name" : "Default M4L Poletti",
 				"default" : 				{
-					"fontsize" : [ 10.0 ],
 					"patchlinecolor" : [ 0.290196, 0.309804, 0.301961, 0.85 ],
+					"fontsize" : [ 10.0 ],
 					"fontname" : [ "Arial Bold" ]
 				}
 ,
@@ -614,8 +634,6 @@
 , 			{
 				"name" : "Default M4L-1",
 				"default" : 				{
-					"fontface" : [ 1 ],
-					"fontsize" : [ 11.0 ],
 					"bgfillcolor" : 					{
 						"type" : "gradient",
 						"color1" : [ 0.376471, 0.384314, 0.4, 1.0 ],
@@ -625,7 +643,9 @@
 						"proportion" : 0.39
 					}
 ,
-					"fontname" : [ "Arial" ]
+					"fontsize" : [ 11.0 ],
+					"fontname" : [ "Arial" ],
+					"fontface" : [ 1 ]
 				}
 ,
 				"parentstyle" : "",
