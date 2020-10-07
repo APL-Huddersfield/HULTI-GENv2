@@ -1,7 +1,7 @@
 {
     "slug" : "staircase_twoAFC",
     "name" : "Staircase 2AFC",
-    "tag" : "psychometric",
+    "tag" : "psychophysical",
     "parameters" : [
         "objective",
         "initialStep",
@@ -21,8 +21,8 @@
     },
     "interface" : {
         "window" : {
-            "width" : 500,
-            "height" : 280
+            "maxwidth" : 1180,
+            "maxheight" : 680
         }
     },
     "paramsUI" : "staircase"

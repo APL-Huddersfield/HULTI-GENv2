@@ -2,7 +2,7 @@
 	"name" : "PsychoBox",
 	"version" : 1,
 	"creationdate" : 3666872002,
-	"modificationdate" : 3684860493,
+	"modificationdate" : 3684932893,
 	"viewrect" : [ 1290.0, 186.0, 461.0, 826.0 ],
 	"autoorganize" : 1,
 	"hideprojectwindow" : 0,
@@ -14,6 +14,26 @@
 				"kind" : "patcher",
 				"local" : 1,
 				"toplevel" : 1
+			}
+,
+			"ui_genericGradingInterface.maxpat" : 			{
+				"kind" : "patcher",
+				"local" : 1
+			}
+,
+			"multicomp_subinterface.maxpat" : 			{
+				"kind" : "patcher",
+				"local" : 1
+			}
+,
+			"rating_sliderbank.maxpat" : 			{
+				"kind" : "patcher",
+				"local" : 1
+			}
+,
+			"rating_slider.maxpat" : 			{
+				"kind" : "patcher",
+				"local" : 1
 			}
 ,
 			"ui_config.maxpat" : 			{
@@ -71,11 +91,6 @@
 				"local" : 1
 			}
 ,
-			"ui_filelist_psychometric.maxpat" : 			{
-				"kind" : "patcher",
-				"local" : 1
-			}
-,
 			"ui_config_stimulusPool.maxpat" : 			{
 				"kind" : "patcher",
 				"local" : 1
@@ -106,32 +121,22 @@
 				"local" : 1
 			}
 ,
-			"multicomp_subinterface.maxpat" : 			{
-				"kind" : "patcher",
-				"local" : 1
-			}
-,
-			"rating_sliderbank.maxpat" : 			{
-				"kind" : "patcher",
-				"local" : 1
-			}
-,
-			"rating_slider.maxpat" : 			{
-				"kind" : "patcher",
-				"local" : 1
-			}
-,
 			"ui_config_chooseTest.maxpat" : 			{
 				"kind" : "patcher",
 				"local" : 1
 			}
 ,
-			"ui_subjectMenu.maxpat" : 			{
+			"ui_beginTestMenu.maxpat" : 			{
 				"kind" : "patcher",
 				"local" : 1
 			}
 ,
-			"ui_beginTestMenu.maxpat" : 			{
+			"ui_filesMissingDialog.maxpat" : 			{
+				"kind" : "patcher",
+				"local" : 1
+			}
+,
+			"ui_subjectMenu.maxpat" : 			{
 				"kind" : "patcher",
 				"local" : 1
 			}
@@ -146,23 +151,8 @@
 				"local" : 1
 			}
 ,
-			"ui_filesMissingDialog.maxpat" : 			{
-				"kind" : "patcher",
-				"local" : 1
-			}
-,
-			"ui_genericGradingInterface.maxpat" : 			{
-				"kind" : "patcher",
-				"local" : 1
-			}
-,
 			"lookAboveThisDir.maxpat" : 			{
 				"kind" : "patcher"
-			}
-,
-			"player_parallel.maxpat" : 			{
-				"kind" : "patcher",
-				"local" : 1
 			}
 ,
 			"ui_mainMenu.maxpat" : 			{
@@ -171,6 +161,36 @@
 			}
 ,
 			"ui_sessionComplete.maxpat" : 			{
+				"kind" : "patcher",
+				"local" : 1
+			}
+,
+			"ui_audioEngine.maxpat" : 			{
+				"kind" : "patcher",
+				"local" : 1
+			}
+,
+			"ui_binaural_channelList.maxpat" : 			{
+				"kind" : "patcher",
+				"local" : 1
+			}
+,
+			"ui_binaural_channelStrip.maxpat" : 			{
+				"kind" : "patcher",
+				"local" : 1
+			}
+,
+			"ui_binaural_fader.maxpat" : 			{
+				"kind" : "patcher",
+				"local" : 1
+			}
+,
+			"ui_filelist_psychophysical.maxpat" : 			{
+				"kind" : "patcher",
+				"local" : 1
+			}
+,
+			"player_parallel.maxpat" : 			{
 				"kind" : "patcher",
 				"local" : 1
 			}
@@ -191,6 +211,11 @@
 			}
 ,
 			"checkIfUniqueInColl.maxpat" : 			{
+				"kind" : "patcher",
+				"local" : 1
+			}
+,
+			"stepper.maxpat" : 			{
 				"kind" : "patcher",
 				"local" : 1
 			}
@@ -276,11 +301,6 @@
 			}
 ,
 			"be_makeNewConfig.maxpat" : 			{
-				"kind" : "patcher",
-				"local" : 1
-			}
-,
-			"testController.maxpat" : 			{
 				"kind" : "patcher",
 				"local" : 1
 			}
@@ -525,41 +545,6 @@
 
 			}
 ,
-			"ui_binaural_channelStrip.maxpat" : 			{
-				"kind" : "patcher",
-				"local" : 1,
-				"singleton" : 				{
-					"bootpath" : "~/Documents/Max 8/Projects/HULTI-GENv2/PsychoBox/patchers",
-					"projectrelativepath" : "./patchers"
-				}
-
-			}
-,
-			"ui_binaural_fader.maxpat" : 			{
-				"kind" : "patcher",
-				"local" : 1
-			}
-,
-			"ui_binaural_channelList.maxpat" : 			{
-				"kind" : "patcher",
-				"local" : 1,
-				"singleton" : 				{
-					"bootpath" : "~/Documents/Max 8/Projects/HULTI-GENv2/PsychoBox/patchers",
-					"projectrelativepath" : "./patchers"
-				}
-
-			}
-,
-			"ui_audioEngine.maxpat" : 			{
-				"kind" : "patcher",
-				"local" : 1,
-				"singleton" : 				{
-					"bootpath" : "~/Documents/Max 8/Projects/HULTI-GENv2/PsychoBox/patchers",
-					"projectrelativepath" : "./patchers"
-				}
-
-			}
-,
 			"ui_binaural_params.maxpat" : 			{
 				"kind" : "patcher",
 				"local" : 1,
@@ -568,6 +553,11 @@
 					"projectrelativepath" : "./patchers"
 				}
 
+			}
+,
+			"dialog_referenceNotAssigned.maxpat" : 			{
+				"kind" : "patcher",
+				"local" : 1
 			}
 
 		}
@@ -689,12 +679,27 @@
 				"local" : 1
 			}
 ,
-			"nonAdaptivePsychometric.txt" : 			{
+			"nonAdaptivePsychophysical.txt" : 			{
 				"kind" : "textfile",
-				"local" : 1
+				"local" : 1,
+				"singleton" : 				{
+					"bootpath" : "~/Documents/Max 8/Projects/HULTI-GENv2/PsychoBox/data",
+					"projectrelativepath" : "./data"
+				}
+
 			}
 ,
-			"adaptivePsychometric.txt" : 			{
+			"adaptivePsychophysical.txt" : 			{
+				"kind" : "textfile",
+				"local" : 1,
+				"singleton" : 				{
+					"bootpath" : "~/Documents/Max 8/Projects/HULTI-GENv2/PsychoBox/data",
+					"projectrelativepath" : "./data"
+				}
+
+			}
+,
+			"speakerLayouts.txt" : 			{
 				"kind" : "textfile",
 				"local" : 1
 			}
@@ -738,15 +743,29 @@
 				"kind" : "json",
 				"local" : 1
 			}
-,
-			"speakerLayouts.txt" : 			{
-				"kind" : "textfile",
-				"local" : 1
-			}
 
 		}
 ,
 		"externals" : 		{
+			"hashbrown.mxo" : 			{
+				"kind" : "object"
+			}
+,
+			"multiconvolve~.mxo" : 			{
+				"kind" : "object"
+			}
+,
+			"sofa~.mxo" : 			{
+				"kind" : "object"
+			}
+,
+			"sofa.info~.mxo" : 			{
+				"kind" : "object"
+			}
+,
+			"sofa.hrir~.mxo" : 			{
+				"kind" : "object"
+			}
 
 		}
 

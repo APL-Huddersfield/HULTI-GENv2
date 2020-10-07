@@ -56,7 +56,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 1256.0, 298.0, 163.0, 22.0 ],
+					"patching_rect" : [ 1256.0, 298.0, 164.0, 22.0 ],
 					"text" : "s #0-setAdvanceDecision"
 				}
 
@@ -355,7 +355,7 @@
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 65.388888888888886, 222.0, 161.0, 22.0 ],
+					"patching_rect" : [ 65.388888888888886, 222.0, 162.0, 22.0 ],
 					"text" : "r #0-setAdvanceDecision"
 				}
 
@@ -366,7 +366,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 711.333333333333258, 555.0, 163.0, 22.0 ],
+					"patching_rect" : [ 711.333333333333258, 555.0, 164.0, 22.0 ],
 					"text" : "s #0-setAdvanceDecision"
 				}
 
@@ -1304,7 +1304,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 647.299999999999955, 474.0, 116.0, 22.0 ],
+					"patching_rect" : [ 647.299999999999955, 474.0, 117.0, 22.0 ],
 					"text" : "v #0-currentStep"
 				}
 
@@ -2545,8 +2545,8 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "multichannelsignal", "" ],
-					"patching_rect" : [ 223.333333333333258, 401.5, 123.0, 22.0 ],
-					"text" : "player_sequential 2 1"
+					"patching_rect" : [ 223.333333333333258, 401.5, 129.0, 22.0 ],
+					"text" : "player_sequential 2 64"
 				}
 
 			}
@@ -4641,7 +4641,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-1", 0 ],
-					"midpoints" : [ 336.833333333333258, 461.5, 1094.5, 461.5, 1094.5, 94.0, 529.799999999999955, 94.0 ],
+					"midpoints" : [ 342.833333333333258, 461.5, 1094.5, 461.5, 1094.5, 94.0, 529.799999999999955, 94.0 ],
 					"order" : 1,
 					"source" : [ "obj-20", 1 ]
 				}
@@ -4650,7 +4650,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-18", 0 ],
-					"midpoints" : [ 336.833333333333258, 461.5, 1094.5, 461.5, 1094.5, 94.0, 902.5, 94.0 ],
+					"midpoints" : [ 342.833333333333258, 461.5, 1094.5, 461.5, 1094.5, 94.0, 902.5, 94.0 ],
 					"order" : 0,
 					"source" : [ "obj-20", 1 ]
 				}

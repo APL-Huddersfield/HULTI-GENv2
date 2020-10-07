@@ -277,7 +277,7 @@
 					"bgfillcolor_type" : "color",
 					"fontsize" : 14.0,
 					"id" : "obj-16",
-					"items" : [ "Grading", ",", "Non-Adaptive", "Psychometric", ",", "Adaptive", "Psychometric" ],
+					"items" : [ "Grading", ",", "Non-Adaptive", "Psychophysical", ",", "Adaptive", "Psychophysical" ],
 					"maxclass" : "umenu",
 					"numinlets" : 1,
 					"numoutlets" : 3,

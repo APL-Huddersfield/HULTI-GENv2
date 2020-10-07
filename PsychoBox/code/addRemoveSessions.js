@@ -80,7 +80,7 @@ function addgroup(sessionID) {
         configDict.set(groupsStr + "[" + groupID + "]::high", -1);
         configDict.set(groupsStr + "[" + groupID + "]::low", -1);
     }
-    else if (tag == "psychometric") {
+    else if (tag == "psychophysical") {
         configDict.setparse(groupsStr + "[" + groupID + "]", "stimuli: reference:");
         configDict.set(groupsStr + "[" + groupID + "]::reference", 0);
     }

@@ -1,7 +1,7 @@
 {
     "slug" : "moc_twoAFC",
-    "name" : "Method of Constants 2AFC",
-    "tag" : "psychometric",
+    "name" : "Method Of Constants 2AFC",
+    "tag" : "psychophysical",
     "parameters" : [
         "repetitions",
         "objective",
@@ -18,8 +18,8 @@
     },
     "interface" : {
         "window" : {
-            "width" : 500,
-            "height" : 280
+            "maxwidth" : 1180,
+            "maxheight" : 680
         }
     },
     "paramsUI" : "moc_twoAFC"

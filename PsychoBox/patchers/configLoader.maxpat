@@ -45,7 +45,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 412.0, 232.0, 174.0, 47.0 ],
-					"text" : "Outlet routes:\n    1. Grading test loading\n    2. Psychometric test loading",
+					"text" : "Outlet routes:\n    1. Grading test loading\n    2. Psychophysical test loading",
 					"textjustification" : 0
 				}
 
@@ -106,7 +106,7 @@
 					"numoutlets" : 3,
 					"outlettype" : [ "bang", "bang", "" ],
 					"patching_rect" : [ 499.0, 134.0, 141.0, 22.0 ],
-					"text" : "sel grading psychometric"
+					"text" : "sel grading psychophysical"
 				}
 
 			}
