@@ -49,7 +49,7 @@
 					"presentation" : 1,
 					"presentation_linecount" : 2,
 					"presentation_rect" : [ 0.0, 26.0, 345.0, 33.0 ],
-					"text" : "Please ensure that they are placed in the \"stimuli\" folder relative to your test config file"
+					"text" : "Please ensure that they are placed in the same folder relative to the HULTI-GENv2 app."
 				}
 
 			}
@@ -99,7 +99,7 @@
 					"patching_rect" : [ 440.0, 224.0, 100.0, 20.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 245.0, 375.0, 100.0, 20.0 ],
-					"text" : "Cancel"
+					"text" : "Okay"
 				}
 
 			}
