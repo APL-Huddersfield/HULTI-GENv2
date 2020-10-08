@@ -58,7 +58,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 99.333333333333343, 392.0, 55.0, 18.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 186.0, 1.5, 51.0, 18.0 ],
+					"presentation_rect" : [ 211.0, 1.5, 51.0, 18.0 ],
 					"text" : "0.00 dB",
 					"textjustification" : 0
 				}
@@ -1036,6 +1036,7 @@
 								"name" : "Default M4L-1",
 								"default" : 								{
 									"fontname" : [ "Arial" ],
+									"fontface" : [ 1 ],
 									"bgfillcolor" : 									{
 										"type" : "gradient",
 										"color1" : [ 0.376471, 0.384314, 0.4, 1.0 ],
@@ -1045,7 +1046,6 @@
 										"proportion" : 0.39
 									}
 ,
-									"fontface" : [ 1 ],
 									"fontsize" : [ 11.0 ]
 								}
 ,
@@ -1136,7 +1136,7 @@
 					}
 ,
 					"text" : "autopattr @autorestore 0",
-					"varname" : "u183001545"
+					"varname" : "u166029278"
 				}
 
 			}
@@ -1254,7 +1254,7 @@
 					"parameter_enable" : 1,
 					"patching_rect" : [ 51.0, 308.5, 164.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 50.0, 1.0, 136.0, 20.0 ],
+					"presentation_rect" : [ 50.0, 1.0, 161.0, 20.0 ],
 					"relative" : 1,
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
@@ -1462,6 +1462,7 @@
 				"name" : "Default M4L-1",
 				"default" : 				{
 					"fontname" : [ "Arial" ],
+					"fontface" : [ 1 ],
 					"bgfillcolor" : 					{
 						"type" : "gradient",
 						"color1" : [ 0.376471, 0.384314, 0.4, 1.0 ],
@@ -1471,7 +1472,6 @@
 						"proportion" : 0.39
 					}
 ,
-					"fontface" : [ 1 ],
 					"fontsize" : [ 11.0 ]
 				}
 ,

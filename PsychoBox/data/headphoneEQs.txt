@@ -1,2 +1,4 @@
-0, "Senn. HD650 44k1" "hd650_44k1.wav"
-1, "Senn. HD650 48k" "hd650_48k.wav"
+0, "Senn. HD650 44k1" "sennHD650_44k1.wav";
+1, "Senn. HD650 48k" "sennHD650_48k.wav";
+2, "AKG K702 44k1" "akgK702_44k1.wav";
+3, "AKG K702 48k" "akgK702_48k.wav";

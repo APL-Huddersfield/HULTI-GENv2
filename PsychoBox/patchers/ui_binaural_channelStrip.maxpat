@@ -319,7 +319,7 @@
 					}
 ,
 					"text" : "autopattr",
-					"varname" : "u904025908"
+					"varname" : "u607029567"
 				}
 
 			}
@@ -374,7 +374,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 25.0, 322.5, 51.0, 21.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 340.0, 3.5, 51.0, 21.0 ],
+					"presentation_rect" : [ 365.0, 3.5, 51.0, 21.0 ],
 					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ],
 					"varname" : "azimuth"
 				}
@@ -396,7 +396,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 117.0, 322.5, 51.0, 21.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 400.0, 3.5, 51.0, 21.0 ],
+					"presentation_rect" : [ 425.0, 3.5, 51.0, 21.0 ],
 					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ],
 					"varname" : "elevation"
 				}
@@ -419,7 +419,7 @@
 					"outlettype" : [ "float" ],
 					"patching_rect" : [ 416.600000000000023, 321.5, 235.0, 23.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 100.666666000000021, 3.5, 235.0, 23.0 ],
+					"presentation_rect" : [ 100.666666000000021, 3.5, 260.0, 23.0 ],
 					"varname" : "ui_binaural_fader",
 					"viewvisibility" : 1
 				}
@@ -436,7 +436,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 17.0, 7.0, 57.0, 31.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 0.0, 0.0, 492.0, 30.0 ],
+					"presentation_rect" : [ 0.0, 0.0, 502.0, 30.0 ],
 					"proportion" : 0.5,
 					"rounded" : 0
 				}
