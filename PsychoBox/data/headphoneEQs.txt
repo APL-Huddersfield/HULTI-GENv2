@@ -1,6 +1,8 @@
-0, "Senn. HD650 44k1" "sennHD650_44k1.wav";
-1, "Senn. HD650 48k" "sennHD650_48k.wav";
-2, "AKG K612 44k1" "akgK612_44k1.wav";
-3, "AKG K612 48k" "akgK612_48k.wav";
-4, "AKG K702 44k1" "akgK702_44k1.wav";
-5, "AKG K702 48k" "akgK702_48k.wav";
+0, "AKG K612 44k1" "akgK612_44k1.wav";
+1, "AKG K612 48k" "akgK612_48k.wav";
+2, "AKG K702 44k1" "akgK702_44k1.wav";
+3, "AKG K702 48k" "akgK702_48k.wav";
+4, "Beyer Dynamic DT990 44k1" "beyerdynamicDT990_250ohm_44k1.wav";
+5, "Beyer Dynamic DT990 48k" "beyerdynamicDT990_250ohm_48k.wav";
+6, "Sennheiser HD650 44k1" "sennHD650_44k1.wav";
+7, "Sennheiser HD650 48k" "sennHD650_48k.wav";

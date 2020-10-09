@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 604.0, 345.0, 1052.0, 736.0 ],
+		"rect" : [ 1020.0, 566.0, 1052.0, 736.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -314,12 +314,12 @@
 					"outlettype" : [ "", "", "", "" ],
 					"patching_rect" : [ 517.599999999999909, 21.0, 56.0, 22.0 ],
 					"restore" : 					{
-						"azimuth" : [ 0.0 ],
+						"azimuth" : [ 30.0 ],
 						"elevation" : [ 0.0 ]
 					}
 ,
 					"text" : "autopattr",
-					"varname" : "u078029653"
+					"varname" : "u426039375"
 				}
 
 			}
@@ -374,7 +374,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 25.0, 322.5, 51.0, 21.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 365.0, 3.5, 51.0, 21.0 ],
+					"presentation_rect" : [ 465.0, 3.5, 51.0, 21.0 ],
 					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ],
 					"varname" : "azimuth"
 				}
@@ -396,7 +396,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 117.0, 322.5, 51.0, 21.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 425.0, 3.5, 51.0, 21.0 ],
+					"presentation_rect" : [ 525.0, 3.5, 51.0, 21.0 ],
 					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ],
 					"varname" : "elevation"
 				}
@@ -419,7 +419,7 @@
 					"outlettype" : [ "float" ],
 					"patching_rect" : [ 416.600000000000023, 321.5, 235.0, 23.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 100.666666000000021, 3.5, 260.0, 23.0 ],
+					"presentation_rect" : [ 100.666666000000021, 3.5, 360.0, 23.0 ],
 					"varname" : "ui_binaural_fader",
 					"viewvisibility" : 1
 				}
@@ -436,7 +436,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 17.0, 7.0, 57.0, 31.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 0.0, 0.0, 502.0, 30.0 ],
+					"presentation_rect" : [ 0.0, 0.0, 602.0, 30.0 ],
 					"proportion" : 0.5,
 					"rounded" : 0
 				}
@@ -744,7 +744,6 @@
 				"name" : "Default M4L-1",
 				"default" : 				{
 					"fontname" : [ "Arial" ],
-					"fontface" : [ 1 ],
 					"bgfillcolor" : 					{
 						"type" : "gradient",
 						"color1" : [ 0.376471, 0.384314, 0.4, 1.0 ],
@@ -754,6 +753,7 @@
 						"proportion" : 0.39
 					}
 ,
+					"fontface" : [ 1 ],
 					"fontsize" : [ 11.0 ]
 				}
 ,

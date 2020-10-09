@@ -137,7 +137,7 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 949.0, 246.0, 440.0, 284.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 420.5, 108.5, 528.0, 548.0 ],
+					"presentation_rect" : [ 370.5, 108.5, 628.0, 548.0 ],
 					"varname" : "ui_audioSettings",
 					"viewvisibility" : 1
 				}
@@ -1378,7 +1378,7 @@
 									"maxclass" : "newobj",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 295.333333333333314, 597.0, 54.0, 22.0 ],
+									"patching_rect" : [ 344.0, 270.0, 54.0, 22.0 ],
 									"text" : "mc.dac~"
 								}
 
@@ -1829,8 +1829,6 @@
 																"name" : "Default M4L-1",
 																"default" : 																{
 																	"fontname" : [ "Arial" ],
-																	"fontface" : [ 1 ],
-																	"fontsize" : [ 11.0 ],
 																	"bgfillcolor" : 																	{
 																		"type" : "gradient",
 																		"color1" : [ 0.376471, 0.384314, 0.4, 1.0 ],
@@ -1839,7 +1837,9 @@
 																		"angle" : 270.0,
 																		"proportion" : 0.39
 																	}
-
+,
+																	"fontface" : [ 1 ],
+																	"fontsize" : [ 11.0 ]
 																}
 ,
 																"parentstyle" : "",
@@ -1921,7 +1921,6 @@
 , 															{
 																"name" : "Neon",
 																"default" : 																{
-																	"textcolor" : [ 0.921569, 0.917647, 0.933333, 1.0 ],
 																	"selectioncolor" : [ 0.92549, 0.364706, 0.341176, 1.0 ],
 																	"patchlinecolor" : [ 0.0, 1.0, 0.976471, 0.9 ],
 																	"bgfillcolor" : 																	{
@@ -1933,6 +1932,7 @@
 																		"proportion" : 0.39
 																	}
 ,
+																	"textcolor" : [ 0.921569, 0.917647, 0.933333, 1.0 ],
 																	"bgcolor" : [ 0.201376, 0.21726, 0.264912, 1.0 ],
 																	"accentcolor" : [ 0.305882, 0.329412, 0.4, 1.0 ]
 																}
@@ -1943,7 +1943,6 @@
 , 															{
 																"name" : "NeonRed",
 																"default" : 																{
-																	"textcolor" : [ 0.921569, 0.917647, 0.933333, 1.0 ],
 																	"selectioncolor" : [ 0.92549, 0.364706, 0.341176, 1.0 ],
 																	"patchlinecolor" : [ 0.92549, 0.364706, 0.341176, 0.898039 ],
 																	"bgfillcolor" : 																	{
@@ -1955,6 +1954,7 @@
 																		"proportion" : 0.39
 																	}
 ,
+																	"textcolor" : [ 0.921569, 0.917647, 0.933333, 1.0 ],
 																	"bgcolor" : [ 0.201376, 0.21726, 0.264912, 1.0 ],
 																	"accentcolor" : [ 0.305882, 0.329412, 0.4, 1.0 ]
 																}
@@ -1979,8 +1979,8 @@
 , 															{
 																"name" : "newobjYellow-1",
 																"default" : 																{
-																	"fontsize" : [ 12.059008 ],
-																	"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ]
+																	"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ],
+																	"fontsize" : [ 12.059008 ]
 																}
 ,
 																"parentstyle" : "",
@@ -5712,7 +5712,6 @@
 , 																			{
 																				"name" : "Neon",
 																				"default" : 																				{
-																					"textcolor" : [ 0.921569, 0.917647, 0.933333, 1.0 ],
 																					"selectioncolor" : [ 0.92549, 0.364706, 0.341176, 1.0 ],
 																					"patchlinecolor" : [ 0.0, 1.0, 0.976471, 0.9 ],
 																					"bgfillcolor" : 																					{
@@ -5724,6 +5723,7 @@
 																						"proportion" : 0.39
 																					}
 ,
+																					"textcolor" : [ 0.921569, 0.917647, 0.933333, 1.0 ],
 																					"bgcolor" : [ 0.201376, 0.21726, 0.264912, 1.0 ],
 																					"accentcolor" : [ 0.305882, 0.329412, 0.4, 1.0 ]
 																				}
@@ -5734,7 +5734,6 @@
 , 																			{
 																				"name" : "NeonRed",
 																				"default" : 																				{
-																					"textcolor" : [ 0.921569, 0.917647, 0.933333, 1.0 ],
 																					"selectioncolor" : [ 0.92549, 0.364706, 0.341176, 1.0 ],
 																					"patchlinecolor" : [ 0.92549, 0.364706, 0.341176, 0.898039 ],
 																					"bgfillcolor" : 																					{
@@ -5746,6 +5745,7 @@
 																						"proportion" : 0.39
 																					}
 ,
+																					"textcolor" : [ 0.921569, 0.917647, 0.933333, 1.0 ],
 																					"bgcolor" : [ 0.201376, 0.21726, 0.264912, 1.0 ],
 																					"accentcolor" : [ 0.305882, 0.329412, 0.4, 1.0 ]
 																				}
@@ -5770,8 +5770,8 @@
 , 																			{
 																				"name" : "newobjYellow-1",
 																				"default" : 																				{
-																					"fontsize" : [ 12.059008 ],
-																					"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ]
+																					"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ],
+																					"fontsize" : [ 12.059008 ]
 																				}
 ,
 																				"parentstyle" : "",
@@ -6234,7 +6234,6 @@
 , 															{
 																"name" : "Neon",
 																"default" : 																{
-																	"textcolor" : [ 0.921569, 0.917647, 0.933333, 1.0 ],
 																	"selectioncolor" : [ 0.92549, 0.364706, 0.341176, 1.0 ],
 																	"patchlinecolor" : [ 0.0, 1.0, 0.976471, 0.9 ],
 																	"bgfillcolor" : 																	{
@@ -6246,6 +6245,7 @@
 																		"proportion" : 0.39
 																	}
 ,
+																	"textcolor" : [ 0.921569, 0.917647, 0.933333, 1.0 ],
 																	"bgcolor" : [ 0.201376, 0.21726, 0.264912, 1.0 ],
 																	"accentcolor" : [ 0.305882, 0.329412, 0.4, 1.0 ]
 																}
@@ -6256,7 +6256,6 @@
 , 															{
 																"name" : "NeonRed",
 																"default" : 																{
-																	"textcolor" : [ 0.921569, 0.917647, 0.933333, 1.0 ],
 																	"selectioncolor" : [ 0.92549, 0.364706, 0.341176, 1.0 ],
 																	"patchlinecolor" : [ 0.92549, 0.364706, 0.341176, 0.898039 ],
 																	"bgfillcolor" : 																	{
@@ -6268,6 +6267,7 @@
 																		"proportion" : 0.39
 																	}
 ,
+																	"textcolor" : [ 0.921569, 0.917647, 0.933333, 1.0 ],
 																	"bgcolor" : [ 0.201376, 0.21726, 0.264912, 1.0 ],
 																	"accentcolor" : [ 0.305882, 0.329412, 0.4, 1.0 ]
 																}
@@ -6292,8 +6292,8 @@
 , 															{
 																"name" : "newobjYellow-1",
 																"default" : 																{
-																	"fontsize" : [ 12.059008 ],
-																	"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ]
+																	"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ],
+																	"fontsize" : [ 12.059008 ]
 																}
 ,
 																"parentstyle" : "",
@@ -7149,7 +7149,6 @@
 , 											{
 												"name" : "Neon",
 												"default" : 												{
-													"textcolor" : [ 0.921569, 0.917647, 0.933333, 1.0 ],
 													"selectioncolor" : [ 0.92549, 0.364706, 0.341176, 1.0 ],
 													"patchlinecolor" : [ 0.0, 1.0, 0.976471, 0.9 ],
 													"bgfillcolor" : 													{
@@ -7161,6 +7160,7 @@
 														"proportion" : 0.39
 													}
 ,
+													"textcolor" : [ 0.921569, 0.917647, 0.933333, 1.0 ],
 													"bgcolor" : [ 0.201376, 0.21726, 0.264912, 1.0 ],
 													"accentcolor" : [ 0.305882, 0.329412, 0.4, 1.0 ]
 												}
@@ -7171,7 +7171,6 @@
 , 											{
 												"name" : "NeonRed",
 												"default" : 												{
-													"textcolor" : [ 0.921569, 0.917647, 0.933333, 1.0 ],
 													"selectioncolor" : [ 0.92549, 0.364706, 0.341176, 1.0 ],
 													"patchlinecolor" : [ 0.92549, 0.364706, 0.341176, 0.898039 ],
 													"bgfillcolor" : 													{
@@ -7183,6 +7182,7 @@
 														"proportion" : 0.39
 													}
 ,
+													"textcolor" : [ 0.921569, 0.917647, 0.933333, 1.0 ],
 													"bgcolor" : [ 0.201376, 0.21726, 0.264912, 1.0 ],
 													"accentcolor" : [ 0.305882, 0.329412, 0.4, 1.0 ]
 												}
@@ -7207,8 +7207,8 @@
 , 											{
 												"name" : "newobjYellow-1",
 												"default" : 												{
-													"fontsize" : [ 12.059008 ],
-													"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ]
+													"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ],
+													"fontsize" : [ 12.059008 ]
 												}
 ,
 												"parentstyle" : "",
@@ -7226,7 +7226,7 @@
  ]
 									}
 ,
-									"patching_rect" : [ 295.333333333333314, 542.0, 85.0, 22.0 ],
+									"patching_rect" : [ 344.0, 215.0, 85.0, 22.0 ],
 									"saved_object_attributes" : 									{
 										"description" : "",
 										"digest" : "",
@@ -14525,7 +14525,6 @@
 , 							{
 								"name" : "Neon",
 								"default" : 								{
-									"textcolor" : [ 0.921569, 0.917647, 0.933333, 1.0 ],
 									"selectioncolor" : [ 0.92549, 0.364706, 0.341176, 1.0 ],
 									"patchlinecolor" : [ 0.0, 1.0, 0.976471, 0.9 ],
 									"bgfillcolor" : 									{
@@ -14537,6 +14536,7 @@
 										"proportion" : 0.39
 									}
 ,
+									"textcolor" : [ 0.921569, 0.917647, 0.933333, 1.0 ],
 									"bgcolor" : [ 0.201376, 0.21726, 0.264912, 1.0 ],
 									"accentcolor" : [ 0.305882, 0.329412, 0.4, 1.0 ]
 								}
@@ -14547,7 +14547,6 @@
 , 							{
 								"name" : "NeonRed",
 								"default" : 								{
-									"textcolor" : [ 0.921569, 0.917647, 0.933333, 1.0 ],
 									"selectioncolor" : [ 0.92549, 0.364706, 0.341176, 1.0 ],
 									"patchlinecolor" : [ 0.92549, 0.364706, 0.341176, 0.898039 ],
 									"bgfillcolor" : 									{
@@ -14559,6 +14558,7 @@
 										"proportion" : 0.39
 									}
 ,
+									"textcolor" : [ 0.921569, 0.917647, 0.933333, 1.0 ],
 									"bgcolor" : [ 0.201376, 0.21726, 0.264912, 1.0 ],
 									"accentcolor" : [ 0.305882, 0.329412, 0.4, 1.0 ]
 								}
@@ -14583,8 +14583,8 @@
 , 							{
 								"name" : "newobjYellow-1",
 								"default" : 								{
-									"fontsize" : [ 12.059008 ],
-									"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ]
+									"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ],
+									"fontsize" : [ 12.059008 ]
 								}
 ,
 								"parentstyle" : "",
@@ -33915,6 +33915,10 @@
 					"parameter_longname" : "live.gain~[1]"
 				}
 ,
+				"obj-37::obj-4::obj-140::obj-1::obj-38" : 				{
+					"parameter_longname" : "live.gain~"
+				}
+,
 				"obj-37::obj-4::obj-16::obj-1::obj-114" : 				{
 					"parameter_longname" : "solo[59]"
 				}
@@ -34818,8 +34822,6 @@
 				"name" : "Default M4L-1",
 				"default" : 				{
 					"fontname" : [ "Arial" ],
-					"fontface" : [ 1 ],
-					"fontsize" : [ 11.0 ],
 					"bgfillcolor" : 					{
 						"type" : "gradient",
 						"color1" : [ 0.376471, 0.384314, 0.4, 1.0 ],
@@ -34828,7 +34830,9 @@
 						"angle" : 270.0,
 						"proportion" : 0.39
 					}
-
+,
+					"fontface" : [ 1 ],
+					"fontsize" : [ 11.0 ]
 				}
 ,
 				"parentstyle" : "",
@@ -34910,7 +34914,6 @@
 , 			{
 				"name" : "Neon",
 				"default" : 				{
-					"textcolor" : [ 0.921569, 0.917647, 0.933333, 1.0 ],
 					"selectioncolor" : [ 0.92549, 0.364706, 0.341176, 1.0 ],
 					"patchlinecolor" : [ 0.0, 1.0, 0.976471, 0.9 ],
 					"bgfillcolor" : 					{
@@ -34922,6 +34925,7 @@
 						"proportion" : 0.39
 					}
 ,
+					"textcolor" : [ 0.921569, 0.917647, 0.933333, 1.0 ],
 					"bgcolor" : [ 0.201376, 0.21726, 0.264912, 1.0 ],
 					"accentcolor" : [ 0.305882, 0.329412, 0.4, 1.0 ]
 				}
@@ -34932,7 +34936,6 @@
 , 			{
 				"name" : "NeonRed",
 				"default" : 				{
-					"textcolor" : [ 0.921569, 0.917647, 0.933333, 1.0 ],
 					"selectioncolor" : [ 0.92549, 0.364706, 0.341176, 1.0 ],
 					"patchlinecolor" : [ 0.92549, 0.364706, 0.341176, 0.898039 ],
 					"bgfillcolor" : 					{
@@ -34944,6 +34947,7 @@
 						"proportion" : 0.39
 					}
 ,
+					"textcolor" : [ 0.921569, 0.917647, 0.933333, 1.0 ],
 					"bgcolor" : [ 0.201376, 0.21726, 0.264912, 1.0 ],
 					"accentcolor" : [ 0.305882, 0.329412, 0.4, 1.0 ]
 				}
@@ -34968,8 +34972,8 @@
 , 			{
 				"name" : "newobjYellow-1",
 				"default" : 				{
-					"fontsize" : [ 12.059008 ],
-					"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ]
+					"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ],
+					"fontsize" : [ 12.059008 ]
 				}
 ,
 				"parentstyle" : "",

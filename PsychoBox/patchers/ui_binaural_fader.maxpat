@@ -58,7 +58,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 99.333333333333343, 392.0, 55.0, 18.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 211.0, 1.5, 51.0, 18.0 ],
+					"presentation_rect" : [ 311.0, 1.5, 51.0, 18.0 ],
 					"text" : "0.00 dB",
 					"textjustification" : 0
 				}
@@ -1036,7 +1036,6 @@
 								"name" : "Default M4L-1",
 								"default" : 								{
 									"fontname" : [ "Arial" ],
-									"fontface" : [ 1 ],
 									"bgfillcolor" : 									{
 										"type" : "gradient",
 										"color1" : [ 0.376471, 0.384314, 0.4, 1.0 ],
@@ -1046,6 +1045,7 @@
 										"proportion" : 0.39
 									}
 ,
+									"fontface" : [ 1 ],
 									"fontsize" : [ 11.0 ]
 								}
 ,
@@ -1112,7 +1112,7 @@
 				"box" : 				{
 					"comment" : "",
 					"id" : "obj-3",
-					"index" : 0,
+					"index" : 2,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
@@ -1136,7 +1136,7 @@
 					}
 ,
 					"text" : "autopattr @autorestore 0",
-					"varname" : "u166029278"
+					"varname" : "u374039374"
 				}
 
 			}
@@ -1144,11 +1144,11 @@
 				"box" : 				{
 					"comment" : "",
 					"id" : "obj-2",
-					"index" : 0,
+					"index" : 1,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
-					"outlettype" : [ "" ],
+					"outlettype" : [ "signal" ],
 					"patching_rect" : [ 51.0, 32.0, 30.0, 30.0 ]
 				}
 
@@ -1157,7 +1157,7 @@
 				"box" : 				{
 					"comment" : "",
 					"id" : "obj-1",
-					"index" : 0,
+					"index" : 1,
 					"maxclass" : "outlet",
 					"numinlets" : 1,
 					"numoutlets" : 0,
@@ -1187,7 +1187,7 @@
 							"parameter_initial" : [ 0.0 ],
 							"parameter_initial_enable" : 1,
 							"parameter_linknames" : 1,
-							"parameter_longname" : "solo",
+							"parameter_longname" : "solo[63]",
 							"parameter_mmax" : 1,
 							"parameter_shortname" : "Solo",
 							"parameter_type" : 2
@@ -1225,7 +1225,7 @@
 							"parameter_initial" : [ 1 ],
 							"parameter_initial_enable" : 1,
 							"parameter_linknames" : 1,
-							"parameter_longname" : "mute",
+							"parameter_longname" : "mute[63]",
 							"parameter_mmax" : 1,
 							"parameter_shortname" : "Active",
 							"parameter_type" : 2
@@ -1254,12 +1254,12 @@
 					"parameter_enable" : 1,
 					"patching_rect" : [ 51.0, 308.5, 164.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 50.0, 1.0, 161.0, 20.0 ],
+					"presentation_rect" : [ 50.0, 1.0, 261.0, 20.0 ],
 					"relative" : 1,
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
 							"parameter_initial" : [ 0 ],
-							"parameter_longname" : "live.gain~",
+							"parameter_longname" : "live.gain~[63]",
 							"parameter_mmax" : 0.0,
 							"parameter_mmin" : -70.0,
 							"parameter_shortname" : "live.gain~",
@@ -1406,19 +1406,6 @@
 
 			}
  ],
-		"parameters" : 		{
-			"obj-114" : [ "solo", "Solo", 0 ],
-			"obj-115" : [ "mute", "Active", 0 ],
-			"obj-38" : [ "live.gain~", "live.gain~", 0 ],
-			"parameterbanks" : 			{
-
-			}
-,
-			"inherited_shortname" : 1
-		}
-,
-		"dependency_cache" : [  ],
-		"autosave" : 0,
 		"styles" : [ 			{
 				"name" : "Audiomix",
 				"default" : 				{
@@ -1462,7 +1449,6 @@
 				"name" : "Default M4L-1",
 				"default" : 				{
 					"fontname" : [ "Arial" ],
-					"fontface" : [ 1 ],
 					"bgfillcolor" : 					{
 						"type" : "gradient",
 						"color1" : [ 0.376471, 0.384314, 0.4, 1.0 ],
@@ -1472,6 +1458,7 @@
 						"proportion" : 0.39
 					}
 ,
+					"fontface" : [ 1 ],
 					"fontsize" : [ 11.0 ]
 				}
 ,
