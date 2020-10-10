@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 92.0, 90.0, 1180.0, 610.0 ],
+		"rect" : [ 661.0, 251.0, 1180.0, 610.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -60,7 +60,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 23.0, 60.0, 290.0, 33.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 560.0, 343.5, 241.0, 33.0 ],
+					"presentation_rect" : [ 490.0, 343.5, 241.0, 33.0 ],
 					"text" : "Open an existing test"
 				}
 
@@ -74,7 +74,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 23.0, 12.0, 290.0, 33.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 560.0, 273.5, 270.0, 33.0 ],
+					"presentation_rect" : [ 490.0, 273.5, 270.0, 33.0 ],
 					"text" : "Create a new, blank test"
 				}
 
@@ -181,7 +181,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 183.0, 110.0, 150.0, 50.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 350.0, 330.0, 200.0, 60.0 ],
+					"presentation_rect" : [ 280.0, 330.0, 200.0, 60.0 ],
 					"text" : "Open",
 					"textoncolor" : [ 0.0, 0.0, 0.0, 1.0 ],
 					"textovercolor" : [ 0.101960784313725, 0.411764705882353, 0.796078431372549, 1.0 ],
@@ -201,7 +201,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 23.0, 110.0, 150.0, 50.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 350.0, 260.0, 200.0, 60.0 ],
+					"presentation_rect" : [ 280.0, 260.0, 200.0, 60.0 ],
 					"text" : "Create",
 					"textoncolor" : [ 0.0, 0.0, 0.0, 1.0 ],
 					"textovercolor" : [ 0.101960784313725, 0.411764705882353, 0.796078431372549, 1.0 ],
