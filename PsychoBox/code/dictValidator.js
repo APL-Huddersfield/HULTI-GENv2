@@ -23,10 +23,10 @@ function validateObject(h, dict, schema) {
             requiredKey = required[i];
         }
         if (!dict.contains(requiredKey)) {
-			if (verboseMode) {
-            	post("In " + h + ", missing required key\"" + requiredKey + "\"\n");
+            if (verboseMode) {
+                post("In " + h + ", missing required key\"" + requiredKey + "\"\n");
             }
-			isValid = false;
+            isValid = false;
         }
     }
 
@@ -75,6 +75,12 @@ function inspectProperty(h, prop, schema) {
     else if (t == "empty") {
         return true;
     }
+    else if (t == "array") {
+        return true;
+    }
+    if (verboseMode) {
+        post("Unable to handle property " + h + "\n");
+    }
     return false;
 }
 
@@ -82,10 +88,10 @@ function validateType(h, prop, t) {
     if (typeof(prop) == t) {
         return true;
     }
-	if (verboseMode) {
-    	post("In " + h + ", value \"" + prop + "\" with type " + typeof(prop) +
-         	 " did not match expected type \"" + t + "\"\n");
-	}
+    if (verboseMode) {
+        post("In " + h + ", value \"" + prop + "\" with type " + typeof(prop) +
+             " did not match expected type \"" + t + "\"\n");
+    }
     return false;
 }
 
@@ -97,5 +103,5 @@ function formSubKey(h, key) {
 }
 
 function verbose(v) {
-	verboseMode = v > 0;
+    verboseMode = v > 0;
 }
