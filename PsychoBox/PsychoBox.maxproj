@@ -2,7 +2,7 @@
 	"name" : "PsychoBox",
 	"version" : 1,
 	"creationdate" : 3666872002,
-	"modificationdate" : 3685208309,
+	"modificationdate" : 3685272144,
 	"viewrect" : [ 1713.0, 165.0, 461.0, 826.0 ],
 	"autoorganize" : 1,
 	"hideprojectwindow" : 0,
@@ -568,15 +568,35 @@
 ,
 			"dialog_configSubjectMismatch.maxpat" : 			{
 				"kind" : "patcher",
-				"local" : 1
+				"local" : 1,
+				"singleton" : 				{
+					"bootpath" : "~/Documents/Max 8/Projects/HULTI-GENv2/PsychoBox/patchers",
+					"projectrelativepath" : "./patchers"
+				}
+
 			}
 ,
 			"dialog_invalidSubjectFile.maxpat" : 			{
 				"kind" : "patcher",
-				"local" : 1
+				"local" : 1,
+				"singleton" : 				{
+					"bootpath" : "~/Documents/Max 8/Projects/HULTI-GENv2/PsychoBox/patchers",
+					"projectrelativepath" : "./patchers"
+				}
+
 			}
 ,
 			"dialog_invalidSubjectFileSchema.maxpat" : 			{
+				"kind" : "patcher",
+				"local" : 1,
+				"singleton" : 				{
+					"bootpath" : "~/Documents/Max 8/Projects/HULTI-GENv2/PsychoBox/patchers",
+					"projectrelativepath" : "./patchers"
+				}
+
+			}
+,
+			"dialog_genericWarning.maxpat" : 			{
 				"kind" : "patcher",
 				"local" : 1
 			}
