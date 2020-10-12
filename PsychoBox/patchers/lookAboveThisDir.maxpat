@@ -4,7 +4,7 @@
 		"appversion" : 		{
 			"major" : 8,
 			"minor" : 1,
-			"revision" : 5,
+			"revision" : 3,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
@@ -37,14 +37,25 @@
 		"tags" : "",
 		"style" : "",
 		"subpatcher_template" : "",
-		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
+				"box" : 				{
+					"id" : "obj-15",
+					"maxclass" : "button",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "bang" ],
+					"parameter_enable" : 0,
+					"patching_rect" : [ 371.0, 18.0, 24.0, 24.0 ]
+				}
+
+			}
+, 			{
 				"box" : 				{
 					"id" : "obj-25",
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 528.0, 314.0, 83.0, 20.0 ],
+					"patching_rect" : [ 528.0, 297.0, 83.0, 20.0 ],
 					"text" : "Detect OS"
 				}
 
@@ -56,7 +67,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 472.0, 108.0, 55.0, 22.0 ],
+					"patching_rect" : [ 472.0, 91.0, 55.0, 22.0 ],
 					"text" : "route set"
 				}
 
@@ -68,7 +79,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "bang", "int" ],
-					"patching_rect" : [ 401.0, 157.0, 29.5, 22.0 ],
+					"patching_rect" : [ 401.0, 140.0, 29.5, 22.0 ],
 					"text" : "t b i"
 				}
 
@@ -80,7 +91,7 @@
 					"numinlets" : 3,
 					"numoutlets" : 3,
 					"outlettype" : [ "", "", "" ],
-					"patching_rect" : [ 357.0, 108.0, 107.0, 22.0 ],
+					"patching_rect" : [ 357.0, 91.0, 107.0, 22.0 ],
 					"text" : "routepass bang int"
 				}
 
@@ -117,7 +128,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 528.0, 339.0, 137.0, 35.0 ],
+					"patching_rect" : [ 528.0, 322.0, 137.0, 36.0 ],
 					"text" : ";\rmax getsystem #0-os"
 				}
 
@@ -126,7 +137,7 @@
 				"box" : 				{
 					"comment" : "",
 					"id" : "obj-4",
-					"index" : 1,
+					"index" : 0,
 					"maxclass" : "outlet",
 					"numinlets" : 1,
 					"numoutlets" : 0,
@@ -138,12 +149,12 @@
 				"box" : 				{
 					"comment" : "",
 					"id" : "obj-1",
-					"index" : 1,
+					"index" : 0,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 472.0, 31.0, 30.0, 30.0 ]
+					"patching_rect" : [ 472.0, 14.0, 30.0, 30.0 ]
 				}
 
 			}
@@ -188,7 +199,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 103.0, 314.0, 150.0, 47.0 ],
+					"patching_rect" : [ 103.0, 297.0, 150.0, 48.0 ],
 					"text" : "% is a mostly reserved filename character that is here to replace a space",
 					"textjustification" : 2
 				}
@@ -201,7 +212,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 50.0, 196.5, 151.0, 87.0 ],
+					"patching_rect" : [ 50.0, 196.5, 151.0, 89.0 ],
 					"text" : "Stupid hack of a patch to look two folders above a patch. Like, ffs Cycling, let me use system folder commands like ../ or ./, fuuuuuuu!"
 				}
 
@@ -213,7 +224,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 215.0, 225.0, 32.0, 22.0 ],
+					"patching_rect" : [ 215.0, 208.0, 32.0, 22.0 ],
 					"text" : "path"
 				}
 
@@ -249,7 +260,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 5,
 					"outlettype" : [ "", "", "", "", "" ],
-					"patching_rect" : [ 263.0, 339.0, 141.0, 22.0 ],
+					"patching_rect" : [ 263.0, 322.0, 141.0, 22.0 ],
 					"text" : "regexp \" \" @substitute %"
 				}
 
@@ -321,7 +332,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 263.0, 300.0, 71.0, 22.0 ],
+					"patching_rect" : [ 263.0, 283.0, 71.0, 22.0 ],
 					"text" : "fromsymbol"
 				}
 
@@ -333,7 +344,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 215.0, 261.5, 67.0, 22.0 ],
+					"patching_rect" : [ 215.0, 244.5, 67.0, 22.0 ],
 					"save" : [ "#N", "thispatcher", ";", "#Q", "end", ";" ],
 					"text" : "thispatcher"
 				}
@@ -351,7 +362,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-7", 0 ],
-					"midpoints" : [ 481.5, 93.0, 366.5, 93.0 ],
+					"midpoints" : [ 481.5, 76.0, 366.5, 76.0 ],
 					"order" : 1,
 					"source" : [ "obj-1", 0 ]
 				}
@@ -361,6 +372,13 @@
 				"patchline" : 				{
 					"destination" : [ "obj-65", 0 ],
 					"source" : [ "obj-10", 1 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-71", 0 ],
+					"source" : [ "obj-117", 3 ]
 				}
 
 			}
@@ -401,6 +419,13 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-7", 0 ],
+					"source" : [ "obj-15", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-87", 1 ],
 					"midpoints" : [ 317.5, 480.0, 283.0, 480.0 ],
 					"source" : [ "obj-2", 0 ]
@@ -410,7 +435,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-131", 0 ],
-					"midpoints" : [ 410.5, 210.0, 224.5, 210.0 ],
+					"midpoints" : [ 410.5, 193.0, 224.5, 193.0 ],
 					"source" : [ "obj-21", 0 ]
 				}
 
@@ -441,7 +466,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-131", 0 ],
-					"midpoints" : [ 366.5, 210.0, 224.5, 210.0 ],
+					"midpoints" : [ 366.5, 193.0, 224.5, 193.0 ],
 					"source" : [ "obj-7", 0 ]
 				}
 
@@ -498,7 +523,9 @@
 				}
 
 			}
- ]
+ ],
+		"dependency_cache" : [  ],
+		"autosave" : 0
 	}
 
 }
