@@ -111,7 +111,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 25.0, 135.0, 100.0, 24.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 210.0, 660.0, 100.0, 24.0 ],
+					"presentation_rect" : [ 200.0, 660.0, 100.0, 24.0 ],
 					"text" : "<< Back",
 					"textoncolor" : [ 0.0, 0.0, 0.0, 1.0 ],
 					"textovercolor" : [ 0.101960784313725, 0.411764705882353, 0.796078431372549, 1.0 ],
