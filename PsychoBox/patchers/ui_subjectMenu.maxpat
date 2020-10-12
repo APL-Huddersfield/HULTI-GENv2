@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 157.0, 183.0, 1183.0, 651.0 ],
+		"rect" : [ 157.0, 183.0, 1261.0, 718.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -83,7 +83,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 194.0, 275.0, 491.0, 33.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 490.0, 330.0, 410.0, 33.0 ]
+					"presentation_rect" : [ 530.0, 330.0, 410.0, 33.0 ]
 				}
 
 			}
@@ -96,7 +96,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 194.0, 235.0, 491.0, 33.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 490.0, 290.0, 410.0, 33.0 ]
+					"presentation_rect" : [ 530.0, 290.0, 410.0, 33.0 ]
 				}
 
 			}
@@ -109,7 +109,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 359.0, 165.0, 10.0, 43.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 280.0, 270.0, 620.0, 10.0 ]
+					"presentation_rect" : [ 320.0, 270.0, 620.0, 10.0 ]
 				}
 
 			}
@@ -122,7 +122,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 44.0, 275.0, 140.0, 33.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 354.0, 330.0, 126.0, 33.0 ],
+					"presentation_rect" : [ 394.0, 330.0, 126.0, 33.0 ],
 					"text" : "Task:",
 					"textjustification" : 2
 				}
@@ -137,7 +137,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 44.0, 235.0, 140.0, 33.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 354.0, 290.0, 126.0, 33.0 ],
+					"presentation_rect" : [ 394.0, 290.0, 126.0, 33.0 ],
 					"text" : "Test name:",
 					"textjustification" : 2
 				}
@@ -153,7 +153,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 44.0, 155.0, 291.0, 60.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 490.0, 193.5, 410.0, 33.0 ],
+					"presentation_rect" : [ 530.0, 193.5, 410.0, 33.0 ],
 					"text" : "Continue test with an existing subject"
 				}
 
@@ -167,7 +167,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 359.0, 102.0, 10.0, 43.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 10.0, 600.0, 1160.0, 10.0 ]
+					"presentation_rect" : [ 10.0, 650.0, 1240.0, 5.0 ]
 				}
 
 			}
@@ -180,7 +180,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 44.0, 35.0, 291.0, 40.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 0.0, 0.0, 1180.0, 40.0 ],
+					"presentation_rect" : [ 0.0, 0.0, 1260.0, 40.0 ],
 					"text" : "Ready to run test",
 					"textjustification" : 1
 				}
@@ -195,7 +195,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 359.0, 35.0, 10.0, 43.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 10.0, 80.0, 1160.0, 10.0 ]
+					"presentation_rect" : [ 10.0, 80.0, 1240.0, 10.0 ]
 				}
 
 			}
@@ -223,7 +223,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 484.0, 395.0, 100.0, 30.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 10.0, 610.0, 100.0, 30.0 ],
+					"presentation_rect" : [ 10.0, 660.0, 100.0, 30.0 ],
 					"text" : "Exit Test",
 					"textoncolor" : [ 0.0, 0.0, 0.0, 1.0 ],
 					"textovercolor" : [ 0.101960784313725, 0.411764705882353, 0.796078431372549, 1.0 ],
@@ -241,7 +241,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 44.0, 85.0, 291.0, 60.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 490.0, 123.5, 410.0, 33.0 ],
+					"presentation_rect" : [ 530.0, 123.5, 410.0, 33.0 ],
 					"text" : "Run test with a new subject"
 				}
 
@@ -317,7 +317,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 264.0, 365.0, 200.0, 60.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 280.0, 180.0, 200.0, 60.0 ],
+					"presentation_rect" : [ 320.0, 180.0, 200.0, 60.0 ],
 					"text" : "Continue",
 					"textoncolor" : [ 0.0, 0.0, 0.0, 1.0 ],
 					"textovercolor" : [ 0.101960784313725, 0.411764705882353, 0.796078431372549, 1.0 ],
@@ -337,7 +337,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 44.0, 365.0, 200.0, 60.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 280.0, 110.0, 200.0, 60.0 ],
+					"presentation_rect" : [ 320.0, 110.0, 200.0, 60.0 ],
 					"text" : "New Subject",
 					"textoncolor" : [ 0.0, 0.0, 0.0, 1.0 ],
 					"textovercolor" : [ 0.101960784313725, 0.411764705882353, 0.796078431372549, 1.0 ],

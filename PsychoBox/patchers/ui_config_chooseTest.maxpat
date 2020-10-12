@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 34.0, 79.0, 1099.0, 687.0 ],
+		"rect" : [ 526.0, 279.0, 1263.0, 700.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -122,7 +122,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 25.0, 135.0, 100.0, 24.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 0.0, 660.0, 100.0, 24.0 ],
+					"presentation_rect" : [ 10.0, 660.0, 100.0, 24.0 ],
 					"text" : "<< Back",
 					"textoncolor" : [ 0.0, 0.0, 0.0, 1.0 ],
 					"textovercolor" : [ 0.101960784313725, 0.411764705882353, 0.796078431372549, 1.0 ],
@@ -139,7 +139,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 24.0, 125.0, 216.0, 5.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 0.0, 650.0, 700.0, 5.0 ]
+					"presentation_rect" : [ 10.0, 650.0, 1240.0, 5.0 ]
 				}
 
 			}
@@ -155,7 +155,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 140.0, 135.0, 100.0, 24.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 600.0, 660.0, 100.0, 24.0 ],
+					"presentation_rect" : [ 1150.0, 660.0, 100.0, 24.0 ],
 					"text" : "Next >>",
 					"textoncolor" : [ 0.0, 0.0, 0.0, 1.0 ],
 					"textovercolor" : [ 0.101960784313725, 0.411764705882353, 0.796078431372549, 1.0 ],
@@ -246,22 +246,9 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 25.0, 10.0, 309.0, 27.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 210.0, 230.0, 280.0, 27.0 ],
+					"presentation_rect" : [ 490.0, 230.0, 280.0, 27.0 ],
 					"text" : "Select test procedure and task",
 					"textjustification" : 1
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-1",
-					"linecolor" : [ 0.243137254901961, 0.243137254901961, 0.243137254901961, 1.0 ],
-					"maxclass" : "live.line",
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 25.0, 0.0, 309.0, 5.0 ],
-					"presentation" : 1,
-					"presentation_rect" : [ 0.0, 0.0, 700.0, 5.0 ]
 				}
 
 			}
@@ -285,7 +272,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 443.5, 257.0, 150.0, 24.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 210.0, 298.0, 280.0, 24.0 ],
+					"presentation_rect" : [ 490.0, 298.0, 280.0, 24.0 ],
 					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
 				}
 
@@ -301,7 +288,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 227.5, 257.0, 52.0, 22.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 210.0, 334.0, 118.0, 22.0 ],
+					"presentation_rect" : [ 490.0, 334.0, 118.0, 22.0 ],
 					"text" : "Task"
 				}
 
@@ -326,7 +313,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 281.5, 257.0, 150.0, 24.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 210.0, 358.0, 280.0, 24.0 ],
+					"presentation_rect" : [ 490.0, 358.0, 280.0, 24.0 ],
 					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
 				}
 
@@ -342,7 +329,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 595.5, 258.0, 108.0, 22.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 210.0, 274.0, 118.0, 22.0 ],
+					"presentation_rect" : [ 490.0, 274.0, 118.0, 22.0 ],
 					"text" : "Test Procedure"
 				}
 

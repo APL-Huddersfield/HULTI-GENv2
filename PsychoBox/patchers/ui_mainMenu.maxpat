@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 661.0, 251.0, 1180.0, 610.0 ],
+		"rect" : [ 805.0, 186.0, 1261.0, 729.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -47,7 +47,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 570.0, 113.5, 10.0, 43.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 10.0, 600.0, 1160.0, 10.0 ]
+					"presentation_rect" : [ 10.0, 650.0, 1240.0, 10.0 ]
 				}
 
 			}
@@ -60,7 +60,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 23.0, 60.0, 290.0, 33.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 490.0, 343.5, 241.0, 33.0 ],
+					"presentation_rect" : [ 550.0, 368.5, 241.0, 33.0 ],
 					"text" : "Open an existing test"
 				}
 
@@ -74,7 +74,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 23.0, 12.0, 290.0, 33.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 490.0, 273.5, 270.0, 33.0 ],
+					"presentation_rect" : [ 550.0, 298.5, 270.0, 33.0 ],
 					"text" : "Create a new, blank test"
 				}
 
@@ -88,7 +88,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 530.0, 113.5, 10.0, 43.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 10.0, 80.0, 1160.0, 10.0 ]
+					"presentation_rect" : [ 10.0, 80.0, 1240.0, 10.0 ]
 				}
 
 			}
@@ -101,7 +101,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 363.0, 52.0, 293.0, 33.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 0.0, 36.0, 1180.0, 33.0 ],
+					"presentation_rect" : [ 0.0, 36.0, 1260.0, 33.0 ],
 					"text" : "Version 2.0a",
 					"textjustification" : 1
 				}
@@ -116,7 +116,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 329.0, 12.0, 361.0, 40.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 0.0, 0.0, 1180.0, 40.0 ],
+					"presentation_rect" : [ 0.0, 0.0, 1260.0, 40.0 ],
 					"text" : "Welcome to HULTI-GEN",
 					"textjustification" : 1
 				}
@@ -181,7 +181,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 183.0, 110.0, 150.0, 50.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 280.0, 330.0, 200.0, 60.0 ],
+					"presentation_rect" : [ 340.0, 355.0, 200.0, 60.0 ],
 					"text" : "Open",
 					"textoncolor" : [ 0.0, 0.0, 0.0, 1.0 ],
 					"textovercolor" : [ 0.101960784313725, 0.411764705882353, 0.796078431372549, 1.0 ],
@@ -201,7 +201,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 23.0, 110.0, 150.0, 50.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 280.0, 260.0, 200.0, 60.0 ],
+					"presentation_rect" : [ 340.0, 285.0, 200.0, 60.0 ],
 					"text" : "Create",
 					"textoncolor" : [ 0.0, 0.0, 0.0, 1.0 ],
 					"textovercolor" : [ 0.101960784313725, 0.411764705882353, 0.796078431372549, 1.0 ],

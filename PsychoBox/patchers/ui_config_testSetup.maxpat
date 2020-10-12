@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 258.0, 138.0, 1281.0, 758.0 ],
+		"rect" : [ 258.0, 138.0, 1263.0, 725.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -111,7 +111,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 25.0, 135.0, 100.0, 24.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 0.0, 660.0, 100.0, 24.0 ],
+					"presentation_rect" : [ 10.0, 660.0, 100.0, 24.0 ],
 					"text" : "<< Back",
 					"textoncolor" : [ 0.0, 0.0, 0.0, 1.0 ],
 					"textovercolor" : [ 0.101960784313725, 0.411764705882353, 0.796078431372549, 1.0 ],
@@ -128,7 +128,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 24.0, 125.0, 216.0, 5.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 0.0, 650.0, 700.0, 5.0 ]
+					"presentation_rect" : [ 10.0, 650.0, 1240.0, 5.0 ]
 				}
 
 			}
@@ -144,7 +144,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 140.0, 135.0, 100.0, 24.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 600.0, 660.0, 100.0, 24.0 ],
+					"presentation_rect" : [ 1150.0, 660.0, 100.0, 24.0 ],
 					"text" : "Next >>",
 					"textoncolor" : [ 0.0, 0.0, 0.0, 1.0 ],
 					"textovercolor" : [ 0.101960784313725, 0.411764705882353, 0.796078431372549, 1.0 ],
@@ -412,7 +412,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 25.0, 43.0, 309.0, 5.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 0.0, 40.0, 700.0, 5.0 ]
+					"presentation_rect" : [ 280.0, 39.0, 700.0, 5.0 ]
 				}
 
 			}
@@ -427,21 +427,8 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 25.0, 10.0, 309.0, 27.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 0.0, 9.0, 193.0, 27.0 ],
+					"presentation_rect" : [ 280.0, 8.0, 193.0, 27.0 ],
 					"text" : "Test parameters"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-1",
-					"linecolor" : [ 0.243137254901961, 0.243137254901961, 0.243137254901961, 1.0 ],
-					"maxclass" : "live.line",
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 25.0, 0.0, 309.0, 5.0 ],
-					"presentation" : 1,
-					"presentation_rect" : [ 0.0, 0.0, 700.0, 5.0 ]
 				}
 
 			}
@@ -462,7 +449,7 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 389.0, 176.0, 548.0, 260.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 0.0, 50.0, 700.0, 593.0 ],
+					"presentation_rect" : [ 280.0, 49.0, 700.0, 593.0 ],
 					"varname" : "params",
 					"viewvisibility" : 1
 				}
