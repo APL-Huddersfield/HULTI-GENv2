@@ -1191,7 +1191,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 29.0, 364.0, 100.0, 24.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 10.0, 660.0, 100.0, 24.0 ],
+					"presentation_rect" : [ 200.0, 660.0, 100.0, 24.0 ],
 					"text" : "<< Back",
 					"textoncolor" : [ 0.0, 0.0, 0.0, 1.0 ],
 					"textovercolor" : [ 0.101960784313725, 0.411764705882353, 0.796078431372549, 1.0 ],
@@ -1224,7 +1224,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 144.0, 364.0, 100.0, 24.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 1150.0, 660.0, 100.0, 24.0 ],
+					"presentation_rect" : [ 950.0, 660.0, 100.0, 24.0 ],
 					"text" : "Next >>",
 					"textoncolor" : [ 0.0, 0.0, 0.0, 1.0 ],
 					"textovercolor" : [ 0.101960784313725, 0.411764705882353, 0.796078431372549, 1.0 ],
@@ -1880,9 +1880,9 @@
 					"numoutlets" : 2,
 					"offset" : [ 0.0, 0.0 ],
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 300.0, 55.0, 250.0, 548.0 ],
+					"patching_rect" : [ 300.0, 55.0, 230.0, 548.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 726.0, 74.0, 250.0, 548.0 ],
+					"presentation_rect" : [ 746.0, 74.0, 230.0, 548.0 ],
 					"varname" : "preview",
 					"viewvisibility" : 1
 				}
@@ -1942,7 +1942,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 65.0, 527.5, 128.0, 128.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 442.0, 70.0, 258.0, 556.0 ],
+					"presentation_rect" : [ 742.0, 70.0, 238.0, 556.0 ],
 					"proportion" : 0.5,
 					"rounded" : 4,
 					"varname" : "previewborder"
