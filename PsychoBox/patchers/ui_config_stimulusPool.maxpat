@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 480.0, 364.0, 1523.0, 923.0 ],
+		"rect" : [ 665.0, 419.0, 1343.0, 726.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -39,6 +39,35 @@
 		"subpatcher_template" : "",
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
+				"box" : 				{
+					"id" : "obj-36",
+					"linecolor" : [ 0.670588235294118, 0.670588235294118, 0.670588235294118, 1.0 ],
+					"maxclass" : "live.line",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 25.0, 43.0, 309.0, 5.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 251.0, 39.0, 758.0, 5.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontface" : 1,
+					"fontname" : "Arial",
+					"fontsize" : 18.0,
+					"id" : "obj-54",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 25.0, 10.0, 309.0, 27.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 251.0, 8.0, 193.0, 27.0 ],
+					"text" : "Test parameters"
+				}
+
+			}
+, 			{
 				"box" : 				{
 					"id" : "obj-61",
 					"maxclass" : "newobj",
@@ -463,7 +492,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 26.0, 41.0, 100.0, 24.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 0.0, 660.0, 100.0, 24.0 ],
+					"presentation_rect" : [ 10.0, 660.0, 100.0, 24.0 ],
 					"text" : "<< Back",
 					"textoncolor" : [ 0.0, 0.0, 0.0, 1.0 ],
 					"textovercolor" : [ 0.101960784313725, 0.411764705882353, 0.796078431372549, 1.0 ],
@@ -480,7 +509,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 25.0, 31.0, 216.0, 5.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 0.0, 650.0, 700.0, 5.0 ]
+					"presentation_rect" : [ 10.0, 650.0, 1240.0, 5.0 ]
 				}
 
 			}
@@ -496,7 +525,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 141.0, 41.0, 100.0, 24.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 600.0, 660.0, 100.0, 24.0 ],
+					"presentation_rect" : [ 1150.0, 660.0, 100.0, 24.0 ],
 					"text" : "Next >>",
 					"textoncolor" : [ 0.0, 0.0, 0.0, 1.0 ],
 					"textovercolor" : [ 0.101960784313725, 0.411764705882353, 0.796078431372549, 1.0 ],
@@ -785,7 +814,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 1121.0, 466.0, 100.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 0.0, 30.0, 100.0, 20.0 ],
+					"presentation_rect" : [ 251.0, 121.0, 100.0, 20.0 ],
 					"text" : "Add Folder",
 					"textoncolor" : [ 0.0, 0.0, 0.0, 1.0 ],
 					"textovercolor" : [ 0.101960784313725, 0.411764705882353, 0.796078431372549, 1.0 ],
@@ -925,7 +954,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 1357.0, 615.0, 100.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 0.0, 0.0, 100.0, 20.0 ],
+					"presentation_rect" : [ 251.0, 91.0, 100.0, 20.0 ],
 					"text" : "Add File",
 					"textoncolor" : [ 0.0, 0.0, 0.0, 1.0 ],
 					"textovercolor" : [ 0.101960784313725, 0.411764705882353, 0.796078431372549, 1.0 ],
@@ -1045,7 +1074,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 1094.0, 120.0, 100.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 0.0, 60.0, 100.0, 20.0 ],
+					"presentation_rect" : [ 251.0, 151.0, 100.0, 20.0 ],
 					"text" : "Drag 'n' Drop",
 					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ],
 					"texton" : "Drag 'n' Drop",
@@ -1068,7 +1097,7 @@
 					"patching_rect" : [ 358.0, 31.0, 174.0, 60.0 ],
 					"presentation" : 1,
 					"presentation_linecount" : 2,
-					"presentation_rect" : [ 292.5, 211.0, 181.0, 60.0 ],
+					"presentation_rect" : [ 539.5, 302.0, 181.0, 60.0 ],
 					"text" : "Drag 'n' Drop files here...",
 					"textcolor" : [ 0.996078431372549, 0.996078431372549, 0.996078431372549, 1.0 ],
 					"textjustification" : 1,
@@ -1112,7 +1141,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 885.0, 664.0, 77.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 0.0, 170.0, 100.0, 20.0 ],
+					"presentation_rect" : [ 251.0, 261.0, 100.0, 20.0 ],
 					"text" : "Select All",
 					"textoncolor" : [ 0.0, 0.0, 0.0, 1.0 ],
 					"textovercolor" : [ 0.101960784313725, 0.411764705882353, 0.796078431372549, 1.0 ],
@@ -1132,7 +1161,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 801.5, 664.0, 77.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 0.0, 140.0, 100.0, 20.0 ],
+					"presentation_rect" : [ 251.0, 231.0, 100.0, 20.0 ],
 					"text" : "Unselect",
 					"textoncolor" : [ 0.0, 0.0, 0.0, 1.0 ],
 					"textovercolor" : [ 0.101960784313725, 0.411764705882353, 0.796078431372549, 1.0 ],
@@ -1152,7 +1181,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 718.5, 664.0, 77.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 0.0, 210.0, 100.0, 20.0 ],
+					"presentation_rect" : [ 251.0, 301.0, 100.0, 20.0 ],
 					"text" : "Remove",
 					"textoncolor" : [ 0.0, 0.0, 0.0, 1.0 ],
 					"textovercolor" : [ 0.101960784313725, 0.411764705882353, 0.796078431372549, 1.0 ],
@@ -1231,7 +1260,7 @@
 					"outlettype" : [ "", "" ],
 					"patching_rect" : [ 358.0, 103.0, 320.0, 67.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 110.0, 21.0, 546.0, 480.0 ],
+					"presentation_rect" : [ 357.0, 112.0, 546.0, 480.0 ],
 					"varname" : "dnd"
 				}
 
@@ -1250,7 +1279,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 608.0, 37.5, 70.0, 47.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 110.0, 1.0, 546.0, 500.0 ],
+					"presentation_rect" : [ 357.0, 92.0, 546.0, 500.0 ],
 					"proportion" : 0.5,
 					"rounded" : 0,
 					"varname" : "dndGreyout"
@@ -1274,7 +1303,7 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 358.0, 368.0, 549.0, 255.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 109.0, 0.0, 548.0, 502.0 ],
+					"presentation_rect" : [ 356.0, 91.0, 548.0, 502.0 ],
 					"varname" : "ui_filelist_pool",
 					"viewvisibility" : 1
 				}

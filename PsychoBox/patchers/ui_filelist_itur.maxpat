@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 34.0, 79.0, 1490.0, 1023.0 ],
+		"rect" : [ 413.0, 175.0, 1490.0, 1023.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -39,6 +39,30 @@
 		"subpatcher_template" : "",
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
+				"box" : 				{
+					"id" : "obj-19",
+					"maxclass" : "live.line",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 505.0, 0.0, 5.0, 27.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 502.0, 0.0, 8.0, 562.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-18",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 498.0, 284.0, 41.0, 22.0 ],
+					"text" : "init 64"
+				}
+
+			}
+, 			{
 				"box" : 				{
 					"id" : "obj-46",
 					"maxclass" : "newobj",
@@ -2991,7 +3015,6 @@
 , 			{
 				"box" : 				{
 					"autofit" : 1,
-					"hidden" : 1,
 					"hint" : "No stimulus has been set!",
 					"id" : "obj-34",
 					"maxclass" : "fpic",
@@ -3009,7 +3032,6 @@
 , 			{
 				"box" : 				{
 					"autofit" : 1,
-					"hidden" : 1,
 					"hint" : "No stimulus has been set!",
 					"id" : "obj-33",
 					"maxclass" : "fpic",
@@ -3027,7 +3049,6 @@
 , 			{
 				"box" : 				{
 					"autofit" : 1,
-					"hidden" : 1,
 					"hint" : "No stimulus has been set!",
 					"id" : "obj-32",
 					"maxclass" : "fpic",
@@ -4832,7 +4853,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 548.0, 88.5, 5.0, 27.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 437.0, 0.0, 8.0, 502.0 ],
+					"presentation_rect" : [ 437.0, 0.0, 8.0, 562.0 ],
 					"varname" : "col2"
 				}
 
@@ -4845,7 +4866,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 532.0, 88.5, 5.0, 27.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 372.0, 0.0, 8.0, 502.0 ],
+					"presentation_rect" : [ 372.0, 0.0, 8.0, 562.0 ],
 					"varname" : "col1"
 				}
 
@@ -4937,7 +4958,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 300.0, 88.5, 168.0, 5.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 1.0, 20.0, 501.0, 5.0 ]
+					"presentation_rect" : [ 1.0, 20.0, 518.0, 5.0 ]
 				}
 
 			}
@@ -4949,7 +4970,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 513.0, 88.5, 5.0, 27.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 308.0, 0.0, 8.0, 502.0 ],
+					"presentation_rect" : [ 308.0, 0.0, 8.0, 562.0 ],
 					"varname" : "col0"
 				}
 
@@ -4962,7 +4983,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 476.0, 88.5, 5.0, 27.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 30.0, 0.0, 8.0, 502.0 ]
+					"presentation_rect" : [ 30.0, 0.0, 8.0, 562.0 ]
 				}
 
 			}
@@ -5026,7 +5047,7 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 270.0, 363.0, 529.0, 231.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 1.0, 21.0, 500.0, 480.0 ],
+					"presentation_rect" : [ 1.0, 21.0, 517.0, 540.0 ],
 					"varname" : "ui_filelist",
 					"viewvisibility" : 1
 				}
@@ -5045,7 +5066,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 686.0, 55.0, 68.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 0.0, 0.0, 502.0, 502.0 ],
+					"presentation_rect" : [ 0.0, 0.0, 519.0, 562.0 ],
 					"proportion" : 0.5,
 					"rounded" : 0
 				}
@@ -5121,6 +5142,13 @@
 				"patchline" : 				{
 					"destination" : [ "obj-43", 0 ],
 					"source" : [ "obj-17", 1 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-65", 0 ],
+					"source" : [ "obj-18", 0 ]
 				}
 
 			}
@@ -5585,35 +5613,35 @@
  ],
 		"dependency_cache" : [ 			{
 				"name" : "ui_filelist_multicheckbox.maxpat",
-				"bootpath" : "~/Documents/Max 8/Projects/PsychoBox/PsychoBox/patchers",
+				"bootpath" : "~/Documents/Max 8/Projects/HULTI-GENv2/PsychoBox/patchers",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "ui_filelist_entry_multicheckbox.maxpat",
-				"bootpath" : "~/Documents/Max 8/Projects/PsychoBox/PsychoBox/patchers",
+				"bootpath" : "~/Documents/Max 8/Projects/HULTI-GENv2/PsychoBox/patchers",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "ui_checkbox.maxpat",
-				"bootpath" : "~/Documents/Max 8/Projects/PsychoBox/PsychoBox/patchers",
+				"bootpath" : "~/Documents/Max 8/Projects/HULTI-GENv2/PsychoBox/patchers",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "filelistManagerMultiCheckbox.js",
-				"bootpath" : "~/Documents/Max 8/Projects/PsychoBox/PsychoBox/code",
+				"bootpath" : "~/Documents/Max 8/Projects/HULTI-GENv2/PsychoBox/code",
 				"patcherrelativepath" : "../code",
 				"type" : "TEXT",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "warning.png",
-				"bootpath" : "~/Documents/Max 8/Projects/PsychoBox/PsychoBox/media",
+				"bootpath" : "~/Documents/Max 8/Projects/HULTI-GENv2/PsychoBox/media",
 				"patcherrelativepath" : "../media",
 				"type" : "PNG",
 				"implicit" : 1
