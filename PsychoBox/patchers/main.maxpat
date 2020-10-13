@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 406.0, 163.0, 1261.0, 759.0 ],
+		"rect" : [ 286.0, 163.0, 1260.0, 759.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -38,7 +38,40 @@
 		"style" : "",
 		"subpatcher_template" : "",
 		"assistshowspatchername" : 0,
+		"title" : "HULTI-GEN v2",
 		"boxes" : [ 			{
+				"box" : 				{
+					"fontsize" : 14.0,
+					"id" : "obj-24",
+					"linecount" : 2,
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 346.0, 665.0, 176.0, 38.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 8.0, 720.5, 239.0, 22.0 ],
+					"text" : "The University Of Huddersfield",
+					"textjustification" : 0
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontsize" : 16.0,
+					"id" : "obj-15",
+					"linecount" : 2,
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 664.0, 720.0, 201.0, 42.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 8.0, 702.0, 274.0, 24.0 ],
+					"text" : "Applied Psychoacoustics Laboratory",
+					"textjustification" : 0
+				}
+
+			}
+, 			{
 				"box" : 				{
 					"bgmode" : 0,
 					"border" : 0,
@@ -267,28 +300,6 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 1333.0, 189.0, 109.0, 22.0 ],
 					"text" : "print toThisPatcher"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"bgmode" : 0,
-					"border" : 0,
-					"clickthrough" : 0,
-					"enablehscroll" : 0,
-					"enablevscroll" : 0,
-					"id" : "obj-5",
-					"lockeddragscroll" : 0,
-					"maxclass" : "bpatcher",
-					"name" : "ui_mainMenu.maxpat",
-					"numinlets" : 0,
-					"numoutlets" : 0,
-					"offset" : [ 0.0, 0.0 ],
-					"patching_rect" : [ 20.0, 16.0, 420.0, 240.0 ],
-					"presentation" : 1,
-					"presentation_rect" : [ 0.0, 0.0, 1260.0, 690.0 ],
-					"varname" : "ui_mainMenu",
-					"viewvisibility" : 1
 				}
 
 			}
@@ -1983,8 +1994,8 @@
 , 															{
 																"name" : "Default M4L",
 																"default" : 																{
-																	"patchlinecolor" : [ 0.290196, 0.309804, 0.301961, 0.85 ],
 																	"fontsize" : [ 11.0 ],
+																	"patchlinecolor" : [ 0.290196, 0.309804, 0.301961, 0.85 ],
 																	"fontname" : [ "Arial Bold" ]
 																}
 ,
@@ -1994,8 +2005,8 @@
 , 															{
 																"name" : "Default M4L Poletti",
 																"default" : 																{
-																	"patchlinecolor" : [ 0.290196, 0.309804, 0.301961, 0.85 ],
 																	"fontsize" : [ 10.0 ],
+																	"patchlinecolor" : [ 0.290196, 0.309804, 0.301961, 0.85 ],
 																	"fontname" : [ "Arial Bold" ]
 																}
 ,
@@ -2005,6 +2016,8 @@
 , 															{
 																"name" : "Default M4L-1",
 																"default" : 																{
+																	"fontface" : [ 1 ],
+																	"fontsize" : [ 11.0 ],
 																	"bgfillcolor" : 																	{
 																		"type" : "gradient",
 																		"color1" : [ 0.376471, 0.384314, 0.4, 1.0 ],
@@ -2014,8 +2027,6 @@
 																		"proportion" : 0.39
 																	}
 ,
-																	"fontface" : [ 1 ],
-																	"fontsize" : [ 11.0 ],
 																	"fontname" : [ "Arial" ]
 																}
 ,
@@ -2098,6 +2109,8 @@
 , 															{
 																"name" : "Neon",
 																"default" : 																{
+																	"textcolor" : [ 0.921569, 0.917647, 0.933333, 1.0 ],
+																	"selectioncolor" : [ 0.92549, 0.364706, 0.341176, 1.0 ],
 																	"patchlinecolor" : [ 0.0, 1.0, 0.976471, 0.9 ],
 																	"bgfillcolor" : 																	{
 																		"type" : "gradient",
@@ -2108,10 +2121,8 @@
 																		"proportion" : 0.39
 																	}
 ,
-																	"bgcolor" : [ 0.201376, 0.21726, 0.264912, 1.0 ],
 																	"accentcolor" : [ 0.305882, 0.329412, 0.4, 1.0 ],
-																	"textcolor" : [ 0.921569, 0.917647, 0.933333, 1.0 ],
-																	"selectioncolor" : [ 0.92549, 0.364706, 0.341176, 1.0 ]
+																	"bgcolor" : [ 0.201376, 0.21726, 0.264912, 1.0 ]
 																}
 ,
 																"parentstyle" : "",
@@ -2120,6 +2131,8 @@
 , 															{
 																"name" : "NeonRed",
 																"default" : 																{
+																	"textcolor" : [ 0.921569, 0.917647, 0.933333, 1.0 ],
+																	"selectioncolor" : [ 0.92549, 0.364706, 0.341176, 1.0 ],
 																	"patchlinecolor" : [ 0.92549, 0.364706, 0.341176, 0.898039 ],
 																	"bgfillcolor" : 																	{
 																		"type" : "gradient",
@@ -2130,10 +2143,8 @@
 																		"proportion" : 0.39
 																	}
 ,
-																	"bgcolor" : [ 0.201376, 0.21726, 0.264912, 1.0 ],
 																	"accentcolor" : [ 0.305882, 0.329412, 0.4, 1.0 ],
-																	"textcolor" : [ 0.921569, 0.917647, 0.933333, 1.0 ],
-																	"selectioncolor" : [ 0.92549, 0.364706, 0.341176, 1.0 ]
+																	"bgcolor" : [ 0.201376, 0.21726, 0.264912, 1.0 ]
 																}
 ,
 																"parentstyle" : "",
@@ -2156,8 +2167,8 @@
 , 															{
 																"name" : "newobjYellow-1",
 																"default" : 																{
-																	"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ],
-																	"fontsize" : [ 12.059008 ]
+																	"fontsize" : [ 12.059008 ],
+																	"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ]
 																}
 ,
 																"parentstyle" : "",
@@ -5889,6 +5900,8 @@
 , 																			{
 																				"name" : "Neon",
 																				"default" : 																				{
+																					"textcolor" : [ 0.921569, 0.917647, 0.933333, 1.0 ],
+																					"selectioncolor" : [ 0.92549, 0.364706, 0.341176, 1.0 ],
 																					"patchlinecolor" : [ 0.0, 1.0, 0.976471, 0.9 ],
 																					"bgfillcolor" : 																					{
 																						"type" : "gradient",
@@ -5899,10 +5912,8 @@
 																						"proportion" : 0.39
 																					}
 ,
-																					"bgcolor" : [ 0.201376, 0.21726, 0.264912, 1.0 ],
 																					"accentcolor" : [ 0.305882, 0.329412, 0.4, 1.0 ],
-																					"textcolor" : [ 0.921569, 0.917647, 0.933333, 1.0 ],
-																					"selectioncolor" : [ 0.92549, 0.364706, 0.341176, 1.0 ]
+																					"bgcolor" : [ 0.201376, 0.21726, 0.264912, 1.0 ]
 																				}
 ,
 																				"parentstyle" : "",
@@ -5911,6 +5922,8 @@
 , 																			{
 																				"name" : "NeonRed",
 																				"default" : 																				{
+																					"textcolor" : [ 0.921569, 0.917647, 0.933333, 1.0 ],
+																					"selectioncolor" : [ 0.92549, 0.364706, 0.341176, 1.0 ],
 																					"patchlinecolor" : [ 0.92549, 0.364706, 0.341176, 0.898039 ],
 																					"bgfillcolor" : 																					{
 																						"type" : "gradient",
@@ -5921,10 +5934,8 @@
 																						"proportion" : 0.39
 																					}
 ,
-																					"bgcolor" : [ 0.201376, 0.21726, 0.264912, 1.0 ],
 																					"accentcolor" : [ 0.305882, 0.329412, 0.4, 1.0 ],
-																					"textcolor" : [ 0.921569, 0.917647, 0.933333, 1.0 ],
-																					"selectioncolor" : [ 0.92549, 0.364706, 0.341176, 1.0 ]
+																					"bgcolor" : [ 0.201376, 0.21726, 0.264912, 1.0 ]
 																				}
 ,
 																				"parentstyle" : "",
@@ -5947,8 +5958,8 @@
 , 																			{
 																				"name" : "newobjYellow-1",
 																				"default" : 																				{
-																					"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ],
-																					"fontsize" : [ 12.059008 ]
+																					"fontsize" : [ 12.059008 ],
+																					"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ]
 																				}
 ,
 																				"parentstyle" : "",
@@ -6411,6 +6422,8 @@
 , 															{
 																"name" : "Neon",
 																"default" : 																{
+																	"textcolor" : [ 0.921569, 0.917647, 0.933333, 1.0 ],
+																	"selectioncolor" : [ 0.92549, 0.364706, 0.341176, 1.0 ],
 																	"patchlinecolor" : [ 0.0, 1.0, 0.976471, 0.9 ],
 																	"bgfillcolor" : 																	{
 																		"type" : "gradient",
@@ -6421,10 +6434,8 @@
 																		"proportion" : 0.39
 																	}
 ,
-																	"bgcolor" : [ 0.201376, 0.21726, 0.264912, 1.0 ],
 																	"accentcolor" : [ 0.305882, 0.329412, 0.4, 1.0 ],
-																	"textcolor" : [ 0.921569, 0.917647, 0.933333, 1.0 ],
-																	"selectioncolor" : [ 0.92549, 0.364706, 0.341176, 1.0 ]
+																	"bgcolor" : [ 0.201376, 0.21726, 0.264912, 1.0 ]
 																}
 ,
 																"parentstyle" : "",
@@ -6433,6 +6444,8 @@
 , 															{
 																"name" : "NeonRed",
 																"default" : 																{
+																	"textcolor" : [ 0.921569, 0.917647, 0.933333, 1.0 ],
+																	"selectioncolor" : [ 0.92549, 0.364706, 0.341176, 1.0 ],
 																	"patchlinecolor" : [ 0.92549, 0.364706, 0.341176, 0.898039 ],
 																	"bgfillcolor" : 																	{
 																		"type" : "gradient",
@@ -6443,10 +6456,8 @@
 																		"proportion" : 0.39
 																	}
 ,
-																	"bgcolor" : [ 0.201376, 0.21726, 0.264912, 1.0 ],
 																	"accentcolor" : [ 0.305882, 0.329412, 0.4, 1.0 ],
-																	"textcolor" : [ 0.921569, 0.917647, 0.933333, 1.0 ],
-																	"selectioncolor" : [ 0.92549, 0.364706, 0.341176, 1.0 ]
+																	"bgcolor" : [ 0.201376, 0.21726, 0.264912, 1.0 ]
 																}
 ,
 																"parentstyle" : "",
@@ -6469,8 +6480,8 @@
 , 															{
 																"name" : "newobjYellow-1",
 																"default" : 																{
-																	"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ],
-																	"fontsize" : [ 12.059008 ]
+																	"fontsize" : [ 12.059008 ],
+																	"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ]
 																}
 ,
 																"parentstyle" : "",
@@ -7385,6 +7396,8 @@
 , 											{
 												"name" : "Neon",
 												"default" : 												{
+													"textcolor" : [ 0.921569, 0.917647, 0.933333, 1.0 ],
+													"selectioncolor" : [ 0.92549, 0.364706, 0.341176, 1.0 ],
 													"patchlinecolor" : [ 0.0, 1.0, 0.976471, 0.9 ],
 													"bgfillcolor" : 													{
 														"type" : "gradient",
@@ -7395,10 +7408,8 @@
 														"proportion" : 0.39
 													}
 ,
-													"bgcolor" : [ 0.201376, 0.21726, 0.264912, 1.0 ],
 													"accentcolor" : [ 0.305882, 0.329412, 0.4, 1.0 ],
-													"textcolor" : [ 0.921569, 0.917647, 0.933333, 1.0 ],
-													"selectioncolor" : [ 0.92549, 0.364706, 0.341176, 1.0 ]
+													"bgcolor" : [ 0.201376, 0.21726, 0.264912, 1.0 ]
 												}
 ,
 												"parentstyle" : "",
@@ -7407,6 +7418,8 @@
 , 											{
 												"name" : "NeonRed",
 												"default" : 												{
+													"textcolor" : [ 0.921569, 0.917647, 0.933333, 1.0 ],
+													"selectioncolor" : [ 0.92549, 0.364706, 0.341176, 1.0 ],
 													"patchlinecolor" : [ 0.92549, 0.364706, 0.341176, 0.898039 ],
 													"bgfillcolor" : 													{
 														"type" : "gradient",
@@ -7417,10 +7430,8 @@
 														"proportion" : 0.39
 													}
 ,
-													"bgcolor" : [ 0.201376, 0.21726, 0.264912, 1.0 ],
 													"accentcolor" : [ 0.305882, 0.329412, 0.4, 1.0 ],
-													"textcolor" : [ 0.921569, 0.917647, 0.933333, 1.0 ],
-													"selectioncolor" : [ 0.92549, 0.364706, 0.341176, 1.0 ]
+													"bgcolor" : [ 0.201376, 0.21726, 0.264912, 1.0 ]
 												}
 ,
 												"parentstyle" : "",
@@ -7443,8 +7454,8 @@
 , 											{
 												"name" : "newobjYellow-1",
 												"default" : 												{
-													"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ],
-													"fontsize" : [ 12.059008 ]
+													"fontsize" : [ 12.059008 ],
+													"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ]
 												}
 ,
 												"parentstyle" : "",
@@ -14761,6 +14772,8 @@
 , 							{
 								"name" : "Neon",
 								"default" : 								{
+									"textcolor" : [ 0.921569, 0.917647, 0.933333, 1.0 ],
+									"selectioncolor" : [ 0.92549, 0.364706, 0.341176, 1.0 ],
 									"patchlinecolor" : [ 0.0, 1.0, 0.976471, 0.9 ],
 									"bgfillcolor" : 									{
 										"type" : "gradient",
@@ -14771,10 +14784,8 @@
 										"proportion" : 0.39
 									}
 ,
-									"bgcolor" : [ 0.201376, 0.21726, 0.264912, 1.0 ],
 									"accentcolor" : [ 0.305882, 0.329412, 0.4, 1.0 ],
-									"textcolor" : [ 0.921569, 0.917647, 0.933333, 1.0 ],
-									"selectioncolor" : [ 0.92549, 0.364706, 0.341176, 1.0 ]
+									"bgcolor" : [ 0.201376, 0.21726, 0.264912, 1.0 ]
 								}
 ,
 								"parentstyle" : "",
@@ -14783,6 +14794,8 @@
 , 							{
 								"name" : "NeonRed",
 								"default" : 								{
+									"textcolor" : [ 0.921569, 0.917647, 0.933333, 1.0 ],
+									"selectioncolor" : [ 0.92549, 0.364706, 0.341176, 1.0 ],
 									"patchlinecolor" : [ 0.92549, 0.364706, 0.341176, 0.898039 ],
 									"bgfillcolor" : 									{
 										"type" : "gradient",
@@ -14793,10 +14806,8 @@
 										"proportion" : 0.39
 									}
 ,
-									"bgcolor" : [ 0.201376, 0.21726, 0.264912, 1.0 ],
 									"accentcolor" : [ 0.305882, 0.329412, 0.4, 1.0 ],
-									"textcolor" : [ 0.921569, 0.917647, 0.933333, 1.0 ],
-									"selectioncolor" : [ 0.92549, 0.364706, 0.341176, 1.0 ]
+									"bgcolor" : [ 0.201376, 0.21726, 0.264912, 1.0 ]
 								}
 ,
 								"parentstyle" : "",
@@ -14819,8 +14830,8 @@
 , 							{
 								"name" : "newobjYellow-1",
 								"default" : 								{
-									"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ],
-									"fontsize" : [ 12.059008 ]
+									"fontsize" : [ 12.059008 ],
+									"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ]
 								}
 ,
 								"parentstyle" : "",
@@ -38111,8 +38122,8 @@
 , 							{
 								"name" : "Default M4L",
 								"default" : 								{
-									"patchlinecolor" : [ 0.290196, 0.309804, 0.301961, 0.85 ],
 									"fontsize" : [ 11.0 ],
+									"patchlinecolor" : [ 0.290196, 0.309804, 0.301961, 0.85 ],
 									"fontname" : [ "Arial Bold" ]
 								}
 ,
@@ -38122,8 +38133,8 @@
 , 							{
 								"name" : "Default M4L Poletti",
 								"default" : 								{
-									"patchlinecolor" : [ 0.290196, 0.309804, 0.301961, 0.85 ],
 									"fontsize" : [ 10.0 ],
+									"patchlinecolor" : [ 0.290196, 0.309804, 0.301961, 0.85 ],
 									"fontname" : [ "Arial Bold" ]
 								}
 ,
@@ -38133,6 +38144,8 @@
 , 							{
 								"name" : "Default M4L-1",
 								"default" : 								{
+									"fontface" : [ 1 ],
+									"fontsize" : [ 11.0 ],
 									"bgfillcolor" : 									{
 										"type" : "gradient",
 										"color1" : [ 0.376471, 0.384314, 0.4, 1.0 ],
@@ -38142,8 +38155,6 @@
 										"proportion" : 0.39
 									}
 ,
-									"fontface" : [ 1 ],
-									"fontsize" : [ 11.0 ],
 									"fontname" : [ "Arial" ]
 								}
 ,
@@ -38226,6 +38237,8 @@
 , 							{
 								"name" : "Neon",
 								"default" : 								{
+									"textcolor" : [ 0.921569, 0.917647, 0.933333, 1.0 ],
+									"selectioncolor" : [ 0.92549, 0.364706, 0.341176, 1.0 ],
 									"patchlinecolor" : [ 0.0, 1.0, 0.976471, 0.9 ],
 									"bgfillcolor" : 									{
 										"type" : "gradient",
@@ -38236,10 +38249,8 @@
 										"proportion" : 0.39
 									}
 ,
-									"bgcolor" : [ 0.201376, 0.21726, 0.264912, 1.0 ],
 									"accentcolor" : [ 0.305882, 0.329412, 0.4, 1.0 ],
-									"textcolor" : [ 0.921569, 0.917647, 0.933333, 1.0 ],
-									"selectioncolor" : [ 0.92549, 0.364706, 0.341176, 1.0 ]
+									"bgcolor" : [ 0.201376, 0.21726, 0.264912, 1.0 ]
 								}
 ,
 								"parentstyle" : "",
@@ -38248,6 +38259,8 @@
 , 							{
 								"name" : "NeonRed",
 								"default" : 								{
+									"textcolor" : [ 0.921569, 0.917647, 0.933333, 1.0 ],
+									"selectioncolor" : [ 0.92549, 0.364706, 0.341176, 1.0 ],
 									"patchlinecolor" : [ 0.92549, 0.364706, 0.341176, 0.898039 ],
 									"bgfillcolor" : 									{
 										"type" : "gradient",
@@ -38258,10 +38271,8 @@
 										"proportion" : 0.39
 									}
 ,
-									"bgcolor" : [ 0.201376, 0.21726, 0.264912, 1.0 ],
 									"accentcolor" : [ 0.305882, 0.329412, 0.4, 1.0 ],
-									"textcolor" : [ 0.921569, 0.917647, 0.933333, 1.0 ],
-									"selectioncolor" : [ 0.92549, 0.364706, 0.341176, 1.0 ]
+									"bgcolor" : [ 0.201376, 0.21726, 0.264912, 1.0 ]
 								}
 ,
 								"parentstyle" : "",
@@ -38284,8 +38295,8 @@
 , 							{
 								"name" : "newobjYellow-1",
 								"default" : 								{
-									"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ],
-									"fontsize" : [ 12.059008 ]
+									"fontsize" : [ 12.059008 ],
+									"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ]
 								}
 ,
 								"parentstyle" : "",
@@ -38324,17 +38335,17 @@
 					"enablehscroll" : 0,
 					"enablevscroll" : 0,
 					"hidden" : 1,
-					"id" : "obj-9",
+					"id" : "obj-26",
 					"lockeddragscroll" : 0,
 					"maxclass" : "bpatcher",
-					"name" : "ui_subjectMenu.maxpat",
+					"name" : "staircase_twoAFC_interface.maxpat",
 					"numinlets" : 0,
 					"numoutlets" : 0,
 					"offset" : [ 0.0, 0.0 ],
-					"patching_rect" : [ 20.0, 263.5, 420.0, 225.0 ],
+					"patching_rect" : [ 449.5, 257.0, 474.5, 275.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 0.0, 0.0, 1260.0, 690.0 ],
-					"varname" : "ui_subjectMenu",
+					"presentation_rect" : [ 40.0, 0.0, 1180.0, 680.0 ],
+					"varname" : "ui_testInterface",
 					"viewvisibility" : 1
 				}
 
@@ -38369,18 +38380,40 @@
 					"clickthrough" : 0,
 					"enablehscroll" : 0,
 					"enablevscroll" : 0,
-					"hidden" : 1,
-					"id" : "obj-26",
+					"id" : "obj-5",
 					"lockeddragscroll" : 0,
 					"maxclass" : "bpatcher",
-					"name" : "staircase_twoAFC_interface.maxpat",
-					"numinlets" : 1,
+					"name" : "ui_mainMenu.maxpat",
+					"numinlets" : 0,
 					"numoutlets" : 0,
 					"offset" : [ 0.0, 0.0 ],
-					"patching_rect" : [ 449.5, 257.0, 474.5, 275.0 ],
+					"patching_rect" : [ 20.0, 16.0, 420.0, 240.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 0.0, 0.0, 1180.0, 680.0 ],
-					"varname" : "ui_testInterface",
+					"presentation_rect" : [ 0.0, 0.0, 1260.0, 690.0 ],
+					"varname" : "ui_mainMenu",
+					"viewvisibility" : 1
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"bgmode" : 0,
+					"border" : 0,
+					"clickthrough" : 0,
+					"enablehscroll" : 0,
+					"enablevscroll" : 0,
+					"hidden" : 1,
+					"id" : "obj-9",
+					"lockeddragscroll" : 0,
+					"maxclass" : "bpatcher",
+					"name" : "ui_subjectMenu.maxpat",
+					"numinlets" : 0,
+					"numoutlets" : 0,
+					"offset" : [ 0.0, 0.0 ],
+					"patching_rect" : [ 20.0, 263.5, 420.0, 225.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 0.0, 0.0, 1260.0, 690.0 ],
+					"varname" : "ui_subjectMenu",
 					"viewvisibility" : 1
 				}
 
@@ -39530,330 +39563,323 @@
 		}
 ,
 		"dependency_cache" : [ 			{
-				"name" : "staircase_twoAFC_interface.maxpat",
-				"bootpath" : "~/Documents/Max 8/Projects/HULTI-GENv2/tests/staircase_twoAFC",
-				"patcherrelativepath" : "../../tests/staircase_twoAFC",
+				"name" : "ui_subjectMenu.maxpat",
+				"bootpath" : "~/Documents/Max 8/Projects/PsychoBox/PsychoBox/patchers",
+				"patcherrelativepath" : ".",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "ui_mainMenu.maxpat",
+				"bootpath" : "~/Documents/Max 8/Projects/PsychoBox/PsychoBox/patchers",
+				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "ui_config.maxpat",
-				"bootpath" : "~/Documents/Max 8/Projects/HULTI-GENv2/PsychoBox/patchers",
+				"bootpath" : "~/Documents/Max 8/Projects/PsychoBox/PsychoBox/patchers",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "ui_config_stimulusassign.maxpat",
-				"bootpath" : "~/Documents/Max 8/Projects/HULTI-GENv2/PsychoBox/patchers",
+				"bootpath" : "~/Documents/Max 8/Projects/PsychoBox/PsychoBox/patchers",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "ui_filelist_pool_noDependencies.maxpat",
-				"bootpath" : "~/Documents/Max 8/Projects/HULTI-GENv2/PsychoBox/patchers",
+				"bootpath" : "~/Documents/Max 8/Projects/PsychoBox/PsychoBox/patchers",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "ui_filelist.maxpat",
-				"bootpath" : "~/Documents/Max 8/Projects/HULTI-GENv2/PsychoBox/patchers",
+				"bootpath" : "~/Documents/Max 8/Projects/PsychoBox/PsychoBox/patchers",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "ui_filelist_entry.maxpat",
-				"bootpath" : "~/Documents/Max 8/Projects/HULTI-GENv2/PsychoBox/patchers",
+				"bootpath" : "~/Documents/Max 8/Projects/PsychoBox/PsychoBox/patchers",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "filelistManager.js",
-				"bootpath" : "~/Documents/Max 8/Projects/HULTI-GENv2/PsychoBox/code",
+				"bootpath" : "~/Documents/Max 8/Projects/PsychoBox/PsychoBox/code",
 				"patcherrelativepath" : "../code",
 				"type" : "TEXT",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "ui_filelist_itur.maxpat",
-				"bootpath" : "~/Documents/Max 8/Projects/HULTI-GENv2/PsychoBox/patchers",
+				"bootpath" : "~/Documents/Max 8/Projects/PsychoBox/PsychoBox/patchers",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "ui_filelist_multicheckbox.maxpat",
-				"bootpath" : "~/Documents/Max 8/Projects/HULTI-GENv2/PsychoBox/patchers",
+				"bootpath" : "~/Documents/Max 8/Projects/PsychoBox/PsychoBox/patchers",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "ui_filelist_entry_multicheckbox.maxpat",
-				"bootpath" : "~/Documents/Max 8/Projects/HULTI-GENv2/PsychoBox/patchers",
+				"bootpath" : "~/Documents/Max 8/Projects/PsychoBox/PsychoBox/patchers",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "ui_checkbox.maxpat",
-				"bootpath" : "~/Documents/Max 8/Projects/HULTI-GENv2/PsychoBox/patchers",
+				"bootpath" : "~/Documents/Max 8/Projects/PsychoBox/PsychoBox/patchers",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "filelistManagerMultiCheckbox.js",
-				"bootpath" : "~/Documents/Max 8/Projects/HULTI-GENv2/PsychoBox/code",
+				"bootpath" : "~/Documents/Max 8/Projects/PsychoBox/PsychoBox/code",
 				"patcherrelativepath" : "../code",
 				"type" : "TEXT",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "warning.png",
-				"bootpath" : "~/Documents/Max 8/Projects/HULTI-GENv2/PsychoBox/media",
+				"bootpath" : "~/Documents/Max 8/Projects/PsychoBox/PsychoBox/media",
 				"patcherrelativepath" : "../media",
 				"type" : "PNG",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "ui_accordion.maxpat",
-				"bootpath" : "~/Documents/Max 8/Projects/HULTI-GENv2/PsychoBox/patchers",
+				"bootpath" : "~/Documents/Max 8/Projects/PsychoBox/PsychoBox/patchers",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "configSessionsSidemenu4.js",
-				"bootpath" : "~/Documents/Max 8/Projects/HULTI-GENv2/PsychoBox/code",
+				"bootpath" : "~/Documents/Max 8/Projects/PsychoBox/PsychoBox/code",
 				"patcherrelativepath" : "../code",
 				"type" : "TEXT",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "be_config_getDependencies.maxpat",
-				"bootpath" : "~/Documents/Max 8/Projects/HULTI-GENv2/PsychoBox/patchers",
+				"bootpath" : "~/Documents/Max 8/Projects/PsychoBox/PsychoBox/patchers",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "ui_config_stimulusPool.maxpat",
-				"bootpath" : "~/Documents/Max 8/Projects/HULTI-GENv2/PsychoBox/patchers",
+				"bootpath" : "~/Documents/Max 8/Projects/PsychoBox/PsychoBox/patchers",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "ui_filelist_pool.maxpat",
-				"bootpath" : "~/Documents/Max 8/Projects/HULTI-GENv2/PsychoBox/patchers",
+				"bootpath" : "~/Documents/Max 8/Projects/PsychoBox/PsychoBox/patchers",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "ui_config_testSetup.maxpat",
-				"bootpath" : "~/Documents/Max 8/Projects/HULTI-GENv2/PsychoBox/patchers",
+				"bootpath" : "~/Documents/Max 8/Projects/PsychoBox/PsychoBox/patchers",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "ui_params_grading.maxpat",
-				"bootpath" : "~/Documents/Max 8/Projects/HULTI-GENv2/PsychoBox/patchers",
+				"bootpath" : "~/Documents/Max 8/Projects/PsychoBox/PsychoBox/patchers",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "addRemoveSessions.js",
-				"bootpath" : "~/Documents/Max 8/Projects/HULTI-GENv2/PsychoBox/code",
+				"bootpath" : "~/Documents/Max 8/Projects/PsychoBox/PsychoBox/code",
 				"patcherrelativepath" : "../code",
 				"type" : "TEXT",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "gradingTests.txt",
-				"bootpath" : "~/Documents/Max 8/Projects/HULTI-GENv2/PsychoBox/data",
+				"bootpath" : "~/Documents/Max 8/Projects/PsychoBox/PsychoBox/data",
 				"patcherrelativepath" : "../data",
 				"type" : "TEXT",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "nonAdaptivePsychophysical.txt",
-				"bootpath" : "~/Documents/Max 8/Projects/HULTI-GENv2/PsychoBox/data",
+				"bootpath" : "~/Documents/Max 8/Projects/PsychoBox/PsychoBox/data",
 				"patcherrelativepath" : "../data",
 				"type" : "TEXT",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "adaptivePsychophysical.txt",
-				"bootpath" : "~/Documents/Max 8/Projects/HULTI-GENv2/PsychoBox/data",
+				"bootpath" : "~/Documents/Max 8/Projects/PsychoBox/PsychoBox/data",
 				"patcherrelativepath" : "../data",
 				"type" : "TEXT",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "ui_config_interfaceCustomisation.maxpat",
-				"bootpath" : "~/Documents/Max 8/Projects/HULTI-GENv2/PsychoBox/patchers",
+				"bootpath" : "~/Documents/Max 8/Projects/PsychoBox/PsychoBox/patchers",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "multicomp_subinterface.maxpat",
-				"bootpath" : "~/Documents/Max 8/Projects/HULTI-GENv2/PsychoBox/patchers",
+				"bootpath" : "~/Documents/Max 8/Projects/PsychoBox/PsychoBox/patchers",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "rating_sliderbank.maxpat",
-				"bootpath" : "~/Documents/Max 8/Projects/HULTI-GENv2/PsychoBox/patchers",
+				"bootpath" : "~/Documents/Max 8/Projects/PsychoBox/PsychoBox/patchers",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "rating_slider.maxpat",
-				"bootpath" : "~/Documents/Max 8/Projects/HULTI-GENv2/PsychoBox/patchers",
+				"bootpath" : "~/Documents/Max 8/Projects/PsychoBox/PsychoBox/patchers",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "ui_config_chooseTest.maxpat",
-				"bootpath" : "~/Documents/Max 8/Projects/HULTI-GENv2/PsychoBox/patchers",
-				"patcherrelativepath" : ".",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "ui_subjectMenu.maxpat",
-				"bootpath" : "~/Documents/Max 8/Projects/HULTI-GENv2/PsychoBox/patchers",
+				"bootpath" : "~/Documents/Max 8/Projects/PsychoBox/PsychoBox/patchers",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "schemaValidator3.js",
-				"bootpath" : "~/Documents/Max 8/Projects/HULTI-GENv2/PsychoBox/code",
+				"bootpath" : "~/Documents/Max 8/Projects/PsychoBox/PsychoBox/code",
 				"patcherrelativepath" : "../code",
 				"type" : "TEXT",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "makeDefaultFromSchema.js",
-				"bootpath" : "~/Documents/Max 8/Projects/HULTI-GENv2/PsychoBox/code",
+				"bootpath" : "~/Documents/Max 8/Projects/PsychoBox/PsychoBox/code",
 				"patcherrelativepath" : "../code",
 				"type" : "TEXT",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "dictValidator.js",
-				"bootpath" : "~/Documents/Max 8/Projects/HULTI-GENv2/PsychoBox/code",
+				"bootpath" : "~/Documents/Max 8/Projects/PsychoBox/PsychoBox/code",
 				"patcherrelativepath" : "../code",
 				"type" : "TEXT",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "lookAboveThisDir.maxpat",
-				"bootpath" : "~/Documents/Max 8/Projects/HULTI-GENv2/PsychoBox/patchers",
+				"bootpath" : "~/Documents/Max 8/Projects/PsychoBox/PsychoBox/patchers",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "initSubjectFileGP.js",
-				"bootpath" : "~/Documents/Max 8/Projects/HULTI-GENv2/PsychoBox/code",
+				"bootpath" : "~/Documents/Max 8/Projects/PsychoBox/PsychoBox/code",
 				"patcherrelativepath" : "../code",
 				"type" : "TEXT",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "speakerLayouts.txt",
-				"bootpath" : "~/Documents/Max 8/Projects/HULTI-GENv2/PsychoBox/data",
+				"bootpath" : "~/Documents/Max 8/Projects/PsychoBox/PsychoBox/data",
 				"patcherrelativepath" : "../data",
 				"type" : "TEXT",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "headphoneEQs.txt",
-				"bootpath" : "~/Documents/Max 8/Projects/HULTI-GENv2/PsychoBox/data",
+				"bootpath" : "~/Documents/Max 8/Projects/PsychoBox/PsychoBox/data",
 				"patcherrelativepath" : "../data",
 				"type" : "TEXT",
 				"implicit" : 1
 			}
 , 			{
-				"name" : "ui_mainMenu.maxpat",
-				"bootpath" : "~/Documents/Max 8/Projects/HULTI-GENv2/PsychoBox/patchers",
-				"patcherrelativepath" : ".",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
 				"name" : "ui_audioEngine.maxpat",
-				"bootpath" : "~/Documents/Max 8/Projects/HULTI-GENv2/PsychoBox/patchers",
+				"bootpath" : "~/Documents/Max 8/Projects/PsychoBox/PsychoBox/patchers",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "ui_binaural_channelList.maxpat",
-				"bootpath" : "~/Documents/Max 8/Projects/HULTI-GENv2/PsychoBox/patchers",
+				"bootpath" : "~/Documents/Max 8/Projects/PsychoBox/PsychoBox/patchers",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "ui_binaural_channelStrip.maxpat",
-				"bootpath" : "~/Documents/Max 8/Projects/HULTI-GENv2/PsychoBox/patchers",
+				"bootpath" : "~/Documents/Max 8/Projects/PsychoBox/PsychoBox/patchers",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "ui_binaural_fader.maxpat",
-				"bootpath" : "~/Documents/Max 8/Projects/HULTI-GENv2/PsychoBox/patchers",
+				"bootpath" : "~/Documents/Max 8/Projects/PsychoBox/PsychoBox/patchers",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "ui_filesMissingDialog.maxpat",
-				"bootpath" : "~/Documents/Max 8/Projects/HULTI-GENv2/PsychoBox/patchers",
+				"bootpath" : "~/Documents/Max 8/Projects/PsychoBox/PsychoBox/patchers",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "ui_sessionComplete.maxpat",
-				"bootpath" : "~/Documents/Max 8/Projects/HULTI-GENv2/PsychoBox/patchers",
+				"bootpath" : "~/Documents/Max 8/Projects/PsychoBox/PsychoBox/patchers",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "ui_allComplete.maxpat",
-				"bootpath" : "~/Documents/Max 8/Projects/HULTI-GENv2/PsychoBox/patchers",
+				"bootpath" : "~/Documents/Max 8/Projects/PsychoBox/PsychoBox/patchers",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "ui_groupComplete.maxpat",
-				"bootpath" : "~/Documents/Max 8/Projects/HULTI-GENv2/PsychoBox/patchers",
+				"bootpath" : "~/Documents/Max 8/Projects/PsychoBox/PsychoBox/patchers",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "ui_beginTestMenu.maxpat",
-				"bootpath" : "~/Documents/Max 8/Projects/HULTI-GENv2/PsychoBox/patchers",
+				"bootpath" : "~/Documents/Max 8/Projects/PsychoBox/PsychoBox/patchers",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
@@ -39900,8 +39926,8 @@
 , 			{
 				"name" : "Default M4L",
 				"default" : 				{
-					"patchlinecolor" : [ 0.290196, 0.309804, 0.301961, 0.85 ],
 					"fontsize" : [ 11.0 ],
+					"patchlinecolor" : [ 0.290196, 0.309804, 0.301961, 0.85 ],
 					"fontname" : [ "Arial Bold" ]
 				}
 ,
@@ -39911,8 +39937,8 @@
 , 			{
 				"name" : "Default M4L Poletti",
 				"default" : 				{
-					"patchlinecolor" : [ 0.290196, 0.309804, 0.301961, 0.85 ],
 					"fontsize" : [ 10.0 ],
+					"patchlinecolor" : [ 0.290196, 0.309804, 0.301961, 0.85 ],
 					"fontname" : [ "Arial Bold" ]
 				}
 ,
@@ -39922,6 +39948,8 @@
 , 			{
 				"name" : "Default M4L-1",
 				"default" : 				{
+					"fontface" : [ 1 ],
+					"fontsize" : [ 11.0 ],
 					"bgfillcolor" : 					{
 						"type" : "gradient",
 						"color1" : [ 0.376471, 0.384314, 0.4, 1.0 ],
@@ -39931,8 +39959,6 @@
 						"proportion" : 0.39
 					}
 ,
-					"fontface" : [ 1 ],
-					"fontsize" : [ 11.0 ],
 					"fontname" : [ "Arial" ]
 				}
 ,
@@ -40015,6 +40041,8 @@
 , 			{
 				"name" : "Neon",
 				"default" : 				{
+					"textcolor" : [ 0.921569, 0.917647, 0.933333, 1.0 ],
+					"selectioncolor" : [ 0.92549, 0.364706, 0.341176, 1.0 ],
 					"patchlinecolor" : [ 0.0, 1.0, 0.976471, 0.9 ],
 					"bgfillcolor" : 					{
 						"type" : "gradient",
@@ -40025,10 +40053,8 @@
 						"proportion" : 0.39
 					}
 ,
-					"bgcolor" : [ 0.201376, 0.21726, 0.264912, 1.0 ],
 					"accentcolor" : [ 0.305882, 0.329412, 0.4, 1.0 ],
-					"textcolor" : [ 0.921569, 0.917647, 0.933333, 1.0 ],
-					"selectioncolor" : [ 0.92549, 0.364706, 0.341176, 1.0 ]
+					"bgcolor" : [ 0.201376, 0.21726, 0.264912, 1.0 ]
 				}
 ,
 				"parentstyle" : "",
@@ -40037,6 +40063,8 @@
 , 			{
 				"name" : "NeonRed",
 				"default" : 				{
+					"textcolor" : [ 0.921569, 0.917647, 0.933333, 1.0 ],
+					"selectioncolor" : [ 0.92549, 0.364706, 0.341176, 1.0 ],
 					"patchlinecolor" : [ 0.92549, 0.364706, 0.341176, 0.898039 ],
 					"bgfillcolor" : 					{
 						"type" : "gradient",
@@ -40047,10 +40075,8 @@
 						"proportion" : 0.39
 					}
 ,
-					"bgcolor" : [ 0.201376, 0.21726, 0.264912, 1.0 ],
 					"accentcolor" : [ 0.305882, 0.329412, 0.4, 1.0 ],
-					"textcolor" : [ 0.921569, 0.917647, 0.933333, 1.0 ],
-					"selectioncolor" : [ 0.92549, 0.364706, 0.341176, 1.0 ]
+					"bgcolor" : [ 0.201376, 0.21726, 0.264912, 1.0 ]
 				}
 ,
 				"parentstyle" : "",
@@ -40073,8 +40099,8 @@
 , 			{
 				"name" : "newobjYellow-1",
 				"default" : 				{
-					"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ],
-					"fontsize" : [ 12.059008 ]
+					"fontsize" : [ 12.059008 ],
+					"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ]
 				}
 ,
 				"parentstyle" : "",

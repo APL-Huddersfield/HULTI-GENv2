@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 526.0, 279.0, 1263.0, 700.0 ],
+		"rect" : [ 305.0, 193.0, 1263.0, 700.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -239,14 +239,14 @@
 				"box" : 				{
 					"fontface" : 1,
 					"fontname" : "Arial",
-					"fontsize" : 18.0,
+					"fontsize" : 24.0,
 					"id" : "obj-12",
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 25.0, 10.0, 309.0, 27.0 ],
+					"patching_rect" : [ 25.0, 10.0, 409.0, 33.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 490.0, 230.0, 280.0, 27.0 ],
+					"presentation_rect" : [ 444.5, 200.0, 371.0, 33.0 ],
 					"text" : "Select test procedure and task",
 					"textjustification" : 1
 				}
@@ -262,7 +262,7 @@
 					"bgfillcolor_color2" : [ 0.2, 0.2, 0.2, 1.0 ],
 					"bgfillcolor_proportion" : 0.5,
 					"bgfillcolor_type" : "color",
-					"fontsize" : 14.0,
+					"fontsize" : 18.0,
 					"id" : "obj-16",
 					"items" : [ "Grading", ",", "Non-Adaptive", "Psychophysical", ",", "Adaptive", "Psychophysical" ],
 					"maxclass" : "umenu",
@@ -270,9 +270,9 @@
 					"numoutlets" : 3,
 					"outlettype" : [ "int", "", "" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 443.5, 257.0, 150.0, 24.0 ],
+					"patching_rect" : [ 443.5, 257.0, 150.0, 29.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 490.0, 298.0, 280.0, 24.0 ],
+					"presentation_rect" : [ 465.0, 282.0, 330.0, 29.0 ],
 					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
 				}
 
@@ -281,14 +281,14 @@
 				"box" : 				{
 					"fontface" : 0,
 					"fontname" : "Arial",
-					"fontsize" : 14.0,
+					"fontsize" : 18.0,
 					"id" : "obj-9",
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 227.5, 257.0, 52.0, 22.0 ],
+					"patching_rect" : [ 227.5, 257.0, 65.0, 27.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 490.0, 334.0, 118.0, 22.0 ],
+					"presentation_rect" : [ 465.0, 337.0, 147.0, 27.0 ],
 					"text" : "Task"
 				}
 
@@ -303,7 +303,7 @@
 					"bgfillcolor_color2" : [ 0.2, 0.2, 0.2, 1.0 ],
 					"bgfillcolor_proportion" : 0.5,
 					"bgfillcolor_type" : "color",
-					"fontsize" : 14.0,
+					"fontsize" : 18.0,
 					"id" : "obj-10",
 					"items" : [ "ITU-R BS.1116-3 (ABC)", ",", "ITU-R BS.1534-2 (MUSHRA)", ",", "Bipolar with Ref", ",", "Absolute Category Rating (ACR)", ",", "Degradation Category Rating (DCR)", ",", "Comparison Category Rating (CCR)", ",", "9-point Hedonic Scale" ],
 					"maxclass" : "umenu",
@@ -311,9 +311,9 @@
 					"numoutlets" : 3,
 					"outlettype" : [ "int", "", "" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 281.5, 257.0, 150.0, 24.0 ],
+					"patching_rect" : [ 281.5, 257.0, 150.0, 29.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 490.0, 358.0, 280.0, 24.0 ],
+					"presentation_rect" : [ 465.0, 366.0, 330.0, 29.0 ],
 					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
 				}
 
@@ -322,14 +322,14 @@
 				"box" : 				{
 					"fontface" : 0,
 					"fontname" : "Arial",
-					"fontsize" : 14.0,
+					"fontsize" : 18.0,
 					"id" : "obj-3",
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 595.5, 258.0, 108.0, 22.0 ],
+					"patching_rect" : [ 595.5, 258.0, 137.0, 27.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 490.0, 274.0, 118.0, 22.0 ],
+					"presentation_rect" : [ 465.0, 253.0, 149.0, 27.0 ],
 					"text" : "Test Procedure"
 				}
 
