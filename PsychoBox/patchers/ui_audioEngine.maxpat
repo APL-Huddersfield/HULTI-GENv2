@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 845.0, 188.0, 1223.0, 1047.0 ],
+		"rect" : [ 181.0, 111.0, 1223.0, 1047.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -275,7 +275,7 @@
 					"bgfillcolor_proportion" : 0.5,
 					"bgfillcolor_type" : "color",
 					"id" : "obj-81",
-					"items" : [ "AKG K612 44k1", ",", "AKG K612 48k", ",", "AKG K702 44k1", ",", "AKG K702 48k", ",", "Bey. Dyn. DT990 44k1", ",", "Bey. Dyn. DT990 48k", ",", "Senn. HD650 44k1", ",", "Senn. HD650 48k" ],
+					"items" : [ "AKG K612 44k1", ",", "AKG K612 48k", ",", "AKG K702 44k1", ",", "AKG K702 48k", ",", "Beyer Dynamic DT990 44k1", ",", "Beyer Dynamic DT990 48k", ",", "Sennheiser HD650 44k1", ",", "Sennheiser HD650 48k" ],
 					"maxclass" : "umenu",
 					"numinlets" : 1,
 					"numoutlets" : 3,
@@ -510,7 +510,7 @@
 				"box" : 				{
 					"comment" : "",
 					"id" : "obj-20",
-					"index" : 1,
+					"index" : 0,
 					"maxclass" : "outlet",
 					"numinlets" : 1,
 					"numoutlets" : 0,
@@ -3919,6 +3919,1002 @@
 
 			}
  ],
+		"parameters" : 		{
+			"obj-4::obj-100::obj-1::obj-114" : [ "solo[20]", "Solo", 0 ],
+			"obj-4::obj-100::obj-1::obj-115" : [ "mute[20]", "Active", 0 ],
+			"obj-4::obj-100::obj-1::obj-38" : [ "live.gain~[20]", "live.gain~", 0 ],
+			"obj-4::obj-102::obj-1::obj-114" : [ "solo[19]", "Solo", 0 ],
+			"obj-4::obj-102::obj-1::obj-115" : [ "mute[19]", "Active", 0 ],
+			"obj-4::obj-102::obj-1::obj-38" : [ "live.gain~[19]", "live.gain~", 0 ],
+			"obj-4::obj-104::obj-1::obj-114" : [ "solo[18]", "Solo", 0 ],
+			"obj-4::obj-104::obj-1::obj-115" : [ "mute[18]", "Active", 0 ],
+			"obj-4::obj-104::obj-1::obj-38" : [ "live.gain~[18]", "live.gain~", 0 ],
+			"obj-4::obj-106::obj-1::obj-114" : [ "solo[17]", "Solo", 0 ],
+			"obj-4::obj-106::obj-1::obj-115" : [ "mute[17]", "Active", 0 ],
+			"obj-4::obj-106::obj-1::obj-38" : [ "live.gain~[17]", "live.gain~", 0 ],
+			"obj-4::obj-108::obj-1::obj-114" : [ "solo[16]", "Solo", 0 ],
+			"obj-4::obj-108::obj-1::obj-115" : [ "mute[16]", "Active", 0 ],
+			"obj-4::obj-108::obj-1::obj-38" : [ "live.gain~[16]", "live.gain~", 0 ],
+			"obj-4::obj-110::obj-1::obj-114" : [ "solo[15]", "Solo", 0 ],
+			"obj-4::obj-110::obj-1::obj-115" : [ "mute[15]", "Active", 0 ],
+			"obj-4::obj-110::obj-1::obj-38" : [ "live.gain~[15]", "live.gain~", 0 ],
+			"obj-4::obj-112::obj-1::obj-114" : [ "solo[14]", "Solo", 0 ],
+			"obj-4::obj-112::obj-1::obj-115" : [ "mute[14]", "Active", 0 ],
+			"obj-4::obj-112::obj-1::obj-38" : [ "live.gain~[14]", "live.gain~", 0 ],
+			"obj-4::obj-114::obj-1::obj-114" : [ "solo[13]", "Solo", 0 ],
+			"obj-4::obj-114::obj-1::obj-115" : [ "mute[13]", "Active", 0 ],
+			"obj-4::obj-114::obj-1::obj-38" : [ "live.gain~[13]", "live.gain~", 0 ],
+			"obj-4::obj-116::obj-1::obj-114" : [ "solo[12]", "Solo", 0 ],
+			"obj-4::obj-116::obj-1::obj-115" : [ "mute[12]", "Active", 0 ],
+			"obj-4::obj-116::obj-1::obj-38" : [ "live.gain~[12]", "live.gain~", 0 ],
+			"obj-4::obj-118::obj-1::obj-114" : [ "solo[11]", "Solo", 0 ],
+			"obj-4::obj-118::obj-1::obj-115" : [ "mute[11]", "Active", 0 ],
+			"obj-4::obj-118::obj-1::obj-38" : [ "live.gain~[11]", "live.gain~", 0 ],
+			"obj-4::obj-120::obj-1::obj-114" : [ "solo[10]", "Solo", 0 ],
+			"obj-4::obj-120::obj-1::obj-115" : [ "mute[10]", "Active", 0 ],
+			"obj-4::obj-120::obj-1::obj-38" : [ "live.gain~[10]", "live.gain~", 0 ],
+			"obj-4::obj-122::obj-1::obj-114" : [ "solo[9]", "Solo", 0 ],
+			"obj-4::obj-122::obj-1::obj-115" : [ "mute[9]", "Active", 0 ],
+			"obj-4::obj-122::obj-1::obj-38" : [ "live.gain~[9]", "live.gain~", 0 ],
+			"obj-4::obj-124::obj-1::obj-114" : [ "solo[8]", "Solo", 0 ],
+			"obj-4::obj-124::obj-1::obj-115" : [ "mute[8]", "Active", 0 ],
+			"obj-4::obj-124::obj-1::obj-38" : [ "live.gain~[8]", "live.gain~", 0 ],
+			"obj-4::obj-126::obj-1::obj-114" : [ "solo[7]", "Solo", 0 ],
+			"obj-4::obj-126::obj-1::obj-115" : [ "mute[7]", "Active", 0 ],
+			"obj-4::obj-126::obj-1::obj-38" : [ "live.gain~[7]", "live.gain~", 0 ],
+			"obj-4::obj-128::obj-1::obj-114" : [ "solo[6]", "Solo", 0 ],
+			"obj-4::obj-128::obj-1::obj-115" : [ "mute[6]", "Active", 0 ],
+			"obj-4::obj-128::obj-1::obj-38" : [ "live.gain~[6]", "live.gain~", 0 ],
+			"obj-4::obj-12::obj-1::obj-114" : [ "solo[60]", "Solo", 0 ],
+			"obj-4::obj-12::obj-1::obj-115" : [ "mute[60]", "Active", 0 ],
+			"obj-4::obj-12::obj-1::obj-38" : [ "live.gain~[70]", "live.gain~", 0 ],
+			"obj-4::obj-130::obj-1::obj-114" : [ "solo[5]", "Solo", 0 ],
+			"obj-4::obj-130::obj-1::obj-115" : [ "mute[5]", "Active", 0 ],
+			"obj-4::obj-130::obj-1::obj-38" : [ "live.gain~[5]", "live.gain~", 0 ],
+			"obj-4::obj-132::obj-1::obj-114" : [ "solo[4]", "Solo", 0 ],
+			"obj-4::obj-132::obj-1::obj-115" : [ "mute[4]", "Active", 0 ],
+			"obj-4::obj-132::obj-1::obj-38" : [ "live.gain~[4]", "live.gain~", 0 ],
+			"obj-4::obj-134::obj-1::obj-114" : [ "solo[3]", "Solo", 0 ],
+			"obj-4::obj-134::obj-1::obj-115" : [ "mute[3]", "Active", 0 ],
+			"obj-4::obj-134::obj-1::obj-38" : [ "live.gain~[3]", "live.gain~", 0 ],
+			"obj-4::obj-136::obj-1::obj-114" : [ "solo[2]", "Solo", 0 ],
+			"obj-4::obj-136::obj-1::obj-115" : [ "mute[2]", "Active", 0 ],
+			"obj-4::obj-136::obj-1::obj-38" : [ "live.gain~[2]", "live.gain~", 0 ],
+			"obj-4::obj-138::obj-1::obj-114" : [ "solo[1]", "Solo", 0 ],
+			"obj-4::obj-138::obj-1::obj-115" : [ "mute[1]", "Active", 0 ],
+			"obj-4::obj-138::obj-1::obj-38" : [ "live.gain~[1]", "live.gain~", 0 ],
+			"obj-4::obj-140::obj-1::obj-114" : [ "solo", "Solo", 0 ],
+			"obj-4::obj-140::obj-1::obj-115" : [ "mute", "Active", 0 ],
+			"obj-4::obj-140::obj-1::obj-38" : [ "live.gain~[63]", "live.gain~", 0 ],
+			"obj-4::obj-16::obj-1::obj-114" : [ "solo[59]", "Solo", 0 ],
+			"obj-4::obj-16::obj-1::obj-115" : [ "mute[59]", "Active", 0 ],
+			"obj-4::obj-16::obj-1::obj-38" : [ "live.gain~[69]", "live.gain~", 0 ],
+			"obj-4::obj-18::obj-1::obj-114" : [ "solo[58]", "Solo", 0 ],
+			"obj-4::obj-18::obj-1::obj-115" : [ "mute[58]", "Active", 0 ],
+			"obj-4::obj-18::obj-1::obj-38" : [ "live.gain~[68]", "live.gain~", 0 ],
+			"obj-4::obj-22::obj-1::obj-114" : [ "solo[57]", "Solo", 0 ],
+			"obj-4::obj-22::obj-1::obj-115" : [ "mute[57]", "Active", 0 ],
+			"obj-4::obj-22::obj-1::obj-38" : [ "live.gain~[67]", "live.gain~", 0 ],
+			"obj-4::obj-25::obj-1::obj-114" : [ "solo[56]", "Solo", 0 ],
+			"obj-4::obj-25::obj-1::obj-115" : [ "mute[56]", "Active", 0 ],
+			"obj-4::obj-25::obj-1::obj-38" : [ "live.gain~[66]", "live.gain~", 0 ],
+			"obj-4::obj-28::obj-1::obj-114" : [ "solo[55]", "Solo", 0 ],
+			"obj-4::obj-28::obj-1::obj-115" : [ "mute[55]", "Active", 0 ],
+			"obj-4::obj-28::obj-1::obj-38" : [ "live.gain~[65]", "live.gain~", 0 ],
+			"obj-4::obj-32::obj-1::obj-114" : [ "solo[54]", "Solo", 0 ],
+			"obj-4::obj-32::obj-1::obj-115" : [ "mute[54]", "Active", 0 ],
+			"obj-4::obj-32::obj-1::obj-38" : [ "live.gain~[53]", "live.gain~", 0 ],
+			"obj-4::obj-34::obj-1::obj-114" : [ "solo[53]", "Solo", 0 ],
+			"obj-4::obj-34::obj-1::obj-115" : [ "mute[53]", "Active", 0 ],
+			"obj-4::obj-34::obj-1::obj-38" : [ "live.gain~[52]", "live.gain~", 0 ],
+			"obj-4::obj-36::obj-1::obj-114" : [ "solo[52]", "Solo", 0 ],
+			"obj-4::obj-36::obj-1::obj-115" : [ "mute[52]", "Active", 0 ],
+			"obj-4::obj-36::obj-1::obj-38" : [ "live.gain~[51]", "live.gain~", 0 ],
+			"obj-4::obj-38::obj-1::obj-114" : [ "solo[51]", "Solo", 0 ],
+			"obj-4::obj-38::obj-1::obj-115" : [ "mute[51]", "Active", 0 ],
+			"obj-4::obj-38::obj-1::obj-38" : [ "live.gain~[50]", "live.gain~", 0 ],
+			"obj-4::obj-3::obj-1::obj-114" : [ "solo[63]", "Solo", 0 ],
+			"obj-4::obj-3::obj-1::obj-115" : [ "mute[63]", "Active", 0 ],
+			"obj-4::obj-3::obj-1::obj-38" : [ "live.gain~[56]", "live.gain~", 0 ],
+			"obj-4::obj-40::obj-1::obj-114" : [ "solo[50]", "Solo", 0 ],
+			"obj-4::obj-40::obj-1::obj-115" : [ "mute[50]", "Active", 0 ],
+			"obj-4::obj-40::obj-1::obj-38" : [ "live.gain~[49]", "live.gain~", 0 ],
+			"obj-4::obj-42::obj-1::obj-114" : [ "solo[49]", "Solo", 0 ],
+			"obj-4::obj-42::obj-1::obj-115" : [ "mute[49]", "Active", 0 ],
+			"obj-4::obj-42::obj-1::obj-38" : [ "live.gain~[48]", "live.gain~", 0 ],
+			"obj-4::obj-44::obj-1::obj-114" : [ "solo[48]", "Solo", 0 ],
+			"obj-4::obj-44::obj-1::obj-115" : [ "mute[48]", "Active", 0 ],
+			"obj-4::obj-44::obj-1::obj-38" : [ "live.gain~[47]", "live.gain~", 0 ],
+			"obj-4::obj-46::obj-1::obj-114" : [ "solo[47]", "Solo", 0 ],
+			"obj-4::obj-46::obj-1::obj-115" : [ "mute[47]", "Active", 0 ],
+			"obj-4::obj-46::obj-1::obj-38" : [ "live.gain~[46]", "live.gain~", 0 ],
+			"obj-4::obj-48::obj-1::obj-114" : [ "solo[46]", "Solo", 0 ],
+			"obj-4::obj-48::obj-1::obj-115" : [ "mute[46]", "Active", 0 ],
+			"obj-4::obj-48::obj-1::obj-38" : [ "live.gain~[45]", "live.gain~", 0 ],
+			"obj-4::obj-50::obj-1::obj-114" : [ "solo[45]", "Solo", 0 ],
+			"obj-4::obj-50::obj-1::obj-115" : [ "mute[45]", "Active", 0 ],
+			"obj-4::obj-50::obj-1::obj-38" : [ "live.gain~[44]", "live.gain~", 0 ],
+			"obj-4::obj-52::obj-1::obj-114" : [ "solo[44]", "Solo", 0 ],
+			"obj-4::obj-52::obj-1::obj-115" : [ "mute[44]", "Active", 0 ],
+			"obj-4::obj-52::obj-1::obj-38" : [ "live.gain~[43]", "live.gain~", 0 ],
+			"obj-4::obj-54::obj-1::obj-114" : [ "solo[43]", "Solo", 0 ],
+			"obj-4::obj-54::obj-1::obj-115" : [ "mute[43]", "Active", 0 ],
+			"obj-4::obj-54::obj-1::obj-38" : [ "live.gain~[42]", "live.gain~", 0 ],
+			"obj-4::obj-56::obj-1::obj-114" : [ "solo[42]", "Solo", 0 ],
+			"obj-4::obj-56::obj-1::obj-115" : [ "mute[42]", "Active", 0 ],
+			"obj-4::obj-56::obj-1::obj-38" : [ "live.gain~[41]", "live.gain~", 0 ],
+			"obj-4::obj-58::obj-1::obj-114" : [ "solo[41]", "Solo", 0 ],
+			"obj-4::obj-58::obj-1::obj-115" : [ "mute[41]", "Active", 0 ],
+			"obj-4::obj-58::obj-1::obj-38" : [ "live.gain~[64]", "live.gain~", 0 ],
+			"obj-4::obj-5::obj-1::obj-114" : [ "solo[62]", "Solo", 0 ],
+			"obj-4::obj-5::obj-1::obj-115" : [ "mute[62]", "Active", 0 ],
+			"obj-4::obj-5::obj-1::obj-38" : [ "live.gain~[55]", "live.gain~", 0 ],
+			"obj-4::obj-60::obj-1::obj-114" : [ "solo[40]", "Solo", 0 ],
+			"obj-4::obj-60::obj-1::obj-115" : [ "mute[40]", "Active", 0 ],
+			"obj-4::obj-60::obj-1::obj-38" : [ "live.gain~[40]", "live.gain~", 0 ],
+			"obj-4::obj-62::obj-1::obj-114" : [ "solo[39]", "Solo", 0 ],
+			"obj-4::obj-62::obj-1::obj-115" : [ "mute[39]", "Active", 0 ],
+			"obj-4::obj-62::obj-1::obj-38" : [ "live.gain~[39]", "live.gain~", 0 ],
+			"obj-4::obj-64::obj-1::obj-114" : [ "solo[38]", "Solo", 0 ],
+			"obj-4::obj-64::obj-1::obj-115" : [ "mute[38]", "Active", 0 ],
+			"obj-4::obj-64::obj-1::obj-38" : [ "live.gain~[38]", "live.gain~", 0 ],
+			"obj-4::obj-66::obj-1::obj-114" : [ "solo[37]", "Solo", 0 ],
+			"obj-4::obj-66::obj-1::obj-115" : [ "mute[37]", "Active", 0 ],
+			"obj-4::obj-66::obj-1::obj-38" : [ "live.gain~[37]", "live.gain~", 0 ],
+			"obj-4::obj-68::obj-1::obj-114" : [ "solo[36]", "Solo", 0 ],
+			"obj-4::obj-68::obj-1::obj-115" : [ "mute[36]", "Active", 0 ],
+			"obj-4::obj-68::obj-1::obj-38" : [ "live.gain~[36]", "live.gain~", 0 ],
+			"obj-4::obj-70::obj-1::obj-114" : [ "solo[35]", "Solo", 0 ],
+			"obj-4::obj-70::obj-1::obj-115" : [ "mute[35]", "Active", 0 ],
+			"obj-4::obj-70::obj-1::obj-38" : [ "live.gain~[35]", "live.gain~", 0 ],
+			"obj-4::obj-72::obj-1::obj-114" : [ "solo[34]", "Solo", 0 ],
+			"obj-4::obj-72::obj-1::obj-115" : [ "mute[34]", "Active", 0 ],
+			"obj-4::obj-72::obj-1::obj-38" : [ "live.gain~[34]", "live.gain~", 0 ],
+			"obj-4::obj-74::obj-1::obj-114" : [ "solo[33]", "Solo", 0 ],
+			"obj-4::obj-74::obj-1::obj-115" : [ "mute[33]", "Active", 0 ],
+			"obj-4::obj-74::obj-1::obj-38" : [ "live.gain~[33]", "live.gain~", 0 ],
+			"obj-4::obj-76::obj-1::obj-114" : [ "solo[32]", "Solo", 0 ],
+			"obj-4::obj-76::obj-1::obj-115" : [ "mute[32]", "Active", 0 ],
+			"obj-4::obj-76::obj-1::obj-38" : [ "live.gain~[32]", "live.gain~", 0 ],
+			"obj-4::obj-78::obj-1::obj-114" : [ "solo[31]", "Solo", 0 ],
+			"obj-4::obj-78::obj-1::obj-115" : [ "mute[31]", "Active", 0 ],
+			"obj-4::obj-78::obj-1::obj-38" : [ "live.gain~[31]", "live.gain~", 0 ],
+			"obj-4::obj-80::obj-1::obj-114" : [ "solo[30]", "Solo", 0 ],
+			"obj-4::obj-80::obj-1::obj-115" : [ "mute[30]", "Active", 0 ],
+			"obj-4::obj-80::obj-1::obj-38" : [ "live.gain~[30]", "live.gain~", 0 ],
+			"obj-4::obj-82::obj-1::obj-114" : [ "solo[29]", "Solo", 0 ],
+			"obj-4::obj-82::obj-1::obj-115" : [ "mute[29]", "Active", 0 ],
+			"obj-4::obj-82::obj-1::obj-38" : [ "live.gain~[29]", "live.gain~", 0 ],
+			"obj-4::obj-84::obj-1::obj-114" : [ "solo[28]", "Solo", 0 ],
+			"obj-4::obj-84::obj-1::obj-115" : [ "mute[28]", "Active", 0 ],
+			"obj-4::obj-84::obj-1::obj-38" : [ "live.gain~[28]", "live.gain~", 0 ],
+			"obj-4::obj-86::obj-1::obj-114" : [ "solo[27]", "Solo", 0 ],
+			"obj-4::obj-86::obj-1::obj-115" : [ "mute[27]", "Active", 0 ],
+			"obj-4::obj-86::obj-1::obj-38" : [ "live.gain~[27]", "live.gain~", 0 ],
+			"obj-4::obj-88::obj-1::obj-114" : [ "solo[26]", "Solo", 0 ],
+			"obj-4::obj-88::obj-1::obj-115" : [ "mute[26]", "Active", 0 ],
+			"obj-4::obj-88::obj-1::obj-38" : [ "live.gain~[26]", "live.gain~", 0 ],
+			"obj-4::obj-90::obj-1::obj-114" : [ "solo[25]", "Solo", 0 ],
+			"obj-4::obj-90::obj-1::obj-115" : [ "mute[25]", "Active", 0 ],
+			"obj-4::obj-90::obj-1::obj-38" : [ "live.gain~[25]", "live.gain~", 0 ],
+			"obj-4::obj-92::obj-1::obj-114" : [ "solo[24]", "Solo", 0 ],
+			"obj-4::obj-92::obj-1::obj-115" : [ "mute[24]", "Active", 0 ],
+			"obj-4::obj-92::obj-1::obj-38" : [ "live.gain~[24]", "live.gain~", 0 ],
+			"obj-4::obj-94::obj-1::obj-114" : [ "solo[23]", "Solo", 0 ],
+			"obj-4::obj-94::obj-1::obj-115" : [ "mute[23]", "Active", 0 ],
+			"obj-4::obj-94::obj-1::obj-38" : [ "live.gain~[23]", "live.gain~", 0 ],
+			"obj-4::obj-96::obj-1::obj-114" : [ "solo[22]", "Solo", 0 ],
+			"obj-4::obj-96::obj-1::obj-115" : [ "mute[22]", "Active", 0 ],
+			"obj-4::obj-96::obj-1::obj-38" : [ "live.gain~[22]", "live.gain~", 0 ],
+			"obj-4::obj-98::obj-1::obj-114" : [ "solo[21]", "Solo", 0 ],
+			"obj-4::obj-98::obj-1::obj-115" : [ "mute[21]", "Active", 0 ],
+			"obj-4::obj-98::obj-1::obj-38" : [ "live.gain~[21]", "live.gain~", 0 ],
+			"obj-4::obj-9::obj-1::obj-114" : [ "solo[61]", "Solo", 0 ],
+			"obj-4::obj-9::obj-1::obj-115" : [ "mute[61]", "Active", 0 ],
+			"obj-4::obj-9::obj-1::obj-38" : [ "live.gain~[54]", "live.gain~", 0 ],
+			"parameterbanks" : 			{
+
+			}
+,
+			"parameter_overrides" : 			{
+				"obj-4::obj-100::obj-1::obj-114" : 				{
+					"parameter_longname" : "solo[20]"
+				}
+,
+				"obj-4::obj-100::obj-1::obj-115" : 				{
+					"parameter_longname" : "mute[20]"
+				}
+,
+				"obj-4::obj-100::obj-1::obj-38" : 				{
+					"parameter_longname" : "live.gain~[20]"
+				}
+,
+				"obj-4::obj-102::obj-1::obj-114" : 				{
+					"parameter_longname" : "solo[19]"
+				}
+,
+				"obj-4::obj-102::obj-1::obj-115" : 				{
+					"parameter_longname" : "mute[19]"
+				}
+,
+				"obj-4::obj-102::obj-1::obj-38" : 				{
+					"parameter_longname" : "live.gain~[19]"
+				}
+,
+				"obj-4::obj-104::obj-1::obj-114" : 				{
+					"parameter_longname" : "solo[18]"
+				}
+,
+				"obj-4::obj-104::obj-1::obj-115" : 				{
+					"parameter_longname" : "mute[18]"
+				}
+,
+				"obj-4::obj-104::obj-1::obj-38" : 				{
+					"parameter_longname" : "live.gain~[18]"
+				}
+,
+				"obj-4::obj-106::obj-1::obj-114" : 				{
+					"parameter_longname" : "solo[17]"
+				}
+,
+				"obj-4::obj-106::obj-1::obj-115" : 				{
+					"parameter_longname" : "mute[17]"
+				}
+,
+				"obj-4::obj-106::obj-1::obj-38" : 				{
+					"parameter_longname" : "live.gain~[17]"
+				}
+,
+				"obj-4::obj-108::obj-1::obj-114" : 				{
+					"parameter_longname" : "solo[16]"
+				}
+,
+				"obj-4::obj-108::obj-1::obj-115" : 				{
+					"parameter_longname" : "mute[16]"
+				}
+,
+				"obj-4::obj-108::obj-1::obj-38" : 				{
+					"parameter_longname" : "live.gain~[16]"
+				}
+,
+				"obj-4::obj-110::obj-1::obj-114" : 				{
+					"parameter_longname" : "solo[15]"
+				}
+,
+				"obj-4::obj-110::obj-1::obj-115" : 				{
+					"parameter_longname" : "mute[15]"
+				}
+,
+				"obj-4::obj-110::obj-1::obj-38" : 				{
+					"parameter_longname" : "live.gain~[15]"
+				}
+,
+				"obj-4::obj-112::obj-1::obj-114" : 				{
+					"parameter_longname" : "solo[14]"
+				}
+,
+				"obj-4::obj-112::obj-1::obj-115" : 				{
+					"parameter_longname" : "mute[14]"
+				}
+,
+				"obj-4::obj-112::obj-1::obj-38" : 				{
+					"parameter_longname" : "live.gain~[14]"
+				}
+,
+				"obj-4::obj-114::obj-1::obj-114" : 				{
+					"parameter_longname" : "solo[13]"
+				}
+,
+				"obj-4::obj-114::obj-1::obj-115" : 				{
+					"parameter_longname" : "mute[13]"
+				}
+,
+				"obj-4::obj-114::obj-1::obj-38" : 				{
+					"parameter_longname" : "live.gain~[13]"
+				}
+,
+				"obj-4::obj-116::obj-1::obj-114" : 				{
+					"parameter_longname" : "solo[12]"
+				}
+,
+				"obj-4::obj-116::obj-1::obj-115" : 				{
+					"parameter_longname" : "mute[12]"
+				}
+,
+				"obj-4::obj-116::obj-1::obj-38" : 				{
+					"parameter_longname" : "live.gain~[12]"
+				}
+,
+				"obj-4::obj-118::obj-1::obj-114" : 				{
+					"parameter_longname" : "solo[11]"
+				}
+,
+				"obj-4::obj-118::obj-1::obj-115" : 				{
+					"parameter_longname" : "mute[11]"
+				}
+,
+				"obj-4::obj-118::obj-1::obj-38" : 				{
+					"parameter_longname" : "live.gain~[11]"
+				}
+,
+				"obj-4::obj-120::obj-1::obj-114" : 				{
+					"parameter_longname" : "solo[10]"
+				}
+,
+				"obj-4::obj-120::obj-1::obj-115" : 				{
+					"parameter_longname" : "mute[10]"
+				}
+,
+				"obj-4::obj-120::obj-1::obj-38" : 				{
+					"parameter_longname" : "live.gain~[10]"
+				}
+,
+				"obj-4::obj-122::obj-1::obj-114" : 				{
+					"parameter_longname" : "solo[9]"
+				}
+,
+				"obj-4::obj-122::obj-1::obj-115" : 				{
+					"parameter_longname" : "mute[9]"
+				}
+,
+				"obj-4::obj-122::obj-1::obj-38" : 				{
+					"parameter_longname" : "live.gain~[9]"
+				}
+,
+				"obj-4::obj-124::obj-1::obj-114" : 				{
+					"parameter_longname" : "solo[8]"
+				}
+,
+				"obj-4::obj-124::obj-1::obj-115" : 				{
+					"parameter_longname" : "mute[8]"
+				}
+,
+				"obj-4::obj-124::obj-1::obj-38" : 				{
+					"parameter_longname" : "live.gain~[8]"
+				}
+,
+				"obj-4::obj-126::obj-1::obj-114" : 				{
+					"parameter_longname" : "solo[7]"
+				}
+,
+				"obj-4::obj-126::obj-1::obj-115" : 				{
+					"parameter_longname" : "mute[7]"
+				}
+,
+				"obj-4::obj-126::obj-1::obj-38" : 				{
+					"parameter_longname" : "live.gain~[7]"
+				}
+,
+				"obj-4::obj-128::obj-1::obj-114" : 				{
+					"parameter_longname" : "solo[6]"
+				}
+,
+				"obj-4::obj-128::obj-1::obj-115" : 				{
+					"parameter_longname" : "mute[6]"
+				}
+,
+				"obj-4::obj-128::obj-1::obj-38" : 				{
+					"parameter_longname" : "live.gain~[6]"
+				}
+,
+				"obj-4::obj-12::obj-1::obj-114" : 				{
+					"parameter_longname" : "solo[60]"
+				}
+,
+				"obj-4::obj-12::obj-1::obj-115" : 				{
+					"parameter_longname" : "mute[60]"
+				}
+,
+				"obj-4::obj-12::obj-1::obj-38" : 				{
+					"parameter_longname" : "live.gain~[70]"
+				}
+,
+				"obj-4::obj-130::obj-1::obj-114" : 				{
+					"parameter_longname" : "solo[5]"
+				}
+,
+				"obj-4::obj-130::obj-1::obj-115" : 				{
+					"parameter_longname" : "mute[5]"
+				}
+,
+				"obj-4::obj-130::obj-1::obj-38" : 				{
+					"parameter_longname" : "live.gain~[5]"
+				}
+,
+				"obj-4::obj-132::obj-1::obj-114" : 				{
+					"parameter_longname" : "solo[4]"
+				}
+,
+				"obj-4::obj-132::obj-1::obj-115" : 				{
+					"parameter_longname" : "mute[4]"
+				}
+,
+				"obj-4::obj-132::obj-1::obj-38" : 				{
+					"parameter_longname" : "live.gain~[4]"
+				}
+,
+				"obj-4::obj-134::obj-1::obj-114" : 				{
+					"parameter_longname" : "solo[3]"
+				}
+,
+				"obj-4::obj-134::obj-1::obj-115" : 				{
+					"parameter_longname" : "mute[3]"
+				}
+,
+				"obj-4::obj-134::obj-1::obj-38" : 				{
+					"parameter_longname" : "live.gain~[3]"
+				}
+,
+				"obj-4::obj-136::obj-1::obj-114" : 				{
+					"parameter_longname" : "solo[2]"
+				}
+,
+				"obj-4::obj-136::obj-1::obj-115" : 				{
+					"parameter_longname" : "mute[2]"
+				}
+,
+				"obj-4::obj-136::obj-1::obj-38" : 				{
+					"parameter_longname" : "live.gain~[2]"
+				}
+,
+				"obj-4::obj-138::obj-1::obj-114" : 				{
+					"parameter_longname" : "solo[1]"
+				}
+,
+				"obj-4::obj-138::obj-1::obj-115" : 				{
+					"parameter_longname" : "mute[1]"
+				}
+,
+				"obj-4::obj-138::obj-1::obj-38" : 				{
+					"parameter_longname" : "live.gain~[1]"
+				}
+,
+				"obj-4::obj-16::obj-1::obj-114" : 				{
+					"parameter_longname" : "solo[59]"
+				}
+,
+				"obj-4::obj-16::obj-1::obj-115" : 				{
+					"parameter_longname" : "mute[59]"
+				}
+,
+				"obj-4::obj-16::obj-1::obj-38" : 				{
+					"parameter_longname" : "live.gain~[69]"
+				}
+,
+				"obj-4::obj-18::obj-1::obj-114" : 				{
+					"parameter_longname" : "solo[58]"
+				}
+,
+				"obj-4::obj-18::obj-1::obj-115" : 				{
+					"parameter_longname" : "mute[58]"
+				}
+,
+				"obj-4::obj-18::obj-1::obj-38" : 				{
+					"parameter_longname" : "live.gain~[68]"
+				}
+,
+				"obj-4::obj-22::obj-1::obj-114" : 				{
+					"parameter_longname" : "solo[57]"
+				}
+,
+				"obj-4::obj-22::obj-1::obj-115" : 				{
+					"parameter_longname" : "mute[57]"
+				}
+,
+				"obj-4::obj-22::obj-1::obj-38" : 				{
+					"parameter_longname" : "live.gain~[67]"
+				}
+,
+				"obj-4::obj-25::obj-1::obj-114" : 				{
+					"parameter_longname" : "solo[56]"
+				}
+,
+				"obj-4::obj-25::obj-1::obj-115" : 				{
+					"parameter_longname" : "mute[56]"
+				}
+,
+				"obj-4::obj-25::obj-1::obj-38" : 				{
+					"parameter_longname" : "live.gain~[66]"
+				}
+,
+				"obj-4::obj-28::obj-1::obj-114" : 				{
+					"parameter_longname" : "solo[55]"
+				}
+,
+				"obj-4::obj-28::obj-1::obj-115" : 				{
+					"parameter_longname" : "mute[55]"
+				}
+,
+				"obj-4::obj-28::obj-1::obj-38" : 				{
+					"parameter_longname" : "live.gain~[65]"
+				}
+,
+				"obj-4::obj-32::obj-1::obj-114" : 				{
+					"parameter_longname" : "solo[54]"
+				}
+,
+				"obj-4::obj-32::obj-1::obj-115" : 				{
+					"parameter_longname" : "mute[54]"
+				}
+,
+				"obj-4::obj-32::obj-1::obj-38" : 				{
+					"parameter_longname" : "live.gain~[53]"
+				}
+,
+				"obj-4::obj-34::obj-1::obj-114" : 				{
+					"parameter_longname" : "solo[53]"
+				}
+,
+				"obj-4::obj-34::obj-1::obj-115" : 				{
+					"parameter_longname" : "mute[53]"
+				}
+,
+				"obj-4::obj-34::obj-1::obj-38" : 				{
+					"parameter_longname" : "live.gain~[52]"
+				}
+,
+				"obj-4::obj-36::obj-1::obj-114" : 				{
+					"parameter_longname" : "solo[52]"
+				}
+,
+				"obj-4::obj-36::obj-1::obj-115" : 				{
+					"parameter_longname" : "mute[52]"
+				}
+,
+				"obj-4::obj-36::obj-1::obj-38" : 				{
+					"parameter_longname" : "live.gain~[51]"
+				}
+,
+				"obj-4::obj-38::obj-1::obj-114" : 				{
+					"parameter_longname" : "solo[51]"
+				}
+,
+				"obj-4::obj-38::obj-1::obj-115" : 				{
+					"parameter_longname" : "mute[51]"
+				}
+,
+				"obj-4::obj-38::obj-1::obj-38" : 				{
+					"parameter_longname" : "live.gain~[50]"
+				}
+,
+				"obj-4::obj-3::obj-1::obj-114" : 				{
+					"parameter_longname" : "solo[63]"
+				}
+,
+				"obj-4::obj-3::obj-1::obj-115" : 				{
+					"parameter_longname" : "mute[63]"
+				}
+,
+				"obj-4::obj-3::obj-1::obj-38" : 				{
+					"parameter_longname" : "live.gain~[56]"
+				}
+,
+				"obj-4::obj-40::obj-1::obj-114" : 				{
+					"parameter_longname" : "solo[50]"
+				}
+,
+				"obj-4::obj-40::obj-1::obj-115" : 				{
+					"parameter_longname" : "mute[50]"
+				}
+,
+				"obj-4::obj-40::obj-1::obj-38" : 				{
+					"parameter_longname" : "live.gain~[49]"
+				}
+,
+				"obj-4::obj-42::obj-1::obj-114" : 				{
+					"parameter_longname" : "solo[49]"
+				}
+,
+				"obj-4::obj-42::obj-1::obj-115" : 				{
+					"parameter_longname" : "mute[49]"
+				}
+,
+				"obj-4::obj-42::obj-1::obj-38" : 				{
+					"parameter_longname" : "live.gain~[48]"
+				}
+,
+				"obj-4::obj-44::obj-1::obj-114" : 				{
+					"parameter_longname" : "solo[48]"
+				}
+,
+				"obj-4::obj-44::obj-1::obj-115" : 				{
+					"parameter_longname" : "mute[48]"
+				}
+,
+				"obj-4::obj-44::obj-1::obj-38" : 				{
+					"parameter_longname" : "live.gain~[47]"
+				}
+,
+				"obj-4::obj-46::obj-1::obj-114" : 				{
+					"parameter_longname" : "solo[47]"
+				}
+,
+				"obj-4::obj-46::obj-1::obj-115" : 				{
+					"parameter_longname" : "mute[47]"
+				}
+,
+				"obj-4::obj-46::obj-1::obj-38" : 				{
+					"parameter_longname" : "live.gain~[46]"
+				}
+,
+				"obj-4::obj-48::obj-1::obj-114" : 				{
+					"parameter_longname" : "solo[46]"
+				}
+,
+				"obj-4::obj-48::obj-1::obj-115" : 				{
+					"parameter_longname" : "mute[46]"
+				}
+,
+				"obj-4::obj-48::obj-1::obj-38" : 				{
+					"parameter_longname" : "live.gain~[45]"
+				}
+,
+				"obj-4::obj-50::obj-1::obj-114" : 				{
+					"parameter_longname" : "solo[45]"
+				}
+,
+				"obj-4::obj-50::obj-1::obj-115" : 				{
+					"parameter_longname" : "mute[45]"
+				}
+,
+				"obj-4::obj-50::obj-1::obj-38" : 				{
+					"parameter_longname" : "live.gain~[44]"
+				}
+,
+				"obj-4::obj-52::obj-1::obj-114" : 				{
+					"parameter_longname" : "solo[44]"
+				}
+,
+				"obj-4::obj-52::obj-1::obj-115" : 				{
+					"parameter_longname" : "mute[44]"
+				}
+,
+				"obj-4::obj-52::obj-1::obj-38" : 				{
+					"parameter_longname" : "live.gain~[43]"
+				}
+,
+				"obj-4::obj-54::obj-1::obj-114" : 				{
+					"parameter_longname" : "solo[43]"
+				}
+,
+				"obj-4::obj-54::obj-1::obj-115" : 				{
+					"parameter_longname" : "mute[43]"
+				}
+,
+				"obj-4::obj-54::obj-1::obj-38" : 				{
+					"parameter_longname" : "live.gain~[42]"
+				}
+,
+				"obj-4::obj-56::obj-1::obj-114" : 				{
+					"parameter_longname" : "solo[42]"
+				}
+,
+				"obj-4::obj-56::obj-1::obj-115" : 				{
+					"parameter_longname" : "mute[42]"
+				}
+,
+				"obj-4::obj-56::obj-1::obj-38" : 				{
+					"parameter_longname" : "live.gain~[41]"
+				}
+,
+				"obj-4::obj-58::obj-1::obj-114" : 				{
+					"parameter_longname" : "solo[41]"
+				}
+,
+				"obj-4::obj-58::obj-1::obj-115" : 				{
+					"parameter_longname" : "mute[41]"
+				}
+,
+				"obj-4::obj-58::obj-1::obj-38" : 				{
+					"parameter_longname" : "live.gain~[64]"
+				}
+,
+				"obj-4::obj-5::obj-1::obj-114" : 				{
+					"parameter_longname" : "solo[62]"
+				}
+,
+				"obj-4::obj-5::obj-1::obj-115" : 				{
+					"parameter_longname" : "mute[62]"
+				}
+,
+				"obj-4::obj-5::obj-1::obj-38" : 				{
+					"parameter_longname" : "live.gain~[55]"
+				}
+,
+				"obj-4::obj-60::obj-1::obj-114" : 				{
+					"parameter_longname" : "solo[40]"
+				}
+,
+				"obj-4::obj-60::obj-1::obj-115" : 				{
+					"parameter_longname" : "mute[40]"
+				}
+,
+				"obj-4::obj-60::obj-1::obj-38" : 				{
+					"parameter_longname" : "live.gain~[40]"
+				}
+,
+				"obj-4::obj-62::obj-1::obj-114" : 				{
+					"parameter_longname" : "solo[39]"
+				}
+,
+				"obj-4::obj-62::obj-1::obj-115" : 				{
+					"parameter_longname" : "mute[39]"
+				}
+,
+				"obj-4::obj-62::obj-1::obj-38" : 				{
+					"parameter_longname" : "live.gain~[39]"
+				}
+,
+				"obj-4::obj-64::obj-1::obj-114" : 				{
+					"parameter_longname" : "solo[38]"
+				}
+,
+				"obj-4::obj-64::obj-1::obj-115" : 				{
+					"parameter_longname" : "mute[38]"
+				}
+,
+				"obj-4::obj-64::obj-1::obj-38" : 				{
+					"parameter_longname" : "live.gain~[38]"
+				}
+,
+				"obj-4::obj-66::obj-1::obj-114" : 				{
+					"parameter_longname" : "solo[37]"
+				}
+,
+				"obj-4::obj-66::obj-1::obj-115" : 				{
+					"parameter_longname" : "mute[37]"
+				}
+,
+				"obj-4::obj-66::obj-1::obj-38" : 				{
+					"parameter_longname" : "live.gain~[37]"
+				}
+,
+				"obj-4::obj-68::obj-1::obj-114" : 				{
+					"parameter_longname" : "solo[36]"
+				}
+,
+				"obj-4::obj-68::obj-1::obj-115" : 				{
+					"parameter_longname" : "mute[36]"
+				}
+,
+				"obj-4::obj-68::obj-1::obj-38" : 				{
+					"parameter_longname" : "live.gain~[36]"
+				}
+,
+				"obj-4::obj-70::obj-1::obj-114" : 				{
+					"parameter_longname" : "solo[35]"
+				}
+,
+				"obj-4::obj-70::obj-1::obj-115" : 				{
+					"parameter_longname" : "mute[35]"
+				}
+,
+				"obj-4::obj-70::obj-1::obj-38" : 				{
+					"parameter_longname" : "live.gain~[35]"
+				}
+,
+				"obj-4::obj-72::obj-1::obj-114" : 				{
+					"parameter_longname" : "solo[34]"
+				}
+,
+				"obj-4::obj-72::obj-1::obj-115" : 				{
+					"parameter_longname" : "mute[34]"
+				}
+,
+				"obj-4::obj-72::obj-1::obj-38" : 				{
+					"parameter_longname" : "live.gain~[34]"
+				}
+,
+				"obj-4::obj-74::obj-1::obj-114" : 				{
+					"parameter_longname" : "solo[33]"
+				}
+,
+				"obj-4::obj-74::obj-1::obj-115" : 				{
+					"parameter_longname" : "mute[33]"
+				}
+,
+				"obj-4::obj-74::obj-1::obj-38" : 				{
+					"parameter_longname" : "live.gain~[33]"
+				}
+,
+				"obj-4::obj-76::obj-1::obj-114" : 				{
+					"parameter_longname" : "solo[32]"
+				}
+,
+				"obj-4::obj-76::obj-1::obj-115" : 				{
+					"parameter_longname" : "mute[32]"
+				}
+,
+				"obj-4::obj-76::obj-1::obj-38" : 				{
+					"parameter_longname" : "live.gain~[32]"
+				}
+,
+				"obj-4::obj-78::obj-1::obj-114" : 				{
+					"parameter_longname" : "solo[31]"
+				}
+,
+				"obj-4::obj-78::obj-1::obj-115" : 				{
+					"parameter_longname" : "mute[31]"
+				}
+,
+				"obj-4::obj-78::obj-1::obj-38" : 				{
+					"parameter_longname" : "live.gain~[31]"
+				}
+,
+				"obj-4::obj-80::obj-1::obj-114" : 				{
+					"parameter_longname" : "solo[30]"
+				}
+,
+				"obj-4::obj-80::obj-1::obj-115" : 				{
+					"parameter_longname" : "mute[30]"
+				}
+,
+				"obj-4::obj-80::obj-1::obj-38" : 				{
+					"parameter_longname" : "live.gain~[30]"
+				}
+,
+				"obj-4::obj-82::obj-1::obj-114" : 				{
+					"parameter_longname" : "solo[29]"
+				}
+,
+				"obj-4::obj-82::obj-1::obj-115" : 				{
+					"parameter_longname" : "mute[29]"
+				}
+,
+				"obj-4::obj-82::obj-1::obj-38" : 				{
+					"parameter_longname" : "live.gain~[29]"
+				}
+,
+				"obj-4::obj-84::obj-1::obj-114" : 				{
+					"parameter_longname" : "solo[28]"
+				}
+,
+				"obj-4::obj-84::obj-1::obj-115" : 				{
+					"parameter_longname" : "mute[28]"
+				}
+,
+				"obj-4::obj-84::obj-1::obj-38" : 				{
+					"parameter_longname" : "live.gain~[28]"
+				}
+,
+				"obj-4::obj-86::obj-1::obj-114" : 				{
+					"parameter_longname" : "solo[27]"
+				}
+,
+				"obj-4::obj-86::obj-1::obj-115" : 				{
+					"parameter_longname" : "mute[27]"
+				}
+,
+				"obj-4::obj-86::obj-1::obj-38" : 				{
+					"parameter_longname" : "live.gain~[27]"
+				}
+,
+				"obj-4::obj-88::obj-1::obj-114" : 				{
+					"parameter_longname" : "solo[26]"
+				}
+,
+				"obj-4::obj-88::obj-1::obj-115" : 				{
+					"parameter_longname" : "mute[26]"
+				}
+,
+				"obj-4::obj-88::obj-1::obj-38" : 				{
+					"parameter_longname" : "live.gain~[26]"
+				}
+,
+				"obj-4::obj-90::obj-1::obj-114" : 				{
+					"parameter_longname" : "solo[25]"
+				}
+,
+				"obj-4::obj-90::obj-1::obj-115" : 				{
+					"parameter_longname" : "mute[25]"
+				}
+,
+				"obj-4::obj-90::obj-1::obj-38" : 				{
+					"parameter_longname" : "live.gain~[25]"
+				}
+,
+				"obj-4::obj-92::obj-1::obj-114" : 				{
+					"parameter_longname" : "solo[24]"
+				}
+,
+				"obj-4::obj-92::obj-1::obj-115" : 				{
+					"parameter_longname" : "mute[24]"
+				}
+,
+				"obj-4::obj-92::obj-1::obj-38" : 				{
+					"parameter_longname" : "live.gain~[24]"
+				}
+,
+				"obj-4::obj-94::obj-1::obj-114" : 				{
+					"parameter_longname" : "solo[23]"
+				}
+,
+				"obj-4::obj-94::obj-1::obj-115" : 				{
+					"parameter_longname" : "mute[23]"
+				}
+,
+				"obj-4::obj-94::obj-1::obj-38" : 				{
+					"parameter_longname" : "live.gain~[23]"
+				}
+,
+				"obj-4::obj-96::obj-1::obj-114" : 				{
+					"parameter_longname" : "solo[22]"
+				}
+,
+				"obj-4::obj-96::obj-1::obj-115" : 				{
+					"parameter_longname" : "mute[22]"
+				}
+,
+				"obj-4::obj-96::obj-1::obj-38" : 				{
+					"parameter_longname" : "live.gain~[22]"
+				}
+,
+				"obj-4::obj-98::obj-1::obj-114" : 				{
+					"parameter_longname" : "solo[21]"
+				}
+,
+				"obj-4::obj-98::obj-1::obj-115" : 				{
+					"parameter_longname" : "mute[21]"
+				}
+,
+				"obj-4::obj-98::obj-1::obj-38" : 				{
+					"parameter_longname" : "live.gain~[21]"
+				}
+,
+				"obj-4::obj-9::obj-1::obj-114" : 				{
+					"parameter_longname" : "solo[61]"
+				}
+,
+				"obj-4::obj-9::obj-1::obj-115" : 				{
+					"parameter_longname" : "mute[61]"
+				}
+,
+				"obj-4::obj-9::obj-1::obj-38" : 				{
+					"parameter_longname" : "live.gain~[54]"
+				}
+
+			}
+,
+			"inherited_shortname" : 1
+		}
+,
+		"dependency_cache" : [ 			{
+				"name" : "ui_binaural_channelList.maxpat",
+				"bootpath" : "~/Documents/Max 8/Projects/PsychoBox/PsychoBox/patchers",
+				"patcherrelativepath" : ".",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "ui_binaural_channelStrip.maxpat",
+				"bootpath" : "~/Documents/Max 8/Projects/PsychoBox/PsychoBox/patchers",
+				"patcherrelativepath" : ".",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "ui_binaural_fader.maxpat",
+				"bootpath" : "~/Documents/Max 8/Projects/PsychoBox/PsychoBox/patchers",
+				"patcherrelativepath" : ".",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "speakerLayouts.txt",
+				"bootpath" : "~/Documents/Max 8/Projects/PsychoBox/PsychoBox/data",
+				"patcherrelativepath" : "../data",
+				"type" : "TEXT",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "headphoneEQs.txt",
+				"bootpath" : "~/Documents/Max 8/Projects/PsychoBox/PsychoBox/data",
+				"patcherrelativepath" : "../data",
+				"type" : "TEXT",
+				"implicit" : 1
+			}
+ ],
+		"autosave" : 0,
 		"styles" : [ 			{
 				"name" : "Audiomix",
 				"default" : 				{
@@ -3939,9 +4935,9 @@
 , 			{
 				"name" : "Default M4L",
 				"default" : 				{
+					"fontsize" : [ 11.0 ],
 					"fontname" : [ "Arial Bold" ],
-					"patchlinecolor" : [ 0.290196, 0.309804, 0.301961, 0.85 ],
-					"fontsize" : [ 11.0 ]
+					"patchlinecolor" : [ 0.290196, 0.309804, 0.301961, 0.85 ]
 				}
 ,
 				"parentstyle" : "",
@@ -3950,9 +4946,9 @@
 , 			{
 				"name" : "Default M4L Poletti",
 				"default" : 				{
+					"fontsize" : [ 10.0 ],
 					"fontname" : [ "Arial Bold" ],
-					"patchlinecolor" : [ 0.290196, 0.309804, 0.301961, 0.85 ],
-					"fontsize" : [ 10.0 ]
+					"patchlinecolor" : [ 0.290196, 0.309804, 0.301961, 0.85 ]
 				}
 ,
 				"parentstyle" : "",
@@ -3961,7 +4957,6 @@
 , 			{
 				"name" : "Default M4L-1",
 				"default" : 				{
-					"fontname" : [ "Arial" ],
 					"bgfillcolor" : 					{
 						"type" : "gradient",
 						"color1" : [ 0.376471, 0.384314, 0.4, 1.0 ],
@@ -3971,8 +4966,9 @@
 						"proportion" : 0.39
 					}
 ,
-					"fontface" : [ 1 ],
-					"fontsize" : [ 11.0 ]
+					"fontsize" : [ 11.0 ],
+					"fontname" : [ "Arial" ],
+					"fontface" : [ 1 ]
 				}
 ,
 				"parentstyle" : "",
@@ -4054,8 +5050,6 @@
 , 			{
 				"name" : "Neon",
 				"default" : 				{
-					"selectioncolor" : [ 0.92549, 0.364706, 0.341176, 1.0 ],
-					"patchlinecolor" : [ 0.0, 1.0, 0.976471, 0.9 ],
 					"bgfillcolor" : 					{
 						"type" : "gradient",
 						"color1" : [ 0.376471, 0.384314, 0.4, 1.0 ],
@@ -4065,9 +5059,11 @@
 						"proportion" : 0.39
 					}
 ,
+					"accentcolor" : [ 0.305882, 0.329412, 0.4, 1.0 ],
 					"textcolor" : [ 0.921569, 0.917647, 0.933333, 1.0 ],
+					"selectioncolor" : [ 0.92549, 0.364706, 0.341176, 1.0 ],
 					"bgcolor" : [ 0.201376, 0.21726, 0.264912, 1.0 ],
-					"accentcolor" : [ 0.305882, 0.329412, 0.4, 1.0 ]
+					"patchlinecolor" : [ 0.0, 1.0, 0.976471, 0.9 ]
 				}
 ,
 				"parentstyle" : "",
@@ -4076,8 +5072,6 @@
 , 			{
 				"name" : "NeonRed",
 				"default" : 				{
-					"selectioncolor" : [ 0.92549, 0.364706, 0.341176, 1.0 ],
-					"patchlinecolor" : [ 0.92549, 0.364706, 0.341176, 0.898039 ],
 					"bgfillcolor" : 					{
 						"type" : "gradient",
 						"color1" : [ 0.376471, 0.384314, 0.4, 1.0 ],
@@ -4087,9 +5081,11 @@
 						"proportion" : 0.39
 					}
 ,
+					"accentcolor" : [ 0.305882, 0.329412, 0.4, 1.0 ],
 					"textcolor" : [ 0.921569, 0.917647, 0.933333, 1.0 ],
+					"selectioncolor" : [ 0.92549, 0.364706, 0.341176, 1.0 ],
 					"bgcolor" : [ 0.201376, 0.21726, 0.264912, 1.0 ],
-					"accentcolor" : [ 0.305882, 0.329412, 0.4, 1.0 ]
+					"patchlinecolor" : [ 0.92549, 0.364706, 0.341176, 0.898039 ]
 				}
 ,
 				"parentstyle" : "",
