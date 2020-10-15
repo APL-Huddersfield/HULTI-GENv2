@@ -1,3 +1,11 @@
+//
+// Filename: initSubjectFileGP.js
+// Title: General Purpose Subject File Initialiser
+// Author: Dale Johnson, APL
+// Date:
+//
+
+/** JS class version of a unique random number generator */
 function Urn(range) {
     this.range = range;
     this.arr = new Array();
@@ -169,7 +177,7 @@ function initStimuliAndPresentationsSGFT(subjectDict, configDict, manifestDict, 
         reference = configDict.get(configStimuliKey + "::reference");
     }
 
-    // For each repetition and combination, generate a ramp of values from 0 to numStimuli, omitting
+    // For each repetition and combination, generate a ramp of values from 0 to numStimuli - 1, omitting
     // the reference if necessary.
     // Note: numTrials = numStimuli * numRepetitions * numCombinations
 
