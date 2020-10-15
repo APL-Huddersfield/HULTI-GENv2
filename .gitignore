@@ -1,2 +1,2 @@
-**/*.wav
+**/media/*.wav
 .DS_Store
