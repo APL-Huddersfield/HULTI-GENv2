@@ -202,7 +202,7 @@
 					"offset" : [ 0.0, 0.0 ],
 					"patching_rect" : [ 449.5, 16.0, 450.0, 195.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 365.0, 218.5, 450.0, 285.0 ],
+					"presentation_rect" : [ 405.0, 218.5, 450.0, 285.0 ],
 					"varname" : "ui_beginTestMenu",
 					"viewvisibility" : 1
 				}
@@ -225,7 +225,7 @@
 					"offset" : [ 0.0, 0.0 ],
 					"patching_rect" : [ 458.0, 558.0, 450.0, 196.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 365.0, 218.5, 450.0, 198.0 ],
+					"presentation_rect" : [ 405.0, 218.5, 450.0, 198.0 ],
 					"varname" : "ui_groupCompleteMenu",
 					"viewvisibility" : 1
 				}
@@ -248,7 +248,7 @@
 					"offset" : [ 0.0, 0.0 ],
 					"patching_rect" : [ 458.0, 769.0, 450.0, 151.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 365.0, 265.5, 450.0, 151.0 ],
+					"presentation_rect" : [ 405.0, 265.5, 450.0, 151.0 ],
 					"varname" : "ui_allCompleteMenu",
 					"viewvisibility" : 1
 				}
@@ -271,7 +271,7 @@
 					"offset" : [ 0.0, 0.0 ],
 					"patching_rect" : [ 458.0, 946.0, 450.0, 196.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 365.0, 218.5, 450.0, 198.0 ],
+					"presentation_rect" : [ 405.0, 218.5, 450.0, 198.0 ],
 					"varname" : "ui_sessionCompleteMenu",
 					"viewvisibility" : 1
 				}
@@ -294,7 +294,7 @@
 					"offset" : [ 0.0, 0.0 ],
 					"patching_rect" : [ 949.0, 736.0, 345.0, 395.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 417.5, 147.5, 345.0, 395.0 ],
+					"presentation_rect" : [ 457.5, 147.5, 345.0, 395.0 ],
 					"varname" : "ui_filesMissingMenu",
 					"viewvisibility" : 1
 				}
@@ -389,7 +389,6 @@
 					"clickthrough" : 0,
 					"enablehscroll" : 0,
 					"enablevscroll" : 0,
-					"hidden" : 1,
 					"id" : "obj-37",
 					"lockeddragscroll" : 0,
 					"maxclass" : "bpatcher",
@@ -400,7 +399,7 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 949.0, 349.0, 440.0, 284.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 276.0, 97.5, 628.0, 548.0 ],
+					"presentation_rect" : [ 316.0, 1.5, 628.0, 689.0 ],
 					"varname" : "ui_audioSettings",
 					"viewvisibility" : 1
 				}
@@ -1509,7 +1508,6 @@
 						"style" : "",
 						"subpatcher_template" : "",
 						"assistshowspatchername" : 0,
-						"visible" : 1,
 						"boxes" : [ 							{
 								"box" : 								{
 									"id" : "obj-16",
@@ -1601,7 +1599,6 @@
 										"style" : "",
 										"subpatcher_template" : "",
 										"assistshowspatchername" : 0,
-										"visible" : 1,
 										"boxes" : [ 											{
 												"box" : 												{
 													"id" : "obj-41",
@@ -1896,7 +1893,6 @@
 																	"numoutlets" : 1,
 																	"outlettype" : [ "" ],
 																	"patching_rect" : [ 315.25, 542.0, 153.0, 35.0 ],
-																	"presentation_linecount" : 2,
 																	"text" : "set 1 1 #0-customFilter 1, set 2 2 #0-customFilter 2"
 																}
 
@@ -38410,7 +38406,7 @@
 					"lockeddragscroll" : 0,
 					"maxclass" : "bpatcher",
 					"name" : "staircase_twoAFC_interface.maxpat",
-					"numinlets" : 0,
+					"numinlets" : 1,
 					"numoutlets" : 0,
 					"offset" : [ 0.0, 0.0 ],
 					"patching_rect" : [ 449.5, 257.0, 474.5, 275.0 ],
@@ -38451,6 +38447,7 @@
 					"clickthrough" : 0,
 					"enablehscroll" : 0,
 					"enablevscroll" : 0,
+					"hidden" : 1,
 					"id" : "obj-5",
 					"lockeddragscroll" : 0,
 					"maxclass" : "bpatcher",
@@ -39869,6 +39866,13 @@
 				"name" : "ui_config_chooseTest.maxpat",
 				"bootpath" : "~/Documents/Max 8/Projects/PsychoBox/PsychoBox/patchers",
 				"patcherrelativepath" : ".",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "staircase_twoAFC_interface.maxpat",
+				"bootpath" : "~/Documents/Max 8/Projects/PsychoBox/tests/staircase_twoAFC",
+				"patcherrelativepath" : "../../tests/staircase_twoAFC",
 				"type" : "JSON",
 				"implicit" : 1
 			}
