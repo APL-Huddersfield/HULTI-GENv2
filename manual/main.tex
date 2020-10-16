@@ -1,0 +1,51 @@
+\documentclass[oneside, a4paper,12pt]{book}
+
+\usepackage{xcolor}
+\definecolor{aaublue}{RGB}{30, 93, 200}% dark blue
+\definecolor{aaured}{RGB}{230, 0, 0}% red
+\definecolor{aaublack}{RGB}{0, 0, 0}% black
+
+\usepackage[utf8]{inputenc}
+\usepackage{graphicx}
+\graphicspath{{./images/}}
+\usepackage{titlesec}
+\usepackage{hyperref}
+
+\hypersetup{%
+	pdfpagelabels=true,%
+	plainpages=false,%
+	pdfauthor={Author},%
+	pdftitle={Title},%
+	pdfsubject={Subject},%
+	bookmarksnumbered=true,%
+	colorlinks=true,%
+	citecolor=aaublue,%
+	filecolor=aaublue,%
+	linkcolor=aaublack,%
+	urlcolor=aaublue,%
+	pdfstartview=FitH%
+}
+
+\usepackage[all]{hypcap}
+
+\titleformat{\chapter}[display]
+{\normalfont\bfseries}{}{0pt}{\huge}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+
+\author{Applied Psychoacoustics Laboratory \\ The University of Huddersfield}
+\title{HULTI-GEN v2.0 - Quickstart Guide}
+\date{October 2020}
+
+\maketitle
+\cleardoublepage
+\tableofcontents
+
+\include{creatingANewTest}
+\include{runningATest}
+
+% bibliography, glossary and index would go here.
+
+\end{document}
