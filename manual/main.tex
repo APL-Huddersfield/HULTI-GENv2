@@ -5,10 +5,20 @@
 \definecolor{aaured}{RGB}{230, 0, 0}% red
 \definecolor{aaublack}{RGB}{0, 0, 0}% black
 
+\usepackage[
+outer=2.0cm, % right margin on an odd page
+inner=2.0cm, % left margin on an odd page
+top=2.5cm, % top margin
+bottom=2.5cm % bottom margin
+]{geometry}
+
 \usepackage[utf8]{inputenc}
 \usepackage{graphicx}
 \graphicspath{{./images/}}
 \usepackage{titlesec}
+\usepackage[bottom]{footmisc}
+\usepackage{tabularx}
+\usepackage{multirow}
 \usepackage{hyperref}
 
 \hypersetup{%
@@ -30,12 +40,13 @@
 
 \titleformat{\chapter}[display]
 {\normalfont\bfseries}{}{0pt}{\huge}
+%\titlespacing{\chapter}{0pt}{-40pt}{1cm}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \begin{document}
 
-\author{Applied Psychoacoustics Laboratory \\ The University of Huddersfield}
+\author{Applied Psychoacoustics Laboratory (APL) \\ The University of Huddersfield}
 \title{HULTI-GEN v2.0 - Quickstart Guide}
 \date{October 2020}
 

@@ -1,0 +1,36 @@
+\begin{description}
+  \item[Common settings]\leavevmode
+  \begin{description}
+    \item[Sessions] The number of sittings a subject will undertake for the entire test
+    \item[Number of groups of stimuli] Sets the number of stimulus groups per session. In grading tests, this also sets the base number of trials.
+    \item[Objective] The instructions that the subject will be shown on screen during the test.
+  \end{description}
+  \item[Grading]\leavevmode
+  \begin{description}
+    \item[Stimuli per trial] Sets the number of stimuli (i.e. rating sliders) you will be presented with per trial.
+    \item[Number of repetitions] The number of times that a trial will be repeated. This has the effect of scaling the test duration by this amount, e.g. 2 repetitions doubles the number of trials, which then doubles the test duration.
+    \item[Total trials per session] Calculated from the from 'Number of groups of stimuli' x 'Number of repetitions'.
+    \item[Use low anchor] Enables the use of a low anchor in grading tests.
+    \item[Use high anchor] Same as above, but for a high anchor.
+  \end{description}
+  \item[Non-adaptive psychophysical]\leavevmode
+  \begin{description}
+    \item[Number of stimuli] Sets the number of stimuli for an entire group.
+    \item[Number of repetitions per stimulus / condition] The number of times that a stimulus / pair of stimuli will be presented. This has the effect of scaling the test duration by this amount, e.g. 2 repetitions doubles the number of trials, which then doubles the test duration.
+    \item[Total trials per group] Equivalent to the 'Number of stimuli - 1' x 'Number of repetitions'
+    \item[Total trials per session] Calculated from the from 'Total trials per group' x 'Number of groups of stimuli'.
+    \item[Pre-presentation] Delay time (ms) between starting the trial and the first stimulus being presented.
+    \item[Between stimuli] Delay time (ms) between the stimulus presentations.
+    \item[Post-presentation] Delay time (ms) from when the final stimulus finishes to when the subject is then allowed to respond.
+  \end{description}
+  \item[Adaptive psychophysical]\leavevmode
+  \begin{description}
+    \item[Number of stimuli] Sets the number of stimuli for an entire group.
+    \item[Number of repetitions per stimulus / condition] The number of times that a stimulus / pair of stimuli will be presented. This has the effect of scaling the test duration by this amount, e.g. 2 repetitions doubles the number of trials, which then doubles the test duration.
+    \item[Total trials per group] Equivalent to the 'Number of stimuli - 1' x 'Number of repetitions'
+    \item[Total trials per session] Calculated from the from 'Total trials per group' x 'Number of groups of stimuli'.
+    \item[Pre-presentation] Delay time (ms) between starting the trial and the first stimulus being presented.
+    \item[Between stimuli] Delay time (ms) between the stimulus presentations.
+    \item[Post-presentation] Delay time (ms) from when the final stimulus finishes to when the subject is then allowed to respond.
+  \end{description}
+\end{description}
