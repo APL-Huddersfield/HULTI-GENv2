@@ -4,7 +4,10 @@
     "tag" : "grading",
     "parameters" : [
         "repetitions",
-        "objective"
+        "objective",
+        "useReference",
+        "useHighAnchor",
+        "useLowAnchor"
     ],
     "parametersMenu" : "itur",
     "requiresReference" : true,
