@@ -1,6 +1,15 @@
-\BOOKMARK [0][-]{chapter.1}{1 Creating a new test}{}% 1
-\BOOKMARK [1][-]{section.1.1}{1.1 Step 1 - Choose a test method}{chapter.1}% 2
-\BOOKMARK [1][-]{section.1.2}{1.2 Step 2 - Input test parameters}{chapter.1}% 3
-\BOOKMARK [1][-]{section.1.3}{1.3 Step 3 - Customise the test interface}{chapter.1}% 4
-\BOOKMARK [1][-]{section.1.4}{1.4 Step 4 - Load stimuli}{chapter.1}% 5
-\BOOKMARK [0][-]{chapter.2}{2 Running a test}{}% 6
+\BOOKMARK [0][-]{chapter.1}{1 Introduction}{}% 1
+\BOOKMARK [0][-]{chapter.2}{2 Test configuration}{}% 2
+\BOOKMARK [1][-]{section.2.1}{2.1 Creating a new test}{chapter.2}% 3
+\BOOKMARK [2][-]{subsection.2.1.1}{2.1.1 Step 1 - Choose a test method}{section.2.1}% 4
+\BOOKMARK [2][-]{subsection.2.1.2}{2.1.2 Step 2 - Input test parameters}{section.2.1}% 5
+\BOOKMARK [2][-]{subsection.2.1.3}{2.1.3 Step 3 - Customise the test interface}{section.2.1}% 6
+\BOOKMARK [2][-]{subsection.2.1.4}{2.1.4 Step 4 - Load stimuli}{section.2.1}% 7
+\BOOKMARK [2][-]{subsection.2.1.5}{2.1.5 Step 5 - Assign stimuli}{section.2.1}% 8
+\BOOKMARK [0][-]{chapter.3}{3 Running a test}{}% 9
+\BOOKMARK [1][-]{section.3.1}{3.1 Starting with a new subject}{chapter.3}% 10
+\BOOKMARK [1][-]{section.3.2}{3.2 Test completion and results output}{chapter.3}% 11
+\BOOKMARK [0][-]{chapter.4}{4 Audio settings}{}% 12
+\BOOKMARK [1][-]{section.4.1}{4.1 Playback format}{chapter.4}% 13
+\BOOKMARK [1][-]{section.4.2}{4.2 Headphone equalisation}{chapter.4}% 14
+\BOOKMARK [1][-]{section.4.3}{4.3 Binauralisation}{chapter.4}% 15

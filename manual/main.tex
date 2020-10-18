@@ -31,15 +31,15 @@ bottom=2.5cm % bottom margin
 	colorlinks=true,%
 	citecolor=aaublue,%
 	filecolor=aaublue,%
-	linkcolor=aaublack,%
+	linkcolor=aaublue,%
 	urlcolor=aaublue,%
 	pdfstartview=FitH%
 }
 
 \usepackage[all]{hypcap}
 
-\titleformat{\chapter}[display]
-{\normalfont\bfseries}{}{0pt}{\huge}
+\titleformat{\chapter}[hang]
+{\normalfont\bfseries\Huge}{\thechapter. }{0pt}{}
 %\titlespacing{\chapter}{0pt}{-40pt}{1cm}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -47,15 +47,17 @@ bottom=2.5cm % bottom margin
 \begin{document}
 
 \author{Applied Psychoacoustics Laboratory (APL) \\ The University of Huddersfield}
-\title{HULTI-GEN v2.0 - Quickstart Guide}
+\title{HULTI-GEN v2.0 \\ User Guide}
 \date{October 2020}
 
 \maketitle
 \cleardoublepage
 \tableofcontents
 
-\include{creatingANewTest}
+\include{about}
+\include{testConfiguration}
 \include{runningATest}
+\include{audioSettings}
 
 % bibliography, glossary and index would go here.
 
