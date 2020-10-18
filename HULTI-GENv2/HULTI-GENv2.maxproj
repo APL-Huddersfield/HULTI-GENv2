@@ -1,5 +1,5 @@
 {
-	"name" : "PsychoBox",
+	"name" : "HULTI-GENv2",
 	"version" : 1,
 	"creationdate" : 3666872002,
 	"modificationdate" : 3685639291,
