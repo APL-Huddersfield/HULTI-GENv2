@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 1292.0, 257.0, 1095.0, 959.0 ],
+		"rect" : [ 225.0, 144.0, 1095.0, 959.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -1259,7 +1259,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 393.083333999999923, 26.0, 168.0, 5.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 1.0, 20.0, 546.0, 5.0 ]
+					"presentation_rect" : [ 1.0, 20.0, 515.0, 5.0 ]
 				}
 
 			}
@@ -1320,7 +1320,7 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 152.666666999999961, 404.0, 561.0, 310.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 1.0, 21.0, 546.0, 480.0 ],
+					"presentation_rect" : [ 1.0, 21.0, 515.0, 480.0 ],
 					"varname" : "ui_filelist",
 					"viewvisibility" : 1
 				}
@@ -1339,7 +1339,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 291.083333999999923, 20.0, 70.0, 47.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 0.0, 0.0, 548.0, 502.0 ],
+					"presentation_rect" : [ 0.0, 0.0, 517.0, 502.0 ],
 					"proportion" : 0.5,
 					"rounded" : 0
 				}
@@ -1657,21 +1657,21 @@
  ],
 		"dependency_cache" : [ 			{
 				"name" : "ui_filelist.maxpat",
-				"bootpath" : "~/Documents/Max 8/Projects/HULTI-GENv2/PsychoBox/patchers",
+				"bootpath" : "~/Documents/Max 8/Projects/PsychoBox/PsychoBox/patchers",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "ui_filelist_entry.maxpat",
-				"bootpath" : "~/Documents/Max 8/Projects/HULTI-GENv2/PsychoBox/patchers",
+				"bootpath" : "~/Documents/Max 8/Projects/PsychoBox/PsychoBox/patchers",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "filelistManager.js",
-				"bootpath" : "~/Documents/Max 8/Projects/HULTI-GENv2/PsychoBox/code",
+				"bootpath" : "~/Documents/Max 8/Projects/PsychoBox/PsychoBox/code",
 				"patcherrelativepath" : "../code",
 				"type" : "TEXT",
 				"implicit" : 1
