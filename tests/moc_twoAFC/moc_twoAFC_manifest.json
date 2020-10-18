@@ -1,6 +1,6 @@
 {
     "slug" : "moc_twoAFC",
-    "name" : "Method Of Constants 2AFC",
+    "name" : "Randomised 2AFC",
     "tag" : "psychophysical",
     "parameters" : [
         "repetitions",

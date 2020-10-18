@@ -1,6 +1,6 @@
 {
     "slug" : "moc_abx",
-    "name" : "Method Of Constants ABX",
+    "name" : "Randomised ABX",
     "tag" : "psychophysical",
     "parameters" : [
         "repetitions",
