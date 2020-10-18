@@ -4,7 +4,7 @@
 		"appversion" : 		{
 			"major" : 8,
 			"minor" : 1,
-			"revision" : 3,
+			"revision" : 5,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
@@ -37,19 +37,8 @@
 		"tags" : "",
 		"style" : "",
 		"subpatcher_template" : "",
+		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
-				"box" : 				{
-					"id" : "obj-15",
-					"maxclass" : "button",
-					"numinlets" : 1,
-					"numoutlets" : 1,
-					"outlettype" : [ "bang" ],
-					"parameter_enable" : 0,
-					"patching_rect" : [ 371.0, 18.0, 24.0, 24.0 ]
-				}
-
-			}
-, 			{
 				"box" : 				{
 					"id" : "obj-25",
 					"maxclass" : "comment",
@@ -128,7 +117,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 528.0, 322.0, 137.0, 36.0 ],
+					"patching_rect" : [ 528.0, 322.0, 137.0, 35.0 ],
 					"text" : ";\rmax getsystem #0-os"
 				}
 
@@ -199,7 +188,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 103.0, 297.0, 150.0, 48.0 ],
+					"patching_rect" : [ 103.0, 297.0, 150.0, 47.0 ],
 					"text" : "% is a mostly reserved filename character that is here to replace a space",
 					"textjustification" : 2
 				}
@@ -208,12 +197,12 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-133",
-					"linecount" : 6,
+					"linecount" : 5,
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 50.0, 196.5, 151.0, 89.0 ],
-					"text" : "Stupid hack of a patch to look two folders above a patch. Like, ffs Cycling, let me use system folder commands like ../ or ./, fuuuuuuu!"
+					"patching_rect" : [ 50.0, 196.5, 151.0, 74.0 ],
+					"text" : "Stupid hack of a patch to look two folders above a patch. Like c'mon Cycling, let me use system folder commands like ../ or ./"
 				}
 
 			}
@@ -414,13 +403,6 @@
 				"patchline" : 				{
 					"destination" : [ "obj-10", 0 ],
 					"source" : [ "obj-131", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-7", 0 ],
-					"source" : [ "obj-15", 0 ]
 				}
 
 			}
