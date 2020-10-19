@@ -1,6 +1,9 @@
 # HULTI-GEN v2
 A free universal listening test software package for Max 8
 
+## Usage
+See UserGuide.pdf for usage details.
+
 ## Authors
 Dale Johnson and Hyunkook Lee.
 Contact: d.s.johnson2@hud.ac.uk, h.lee@hud.ac.uk
