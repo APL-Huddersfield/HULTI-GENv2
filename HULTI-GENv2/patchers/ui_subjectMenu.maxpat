@@ -224,7 +224,7 @@
 					"patching_rect" : [ 484.0, 395.0, 100.0, 30.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 10.0, 660.0, 100.0, 30.0 ],
-					"text" : "Exit Test",
+					"text" : "Main Menu",
 					"textoncolor" : [ 0.0, 0.0, 0.0, 1.0 ],
 					"textovercolor" : [ 0.101960784313725, 0.411764705882353, 0.796078431372549, 1.0 ],
 					"usetextovercolor" : 1

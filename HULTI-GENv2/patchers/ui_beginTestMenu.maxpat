@@ -49,8 +49,8 @@
 					"patching_rect" : [ 28.0, 232.0, 450.0, 60.0 ],
 					"presentation" : 1,
 					"presentation_linecount" : 2,
-					"presentation_rect" : [ 0.0, 69.0, 450.0, 60.0 ],
-					"text" : "Click the button below or press 'Return' to begin the test session",
+					"presentation_rect" : [ 69.0, 69.0, 312.0, 60.0 ],
+					"text" : "Click the button below to begin the test session",
 					"textjustification" : 1
 				}
 
