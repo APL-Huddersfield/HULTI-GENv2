@@ -1,0 +1,84 @@
+{
+    "type" : "object",
+    "required" : [
+        "identifier",
+        "configFilename",
+        "configSHA256",
+        "task",
+        "experimentData",
+        "orders",
+        "progress"
+    ],
+    "properties" : {
+        "identifier" : {
+            "type" : "string",
+            "default" : "Unnamed"
+        },
+        "configFilename" : {
+            "type" : "string",
+            "default" : ""
+        },
+        "configSHA256" : {
+            "type" : "string",
+            "default" : "0000000000000000000000000000000000000000000000000000000000000000"
+        },
+        "task" : {
+            "type" : "object",
+            "required" : [
+                "plugin",
+                "parameters"
+            ],
+            "properties" : {
+                "plugin" : {
+                    "type" : "string",
+                    "default" : ""
+                },
+                "parameters" : {
+                    "type" : "empty"
+                }
+            }
+        },
+        "experimentData" :  {
+            "type" : "object",
+            "required" : [
+                "sessions"
+            ],
+            "properties" : {
+                "sessions" : {
+                    "type" : "empty"
+                }
+            }
+
+        },
+        "orders" :  {
+            "type" : "object",
+            "required" : [
+                "sessionOrder",
+                "sessions"
+            ],
+            "properties" : {
+                "sessionOrder" : {
+                    "type" : "empty"
+                },
+                "sessions" : {
+                    "type" : "empty"
+                }
+            }
+        },
+        "progress" : {
+            "type" : "object",
+            "required" : [
+                "sessionProgress",
+                "sessions"
+            ],
+            "properties" : {
+                "sessionProgress" : {
+                    "type" : "empty"
+                },
+                "sessions" : {
+                    "type" : "empty"
+                }
+            }
+        }
+    }
+}

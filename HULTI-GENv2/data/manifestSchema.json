@@ -1,0 +1,30 @@
+{
+    "type" : "object",
+    "required" : [
+        "slug",
+        "parameters",
+        "requiresReference",
+        "groupingMode",
+        "ordering"
+    ],
+    "properties" : {
+        "slug" : {
+            "type" : "string",
+            "default" : ""
+        },
+        "parameters" : {
+            "type" : "empty"
+        },
+        "requiresReference" : {
+            "type" : "boolean",
+            "default" : "false"
+        },
+        "groupingMode" : {
+            "type" : "string",
+            "default" : "sgft"
+        },
+        "ordering" : {
+            "type" : "empty"
+        }
+    }
+}

@@ -2,7 +2,7 @@
 	"name" : "HULTI-GENv2",
 	"version" : 1,
 	"creationdate" : 3666872002,
-	"modificationdate" : 3685949506,
+	"modificationdate" : 3685951098,
 	"viewrect" : [ 1459.0, 297.0, 461.0, 826.0 ],
 	"autoorganize" : 0,
 	"hideprojectwindow" : 1,
@@ -181,6 +181,16 @@
 				"local" : 1
 			}
 ,
+			"ui_exitTest.maxpat" : 			{
+				"kind" : "patcher",
+				"local" : 1
+			}
+,
+			"player_parallel.maxpat" : 			{
+				"kind" : "patcher",
+				"local" : 1
+			}
+,
 			"ui_filelist_pool_withDependencies.maxpat" : 			{
 				"kind" : "patcher",
 				"local" : 1
@@ -192,11 +202,6 @@
 			}
 ,
 			"ui_filelist_psychophysical.maxpat" : 			{
-				"kind" : "patcher",
-				"local" : 1
-			}
-,
-			"player_parallel.maxpat" : 			{
 				"kind" : "patcher",
 				"local" : 1
 			}
@@ -611,16 +616,6 @@
 
 			}
 ,
-			"ui_exitTest.maxpat" : 			{
-				"kind" : "patcher",
-				"local" : 1,
-				"singleton" : 				{
-					"bootpath" : "~/Documents/Max 8/Projects/PsychoBox/HULTI-GENv2/patchers",
-					"projectrelativepath" : "./patchers"
-				}
-
-			}
-,
 			"dialog_exitTest.maxpat" : 			{
 				"kind" : "patcher",
 				"local" : 1,
@@ -766,56 +761,6 @@
 				"local" : 1
 			}
 ,
-			"config_menus.json" : 			{
-				"kind" : "json",
-				"local" : 1,
-				"singleton" : 				{
-					"bootpath" : "~/Documents/Max 8/Projects/PsychoBox/HULTI-GENv2/data",
-					"projectrelativepath" : "./data"
-				}
-
-			}
-,
-			"example_config.json" : 			{
-				"kind" : "json",
-				"local" : 1,
-				"singleton" : 				{
-					"bootpath" : "~/Documents/Max 8/Projects/PsychoBox/HULTI-GENv2/data",
-					"projectrelativepath" : "./data"
-				}
-
-			}
-,
-			"default_config.json" : 			{
-				"kind" : "json",
-				"local" : 1,
-				"singleton" : 				{
-					"bootpath" : "~/Documents/Max 8/Projects/PsychoBox/HULTI-GENv2/data",
-					"projectrelativepath" : "./data"
-				}
-
-			}
-,
-			"example_config2.json" : 			{
-				"kind" : "json",
-				"local" : 1,
-				"singleton" : 				{
-					"bootpath" : "~/Documents/Max 8/Projects/PsychoBox/HULTI-GENv2/data",
-					"projectrelativepath" : "./data"
-				}
-
-			}
-,
-			"example_2AFC_config.json" : 			{
-				"kind" : "json",
-				"local" : 1,
-				"singleton" : 				{
-					"bootpath" : "~/Documents/Max 8/Projects/PsychoBox/HULTI-GENv2/data",
-					"projectrelativepath" : "./data"
-				}
-
-			}
-,
 			"testInterfaces.json" : 			{
 				"kind" : "json",
 				"local" : 1,
@@ -837,6 +782,26 @@
 			}
 ,
 			"staircase_steppingRules.json" : 			{
+				"kind" : "json",
+				"local" : 1,
+				"singleton" : 				{
+					"bootpath" : "~/Documents/Max 8/Projects/PsychoBox/HULTI-GENv2/data",
+					"projectrelativepath" : "./data"
+				}
+
+			}
+,
+			"manifestSchema.json" : 			{
+				"kind" : "json",
+				"local" : 1,
+				"singleton" : 				{
+					"bootpath" : "~/Documents/Max 8/Projects/PsychoBox/HULTI-GENv2/data",
+					"projectrelativepath" : "./data"
+				}
+
+			}
+,
+			"subjectFileSchema.json" : 			{
 				"kind" : "json",
 				"local" : 1,
 				"singleton" : 				{
@@ -872,6 +837,106 @@
 			"sofa.hrir~.mxo" : 			{
 				"kind" : "object",
 				"local" : 1
+			}
+,
+			"hashbrown.mxe" : 			{
+				"kind" : "object",
+				"local" : 1,
+				"singleton" : 				{
+					"bootpath" : "~/Documents/Max 8/Projects/PsychoBox/HULTI-GENv2/externals",
+					"projectrelativepath" : "./externals"
+				}
+
+			}
+,
+			"hashbrown.mxe64" : 			{
+				"kind" : "object",
+				"local" : 1,
+				"singleton" : 				{
+					"bootpath" : "~/Documents/Max 8/Projects/PsychoBox/HULTI-GENv2/externals",
+					"projectrelativepath" : "./externals"
+				}
+
+			}
+,
+			"multiconvolve~.mxe" : 			{
+				"kind" : "object",
+				"local" : 1,
+				"singleton" : 				{
+					"bootpath" : "~/Documents/Max 8/Projects/PsychoBox/HULTI-GENv2/externals",
+					"projectrelativepath" : "./externals"
+				}
+
+			}
+,
+			"multiconvolve~.mxe64" : 			{
+				"kind" : "object",
+				"local" : 1,
+				"singleton" : 				{
+					"bootpath" : "~/Documents/Max 8/Projects/PsychoBox/HULTI-GENv2/externals",
+					"projectrelativepath" : "./externals"
+				}
+
+			}
+,
+			"sofa.hrir~.mxe" : 			{
+				"kind" : "object",
+				"local" : 1,
+				"singleton" : 				{
+					"bootpath" : "~/Documents/Max 8/Projects/PsychoBox/HULTI-GENv2/externals",
+					"projectrelativepath" : "./externals"
+				}
+
+			}
+,
+			"sofa.hrir~.mxe64" : 			{
+				"kind" : "object",
+				"local" : 1,
+				"singleton" : 				{
+					"bootpath" : "~/Documents/Max 8/Projects/PsychoBox/HULTI-GENv2/externals",
+					"projectrelativepath" : "./externals"
+				}
+
+			}
+,
+			"sofa.info~.mxe" : 			{
+				"kind" : "object",
+				"local" : 1,
+				"singleton" : 				{
+					"bootpath" : "~/Documents/Max 8/Projects/PsychoBox/HULTI-GENv2/externals",
+					"projectrelativepath" : "./externals"
+				}
+
+			}
+,
+			"sofa.info~.mxe64" : 			{
+				"kind" : "object",
+				"local" : 1,
+				"singleton" : 				{
+					"bootpath" : "~/Documents/Max 8/Projects/PsychoBox/HULTI-GENv2/externals",
+					"projectrelativepath" : "./externals"
+				}
+
+			}
+,
+			"sofa~.mxe" : 			{
+				"kind" : "object",
+				"local" : 1,
+				"singleton" : 				{
+					"bootpath" : "~/Documents/Max 8/Projects/PsychoBox/HULTI-GENv2/externals",
+					"projectrelativepath" : "./externals"
+				}
+
+			}
+,
+			"sofa~.mxe64" : 			{
+				"kind" : "object",
+				"local" : 1,
+				"singleton" : 				{
+					"bootpath" : "~/Documents/Max 8/Projects/PsychoBox/HULTI-GENv2/externals",
+					"projectrelativepath" : "./externals"
+				}
+
 			}
 
 		}
