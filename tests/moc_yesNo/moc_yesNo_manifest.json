@@ -1,0 +1,25 @@
+{
+    "slug" : "moc_yesNo",
+    "name" : "Randomised Yes-No",
+    "tag" : "psychophysical",
+    "parameters" : [
+        "repetitions",
+        "objective",
+        "beforePresentationDelay",
+        "betweenStimuliDelay",
+        "afterPresentationDelay"
+    ],
+    "parametersMenu" : "sdt",
+    "requiresReference" : true,
+    "groupingMode" : "sgft",
+    "ordering" : {
+        "combinationsPerRepetition" : 1
+    },
+    "interface" : {
+        "window" : {
+            "maxwidth" : 1180,
+            "maxheight" : 680
+        }
+    },
+    "paramsUI" : "moc_yesNo"
+}

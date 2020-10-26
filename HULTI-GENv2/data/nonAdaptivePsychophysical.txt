@@ -1,4 +1,5 @@
 0, moc_twoAFC;
 1, moc_abx;
-2, sdt_twoAFC;
-3, sdt_abx;
+2, moc_yesNo;
+3, sdt_twoAFC;
+4, sdt_abx;
