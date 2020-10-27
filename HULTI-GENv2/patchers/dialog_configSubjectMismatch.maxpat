@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 992.0, 611.0, 576.0, 218.0 ],
+		"rect" : [ 657.0, 491.0, 606.0, 218.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -40,6 +40,19 @@
 		"assistshowspatchername" : 0,
 		"title" : "Subject and config file mismatch",
 		"boxes" : [ 			{
+				"box" : 				{
+					"id" : "obj-36",
+					"linecount" : 4,
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 889.0, 73.0, 145.0, 62.0 ],
+					"text" : "text 1c9e4df744b440ffea2740cb72d0cc1fa7c9ec5d2df6d61a7a44201410a41d7f"
+				}
+
+			}
+, 			{
 				"box" : 				{
 					"id" : "obj-33",
 					"maxclass" : "newobj",
@@ -104,7 +117,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 608.0, 301.0, 72.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 146.0, 158.0, 421.0, 20.0 ],
+					"presentation_rect" : [ 146.0, 158.0, 451.0, 20.0 ],
 					"proportion" : 0.5,
 					"rounded" : 0
 				}
@@ -123,7 +136,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 608.0, 279.0, 72.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 146.0, 109.0, 421.0, 20.0 ],
+					"presentation_rect" : [ 146.0, 109.0, 451.0, 20.0 ],
 					"proportion" : 0.5,
 					"rounded" : 0
 				}
@@ -142,7 +155,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 511.0, 241.0, 210.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 146.0, 158.0, 421.0, 20.0 ],
+					"presentation_rect" : [ 146.0, 158.0, 451.0, 20.0 ],
 					"text" : " ",
 					"textjustification" : 0,
 					"textoncolor" : [ 0.0, 0.0, 0.0, 1.0 ]
@@ -162,8 +175,8 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 511.0, 189.0, 210.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 146.0, 109.0, 421.0, 20.0 ],
-					"text" : " ",
+					"presentation_rect" : [ 146.0, 109.0, 451.0, 20.0 ],
+					"text" : "1c9e4df744b440ffea2740cb72d0cc1fa7c9ec5d2df6d61a7a44201410a41d7f",
 					"textjustification" : 0,
 					"textoncolor" : [ 0.0, 0.0, 0.0, 1.0 ]
 				}
@@ -231,7 +244,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 511.0, 299.0, 72.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 146.0, 136.0, 421.0, 20.0 ],
+					"presentation_rect" : [ 146.0, 136.0, 451.0, 20.0 ],
 					"proportion" : 0.5,
 					"rounded" : 0
 				}
@@ -250,7 +263,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 511.0, 279.0, 72.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 146.0, 87.0, 421.0, 20.0 ],
+					"presentation_rect" : [ 146.0, 87.0, 451.0, 20.0 ],
 					"proportion" : 0.5,
 					"rounded" : 0
 				}
@@ -269,7 +282,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 511.0, 219.0, 210.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 146.0, 136.0, 421.0, 20.0 ],
+					"presentation_rect" : [ 146.0, 136.0, 451.0, 20.0 ],
 					"text" : " ",
 					"textjustification" : 0,
 					"textoncolor" : [ 0.0, 0.0, 0.0, 1.0 ]
@@ -289,7 +302,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 511.0, 167.0, 210.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 146.0, 87.0, 421.0, 20.0 ],
+					"presentation_rect" : [ 146.0, 87.0, 451.0, 20.0 ],
 					"text" : " ",
 					"textjustification" : 0,
 					"textoncolor" : [ 0.0, 0.0, 0.0, 1.0 ]
@@ -334,7 +347,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 250.0, 85.5, 59.0, 5.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 10.0, 78.0, 557.0, 5.0 ]
+					"presentation_rect" : [ 10.0, 78.0, 587.0, 5.0 ]
 				}
 
 			}
@@ -393,7 +406,7 @@
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ 1847.0, 632.0, 538.0, 480.0 ],
+						"rect" : [ 1348.0, 632.0, 538.0, 480.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -585,7 +598,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 210.0, 126.0, 52.0, 22.0 ],
-									"text" : "577 219"
+									"text" : "607 219"
 								}
 
 							}
@@ -943,7 +956,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 246.0, 47.0, 244.0, 33.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 80.0, 30.25, 487.0, 20.0 ],
+					"presentation_rect" : [ 80.0, 30.25, 517.0, 20.0 ],
 					"text" : "Please load a subject file that is linked to this test configuration."
 				}
 
@@ -958,7 +971,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 246.0, 12.0, 244.0, 33.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 80.0, 10.0, 487.0, 20.0 ],
+					"presentation_rect" : [ 80.0, 10.0, 517.0, 20.0 ],
 					"text" : "This subject file is incompatible with the currently loaded test configuration."
 				}
 
@@ -974,7 +987,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 394.0, 338.0, 100.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 487.0, 189.0, 80.0, 20.0 ],
+					"presentation_rect" : [ 517.0, 189.0, 80.0, 20.0 ],
 					"rounded" : 8.0,
 					"text" : "Okay",
 					"textoncolor" : [ 0.996078431372549, 0.996078431372549, 0.996078431372549, 1.0 ]
@@ -994,7 +1007,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 499.0, 336.5, 100.0, 21.5 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 487.0, 189.0, 80.0, 20.0 ],
+					"presentation_rect" : [ 517.0, 189.0, 80.0, 20.0 ],
 					"proportion" : 0.5
 				}
 
@@ -1149,6 +1162,13 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-29", 0 ],
+					"source" : [ "obj-36", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-45", 0 ],
 					"source" : [ "obj-48", 1 ]
 				}
@@ -1211,8 +1231,8 @@
  ],
 		"dependency_cache" : [ 			{
 				"name" : "warning.png",
-				"bootpath" : "~/Documents/Max 8/Projects/HULTI-GENv2/PsychoBox/media",
-				"patcherrelativepath" : "../media",
+				"bootpath" : "~/Documents/Max 8/Projects/HULTI-GENv2/HULTI-GENv2/images",
+				"patcherrelativepath" : "../images",
 				"type" : "PNG",
 				"implicit" : 1
 			}
