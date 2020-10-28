@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 1134.0, 352.0, 1213.0, 869.0 ],
+		"rect" : [ 464.0, 411.0, 1213.0, 869.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -495,6 +495,13 @@
 			}
 , 			{
 				"box" : 				{
+					"bgcolor" : [ 0.2, 0.2, 0.2, 1 ],
+					"bgcolor2" : [ 0.2, 0.2, 0.2, 1 ],
+					"bgfillcolor_color" : [ 0.2, 0.2, 0.2, 1 ],
+					"bgfillcolor_color1" : [ 0.2, 0.2, 0.2, 1 ],
+					"bgfillcolor_color2" : [ 0.2, 0.2, 0.2, 1 ],
+					"bgfillcolor_type" : "gradient",
+					"gradient" : 1,
 					"id" : "obj-60",
 					"maxclass" : "message",
 					"numinlets" : 2,
@@ -802,7 +809,7 @@
 									"patching_rect" : [ 620.5, 397.0, 212.0, 35.0 ],
 									"saved_object_attributes" : 									{
 										"embed" : 0,
-										"name" : "8050-lockStates",
+										"name" : "7531-lockStates",
 										"parameter_enable" : 0,
 										"parameter_mappable" : 0,
 										"range" : 2,
@@ -1235,7 +1242,7 @@
 									"patching_rect" : [ 210.0, 397.0, 226.0, 35.0 ],
 									"saved_object_attributes" : 									{
 										"embed" : 0,
-										"name" : "8050-buttonStates",
+										"name" : "7531-buttonStates",
 										"parameter_enable" : 0,
 										"parameter_mappable" : 0,
 										"range" : 3,
@@ -2087,7 +2094,7 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-60", 0 ],
+					"destination" : [ "obj-57", 0 ],
 					"source" : [ "obj-24", 0 ]
 				}
 
@@ -2195,6 +2202,13 @@
 					"midpoints" : [ 729.0, 357.0, 288.833333333333258, 357.0 ],
 					"order" : 1,
 					"source" : [ "obj-5", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-60", 0 ],
+					"source" : [ "obj-57", 0 ]
 				}
 
 			}
