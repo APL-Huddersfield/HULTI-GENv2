@@ -1,6 +1,6 @@
 {
     "slug" : "moc_twoAFC",
-    "name" : "Randomised 2AFC",
+    "name" : "2AFC",
     "tag" : "psychophysical",
     "parameters" : [
         "repetitions",

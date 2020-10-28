@@ -1,10 +1,12 @@
 {
     "slug" : "moc_yesNo",
-    "name" : "Randomised Yes-No",
+    "name" : "Yes-No",
     "tag" : "psychophysical",
     "parameters" : [
         "repetitions",
         "objective",
+        "positiveLabel",
+        "negativeLabel",
         "beforePresentationDelay",
         "betweenStimuliDelay",
         "afterPresentationDelay"

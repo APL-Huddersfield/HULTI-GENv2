@@ -1,6 +1,6 @@
 {
     "slug" : "moc_abx",
-    "name" : "Randomised ABX",
+    "name" : "ABX",
     "tag" : "psychophysical",
     "parameters" : [
         "repetitions",
