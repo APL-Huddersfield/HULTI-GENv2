@@ -1,0 +1,26 @@
+{
+    "slug" : "sdt_yesNo",
+    "name" : "SDT Yes-No",
+    "tag" : "psychophysical",
+    "parameters" : [
+        "repetitions",
+        "objective",
+        "positiveLabel",
+        "negativeLabel",
+        "beforePresentationDelay",
+        "betweenStimuliDelay",
+        "afterPresentationDelay"
+    ],
+    "requiresReference" : true,
+    "groupingMode" : "sgft",
+    "ordering" : {
+        "combinationsPerRepetition" : 1
+    },
+    "interface" : {
+        "window" : {
+            "maxwidth" : 1180,
+            "maxheight" : 680
+        }
+    },
+    "paramsUI" : "sdt_yesNo"
+}
