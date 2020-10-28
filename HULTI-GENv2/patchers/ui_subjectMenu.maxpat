@@ -134,15 +134,15 @@
 				"box" : 				{
 					"fontsize" : 24.0,
 					"id" : "obj-23",
-					"linecount" : 2,
+					"linecount" : 3,
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 21.0, 212.0, 291.0, 60.0 ],
+					"patching_rect" : [ 21.0, 212.0, 291.0, 87.0 ],
 					"presentation" : 1,
 					"presentation_linecount" : 2,
 					"presentation_rect" : [ 530.0, 545.0, 410.0, 60.0 ],
-					"text" : "Gather all results for this test into a single file"
+					"text" : "Gather all subjects' results for this test into a single CSV file"
 				}
 
 			}
