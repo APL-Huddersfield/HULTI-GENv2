@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 34.0, 79.0, 576.0, 795.0 ],
+		"rect" : [ 927.0, 132.0, 576.0, 856.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -54,11 +54,11 @@
 				"box" : 				{
 					"comment" : "",
 					"id" : "obj-9",
-					"index" : 0,
+					"index" : 1,
 					"maxclass" : "outlet",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 150.0, 613.0, 30.0, 30.0 ]
+					"patching_rect" : [ 150.0, 687.0, 30.0, 30.0 ]
 				}
 
 			}
@@ -66,7 +66,7 @@
 				"box" : 				{
 					"comment" : "",
 					"id" : "obj-1",
-					"index" : 0,
+					"index" : 1,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
@@ -83,7 +83,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 26.0, 681.0, 107.0, 35.0 ],
+					"patching_rect" : [ 26.0, 755.0, 107.0, 35.0 ],
 					"text" : "presentation_rect 0. 0. 127. $1"
 				}
 
@@ -95,8 +95,8 @@
 					"numinlets" : 3,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 26.0, 646.0, 90.0, 22.0 ],
-					"text" : "clip 400 1000 0"
+					"patching_rect" : [ 26.0, 720.0, 90.0, 22.0 ],
+					"text" : "clip 561 1000 0"
 				}
 
 			}
@@ -107,7 +107,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 26.0, 613.0, 95.0, 22.0 ],
+					"patching_rect" : [ 26.0, 687.0, 95.0, 22.0 ],
 					"text" : "route totalheight"
 				}
 
@@ -134,9 +134,9 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 150.0, 75.0, 127.0, 502.0 ],
+					"patching_rect" : [ 150.0, 75.0, 127.0, 561.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 0.0, 0.0, 127.0, 400.0 ],
+					"presentation_rect" : [ 0.0, 0.0, 127.0, 561.0 ],
 					"varname" : "accordion"
 				}
 
@@ -193,16 +193,7 @@
 				}
 
 			}
- ],
-		"dependency_cache" : [ 			{
-				"name" : "configSessionsSidemenu4.js",
-				"bootpath" : "~/Documents/Max 8/Projects/HULTI-GENv2/PsychoBox/code",
-				"patcherrelativepath" : "../code",
-				"type" : "TEXT",
-				"implicit" : 1
-			}
- ],
-		"autosave" : 0
+ ]
 	}
 
 }

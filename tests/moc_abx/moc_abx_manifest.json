@@ -1,6 +1,6 @@
 {
     "slug" : "moc_abx",
-    "name" : "ABX",
+    "name" : "MoC ABX",
     "tag" : "psychophysical",
     "parameters" : [
         "repetitions",
@@ -9,6 +9,7 @@
         "betweenStimuliDelay",
         "afterPresentationDelay"
     ],
+    "poolEndLabels" : "<<< Reference",
     "requiresReference" : true,
     "groupingMode" : "sgft",
     "ordering" : {

@@ -9,6 +9,7 @@
         "betweenStimuliDelay",
         "afterPresentationDelay"
     ],
+    "poolEndLabels" : "<<< Reference",
     "requiresReference" : true,
     "groupingMode" : "sgft",
     "ordering" : {

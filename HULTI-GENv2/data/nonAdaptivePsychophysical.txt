@@ -3,3 +3,4 @@
 2, moc_yesNo;
 3, sdt_twoAFC;
 4, sdt_abx;
+5, sdt_yesNo;

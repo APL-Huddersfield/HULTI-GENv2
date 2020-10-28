@@ -9,7 +9,7 @@
         "betweenStimuliDelay",
         "afterPresentationDelay"
     ],
-    "parametersMenu" : "sdt",
+    "poolEndLabels" : "<<< Reference",
     "requiresReference" : true,
     "groupingMode" : "sgft",
     "ordering" : {

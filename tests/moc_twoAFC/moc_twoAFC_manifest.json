@@ -1,6 +1,6 @@
 {
     "slug" : "moc_twoAFC",
-    "name" : "2AFC",
+    "name" : "MoC 2AFC",
     "tag" : "psychophysical",
     "parameters" : [
         "repetitions",
@@ -9,7 +9,7 @@
         "betweenStimuliDelay",
         "afterPresentationDelay"
     ],
-    "parametersMenu" : "sdt",
+    "poolEndLabels" : "<<< Reference",
     "requiresReference" : true,
     "groupingMode" : "sgft",
     "ordering" : {

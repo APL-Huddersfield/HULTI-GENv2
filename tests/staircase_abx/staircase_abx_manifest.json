@@ -13,7 +13,7 @@
         "betweenStimuliDelay",
         "afterPresentationDelay"
     ],
-    "parametersMenu" : "staircase",
+    "poolEndLabels" : ["<<< Reference", "<<< Maximum difference"],
     "requiresReference" : true,
     "groupingMode" : "sgit",
     "ordering" : {
