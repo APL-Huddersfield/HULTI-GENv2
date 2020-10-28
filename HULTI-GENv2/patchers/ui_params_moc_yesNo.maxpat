@@ -67,13 +67,14 @@
 					"fontname" : "Arial",
 					"fontsize" : 14.0,
 					"id" : "obj-24",
+					"linecount" : 4,
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 1317.5, 550.0, 87.0, 22.0 ],
+					"patching_rect" : [ 1317.5, 550.0, 87.0, 69.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 330.0, 405.0, 124.0, 22.0 ],
-					"text" : "\"No\" button"
+					"presentation_rect" : [ 330.0, 405.0, 216.0, 22.0 ],
+					"text" : "\"No\" / negative response button"
 				}
 
 			}
@@ -83,13 +84,14 @@
 					"fontname" : "Arial",
 					"fontsize" : 14.0,
 					"id" : "obj-19",
+					"linecount" : 4,
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 1162.5, 550.0, 93.0, 22.0 ],
+					"patching_rect" : [ 1162.5, 550.0, 93.0, 69.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 330.0, 355.0, 124.0, 22.0 ],
-					"text" : "\"Yes\" button"
+					"presentation_rect" : [ 330.0, 355.0, 216.0, 22.0 ],
+					"text" : "\"Yes\" / positive response button"
 				}
 
 			}
@@ -102,7 +104,6 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 753.75, 234.0, 260.0, 76.0 ],
-					"presentation_linecount" : 4,
 					"text" : "repetitions 1, stimuli 1, groups 1, sessions 1, beforePresentationDelay 250, afterPresentationDelay 250, positiveLabel Yes, negativeLabel No, objective Did the stimulus contain the signal?"
 				}
 
@@ -151,7 +152,7 @@
 					}
 ,
 					"text" : "autopattr",
-					"varname" : "u951005137"
+					"varname" : "u372044365"
 				}
 
 			}
