@@ -2,8 +2,8 @@
 	"name" : "HULTI-GENv2",
 	"version" : 1,
 	"creationdate" : 3666872002,
-	"modificationdate" : 3686646884,
-	"viewrect" : [ 1459.0, 297.0, 461.0, 826.0 ],
+	"modificationdate" : 3686766472,
+	"viewrect" : [ 1436.0, 118.0, 461.0, 826.0 ],
 	"autoorganize" : 0,
 	"hideprojectwindow" : 1,
 	"showdependencies" : 1,
@@ -126,7 +126,12 @@
 				"local" : 1
 			}
 ,
-			"ui_genericGradingInterface.maxpat" : 			{
+			"ui_filelist_psychophysical.maxpat" : 			{
+				"kind" : "patcher",
+				"local" : 1
+			}
+,
+			"ui_params_moc_twoAFC.maxpat" : 			{
 				"kind" : "patcher",
 				"local" : 1
 			}
@@ -186,22 +191,17 @@
 				"local" : 1
 			}
 ,
+			"ui_genericGradingInterface.maxpat" : 			{
+				"kind" : "patcher",
+				"local" : 1
+			}
+,
 			"player_parallel.maxpat" : 			{
 				"kind" : "patcher",
 				"local" : 1
 			}
 ,
 			"ui_filelist_pool_withDependencies.maxpat" : 			{
-				"kind" : "patcher",
-				"local" : 1
-			}
-,
-			"ui_params_moc_twoAFC.maxpat" : 			{
-				"kind" : "patcher",
-				"local" : 1
-			}
-,
-			"ui_filelist_psychophysical.maxpat" : 			{
 				"kind" : "patcher",
 				"local" : 1
 			}
@@ -628,7 +628,22 @@
 ,
 			"ui_params_moc_yesNo.maxpat" : 			{
 				"kind" : "patcher",
-				"local" : 1
+				"local" : 1,
+				"singleton" : 				{
+					"bootpath" : "~/Documents/Max 8/Projects/HULTI-GENv2/HULTI-GENv2/patchers",
+					"projectrelativepath" : "./patchers"
+				}
+
+			}
+,
+			"ui_params_sdt_yesNo.maxpat" : 			{
+				"kind" : "patcher",
+				"local" : 1,
+				"singleton" : 				{
+					"bootpath" : "~/Documents/Max 8/Projects/HULTI-GENv2/HULTI-GENv2/patchers",
+					"projectrelativepath" : "./patchers"
+				}
+
 			}
 
 		}
