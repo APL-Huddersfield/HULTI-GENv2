@@ -1,0 +1,29 @@
+{
+    "slug" : "staircase_yesNo",
+    "name" : "Staircase Yes-No",
+    "tag" : "psychophysical",
+    "parameters" : [
+        "objective",
+        "initialStep",
+        "initialStepSize",
+        "steppingRule",
+        "maxReversals",
+        "maxTrials",
+        "beforePresentationDelay",
+        "betweenStimuliDelay",
+        "afterPresentationDelay"
+    ],
+    "poolEndLabels" : ["<<< Lowest intensity", "<<< Highest intensity"],
+    "requiresReference" : true,
+    "groupingMode" : "sgit",
+    "ordering" : {
+        "omitReferenceAsTestStimulus" : true
+    },
+    "interface" : {
+        "window" : {
+            "maxwidth" : 1180,
+            "maxheight" : 680
+        }
+    },
+    "paramsUI" : "staircase"
+}

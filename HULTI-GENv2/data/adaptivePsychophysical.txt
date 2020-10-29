@@ -1,2 +1,3 @@
 0, staircase_twoAFC;
 1, staircase_abx;
+2, staircase_yesNo;
