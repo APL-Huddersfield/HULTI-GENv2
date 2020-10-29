@@ -39,15 +39,18 @@ Each test method available in HULTI-GEN is grouped by \emph{Procedure} and \emph
 		& ITU-T P.800 Comparison Category Rating (CCR)\\
 		& 9-Point Hedonic Scale\\
 		\hline
-		\multirow{4}*{Non-Adaptive Psychophysical}
+		\multirow{6}*{Non-Adaptive Psychophysical}
 		& Two-Alternative Forced-Choice (2AFC)\\
 		& ABX\\
+		& Yes-No\\
 		& Signal Detection Theory 2AFC\\
 		& Signal Detection Theory ABX\\
+		& Signal Detection Theory Yes-No\\
 		\hline
-		\multirow{2}*{Adaptive Psychophysical}
+		\multirow{3}*{Adaptive Psychophysical}
 		& Staircase 2AFC\\
 		& Staircase ABX\\
+		& Staircase Yes-No\\
 		\hline
 	\end{tabularx}
 \end{center}
@@ -91,7 +94,7 @@ By default the interface is set to follow the recommendations for the chosen tas
 \subsection{Step 4 - Load stimuli}
 Now that the test parameters have been set, it is now time load stimuli. First, the stimuli need to be loaded into a \emph{pool}, which is collection of all the stimuli used throughout the entire test.
 \newline\newline
-\textit{\textbf{Warning:} Due to the method of how Max locates files and dependencies, stimulus files \textbf{must} be placed in the HULTI-GEN folder or next to the application file, otherwise Max will not be able to find and load your stimuli files}.
+\textit{\textbf{Warning:} Due to the method of how Max locates files and dependencies, stimulus files \textbf{must} be placed in the HULTI-GEN folder or next to the application file (HULTI-GENv2.maxproj) \textbf{before running HULTI-GEN}, otherwise Max will not be able to find and load your stimuli files}.
 
 \begin{figure}[ht]
 	\centering

@@ -11,6 +11,7 @@
         "betweenStimuliDelay",
         "afterPresentationDelay"
     ],
+    "poolEndLabels" : "<<< Catch",
     "requiresReference" : true,
     "groupingMode" : "sgft",
     "ordering" : {
