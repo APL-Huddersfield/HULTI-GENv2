@@ -1,8 +1,14 @@
 # HULTI-GEN
 A free, Max 8 based, universal listening test software package.
 
+![HULTI-GENv2](HULTI-GENv2.jpg)
+
 ## Version
-2.0.0
+2.0.2
+
+## Authors
+Dale Johnson and Hyunkook Lee.
+Contact: d.s.johnson2@hud.ac.uk, h.lee@hud.ac.uk
 
 ## Software requirements
 You will require a copy of Max 8 to run HULTI-GEN, however you do not need a Max license.
@@ -17,13 +23,9 @@ For the binauralisation functions to work, you will need to place some extra DLL
 ## Usage
 To run HULTI-GEN, open the HULTI-GENv2.maxproj file in the HULTI-GENv2 folder. See UserGuide.pdf for full usage details.
 
-## Authors
-Dale Johnson and Hyunkook Lee.
-Contact: d.s.johnson2@hud.ac.uk, h.lee@hud.ac.uk
-
 ## License
-This repo is licensed under the MIT license.
+The code in this repository is licensed under the MIT license.
 See LICENSE.md
 
 ## Acknowlegdements
-Thank you to Chris Gribben for creating the original version of HULTI-GEN, and thank you to Jaakko Pasanen (github: jaakkopasanen) for creating the AutoEQ headphone equalisation database.
+Thank you to Chris Gribben for creating the original version of HULTI-GEN, and thank you to Jaakko Pasanen (github: jaakkopasanen) for creating the AutoEQ headphone equalisation database used in this project.
