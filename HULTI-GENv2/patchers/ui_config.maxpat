@@ -2877,7 +2877,7 @@
 , 															{
 																"box" : 																{
 																	"coll_data" : 																	{
-																		"count" : 4,
+																		"count" : 6,
 																		"data" : [ 																			{
 																				"key" : 0,
 																				"value" : [ "moc_twoAFC" ]
@@ -2888,11 +2888,19 @@
 																			}
 , 																			{
 																				"key" : 2,
-																				"value" : [ "sdt_twoAFC" ]
+																				"value" : [ "moc_yesNo" ]
 																			}
 , 																			{
 																				"key" : 3,
+																				"value" : [ "sdt_twoAFC" ]
+																			}
+, 																			{
+																				"key" : 4,
 																				"value" : [ "sdt_abx" ]
+																			}
+, 																			{
+																				"key" : 5,
+																				"value" : [ "sdt_yesNo" ]
 																			}
  ]
 																	}
@@ -3059,7 +3067,7 @@
 , 															{
 																"box" : 																{
 																	"coll_data" : 																	{
-																		"count" : 4,
+																		"count" : 6,
 																		"data" : [ 																			{
 																				"key" : 0,
 																				"value" : [ "moc_twoAFC" ]
@@ -3070,11 +3078,19 @@
 																			}
 , 																			{
 																				"key" : 2,
-																				"value" : [ "sdt_twoAFC" ]
+																				"value" : [ "moc_yesNo" ]
 																			}
 , 																			{
 																				"key" : 3,
+																				"value" : [ "sdt_twoAFC" ]
+																			}
+, 																			{
+																				"key" : 4,
 																				"value" : [ "sdt_abx" ]
+																			}
+, 																			{
+																				"key" : 5,
+																				"value" : [ "sdt_yesNo" ]
 																			}
  ]
 																	}
@@ -6316,7 +6332,7 @@
 , 															{
 																"box" : 																{
 																	"coll_data" : 																	{
-																		"count" : 4,
+																		"count" : 6,
 																		"data" : [ 																			{
 																				"key" : 0,
 																				"value" : [ "moc_twoAFC" ]
@@ -6327,11 +6343,19 @@
 																			}
 , 																			{
 																				"key" : 2,
-																				"value" : [ "sdt_twoAFC" ]
+																				"value" : [ "moc_yesNo" ]
 																			}
 , 																			{
 																				"key" : 3,
+																				"value" : [ "sdt_twoAFC" ]
+																			}
+, 																			{
+																				"key" : 4,
 																				"value" : [ "sdt_abx" ]
+																			}
+, 																			{
+																				"key" : 5,
+																				"value" : [ "sdt_yesNo" ]
 																			}
  ]
 																	}
@@ -6537,7 +6561,7 @@
 , 															{
 																"box" : 																{
 																	"coll_data" : 																	{
-																		"count" : 4,
+																		"count" : 6,
 																		"data" : [ 																			{
 																				"key" : 0,
 																				"value" : [ "moc_twoAFC" ]
@@ -6548,11 +6572,19 @@
 																			}
 , 																			{
 																				"key" : 2,
-																				"value" : [ "sdt_twoAFC" ]
+																				"value" : [ "moc_yesNo" ]
 																			}
 , 																			{
 																				"key" : 3,
+																				"value" : [ "sdt_twoAFC" ]
+																			}
+, 																			{
+																				"key" : 4,
 																				"value" : [ "sdt_abx" ]
+																			}
+, 																			{
+																				"key" : 5,
+																				"value" : [ "sdt_yesNo" ]
 																			}
  ]
 																	}
@@ -10273,7 +10305,7 @@
 																	"numinlets" : 1,
 																	"numoutlets" : 1,
 																	"outlettype" : [ "" ],
-																	"patching_rect" : [ 23.5, 716.0, 100.0, 22.0 ],
+																	"patching_rect" : [ 23.5, 716.0, 112.0, 22.0 ],
 																	"text" : "v #0-paramsDirty"
 																}
 
@@ -10297,7 +10329,7 @@
 																	"numinlets" : 1,
 																	"numoutlets" : 1,
 																	"outlettype" : [ "" ],
-																	"patching_rect" : [ 23.5, 599.0, 93.0, 22.0 ],
+																	"patching_rect" : [ 23.5, 599.0, 106.0, 22.0 ],
 																	"text" : "v #0-paramsSet"
 																}
 
@@ -10333,7 +10365,7 @@
 																	"numinlets" : 1,
 																	"numoutlets" : 1,
 																	"outlettype" : [ "" ],
-																	"patching_rect" : [ 270.166666666666856, 555.0, 147.0, 22.0 ],
+																	"patching_rect" : [ 270.166666666666856, 555.0, 160.0, 22.0 ],
 																	"text" : "v #0-testSetupNumStimuli"
 																}
 
@@ -10369,7 +10401,7 @@
 																	"numinlets" : 1,
 																	"numoutlets" : 1,
 																	"outlettype" : [ "" ],
-																	"patching_rect" : [ 175.833333333333371, 403.0, 151.0, 22.0 ],
+																	"patching_rect" : [ 175.833333333333371, 403.0, 163.0, 22.0 ],
 																	"text" : "v #0-testSetupNumGroups"
 																}
 
@@ -10393,7 +10425,7 @@
 																	"numinlets" : 1,
 																	"numoutlets" : 1,
 																	"outlettype" : [ "" ],
-																	"patching_rect" : [ 81.5, 250.0, 160.0, 22.0 ],
+																	"patching_rect" : [ 81.5, 250.0, 172.0, 22.0 ],
 																	"text" : "v #0-testSetupNumSessions"
 																}
 
@@ -10417,7 +10449,7 @@
 																	"numinlets" : 1,
 																	"numoutlets" : 1,
 																	"outlettype" : [ "" ],
-																	"patching_rect" : [ 270.166666666666856, 462.0, 147.0, 22.0 ],
+																	"patching_rect" : [ 270.166666666666856, 462.0, 160.0, 22.0 ],
 																	"text" : "v #0-testSetupNumStimuli"
 																}
 
@@ -10459,7 +10491,7 @@
 																	"numinlets" : 1,
 																	"numoutlets" : 1,
 																	"outlettype" : [ "" ],
-																	"patching_rect" : [ 175.833333333333371, 309.0, 151.0, 22.0 ],
+																	"patching_rect" : [ 175.833333333333371, 309.0, 163.0, 22.0 ],
 																	"text" : "v #0-testSetupNumGroups"
 																}
 
@@ -10471,7 +10503,7 @@
 																	"numinlets" : 1,
 																	"numoutlets" : 1,
 																	"outlettype" : [ "" ],
-																	"patching_rect" : [ 81.5, 158.0, 160.0, 22.0 ],
+																	"patching_rect" : [ 81.5, 158.0, 172.0, 22.0 ],
 																	"text" : "v #0-testSetupNumSessions"
 																}
 
@@ -11453,10 +11485,10 @@
 																	"id" : "obj-41",
 																	"maxclass" : "newobj",
 																	"numinlets" : 2,
-																	"numoutlets" : 1,
-																	"outlettype" : [ "" ],
-																	"patching_rect" : [ 306.0, 449.0, 37.0, 22.0 ],
-																	"text" : "join 2"
+																	"numoutlets" : 2,
+																	"outlettype" : [ "", "" ],
+																	"patching_rect" : [ 306.0, 449.0, 39.0, 22.0 ],
+																	"text" : "zl.join"
 																}
 
 															}
@@ -11753,7 +11785,7 @@
 , 															{
 																"patchline" : 																{
 																	"destination" : [ "obj-41", 1 ],
-																	"midpoints" : [ 598.833333333333371, 429.0, 333.5, 429.0 ],
+																	"midpoints" : [ 598.833333333333371, 429.0, 335.5, 429.0 ],
 																	"source" : [ "obj-38", 1 ]
 																}
 
@@ -12528,189 +12560,189 @@
  ],
 		"dependency_cache" : [ 			{
 				"name" : "ui_config_stimulusassign.maxpat",
-				"bootpath" : "~/Documents/Max 8/Projects/PsychoBox/HULTI-GENv2/patchers",
+				"bootpath" : "~/Documents/Max 8/Projects/HULTI-GENv2/HULTI-GENv2/patchers",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "ui_filelist_pool_noDependencies.maxpat",
-				"bootpath" : "~/Documents/Max 8/Projects/PsychoBox/HULTI-GENv2/patchers",
+				"bootpath" : "~/Documents/Max 8/Projects/HULTI-GENv2/HULTI-GENv2/patchers",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "ui_filelist.maxpat",
-				"bootpath" : "~/Documents/Max 8/Projects/PsychoBox/HULTI-GENv2/patchers",
+				"bootpath" : "~/Documents/Max 8/Projects/HULTI-GENv2/HULTI-GENv2/patchers",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "ui_filelist_entry.maxpat",
-				"bootpath" : "~/Documents/Max 8/Projects/PsychoBox/HULTI-GENv2/patchers",
+				"bootpath" : "~/Documents/Max 8/Projects/HULTI-GENv2/HULTI-GENv2/patchers",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "filelistManager.js",
-				"bootpath" : "~/Documents/Max 8/Projects/PsychoBox/HULTI-GENv2/code",
+				"bootpath" : "~/Documents/Max 8/Projects/HULTI-GENv2/HULTI-GENv2/code",
 				"patcherrelativepath" : "../code",
 				"type" : "TEXT",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "ui_filelist_itur.maxpat",
-				"bootpath" : "~/Documents/Max 8/Projects/PsychoBox/HULTI-GENv2/patchers",
+				"bootpath" : "~/Documents/Max 8/Projects/HULTI-GENv2/HULTI-GENv2/patchers",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "ui_filelist_multicheckbox.maxpat",
-				"bootpath" : "~/Documents/Max 8/Projects/PsychoBox/HULTI-GENv2/patchers",
+				"bootpath" : "~/Documents/Max 8/Projects/HULTI-GENv2/HULTI-GENv2/patchers",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "ui_filelist_entry_multicheckbox.maxpat",
-				"bootpath" : "~/Documents/Max 8/Projects/PsychoBox/HULTI-GENv2/patchers",
+				"bootpath" : "~/Documents/Max 8/Projects/HULTI-GENv2/HULTI-GENv2/patchers",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "ui_checkbox.maxpat",
-				"bootpath" : "~/Documents/Max 8/Projects/PsychoBox/HULTI-GENv2/patchers",
+				"bootpath" : "~/Documents/Max 8/Projects/HULTI-GENv2/HULTI-GENv2/patchers",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "filelistManagerMultiCheckbox.js",
-				"bootpath" : "~/Documents/Max 8/Projects/PsychoBox/HULTI-GENv2/code",
+				"bootpath" : "~/Documents/Max 8/Projects/HULTI-GENv2/HULTI-GENv2/code",
 				"patcherrelativepath" : "../code",
 				"type" : "TEXT",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "warning.png",
-				"bootpath" : "~/Documents/Max 8/Projects/PsychoBox/HULTI-GENv2/images",
+				"bootpath" : "~/Documents/Max 8/Projects/HULTI-GENv2/HULTI-GENv2/images",
 				"patcherrelativepath" : "../images",
 				"type" : "PNG",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "ui_accordion.maxpat",
-				"bootpath" : "~/Documents/Max 8/Projects/PsychoBox/HULTI-GENv2/patchers",
+				"bootpath" : "~/Documents/Max 8/Projects/HULTI-GENv2/HULTI-GENv2/patchers",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "configSessionsSidemenu4.js",
-				"bootpath" : "~/Documents/Max 8/Projects/PsychoBox/HULTI-GENv2/code",
+				"bootpath" : "~/Documents/Max 8/Projects/HULTI-GENv2/HULTI-GENv2/code",
 				"patcherrelativepath" : "../code",
 				"type" : "TEXT",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "be_config_getDependencies.maxpat",
-				"bootpath" : "~/Documents/Max 8/Projects/PsychoBox/HULTI-GENv2/patchers",
+				"bootpath" : "~/Documents/Max 8/Projects/HULTI-GENv2/HULTI-GENv2/patchers",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "ui_config_stimulusPool.maxpat",
-				"bootpath" : "~/Documents/Max 8/Projects/PsychoBox/HULTI-GENv2/patchers",
+				"bootpath" : "~/Documents/Max 8/Projects/HULTI-GENv2/HULTI-GENv2/patchers",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "ui_filelist_pool.maxpat",
-				"bootpath" : "~/Documents/Max 8/Projects/PsychoBox/HULTI-GENv2/patchers",
+				"bootpath" : "~/Documents/Max 8/Projects/HULTI-GENv2/HULTI-GENv2/patchers",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "ui_config_testSetup.maxpat",
-				"bootpath" : "~/Documents/Max 8/Projects/PsychoBox/HULTI-GENv2/patchers",
+				"bootpath" : "~/Documents/Max 8/Projects/HULTI-GENv2/HULTI-GENv2/patchers",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "ui_params_grading.maxpat",
-				"bootpath" : "~/Documents/Max 8/Projects/PsychoBox/HULTI-GENv2/patchers",
+				"bootpath" : "~/Documents/Max 8/Projects/HULTI-GENv2/HULTI-GENv2/patchers",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "addRemoveSessions.js",
-				"bootpath" : "~/Documents/Max 8/Projects/PsychoBox/HULTI-GENv2/code",
+				"bootpath" : "~/Documents/Max 8/Projects/HULTI-GENv2/HULTI-GENv2/code",
 				"patcherrelativepath" : "../code",
 				"type" : "TEXT",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "gradingTests.txt",
-				"bootpath" : "~/Documents/Max 8/Projects/PsychoBox/HULTI-GENv2/data",
+				"bootpath" : "~/Documents/Max 8/Projects/HULTI-GENv2/HULTI-GENv2/data",
 				"patcherrelativepath" : "../data",
 				"type" : "TEXT",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "nonAdaptivePsychophysical.txt",
-				"bootpath" : "~/Documents/Max 8/Projects/PsychoBox/HULTI-GENv2/data",
+				"bootpath" : "~/Documents/Max 8/Projects/HULTI-GENv2/HULTI-GENv2/data",
 				"patcherrelativepath" : "../data",
 				"type" : "TEXT",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "adaptivePsychophysical.txt",
-				"bootpath" : "~/Documents/Max 8/Projects/PsychoBox/HULTI-GENv2/data",
+				"bootpath" : "~/Documents/Max 8/Projects/HULTI-GENv2/HULTI-GENv2/data",
 				"patcherrelativepath" : "../data",
 				"type" : "TEXT",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "ui_config_interfaceCustomisation.maxpat",
-				"bootpath" : "~/Documents/Max 8/Projects/PsychoBox/HULTI-GENv2/patchers",
+				"bootpath" : "~/Documents/Max 8/Projects/HULTI-GENv2/HULTI-GENv2/patchers",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "multicomp_subinterface.maxpat",
-				"bootpath" : "~/Documents/Max 8/Projects/PsychoBox/HULTI-GENv2/patchers",
+				"bootpath" : "~/Documents/Max 8/Projects/HULTI-GENv2/HULTI-GENv2/patchers",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "rating_sliderbank.maxpat",
-				"bootpath" : "~/Documents/Max 8/Projects/PsychoBox/HULTI-GENv2/patchers",
+				"bootpath" : "~/Documents/Max 8/Projects/HULTI-GENv2/HULTI-GENv2/patchers",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "rating_slider.maxpat",
-				"bootpath" : "~/Documents/Max 8/Projects/PsychoBox/HULTI-GENv2/patchers",
+				"bootpath" : "~/Documents/Max 8/Projects/HULTI-GENv2/HULTI-GENv2/patchers",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "ui_config_chooseTest.maxpat",
-				"bootpath" : "~/Documents/Max 8/Projects/PsychoBox/HULTI-GENv2/patchers",
+				"bootpath" : "~/Documents/Max 8/Projects/HULTI-GENv2/HULTI-GENv2/patchers",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
