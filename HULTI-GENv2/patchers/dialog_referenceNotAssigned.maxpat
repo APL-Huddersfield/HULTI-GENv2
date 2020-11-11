@@ -621,7 +621,7 @@
 					"presentation" : 1,
 					"presentation_linecount" : 2,
 					"presentation_rect" : [ 80.0, 43.0, 283.0, 33.0 ],
-					"text" : "The cofiguration cannot be completed untll a stimulus in group has been marked as \"Ref.\""
+					"text" : "The configuration cannot be completed untll a stimulus in group has been marked as \"Ref.\""
 				}
 
 			}
