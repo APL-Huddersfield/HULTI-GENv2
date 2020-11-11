@@ -1,5 +1,12 @@
 # Changelog
 
+## 2.0.3 (2020-11-11)
+
+### Bug Fixes
+
+* Fixes grading test stimulus incorrect order bug that occured in specific configurations.
+* Fixes Yes-No button labelling bug.
+
 ## 2.0.2 (2020-10-29)
 
 ### What's new
