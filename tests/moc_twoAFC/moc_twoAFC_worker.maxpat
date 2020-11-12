@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 996.0, 645.0, 1524.0, 615.0 ],
+		"rect" : [ 322.0, 222.0, 1524.0, 615.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -442,7 +442,7 @@
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ 176.0, 127.0, 640.0, 480.0 ],
+						"rect" : [ 104.0, 606.0, 640.0, 480.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -726,7 +726,7 @@
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ 933.0, 299.0, 1002.0, 774.0 ],
+						"rect" : [ 884.0, 299.0, 1002.0, 774.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -754,6 +754,7 @@
 						"style" : "",
 						"subpatcher_template" : "",
 						"assistshowspatchername" : 0,
+						"visible" : 1,
 						"boxes" : [ 							{
 								"box" : 								{
 									"id" : "obj-9",
@@ -810,7 +811,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 0,
 									"patching_rect" : [ 383.0, 633.0, 125.0, 47.0 ],
-									"text" : "When order is 0:\nA = 0 = Test\nB = 1 = Reference"
+									"text" : "When order is 0:\nA = 0 = Comparison\nB = 1 = Standard"
 								}
 
 							}
