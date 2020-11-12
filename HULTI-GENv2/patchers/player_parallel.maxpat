@@ -45,7 +45,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 683.0, 708.0, 39.0, 22.0 ],
+					"patching_rect" : [ 755.5, 708.0, 39.0, 22.0 ],
 					"text" : "ready"
 				}
 
@@ -54,11 +54,11 @@
 				"box" : 				{
 					"comment" : "",
 					"id" : "obj-3",
-					"index" : 0,
+					"index" : 2,
 					"maxclass" : "outlet",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 683.0, 758.0, 30.0, 30.0 ]
+					"patching_rect" : [ 755.5, 758.0, 30.0, 30.0 ]
 				}
 
 			}
@@ -93,7 +93,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 3,
 					"outlettype" : [ "bang", "bang", "int" ],
-					"patching_rect" : [ 736.0, 104.0, 41.0, 22.0 ],
+					"patching_rect" : [ 736.0, 104.0, 58.0, 22.0 ],
 					"text" : "uzi 24"
 				}
 
@@ -102,7 +102,7 @@
 				"box" : 				{
 					"comment" : "",
 					"id" : "obj-382",
-					"index" : 0,
+					"index" : 1,
 					"maxclass" : "outlet",
 					"numinlets" : 1,
 					"numoutlets" : 0,
@@ -500,11 +500,11 @@
 				"box" : 				{
 					"comment" : "",
 					"id" : "obj-377",
-					"index" : 0,
+					"index" : 1,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
-					"outlettype" : [ "" ],
+					"outlettype" : [ "start" ],
 					"patching_rect" : [ 593.0, 23.0, 30.0, 30.0 ]
 				}
 
@@ -667,6 +667,7 @@
 , 							{
 								"box" : 								{
 									"id" : "obj-1",
+									"linecount" : 2,
 									"maxclass" : "newobj",
 									"numinlets" : 1,
 									"numoutlets" : 1,
@@ -994,7 +995,7 @@
 									"numinlets" : 5,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 300.0, 445.0, 342.0, 35.0 ],
+									"patching_rect" : [ 300.0, 445.0, 352.0, 35.0 ],
 									"text" : "sprintf newobject newobj @text \\\"mcs.play~ #0-files.%d %d\\\" @patching_position %d %d @fixwidth 1 @varname player%d"
 								}
 
@@ -1196,7 +1197,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "bang" ],
-					"patching_rect" : [ 736.0, 216.0, 110.0, 22.0 ],
+					"patching_rect" : [ 736.0, 216.0, 130.0, 22.0 ],
 					"saved_object_attributes" : 					{
 						"embed" : 0
 					}
@@ -1225,7 +1226,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "multichannelsignal", "bang" ],
-					"patching_rect" : [ 33.0, 288.0, 132.0, 22.0 ],
+					"patching_rect" : [ 33.0, 288.0, 152.0, 22.0 ],
 					"text" : "mcs.play~ #0-files.1 64",
 					"varname" : "player0"
 				}
@@ -1238,7 +1239,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "multichannelsignal", "bang" ],
-					"patching_rect" : [ 48.0, 318.0, 132.0, 22.0 ],
+					"patching_rect" : [ 48.0, 318.0, 152.0, 22.0 ],
 					"text" : "mcs.play~ #0-files.2 64",
 					"varname" : "player1"
 				}
@@ -1251,7 +1252,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "multichannelsignal", "bang" ],
-					"patching_rect" : [ 63.0, 348.0, 132.0, 22.0 ],
+					"patching_rect" : [ 63.0, 348.0, 152.0, 22.0 ],
 					"text" : "mcs.play~ #0-files.3 64",
 					"varname" : "player2"
 				}
@@ -1264,7 +1265,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "multichannelsignal", "bang" ],
-					"patching_rect" : [ 78.0, 378.0, 132.0, 22.0 ],
+					"patching_rect" : [ 78.0, 378.0, 152.0, 22.0 ],
 					"text" : "mcs.play~ #0-files.4 64",
 					"varname" : "player3"
 				}
@@ -1277,7 +1278,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "multichannelsignal", "bang" ],
-					"patching_rect" : [ 93.0, 408.0, 132.0, 22.0 ],
+					"patching_rect" : [ 93.0, 408.0, 152.0, 22.0 ],
 					"text" : "mcs.play~ #0-files.5 64",
 					"varname" : "player4"
 				}
@@ -1290,7 +1291,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "multichannelsignal", "bang" ],
-					"patching_rect" : [ 108.0, 438.0, 132.0, 22.0 ],
+					"patching_rect" : [ 108.0, 438.0, 152.0, 22.0 ],
 					"text" : "mcs.play~ #0-files.6 64",
 					"varname" : "player5"
 				}
@@ -1303,7 +1304,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "multichannelsignal", "bang" ],
-					"patching_rect" : [ 123.0, 468.0, 132.0, 22.0 ],
+					"patching_rect" : [ 123.0, 468.0, 152.0, 22.0 ],
 					"text" : "mcs.play~ #0-files.7 64",
 					"varname" : "player6"
 				}
@@ -1316,7 +1317,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "multichannelsignal", "bang" ],
-					"patching_rect" : [ 138.0, 498.0, 132.0, 22.0 ],
+					"patching_rect" : [ 138.0, 498.0, 152.0, 22.0 ],
 					"text" : "mcs.play~ #0-files.8 64",
 					"varname" : "player7"
 				}
@@ -1329,7 +1330,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "multichannelsignal", "bang" ],
-					"patching_rect" : [ 153.0, 528.0, 132.0, 22.0 ],
+					"patching_rect" : [ 153.0, 528.0, 152.0, 22.0 ],
 					"text" : "mcs.play~ #0-files.9 64",
 					"varname" : "player8"
 				}
@@ -1342,7 +1343,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "multichannelsignal", "bang" ],
-					"patching_rect" : [ 168.0, 558.0, 138.0, 22.0 ],
+					"patching_rect" : [ 168.0, 558.0, 158.0, 22.0 ],
 					"text" : "mcs.play~ #0-files.10 64",
 					"varname" : "player9"
 				}
@@ -1355,7 +1356,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "multichannelsignal", "bang" ],
-					"patching_rect" : [ 183.0, 588.0, 137.0, 22.0 ],
+					"patching_rect" : [ 183.0, 588.0, 157.0, 22.0 ],
 					"text" : "mcs.play~ #0-files.11 64",
 					"varname" : "player10"
 				}
@@ -1368,7 +1369,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "multichannelsignal", "bang" ],
-					"patching_rect" : [ 198.0, 618.0, 138.0, 22.0 ],
+					"patching_rect" : [ 198.0, 618.0, 158.0, 22.0 ],
 					"text" : "mcs.play~ #0-files.12 64",
 					"varname" : "player11"
 				}
@@ -1381,7 +1382,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "multichannelsignal", "bang" ],
-					"patching_rect" : [ 213.0, 288.0, 138.0, 22.0 ],
+					"patching_rect" : [ 213.0, 288.0, 158.0, 22.0 ],
 					"text" : "mcs.play~ #0-files.13 64",
 					"varname" : "player12"
 				}
@@ -1394,7 +1395,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "multichannelsignal", "bang" ],
-					"patching_rect" : [ 228.0, 318.0, 138.0, 22.0 ],
+					"patching_rect" : [ 228.0, 318.0, 158.0, 22.0 ],
 					"text" : "mcs.play~ #0-files.14 64",
 					"varname" : "player13"
 				}
@@ -1407,7 +1408,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "multichannelsignal", "bang" ],
-					"patching_rect" : [ 243.0, 348.0, 138.0, 22.0 ],
+					"patching_rect" : [ 243.0, 348.0, 158.0, 22.0 ],
 					"text" : "mcs.play~ #0-files.15 64",
 					"varname" : "player14"
 				}
@@ -1420,7 +1421,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "multichannelsignal", "bang" ],
-					"patching_rect" : [ 258.0, 378.0, 138.0, 22.0 ],
+					"patching_rect" : [ 258.0, 378.0, 158.0, 22.0 ],
 					"text" : "mcs.play~ #0-files.16 64",
 					"varname" : "player15"
 				}
@@ -1433,7 +1434,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "multichannelsignal", "bang" ],
-					"patching_rect" : [ 273.0, 408.0, 138.0, 22.0 ],
+					"patching_rect" : [ 273.0, 408.0, 158.0, 22.0 ],
 					"text" : "mcs.play~ #0-files.17 64",
 					"varname" : "player16"
 				}
@@ -1446,7 +1447,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "multichannelsignal", "bang" ],
-					"patching_rect" : [ 288.0, 438.0, 138.0, 22.0 ],
+					"patching_rect" : [ 288.0, 438.0, 158.0, 22.0 ],
 					"text" : "mcs.play~ #0-files.18 64",
 					"varname" : "player17"
 				}
@@ -1459,7 +1460,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "multichannelsignal", "bang" ],
-					"patching_rect" : [ 303.0, 468.0, 138.0, 22.0 ],
+					"patching_rect" : [ 303.0, 468.0, 158.0, 22.0 ],
 					"text" : "mcs.play~ #0-files.19 64",
 					"varname" : "player18"
 				}
@@ -1472,7 +1473,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "multichannelsignal", "bang" ],
-					"patching_rect" : [ 318.0, 498.0, 138.0, 22.0 ],
+					"patching_rect" : [ 318.0, 498.0, 158.0, 22.0 ],
 					"text" : "mcs.play~ #0-files.20 64",
 					"varname" : "player19"
 				}
@@ -1485,7 +1486,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "multichannelsignal", "bang" ],
-					"patching_rect" : [ 333.0, 528.0, 138.0, 22.0 ],
+					"patching_rect" : [ 333.0, 528.0, 158.0, 22.0 ],
 					"text" : "mcs.play~ #0-files.21 64",
 					"varname" : "player20"
 				}
@@ -1498,7 +1499,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "multichannelsignal", "bang" ],
-					"patching_rect" : [ 348.0, 558.0, 138.0, 22.0 ],
+					"patching_rect" : [ 348.0, 558.0, 158.0, 22.0 ],
 					"text" : "mcs.play~ #0-files.22 64",
 					"varname" : "player21"
 				}
@@ -1511,7 +1512,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "multichannelsignal", "bang" ],
-					"patching_rect" : [ 363.0, 588.0, 138.0, 22.0 ],
+					"patching_rect" : [ 363.0, 588.0, 158.0, 22.0 ],
 					"text" : "mcs.play~ #0-files.23 64",
 					"varname" : "player22"
 				}
@@ -1524,7 +1525,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "multichannelsignal", "bang" ],
-					"patching_rect" : [ 378.0, 618.0, 138.0, 22.0 ],
+					"patching_rect" : [ 378.0, 618.0, 158.0, 22.0 ],
 					"text" : "mcs.play~ #0-files.24 64",
 					"varname" : "player23"
 				}
@@ -1548,7 +1549,6 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-7", 0 ],
-					"midpoints" : [ 756.5, 147.0, 696.0, 147.0, 696.0, 693.0, 692.5, 693.0 ],
 					"source" : [ "obj-2", 1 ]
 				}
 
@@ -2389,9 +2389,7 @@
 				}
 
 			}
- ],
-		"dependency_cache" : [  ],
-		"autosave" : 0
+ ]
 	}
 
 }

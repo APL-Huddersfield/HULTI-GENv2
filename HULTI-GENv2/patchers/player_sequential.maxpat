@@ -40,6 +40,17 @@
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-1",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 580.0, 223.5, 51.0, 22.0 ],
+					"text" : "s debug"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-11",
 					"maxclass" : "newobj",
 					"numinlets" : 2,
@@ -105,7 +116,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 186.5, 267.0, 188.0, 22.0 ],
+					"patching_rect" : [ 186.5, 267.0, 195.0, 22.0 ],
 					"text" : "combine #0-files. 1 @triggers 1"
 				}
 
@@ -126,7 +137,7 @@
 				"box" : 				{
 					"comment" : "",
 					"id" : "obj-3",
-					"index" : 0,
+					"index" : 2,
 					"maxclass" : "outlet",
 					"numinlets" : 1,
 					"numoutlets" : 0,
@@ -174,7 +185,7 @@
 				"box" : 				{
 					"comment" : "",
 					"id" : "obj-382",
-					"index" : 0,
+					"index" : 1,
 					"maxclass" : "outlet",
 					"numinlets" : 1,
 					"numoutlets" : 0,
@@ -198,7 +209,7 @@
 				"box" : 				{
 					"comment" : "",
 					"id" : "obj-377",
-					"index" : 0,
+					"index" : 1,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
@@ -365,6 +376,7 @@
 , 							{
 								"box" : 								{
 									"id" : "obj-1",
+									"linecount" : 2,
 									"maxclass" : "newobj",
 									"numinlets" : 1,
 									"numoutlets" : 1,
@@ -489,7 +501,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "bang" ],
-					"patching_rect" : [ 393.0, 423.0, 123.0, 22.0 ],
+					"patching_rect" : [ 393.0, 423.0, 130.0, 22.0 ],
 					"saved_object_attributes" : 					{
 						"embed" : 0
 					}
@@ -505,7 +517,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "multichannelsignal", "bang" ],
-					"patching_rect" : [ 44.0, 423.0, 145.0, 22.0 ],
+					"patching_rect" : [ 44.0, 423.0, 152.0, 22.0 ],
 					"text" : "mcs.play~ #0-files.1 #2",
 					"varname" : "player0"
 				}
@@ -577,9 +589,17 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-1", 0 ],
+					"order" : 0,
+					"source" : [ "obj-377", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-375", 0 ],
 					"midpoints" : [ 589.5, 205.0, 53.5, 205.0 ],
-					"order" : 1,
+					"order" : 2,
 					"source" : [ "obj-377", 0 ]
 				}
 
@@ -588,7 +608,7 @@
 				"patchline" : 				{
 					"destination" : [ "obj-378", 0 ],
 					"midpoints" : [ 589.5, 85.0, 267.5, 85.0 ],
-					"order" : 0,
+					"order" : 1,
 					"source" : [ "obj-377", 0 ]
 				}
 
@@ -673,9 +693,7 @@
 				}
 
 			}
- ],
-		"dependency_cache" : [  ],
-		"autosave" : 0
+ ]
 	}
 
 }
