@@ -1176,7 +1176,7 @@
 					}
 ,
 					"text" : "autopattr",
-					"varname" : "u795001179"
+					"varname" : "u579029235"
 				}
 
 			}
@@ -1809,8 +1809,8 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 948.0, 241.0, 157.0, 35.0 ],
-					"text" : "set Choose the stimulus that contained the signal"
+					"patching_rect" : [ 948.0, 241.0, 110.0, 35.0 ],
+					"text" : "set <Type your objective here>"
 				}
 
 			}
@@ -1880,7 +1880,7 @@
 					"patching_rect" : [ 948.0, 330.0, 440.0, 124.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 210.0, 24.0, 410.0, 124.0 ],
-					"text" : "Choose the stimulus that contained the signal",
+					"text" : "<Type your objective here>",
 					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
 				}
 
