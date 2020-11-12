@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 34.0, 79.0, 1554.0, 1087.0 ],
+		"rect" : [ 274.0, 231.0, 1554.0, 1087.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -726,14 +726,14 @@
 					"fontname" : "Arial",
 					"fontsize" : 16.0,
 					"id" : "obj-90",
-					"linecount" : 2,
+					"linecount" : 3,
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 643.5, 33.0, 95.0, 42.0 ],
+					"patching_rect" : [ 643.5, 33.0, 95.0, 60.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 280.0, 398.0, 137.0, 24.0 ],
-					"text" : "Anchor Positions"
+					"presentation_rect" : [ 280.0, 398.0, 196.0, 24.0 ],
+					"text" : "Audible anchor positions"
 				}
 
 			}
@@ -1123,7 +1123,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 119.0, 631.0, 606.0, 49.0 ],
+									"patching_rect" : [ 119.0, 631.0, 633.0, 49.0 ],
 									"text" : "numticks 9, labelwidth 170, labelfontsize 16, minimum -4, maximum 4, default 0, resolution 3, decimalplaces 0, labels \"Like extremely\" \"Like very much\" \"Like moderately\" \"Like slightly\" \"Neither like nor dislike\" \"Dislike slightly\" \"Dislike moderately\" \"Dislike very much\" \"Dislike extremely\""
 								}
 
@@ -1147,7 +1147,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 119.0, 558.0, 606.0, 35.0 ],
+									"patching_rect" : [ 119.0, 558.0, 633.0, 35.0 ],
 									"text" : "numticks 7, labelwidth 170, labelfontsize 20, minimum -3, maximum 3, default 0, resolution 3, decimalplaces 0, labels \"Much better\" Better \"Slightly better\" \"About the same\" \"Slightly worse\" Worse \"Much worse\""
 								}
 
@@ -1171,8 +1171,8 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 119.0, 485.0, 602.0, 35.0 ],
-									"text" : "numticks 5, labelwidth 170, labelfontsize 20, minimum 1, maximum 5, default 0, resolution 3, decimalplaces 0, labels Inaudible \"Audible, but not annoying\" \"Slightly annoying\" Annoying \"Very Annoying\", resolution 1"
+									"patching_rect" : [ 119.0, 485.0, 629.0, 35.0 ],
+									"text" : "numticks 5, labelwidth 170, labelfontsize 20, minimum 1, maximum 5, default 1, resolution 3, decimalplaces 0, labels Inaudible \"Audible, but not annoying\" \"Slightly annoying\" Annoying \"Very Annoying\""
 								}
 
 							}
@@ -1195,8 +1195,8 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 119.0, 426.0, 602.0, 35.0 ],
-									"text" : "numticks 5, labelwidth 120, labelfontsize 20, minimum 1, maximum 5, default 0, resolution 3, decimalplaces 0, labels Excellent Good Fair Poor Bad"
+									"patching_rect" : [ 119.0, 426.0, 629.0, 35.0 ],
+									"text" : "numticks 5, labelwidth 120, labelfontsize 20, minimum 1, maximum 5, default 1, resolution 3, decimalplaces 0, labels Excellent Good Fair Poor Bad"
 								}
 
 							}
@@ -1267,9 +1267,8 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 119.0, 235.0, 591.0, 35.0 ],
-									"presentation_linecount" : 2,
-									"text" : "numticks 5, labelwidth 170, labelfontsize 20, minimum 1, maximum 5, default 0, resolution 0, decimalplaces 2, labels Imperceptible \"Perceptible, but not annoying\" \"Slightly annoying\" Annoying \"Very annoying\""
+									"patching_rect" : [ 119.0, 235.0, 629.0, 35.0 ],
+									"text" : "numticks 5, labelwidth 170, labelfontsize 20, minimum 1, maximum 5, default 1, resolution 0, decimalplaces 2, labels Imperceptible \"Perceptible, but not annoying\" \"Slightly annoying\" Annoying \"Very annoying\""
 								}
 
 							}
@@ -2273,9 +2272,9 @@
 					"numoutlets" : 2,
 					"offset" : [ 0.0, 0.0 ],
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 300.0, 55.0, 250.0, 548.0 ],
+					"patching_rect" : [ 300.0, 55.0, 230.0, 548.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 726.0, 74.0, 250.0, 548.0 ],
+					"presentation_rect" : [ 746.0, 74.0, 230.0, 548.0 ],
 					"varname" : "preview",
 					"viewvisibility" : 1
 				}
@@ -2285,7 +2284,7 @@
 				"box" : 				{
 					"comment" : "",
 					"id" : "obj-29",
-					"index" : 1,
+					"index" : 0,
 					"maxclass" : "outlet",
 					"numinlets" : 1,
 					"numoutlets" : 0,
@@ -2335,7 +2334,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 65.0, 527.5, 128.0, 128.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 722.0, 70.0, 258.0, 556.0 ],
+					"presentation_rect" : [ 742.0, 70.0, 238.0, 556.0 ],
 					"proportion" : 0.5,
 					"rounded" : 4,
 					"varname" : "previewborder"
@@ -2934,7 +2933,30 @@
 				}
 
 			}
- ]
+ ],
+		"dependency_cache" : [ 			{
+				"name" : "multicomp_subinterface.maxpat",
+				"bootpath" : "~/Documents/Max 8/Projects/HULTI-GENv2/HULTI-GENv2/patchers",
+				"patcherrelativepath" : ".",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "rating_sliderbank.maxpat",
+				"bootpath" : "~/Documents/Max 8/Projects/HULTI-GENv2/HULTI-GENv2/patchers",
+				"patcherrelativepath" : ".",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "rating_slider.maxpat",
+				"bootpath" : "~/Documents/Max 8/Projects/HULTI-GENv2/HULTI-GENv2/patchers",
+				"patcherrelativepath" : ".",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+ ],
+		"autosave" : 0
 	}
 
 }
