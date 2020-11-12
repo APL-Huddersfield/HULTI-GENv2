@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 268.0, 244.0, 1446.0, 851.0 ],
+		"rect" : [ 155.0, 171.0, 1446.0, 851.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -4661,7 +4661,7 @@
 																		}
 ,
 																		"classnamespace" : "box",
-																		"rect" : [ 303.0, 342.0, 1396.0, 641.0 ],
+																		"rect" : [ 657.0, 496.0, 1396.0, 641.0 ],
 																		"bglocked" : 0,
 																		"openinpresentation" : 0,
 																		"default_fontsize" : 12.0,
@@ -4735,6 +4735,18 @@
 																						"subpatcher_template" : "",
 																						"assistshowspatchername" : 0,
 																						"boxes" : [ 																							{
+																								"box" : 																								{
+																									"id" : "obj-4",
+																									"linecount" : 4,
+																									"maxclass" : "comment",
+																									"numinlets" : 1,
+																									"numoutlets" : 0,
+																									"patching_rect" : [ 8.0, 14.0, 150.0, 60.0 ],
+																									"text" : "Get plugin name from config and hash against the list of built in grading test templates"
+																								}
+
+																							}
+, 																							{
 																								"box" : 																								{
 																									"comment" : "",
 																									"id" : "obj-3",
