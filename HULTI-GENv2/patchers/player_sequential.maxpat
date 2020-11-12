@@ -126,7 +126,7 @@
 				"box" : 				{
 					"comment" : "",
 					"id" : "obj-3",
-					"index" : 2,
+					"index" : 0,
 					"maxclass" : "outlet",
 					"numinlets" : 1,
 					"numoutlets" : 0,
@@ -174,7 +174,7 @@
 				"box" : 				{
 					"comment" : "",
 					"id" : "obj-382",
-					"index" : 1,
+					"index" : 0,
 					"maxclass" : "outlet",
 					"numinlets" : 1,
 					"numoutlets" : 0,
@@ -198,7 +198,7 @@
 				"box" : 				{
 					"comment" : "",
 					"id" : "obj-377",
-					"index" : 1,
+					"index" : 0,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
@@ -505,7 +505,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "multichannelsignal", "bang" ],
-					"patching_rect" : [ 44.0, 423.0, 138.0, 22.0 ],
+					"patching_rect" : [ 44.0, 423.0, 145.0, 22.0 ],
 					"text" : "mcs.play~ #0-files.1 #2",
 					"varname" : "player0"
 				}
@@ -673,7 +673,9 @@
 				}
 
 			}
- ]
+ ],
+		"dependency_cache" : [  ],
+		"autosave" : 0
 	}
 
 }

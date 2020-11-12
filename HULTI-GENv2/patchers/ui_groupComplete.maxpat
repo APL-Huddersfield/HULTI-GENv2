@@ -125,15 +125,14 @@
 				"box" : 				{
 					"fontsize" : 24.0,
 					"id" : "obj-7",
-					"linecount" : 2,
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 43.0, 304.0, 450.0, 60.0 ],
+					"patching_rect" : [ 43.0, 304.0, 367.0, 33.0 ],
 					"presentation" : 1,
 					"presentation_linecount" : 2,
-					"presentation_rect" : [ 0.0, 45.0, 450.0, 60.0 ],
-					"text" : "Click the button below or press 'Return' to begin the group",
+					"presentation_rect" : [ 67.5, 45.0, 315.0, 60.0 ],
+					"text" : "Click the button below to continue",
 					"textjustification" : 1
 				}
 
@@ -168,7 +167,7 @@
 					"patching_rect" : [ 43.0, 225.0, 450.0, 33.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 0.0, 0.0, 450.0, 33.0 ],
-					"text" : "Completed group 1 of 1",
+					"text" : "Completed group 3 of 4",
 					"textjustification" : 1
 				}
 
@@ -231,9 +230,7 @@
 				}
 
 			}
- ],
-		"dependency_cache" : [  ],
-		"autosave" : 0
+ ]
 	}
 
 }

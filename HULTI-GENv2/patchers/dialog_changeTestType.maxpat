@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 1095.0, 653.0, 370.0, 134.0 ],
+		"rect" : [ 775.0, 533.0, 370.0, 134.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -38,7 +38,7 @@
 		"style" : "",
 		"subpatcher_template" : "",
 		"assistshowspatchername" : 0,
-		"title" : "Change test type",
+		"title" : "Apply new parameters",
 		"boxes" : [ 			{
 				"box" : 				{
 					"id" : "obj-5",
@@ -836,8 +836,8 @@
  ],
 		"dependency_cache" : [ 			{
 				"name" : "warning.png",
-				"bootpath" : "~/Documents/Max 8/Projects/HULTI-GENv2/PsychoBox/media",
-				"patcherrelativepath" : "../media",
+				"bootpath" : "~/Documents/Max 8/Projects/HULTI-GENv2/HULTI-GENv2/images",
+				"patcherrelativepath" : "../images",
 				"type" : "PNG",
 				"implicit" : 1
 			}
