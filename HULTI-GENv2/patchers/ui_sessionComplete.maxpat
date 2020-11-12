@@ -125,15 +125,13 @@
 				"box" : 				{
 					"fontsize" : 24.0,
 					"id" : "obj-7",
-					"linecount" : 2,
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 43.0, 304.0, 450.0, 60.0 ],
+					"patching_rect" : [ 43.0, 304.0, 450.0, 33.0 ],
 					"presentation" : 1,
-					"presentation_linecount" : 2,
-					"presentation_rect" : [ 0.0, 45.0, 450.0, 60.0 ],
-					"text" : "Click the button below or press 'Return' to begin the group",
+					"presentation_rect" : [ 0.0, 45.0, 450.0, 33.0 ],
+					"text" : "Click the button below to exit",
 					"textjustification" : 1
 				}
 
@@ -151,7 +149,7 @@
 					"patching_rect" : [ 166.0, 381.0, 200.0, 60.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 125.0, 135.0, 200.0, 60.0 ],
-					"text" : "Next",
+					"text" : "Exit",
 					"textoncolor" : [ 0.0, 0.0, 0.0, 1.0 ],
 					"textovercolor" : [ 0.101960784313725, 0.411764705882353, 0.796078431372549, 1.0 ],
 					"usetextovercolor" : 1
