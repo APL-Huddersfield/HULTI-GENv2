@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 584.0, 496.0, 1238.0, 602.0 ],
+		"rect" : [ 537.0, 313.0, 1238.0, 602.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -455,13 +455,24 @@
 						"assistshowspatchername" : 0,
 						"boxes" : [ 							{
 								"box" : 								{
+									"id" : "obj-5",
+									"maxclass" : "message",
+									"numinlets" : 2,
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
+									"patching_rect" : [ 217.0, 160.0, 29.5, 22.0 ],
+									"text" : "1"
+								}
+
+							}
+, 							{
+								"box" : 								{
 									"id" : "obj-9",
-									"linecount" : 3,
 									"maxclass" : "newobj",
 									"numinlets" : 1,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 145.0, 297.0, 123.0, 49.0 ],
+									"patching_rect" : [ 145.0, 297.0, 139.0, 22.0 ],
 									"text" : "v #0-reversalCount 0"
 								}
 
@@ -469,12 +480,11 @@
 , 							{
 								"box" : 								{
 									"id" : "obj-8",
-									"linecount" : 3,
 									"maxclass" : "newobj",
 									"numinlets" : 1,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 217.0, 252.0, 136.0, 49.0 ],
+									"patching_rect" : [ 217.0, 252.0, 150.0, 22.0 ],
 									"text" : "v #0-reversalOccured 0"
 								}
 
@@ -695,7 +705,7 @@
 							}
 , 							{
 								"patchline" : 								{
-									"destination" : [ "obj-8", 0 ],
+									"destination" : [ "obj-5", 0 ],
 									"midpoints" : [ 75.5, 134.5, 226.5, 134.5 ],
 									"order" : 0,
 									"source" : [ "obj-22", 0 ]
@@ -713,6 +723,13 @@
 								"patchline" : 								{
 									"destination" : [ "obj-15", 0 ],
 									"source" : [ "obj-4", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-8", 0 ],
+									"source" : [ "obj-5", 0 ]
 								}
 
 							}
@@ -802,7 +819,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 587.0, 502.0, 123.0, 49.0 ],
+									"patching_rect" : [ 587.0, 502.0, 121.0, 49.0 ],
 									"text" : "v #0-reversalCount 0"
 								}
 
@@ -924,7 +941,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 646.5, 338.0, 111.0, 35.0 ],
+									"patching_rect" : [ 646.5, 338.0, 109.0, 35.0 ],
 									"text" : "v #0-currentStep"
 								}
 
@@ -3150,7 +3167,6 @@
 , 							{
 								"box" : 								{
 									"id" : "obj-38",
-									"linecount" : 2,
 									"maxclass" : "newobj",
 									"numinlets" : 1,
 									"numoutlets" : 1,
