@@ -92,13 +92,14 @@
 					"fontname" : "Arial",
 					"fontsize" : 14.0,
 					"id" : "obj-36",
+					"linecount" : 2,
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 977.0, 481.0, 114.0, 22.0 ],
+					"patching_rect" : [ 977.0, 481.0, 114.0, 38.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 320.0, 100.0, 114.0, 22.0 ],
-					"text" : "Use high anchor"
+					"presentation_rect" : [ 320.0, 100.0, 171.0, 22.0 ],
+					"text" : "Use high audible anchor"
 				}
 
 			}
@@ -108,13 +109,14 @@
 					"fontname" : "Arial",
 					"fontsize" : 14.0,
 					"id" : "obj-35",
+					"linecount" : 2,
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 1139.5, 481.0, 112.0, 22.0 ],
+					"patching_rect" : [ 1139.5, 481.0, 112.0, 38.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 320.0, 50.0, 114.0, 22.0 ],
-					"text" : "Use low anchor"
+					"presentation_rect" : [ 320.0, 50.0, 171.0, 22.0 ],
+					"text" : "Use low audible anchor"
 				}
 
 			}
@@ -919,7 +921,7 @@
 				"box" : 				{
 					"comment" : "",
 					"id" : "obj-5",
-					"index" : 0,
+					"index" : 1,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
@@ -932,7 +934,7 @@
 				"box" : 				{
 					"comment" : "",
 					"id" : "obj-16",
-					"index" : 0,
+					"index" : 1,
 					"maxclass" : "outlet",
 					"numinlets" : 1,
 					"numoutlets" : 0,
@@ -1185,13 +1187,14 @@
 					"fontname" : "Arial",
 					"fontsize" : 14.0,
 					"id" : "obj-19",
+					"linecount" : 3,
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 694.0, 283.0, 111.0, 22.0 ],
+					"patching_rect" : [ 694.0, 283.0, 111.0, 53.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 10.0, 100.0, 130.0, 22.0 ],
-					"text" : "Stimuli per trial"
+					"presentation_rect" : [ 10.0, 100.0, 215.0, 22.0 ],
+					"text" : "Number of stimuli per trial group"
 				}
 
 			}
@@ -1299,8 +1302,8 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 304.0, 283.0, 78.0, 53.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 10.0, 50.0, 192.0, 22.0 ],
-					"text" : "Number of groups of stimuli"
+					"presentation_rect" : [ 10.0, 50.0, 215.0, 22.0 ],
+					"text" : "Number of trial groups of stimuli"
 				}
 
 			}
@@ -1699,9 +1702,7 @@
 				}
 
 			}
- ],
-		"dependency_cache" : [  ],
-		"autosave" : 0
+ ]
 	}
 
 }
