@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 263.0, 311.0, 1355.0, 625.0 ],
+		"rect" : [ 685.0, 496.0, 1355.0, 625.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -45,8 +45,8 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 800.0, 471.5, 107.0, 22.0 ],
-					"text" : "prepend objective:"
+					"patching_rect" : [ 800.0, 471.5, 103.0, 22.0 ],
+					"text" : "prepend objective"
 				}
 
 			}
@@ -539,7 +539,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 165.0, 184.0, 29.5, 22.0 ],
-									"text" : "1"
+									"text" : "0"
 								}
 
 							}
@@ -551,7 +551,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 130.0, 184.0, 29.5, 22.0 ],
-									"text" : "0"
+									"text" : "1"
 								}
 
 							}
@@ -574,8 +574,8 @@
 									"numinlets" : 1,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 200.0, 184.0, 187.0, 22.0 ],
-									"text" : "v #0-presentationOrder"
+									"patching_rect" : [ 200.0, 184.0, 180.0, 22.0 ],
+									"text" : "v #0-comparisonAssignment"
 								}
 
 							}
@@ -787,7 +787,7 @@
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ 691.0, 238.0, 1002.0, 774.0 ],
+						"rect" : [ 1073.0, 256.0, 1002.0, 774.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -815,7 +815,6 @@
 						"style" : "",
 						"subpatcher_template" : "",
 						"assistshowspatchername" : 0,
-						"visible" : 1,
 						"boxes" : [ 							{
 								"box" : 								{
 									"id" : "obj-5",
@@ -848,8 +847,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 0,
 									"patching_rect" : [ 383.0, 633.0, 125.0, 47.0 ],
-									"presentation_linecount" : 3,
-									"text" : "When order is 0:\nA = 0 = Standard\nB = 1 = Comparison"
+									"text" : "When order is 0:\nA = Standard\nB = Comparison"
 								}
 
 							}
@@ -944,8 +942,8 @@
 									"numinlets" : 1,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 628.666666666666515, 591.0, 201.0, 22.0 ],
-									"text" : "v #0-presentationOrder"
+									"patching_rect" : [ 628.666666666666515, 591.0, 180.0, 22.0 ],
+									"text" : "v #0-comparisonAssignment"
 								}
 
 							}
@@ -1656,6 +1654,7 @@
 , 							{
 								"box" : 								{
 									"id" : "obj-38",
+									"linecount" : 2,
 									"maxclass" : "newobj",
 									"numinlets" : 1,
 									"numoutlets" : 1,
