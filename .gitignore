@@ -1,2 +1,6 @@
 **/*.wav
 .DS_Store
+manual/*.aux
+manual/*.toc
+manual/*.log
+manual/*.synctex.*
