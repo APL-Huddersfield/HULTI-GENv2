@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 274.0, 231.0, 1554.0, 1087.0 ],
+		"rect" : [ 267.0, 90.0, 1554.0, 1087.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -511,11 +511,11 @@
 				"box" : 				{
 					"id" : "obj-33",
 					"maxclass" : "newobj",
-					"numinlets" : 2,
-					"numoutlets" : 2,
-					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 65.0, 772.0, 66.0, 22.0 ],
-					"text" : "route reset"
+					"numinlets" : 3,
+					"numoutlets" : 3,
+					"outlettype" : [ "", "", "" ],
+					"patching_rect" : [ 65.0, 726.0, 117.0, 22.0 ],
+					"text" : "route reset getlabels"
 				}
 
 			}
@@ -539,7 +539,7 @@
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 65.0, 726.0, 106.0, 22.0 ],
+					"patching_rect" : [ 65.0, 680.0, 106.0, 22.0 ],
 					"text" : "r #0-toPreview"
 				}
 
@@ -2272,9 +2272,9 @@
 					"numoutlets" : 2,
 					"offset" : [ 0.0, 0.0 ],
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 300.0, 55.0, 230.0, 548.0 ],
+					"patching_rect" : [ 300.0, 55.0, 250.0, 548.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 746.0, 74.0, 230.0, 548.0 ],
+					"presentation_rect" : [ 726.0, 74.0, 250.0, 548.0 ],
 					"varname" : "preview",
 					"viewvisibility" : 1
 				}
@@ -2284,7 +2284,7 @@
 				"box" : 				{
 					"comment" : "",
 					"id" : "obj-29",
-					"index" : 0,
+					"index" : 1,
 					"maxclass" : "outlet",
 					"numinlets" : 1,
 					"numoutlets" : 0,
@@ -2334,7 +2334,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 65.0, 527.5, 128.0, 128.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 742.0, 70.0, 238.0, 556.0 ],
+					"presentation_rect" : [ 722.0, 70.0, 258.0, 556.0 ],
 					"proportion" : 0.5,
 					"rounded" : 4,
 					"varname" : "previewborder"
@@ -2633,7 +2633,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-32", 0 ],
-					"source" : [ "obj-33", 1 ]
+					"source" : [ "obj-33", 2 ]
 				}
 
 			}
@@ -2933,30 +2933,7 @@
 				}
 
 			}
- ],
-		"dependency_cache" : [ 			{
-				"name" : "multicomp_subinterface.maxpat",
-				"bootpath" : "~/Documents/Max 8/Projects/HULTI-GENv2/HULTI-GENv2/patchers",
-				"patcherrelativepath" : ".",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "rating_sliderbank.maxpat",
-				"bootpath" : "~/Documents/Max 8/Projects/HULTI-GENv2/HULTI-GENv2/patchers",
-				"patcherrelativepath" : ".",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "rating_slider.maxpat",
-				"bootpath" : "~/Documents/Max 8/Projects/HULTI-GENv2/HULTI-GENv2/patchers",
-				"patcherrelativepath" : ".",
-				"type" : "JSON",
-				"implicit" : 1
-			}
- ],
-		"autosave" : 0
+ ]
 	}
 
 }
