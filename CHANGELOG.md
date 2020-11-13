@@ -6,6 +6,9 @@
 
 * Fixes grading test stimulus incorrect order bug that occured in specific configurations.
 * Fixes Yes-No button labelling bug.
+* Fixes rounding errors in grading test response sliders.
+* Corrects user repsonse polarity in 2AFC tests
+* Fixes ABX tests
 
 ## 2.0.2 (2020-10-29)
 
