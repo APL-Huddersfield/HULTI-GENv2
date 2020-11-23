@@ -1,0 +1,47 @@
+{
+	"identifier" : "Unnamed",
+	"configFilename" : "Untitled.json",
+	"configSHA256" : "91aedc63d311e599059f82b96bdbf44d4f37aca84556512a0463592bb265f71b",
+	"task" : 	{
+		"plugin" : "mc_itur_1116",
+		"parameters" : 		{
+			"repetitions" : 1,
+			"objective" : "Compare the stimuli",
+			"useReference" : "",
+			"useHighAnchor" : 0,
+			"useLowAnchor" : 0
+		}
+
+	}
+,
+	"experimentData" : 	{
+		"sessions" : [ 			{
+				"groups" : [ 					{
+						"reference" : 0,
+						"stimuli" : [ 							{
+								"filename" : "noise.wav"
+							}
+ ]
+					}
+ ]
+			}
+ ]
+	}
+,
+	"orders" : 	{
+		"sessionOrder" : 0,
+		"sessions" : [ 			{
+				"groupOrder" : 0
+			}
+ ]
+	}
+,
+	"progress" : 	{
+		"sessionProgress" : 0,
+		"sessions" : [ 			{
+				"groupProgress" : 0
+			}
+ ]
+	}
+
+}

@@ -1,0 +1,47 @@
+{
+	"testName" : "Untitled",
+	"setup" : 	{
+		"task" : 		{
+			"plugin" : "mc_itur_1116",
+			"parameters" : 			{
+				"repetitions" : 1,
+				"objective" : "Compare the stimuli",
+				"useReference" : "",
+				"useHighAnchor" : 0,
+				"useLowAnchor" : 0
+			}
+
+		}
+,
+		"playback" : "",
+		"interface" : 		{
+			"numticks" : 5,
+			"labelwidth" : 170,
+			"labelfontsize" : 20,
+			"minimum" : 1.0,
+			"maximum" : 5.0,
+			"default" : 1.0,
+			"resolution" : 0.1,
+			"labels" : [ "Imperceptible", "Perceptible, but not annoying", "Slightly annoying", "Annoying", "Very annoying" ],
+			"showreadout" : 1,
+			"movehigh" : 1.0,
+			"movelow" : 0.0,
+			"showhigh" : 0,
+			"showlow" : 0
+		}
+
+	}
+,
+	"numStimuliPerGroup" : 1,
+	"sessions" : [ 		{
+			"groups" : [ 				{
+					"reference" : 0,
+					"high" : -1,
+					"low" : -1,
+					"stimuli" : "noise.wav"
+				}
+ ]
+		}
+ ],
+	"pool" : "noise.wav"
+}
