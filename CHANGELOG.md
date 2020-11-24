@@ -2,12 +2,18 @@
 
 ## 2.0.3 (2020-11-11)
 
+### What's new
+
+* Adds 'Please Wait' message when creating a new test
+* Adds 'Overdrive Enabled' warning
+
 ### Bug Fixes
 
-* Fixes grading test stimulus incorrect order bug that occured in specific configurations.
-* Fixes Yes-No button labelling bug.
-* Fixes rounding errors in grading test response sliders.
+* Fixes grading test stimulus incorrect order bug that occured in specific configurations
+* Fixes Yes-No button labelling bug
+* Fixes rounding errors in grading test response sliders
 * Corrects user repsonse polarity in 2AFC tests
+* Fixes single stimulus 'disappearing' bug in assignment window
 * Fixes ABX tests
 
 ## 2.0.2 (2020-10-29)
