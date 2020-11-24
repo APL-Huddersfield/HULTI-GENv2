@@ -41,6 +41,25 @@
 		"title" : "HULTI-GEN v2",
 		"boxes" : [ 			{
 				"box" : 				{
+					"fontsize" : 24.0,
+					"hidden" : 1,
+					"id" : "obj-38",
+					"linecount" : 2,
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 1046.75, 216.0, 528.0, 60.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 325.0, 702.0, 610.0, 33.0 ],
+					"text" : "Please disable 'Overdrive' (Goto 'Options' > 'Overdrive')",
+					"textcolor" : [ 0.847058823529412, 0.0, 0.0, 1.0 ],
+					"textjustification" : 1,
+					"varname" : "odwarn"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"bgmode" : 0,
 					"border" : 0,
 					"clickthrough" : 0,
@@ -700,7 +719,7 @@
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ 361.0, 310.0, 1006.0, 707.0 ],
+						"rect" : [ 361.0, 310.0, 1378.0, 803.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -729,6 +748,115 @@
 						"subpatcher_template" : "",
 						"assistshowspatchername" : 0,
 						"boxes" : [ 							{
+								"box" : 								{
+									"id" : "obj-48",
+									"linecount" : 2,
+									"maxclass" : "comment",
+									"numinlets" : 1,
+									"numoutlets" : 0,
+									"patching_rect" : [ 1118.0, 120.0, 150.0, 33.0 ],
+									"text" : "Warn user is 'Overdrive is enabled'"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-46",
+									"maxclass" : "message",
+									"numinlets" : 2,
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
+									"patching_rect" : [ 1017.0, 256.0, 37.0, 22.0 ],
+									"text" : "show"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-44",
+									"maxclass" : "message",
+									"numinlets" : 2,
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
+									"patching_rect" : [ 982.0, 256.0, 31.0, 22.0 ],
+									"text" : "hide"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-42",
+									"maxclass" : "message",
+									"numinlets" : 2,
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
+									"patching_rect" : [ 982.0, 304.0, 65.0, 22.0 ],
+									"text" : "$1 odwarn"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-40",
+									"maxclass" : "newobj",
+									"numinlets" : 3,
+									"numoutlets" : 3,
+									"outlettype" : [ "bang", "bang", "" ],
+									"patching_rect" : [ 982.0, 213.0, 89.0, 22.0 ],
+									"text" : "sel 0 1"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-38",
+									"maxclass" : "newobj",
+									"numinlets" : 2,
+									"numoutlets" : 1,
+									"outlettype" : [ "bang" ],
+									"patching_rect" : [ 982.0, 69.0, 119.0, 22.0 ],
+									"text" : "metro 500 @active 1"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-37",
+									"linecount" : 4,
+									"maxclass" : "comment",
+									"numinlets" : 1,
+									"numoutlets" : 0,
+									"patching_rect" : [ 469.500000000000114, 63.0, 238.0, 60.0 ],
+									"text" : "TODO: Come up with a cleaner method of accessing audio settings, with stronger interlinking with the 'program control' modes"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-27",
+									"linecount" : 2,
+									"maxclass" : "message",
+									"numinlets" : 2,
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
+									"patching_rect" : [ 982.0, 118.0, 127.0, 35.0 ],
+									"text" : ";\rmax checkpreempt od"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-34",
+									"maxclass" : "newobj",
+									"numinlets" : 0,
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
+									"patching_rect" : [ 982.0, 168.0, 64.0, 22.0 ],
+									"text" : "receive od"
+								}
+
+							}
+, 							{
 								"box" : 								{
 									"id" : "obj-29",
 									"maxclass" : "button",
@@ -780,12 +908,12 @@
 , 							{
 								"box" : 								{
 									"id" : "obj-12",
-									"linecount" : 6,
+									"linecount" : 2,
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 12.0, 21.0, 281.0, 87.0 ],
-									"text" : "Handles the showing / hiding of different bpatchers and interface elements\n\nTODO: Come up with a cleaner method of accessing audio settings, with stronger interlinking with the 'program control' modes"
+									"patching_rect" : [ 12.0, 21.0, 226.0, 33.0 ],
+									"text" : "Handles the showing / hiding of different bpatchers and interface elements"
 								}
 
 							}
@@ -1515,6 +1643,13 @@
 							}
 , 							{
 								"patchline" : 								{
+									"destination" : [ "obj-40", 0 ],
+									"source" : [ "obj-34", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
 									"destination" : [ "obj-3", 0 ],
 									"midpoints" : [ 837.928571428571445, 599.0, 81.5, 599.0 ],
 									"source" : [ "obj-36", 0 ]
@@ -1523,9 +1658,52 @@
 							}
 , 							{
 								"patchline" : 								{
+									"destination" : [ "obj-27", 0 ],
+									"source" : [ "obj-38", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
 									"destination" : [ "obj-3", 0 ],
 									"midpoints" : [ 464.48214285714289, 599.0, 81.5, 599.0 ],
 									"source" : [ "obj-39", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-44", 0 ],
+									"source" : [ "obj-40", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-46", 0 ],
+									"source" : [ "obj-40", 1 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-3", 0 ],
+									"midpoints" : [ 991.5, 600.0, 81.5, 600.0 ],
+									"source" : [ "obj-42", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-42", 0 ],
+									"source" : [ "obj-44", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-42", 0 ],
+									"source" : [ "obj-46", 0 ]
 								}
 
 							}
@@ -1602,6 +1780,216 @@
 									"source" : [ "obj-9", 0 ]
 								}
 
+							}
+ ],
+						"styles" : [ 							{
+								"name" : "Audiomix",
+								"default" : 								{
+									"bgfillcolor" : 									{
+										"type" : "gradient",
+										"color1" : [ 0.376471, 0.384314, 0.4, 1.0 ],
+										"color2" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
+										"color" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
+										"angle" : 270.0,
+										"proportion" : 0.39
+									}
+
+								}
+,
+								"parentstyle" : "",
+								"multi" : 0
+							}
+, 							{
+								"name" : "Default M4L",
+								"default" : 								{
+									"fontsize" : [ 11.0 ],
+									"patchlinecolor" : [ 0.290196, 0.309804, 0.301961, 0.85 ],
+									"fontname" : [ "Arial Bold" ]
+								}
+,
+								"parentstyle" : "",
+								"multi" : 0
+							}
+, 							{
+								"name" : "Default M4L Poletti",
+								"default" : 								{
+									"fontsize" : [ 10.0 ],
+									"patchlinecolor" : [ 0.290196, 0.309804, 0.301961, 0.85 ],
+									"fontname" : [ "Arial Bold" ]
+								}
+,
+								"parentstyle" : "",
+								"multi" : 0
+							}
+, 							{
+								"name" : "Default M4L-1",
+								"default" : 								{
+									"fontface" : [ 1 ],
+									"fontsize" : [ 11.0 ],
+									"bgfillcolor" : 									{
+										"type" : "gradient",
+										"color1" : [ 0.376471, 0.384314, 0.4, 1.0 ],
+										"color2" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
+										"color" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
+										"angle" : 270.0,
+										"proportion" : 0.39
+									}
+,
+									"fontname" : [ "Arial" ]
+								}
+,
+								"parentstyle" : "",
+								"multi" : 0
+							}
+, 							{
+								"name" : "Max 12 Regular",
+								"default" : 								{
+									"bgfillcolor" : 									{
+										"type" : "gradient",
+										"color1" : [ 0.376471, 0.384314, 0.4, 1.0 ],
+										"color2" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
+										"color" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
+										"angle" : 270.0,
+										"proportion" : 0.39
+									}
+
+								}
+,
+								"parentstyle" : "",
+								"multi" : 0
+							}
+, 							{
+								"name" : "Max 12 Regular-1",
+								"parentstyle" : "",
+								"multi" : 0
+							}
+, 							{
+								"name" : "Max 12 Regular-1-1",
+								"default" : 								{
+									"bgfillcolor" : 									{
+										"type" : "gradient",
+										"color1" : [ 0.376471, 0.384314, 0.4, 1.0 ],
+										"color2" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
+										"color" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
+										"angle" : 270.0,
+										"proportion" : 0.39
+									}
+
+								}
+,
+								"parentstyle" : "",
+								"multi" : 0
+							}
+, 							{
+								"name" : "Max 12 Regular-2",
+								"default" : 								{
+									"bgfillcolor" : 									{
+										"type" : "gradient",
+										"color1" : [ 0.376471, 0.384314, 0.4, 1.0 ],
+										"color2" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
+										"color" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
+										"angle" : 270.0,
+										"proportion" : 0.39
+									}
+
+								}
+,
+								"parentstyle" : "",
+								"multi" : 0
+							}
+, 							{
+								"name" : "Max 12 Regular-3",
+								"default" : 								{
+									"bgfillcolor" : 									{
+										"type" : "gradient",
+										"color1" : [ 0.376471, 0.384314, 0.4, 1.0 ],
+										"color2" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
+										"color" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
+										"angle" : 270.0,
+										"proportion" : 0.39
+									}
+
+								}
+,
+								"parentstyle" : "",
+								"multi" : 0
+							}
+, 							{
+								"name" : "Neon",
+								"default" : 								{
+									"accentcolor" : [ 0.305882, 0.329412, 0.4, 1.0 ],
+									"selectioncolor" : [ 0.92549, 0.364706, 0.341176, 1.0 ],
+									"textcolor" : [ 0.921569, 0.917647, 0.933333, 1.0 ],
+									"patchlinecolor" : [ 0.0, 1.0, 0.976471, 0.9 ],
+									"bgfillcolor" : 									{
+										"type" : "gradient",
+										"color1" : [ 0.376471, 0.384314, 0.4, 1.0 ],
+										"color2" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
+										"color" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
+										"angle" : 270.0,
+										"proportion" : 0.39
+									}
+,
+									"bgcolor" : [ 0.201376, 0.21726, 0.264912, 1.0 ]
+								}
+,
+								"parentstyle" : "",
+								"multi" : 0
+							}
+, 							{
+								"name" : "NeonRed",
+								"default" : 								{
+									"accentcolor" : [ 0.305882, 0.329412, 0.4, 1.0 ],
+									"selectioncolor" : [ 0.92549, 0.364706, 0.341176, 1.0 ],
+									"textcolor" : [ 0.921569, 0.917647, 0.933333, 1.0 ],
+									"patchlinecolor" : [ 0.92549, 0.364706, 0.341176, 0.898039 ],
+									"bgfillcolor" : 									{
+										"type" : "gradient",
+										"color1" : [ 0.376471, 0.384314, 0.4, 1.0 ],
+										"color2" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
+										"color" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
+										"angle" : 270.0,
+										"proportion" : 0.39
+									}
+,
+									"bgcolor" : [ 0.201376, 0.21726, 0.264912, 1.0 ]
+								}
+,
+								"parentstyle" : "",
+								"multi" : 0
+							}
+, 							{
+								"name" : "neon",
+								"parentstyle" : "Neon",
+								"multi" : 0
+							}
+, 							{
+								"name" : "newobjBrown-1",
+								"default" : 								{
+									"accentcolor" : [ 0.654902, 0.572549, 0.376471, 1.0 ]
+								}
+,
+								"parentstyle" : "",
+								"multi" : 0
+							}
+, 							{
+								"name" : "newobjYellow-1",
+								"default" : 								{
+									"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ],
+									"fontsize" : [ 12.059008 ]
+								}
+,
+								"parentstyle" : "",
+								"multi" : 0
+							}
+, 							{
+								"name" : "numberGold-1",
+								"default" : 								{
+									"accentcolor" : [ 0.764706, 0.592157, 0.101961, 1.0 ]
+								}
+,
+								"parentstyle" : "",
+								"multi" : 0
 							}
  ]
 					}
@@ -29134,7 +29522,6 @@
 																	"numoutlets" : 1,
 																	"outlettype" : [ "" ],
 																	"patching_rect" : [ 318.066666666666606, 233.0, 390.0, 49.0 ],
-																	"presentation_linecount" : 4,
 																	"text" : "loadunique dialog_genericWarning.maxpat testfinished \"Subject file invalid\" \"HULTI-GEN cannot load this subject file.\" \"It looks like a config file was opened by mistake. Make sure you are opening a subject file.\""
 																}
 
@@ -29877,7 +30264,6 @@
 																					"numoutlets" : 1,
 																					"outlettype" : [ "" ],
 																					"patching_rect" : [ 267.5, 260.0, 103.0, 22.0 ],
-																					"presentation_linecount" : 2,
 																					"text" : "subjectfileisconfig"
 																				}
 
@@ -38417,7 +38803,6 @@
 																	}
 ,
 																	"patching_rect" : [ 439.142857142857167, 238.5, 97.0, 22.0 ],
-																	"presentation_linecount" : 3,
 																	"saved_object_attributes" : 																	{
 																		"description" : "",
 																		"digest" : "",
@@ -39642,7 +40027,6 @@
 																					"numoutlets" : 1,
 																					"outlettype" : [ "" ],
 																					"patching_rect" : [ 387.0, 249.0, 87.0, 22.0 ],
-																					"presentation_linecount" : 2,
 																					"text" : "configissubject"
 																				}
 
@@ -39667,7 +40051,6 @@
 																					"numoutlets" : 1,
 																					"outlettype" : [ "" ],
 																					"patching_rect" : [ 374.5, 96.0, 174.0, 22.0 ],
-																					"presentation_linecount" : 2,
 																					"text" : "validate config subjFileSchema"
 																				}
 
@@ -39948,7 +40331,6 @@
 																					"numoutlets" : 1,
 																					"outlettype" : [ "" ],
 																					"patching_rect" : [ 355.0, 186.0, 163.0, 22.0 ],
-																					"presentation_linecount" : 2,
 																					"text" : "read subjectFileSchema.json"
 																				}
 
