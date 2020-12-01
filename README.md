@@ -4,7 +4,7 @@ A free, Max 8 based, universal listening test software package developed at the 
 ![HULTI-GENv2](HULTI-GENv2.jpg)
 
 ## Version
-2.0.3
+2.0.4
 
 ## Authors
 Dale Johnson and Hyunkook Lee.
@@ -18,7 +18,7 @@ You only require a Max license if you wish to make and save changes to the sourc
 ### Windows users
 For the binauralisation functions to work, you will need to place some extra DLL files in your Max install folder. These are in the "Windows Dependencies" folder of the latest release. Depending on the bit-ness you use, these should be placed in either:
 
-- "C:\Program Files (x86)\Cycling '74\Max" for 32-bit Max, 
+- "C:\Program Files (x86)\Cycling '74\Max" for 32-bit Max,
 - "C:\Program Files\Cycling '74\Max" for 64-bit Max.
 
 ## Usage

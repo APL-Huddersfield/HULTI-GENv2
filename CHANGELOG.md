@@ -1,6 +1,6 @@
 # Changelog
 
-## 2.0.3 (2020-11-11)
+## 2.0.4 (2020-12-01)
 
 ### What's new
 
@@ -9,12 +9,17 @@
 
 ### Bug Fixes
 
-* Fixes grading test stimulus incorrect order bug that occured in specific configurations
-* Fixes Yes-No button labelling bug
 * Fixes rounding errors in grading test response sliders
-* Corrects user repsonse polarity in 2AFC tests
+* Corrects user response polarity in 2AFC tests
 * Fixes single stimulus 'disappearing' bug in assignment window
 * Fixes ABX tests
+
+## 2.0.3 (2020-11-11)
+
+### Bug Fixes
+
+* Fixes grading test stimulus incorrect order bug that occurred in specific configurations
+* Fixes Yes-No button labelling bug
 
 ## 2.0.2 (2020-10-29)
 
