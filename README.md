@@ -4,7 +4,7 @@ A free, Max 8 based, universal listening test software package developed at the 
 ![HULTI-GENv2](HULTI-GENv2.jpg)
 
 ## Version
-2.0.4
+2.0.5
 
 ## Authors
 Dale Johnson and Hyunkook Lee.

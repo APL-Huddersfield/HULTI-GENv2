@@ -1,5 +1,11 @@
 # Changelog
 
+## 2.0.5 (2020-12-02)
+
+### Bug Fixes
+
+* Fixes bug where subject filepath is not stored when continuing an existing subject
+
 ## 2.0.4 (2020-12-01)
 
 ### What's new
