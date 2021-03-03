@@ -2,8 +2,8 @@
 	"name" : "HULTI-GENv2",
 	"version" : 1,
 	"creationdate" : 3666872002,
-	"modificationdate" : 3686766472,
-	"viewrect" : [ 1436.0, 118.0, 461.0, 826.0 ],
+	"modificationdate" : 3697651419,
+	"viewrect" : [ 1409.0, 117.0, 461.0, 826.0 ],
 	"autoorganize" : 0,
 	"hideprojectwindow" : 1,
 	"showdependencies" : 1,
@@ -126,16 +126,6 @@
 				"local" : 1
 			}
 ,
-			"ui_filelist_psychophysical.maxpat" : 			{
-				"kind" : "patcher",
-				"local" : 1
-			}
-,
-			"ui_params_moc_twoAFC.maxpat" : 			{
-				"kind" : "patcher",
-				"local" : 1
-			}
-,
 			"lookAboveThisDir.maxpat" : 			{
 				"kind" : "patcher",
 				"local" : 1
@@ -187,6 +177,16 @@
 			}
 ,
 			"ui_exitTest.maxpat" : 			{
+				"kind" : "patcher",
+				"local" : 1
+			}
+,
+			"ui_filelist_psychophysical.maxpat" : 			{
+				"kind" : "patcher",
+				"local" : 1
+			}
+,
+			"ui_params_moc_twoAFC.maxpat" : 			{
 				"kind" : "patcher",
 				"local" : 1
 			}
@@ -302,11 +302,6 @@
 			}
 ,
 			"ui_loadStimuli.maxpat" : 			{
-				"kind" : "patcher",
-				"local" : 1
-			}
-,
-			"ui_params_MOC.maxpat" : 			{
 				"kind" : "patcher",
 				"local" : 1
 			}
