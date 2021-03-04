@@ -2,6 +2,7 @@
     "slug" : "staircase_abx",
     "name" : "Staircase ABX",
     "tag" : "psychophysical",
+    "testVersion" : 1,
     "parameters" : [
         "objective",
         "initialStep",
@@ -11,8 +12,23 @@
         "maxTrials",
         "beforePresentationDelay",
         "betweenStimuliDelay",
-        "afterPresentationDelay"
+        "afterPresentationDelay",
+        "secondSteppingRule",
+        "swapReversal"
     ],
+    "parameter_versions" : {
+        "objective" : 0,
+        "initialStep" : 0,
+        "initialStepSize" : 0,
+        "steppingRule" : 0,
+        "maxReversals" : 0,
+        "maxTrials" : 0,
+        "beforePresentationDelay" : 0,
+        "betweenStimuliDelay" : 0,
+        "afterPresentationDelay" : 0,
+        "secondSteppingRule" : 1,
+        "swapReversal" : 1
+    },
     "poolEndLabels" : ["<<< Reference", "<<< Maximum difference"],
     "requiresReference" : true,
     "groupingMode" : "sgit",
