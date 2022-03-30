@@ -3,6 +3,10 @@ A free, Max 8 based, universal listening test software package developed at the 
 
 ![HULTI-GENv2](HULTI-GENv2.jpg)
 
+## Known Issues
+
+An update to Windows 10 since 2.0.5 was released has broken HULTI-GEN at the moment. To fix this, please run Max in Windows 8 compatibility mode. This can enabled by right-clicking on the Max 8 shortcut, go to Properties, then go to the Compatiblity Mode tab. Here you can change the compatibility mode to Windows 8. This will slow down Max, but it does get HULTI-GEN to work.
+
 ## Version
 2.0.5
 
