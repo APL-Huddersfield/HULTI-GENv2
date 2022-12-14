@@ -2,7 +2,7 @@
 	"name" : "HULTI-GENv2",
 	"version" : 1,
 	"creationdate" : 3666872002,
-	"modificationdate" : 3686766472,
+	"modificationdate" : 3753866691,
 	"viewrect" : [ 1436.0, 118.0, 461.0, 826.0 ],
 	"autoorganize" : 0,
 	"hideprojectwindow" : 1,
@@ -36,17 +36,22 @@
 				"local" : 1
 			}
 ,
-			"ui_filelist_pool_noDependencies.maxpat" : 			{
+			"be_config_getDependencies.maxpat" : 			{
 				"kind" : "patcher",
 				"local" : 1
 			}
 ,
-			"ui_filelist.maxpat" : 			{
+			"ui_accordion.maxpat" : 			{
 				"kind" : "patcher",
 				"local" : 1
 			}
 ,
-			"ui_filelist_entry.maxpat" : 			{
+			"ui_checkbox.maxpat" : 			{
+				"kind" : "patcher",
+				"local" : 1
+			}
+,
+			"ui_filelist_entry_multicheckbox.maxpat" : 			{
 				"kind" : "patcher",
 				"local" : 1
 			}
@@ -61,22 +66,17 @@
 				"local" : 1
 			}
 ,
-			"ui_filelist_entry_multicheckbox.maxpat" : 			{
+			"ui_filelist_pool_noDependencies.maxpat" : 			{
 				"kind" : "patcher",
 				"local" : 1
 			}
 ,
-			"ui_checkbox.maxpat" : 			{
+			"ui_filelist.maxpat" : 			{
 				"kind" : "patcher",
 				"local" : 1
 			}
 ,
-			"ui_accordion.maxpat" : 			{
-				"kind" : "patcher",
-				"local" : 1
-			}
-,
-			"be_config_getDependencies.maxpat" : 			{
+			"ui_filelist_entry.maxpat" : 			{
 				"kind" : "patcher",
 				"local" : 1
 			}
@@ -122,16 +122,6 @@
 			}
 ,
 			"ui_config_chooseTest.maxpat" : 			{
-				"kind" : "patcher",
-				"local" : 1
-			}
-,
-			"ui_filelist_psychophysical.maxpat" : 			{
-				"kind" : "patcher",
-				"local" : 1
-			}
-,
-			"ui_params_moc_twoAFC.maxpat" : 			{
 				"kind" : "patcher",
 				"local" : 1
 			}
@@ -187,6 +177,16 @@
 			}
 ,
 			"ui_exitTest.maxpat" : 			{
+				"kind" : "patcher",
+				"local" : 1
+			}
+,
+			"ui_filelist_psychophysical.maxpat" : 			{
+				"kind" : "patcher",
+				"local" : 1
+			}
+,
+			"ui_params_moc_twoAFC.maxpat" : 			{
 				"kind" : "patcher",
 				"local" : 1
 			}
@@ -285,7 +285,7 @@
 				"kind" : "patcher",
 				"local" : 1,
 				"singleton" : 				{
-					"bootpath" : "~/Documents/Max 8/Projects/HULTI-GENv2/tests/sdt_twoAFC",
+					"bootpath" : "~/Dev/HULTI-GENv2/tests/sdt_twoAFC",
 					"projectrelativepath" : "../tests/sdt_twoAFC"
 				}
 
@@ -360,7 +360,7 @@
 				"kind" : "patcher",
 				"local" : 1,
 				"singleton" : 				{
-					"bootpath" : "~/Documents/Max 8/Projects/HULTI-GENv2/HULTI-GENv2/patchers",
+					"bootpath" : "~/Dev/HULTI-GENv2/HULTI-GENv2/patchers",
 					"projectrelativepath" : "./patchers"
 				}
 
@@ -370,7 +370,7 @@
 				"kind" : "patcher",
 				"local" : 1,
 				"singleton" : 				{
-					"bootpath" : "~/Documents/Max 8/Projects/HULTI-GENv2/HULTI-GENv2/patchers",
+					"bootpath" : "~/Dev/HULTI-GENv2/HULTI-GENv2/patchers",
 					"projectrelativepath" : "./patchers"
 				}
 
@@ -380,7 +380,7 @@
 				"kind" : "patcher",
 				"local" : 1,
 				"singleton" : 				{
-					"bootpath" : "~/Documents/Max 8/Projects/HULTI-GENv2/HULTI-GENv2/patchers",
+					"bootpath" : "~/Dev/HULTI-GENv2/HULTI-GENv2/patchers",
 					"projectrelativepath" : "./patchers"
 				}
 
@@ -390,7 +390,7 @@
 				"kind" : "patcher",
 				"local" : 1,
 				"singleton" : 				{
-					"bootpath" : "~/Documents/Max 8/Projects/HULTI-GENv2/HULTI-GENv2/patchers",
+					"bootpath" : "~/Dev/HULTI-GENv2/HULTI-GENv2/patchers",
 					"projectrelativepath" : "./patchers"
 				}
 
@@ -400,7 +400,7 @@
 				"kind" : "patcher",
 				"local" : 1,
 				"singleton" : 				{
-					"bootpath" : "~/Documents/Max 8/Projects/HULTI-GENv2/HULTI-GENv2/patchers",
+					"bootpath" : "~/Dev/HULTI-GENv2/HULTI-GENv2/patchers",
 					"projectrelativepath" : "./patchers"
 				}
 
@@ -410,7 +410,7 @@
 				"kind" : "patcher",
 				"local" : 1,
 				"singleton" : 				{
-					"bootpath" : "~/Documents/Max 8/Projects/HULTI-GENv2/HULTI-GENv2/patchers",
+					"bootpath" : "~/Dev/HULTI-GENv2/HULTI-GENv2/patchers",
 					"projectrelativepath" : "./patchers"
 				}
 
@@ -420,7 +420,7 @@
 				"kind" : "patcher",
 				"local" : 1,
 				"singleton" : 				{
-					"bootpath" : "~/Documents/Max 8/Projects/HULTI-GENv2/HULTI-GENv2/patchers",
+					"bootpath" : "~/Dev/HULTI-GENv2/HULTI-GENv2/patchers",
 					"projectrelativepath" : "./patchers"
 				}
 
@@ -430,7 +430,7 @@
 				"kind" : "patcher",
 				"local" : 1,
 				"singleton" : 				{
-					"bootpath" : "~/Documents/Max 8/Projects/HULTI-GENv2/HULTI-GENv2/patchers",
+					"bootpath" : "~/Dev/HULTI-GENv2/HULTI-GENv2/patchers",
 					"projectrelativepath" : "./patchers"
 				}
 
@@ -440,7 +440,7 @@
 				"kind" : "patcher",
 				"local" : 1,
 				"singleton" : 				{
-					"bootpath" : "~/Documents/Max 8/Projects/HULTI-GENv2/HULTI-GENv2/patchers",
+					"bootpath" : "~/Dev/HULTI-GENv2/HULTI-GENv2/patchers",
 					"projectrelativepath" : "./patchers"
 				}
 
@@ -450,7 +450,7 @@
 				"kind" : "patcher",
 				"local" : 1,
 				"singleton" : 				{
-					"bootpath" : "~/Documents/Max 8/Projects/HULTI-GENv2/HULTI-GENv2/patchers",
+					"bootpath" : "~/Dev/HULTI-GENv2/HULTI-GENv2/patchers",
 					"projectrelativepath" : "./patchers"
 				}
 
@@ -460,7 +460,7 @@
 				"kind" : "patcher",
 				"local" : 1,
 				"singleton" : 				{
-					"bootpath" : "~/Documents/Max 8/Projects/HULTI-GENv2/HULTI-GENv2/patchers",
+					"bootpath" : "~/Dev/HULTI-GENv2/HULTI-GENv2/patchers",
 					"projectrelativepath" : "./patchers"
 				}
 
@@ -470,7 +470,7 @@
 				"kind" : "patcher",
 				"local" : 1,
 				"singleton" : 				{
-					"bootpath" : "~/Documents/Max 8/Projects/HULTI-GENv2/HULTI-GENv2/patchers",
+					"bootpath" : "~/Dev/HULTI-GENv2/HULTI-GENv2/patchers",
 					"projectrelativepath" : "./patchers"
 				}
 
@@ -480,7 +480,7 @@
 				"kind" : "patcher",
 				"local" : 1,
 				"singleton" : 				{
-					"bootpath" : "~/Documents/Max 8/Projects/HULTI-GENv2/HULTI-GENv2/patchers",
+					"bootpath" : "~/Dev/HULTI-GENv2/HULTI-GENv2/patchers",
 					"projectrelativepath" : "./patchers"
 				}
 
@@ -490,7 +490,7 @@
 				"kind" : "patcher",
 				"local" : 1,
 				"singleton" : 				{
-					"bootpath" : "~/Documents/Max 8/Projects/HULTI-GENv2/HULTI-GENv2/patchers",
+					"bootpath" : "~/Dev/HULTI-GENv2/HULTI-GENv2/patchers",
 					"projectrelativepath" : "./patchers"
 				}
 
@@ -500,7 +500,7 @@
 				"kind" : "patcher",
 				"local" : 1,
 				"singleton" : 				{
-					"bootpath" : "~/Documents/Max 8/Projects/HULTI-GENv2/HULTI-GENv2/patchers",
+					"bootpath" : "~/Dev/HULTI-GENv2/HULTI-GENv2/patchers",
 					"projectrelativepath" : "./patchers"
 				}
 
@@ -510,7 +510,7 @@
 				"kind" : "patcher",
 				"local" : 1,
 				"singleton" : 				{
-					"bootpath" : "~/Documents/Max 8/Projects/HULTI-GENv2/HULTI-GENv2/patchers",
+					"bootpath" : "~/Dev/HULTI-GENv2/HULTI-GENv2/patchers",
 					"projectrelativepath" : "./patchers"
 				}
 
@@ -520,7 +520,7 @@
 				"kind" : "patcher",
 				"local" : 1,
 				"singleton" : 				{
-					"bootpath" : "~/Documents/Max 8/Projects/HULTI-GENv2/HULTI-GENv2/patchers",
+					"bootpath" : "~/Dev/HULTI-GENv2/HULTI-GENv2/patchers",
 					"projectrelativepath" : "./patchers"
 				}
 
@@ -530,7 +530,7 @@
 				"kind" : "patcher",
 				"local" : 1,
 				"singleton" : 				{
-					"bootpath" : "~/Documents/Max 8/Projects/HULTI-GENv2/HULTI-GENv2/patchers",
+					"bootpath" : "~/Dev/HULTI-GENv2/HULTI-GENv2/patchers",
 					"projectrelativepath" : "./patchers"
 				}
 
@@ -540,7 +540,7 @@
 				"kind" : "patcher",
 				"local" : 1,
 				"singleton" : 				{
-					"bootpath" : "~/Documents/Max 8/Projects/HULTI-GENv2/HULTI-GENv2/patchers",
+					"bootpath" : "~/Dev/HULTI-GENv2/HULTI-GENv2/patchers",
 					"projectrelativepath" : "./patchers"
 				}
 
@@ -550,7 +550,7 @@
 				"kind" : "patcher",
 				"local" : 1,
 				"singleton" : 				{
-					"bootpath" : "~/Documents/Max 8/Projects/HULTI-GENv2/HULTI-GENv2/patchers",
+					"bootpath" : "~/Dev/HULTI-GENv2/HULTI-GENv2/patchers",
 					"projectrelativepath" : "./patchers"
 				}
 
@@ -560,7 +560,7 @@
 				"kind" : "patcher",
 				"local" : 1,
 				"singleton" : 				{
-					"bootpath" : "~/Documents/Max 8/Projects/HULTI-GENv2/HULTI-GENv2/patchers",
+					"bootpath" : "~/Dev/HULTI-GENv2/HULTI-GENv2/patchers",
 					"projectrelativepath" : "./patchers"
 				}
 
@@ -570,7 +570,7 @@
 				"kind" : "patcher",
 				"local" : 1,
 				"singleton" : 				{
-					"bootpath" : "~/Documents/Max 8/Projects/HULTI-GENv2/HULTI-GENv2/patchers",
+					"bootpath" : "~/Dev/HULTI-GENv2/HULTI-GENv2/patchers",
 					"projectrelativepath" : "./patchers"
 				}
 
@@ -580,7 +580,7 @@
 				"kind" : "patcher",
 				"local" : 1,
 				"singleton" : 				{
-					"bootpath" : "~/Documents/Max 8/Projects/HULTI-GENv2/HULTI-GENv2/patchers",
+					"bootpath" : "~/Dev/HULTI-GENv2/HULTI-GENv2/patchers",
 					"projectrelativepath" : "./patchers"
 				}
 
@@ -590,7 +590,7 @@
 				"kind" : "patcher",
 				"local" : 1,
 				"singleton" : 				{
-					"bootpath" : "~/Documents/Max 8/Projects/HULTI-GENv2/HULTI-GENv2/patchers",
+					"bootpath" : "~/Dev/HULTI-GENv2/HULTI-GENv2/patchers",
 					"projectrelativepath" : "./patchers"
 				}
 
@@ -600,7 +600,7 @@
 				"kind" : "patcher",
 				"local" : 1,
 				"singleton" : 				{
-					"bootpath" : "~/Documents/Max 8/Projects/HULTI-GENv2/HULTI-GENv2/patchers",
+					"bootpath" : "~/Dev/HULTI-GENv2/HULTI-GENv2/patchers",
 					"projectrelativepath" : "./patchers"
 				}
 
@@ -610,7 +610,7 @@
 				"kind" : "patcher",
 				"local" : 1,
 				"singleton" : 				{
-					"bootpath" : "~/Documents/Max 8/Projects/HULTI-GENv2/HULTI-GENv2/patchers",
+					"bootpath" : "~/Dev/HULTI-GENv2/HULTI-GENv2/patchers",
 					"projectrelativepath" : "./patchers"
 				}
 
@@ -620,7 +620,7 @@
 				"kind" : "patcher",
 				"local" : 1,
 				"singleton" : 				{
-					"bootpath" : "~/Documents/Max 8/Projects/HULTI-GENv2/HULTI-GENv2/patchers",
+					"bootpath" : "~/Dev/HULTI-GENv2/HULTI-GENv2/patchers",
 					"projectrelativepath" : "./patchers"
 				}
 
@@ -630,7 +630,7 @@
 				"kind" : "patcher",
 				"local" : 1,
 				"singleton" : 				{
-					"bootpath" : "~/Documents/Max 8/Projects/HULTI-GENv2/HULTI-GENv2/patchers",
+					"bootpath" : "~/Dev/HULTI-GENv2/HULTI-GENv2/patchers",
 					"projectrelativepath" : "./patchers"
 				}
 
@@ -640,7 +640,17 @@
 				"kind" : "patcher",
 				"local" : 1,
 				"singleton" : 				{
-					"bootpath" : "~/Documents/Max 8/Projects/HULTI-GENv2/HULTI-GENv2/patchers",
+					"bootpath" : "~/Dev/HULTI-GENv2/HULTI-GENv2/patchers",
+					"projectrelativepath" : "./patchers"
+				}
+
+			}
+,
+			"c_based_stimuli_list_itur.maxpat" : 			{
+				"kind" : "patcher",
+				"local" : 1,
+				"singleton" : 				{
+					"bootpath" : "~/Dev/HULTI-GENv2/HULTI-GENv2/patchers",
 					"projectrelativepath" : "./patchers"
 				}
 
@@ -653,7 +663,7 @@
 		}
 ,
 		"code" : 		{
-			"filelistManager.js" : 			{
+			"configSessionsSidemenu4.js" : 			{
 				"kind" : "javascript",
 				"local" : 1
 			}
@@ -663,7 +673,7 @@
 				"local" : 1
 			}
 ,
-			"configSessionsSidemenu4.js" : 			{
+			"filelistManager.js" : 			{
 				"kind" : "javascript",
 				"local" : 1
 			}
@@ -747,7 +757,7 @@
 				"kind" : "javascript",
 				"local" : 1,
 				"singleton" : 				{
-					"bootpath" : "~/Documents/Max 8/Projects/HULTI-GENv2/HULTI-GENv2/patchers",
+					"bootpath" : "~/Dev/HULTI-GENv2/HULTI-GENv2/patchers",
 					"projectrelativepath" : "./patchers"
 				}
 
@@ -785,7 +795,7 @@
 				"kind" : "json",
 				"local" : 1,
 				"singleton" : 				{
-					"bootpath" : "~/Documents/Max 8/Projects/HULTI-GENv2/HULTI-GENv2/data",
+					"bootpath" : "~/Dev/HULTI-GENv2/HULTI-GENv2/data",
 					"projectrelativepath" : "./data"
 				}
 
@@ -795,7 +805,7 @@
 				"kind" : "json",
 				"local" : 1,
 				"singleton" : 				{
-					"bootpath" : "~/Documents/Max 8/Projects/HULTI-GENv2/HULTI-GENv2/data",
+					"bootpath" : "~/Dev/HULTI-GENv2/HULTI-GENv2/data",
 					"projectrelativepath" : "./data"
 				}
 
@@ -805,7 +815,7 @@
 				"kind" : "json",
 				"local" : 1,
 				"singleton" : 				{
-					"bootpath" : "~/Documents/Max 8/Projects/HULTI-GENv2/HULTI-GENv2/data",
+					"bootpath" : "~/Dev/HULTI-GENv2/HULTI-GENv2/data",
 					"projectrelativepath" : "./data"
 				}
 
@@ -815,7 +825,7 @@
 				"kind" : "json",
 				"local" : 1,
 				"singleton" : 				{
-					"bootpath" : "~/Documents/Max 8/Projects/HULTI-GENv2/HULTI-GENv2/data",
+					"bootpath" : "~/Dev/HULTI-GENv2/HULTI-GENv2/data",
 					"projectrelativepath" : "./data"
 				}
 
@@ -825,7 +835,7 @@
 				"kind" : "json",
 				"local" : 1,
 				"singleton" : 				{
-					"bootpath" : "~/Documents/Max 8/Projects/HULTI-GENv2/HULTI-GENv2/data",
+					"bootpath" : "~/Dev/HULTI-GENv2/HULTI-GENv2/data",
 					"projectrelativepath" : "./data"
 				}
 
@@ -863,7 +873,7 @@
 				"kind" : "object",
 				"local" : 1,
 				"singleton" : 				{
-					"bootpath" : "~/Documents/Max 8/Projects/HULTI-GENv2/HULTI-GENv2/externals",
+					"bootpath" : "~/Dev/HULTI-GENv2/HULTI-GENv2/externals",
 					"projectrelativepath" : "./externals"
 				}
 
@@ -873,7 +883,7 @@
 				"kind" : "object",
 				"local" : 1,
 				"singleton" : 				{
-					"bootpath" : "~/Documents/Max 8/Projects/HULTI-GENv2/HULTI-GENv2/externals",
+					"bootpath" : "~/Dev/HULTI-GENv2/HULTI-GENv2/externals",
 					"projectrelativepath" : "./externals"
 				}
 
@@ -883,7 +893,7 @@
 				"kind" : "object",
 				"local" : 1,
 				"singleton" : 				{
-					"bootpath" : "~/Documents/Max 8/Projects/HULTI-GENv2/HULTI-GENv2/externals",
+					"bootpath" : "~/Dev/HULTI-GENv2/HULTI-GENv2/externals",
 					"projectrelativepath" : "./externals"
 				}
 
@@ -893,7 +903,7 @@
 				"kind" : "object",
 				"local" : 1,
 				"singleton" : 				{
-					"bootpath" : "~/Documents/Max 8/Projects/HULTI-GENv2/HULTI-GENv2/externals",
+					"bootpath" : "~/Dev/HULTI-GENv2/HULTI-GENv2/externals",
 					"projectrelativepath" : "./externals"
 				}
 
@@ -903,7 +913,7 @@
 				"kind" : "object",
 				"local" : 1,
 				"singleton" : 				{
-					"bootpath" : "~/Documents/Max 8/Projects/HULTI-GENv2/HULTI-GENv2/externals",
+					"bootpath" : "~/Dev/HULTI-GENv2/HULTI-GENv2/externals",
 					"projectrelativepath" : "./externals"
 				}
 
@@ -913,7 +923,7 @@
 				"kind" : "object",
 				"local" : 1,
 				"singleton" : 				{
-					"bootpath" : "~/Documents/Max 8/Projects/HULTI-GENv2/HULTI-GENv2/externals",
+					"bootpath" : "~/Dev/HULTI-GENv2/HULTI-GENv2/externals",
 					"projectrelativepath" : "./externals"
 				}
 
@@ -923,7 +933,7 @@
 				"kind" : "object",
 				"local" : 1,
 				"singleton" : 				{
-					"bootpath" : "~/Documents/Max 8/Projects/HULTI-GENv2/HULTI-GENv2/externals",
+					"bootpath" : "~/Dev/HULTI-GENv2/HULTI-GENv2/externals",
 					"projectrelativepath" : "./externals"
 				}
 
@@ -933,7 +943,7 @@
 				"kind" : "object",
 				"local" : 1,
 				"singleton" : 				{
-					"bootpath" : "~/Documents/Max 8/Projects/HULTI-GENv2/HULTI-GENv2/externals",
+					"bootpath" : "~/Dev/HULTI-GENv2/HULTI-GENv2/externals",
 					"projectrelativepath" : "./externals"
 				}
 
@@ -943,7 +953,7 @@
 				"kind" : "object",
 				"local" : 1,
 				"singleton" : 				{
-					"bootpath" : "~/Documents/Max 8/Projects/HULTI-GENv2/HULTI-GENv2/externals",
+					"bootpath" : "~/Dev/HULTI-GENv2/HULTI-GENv2/externals",
 					"projectrelativepath" : "./externals"
 				}
 
@@ -953,7 +963,7 @@
 				"kind" : "object",
 				"local" : 1,
 				"singleton" : 				{
-					"bootpath" : "~/Documents/Max 8/Projects/HULTI-GENv2/HULTI-GENv2/externals",
+					"bootpath" : "~/Dev/HULTI-GENv2/HULTI-GENv2/externals",
 					"projectrelativepath" : "./externals"
 				}
 
@@ -977,5 +987,6 @@
 	"devpathtype" : 0,
 	"devpath" : ".",
 	"sortmode" : 1,
-	"viewmode" : 0
+	"viewmode" : 0,
+	"includepackages" : 0
 }
