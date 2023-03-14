@@ -2,7 +2,7 @@
 	"name" : "HULTI-GENv2",
 	"version" : 1,
 	"creationdate" : 3666872002,
-	"modificationdate" : 3753866691,
+	"modificationdate" : 3761638621,
 	"viewrect" : [ 1436.0, 118.0, 461.0, 826.0 ],
 	"autoorganize" : 0,
 	"hideprojectwindow" : 1,
@@ -46,12 +46,17 @@
 				"local" : 1
 			}
 ,
-			"ui_checkbox.maxpat" : 			{
+			"ui_filelist_pool_noDependencies.maxpat" : 			{
 				"kind" : "patcher",
 				"local" : 1
 			}
 ,
-			"ui_filelist_entry_multicheckbox.maxpat" : 			{
+			"ui_filelist.maxpat" : 			{
+				"kind" : "patcher",
+				"local" : 1
+			}
+,
+			"ui_filelist_entry.maxpat" : 			{
 				"kind" : "patcher",
 				"local" : 1
 			}
@@ -66,17 +71,12 @@
 				"local" : 1
 			}
 ,
-			"ui_filelist_pool_noDependencies.maxpat" : 			{
+			"ui_filelist_entry_multicheckbox.maxpat" : 			{
 				"kind" : "patcher",
 				"local" : 1
 			}
 ,
-			"ui_filelist.maxpat" : 			{
-				"kind" : "patcher",
-				"local" : 1
-			}
-,
-			"ui_filelist_entry.maxpat" : 			{
+			"ui_checkbox.maxpat" : 			{
 				"kind" : "patcher",
 				"local" : 1
 			}
@@ -668,12 +668,12 @@
 				"local" : 1
 			}
 ,
-			"filelistManagerMultiCheckbox.js" : 			{
+			"filelistManager.js" : 			{
 				"kind" : "javascript",
 				"local" : 1
 			}
 ,
-			"filelistManager.js" : 			{
+			"filelistManagerMultiCheckbox.js" : 			{
 				"kind" : "javascript",
 				"local" : 1
 			}

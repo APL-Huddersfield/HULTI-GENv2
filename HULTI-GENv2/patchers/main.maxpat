@@ -3,14 +3,14 @@
 		"fileversion" : 1,
 		"appversion" : 		{
 			"major" : 8,
-			"minor" : 1,
-			"revision" : 5,
+			"minor" : 5,
+			"revision" : 3,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 76.0, 79.0, 1261.0, 754.0 ],
+		"rect" : [ 454.0, 162.0, 1261.0, 754.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -68,6 +68,7 @@
 					"hidden" : 1,
 					"id" : "obj-8",
 					"lockeddragscroll" : 0,
+					"lockedsize" : 0,
 					"maxclass" : "bpatcher",
 					"name" : "ui_exitTest.maxpat",
 					"numinlets" : 0,
@@ -249,6 +250,7 @@
 					"hidden" : 1,
 					"id" : "obj-19",
 					"lockeddragscroll" : 0,
+					"lockedsize" : 0,
 					"maxclass" : "bpatcher",
 					"name" : "ui_beginTestMenu.maxpat",
 					"numinlets" : 0,
@@ -272,6 +274,7 @@
 					"hidden" : 1,
 					"id" : "obj-31",
 					"lockeddragscroll" : 0,
+					"lockedsize" : 0,
 					"maxclass" : "bpatcher",
 					"name" : "ui_groupComplete.maxpat",
 					"numinlets" : 0,
@@ -295,6 +298,7 @@
 					"hidden" : 1,
 					"id" : "obj-30",
 					"lockeddragscroll" : 0,
+					"lockedsize" : 0,
 					"maxclass" : "bpatcher",
 					"name" : "ui_allComplete.maxpat",
 					"numinlets" : 0,
@@ -318,6 +322,7 @@
 					"hidden" : 1,
 					"id" : "obj-34",
 					"lockeddragscroll" : 0,
+					"lockedsize" : 0,
 					"maxclass" : "bpatcher",
 					"name" : "ui_sessionComplete.maxpat",
 					"numinlets" : 0,
@@ -341,6 +346,7 @@
 					"hidden" : 1,
 					"id" : "obj-25",
 					"lockeddragscroll" : 0,
+					"lockedsize" : 0,
 					"maxclass" : "bpatcher",
 					"name" : "ui_filesMissingDialog.maxpat",
 					"numinlets" : 0,
@@ -446,6 +452,7 @@
 					"hidden" : 1,
 					"id" : "obj-37",
 					"lockeddragscroll" : 0,
+					"lockedsize" : 0,
 					"maxclass" : "bpatcher",
 					"name" : "ui_audioEngine.maxpat",
 					"numinlets" : 0,
@@ -543,8 +550,8 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 8,
-							"minor" : 1,
-							"revision" : 5,
+							"minor" : 5,
+							"revision" : 3,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -712,8 +719,8 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 8,
-							"minor" : 1,
-							"revision" : 5,
+							"minor" : 5,
+							"revision" : 3,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -1072,8 +1079,8 @@
 										"fileversion" : 1,
 										"appversion" : 										{
 											"major" : 8,
-											"minor" : 1,
-											"revision" : 5,
+											"minor" : 5,
+											"revision" : 3,
 											"architecture" : "x64",
 											"modernui" : 1
 										}
@@ -1786,12 +1793,12 @@
 								"name" : "Audiomix",
 								"default" : 								{
 									"bgfillcolor" : 									{
-										"type" : "gradient",
+										"angle" : 270.0,
+										"color" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
 										"color1" : [ 0.376471, 0.384314, 0.4, 1.0 ],
 										"color2" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
-										"color" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
-										"angle" : 270.0,
-										"proportion" : 0.39
+										"proportion" : 0.39,
+										"type" : "gradient"
 									}
 
 								}
@@ -1802,9 +1809,9 @@
 , 							{
 								"name" : "Default M4L",
 								"default" : 								{
-									"patchlinecolor" : [ 0.290196, 0.309804, 0.301961, 0.85 ],
+									"fontname" : [ "Arial Bold" ],
 									"fontsize" : [ 11.0 ],
-									"fontname" : [ "Arial Bold" ]
+									"patchlinecolor" : [ 0.290196, 0.309804, 0.301961, 0.85 ]
 								}
 ,
 								"parentstyle" : "",
@@ -1813,9 +1820,9 @@
 , 							{
 								"name" : "Default M4L Poletti",
 								"default" : 								{
-									"patchlinecolor" : [ 0.290196, 0.309804, 0.301961, 0.85 ],
+									"fontname" : [ "Arial Bold" ],
 									"fontsize" : [ 10.0 ],
-									"fontname" : [ "Arial Bold" ]
+									"patchlinecolor" : [ 0.290196, 0.309804, 0.301961, 0.85 ]
 								}
 ,
 								"parentstyle" : "",
@@ -1824,18 +1831,18 @@
 , 							{
 								"name" : "Default M4L-1",
 								"default" : 								{
-									"fontface" : [ 1 ],
 									"bgfillcolor" : 									{
-										"type" : "gradient",
+										"angle" : 270.0,
+										"color" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
 										"color1" : [ 0.376471, 0.384314, 0.4, 1.0 ],
 										"color2" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
-										"color" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
-										"angle" : 270.0,
-										"proportion" : 0.39
+										"proportion" : 0.39,
+										"type" : "gradient"
 									}
 ,
-									"fontsize" : [ 11.0 ],
-									"fontname" : [ "Arial" ]
+									"fontface" : [ 1 ],
+									"fontname" : [ "Arial" ],
+									"fontsize" : [ 11.0 ]
 								}
 ,
 								"parentstyle" : "",
@@ -1845,12 +1852,12 @@
 								"name" : "Max 12 Regular",
 								"default" : 								{
 									"bgfillcolor" : 									{
-										"type" : "gradient",
+										"angle" : 270.0,
+										"color" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
 										"color1" : [ 0.376471, 0.384314, 0.4, 1.0 ],
 										"color2" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
-										"color" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
-										"angle" : 270.0,
-										"proportion" : 0.39
+										"proportion" : 0.39,
+										"type" : "gradient"
 									}
 
 								}
@@ -1867,12 +1874,12 @@
 								"name" : "Max 12 Regular-1-1",
 								"default" : 								{
 									"bgfillcolor" : 									{
-										"type" : "gradient",
+										"angle" : 270.0,
+										"color" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
 										"color1" : [ 0.376471, 0.384314, 0.4, 1.0 ],
 										"color2" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
-										"color" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
-										"angle" : 270.0,
-										"proportion" : 0.39
+										"proportion" : 0.39,
+										"type" : "gradient"
 									}
 
 								}
@@ -1884,12 +1891,12 @@
 								"name" : "Max 12 Regular-2",
 								"default" : 								{
 									"bgfillcolor" : 									{
-										"type" : "gradient",
+										"angle" : 270.0,
+										"color" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
 										"color1" : [ 0.376471, 0.384314, 0.4, 1.0 ],
 										"color2" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
-										"color" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
-										"angle" : 270.0,
-										"proportion" : 0.39
+										"proportion" : 0.39,
+										"type" : "gradient"
 									}
 
 								}
@@ -1901,12 +1908,12 @@
 								"name" : "Max 12 Regular-3",
 								"default" : 								{
 									"bgfillcolor" : 									{
-										"type" : "gradient",
+										"angle" : 270.0,
+										"color" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
 										"color1" : [ 0.376471, 0.384314, 0.4, 1.0 ],
 										"color2" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
-										"color" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
-										"angle" : 270.0,
-										"proportion" : 0.39
+										"proportion" : 0.39,
+										"type" : "gradient"
 									}
 
 								}
@@ -1917,20 +1924,20 @@
 , 							{
 								"name" : "Neon",
 								"default" : 								{
-									"selectioncolor" : [ 0.92549, 0.364706, 0.341176, 1.0 ],
+									"accentcolor" : [ 0.305882, 0.329412, 0.4, 1.0 ],
 									"bgcolor" : [ 0.201376, 0.21726, 0.264912, 1.0 ],
-									"patchlinecolor" : [ 0.0, 1.0, 0.976471, 0.9 ],
 									"bgfillcolor" : 									{
-										"type" : "gradient",
+										"angle" : 270.0,
+										"color" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
 										"color1" : [ 0.376471, 0.384314, 0.4, 1.0 ],
 										"color2" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
-										"color" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
-										"angle" : 270.0,
-										"proportion" : 0.39
+										"proportion" : 0.39,
+										"type" : "gradient"
 									}
 ,
-									"textcolor" : [ 0.921569, 0.917647, 0.933333, 1.0 ],
-									"accentcolor" : [ 0.305882, 0.329412, 0.4, 1.0 ]
+									"patchlinecolor" : [ 0.0, 1.0, 0.976471, 0.9 ],
+									"selectioncolor" : [ 0.92549, 0.364706, 0.341176, 1.0 ],
+									"textcolor" : [ 0.921569, 0.917647, 0.933333, 1.0 ]
 								}
 ,
 								"parentstyle" : "",
@@ -1939,20 +1946,20 @@
 , 							{
 								"name" : "NeonRed",
 								"default" : 								{
-									"selectioncolor" : [ 0.92549, 0.364706, 0.341176, 1.0 ],
+									"accentcolor" : [ 0.305882, 0.329412, 0.4, 1.0 ],
 									"bgcolor" : [ 0.201376, 0.21726, 0.264912, 1.0 ],
-									"patchlinecolor" : [ 0.92549, 0.364706, 0.341176, 0.898039 ],
 									"bgfillcolor" : 									{
-										"type" : "gradient",
+										"angle" : 270.0,
+										"color" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
 										"color1" : [ 0.376471, 0.384314, 0.4, 1.0 ],
 										"color2" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
-										"color" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
-										"angle" : 270.0,
-										"proportion" : 0.39
+										"proportion" : 0.39,
+										"type" : "gradient"
 									}
 ,
-									"textcolor" : [ 0.921569, 0.917647, 0.933333, 1.0 ],
-									"accentcolor" : [ 0.305882, 0.329412, 0.4, 1.0 ]
+									"patchlinecolor" : [ 0.92549, 0.364706, 0.341176, 0.898039 ],
+									"selectioncolor" : [ 0.92549, 0.364706, 0.341176, 1.0 ],
+									"textcolor" : [ 0.921569, 0.917647, 0.933333, 1.0 ]
 								}
 ,
 								"parentstyle" : "",
@@ -1975,8 +1982,8 @@
 , 							{
 								"name" : "newobjYellow-1",
 								"default" : 								{
-									"fontsize" : [ 12.059008 ],
-									"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ]
+									"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ],
+									"fontsize" : [ 12.059008 ]
 								}
 ,
 								"parentstyle" : "",
@@ -2017,8 +2024,8 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 8,
-							"minor" : 1,
-							"revision" : 5,
+							"minor" : 5,
+							"revision" : 3,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -2108,8 +2115,8 @@
 										"fileversion" : 1,
 										"appversion" : 										{
 											"major" : 8,
-											"minor" : 1,
-											"revision" : 5,
+											"minor" : 5,
+											"revision" : 3,
 											"architecture" : "x64",
 											"modernui" : 1
 										}
@@ -2297,8 +2304,8 @@
 														"fileversion" : 1,
 														"appversion" : 														{
 															"major" : 8,
-															"minor" : 1,
-															"revision" : 5,
+															"minor" : 5,
+															"revision" : 3,
 															"architecture" : "x64",
 															"modernui" : 1
 														}
@@ -2983,12 +2990,12 @@
 																"name" : "Audiomix",
 																"default" : 																{
 																	"bgfillcolor" : 																	{
-																		"type" : "gradient",
+																		"angle" : 270.0,
+																		"color" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
 																		"color1" : [ 0.376471, 0.384314, 0.4, 1.0 ],
 																		"color2" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
-																		"color" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
-																		"angle" : 270.0,
-																		"proportion" : 0.39
+																		"proportion" : 0.39,
+																		"type" : "gradient"
 																	}
 
 																}
@@ -2999,9 +3006,9 @@
 , 															{
 																"name" : "Default M4L",
 																"default" : 																{
-																	"patchlinecolor" : [ 0.290196, 0.309804, 0.301961, 0.85 ],
+																	"fontname" : [ "Arial Bold" ],
 																	"fontsize" : [ 11.0 ],
-																	"fontname" : [ "Arial Bold" ]
+																	"patchlinecolor" : [ 0.290196, 0.309804, 0.301961, 0.85 ]
 																}
 ,
 																"parentstyle" : "",
@@ -3010,9 +3017,9 @@
 , 															{
 																"name" : "Default M4L Poletti",
 																"default" : 																{
-																	"patchlinecolor" : [ 0.290196, 0.309804, 0.301961, 0.85 ],
+																	"fontname" : [ "Arial Bold" ],
 																	"fontsize" : [ 10.0 ],
-																	"fontname" : [ "Arial Bold" ]
+																	"patchlinecolor" : [ 0.290196, 0.309804, 0.301961, 0.85 ]
 																}
 ,
 																"parentstyle" : "",
@@ -3021,18 +3028,18 @@
 , 															{
 																"name" : "Default M4L-1",
 																"default" : 																{
-																	"fontface" : [ 1 ],
 																	"bgfillcolor" : 																	{
-																		"type" : "gradient",
+																		"angle" : 270.0,
+																		"color" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
 																		"color1" : [ 0.376471, 0.384314, 0.4, 1.0 ],
 																		"color2" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
-																		"color" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
-																		"angle" : 270.0,
-																		"proportion" : 0.39
+																		"proportion" : 0.39,
+																		"type" : "gradient"
 																	}
 ,
-																	"fontsize" : [ 11.0 ],
-																	"fontname" : [ "Arial" ]
+																	"fontface" : [ 1 ],
+																	"fontname" : [ "Arial" ],
+																	"fontsize" : [ 11.0 ]
 																}
 ,
 																"parentstyle" : "",
@@ -3042,12 +3049,12 @@
 																"name" : "Max 12 Regular",
 																"default" : 																{
 																	"bgfillcolor" : 																	{
-																		"type" : "gradient",
+																		"angle" : 270.0,
+																		"color" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
 																		"color1" : [ 0.376471, 0.384314, 0.4, 1.0 ],
 																		"color2" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
-																		"color" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
-																		"angle" : 270.0,
-																		"proportion" : 0.39
+																		"proportion" : 0.39,
+																		"type" : "gradient"
 																	}
 
 																}
@@ -3064,12 +3071,12 @@
 																"name" : "Max 12 Regular-1-1",
 																"default" : 																{
 																	"bgfillcolor" : 																	{
-																		"type" : "gradient",
+																		"angle" : 270.0,
+																		"color" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
 																		"color1" : [ 0.376471, 0.384314, 0.4, 1.0 ],
 																		"color2" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
-																		"color" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
-																		"angle" : 270.0,
-																		"proportion" : 0.39
+																		"proportion" : 0.39,
+																		"type" : "gradient"
 																	}
 
 																}
@@ -3081,12 +3088,12 @@
 																"name" : "Max 12 Regular-2",
 																"default" : 																{
 																	"bgfillcolor" : 																	{
-																		"type" : "gradient",
+																		"angle" : 270.0,
+																		"color" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
 																		"color1" : [ 0.376471, 0.384314, 0.4, 1.0 ],
 																		"color2" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
-																		"color" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
-																		"angle" : 270.0,
-																		"proportion" : 0.39
+																		"proportion" : 0.39,
+																		"type" : "gradient"
 																	}
 
 																}
@@ -3098,12 +3105,12 @@
 																"name" : "Max 12 Regular-3",
 																"default" : 																{
 																	"bgfillcolor" : 																	{
-																		"type" : "gradient",
+																		"angle" : 270.0,
+																		"color" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
 																		"color1" : [ 0.376471, 0.384314, 0.4, 1.0 ],
 																		"color2" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
-																		"color" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
-																		"angle" : 270.0,
-																		"proportion" : 0.39
+																		"proportion" : 0.39,
+																		"type" : "gradient"
 																	}
 
 																}
@@ -3114,20 +3121,20 @@
 , 															{
 																"name" : "Neon",
 																"default" : 																{
-																	"selectioncolor" : [ 0.92549, 0.364706, 0.341176, 1.0 ],
+																	"accentcolor" : [ 0.305882, 0.329412, 0.4, 1.0 ],
 																	"bgcolor" : [ 0.201376, 0.21726, 0.264912, 1.0 ],
-																	"patchlinecolor" : [ 0.0, 1.0, 0.976471, 0.9 ],
 																	"bgfillcolor" : 																	{
-																		"type" : "gradient",
+																		"angle" : 270.0,
+																		"color" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
 																		"color1" : [ 0.376471, 0.384314, 0.4, 1.0 ],
 																		"color2" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
-																		"color" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
-																		"angle" : 270.0,
-																		"proportion" : 0.39
+																		"proportion" : 0.39,
+																		"type" : "gradient"
 																	}
 ,
-																	"textcolor" : [ 0.921569, 0.917647, 0.933333, 1.0 ],
-																	"accentcolor" : [ 0.305882, 0.329412, 0.4, 1.0 ]
+																	"patchlinecolor" : [ 0.0, 1.0, 0.976471, 0.9 ],
+																	"selectioncolor" : [ 0.92549, 0.364706, 0.341176, 1.0 ],
+																	"textcolor" : [ 0.921569, 0.917647, 0.933333, 1.0 ]
 																}
 ,
 																"parentstyle" : "",
@@ -3136,20 +3143,20 @@
 , 															{
 																"name" : "NeonRed",
 																"default" : 																{
-																	"selectioncolor" : [ 0.92549, 0.364706, 0.341176, 1.0 ],
+																	"accentcolor" : [ 0.305882, 0.329412, 0.4, 1.0 ],
 																	"bgcolor" : [ 0.201376, 0.21726, 0.264912, 1.0 ],
-																	"patchlinecolor" : [ 0.92549, 0.364706, 0.341176, 0.898039 ],
 																	"bgfillcolor" : 																	{
-																		"type" : "gradient",
+																		"angle" : 270.0,
+																		"color" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
 																		"color1" : [ 0.376471, 0.384314, 0.4, 1.0 ],
 																		"color2" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
-																		"color" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
-																		"angle" : 270.0,
-																		"proportion" : 0.39
+																		"proportion" : 0.39,
+																		"type" : "gradient"
 																	}
 ,
-																	"textcolor" : [ 0.921569, 0.917647, 0.933333, 1.0 ],
-																	"accentcolor" : [ 0.305882, 0.329412, 0.4, 1.0 ]
+																	"patchlinecolor" : [ 0.92549, 0.364706, 0.341176, 0.898039 ],
+																	"selectioncolor" : [ 0.92549, 0.364706, 0.341176, 1.0 ],
+																	"textcolor" : [ 0.921569, 0.917647, 0.933333, 1.0 ]
 																}
 ,
 																"parentstyle" : "",
@@ -3172,8 +3179,8 @@
 , 															{
 																"name" : "newobjYellow-1",
 																"default" : 																{
-																	"fontsize" : [ 12.059008 ],
-																	"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ]
+																	"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ],
+																	"fontsize" : [ 12.059008 ]
 																}
 ,
 																"parentstyle" : "",
@@ -3298,8 +3305,8 @@
 														"fileversion" : 1,
 														"appversion" : 														{
 															"major" : 8,
-															"minor" : 1,
-															"revision" : 5,
+															"minor" : 5,
+															"revision" : 3,
 															"architecture" : "x64",
 															"modernui" : 1
 														}
@@ -3356,8 +3363,8 @@
 																		"fileversion" : 1,
 																		"appversion" : 																		{
 																			"major" : 8,
-																			"minor" : 1,
-																			"revision" : 5,
+																			"minor" : 5,
+																			"revision" : 3,
 																			"architecture" : "x64",
 																			"modernui" : 1
 																		}
@@ -3625,8 +3632,8 @@
 																		"fileversion" : 1,
 																		"appversion" : 																		{
 																			"major" : 8,
-																			"minor" : 1,
-																			"revision" : 5,
+																			"minor" : 5,
+																			"revision" : 3,
 																			"architecture" : "x64",
 																			"modernui" : 1
 																		}
@@ -3836,12 +3843,12 @@
 																				"name" : "Audiomix",
 																				"default" : 																				{
 																					"bgfillcolor" : 																					{
-																						"type" : "gradient",
+																						"angle" : 270.0,
+																						"color" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
 																						"color1" : [ 0.376471, 0.384314, 0.4, 1.0 ],
 																						"color2" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
-																						"color" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
-																						"angle" : 270.0,
-																						"proportion" : 0.39
+																						"proportion" : 0.39,
+																						"type" : "gradient"
 																					}
 
 																				}
@@ -3857,20 +3864,20 @@
 , 																			{
 																				"name" : "Neon",
 																				"default" : 																				{
-																					"selectioncolor" : [ 0.92549, 0.364706, 0.341176, 1.0 ],
+																					"accentcolor" : [ 0.305882, 0.329412, 0.4, 1.0 ],
 																					"bgcolor" : [ 0.201376, 0.21726, 0.264912, 1.0 ],
-																					"patchlinecolor" : [ 0.0, 1.0, 0.976471, 0.9 ],
 																					"bgfillcolor" : 																					{
-																						"type" : "gradient",
+																						"angle" : 270.0,
+																						"color" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
 																						"color1" : [ 0.376471, 0.384314, 0.4, 1.0 ],
 																						"color2" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
-																						"color" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
-																						"angle" : 270.0,
-																						"proportion" : 0.39
+																						"proportion" : 0.39,
+																						"type" : "gradient"
 																					}
 ,
-																					"textcolor" : [ 0.921569, 0.917647, 0.933333, 1.0 ],
-																					"accentcolor" : [ 0.305882, 0.329412, 0.4, 1.0 ]
+																					"patchlinecolor" : [ 0.0, 1.0, 0.976471, 0.9 ],
+																					"selectioncolor" : [ 0.92549, 0.364706, 0.341176, 1.0 ],
+																					"textcolor" : [ 0.921569, 0.917647, 0.933333, 1.0 ]
 																				}
 ,
 																				"parentstyle" : "",
@@ -3879,20 +3886,20 @@
 , 																			{
 																				"name" : "NeonRed",
 																				"default" : 																				{
-																					"selectioncolor" : [ 0.92549, 0.364706, 0.341176, 1.0 ],
+																					"accentcolor" : [ 0.305882, 0.329412, 0.4, 1.0 ],
 																					"bgcolor" : [ 0.201376, 0.21726, 0.264912, 1.0 ],
-																					"patchlinecolor" : [ 0.92549, 0.364706, 0.341176, 0.898039 ],
 																					"bgfillcolor" : 																					{
-																						"type" : "gradient",
+																						"angle" : 270.0,
+																						"color" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
 																						"color1" : [ 0.376471, 0.384314, 0.4, 1.0 ],
 																						"color2" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
-																						"color" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
-																						"angle" : 270.0,
-																						"proportion" : 0.39
+																						"proportion" : 0.39,
+																						"type" : "gradient"
 																					}
 ,
-																					"textcolor" : [ 0.921569, 0.917647, 0.933333, 1.0 ],
-																					"accentcolor" : [ 0.305882, 0.329412, 0.4, 1.0 ]
+																					"patchlinecolor" : [ 0.92549, 0.364706, 0.341176, 0.898039 ],
+																					"selectioncolor" : [ 0.92549, 0.364706, 0.341176, 1.0 ],
+																					"textcolor" : [ 0.921569, 0.917647, 0.933333, 1.0 ]
 																				}
 ,
 																				"parentstyle" : "",
@@ -3915,8 +3922,8 @@
 , 																			{
 																				"name" : "newobjYellow-1",
 																				"default" : 																				{
-																					"fontsize" : [ 12.059008 ],
-																					"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ]
+																					"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ],
+																					"fontsize" : [ 12.059008 ]
 																				}
 ,
 																				"parentstyle" : "",
@@ -3969,8 +3976,8 @@
 																		"fileversion" : 1,
 																		"appversion" : 																		{
 																			"major" : 8,
-																			"minor" : 1,
-																			"revision" : 5,
+																			"minor" : 5,
+																			"revision" : 3,
 																			"architecture" : "x64",
 																			"modernui" : 1
 																		}
@@ -4243,8 +4250,8 @@
 																		"fileversion" : 1,
 																		"appversion" : 																		{
 																			"major" : 8,
-																			"minor" : 1,
-																			"revision" : 5,
+																			"minor" : 5,
+																			"revision" : 3,
 																			"architecture" : "x64",
 																			"modernui" : 1
 																		}
@@ -4851,12 +4858,12 @@
 																"name" : "Audiomix",
 																"default" : 																{
 																	"bgfillcolor" : 																	{
-																		"type" : "gradient",
+																		"angle" : 270.0,
+																		"color" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
 																		"color1" : [ 0.376471, 0.384314, 0.4, 1.0 ],
 																		"color2" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
-																		"color" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
-																		"angle" : 270.0,
-																		"proportion" : 0.39
+																		"proportion" : 0.39,
+																		"type" : "gradient"
 																	}
 
 																}
@@ -4872,20 +4879,20 @@
 , 															{
 																"name" : "Neon",
 																"default" : 																{
-																	"selectioncolor" : [ 0.92549, 0.364706, 0.341176, 1.0 ],
+																	"accentcolor" : [ 0.305882, 0.329412, 0.4, 1.0 ],
 																	"bgcolor" : [ 0.201376, 0.21726, 0.264912, 1.0 ],
-																	"patchlinecolor" : [ 0.0, 1.0, 0.976471, 0.9 ],
 																	"bgfillcolor" : 																	{
-																		"type" : "gradient",
+																		"angle" : 270.0,
+																		"color" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
 																		"color1" : [ 0.376471, 0.384314, 0.4, 1.0 ],
 																		"color2" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
-																		"color" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
-																		"angle" : 270.0,
-																		"proportion" : 0.39
+																		"proportion" : 0.39,
+																		"type" : "gradient"
 																	}
 ,
-																	"textcolor" : [ 0.921569, 0.917647, 0.933333, 1.0 ],
-																	"accentcolor" : [ 0.305882, 0.329412, 0.4, 1.0 ]
+																	"patchlinecolor" : [ 0.0, 1.0, 0.976471, 0.9 ],
+																	"selectioncolor" : [ 0.92549, 0.364706, 0.341176, 1.0 ],
+																	"textcolor" : [ 0.921569, 0.917647, 0.933333, 1.0 ]
 																}
 ,
 																"parentstyle" : "",
@@ -4894,20 +4901,20 @@
 , 															{
 																"name" : "NeonRed",
 																"default" : 																{
-																	"selectioncolor" : [ 0.92549, 0.364706, 0.341176, 1.0 ],
+																	"accentcolor" : [ 0.305882, 0.329412, 0.4, 1.0 ],
 																	"bgcolor" : [ 0.201376, 0.21726, 0.264912, 1.0 ],
-																	"patchlinecolor" : [ 0.92549, 0.364706, 0.341176, 0.898039 ],
 																	"bgfillcolor" : 																	{
-																		"type" : "gradient",
+																		"angle" : 270.0,
+																		"color" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
 																		"color1" : [ 0.376471, 0.384314, 0.4, 1.0 ],
 																		"color2" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
-																		"color" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
-																		"angle" : 270.0,
-																		"proportion" : 0.39
+																		"proportion" : 0.39,
+																		"type" : "gradient"
 																	}
 ,
-																	"textcolor" : [ 0.921569, 0.917647, 0.933333, 1.0 ],
-																	"accentcolor" : [ 0.305882, 0.329412, 0.4, 1.0 ]
+																	"patchlinecolor" : [ 0.92549, 0.364706, 0.341176, 0.898039 ],
+																	"selectioncolor" : [ 0.92549, 0.364706, 0.341176, 1.0 ],
+																	"textcolor" : [ 0.921569, 0.917647, 0.933333, 1.0 ]
 																}
 ,
 																"parentstyle" : "",
@@ -4930,8 +4937,8 @@
 , 															{
 																"name" : "newobjYellow-1",
 																"default" : 																{
-																	"fontsize" : [ 12.059008 ],
-																	"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ]
+																	"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ],
+																	"fontsize" : [ 12.059008 ]
 																}
 ,
 																"parentstyle" : "",
@@ -5068,8 +5075,8 @@
 														"fileversion" : 1,
 														"appversion" : 														{
 															"major" : 8,
-															"minor" : 1,
-															"revision" : 5,
+															"minor" : 5,
+															"revision" : 3,
 															"architecture" : "x64",
 															"modernui" : 1
 														}
@@ -5126,8 +5133,8 @@
 																		"fileversion" : 1,
 																		"appversion" : 																		{
 																			"major" : 8,
-																			"minor" : 1,
-																			"revision" : 5,
+																			"minor" : 5,
+																			"revision" : 3,
 																			"architecture" : "x64",
 																			"modernui" : 1
 																		}
@@ -5593,8 +5600,8 @@
 																		"fileversion" : 1,
 																		"appversion" : 																		{
 																			"major" : 8,
-																			"minor" : 1,
-																			"revision" : 5,
+																			"minor" : 5,
+																			"revision" : 3,
 																			"architecture" : "x64",
 																			"modernui" : 1
 																		}
@@ -6001,8 +6008,8 @@
 																		"fileversion" : 1,
 																		"appversion" : 																		{
 																			"major" : 8,
-																			"minor" : 1,
-																			"revision" : 5,
+																			"minor" : 5,
+																			"revision" : 3,
 																			"architecture" : "x64",
 																			"modernui" : 1
 																		}
@@ -6300,8 +6307,8 @@
 																		"fileversion" : 1,
 																		"appversion" : 																		{
 																			"major" : 8,
-																			"minor" : 1,
-																			"revision" : 5,
+																			"minor" : 5,
+																			"revision" : 3,
 																			"architecture" : "x64",
 																			"modernui" : 1
 																		}
@@ -6539,12 +6546,12 @@
 																				"name" : "Audiomix",
 																				"default" : 																				{
 																					"bgfillcolor" : 																					{
-																						"type" : "gradient",
+																						"angle" : 270.0,
+																						"color" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
 																						"color1" : [ 0.376471, 0.384314, 0.4, 1.0 ],
 																						"color2" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
-																						"color" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
-																						"angle" : 270.0,
-																						"proportion" : 0.39
+																						"proportion" : 0.39,
+																						"type" : "gradient"
 																					}
 
 																				}
@@ -6560,20 +6567,20 @@
 , 																			{
 																				"name" : "Neon",
 																				"default" : 																				{
-																					"selectioncolor" : [ 0.92549, 0.364706, 0.341176, 1.0 ],
+																					"accentcolor" : [ 0.305882, 0.329412, 0.4, 1.0 ],
 																					"bgcolor" : [ 0.201376, 0.21726, 0.264912, 1.0 ],
-																					"patchlinecolor" : [ 0.0, 1.0, 0.976471, 0.9 ],
 																					"bgfillcolor" : 																					{
-																						"type" : "gradient",
+																						"angle" : 270.0,
+																						"color" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
 																						"color1" : [ 0.376471, 0.384314, 0.4, 1.0 ],
 																						"color2" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
-																						"color" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
-																						"angle" : 270.0,
-																						"proportion" : 0.39
+																						"proportion" : 0.39,
+																						"type" : "gradient"
 																					}
 ,
-																					"textcolor" : [ 0.921569, 0.917647, 0.933333, 1.0 ],
-																					"accentcolor" : [ 0.305882, 0.329412, 0.4, 1.0 ]
+																					"patchlinecolor" : [ 0.0, 1.0, 0.976471, 0.9 ],
+																					"selectioncolor" : [ 0.92549, 0.364706, 0.341176, 1.0 ],
+																					"textcolor" : [ 0.921569, 0.917647, 0.933333, 1.0 ]
 																				}
 ,
 																				"parentstyle" : "",
@@ -6582,20 +6589,20 @@
 , 																			{
 																				"name" : "NeonRed",
 																				"default" : 																				{
-																					"selectioncolor" : [ 0.92549, 0.364706, 0.341176, 1.0 ],
+																					"accentcolor" : [ 0.305882, 0.329412, 0.4, 1.0 ],
 																					"bgcolor" : [ 0.201376, 0.21726, 0.264912, 1.0 ],
-																					"patchlinecolor" : [ 0.92549, 0.364706, 0.341176, 0.898039 ],
 																					"bgfillcolor" : 																					{
-																						"type" : "gradient",
+																						"angle" : 270.0,
+																						"color" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
 																						"color1" : [ 0.376471, 0.384314, 0.4, 1.0 ],
 																						"color2" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
-																						"color" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
-																						"angle" : 270.0,
-																						"proportion" : 0.39
+																						"proportion" : 0.39,
+																						"type" : "gradient"
 																					}
 ,
-																					"textcolor" : [ 0.921569, 0.917647, 0.933333, 1.0 ],
-																					"accentcolor" : [ 0.305882, 0.329412, 0.4, 1.0 ]
+																					"patchlinecolor" : [ 0.92549, 0.364706, 0.341176, 0.898039 ],
+																					"selectioncolor" : [ 0.92549, 0.364706, 0.341176, 1.0 ],
+																					"textcolor" : [ 0.921569, 0.917647, 0.933333, 1.0 ]
 																				}
 ,
 																				"parentstyle" : "",
@@ -6618,8 +6625,8 @@
 , 																			{
 																				"name" : "newobjYellow-1",
 																				"default" : 																				{
-																					"fontsize" : [ 12.059008 ],
-																					"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ]
+																					"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ],
+																					"fontsize" : [ 12.059008 ]
 																				}
 ,
 																				"parentstyle" : "",
@@ -6684,8 +6691,8 @@
 																		"fileversion" : 1,
 																		"appversion" : 																		{
 																			"major" : 8,
-																			"minor" : 1,
-																			"revision" : 5,
+																			"minor" : 5,
+																			"revision" : 3,
 																			"architecture" : "x64",
 																			"modernui" : 1
 																		}
@@ -7011,8 +7018,8 @@
 																		"fileversion" : 1,
 																		"appversion" : 																		{
 																			"major" : 8,
-																			"minor" : 1,
-																			"revision" : 5,
+																			"minor" : 5,
+																			"revision" : 3,
 																			"architecture" : "x64",
 																			"modernui" : 1
 																		}
@@ -7868,8 +7875,8 @@
 																		"fileversion" : 1,
 																		"appversion" : 																		{
 																			"major" : 8,
-																			"minor" : 1,
-																			"revision" : 5,
+																			"minor" : 5,
+																			"revision" : 3,
 																			"architecture" : "x64",
 																			"modernui" : 1
 																		}
@@ -8316,8 +8323,8 @@
 																		"fileversion" : 1,
 																		"appversion" : 																		{
 																			"major" : 8,
-																			"minor" : 1,
-																			"revision" : 5,
+																			"minor" : 5,
+																			"revision" : 3,
 																			"architecture" : "x64",
 																			"modernui" : 1
 																		}
@@ -8769,12 +8776,12 @@
 																				"name" : "Audiomix",
 																				"default" : 																				{
 																					"bgfillcolor" : 																					{
-																						"type" : "gradient",
+																						"angle" : 270.0,
+																						"color" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
 																						"color1" : [ 0.376471, 0.384314, 0.4, 1.0 ],
 																						"color2" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
-																						"color" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
-																						"angle" : 270.0,
-																						"proportion" : 0.39
+																						"proportion" : 0.39,
+																						"type" : "gradient"
 																					}
 
 																				}
@@ -8790,20 +8797,20 @@
 , 																			{
 																				"name" : "Neon",
 																				"default" : 																				{
-																					"selectioncolor" : [ 0.92549, 0.364706, 0.341176, 1.0 ],
+																					"accentcolor" : [ 0.305882, 0.329412, 0.4, 1.0 ],
 																					"bgcolor" : [ 0.201376, 0.21726, 0.264912, 1.0 ],
-																					"patchlinecolor" : [ 0.0, 1.0, 0.976471, 0.9 ],
 																					"bgfillcolor" : 																					{
-																						"type" : "gradient",
+																						"angle" : 270.0,
+																						"color" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
 																						"color1" : [ 0.376471, 0.384314, 0.4, 1.0 ],
 																						"color2" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
-																						"color" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
-																						"angle" : 270.0,
-																						"proportion" : 0.39
+																						"proportion" : 0.39,
+																						"type" : "gradient"
 																					}
 ,
-																					"textcolor" : [ 0.921569, 0.917647, 0.933333, 1.0 ],
-																					"accentcolor" : [ 0.305882, 0.329412, 0.4, 1.0 ]
+																					"patchlinecolor" : [ 0.0, 1.0, 0.976471, 0.9 ],
+																					"selectioncolor" : [ 0.92549, 0.364706, 0.341176, 1.0 ],
+																					"textcolor" : [ 0.921569, 0.917647, 0.933333, 1.0 ]
 																				}
 ,
 																				"parentstyle" : "",
@@ -8812,20 +8819,20 @@
 , 																			{
 																				"name" : "NeonRed",
 																				"default" : 																				{
-																					"selectioncolor" : [ 0.92549, 0.364706, 0.341176, 1.0 ],
+																					"accentcolor" : [ 0.305882, 0.329412, 0.4, 1.0 ],
 																					"bgcolor" : [ 0.201376, 0.21726, 0.264912, 1.0 ],
-																					"patchlinecolor" : [ 0.92549, 0.364706, 0.341176, 0.898039 ],
 																					"bgfillcolor" : 																					{
-																						"type" : "gradient",
+																						"angle" : 270.0,
+																						"color" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
 																						"color1" : [ 0.376471, 0.384314, 0.4, 1.0 ],
 																						"color2" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
-																						"color" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
-																						"angle" : 270.0,
-																						"proportion" : 0.39
+																						"proportion" : 0.39,
+																						"type" : "gradient"
 																					}
 ,
-																					"textcolor" : [ 0.921569, 0.917647, 0.933333, 1.0 ],
-																					"accentcolor" : [ 0.305882, 0.329412, 0.4, 1.0 ]
+																					"patchlinecolor" : [ 0.92549, 0.364706, 0.341176, 0.898039 ],
+																					"selectioncolor" : [ 0.92549, 0.364706, 0.341176, 1.0 ],
+																					"textcolor" : [ 0.921569, 0.917647, 0.933333, 1.0 ]
 																				}
 ,
 																				"parentstyle" : "",
@@ -8848,8 +8855,8 @@
 , 																			{
 																				"name" : "newobjYellow-1",
 																				"default" : 																				{
-																					"fontsize" : [ 12.059008 ],
-																					"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ]
+																					"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ],
+																					"fontsize" : [ 12.059008 ]
 																				}
 ,
 																				"parentstyle" : "",
@@ -9336,12 +9343,12 @@
 																"name" : "Audiomix",
 																"default" : 																{
 																	"bgfillcolor" : 																	{
-																		"type" : "gradient",
+																		"angle" : 270.0,
+																		"color" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
 																		"color1" : [ 0.376471, 0.384314, 0.4, 1.0 ],
 																		"color2" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
-																		"color" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
-																		"angle" : 270.0,
-																		"proportion" : 0.39
+																		"proportion" : 0.39,
+																		"type" : "gradient"
 																	}
 
 																}
@@ -9357,20 +9364,20 @@
 , 															{
 																"name" : "Neon",
 																"default" : 																{
-																	"selectioncolor" : [ 0.92549, 0.364706, 0.341176, 1.0 ],
+																	"accentcolor" : [ 0.305882, 0.329412, 0.4, 1.0 ],
 																	"bgcolor" : [ 0.201376, 0.21726, 0.264912, 1.0 ],
-																	"patchlinecolor" : [ 0.0, 1.0, 0.976471, 0.9 ],
 																	"bgfillcolor" : 																	{
-																		"type" : "gradient",
+																		"angle" : 270.0,
+																		"color" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
 																		"color1" : [ 0.376471, 0.384314, 0.4, 1.0 ],
 																		"color2" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
-																		"color" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
-																		"angle" : 270.0,
-																		"proportion" : 0.39
+																		"proportion" : 0.39,
+																		"type" : "gradient"
 																	}
 ,
-																	"textcolor" : [ 0.921569, 0.917647, 0.933333, 1.0 ],
-																	"accentcolor" : [ 0.305882, 0.329412, 0.4, 1.0 ]
+																	"patchlinecolor" : [ 0.0, 1.0, 0.976471, 0.9 ],
+																	"selectioncolor" : [ 0.92549, 0.364706, 0.341176, 1.0 ],
+																	"textcolor" : [ 0.921569, 0.917647, 0.933333, 1.0 ]
 																}
 ,
 																"parentstyle" : "",
@@ -9379,20 +9386,20 @@
 , 															{
 																"name" : "NeonRed",
 																"default" : 																{
-																	"selectioncolor" : [ 0.92549, 0.364706, 0.341176, 1.0 ],
+																	"accentcolor" : [ 0.305882, 0.329412, 0.4, 1.0 ],
 																	"bgcolor" : [ 0.201376, 0.21726, 0.264912, 1.0 ],
-																	"patchlinecolor" : [ 0.92549, 0.364706, 0.341176, 0.898039 ],
 																	"bgfillcolor" : 																	{
-																		"type" : "gradient",
+																		"angle" : 270.0,
+																		"color" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
 																		"color1" : [ 0.376471, 0.384314, 0.4, 1.0 ],
 																		"color2" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
-																		"color" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
-																		"angle" : 270.0,
-																		"proportion" : 0.39
+																		"proportion" : 0.39,
+																		"type" : "gradient"
 																	}
 ,
-																	"textcolor" : [ 0.921569, 0.917647, 0.933333, 1.0 ],
-																	"accentcolor" : [ 0.305882, 0.329412, 0.4, 1.0 ]
+																	"patchlinecolor" : [ 0.92549, 0.364706, 0.341176, 0.898039 ],
+																	"selectioncolor" : [ 0.92549, 0.364706, 0.341176, 1.0 ],
+																	"textcolor" : [ 0.921569, 0.917647, 0.933333, 1.0 ]
 																}
 ,
 																"parentstyle" : "",
@@ -9415,8 +9422,8 @@
 , 															{
 																"name" : "newobjYellow-1",
 																"default" : 																{
-																	"fontsize" : [ 12.059008 ],
-																	"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ]
+																	"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ],
+																	"fontsize" : [ 12.059008 ]
 																}
 ,
 																"parentstyle" : "",
@@ -9464,7 +9471,7 @@
 													"maxclass" : "newobj",
 													"numinlets" : 1,
 													"numoutlets" : 2,
-													"outlettype" : [ "multichannelsignal", "list" ],
+													"outlettype" : [ "multichannelsignal", "" ],
 													"patching_rect" : [ 233.714285714285666, 261.0, 180.0, 22.0 ],
 													"text" : "mcs.matrix~ 64 64 1. @ramp 10"
 												}
@@ -10338,12 +10345,12 @@
 												"name" : "Audiomix",
 												"default" : 												{
 													"bgfillcolor" : 													{
-														"type" : "gradient",
+														"angle" : 270.0,
+														"color" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
 														"color1" : [ 0.376471, 0.384314, 0.4, 1.0 ],
 														"color2" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
-														"color" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
-														"angle" : 270.0,
-														"proportion" : 0.39
+														"proportion" : 0.39,
+														"type" : "gradient"
 													}
 
 												}
@@ -10359,20 +10366,20 @@
 , 											{
 												"name" : "Neon",
 												"default" : 												{
-													"selectioncolor" : [ 0.92549, 0.364706, 0.341176, 1.0 ],
+													"accentcolor" : [ 0.305882, 0.329412, 0.4, 1.0 ],
 													"bgcolor" : [ 0.201376, 0.21726, 0.264912, 1.0 ],
-													"patchlinecolor" : [ 0.0, 1.0, 0.976471, 0.9 ],
 													"bgfillcolor" : 													{
-														"type" : "gradient",
+														"angle" : 270.0,
+														"color" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
 														"color1" : [ 0.376471, 0.384314, 0.4, 1.0 ],
 														"color2" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
-														"color" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
-														"angle" : 270.0,
-														"proportion" : 0.39
+														"proportion" : 0.39,
+														"type" : "gradient"
 													}
 ,
-													"textcolor" : [ 0.921569, 0.917647, 0.933333, 1.0 ],
-													"accentcolor" : [ 0.305882, 0.329412, 0.4, 1.0 ]
+													"patchlinecolor" : [ 0.0, 1.0, 0.976471, 0.9 ],
+													"selectioncolor" : [ 0.92549, 0.364706, 0.341176, 1.0 ],
+													"textcolor" : [ 0.921569, 0.917647, 0.933333, 1.0 ]
 												}
 ,
 												"parentstyle" : "",
@@ -10381,20 +10388,20 @@
 , 											{
 												"name" : "NeonRed",
 												"default" : 												{
-													"selectioncolor" : [ 0.92549, 0.364706, 0.341176, 1.0 ],
+													"accentcolor" : [ 0.305882, 0.329412, 0.4, 1.0 ],
 													"bgcolor" : [ 0.201376, 0.21726, 0.264912, 1.0 ],
-													"patchlinecolor" : [ 0.92549, 0.364706, 0.341176, 0.898039 ],
 													"bgfillcolor" : 													{
-														"type" : "gradient",
+														"angle" : 270.0,
+														"color" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
 														"color1" : [ 0.376471, 0.384314, 0.4, 1.0 ],
 														"color2" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
-														"color" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
-														"angle" : 270.0,
-														"proportion" : 0.39
+														"proportion" : 0.39,
+														"type" : "gradient"
 													}
 ,
-													"textcolor" : [ 0.921569, 0.917647, 0.933333, 1.0 ],
-													"accentcolor" : [ 0.305882, 0.329412, 0.4, 1.0 ]
+													"patchlinecolor" : [ 0.92549, 0.364706, 0.341176, 0.898039 ],
+													"selectioncolor" : [ 0.92549, 0.364706, 0.341176, 1.0 ],
+													"textcolor" : [ 0.921569, 0.917647, 0.933333, 1.0 ]
 												}
 ,
 												"parentstyle" : "",
@@ -10417,8 +10424,8 @@
 , 											{
 												"name" : "newobjYellow-1",
 												"default" : 												{
-													"fontsize" : [ 12.059008 ],
-													"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ]
+													"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ],
+													"fontsize" : [ 12.059008 ]
 												}
 ,
 												"parentstyle" : "",
@@ -10506,8 +10513,8 @@
 										"fileversion" : 1,
 										"appversion" : 										{
 											"major" : 8,
-											"minor" : 1,
-											"revision" : 5,
+											"minor" : 5,
+											"revision" : 3,
 											"architecture" : "x64",
 											"modernui" : 1
 										}
@@ -10635,8 +10642,8 @@
 														"fileversion" : 1,
 														"appversion" : 														{
 															"major" : 8,
-															"minor" : 1,
-															"revision" : 5,
+															"minor" : 5,
+															"revision" : 3,
 															"architecture" : "x64",
 															"modernui" : 1
 														}
@@ -11056,8 +11063,8 @@
 														"fileversion" : 1,
 														"appversion" : 														{
 															"major" : 8,
-															"minor" : 1,
-															"revision" : 5,
+															"minor" : 5,
+															"revision" : 3,
 															"architecture" : "x64",
 															"modernui" : 1
 														}
@@ -11773,8 +11780,8 @@
 										"fileversion" : 1,
 										"appversion" : 										{
 											"major" : 8,
-											"minor" : 1,
-											"revision" : 5,
+											"minor" : 5,
+											"revision" : 3,
 											"architecture" : "x64",
 											"modernui" : 1
 										}
@@ -11831,8 +11838,8 @@
 														"fileversion" : 1,
 														"appversion" : 														{
 															"major" : 8,
-															"minor" : 1,
-															"revision" : 5,
+															"minor" : 5,
+															"revision" : 3,
 															"architecture" : "x64",
 															"modernui" : 1
 														}
@@ -11877,8 +11884,8 @@
 																		"fileversion" : 1,
 																		"appversion" : 																		{
 																			"major" : 8,
-																			"minor" : 1,
-																			"revision" : 5,
+																			"minor" : 5,
+																			"revision" : 3,
 																			"architecture" : "x64",
 																			"modernui" : 1
 																		}
@@ -12063,8 +12070,8 @@
 																		"fileversion" : 1,
 																		"appversion" : 																		{
 																			"major" : 8,
-																			"minor" : 1,
-																			"revision" : 5,
+																			"minor" : 5,
+																			"revision" : 3,
 																			"architecture" : "x64",
 																			"modernui" : 1
 																		}
@@ -12242,8 +12249,8 @@
 																		"fileversion" : 1,
 																		"appversion" : 																		{
 																			"major" : 8,
-																			"minor" : 1,
-																			"revision" : 5,
+																			"minor" : 5,
+																			"revision" : 3,
 																			"architecture" : "x64",
 																			"modernui" : 1
 																		}
@@ -13157,8 +13164,8 @@
 										"fileversion" : 1,
 										"appversion" : 										{
 											"major" : 8,
-											"minor" : 1,
-											"revision" : 5,
+											"minor" : 5,
+											"revision" : 3,
 											"architecture" : "x64",
 											"modernui" : 1
 										}
@@ -13334,8 +13341,8 @@
 										"fileversion" : 1,
 										"appversion" : 										{
 											"major" : 8,
-											"minor" : 1,
-											"revision" : 5,
+											"minor" : 5,
+											"revision" : 3,
 											"architecture" : "x64",
 											"modernui" : 1
 										}
@@ -13422,8 +13429,8 @@
 														"fileversion" : 1,
 														"appversion" : 														{
 															"major" : 8,
-															"minor" : 1,
-															"revision" : 5,
+															"minor" : 5,
+															"revision" : 3,
 															"architecture" : "x64",
 															"modernui" : 1
 														}
@@ -13601,8 +13608,8 @@
 																		"fileversion" : 1,
 																		"appversion" : 																		{
 																			"major" : 8,
-																			"minor" : 1,
-																			"revision" : 5,
+																			"minor" : 5,
+																			"revision" : 3,
 																			"architecture" : "x64",
 																			"modernui" : 1
 																		}
@@ -14444,8 +14451,8 @@
 														"fileversion" : 1,
 														"appversion" : 														{
 															"major" : 8,
-															"minor" : 1,
-															"revision" : 5,
+															"minor" : 5,
+															"revision" : 3,
 															"architecture" : "x64",
 															"modernui" : 1
 														}
@@ -15115,8 +15122,8 @@
 														"fileversion" : 1,
 														"appversion" : 														{
 															"major" : 8,
-															"minor" : 1,
-															"revision" : 5,
+															"minor" : 5,
+															"revision" : 3,
 															"architecture" : "x64",
 															"modernui" : 1
 														}
@@ -15464,8 +15471,8 @@
 														"fileversion" : 1,
 														"appversion" : 														{
 															"major" : 8,
-															"minor" : 1,
-															"revision" : 5,
+															"minor" : 5,
+															"revision" : 3,
 															"architecture" : "x64",
 															"modernui" : 1
 														}
@@ -15932,8 +15939,8 @@
 														"fileversion" : 1,
 														"appversion" : 														{
 															"major" : 8,
-															"minor" : 1,
-															"revision" : 5,
+															"minor" : 5,
+															"revision" : 3,
 															"architecture" : "x64",
 															"modernui" : 1
 														}
@@ -16228,8 +16235,8 @@
 														"fileversion" : 1,
 														"appversion" : 														{
 															"major" : 8,
-															"minor" : 1,
-															"revision" : 5,
+															"minor" : 5,
+															"revision" : 3,
 															"architecture" : "x64",
 															"modernui" : 1
 														}
@@ -17124,8 +17131,8 @@
 										"fileversion" : 1,
 										"appversion" : 										{
 											"major" : 8,
-											"minor" : 1,
-											"revision" : 5,
+											"minor" : 5,
+											"revision" : 3,
 											"architecture" : "x64",
 											"modernui" : 1
 										}
@@ -17417,12 +17424,12 @@
 								"name" : "Audiomix",
 								"default" : 								{
 									"bgfillcolor" : 									{
-										"type" : "gradient",
+										"angle" : 270.0,
+										"color" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
 										"color1" : [ 0.376471, 0.384314, 0.4, 1.0 ],
 										"color2" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
-										"color" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
-										"angle" : 270.0,
-										"proportion" : 0.39
+										"proportion" : 0.39,
+										"type" : "gradient"
 									}
 
 								}
@@ -17438,20 +17445,20 @@
 , 							{
 								"name" : "Neon",
 								"default" : 								{
-									"selectioncolor" : [ 0.92549, 0.364706, 0.341176, 1.0 ],
+									"accentcolor" : [ 0.305882, 0.329412, 0.4, 1.0 ],
 									"bgcolor" : [ 0.201376, 0.21726, 0.264912, 1.0 ],
-									"patchlinecolor" : [ 0.0, 1.0, 0.976471, 0.9 ],
 									"bgfillcolor" : 									{
-										"type" : "gradient",
+										"angle" : 270.0,
+										"color" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
 										"color1" : [ 0.376471, 0.384314, 0.4, 1.0 ],
 										"color2" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
-										"color" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
-										"angle" : 270.0,
-										"proportion" : 0.39
+										"proportion" : 0.39,
+										"type" : "gradient"
 									}
 ,
-									"textcolor" : [ 0.921569, 0.917647, 0.933333, 1.0 ],
-									"accentcolor" : [ 0.305882, 0.329412, 0.4, 1.0 ]
+									"patchlinecolor" : [ 0.0, 1.0, 0.976471, 0.9 ],
+									"selectioncolor" : [ 0.92549, 0.364706, 0.341176, 1.0 ],
+									"textcolor" : [ 0.921569, 0.917647, 0.933333, 1.0 ]
 								}
 ,
 								"parentstyle" : "",
@@ -17460,20 +17467,20 @@
 , 							{
 								"name" : "NeonRed",
 								"default" : 								{
-									"selectioncolor" : [ 0.92549, 0.364706, 0.341176, 1.0 ],
+									"accentcolor" : [ 0.305882, 0.329412, 0.4, 1.0 ],
 									"bgcolor" : [ 0.201376, 0.21726, 0.264912, 1.0 ],
-									"patchlinecolor" : [ 0.92549, 0.364706, 0.341176, 0.898039 ],
 									"bgfillcolor" : 									{
-										"type" : "gradient",
+										"angle" : 270.0,
+										"color" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
 										"color1" : [ 0.376471, 0.384314, 0.4, 1.0 ],
 										"color2" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
-										"color" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
-										"angle" : 270.0,
-										"proportion" : 0.39
+										"proportion" : 0.39,
+										"type" : "gradient"
 									}
 ,
-									"textcolor" : [ 0.921569, 0.917647, 0.933333, 1.0 ],
-									"accentcolor" : [ 0.305882, 0.329412, 0.4, 1.0 ]
+									"patchlinecolor" : [ 0.92549, 0.364706, 0.341176, 0.898039 ],
+									"selectioncolor" : [ 0.92549, 0.364706, 0.341176, 1.0 ],
+									"textcolor" : [ 0.921569, 0.917647, 0.933333, 1.0 ]
 								}
 ,
 								"parentstyle" : "",
@@ -17496,8 +17503,8 @@
 , 							{
 								"name" : "newobjYellow-1",
 								"default" : 								{
-									"fontsize" : [ 12.059008 ],
-									"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ]
+									"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ],
+									"fontsize" : [ 12.059008 ]
 								}
 ,
 								"parentstyle" : "",
@@ -17634,8 +17641,8 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 8,
-							"minor" : 1,
-							"revision" : 5,
+							"minor" : 5,
+							"revision" : 3,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -17679,8 +17686,8 @@
 										"fileversion" : 1,
 										"appversion" : 										{
 											"major" : 8,
-											"minor" : 1,
-											"revision" : 5,
+											"minor" : 5,
+											"revision" : 3,
 											"architecture" : "x64",
 											"modernui" : 1
 										}
@@ -17931,8 +17938,8 @@
 										"fileversion" : 1,
 										"appversion" : 										{
 											"major" : 8,
-											"minor" : 1,
-											"revision" : 5,
+											"minor" : 5,
+											"revision" : 3,
 											"architecture" : "x64",
 											"modernui" : 1
 										}
@@ -18050,8 +18057,8 @@
 														"fileversion" : 1,
 														"appversion" : 														{
 															"major" : 8,
-															"minor" : 1,
-															"revision" : 5,
+															"minor" : 5,
+															"revision" : 3,
 															"architecture" : "x64",
 															"modernui" : 1
 														}
@@ -18492,8 +18499,8 @@
 										"fileversion" : 1,
 										"appversion" : 										{
 											"major" : 8,
-											"minor" : 1,
-											"revision" : 5,
+											"minor" : 5,
+											"revision" : 3,
 											"architecture" : "x64",
 											"modernui" : 1
 										}
@@ -18563,8 +18570,8 @@
 														"fileversion" : 1,
 														"appversion" : 														{
 															"major" : 8,
-															"minor" : 1,
-															"revision" : 5,
+															"minor" : 5,
+															"revision" : 3,
 															"architecture" : "x64",
 															"modernui" : 1
 														}
@@ -18609,8 +18616,8 @@
 																		"fileversion" : 1,
 																		"appversion" : 																		{
 																			"major" : 8,
-																			"minor" : 1,
-																			"revision" : 5,
+																			"minor" : 5,
+																			"revision" : 3,
 																			"architecture" : "x64",
 																			"modernui" : 1
 																		}
@@ -19368,8 +19375,8 @@
 																		"fileversion" : 1,
 																		"appversion" : 																		{
 																			"major" : 8,
-																			"minor" : 1,
-																			"revision" : 5,
+																			"minor" : 5,
+																			"revision" : 3,
 																			"architecture" : "x64",
 																			"modernui" : 1
 																		}
@@ -20393,8 +20400,8 @@
 																		"fileversion" : 1,
 																		"appversion" : 																		{
 																			"major" : 8,
-																			"minor" : 1,
-																			"revision" : 5,
+																			"minor" : 5,
+																			"revision" : 3,
 																			"architecture" : "x64",
 																			"modernui" : 1
 																		}
@@ -21827,8 +21834,8 @@
 														"fileversion" : 1,
 														"appversion" : 														{
 															"major" : 8,
-															"minor" : 1,
-															"revision" : 5,
+															"minor" : 5,
+															"revision" : 3,
 															"architecture" : "x64",
 															"modernui" : 1
 														}
@@ -21909,8 +21916,8 @@
 																		"fileversion" : 1,
 																		"appversion" : 																		{
 																			"major" : 8,
-																			"minor" : 1,
-																			"revision" : 5,
+																			"minor" : 5,
+																			"revision" : 3,
 																			"architecture" : "x64",
 																			"modernui" : 1
 																		}
@@ -22136,8 +22143,8 @@
 																		"fileversion" : 1,
 																		"appversion" : 																		{
 																			"major" : 8,
-																			"minor" : 1,
-																			"revision" : 5,
+																			"minor" : 5,
+																			"revision" : 3,
 																			"architecture" : "x64",
 																			"modernui" : 1
 																		}
@@ -22434,8 +22441,8 @@
 																		"fileversion" : 1,
 																		"appversion" : 																		{
 																			"major" : 8,
-																			"minor" : 1,
-																			"revision" : 5,
+																			"minor" : 5,
+																			"revision" : 3,
 																			"architecture" : "x64",
 																			"modernui" : 1
 																		}
@@ -23811,8 +23818,8 @@
 										"fileversion" : 1,
 										"appversion" : 										{
 											"major" : 8,
-											"minor" : 1,
-											"revision" : 5,
+											"minor" : 5,
+											"revision" : 3,
 											"architecture" : "x64",
 											"modernui" : 1
 										}
@@ -23953,8 +23960,8 @@
 										"fileversion" : 1,
 										"appversion" : 										{
 											"major" : 8,
-											"minor" : 1,
-											"revision" : 5,
+											"minor" : 5,
+											"revision" : 3,
 											"architecture" : "x64",
 											"modernui" : 1
 										}
@@ -24083,8 +24090,8 @@
 										"fileversion" : 1,
 										"appversion" : 										{
 											"major" : 8,
-											"minor" : 1,
-											"revision" : 5,
+											"minor" : 5,
+											"revision" : 3,
 											"architecture" : "x64",
 											"modernui" : 1
 										}
@@ -24128,8 +24135,8 @@
 														"fileversion" : 1,
 														"appversion" : 														{
 															"major" : 8,
-															"minor" : 1,
-															"revision" : 5,
+															"minor" : 5,
+															"revision" : 3,
 															"architecture" : "x64",
 															"modernui" : 1
 														}
@@ -24391,8 +24398,8 @@
 																		"fileversion" : 1,
 																		"appversion" : 																		{
 																			"major" : 8,
-																			"minor" : 1,
-																			"revision" : 5,
+																			"minor" : 5,
+																			"revision" : 3,
 																			"architecture" : "x64",
 																			"modernui" : 1
 																		}
@@ -25389,8 +25396,8 @@
 																		"fileversion" : 1,
 																		"appversion" : 																		{
 																			"major" : 8,
-																			"minor" : 1,
-																			"revision" : 5,
+																			"minor" : 5,
+																			"revision" : 3,
 																			"architecture" : "x64",
 																			"modernui" : 1
 																		}
@@ -26769,8 +26776,8 @@
 										"fileversion" : 1,
 										"appversion" : 										{
 											"major" : 8,
-											"minor" : 1,
-											"revision" : 5,
+											"minor" : 5,
+											"revision" : 3,
 											"architecture" : "x64",
 											"modernui" : 1
 										}
@@ -27347,8 +27354,8 @@
 										"fileversion" : 1,
 										"appversion" : 										{
 											"major" : 8,
-											"minor" : 1,
-											"revision" : 5,
+											"minor" : 5,
+											"revision" : 3,
 											"architecture" : "x64",
 											"modernui" : 1
 										}
@@ -27477,8 +27484,8 @@
 										"fileversion" : 1,
 										"appversion" : 										{
 											"major" : 8,
-											"minor" : 1,
-											"revision" : 5,
+											"minor" : 5,
+											"revision" : 3,
 											"architecture" : "x64",
 											"modernui" : 1
 										}
@@ -27607,8 +27614,8 @@
 										"fileversion" : 1,
 										"appversion" : 										{
 											"major" : 8,
-											"minor" : 1,
-											"revision" : 5,
+											"minor" : 5,
+											"revision" : 3,
 											"architecture" : "x64",
 											"modernui" : 1
 										}
@@ -27777,8 +27784,8 @@
 										"fileversion" : 1,
 										"appversion" : 										{
 											"major" : 8,
-											"minor" : 1,
-											"revision" : 5,
+											"minor" : 5,
+											"revision" : 3,
 											"architecture" : "x64",
 											"modernui" : 1
 										}
@@ -27907,8 +27914,8 @@
 										"fileversion" : 1,
 										"appversion" : 										{
 											"major" : 8,
-											"minor" : 1,
-											"revision" : 5,
+											"minor" : 5,
+											"revision" : 3,
 											"architecture" : "x64",
 											"modernui" : 1
 										}
@@ -27989,8 +27996,8 @@
 														"fileversion" : 1,
 														"appversion" : 														{
 															"major" : 8,
-															"minor" : 1,
-															"revision" : 5,
+															"minor" : 5,
+															"revision" : 3,
 															"architecture" : "x64",
 															"modernui" : 1
 														}
@@ -28478,8 +28485,8 @@
 														"fileversion" : 1,
 														"appversion" : 														{
 															"major" : 8,
-															"minor" : 1,
-															"revision" : 5,
+															"minor" : 5,
+															"revision" : 3,
 															"architecture" : "x64",
 															"modernui" : 1
 														}
@@ -28916,8 +28923,8 @@
 										"fileversion" : 1,
 										"appversion" : 										{
 											"major" : 8,
-											"minor" : 1,
-											"revision" : 5,
+											"minor" : 5,
+											"revision" : 3,
 											"architecture" : "x64",
 											"modernui" : 1
 										}
@@ -28974,8 +28981,8 @@
 														"fileversion" : 1,
 														"appversion" : 														{
 															"major" : 8,
-															"minor" : 1,
-															"revision" : 5,
+															"minor" : 5,
+															"revision" : 3,
 															"architecture" : "x64",
 															"modernui" : 1
 														}
@@ -29373,8 +29380,8 @@
 										"fileversion" : 1,
 										"appversion" : 										{
 											"major" : 8,
-											"minor" : 1,
-											"revision" : 5,
+											"minor" : 5,
+											"revision" : 3,
 											"architecture" : "x64",
 											"modernui" : 1
 										}
@@ -29478,8 +29485,8 @@
 														"fileversion" : 1,
 														"appversion" : 														{
 															"major" : 8,
-															"minor" : 1,
-															"revision" : 5,
+															"minor" : 5,
+															"revision" : 3,
 															"architecture" : "x64",
 															"modernui" : 1
 														}
@@ -29598,8 +29605,8 @@
 																		"fileversion" : 1,
 																		"appversion" : 																		{
 																			"major" : 8,
-																			"minor" : 1,
-																			"revision" : 5,
+																			"minor" : 5,
+																			"revision" : 3,
 																			"architecture" : "x64",
 																			"modernui" : 1
 																		}
@@ -30175,8 +30182,8 @@
 														"fileversion" : 1,
 														"appversion" : 														{
 															"major" : 8,
-															"minor" : 1,
-															"revision" : 5,
+															"minor" : 5,
+															"revision" : 3,
 															"architecture" : "x64",
 															"modernui" : 1
 														}
@@ -30221,8 +30228,8 @@
 																		"fileversion" : 1,
 																		"appversion" : 																		{
 																			"major" : 8,
-																			"minor" : 1,
-																			"revision" : 5,
+																			"minor" : 5,
+																			"revision" : 3,
 																			"architecture" : "x64",
 																			"modernui" : 1
 																		}
@@ -30504,8 +30511,8 @@
 																		"fileversion" : 1,
 																		"appversion" : 																		{
 																			"major" : 8,
-																			"minor" : 1,
-																			"revision" : 5,
+																			"minor" : 5,
+																			"revision" : 3,
 																			"architecture" : "x64",
 																			"modernui" : 1
 																		}
@@ -30816,8 +30823,8 @@
 																		"fileversion" : 1,
 																		"appversion" : 																		{
 																			"major" : 8,
-																			"minor" : 1,
-																			"revision" : 5,
+																			"minor" : 5,
+																			"revision" : 3,
 																			"architecture" : "x64",
 																			"modernui" : 1
 																		}
@@ -31077,8 +31084,8 @@
 																		"fileversion" : 1,
 																		"appversion" : 																		{
 																			"major" : 8,
-																			"minor" : 1,
-																			"revision" : 5,
+																			"minor" : 5,
+																			"revision" : 3,
 																			"architecture" : "x64",
 																			"modernui" : 1
 																		}
@@ -31553,8 +31560,8 @@
 														"fileversion" : 1,
 														"appversion" : 														{
 															"major" : 8,
-															"minor" : 1,
-															"revision" : 5,
+															"minor" : 5,
+															"revision" : 3,
 															"architecture" : "x64",
 															"modernui" : 1
 														}
@@ -31933,8 +31940,8 @@
 														"fileversion" : 1,
 														"appversion" : 														{
 															"major" : 8,
-															"minor" : 1,
-															"revision" : 5,
+															"minor" : 5,
+															"revision" : 3,
 															"architecture" : "x64",
 															"modernui" : 1
 														}
@@ -32051,8 +32058,8 @@
 																		"fileversion" : 1,
 																		"appversion" : 																		{
 																			"major" : 8,
-																			"minor" : 1,
-																			"revision" : 5,
+																			"minor" : 5,
+																			"revision" : 3,
 																			"architecture" : "x64",
 																			"modernui" : 1
 																		}
@@ -32157,8 +32164,8 @@
 																						"fileversion" : 1,
 																						"appversion" : 																						{
 																							"major" : 8,
-																							"minor" : 1,
-																							"revision" : 5,
+																							"minor" : 5,
+																							"revision" : 3,
 																							"architecture" : "x64",
 																							"modernui" : 1
 																						}
@@ -33321,8 +33328,8 @@
 																		"fileversion" : 1,
 																		"appversion" : 																		{
 																			"major" : 8,
-																			"minor" : 1,
-																			"revision" : 5,
+																			"minor" : 5,
+																			"revision" : 3,
 																			"architecture" : "x64",
 																			"modernui" : 1
 																		}
@@ -33592,8 +33599,8 @@
 																		"fileversion" : 1,
 																		"appversion" : 																		{
 																			"major" : 8,
-																			"minor" : 1,
-																			"revision" : 5,
+																			"minor" : 5,
+																			"revision" : 3,
 																			"architecture" : "x64",
 																			"modernui" : 1
 																		}
@@ -33796,8 +33803,8 @@
 																		"fileversion" : 1,
 																		"appversion" : 																		{
 																			"major" : 8,
-																			"minor" : 1,
-																			"revision" : 5,
+																			"minor" : 5,
+																			"revision" : 3,
 																			"architecture" : "x64",
 																			"modernui" : 1
 																		}
@@ -34269,8 +34276,8 @@
 																		"fileversion" : 1,
 																		"appversion" : 																		{
 																			"major" : 8,
-																			"minor" : 1,
-																			"revision" : 5,
+																			"minor" : 5,
+																			"revision" : 3,
 																			"architecture" : "x64",
 																			"modernui" : 1
 																		}
@@ -35225,8 +35232,8 @@
 										"fileversion" : 1,
 										"appversion" : 										{
 											"major" : 8,
-											"minor" : 1,
-											"revision" : 5,
+											"minor" : 5,
+											"revision" : 3,
 											"architecture" : "x64",
 											"modernui" : 1
 										}
@@ -35283,8 +35290,8 @@
 														"fileversion" : 1,
 														"appversion" : 														{
 															"major" : 8,
-															"minor" : 1,
-															"revision" : 5,
+															"minor" : 5,
+															"revision" : 3,
 															"architecture" : "x64",
 															"modernui" : 1
 														}
@@ -36070,8 +36077,8 @@
 										"fileversion" : 1,
 										"appversion" : 										{
 											"major" : 8,
-											"minor" : 1,
-											"revision" : 5,
+											"minor" : 5,
+											"revision" : 3,
 											"architecture" : "x64",
 											"modernui" : 1
 										}
@@ -36239,8 +36246,8 @@
 										"fileversion" : 1,
 										"appversion" : 										{
 											"major" : 8,
-											"minor" : 1,
-											"revision" : 5,
+											"minor" : 5,
+											"revision" : 3,
 											"architecture" : "x64",
 											"modernui" : 1
 										}
@@ -36421,8 +36428,8 @@
 										"fileversion" : 1,
 										"appversion" : 										{
 											"major" : 8,
-											"minor" : 1,
-											"revision" : 5,
+											"minor" : 5,
+											"revision" : 3,
 											"architecture" : "x64",
 											"modernui" : 1
 										}
@@ -36537,8 +36544,8 @@
 														"fileversion" : 1,
 														"appversion" : 														{
 															"major" : 8,
-															"minor" : 1,
-															"revision" : 5,
+															"minor" : 5,
+															"revision" : 3,
 															"architecture" : "x64",
 															"modernui" : 1
 														}
@@ -36594,8 +36601,8 @@
 																		"fileversion" : 1,
 																		"appversion" : 																		{
 																			"major" : 8,
-																			"minor" : 1,
-																			"revision" : 5,
+																			"minor" : 5,
+																			"revision" : 3,
 																			"architecture" : "x64",
 																			"modernui" : 1
 																		}
@@ -37110,8 +37117,8 @@
 																		"fileversion" : 1,
 																		"appversion" : 																		{
 																			"major" : 8,
-																			"minor" : 1,
-																			"revision" : 5,
+																			"minor" : 5,
+																			"revision" : 3,
 																			"architecture" : "x64",
 																			"modernui" : 1
 																		}
@@ -38641,8 +38648,8 @@
 										"fileversion" : 1,
 										"appversion" : 										{
 											"major" : 8,
-											"minor" : 1,
-											"revision" : 5,
+											"minor" : 5,
+											"revision" : 3,
 											"architecture" : "x64",
 											"modernui" : 1
 										}
@@ -38704,8 +38711,8 @@
 														"fileversion" : 1,
 														"appversion" : 														{
 															"major" : 8,
-															"minor" : 1,
-															"revision" : 5,
+															"minor" : 5,
+															"revision" : 3,
 															"architecture" : "x64",
 															"modernui" : 1
 														}
@@ -38750,8 +38757,8 @@
 																		"fileversion" : 1,
 																		"appversion" : 																		{
 																			"major" : 8,
-																			"minor" : 1,
-																			"revision" : 5,
+																			"minor" : 5,
+																			"revision" : 3,
 																			"architecture" : "x64",
 																			"modernui" : 1
 																		}
@@ -38864,8 +38871,8 @@
 																		"fileversion" : 1,
 																		"appversion" : 																		{
 																			"major" : 8,
-																			"minor" : 1,
-																			"revision" : 5,
+																			"minor" : 5,
+																			"revision" : 3,
 																			"architecture" : "x64",
 																			"modernui" : 1
 																		}
@@ -38978,8 +38985,8 @@
 																		"fileversion" : 1,
 																		"appversion" : 																		{
 																			"major" : 8,
-																			"minor" : 1,
-																			"revision" : 5,
+																			"minor" : 5,
+																			"revision" : 3,
 																			"architecture" : "x64",
 																			"modernui" : 1
 																		}
@@ -39092,8 +39099,8 @@
 																		"fileversion" : 1,
 																		"appversion" : 																		{
 																			"major" : 8,
-																			"minor" : 1,
-																			"revision" : 5,
+																			"minor" : 5,
+																			"revision" : 3,
 																			"architecture" : "x64",
 																			"modernui" : 1
 																		}
@@ -39288,8 +39295,8 @@
 																		"fileversion" : 1,
 																		"appversion" : 																		{
 																			"major" : 8,
-																			"minor" : 1,
-																			"revision" : 5,
+																			"minor" : 5,
+																			"revision" : 3,
 																			"architecture" : "x64",
 																			"modernui" : 1
 																		}
@@ -39484,8 +39491,8 @@
 																		"fileversion" : 1,
 																		"appversion" : 																		{
 																			"major" : 8,
-																			"minor" : 1,
-																			"revision" : 5,
+																			"minor" : 5,
+																			"revision" : 3,
 																			"architecture" : "x64",
 																			"modernui" : 1
 																		}
@@ -39680,8 +39687,8 @@
 																		"fileversion" : 1,
 																		"appversion" : 																		{
 																			"major" : 8,
-																			"minor" : 1,
-																			"revision" : 5,
+																			"minor" : 5,
+																			"revision" : 3,
 																			"architecture" : "x64",
 																			"modernui" : 1
 																		}
@@ -39953,8 +39960,8 @@
 														"fileversion" : 1,
 														"appversion" : 														{
 															"major" : 8,
-															"minor" : 1,
-															"revision" : 5,
+															"minor" : 5,
+															"revision" : 3,
 															"architecture" : "x64",
 															"modernui" : 1
 														}
@@ -40023,8 +40030,8 @@
 																		"fileversion" : 1,
 																		"appversion" : 																		{
 																			"major" : 8,
-																			"minor" : 1,
-																			"revision" : 5,
+																			"minor" : 5,
+																			"revision" : 3,
 																			"architecture" : "x64",
 																			"modernui" : 1
 																		}
@@ -40327,8 +40334,8 @@
 																		"fileversion" : 1,
 																		"appversion" : 																		{
 																			"major" : 8,
-																			"minor" : 1,
-																			"revision" : 5,
+																			"minor" : 5,
+																			"revision" : 3,
 																			"architecture" : "x64",
 																			"modernui" : 1
 																		}
@@ -40633,8 +40640,8 @@
 																		"fileversion" : 1,
 																		"appversion" : 																		{
 																			"major" : 8,
-																			"minor" : 1,
-																			"revision" : 5,
+																			"minor" : 5,
+																			"revision" : 3,
 																			"architecture" : "x64",
 																			"modernui" : 1
 																		}
@@ -40894,8 +40901,8 @@
 																		"fileversion" : 1,
 																		"appversion" : 																		{
 																			"major" : 8,
-																			"minor" : 1,
-																			"revision" : 5,
+																			"minor" : 5,
+																			"revision" : 3,
 																			"architecture" : "x64",
 																			"modernui" : 1
 																		}
@@ -41252,8 +41259,8 @@
 																		"fileversion" : 1,
 																		"appversion" : 																		{
 																			"major" : 8,
-																			"minor" : 1,
-																			"revision" : 5,
+																			"minor" : 5,
+																			"revision" : 3,
 																			"architecture" : "x64",
 																			"modernui" : 1
 																		}
@@ -41967,8 +41974,8 @@
 														"fileversion" : 1,
 														"appversion" : 														{
 															"major" : 8,
-															"minor" : 1,
-															"revision" : 5,
+															"minor" : 5,
+															"revision" : 3,
 															"architecture" : "x64",
 															"modernui" : 1
 														}
@@ -42474,8 +42481,8 @@
 														"fileversion" : 1,
 														"appversion" : 														{
 															"major" : 8,
-															"minor" : 1,
-															"revision" : 5,
+															"minor" : 5,
+															"revision" : 3,
 															"architecture" : "x64",
 															"modernui" : 1
 														}
@@ -42579,8 +42586,8 @@
 																		"fileversion" : 1,
 																		"appversion" : 																		{
 																			"major" : 8,
-																			"minor" : 1,
-																			"revision" : 5,
+																			"minor" : 5,
+																			"revision" : 3,
 																			"architecture" : "x64",
 																			"modernui" : 1
 																		}
@@ -43619,12 +43626,12 @@
 								"name" : "Audiomix",
 								"default" : 								{
 									"bgfillcolor" : 									{
-										"type" : "gradient",
+										"angle" : 270.0,
+										"color" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
 										"color1" : [ 0.376471, 0.384314, 0.4, 1.0 ],
 										"color2" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
-										"color" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
-										"angle" : 270.0,
-										"proportion" : 0.39
+										"proportion" : 0.39,
+										"type" : "gradient"
 									}
 
 								}
@@ -43635,9 +43642,9 @@
 , 							{
 								"name" : "Default M4L",
 								"default" : 								{
-									"patchlinecolor" : [ 0.290196, 0.309804, 0.301961, 0.85 ],
+									"fontname" : [ "Arial Bold" ],
 									"fontsize" : [ 11.0 ],
-									"fontname" : [ "Arial Bold" ]
+									"patchlinecolor" : [ 0.290196, 0.309804, 0.301961, 0.85 ]
 								}
 ,
 								"parentstyle" : "",
@@ -43646,9 +43653,9 @@
 , 							{
 								"name" : "Default M4L Poletti",
 								"default" : 								{
-									"patchlinecolor" : [ 0.290196, 0.309804, 0.301961, 0.85 ],
+									"fontname" : [ "Arial Bold" ],
 									"fontsize" : [ 10.0 ],
-									"fontname" : [ "Arial Bold" ]
+									"patchlinecolor" : [ 0.290196, 0.309804, 0.301961, 0.85 ]
 								}
 ,
 								"parentstyle" : "",
@@ -43657,18 +43664,18 @@
 , 							{
 								"name" : "Default M4L-1",
 								"default" : 								{
-									"fontface" : [ 1 ],
 									"bgfillcolor" : 									{
-										"type" : "gradient",
+										"angle" : 270.0,
+										"color" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
 										"color1" : [ 0.376471, 0.384314, 0.4, 1.0 ],
 										"color2" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
-										"color" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
-										"angle" : 270.0,
-										"proportion" : 0.39
+										"proportion" : 0.39,
+										"type" : "gradient"
 									}
 ,
-									"fontsize" : [ 11.0 ],
-									"fontname" : [ "Arial" ]
+									"fontface" : [ 1 ],
+									"fontname" : [ "Arial" ],
+									"fontsize" : [ 11.0 ]
 								}
 ,
 								"parentstyle" : "",
@@ -43678,12 +43685,12 @@
 								"name" : "Max 12 Regular",
 								"default" : 								{
 									"bgfillcolor" : 									{
-										"type" : "gradient",
+										"angle" : 270.0,
+										"color" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
 										"color1" : [ 0.376471, 0.384314, 0.4, 1.0 ],
 										"color2" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
-										"color" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
-										"angle" : 270.0,
-										"proportion" : 0.39
+										"proportion" : 0.39,
+										"type" : "gradient"
 									}
 
 								}
@@ -43700,12 +43707,12 @@
 								"name" : "Max 12 Regular-1-1",
 								"default" : 								{
 									"bgfillcolor" : 									{
-										"type" : "gradient",
+										"angle" : 270.0,
+										"color" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
 										"color1" : [ 0.376471, 0.384314, 0.4, 1.0 ],
 										"color2" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
-										"color" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
-										"angle" : 270.0,
-										"proportion" : 0.39
+										"proportion" : 0.39,
+										"type" : "gradient"
 									}
 
 								}
@@ -43717,12 +43724,12 @@
 								"name" : "Max 12 Regular-2",
 								"default" : 								{
 									"bgfillcolor" : 									{
-										"type" : "gradient",
+										"angle" : 270.0,
+										"color" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
 										"color1" : [ 0.376471, 0.384314, 0.4, 1.0 ],
 										"color2" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
-										"color" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
-										"angle" : 270.0,
-										"proportion" : 0.39
+										"proportion" : 0.39,
+										"type" : "gradient"
 									}
 
 								}
@@ -43734,12 +43741,12 @@
 								"name" : "Max 12 Regular-3",
 								"default" : 								{
 									"bgfillcolor" : 									{
-										"type" : "gradient",
+										"angle" : 270.0,
+										"color" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
 										"color1" : [ 0.376471, 0.384314, 0.4, 1.0 ],
 										"color2" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
-										"color" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
-										"angle" : 270.0,
-										"proportion" : 0.39
+										"proportion" : 0.39,
+										"type" : "gradient"
 									}
 
 								}
@@ -43750,20 +43757,20 @@
 , 							{
 								"name" : "Neon",
 								"default" : 								{
-									"selectioncolor" : [ 0.92549, 0.364706, 0.341176, 1.0 ],
+									"accentcolor" : [ 0.305882, 0.329412, 0.4, 1.0 ],
 									"bgcolor" : [ 0.201376, 0.21726, 0.264912, 1.0 ],
-									"patchlinecolor" : [ 0.0, 1.0, 0.976471, 0.9 ],
 									"bgfillcolor" : 									{
-										"type" : "gradient",
+										"angle" : 270.0,
+										"color" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
 										"color1" : [ 0.376471, 0.384314, 0.4, 1.0 ],
 										"color2" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
-										"color" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
-										"angle" : 270.0,
-										"proportion" : 0.39
+										"proportion" : 0.39,
+										"type" : "gradient"
 									}
 ,
-									"textcolor" : [ 0.921569, 0.917647, 0.933333, 1.0 ],
-									"accentcolor" : [ 0.305882, 0.329412, 0.4, 1.0 ]
+									"patchlinecolor" : [ 0.0, 1.0, 0.976471, 0.9 ],
+									"selectioncolor" : [ 0.92549, 0.364706, 0.341176, 1.0 ],
+									"textcolor" : [ 0.921569, 0.917647, 0.933333, 1.0 ]
 								}
 ,
 								"parentstyle" : "",
@@ -43772,20 +43779,20 @@
 , 							{
 								"name" : "NeonRed",
 								"default" : 								{
-									"selectioncolor" : [ 0.92549, 0.364706, 0.341176, 1.0 ],
+									"accentcolor" : [ 0.305882, 0.329412, 0.4, 1.0 ],
 									"bgcolor" : [ 0.201376, 0.21726, 0.264912, 1.0 ],
-									"patchlinecolor" : [ 0.92549, 0.364706, 0.341176, 0.898039 ],
 									"bgfillcolor" : 									{
-										"type" : "gradient",
+										"angle" : 270.0,
+										"color" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
 										"color1" : [ 0.376471, 0.384314, 0.4, 1.0 ],
 										"color2" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
-										"color" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
-										"angle" : 270.0,
-										"proportion" : 0.39
+										"proportion" : 0.39,
+										"type" : "gradient"
 									}
 ,
-									"textcolor" : [ 0.921569, 0.917647, 0.933333, 1.0 ],
-									"accentcolor" : [ 0.305882, 0.329412, 0.4, 1.0 ]
+									"patchlinecolor" : [ 0.92549, 0.364706, 0.341176, 0.898039 ],
+									"selectioncolor" : [ 0.92549, 0.364706, 0.341176, 1.0 ],
+									"textcolor" : [ 0.921569, 0.917647, 0.933333, 1.0 ]
 								}
 ,
 								"parentstyle" : "",
@@ -43808,8 +43815,8 @@
 , 							{
 								"name" : "newobjYellow-1",
 								"default" : 								{
-									"fontsize" : [ 12.059008 ],
-									"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ]
+									"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ],
+									"fontsize" : [ 12.059008 ]
 								}
 ,
 								"parentstyle" : "",
@@ -43850,9 +43857,10 @@
 					"hidden" : 1,
 					"id" : "obj-26",
 					"lockeddragscroll" : 0,
+					"lockedsize" : 0,
 					"maxclass" : "bpatcher",
 					"name" : "moc_twoAFC_interface.maxpat",
-					"numinlets" : 1,
+					"numinlets" : 0,
 					"numoutlets" : 0,
 					"offset" : [ 0.0, 0.0 ],
 					"patching_rect" : [ 449.5, 257.0, 474.5, 275.0 ],
@@ -43870,9 +43878,9 @@
 					"clickthrough" : 0,
 					"enablehscroll" : 0,
 					"enablevscroll" : 0,
-					"hidden" : 1,
 					"id" : "obj-6",
 					"lockeddragscroll" : 0,
+					"lockedsize" : 0,
 					"maxclass" : "bpatcher",
 					"name" : "ui_config.maxpat",
 					"numinlets" : 0,
@@ -43893,8 +43901,10 @@
 					"clickthrough" : 0,
 					"enablehscroll" : 0,
 					"enablevscroll" : 0,
+					"hidden" : 1,
 					"id" : "obj-5",
 					"lockeddragscroll" : 0,
+					"lockedsize" : 0,
 					"maxclass" : "bpatcher",
 					"name" : "ui_mainMenu.maxpat",
 					"numinlets" : 0,
@@ -43918,6 +43928,7 @@
 					"hidden" : 1,
 					"id" : "obj-9",
 					"lockeddragscroll" : 0,
+					"lockedsize" : 0,
 					"maxclass" : "bpatcher",
 					"name" : "ui_subjectMenu.maxpat",
 					"numinlets" : 0,
@@ -45098,339 +45109,45 @@
 		}
 ,
 		"dependency_cache" : [ 			{
-				"name" : "ui_subjectMenu.maxpat",
-				"bootpath" : "~/Documents/Max 8/Projects/HULTI-GENv2/HULTI-GENv2/patchers",
-				"patcherrelativepath" : ".",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "ui_mainMenu.maxpat",
-				"bootpath" : "~/Documents/Max 8/Projects/HULTI-GENv2/HULTI-GENv2/patchers",
-				"patcherrelativepath" : ".",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "ui_config.maxpat",
-				"bootpath" : "~/Documents/Max 8/Projects/HULTI-GENv2/HULTI-GENv2/patchers",
-				"patcherrelativepath" : ".",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "ui_config_stimulusassign.maxpat",
-				"bootpath" : "~/Documents/Max 8/Projects/HULTI-GENv2/HULTI-GENv2/patchers",
-				"patcherrelativepath" : ".",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "ui_filelist_pool_noDependencies.maxpat",
-				"bootpath" : "~/Documents/Max 8/Projects/HULTI-GENv2/HULTI-GENv2/patchers",
-				"patcherrelativepath" : ".",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "ui_filelist.maxpat",
-				"bootpath" : "~/Documents/Max 8/Projects/HULTI-GENv2/HULTI-GENv2/patchers",
-				"patcherrelativepath" : ".",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "ui_filelist_entry.maxpat",
-				"bootpath" : "~/Documents/Max 8/Projects/HULTI-GENv2/HULTI-GENv2/patchers",
-				"patcherrelativepath" : ".",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "filelistManager.js",
-				"bootpath" : "~/Documents/Max 8/Projects/HULTI-GENv2/HULTI-GENv2/code",
-				"patcherrelativepath" : "../code",
+				"name" : "adaptivePsychophysical.txt",
+				"bootpath" : "~/Dev/HULTI-GENv2/HULTI-GENv2/data",
+				"patcherrelativepath" : "../data",
 				"type" : "TEXT",
 				"implicit" : 1
 			}
 , 			{
-				"name" : "ui_filelist_itur.maxpat",
-				"bootpath" : "~/Documents/Max 8/Projects/HULTI-GENv2/HULTI-GENv2/patchers",
-				"patcherrelativepath" : ".",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "ui_filelist_multicheckbox.maxpat",
-				"bootpath" : "~/Documents/Max 8/Projects/HULTI-GENv2/HULTI-GENv2/patchers",
-				"patcherrelativepath" : ".",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "ui_filelist_entry_multicheckbox.maxpat",
-				"bootpath" : "~/Documents/Max 8/Projects/HULTI-GENv2/HULTI-GENv2/patchers",
-				"patcherrelativepath" : ".",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "ui_checkbox.maxpat",
-				"bootpath" : "~/Documents/Max 8/Projects/HULTI-GENv2/HULTI-GENv2/patchers",
-				"patcherrelativepath" : ".",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "filelistManagerMultiCheckbox.js",
-				"bootpath" : "~/Documents/Max 8/Projects/HULTI-GENv2/HULTI-GENv2/code",
-				"patcherrelativepath" : "../code",
-				"type" : "TEXT",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "warning.png",
-				"bootpath" : "~/Documents/Max 8/Projects/HULTI-GENv2/HULTI-GENv2/images",
-				"patcherrelativepath" : "../images",
-				"type" : "PNG",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "ui_accordion.maxpat",
-				"bootpath" : "~/Documents/Max 8/Projects/HULTI-GENv2/HULTI-GENv2/patchers",
-				"patcherrelativepath" : ".",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "configSessionsSidemenu4.js",
-				"bootpath" : "~/Documents/Max 8/Projects/HULTI-GENv2/HULTI-GENv2/code",
+				"name" : "addRemoveSessions.js",
+				"bootpath" : "~/Dev/HULTI-GENv2/HULTI-GENv2/code",
 				"patcherrelativepath" : "../code",
 				"type" : "TEXT",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "be_config_getDependencies.maxpat",
-				"bootpath" : "~/Documents/Max 8/Projects/HULTI-GENv2/HULTI-GENv2/patchers",
+				"bootpath" : "~/Dev/HULTI-GENv2/HULTI-GENv2/patchers",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
-				"name" : "ui_config_stimulusPool.maxpat",
-				"bootpath" : "~/Documents/Max 8/Projects/HULTI-GENv2/HULTI-GENv2/patchers",
-				"patcherrelativepath" : ".",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "ui_filelist_pool.maxpat",
-				"bootpath" : "~/Documents/Max 8/Projects/HULTI-GENv2/HULTI-GENv2/patchers",
-				"patcherrelativepath" : ".",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "ui_config_testSetup.maxpat",
-				"bootpath" : "~/Documents/Max 8/Projects/HULTI-GENv2/HULTI-GENv2/patchers",
-				"patcherrelativepath" : ".",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "ui_params_grading.maxpat",
-				"bootpath" : "~/Documents/Max 8/Projects/HULTI-GENv2/HULTI-GENv2/patchers",
-				"patcherrelativepath" : ".",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "addRemoveSessions.js",
-				"bootpath" : "~/Documents/Max 8/Projects/HULTI-GENv2/HULTI-GENv2/code",
-				"patcherrelativepath" : "../code",
-				"type" : "TEXT",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "gradingTests.txt",
-				"bootpath" : "~/Documents/Max 8/Projects/HULTI-GENv2/HULTI-GENv2/data",
-				"patcherrelativepath" : "../data",
-				"type" : "TEXT",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "nonAdaptivePsychophysical.txt",
-				"bootpath" : "~/Documents/Max 8/Projects/HULTI-GENv2/HULTI-GENv2/data",
-				"patcherrelativepath" : "../data",
-				"type" : "TEXT",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "adaptivePsychophysical.txt",
-				"bootpath" : "~/Documents/Max 8/Projects/HULTI-GENv2/HULTI-GENv2/data",
-				"patcherrelativepath" : "../data",
-				"type" : "TEXT",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "ui_config_interfaceCustomisation.maxpat",
-				"bootpath" : "~/Documents/Max 8/Projects/HULTI-GENv2/HULTI-GENv2/patchers",
-				"patcherrelativepath" : ".",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "multicomp_subinterface.maxpat",
-				"bootpath" : "~/Documents/Max 8/Projects/HULTI-GENv2/HULTI-GENv2/patchers",
-				"patcherrelativepath" : ".",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "rating_sliderbank.maxpat",
-				"bootpath" : "~/Documents/Max 8/Projects/HULTI-GENv2/HULTI-GENv2/patchers",
-				"patcherrelativepath" : ".",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "rating_slider.maxpat",
-				"bootpath" : "~/Documents/Max 8/Projects/HULTI-GENv2/HULTI-GENv2/patchers",
-				"patcherrelativepath" : ".",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "ui_config_chooseTest.maxpat",
-				"bootpath" : "~/Documents/Max 8/Projects/HULTI-GENv2/HULTI-GENv2/patchers",
-				"patcherrelativepath" : ".",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "moc_twoAFC_interface.maxpat",
-				"bootpath" : "~/Documents/Max 8/Projects/HULTI-GENv2/tests/moc_twoAFC",
-				"patcherrelativepath" : "../../tests/moc_twoAFC",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "schemaValidator3.js",
-				"bootpath" : "~/Documents/Max 8/Projects/HULTI-GENv2/HULTI-GENv2/code",
-				"patcherrelativepath" : "../code",
-				"type" : "TEXT",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "makeDefaultFromSchema.js",
-				"bootpath" : "~/Documents/Max 8/Projects/HULTI-GENv2/HULTI-GENv2/code",
+				"name" : "configSessionsSidemenu4.js",
+				"bootpath" : "~/Dev/HULTI-GENv2/HULTI-GENv2/code",
 				"patcherrelativepath" : "../code",
 				"type" : "TEXT",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "dictValidator.js",
-				"bootpath" : "~/Documents/Max 8/Projects/HULTI-GENv2/HULTI-GENv2/code",
+				"bootpath" : "~/Dev/HULTI-GENv2/HULTI-GENv2/code",
 				"patcherrelativepath" : "../code",
 				"type" : "TEXT",
 				"implicit" : 1
 			}
 , 			{
-				"name" : "lookAboveThisDir.maxpat",
-				"bootpath" : "~/Documents/Max 8/Projects/HULTI-GENv2/HULTI-GENv2/patchers",
-				"patcherrelativepath" : ".",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "initSubjectFileGP.js",
-				"bootpath" : "~/Documents/Max 8/Projects/HULTI-GENv2/HULTI-GENv2/code",
-				"patcherrelativepath" : "../code",
-				"type" : "TEXT",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "speakerLayouts.txt",
-				"bootpath" : "~/Documents/Max 8/Projects/HULTI-GENv2/HULTI-GENv2/data",
+				"name" : "gradingTests.txt",
+				"bootpath" : "~/Dev/HULTI-GENv2/HULTI-GENv2/data",
 				"patcherrelativepath" : "../data",
 				"type" : "TEXT",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "headphoneEQs.txt",
-				"bootpath" : "~/Documents/Max 8/Projects/HULTI-GENv2/HULTI-GENv2/data",
-				"patcherrelativepath" : "../data",
-				"type" : "TEXT",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "ui_audioEngine.maxpat",
-				"bootpath" : "~/Documents/Max 8/Projects/HULTI-GENv2/HULTI-GENv2/patchers",
-				"patcherrelativepath" : ".",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "ui_binaural_channelList.maxpat",
-				"bootpath" : "~/Documents/Max 8/Projects/HULTI-GENv2/HULTI-GENv2/patchers",
-				"patcherrelativepath" : ".",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "ui_binaural_channelStrip.maxpat",
-				"bootpath" : "~/Documents/Max 8/Projects/HULTI-GENv2/HULTI-GENv2/patchers",
-				"patcherrelativepath" : ".",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "ui_binaural_fader.maxpat",
-				"bootpath" : "~/Documents/Max 8/Projects/HULTI-GENv2/HULTI-GENv2/patchers",
-				"patcherrelativepath" : ".",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "ui_filesMissingDialog.maxpat",
-				"bootpath" : "~/Documents/Max 8/Projects/HULTI-GENv2/HULTI-GENv2/patchers",
-				"patcherrelativepath" : ".",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "ui_sessionComplete.maxpat",
-				"bootpath" : "~/Documents/Max 8/Projects/HULTI-GENv2/HULTI-GENv2/patchers",
-				"patcherrelativepath" : ".",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "ui_allComplete.maxpat",
-				"bootpath" : "~/Documents/Max 8/Projects/HULTI-GENv2/HULTI-GENv2/patchers",
-				"patcherrelativepath" : ".",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "ui_groupComplete.maxpat",
-				"bootpath" : "~/Documents/Max 8/Projects/HULTI-GENv2/HULTI-GENv2/patchers",
-				"patcherrelativepath" : ".",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "ui_beginTestMenu.maxpat",
-				"bootpath" : "~/Documents/Max 8/Projects/HULTI-GENv2/HULTI-GENv2/patchers",
-				"patcherrelativepath" : ".",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "ui_exitTest.maxpat",
-				"bootpath" : "~/Documents/Max 8/Projects/HULTI-GENv2/HULTI-GENv2/patchers",
-				"patcherrelativepath" : ".",
-				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
@@ -45438,11 +45155,78 @@
 				"type" : "iLaX"
 			}
 , 			{
+				"name" : "headphoneEQs.txt",
+				"bootpath" : "~/Dev/HULTI-GENv2/HULTI-GENv2/data",
+				"patcherrelativepath" : "../data",
+				"type" : "TEXT",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "hgen_stimlist.mxo",
+				"type" : "iLaX"
+			}
+, 			{
+				"name" : "initSubjectFileGP.js",
+				"bootpath" : "~/Dev/HULTI-GENv2/HULTI-GENv2/code",
+				"patcherrelativepath" : "../code",
+				"type" : "TEXT",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "lookAboveThisDir.maxpat",
+				"bootpath" : "~/Dev/HULTI-GENv2/HULTI-GENv2/patchers",
+				"patcherrelativepath" : ".",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "makeDefaultFromSchema.js",
+				"bootpath" : "~/Dev/HULTI-GENv2/HULTI-GENv2/code",
+				"patcherrelativepath" : "../code",
+				"type" : "TEXT",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "multicomp_subinterface.maxpat",
+				"bootpath" : "~/Dev/HULTI-GENv2/HULTI-GENv2/patchers",
+				"patcherrelativepath" : ".",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
 				"name" : "multiconvolve~.mxo",
 				"type" : "iLaX"
 			}
 , 			{
-				"name" : "sofa~.mxo",
+				"name" : "nonAdaptivePsychophysical.txt",
+				"bootpath" : "~/Dev/HULTI-GENv2/HULTI-GENv2/data",
+				"patcherrelativepath" : "../data",
+				"type" : "TEXT",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "rating_slider.maxpat",
+				"bootpath" : "~/Dev/HULTI-GENv2/HULTI-GENv2/patchers",
+				"patcherrelativepath" : ".",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "rating_sliderbank.maxpat",
+				"bootpath" : "~/Dev/HULTI-GENv2/HULTI-GENv2/patchers",
+				"patcherrelativepath" : ".",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "schemaValidator3.js",
+				"bootpath" : "~/Dev/HULTI-GENv2/HULTI-GENv2/code",
+				"patcherrelativepath" : "../code",
+				"type" : "TEXT",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "sofa.hrir~.mxo",
 				"type" : "iLaX"
 			}
 , 			{
@@ -45450,8 +45234,155 @@
 				"type" : "iLaX"
 			}
 , 			{
-				"name" : "sofa.hrir~.mxo",
+				"name" : "sofa~.mxo",
 				"type" : "iLaX"
+			}
+, 			{
+				"name" : "speakerLayouts.txt",
+				"bootpath" : "~/Dev/HULTI-GENv2/HULTI-GENv2/data",
+				"patcherrelativepath" : "../data",
+				"type" : "TEXT",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "ui_accordion.maxpat",
+				"bootpath" : "~/Dev/HULTI-GENv2/HULTI-GENv2/patchers",
+				"patcherrelativepath" : ".",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "ui_allComplete.maxpat",
+				"bootpath" : "~/Dev/HULTI-GENv2/HULTI-GENv2/patchers",
+				"patcherrelativepath" : ".",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "ui_audioEngine.maxpat",
+				"bootpath" : "~/Dev/HULTI-GENv2/HULTI-GENv2/patchers",
+				"patcherrelativepath" : ".",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "ui_beginTestMenu.maxpat",
+				"bootpath" : "~/Dev/HULTI-GENv2/HULTI-GENv2/patchers",
+				"patcherrelativepath" : ".",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "ui_binaural_channelList.maxpat",
+				"bootpath" : "~/Dev/HULTI-GENv2/HULTI-GENv2/patchers",
+				"patcherrelativepath" : ".",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "ui_binaural_channelStrip.maxpat",
+				"bootpath" : "~/Dev/HULTI-GENv2/HULTI-GENv2/patchers",
+				"patcherrelativepath" : ".",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "ui_binaural_fader.maxpat",
+				"bootpath" : "~/Dev/HULTI-GENv2/HULTI-GENv2/patchers",
+				"patcherrelativepath" : ".",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "ui_config.maxpat",
+				"bootpath" : "~/Dev/HULTI-GENv2/HULTI-GENv2/patchers",
+				"patcherrelativepath" : ".",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "ui_config_chooseTest.maxpat",
+				"bootpath" : "~/Dev/HULTI-GENv2/HULTI-GENv2/patchers",
+				"patcherrelativepath" : ".",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "ui_config_interfaceCustomisation.maxpat",
+				"bootpath" : "~/Dev/HULTI-GENv2/HULTI-GENv2/patchers",
+				"patcherrelativepath" : ".",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "ui_config_stimulusPool.maxpat",
+				"bootpath" : "~/Dev/HULTI-GENv2/HULTI-GENv2/patchers",
+				"patcherrelativepath" : ".",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "ui_config_stimulusassign.maxpat",
+				"bootpath" : "~/Dev/HULTI-GENv2/HULTI-GENv2/patchers",
+				"patcherrelativepath" : ".",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "ui_config_testSetup.maxpat",
+				"bootpath" : "~/Dev/HULTI-GENv2/HULTI-GENv2/patchers",
+				"patcherrelativepath" : ".",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "ui_exitTest.maxpat",
+				"bootpath" : "~/Dev/HULTI-GENv2/HULTI-GENv2/patchers",
+				"patcherrelativepath" : ".",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "ui_filesMissingDialog.maxpat",
+				"bootpath" : "~/Dev/HULTI-GENv2/HULTI-GENv2/patchers",
+				"patcherrelativepath" : ".",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "ui_groupComplete.maxpat",
+				"bootpath" : "~/Dev/HULTI-GENv2/HULTI-GENv2/patchers",
+				"patcherrelativepath" : ".",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "ui_mainMenu.maxpat",
+				"bootpath" : "~/Dev/HULTI-GENv2/HULTI-GENv2/patchers",
+				"patcherrelativepath" : ".",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "ui_params_grading.maxpat",
+				"bootpath" : "~/Dev/HULTI-GENv2/HULTI-GENv2/patchers",
+				"patcherrelativepath" : ".",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "ui_sessionComplete.maxpat",
+				"bootpath" : "~/Dev/HULTI-GENv2/HULTI-GENv2/patchers",
+				"patcherrelativepath" : ".",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "ui_subjectMenu.maxpat",
+				"bootpath" : "~/Dev/HULTI-GENv2/HULTI-GENv2/patchers",
+				"patcherrelativepath" : ".",
+				"type" : "JSON",
+				"implicit" : 1
 			}
  ],
 		"autosave" : 0,
@@ -45459,12 +45390,12 @@
 				"name" : "Audiomix",
 				"default" : 				{
 					"bgfillcolor" : 					{
-						"type" : "gradient",
+						"angle" : 270.0,
+						"color" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
 						"color1" : [ 0.376471, 0.384314, 0.4, 1.0 ],
 						"color2" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
-						"color" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
-						"angle" : 270.0,
-						"proportion" : 0.39
+						"proportion" : 0.39,
+						"type" : "gradient"
 					}
 
 				}
@@ -45475,9 +45406,9 @@
 , 			{
 				"name" : "Default M4L",
 				"default" : 				{
-					"patchlinecolor" : [ 0.290196, 0.309804, 0.301961, 0.85 ],
+					"fontname" : [ "Arial Bold" ],
 					"fontsize" : [ 11.0 ],
-					"fontname" : [ "Arial Bold" ]
+					"patchlinecolor" : [ 0.290196, 0.309804, 0.301961, 0.85 ]
 				}
 ,
 				"parentstyle" : "",
@@ -45486,9 +45417,9 @@
 , 			{
 				"name" : "Default M4L Poletti",
 				"default" : 				{
-					"patchlinecolor" : [ 0.290196, 0.309804, 0.301961, 0.85 ],
+					"fontname" : [ "Arial Bold" ],
 					"fontsize" : [ 10.0 ],
-					"fontname" : [ "Arial Bold" ]
+					"patchlinecolor" : [ 0.290196, 0.309804, 0.301961, 0.85 ]
 				}
 ,
 				"parentstyle" : "",
@@ -45497,18 +45428,18 @@
 , 			{
 				"name" : "Default M4L-1",
 				"default" : 				{
-					"fontface" : [ 1 ],
 					"bgfillcolor" : 					{
-						"type" : "gradient",
+						"angle" : 270.0,
+						"color" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
 						"color1" : [ 0.376471, 0.384314, 0.4, 1.0 ],
 						"color2" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
-						"color" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
-						"angle" : 270.0,
-						"proportion" : 0.39
+						"proportion" : 0.39,
+						"type" : "gradient"
 					}
 ,
-					"fontsize" : [ 11.0 ],
-					"fontname" : [ "Arial" ]
+					"fontface" : [ 1 ],
+					"fontname" : [ "Arial" ],
+					"fontsize" : [ 11.0 ]
 				}
 ,
 				"parentstyle" : "",
@@ -45518,12 +45449,12 @@
 				"name" : "Max 12 Regular",
 				"default" : 				{
 					"bgfillcolor" : 					{
-						"type" : "gradient",
+						"angle" : 270.0,
+						"color" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
 						"color1" : [ 0.376471, 0.384314, 0.4, 1.0 ],
 						"color2" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
-						"color" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
-						"angle" : 270.0,
-						"proportion" : 0.39
+						"proportion" : 0.39,
+						"type" : "gradient"
 					}
 
 				}
@@ -45540,12 +45471,12 @@
 				"name" : "Max 12 Regular-1-1",
 				"default" : 				{
 					"bgfillcolor" : 					{
-						"type" : "gradient",
+						"angle" : 270.0,
+						"color" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
 						"color1" : [ 0.376471, 0.384314, 0.4, 1.0 ],
 						"color2" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
-						"color" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
-						"angle" : 270.0,
-						"proportion" : 0.39
+						"proportion" : 0.39,
+						"type" : "gradient"
 					}
 
 				}
@@ -45557,12 +45488,12 @@
 				"name" : "Max 12 Regular-2",
 				"default" : 				{
 					"bgfillcolor" : 					{
-						"type" : "gradient",
+						"angle" : 270.0,
+						"color" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
 						"color1" : [ 0.376471, 0.384314, 0.4, 1.0 ],
 						"color2" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
-						"color" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
-						"angle" : 270.0,
-						"proportion" : 0.39
+						"proportion" : 0.39,
+						"type" : "gradient"
 					}
 
 				}
@@ -45574,12 +45505,12 @@
 				"name" : "Max 12 Regular-3",
 				"default" : 				{
 					"bgfillcolor" : 					{
-						"type" : "gradient",
+						"angle" : 270.0,
+						"color" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
 						"color1" : [ 0.376471, 0.384314, 0.4, 1.0 ],
 						"color2" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
-						"color" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
-						"angle" : 270.0,
-						"proportion" : 0.39
+						"proportion" : 0.39,
+						"type" : "gradient"
 					}
 
 				}
@@ -45590,20 +45521,20 @@
 , 			{
 				"name" : "Neon",
 				"default" : 				{
-					"selectioncolor" : [ 0.92549, 0.364706, 0.341176, 1.0 ],
+					"accentcolor" : [ 0.305882, 0.329412, 0.4, 1.0 ],
 					"bgcolor" : [ 0.201376, 0.21726, 0.264912, 1.0 ],
-					"patchlinecolor" : [ 0.0, 1.0, 0.976471, 0.9 ],
 					"bgfillcolor" : 					{
-						"type" : "gradient",
+						"angle" : 270.0,
+						"color" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
 						"color1" : [ 0.376471, 0.384314, 0.4, 1.0 ],
 						"color2" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
-						"color" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
-						"angle" : 270.0,
-						"proportion" : 0.39
+						"proportion" : 0.39,
+						"type" : "gradient"
 					}
 ,
-					"textcolor" : [ 0.921569, 0.917647, 0.933333, 1.0 ],
-					"accentcolor" : [ 0.305882, 0.329412, 0.4, 1.0 ]
+					"patchlinecolor" : [ 0.0, 1.0, 0.976471, 0.9 ],
+					"selectioncolor" : [ 0.92549, 0.364706, 0.341176, 1.0 ],
+					"textcolor" : [ 0.921569, 0.917647, 0.933333, 1.0 ]
 				}
 ,
 				"parentstyle" : "",
@@ -45612,20 +45543,20 @@
 , 			{
 				"name" : "NeonRed",
 				"default" : 				{
-					"selectioncolor" : [ 0.92549, 0.364706, 0.341176, 1.0 ],
+					"accentcolor" : [ 0.305882, 0.329412, 0.4, 1.0 ],
 					"bgcolor" : [ 0.201376, 0.21726, 0.264912, 1.0 ],
-					"patchlinecolor" : [ 0.92549, 0.364706, 0.341176, 0.898039 ],
 					"bgfillcolor" : 					{
-						"type" : "gradient",
+						"angle" : 270.0,
+						"color" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
 						"color1" : [ 0.376471, 0.384314, 0.4, 1.0 ],
 						"color2" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
-						"color" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
-						"angle" : 270.0,
-						"proportion" : 0.39
+						"proportion" : 0.39,
+						"type" : "gradient"
 					}
 ,
-					"textcolor" : [ 0.921569, 0.917647, 0.933333, 1.0 ],
-					"accentcolor" : [ 0.305882, 0.329412, 0.4, 1.0 ]
+					"patchlinecolor" : [ 0.92549, 0.364706, 0.341176, 0.898039 ],
+					"selectioncolor" : [ 0.92549, 0.364706, 0.341176, 1.0 ],
+					"textcolor" : [ 0.921569, 0.917647, 0.933333, 1.0 ]
 				}
 ,
 				"parentstyle" : "",
@@ -45648,8 +45579,8 @@
 , 			{
 				"name" : "newobjYellow-1",
 				"default" : 				{
-					"fontsize" : [ 12.059008 ],
-					"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ]
+					"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ],
+					"fontsize" : [ 12.059008 ]
 				}
 ,
 				"parentstyle" : "",
