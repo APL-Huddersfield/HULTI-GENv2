@@ -1664,7 +1664,7 @@
 				"box" : 				{
 					"filterduplicates" : 1,
 					"id" : "obj-27",
-					"maxclass" : "hgen_stimlist",
+					"maxclass" : "maple.filelist",
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
@@ -2135,7 +2135,7 @@
 			}
  ],
 		"dependency_cache" : [ 			{
-				"name" : "hgen_stimlist.mxo",
+				"name" : "maple.filelist.mxo",
 				"type" : "iLaX"
 			}
  ],

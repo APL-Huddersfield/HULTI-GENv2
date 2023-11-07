@@ -103,7 +103,7 @@
 				"box" : 				{
 					"filterduplicates" : 0,
 					"id" : "obj-59",
-					"maxclass" : "hgen_stimlist",
+					"maxclass" : "maple.filelist",
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
@@ -10376,7 +10376,7 @@
 				"implicit" : 1
 			}
 , 			{
-				"name" : "hgen_stimlist.mxo",
+				"name" : "maple.filelist.mxo",
 				"type" : "iLaX"
 			}
 , 			{

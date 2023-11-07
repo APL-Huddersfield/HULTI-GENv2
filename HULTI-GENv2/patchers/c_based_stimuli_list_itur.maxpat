@@ -2103,7 +2103,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 505.0, 451.5, 79.0, 22.0 ],
-									"text" : "hgen_stimlist"
+									"text" : "maple.filelist"
 								}
 
 							}
@@ -2176,7 +2176,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 602.0, 397.5, 188.0, 22.0 ],
-									"text" : "prepend hgen_stimlist @item_attr"
+									"text" : "prepend maple.filelist @item_attr"
 								}
 
 							}
