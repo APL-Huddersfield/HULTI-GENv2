@@ -2,7 +2,7 @@
 	"name" : "HULTI-GENv2",
 	"version" : 1,
 	"creationdate" : 3666872002,
-	"modificationdate" : 3761638621,
+	"modificationdate" : 3782738296,
 	"viewrect" : [ 1436.0, 118.0, 461.0, 826.0 ],
 	"autoorganize" : 0,
 	"hideprojectwindow" : 1,
@@ -16,12 +16,62 @@
 				"toplevel" : 1
 			}
 ,
-			"ui_subjectMenu.maxpat" : 			{
+			"be_config_getDependencies.maxpat" : 			{
 				"kind" : "patcher",
 				"local" : 1
 			}
 ,
-			"ui_mainMenu.maxpat" : 			{
+			"lookAboveThisDir.maxpat" : 			{
+				"kind" : "patcher",
+				"local" : 1
+			}
+,
+			"multicomp_subinterface.maxpat" : 			{
+				"kind" : "patcher",
+				"local" : 1
+			}
+,
+			"rating_sliderbank.maxpat" : 			{
+				"kind" : "patcher",
+				"local" : 1
+			}
+,
+			"rating_slider.maxpat" : 			{
+				"kind" : "patcher",
+				"local" : 1
+			}
+,
+			"ui_accordion.maxpat" : 			{
+				"kind" : "patcher",
+				"local" : 1
+			}
+,
+			"ui_allComplete.maxpat" : 			{
+				"kind" : "patcher",
+				"local" : 1
+			}
+,
+			"ui_audioEngine.maxpat" : 			{
+				"kind" : "patcher",
+				"local" : 1
+			}
+,
+			"ui_binaural_channelList.maxpat" : 			{
+				"kind" : "patcher",
+				"local" : 1
+			}
+,
+			"ui_binaural_channelStrip.maxpat" : 			{
+				"kind" : "patcher",
+				"local" : 1
+			}
+,
+			"ui_binaural_fader.maxpat" : 			{
+				"kind" : "patcher",
+				"local" : 1
+			}
+,
+			"ui_beginTestMenu.maxpat" : 			{
 				"kind" : "patcher",
 				"local" : 1
 			}
@@ -31,17 +81,67 @@
 				"local" : 1
 			}
 ,
+			"c_based_stimuli_list_itur.maxpat" : 			{
+				"kind" : "patcher",
+				"local" : 1
+			}
+,
+			"ui_config_chooseTest.maxpat" : 			{
+				"kind" : "patcher",
+				"local" : 1
+			}
+,
+			"ui_config_interfaceCustomisation.maxpat" : 			{
+				"kind" : "patcher",
+				"local" : 1
+			}
+,
+			"ui_config_stimulusPool.maxpat" : 			{
+				"kind" : "patcher",
+				"local" : 1
+			}
+,
 			"ui_config_stimulusassign.maxpat" : 			{
 				"kind" : "patcher",
 				"local" : 1
 			}
 ,
-			"be_config_getDependencies.maxpat" : 			{
+			"ui_config_testSetup.maxpat" : 			{
 				"kind" : "patcher",
 				"local" : 1
 			}
 ,
-			"ui_accordion.maxpat" : 			{
+			"ui_params_grading.maxpat" : 			{
+				"kind" : "patcher",
+				"local" : 1
+			}
+,
+			"ui_exitTest.maxpat" : 			{
+				"kind" : "patcher",
+				"local" : 1
+			}
+,
+			"ui_filesMissingDialog.maxpat" : 			{
+				"kind" : "patcher",
+				"local" : 1
+			}
+,
+			"ui_groupComplete.maxpat" : 			{
+				"kind" : "patcher",
+				"local" : 1
+			}
+,
+			"ui_mainMenu.maxpat" : 			{
+				"kind" : "patcher",
+				"local" : 1
+			}
+,
+			"ui_sessionComplete.maxpat" : 			{
+				"kind" : "patcher",
+				"local" : 1
+			}
+,
+			"ui_subjectMenu.maxpat" : 			{
 				"kind" : "patcher",
 				"local" : 1
 			}
@@ -81,102 +181,7 @@
 				"local" : 1
 			}
 ,
-			"ui_config_stimulusPool.maxpat" : 			{
-				"kind" : "patcher",
-				"local" : 1
-			}
-,
 			"ui_filelist_pool.maxpat" : 			{
-				"kind" : "patcher",
-				"local" : 1
-			}
-,
-			"ui_config_testSetup.maxpat" : 			{
-				"kind" : "patcher",
-				"local" : 1
-			}
-,
-			"ui_params_grading.maxpat" : 			{
-				"kind" : "patcher",
-				"local" : 1
-			}
-,
-			"ui_config_interfaceCustomisation.maxpat" : 			{
-				"kind" : "patcher",
-				"local" : 1
-			}
-,
-			"multicomp_subinterface.maxpat" : 			{
-				"kind" : "patcher",
-				"local" : 1
-			}
-,
-			"rating_sliderbank.maxpat" : 			{
-				"kind" : "patcher",
-				"local" : 1
-			}
-,
-			"rating_slider.maxpat" : 			{
-				"kind" : "patcher",
-				"local" : 1
-			}
-,
-			"ui_config_chooseTest.maxpat" : 			{
-				"kind" : "patcher",
-				"local" : 1
-			}
-,
-			"lookAboveThisDir.maxpat" : 			{
-				"kind" : "patcher",
-				"local" : 1
-			}
-,
-			"ui_audioEngine.maxpat" : 			{
-				"kind" : "patcher",
-				"local" : 1
-			}
-,
-			"ui_binaural_channelList.maxpat" : 			{
-				"kind" : "patcher",
-				"local" : 1
-			}
-,
-			"ui_binaural_channelStrip.maxpat" : 			{
-				"kind" : "patcher",
-				"local" : 1
-			}
-,
-			"ui_binaural_fader.maxpat" : 			{
-				"kind" : "patcher",
-				"local" : 1
-			}
-,
-			"ui_filesMissingDialog.maxpat" : 			{
-				"kind" : "patcher",
-				"local" : 1
-			}
-,
-			"ui_sessionComplete.maxpat" : 			{
-				"kind" : "patcher",
-				"local" : 1
-			}
-,
-			"ui_allComplete.maxpat" : 			{
-				"kind" : "patcher",
-				"local" : 1
-			}
-,
-			"ui_groupComplete.maxpat" : 			{
-				"kind" : "patcher",
-				"local" : 1
-			}
-,
-			"ui_beginTestMenu.maxpat" : 			{
-				"kind" : "patcher",
-				"local" : 1
-			}
-,
-			"ui_exitTest.maxpat" : 			{
 				"kind" : "patcher",
 				"local" : 1
 			}
@@ -646,7 +651,7 @@
 
 			}
 ,
-			"c_based_stimuli_list_itur.maxpat" : 			{
+			"c_based_stimuli_list_psycho.maxpat" : 			{
 				"kind" : "patcher",
 				"local" : 1,
 				"singleton" : 				{
@@ -663,32 +668,12 @@
 		}
 ,
 		"code" : 		{
-			"configSessionsSidemenu4.js" : 			{
-				"kind" : "javascript",
-				"local" : 1
-			}
-,
-			"filelistManager.js" : 			{
-				"kind" : "javascript",
-				"local" : 1
-			}
-,
-			"filelistManagerMultiCheckbox.js" : 			{
-				"kind" : "javascript",
-				"local" : 1
-			}
-,
 			"addRemoveSessions.js" : 			{
 				"kind" : "javascript",
 				"local" : 1
 			}
 ,
-			"schemaValidator3.js" : 			{
-				"kind" : "javascript",
-				"local" : 1
-			}
-,
-			"makeDefaultFromSchema.js" : 			{
+			"configSessionsSidemenu4.js" : 			{
 				"kind" : "javascript",
 				"local" : 1
 			}
@@ -699,6 +684,26 @@
 			}
 ,
 			"initSubjectFileGP.js" : 			{
+				"kind" : "javascript",
+				"local" : 1
+			}
+,
+			"makeDefaultFromSchema.js" : 			{
+				"kind" : "javascript",
+				"local" : 1
+			}
+,
+			"schemaValidator3.js" : 			{
+				"kind" : "javascript",
+				"local" : 1
+			}
+,
+			"filelistManager.js" : 			{
+				"kind" : "javascript",
+				"local" : 1
+			}
+,
+			"filelistManagerMultiCheckbox.js" : 			{
 				"kind" : "javascript",
 				"local" : 1
 			}
@@ -766,7 +771,17 @@
 		}
 ,
 		"data" : 		{
+			"adaptivePsychophysical.txt" : 			{
+				"kind" : "textfile",
+				"local" : 1
+			}
+,
 			"gradingTests.txt" : 			{
+				"kind" : "textfile",
+				"local" : 1
+			}
+,
+			"headphoneEQs.txt" : 			{
 				"kind" : "textfile",
 				"local" : 1
 			}
@@ -776,17 +791,7 @@
 				"local" : 1
 			}
 ,
-			"adaptivePsychophysical.txt" : 			{
-				"kind" : "textfile",
-				"local" : 1
-			}
-,
 			"speakerLayouts.txt" : 			{
-				"kind" : "textfile",
-				"local" : 1
-			}
-,
-			"headphoneEQs.txt" : 			{
 				"kind" : "textfile",
 				"local" : 1
 			}
@@ -854,7 +859,7 @@
 				"local" : 1
 			}
 ,
-			"sofa~.mxo" : 			{
+			"sofa.hrir~.mxo" : 			{
 				"kind" : "object",
 				"local" : 1
 			}
@@ -864,7 +869,7 @@
 				"local" : 1
 			}
 ,
-			"sofa.hrir~.mxo" : 			{
+			"sofa~.mxo" : 			{
 				"kind" : "object",
 				"local" : 1
 			}

@@ -3155,11 +3155,9 @@
 					"lockeddragscroll" : 0,
 					"lockedsize" : 0,
 					"maxclass" : "bpatcher",
-					"name" : "c_based_stimuli_list_itur.maxpat",
-					"numinlets" : 1,
-					"numoutlets" : 1,
+					"numinlets" : 0,
+					"numoutlets" : 0,
 					"offset" : [ 0.0, 0.0 ],
-					"outlettype" : [ "" ],
 					"patching_rect" : [ 66.0, 476.0, 128.0, 128.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 731.0, 70.0, 519.0, 562.0 ],
@@ -10999,13 +10997,6 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-18", 1 ],
-					"source" : [ "obj-12", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
 					"destination" : [ "obj-121", 0 ],
 					"source" : [ "obj-120", 0 ]
 				}
@@ -11249,13 +11240,6 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-12", 0 ],
-					"source" : [ "obj-55", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
 					"destination" : [ "obj-45", 0 ],
 					"midpoints" : [ 186.0, 847.5, 43.5, 847.5 ],
 					"source" : [ "obj-57", 0 ]
@@ -11444,13 +11428,6 @@
 				"implicit" : 1
 			}
 , 			{
-				"name" : "c_based_stimuli_list_itur.maxpat",
-				"bootpath" : "~/Dev/HULTI-GENv2/HULTI-GENv2/patchers",
-				"patcherrelativepath" : ".",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
 				"name" : "configSessionsSidemenu4.js",
 				"bootpath" : "~/Dev/HULTI-GENv2/HULTI-GENv2/code",
 				"patcherrelativepath" : "../code",
@@ -11466,13 +11443,6 @@
 				"bootpath" : "~/Dev/HULTI-GENv2/HULTI-GENv2/patchers",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "warning.png",
-				"bootpath" : "~/Dev/HULTI-GENv2/HULTI-GENv2/images",
-				"patcherrelativepath" : "../images",
-				"type" : "PNG",
 				"implicit" : 1
 			}
  ],
