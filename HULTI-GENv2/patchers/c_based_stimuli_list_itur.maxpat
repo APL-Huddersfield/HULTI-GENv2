@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 57.0, 97.0, 1054.0, 682.0 ],
+		"rect" : [ 812.0, 312.0, 1054.0, 682.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -39,6 +39,42 @@
 		"subpatcher_template" : "",
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
+				"box" : 				{
+					"id" : "obj-13",
+					"maxclass" : "live.line",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 60.0, 24.0, 5.0, 27.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 516.0, 0.0, 5.0, 20.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-12",
+					"maxclass" : "live.line",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 44.0, 24.0, 5.0, 27.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 0.0, 0.0, 5.0, 20.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-5",
+					"maxclass" : "live.line",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 30.0, 24.0, 5.0, 27.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 20.0, 0.0, 5.0, 20.0 ]
+				}
+
+			}
+, 			{
 				"box" : 				{
 					"id" : "obj-16",
 					"maxclass" : "newobj",
@@ -973,26 +1009,28 @@
 			}
 , 			{
 				"box" : 				{
+					"bgcolor" : [ 1.0, 1.0, 1.0, 1.0 ],
 					"fontface" : 1,
 					"id" : "obj-9",
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 38.0, 2.0, 159.0, 20.0 ],
+					"patching_rect" : [ 30.0, 0.0, 65.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 21.0, 0.0, 497.0, 20.0 ],
+					"presentation_rect" : [ 21.0, 0.0, 496.0, 20.0 ],
 					"text" : "Filename"
 				}
 
 			}
 , 			{
 				"box" : 				{
+					"bgcolor" : [ 1.0, 1.0, 1.0, 1.0 ],
 					"fontface" : 1,
 					"id" : "obj-8",
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 199.0, 2.0, 151.0, 20.0 ],
+					"patching_rect" : [ 0.0, 0.0, 28.0, 20.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 0.0, 0.0, 21.0, 20.0 ],
 					"text" : "ID"

@@ -40,14 +40,49 @@
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-13",
+					"maxclass" : "live.line",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 80.0, 24.0, 5.0, 27.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 516.0, 0.0, 5.0, 20.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-4",
+					"maxclass" : "live.line",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 62.0, 24.0, 5.0, 27.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 367.0, 0.0, 5.0, 20.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-12",
 					"maxclass" : "live.line",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 149.0, 32.0, 5.0, 42.0 ],
+					"patching_rect" : [ 44.0, 24.0, 5.0, 27.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 366.0, 0.0, 5.0, 560.0 ],
-					"varname" : "labelseparator"
+					"presentation_rect" : [ 0.0, 0.0, 5.0, 20.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-3",
+					"maxclass" : "live.line",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 30.0, 24.0, 5.0, 27.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 20.0, 0.0, 5.0, 20.0 ]
 				}
 
 			}
@@ -665,6 +700,7 @@
 			}
 , 			{
 				"box" : 				{
+					"bgcolor" : [ 1.0, 1.0, 1.0, 1.0 ],
 					"fontface" : 1,
 					"id" : "obj-5",
 					"maxclass" : "comment",
@@ -672,7 +708,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 149.0, 2.0, 107.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 367.0, 0.0, 124.0, 20.0 ],
+					"presentation_rect" : [ 367.0, 0.0, 150.0, 20.0 ],
 					"text" : "Endpoint Type"
 				}
 
@@ -717,6 +753,7 @@
 			}
 , 			{
 				"box" : 				{
+					"bgcolor" : [ 1.0, 1.0, 1.0, 1.0 ],
 					"fontface" : 1,
 					"id" : "obj-9",
 					"maxclass" : "comment",
@@ -731,6 +768,7 @@
 			}
 , 			{
 				"box" : 				{
+					"bgcolor" : [ 1.0, 1.0, 1.0, 1.0 ],
 					"fontface" : 1,
 					"id" : "obj-8",
 					"maxclass" : "comment",
