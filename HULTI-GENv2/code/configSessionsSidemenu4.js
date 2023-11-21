@@ -166,14 +166,9 @@ function drawObjects() {
         }
         drawItem(objects[i]);
         if (objects[i].type == SESSION_TYPE) {
-            with (mgraphics) {
-                set_source_rgba(0.7, 0.7, 0.7, 1);
-                move_to(0, objects[i].y);
-                line_to(boxWidth, objects[i].y);
-                stroke();
-            }
             drawExpansionIcon(objects[i]);
         }
+        drawHorizontalSeparator(objects[i]);
     }
 }
 
@@ -201,6 +196,12 @@ function drawExpansionIcon(obj) {
     var horzLineY = obj.y + itemHeight / 2;
     var vertLineX = margin + (lineLength / 2);
     var vertLineY = obj.y + margin;
+
+    // Add offset to overcome automatic anti-aliasing of lines
+    horzLineX += 0.5;
+    horzLineY += 0.5;
+    vertLineX += 0.5;
+    vertLineY += 0.5;
 
     with(mgraphics) {
         set_source_rgba(obj.expIconColour);
@@ -252,6 +253,22 @@ function drawText(x, y, horzAlign, vertAlign, text) {
     }
 }
 drawText.local = 1;
+
+function drawHorizontalSeparator(obj) {
+    with (mgraphics) {
+        lineStartX = obj.x + 0.5;
+        lineEndX = boxWidth + 0.5;
+        lineY = obj.y + 0.5;
+
+        set_source_rgba(0.7, 0.7, 0.7, 1);
+        move_to(lineStartX, lineY);
+        line_to(lineEndX, lineY);
+        move_to(lineStartX, lineY + itemHeight);
+        line_to(lineEndX, lineY + itemHeight);
+        stroke();
+    }
+}
+drawHorizontalSeparator.local = 1
 
 // TODO : Add function that skins the objects depending on their type and state
 
