@@ -17,15 +17,14 @@ var VERT_ALIGN_BOTTOM = 2;
 // Colours
 var SELECTED_SESSION_BG_COLOUR = [0, 0.475, 0.996, 1];
 var SELECTED_SESSION_TEXT_COLOUR = [1, 1, 1, 1];
-var UNSELECTED_SESSION_BG_COLOUR = [0, 0.370, 0.780, 0];
+var UNSELECTED_SESSION_BG_COLOUR = [0, 0, 0, 0];
 var UNSELECTED_SESSION_TEXT_COLOUR = [0, 0, 0, 1];
 
-//var SELECTED_GROUP_BG_COLOUR = [0.8, 0.8, 0.8, 1];
-var SELECTED_GROUP_BG_COLOUR = [0, 0.675, 1, 1];
-//var SELECTED_GROUP_TEXT_COLOUR = [0, 0.475, 0.996, 1];
-var SELECTED_GROUP_TEXT_COLOUR = [1, 1, 1, 1];
-var UNSELECTED_GROUP_BG_COLOUR = [0, 0, 0, 0];
+var SELECTED_GROUP_BG_COLOUR = [0.995, 0.995, 0.995, 1];
+var SELECTED_GROUP_TEXT_COLOUR = [0, 0.475, 0.996, 1];
+var UNSELECTED_GROUP_BG_COLOUR = UNSELECTED_SESSION_BG_COLOUR;
 var UNSELECTED_GROUP_TEXT_COLOUR = [0, 0, 0, 1];
+var UNSELECTED_GROUP_PARENT_SELECTED_BG_COLOUR = [0.995, 0.995, 0.995, 1];
 
 var SELECTED_ITEM_TEXT_COLOUR = [1, 1, 1, 1];
 var UNSELECTED_ITEM_TEXT_COLOUR = [0, 0, 0, 1];
@@ -92,7 +91,7 @@ function Group() {
 
     this.x = itemXOffset;
     this.y = 0;
-    this.width = itemWidth - itemXOffset;
+    this.width = itemWidth;
     this.height = itemHeight;
 }
 Group.local = 1;
@@ -136,7 +135,7 @@ function AddGroup() {
 
     this.x = itemXOffset;
     this.y = 0;
-    this.width = itemWidth - itemXOffset;
+    this.width = itemWidth;
     this.height = itemHeight;
 }
 
@@ -161,32 +160,76 @@ function paint() {
 function drawObjects() {
     var c = 0;
     for (var i = 0; i < objects.length; ++i) {
-        if (!objects[i].visible) {
-            continue;
-        }
         drawItem(objects[i]);
-        if (objects[i].type == SESSION_TYPE) {
-            drawExpansionIcon(objects[i]);
-        }
-        drawHorizontalSeparator(objects[i]);
     }
 }
 
 function drawItem(obj) {
+    if (!obj.visible) {
+        return;
+    }
+
     with (mgraphics) {
         set_source_rgba(obj.fillColour);
-        rectangle(obj.x, obj.y, obj.width, obj.height);
+        rectangle(0., obj.y, obj.width, obj.height);
         fill();
 
         set_source_rgba(obj.borderColour);
-        rectangle(obj.x, obj.y, obj.width, obj.height);
+        rectangle(0., obj.y, obj.width, obj.height);
         stroke();
 
         set_source_rgba(obj.textColour);
+
+        if (obj.selected) {
+            mgraphics.select_font_face("Arial Bold")
+        }
+        else {
+            mgraphics.select_font_face("Arial")
+        }
+
         drawText(obj.x + obj.textXOffset, obj.y + 10, obj.horzAlign, obj.vertAlign, obj.text);
+    }
+
+    if (obj.type == SESSION_TYPE) {
+        drawSession(obj);
+    }
+    else if (obj.type == GROUP_TYPE) {
+        drawGroup(obj);
     }
 }
 drawItem.local = 1;
+
+function drawSession(obj) {
+    drawExpansionIcon(obj);
+    drawHorizontalSeparator(obj);
+}
+drawSession.local = 1;
+
+function drawGroup(obj) {
+    var margin = 2;
+    vertLineX = obj.x + 0.5 - margin;
+    vertLineY = obj.y;
+
+    with (mgraphics) {
+        set_source_rgba([0.3529, 0.3529, 0.3529, 1.]);
+        move_to(vertLineX, vertLineY);
+        line_to(vertLineX, vertLineY + itemHeight);
+        stroke();
+    }
+
+    if (obj.selected) {
+        with (mgraphics) {
+            var oldLineWidth = get_line_width();
+            set_line_width(3.);
+            set_source_rgba(SELECTED_GROUP_TEXT_COLOUR);
+            move_to(vertLineX + 1., vertLineY);
+            line_to(vertLineX + 1., vertLineY + itemHeight);
+            stroke();
+            set_line_width(oldLineWidth);
+        }
+    }
+}
+drawSession.local = 1;
 
 function drawExpansionIcon(obj) {
     var margin = 5;
@@ -444,8 +487,13 @@ function selectgroup(i, j) {
         return;
     }
     deselectall();
+
     var sesh = sessions[i];
     sesh.selected = true;
+    for (var k = 0; k < sesh.groups.length; ++k) {
+        sesh.groups[k].fillColour = UNSELECTED_GROUP_PARENT_SELECTED_BG_COLOUR;
+    }
+    
     sesh.groups[j].selected = true;
 
     sesh.fillColour = SELECTED_SESSION_BG_COLOUR;
