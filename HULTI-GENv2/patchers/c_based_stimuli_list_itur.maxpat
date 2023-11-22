@@ -3199,7 +3199,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 602.0, 376.5, 188.0, 22.0 ],
-									"text" : "prepend maple.filelist @item_attr"
+									"text" : "prepend maple.filelist @itemattr"
 								}
 
 							}
