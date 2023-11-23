@@ -2290,7 +2290,7 @@
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ 1260.0, 537.0, 640.0, 480.0 ],
+						"rect" : [ 317.0, 480.0, 942.0, 692.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 1,
 						"default_fontsize" : 12.0,
@@ -2411,7 +2411,7 @@
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 73.0, 101.0, 287.0, 173.0 ],
 									"presentation" : 1,
-									"presentation_rect" : [ 0.0, 20.0, 538.0, 562.0 ],
+									"presentation_rect" : [ 0.0, 20.0, 538.0, 541.0 ],
 									"separatorcolour" : [ 0.501960784313725, 0.501960784313725, 0.501960784313725, 0.0 ]
 								}
 
@@ -10817,29 +10817,6 @@
 			}
 , 			{
 				"box" : 				{
-					"bgmode" : 0,
-					"border" : 0,
-					"clickthrough" : 0,
-					"enablehscroll" : 0,
-					"enablevscroll" : 0,
-					"id" : "obj-6",
-					"lockeddragscroll" : 0,
-					"lockedsize" : 0,
-					"maxclass" : "bpatcher",
-					"name" : "ui_accordion.maxpat",
-					"numinlets" : 1,
-					"numoutlets" : 1,
-					"offset" : [ 0.0, 0.0 ],
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 468.166666999999961, 104.0, 127.0, 114.0 ],
-					"presentation" : 1,
-					"presentation_rect" : [ 10.0, 70.5, 127.0, 561.5 ],
-					"viewvisibility" : 1
-				}
-
-			}
-, 			{
-				"box" : 				{
 					"id" : "obj-1",
 					"maxclass" : "newobj",
 					"numinlets" : 0,
@@ -11043,6 +11020,30 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 651.0, 160.0, 99.0, 22.0 ],
 					"text" : "dict.unpack pool:"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"bgcolor" : [ 1.0, 1.0, 1.0, 0.0 ],
+					"bgmode" : 0,
+					"border" : 1,
+					"clickthrough" : 0,
+					"enablehscroll" : 0,
+					"enablevscroll" : 1,
+					"id" : "obj-6",
+					"lockeddragscroll" : 0,
+					"lockedsize" : 0,
+					"maxclass" : "bpatcher",
+					"name" : "ui_accordion.maxpat",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"offset" : [ 0.0, 0.0 ],
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 468.166666999999961, 104.0, 127.0, 114.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 10.0, 70.5, 127.0, 561.5 ],
+					"viewvisibility" : 1
 				}
 
 			}

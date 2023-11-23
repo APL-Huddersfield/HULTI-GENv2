@@ -3145,12 +3145,12 @@
 , 							{
 								"box" : 								{
 									"id" : "obj-11",
-									"linecount" : 3,
+									"linecount" : 2,
 									"maxclass" : "newobj",
 									"numinlets" : 1,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 505.0, 481.0, 441.0, 49.0 ],
+									"patching_rect" : [ 505.0, 481.0, 484.0, 35.0 ],
 									"text" : "append @patching_rect 128. 282. 354. 193. @presentation_rect 0. 20. 517. 540. @outputoninteract 1 @filterduplicates 1 @separatorcolour 0. 0. 0. 0. @drawemptyitems 0"
 								}
 
