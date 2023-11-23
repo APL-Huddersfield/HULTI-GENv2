@@ -150,11 +150,6 @@ mgraphics.init();
 
 function paint() {
     drawObjects();
-    with (mgraphics) {
-        set_source_rgba(0, 0, 0, 1);
-        rectangle(0, 0, boxWidth, boxHeight);
-        stroke();
-    }
 }
 
 function drawObjects() {
