@@ -70,7 +70,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 216.0, 278.0, 67.0, 22.0 ],
-					"text" : "hashbrown"
+					"text" : "maple.hashgen"
 				}
 
 			}

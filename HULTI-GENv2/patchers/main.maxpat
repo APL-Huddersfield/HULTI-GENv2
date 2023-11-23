@@ -22019,7 +22019,7 @@
 																					"numoutlets" : 1,
 																					"outlettype" : [ "" ],
 																					"patching_rect" : [ 206.0, 235.0, 67.0, 22.0 ],
-																					"text" : "hashbrown"
+																					"text" : "maple.hashgen"
 																				}
 
 																			}
@@ -29805,7 +29805,7 @@
 																					"numoutlets" : 1,
 																					"outlettype" : [ "" ],
 																					"patching_rect" : [ 37.0, 316.0, 67.0, 22.0 ],
-																					"text" : "hashbrown"
+																					"text" : "maple.hashgen"
 																				}
 
 																			}
@@ -31235,7 +31235,7 @@
 																					"numoutlets" : 1,
 																					"outlettype" : [ "" ],
 																					"patching_rect" : [ 228.0, 230.0, 67.0, 22.0 ],
-																					"text" : "hashbrown"
+																					"text" : "maple.hashgen"
 																				}
 
 																			}
@@ -34561,7 +34561,7 @@
 																					"numoutlets" : 1,
 																					"outlettype" : [ "" ],
 																					"patching_rect" : [ 201.0, 268.0, 67.0, 22.0 ],
-																					"text" : "hashbrown"
+																					"text" : "maple.hashgen"
 																				}
 
 																			}
@@ -45151,7 +45151,7 @@
 				"implicit" : 1
 			}
 , 			{
-				"name" : "hashbrown.mxo",
+				"name" : "maple.hashgen.mxo",
 				"type" : "iLaX"
 			}
 , 			{
