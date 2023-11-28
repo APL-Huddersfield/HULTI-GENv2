@@ -2808,7 +2808,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 141.333333333333371, 559.0, 108.0, 22.0 ],
-									"text" : "sprintf load %d %s"
+									"text" : "sprintf load %d \\\"%s\\\""
 								}
 
 							}
