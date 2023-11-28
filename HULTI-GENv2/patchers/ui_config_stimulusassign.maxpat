@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 385.0, 304.0, 1294.0, 996.0 ],
+		"rect" : [ 385.0, 304.0, 1683.0, 996.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -243,7 +243,7 @@
 														}
 ,
 														"classnamespace" : "box",
-														"rect" : [ 1038.0, 223.0, 569.0, 515.0 ],
+														"rect" : [ 1361.0, 253.0, 569.0, 515.0 ],
 														"bglocked" : 0,
 														"openinpresentation" : 0,
 														"default_fontsize" : 12.0,
@@ -2590,7 +2590,7 @@
 													"numinlets" : 2,
 													"numoutlets" : 1,
 													"outlettype" : [ "" ],
-													"patching_rect" : [ 50.0, 99.5, 291.0, 35.0 ],
+													"patching_rect" : [ 50.0, 99.5, 293.0, 35.0 ],
 													"text" : "replace c_based_stimuli_list_psycho.maxpat, args 1, presentation_rect 733. 71. 517. 561."
 												}
 
@@ -10838,7 +10838,7 @@
 					"patching_rect" : [ 249.166666999999961, 363.0, 210.0, 27.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 731.0, 41.5, 186.0, 27.0 ],
-					"text" : "Session 3 , Group 1"
+					"text" : "Session 1 , Group 1"
 				}
 
 			}
