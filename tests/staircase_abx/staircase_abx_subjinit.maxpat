@@ -2494,7 +2494,7 @@
 													"numoutlets" : 1,
 													"outlettype" : [ "" ],
 													"patching_rect" : [ 417.5, 487.0, 375.0, 35.0 ],
-													"text" : "sprintf replace experimentData::sessions[%d]::groups[%d]::stimuli[%d]::filename %s"
+													"text" : "sprintf replace experimentData::sessions[%d]::groups[%d]::stimuli[%d]::filename \\\"%s\\\""
 												}
 
 											}
