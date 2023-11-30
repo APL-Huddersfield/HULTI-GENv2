@@ -82,7 +82,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 30.0, 24.0, 5.0, 27.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 20.0, 0.0, 5.0, 20.0 ]
+					"presentation_rect" : [ 30.0, 0.0, 5.0, 20.0 ]
 				}
 
 			}
@@ -830,7 +830,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 149.0, 2.0, 107.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 367.0, 0.0, 150.0, 20.0 ],
+					"presentation_rect" : [ 377.0, 0.0, 140.0, 20.0 ],
 					"text" : "Endpoint Type"
 				}
 
@@ -883,7 +883,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 38.0, 2.0, 73.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 21.0, 0.0, 372.0, 20.0 ],
+					"presentation_rect" : [ 31.0, 0.0, 362.0, 20.0 ],
 					"text" : "Filename"
 				}
 
@@ -898,7 +898,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 113.0, 2.0, 34.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 0.0, 0.0, 21.0, 20.0 ],
+					"presentation_rect" : [ 0.0, 0.0, 31.0, 20.0 ],
 					"text" : "ID"
 				}
 
@@ -995,8 +995,8 @@
 									"numinlets" : 1,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 230.0, 191.5, 324.0, 62.0 ],
-									"text" : "sprintf maple.filelist @itemattr text @itemattrcolwidths %d @patching_rect 128. 195. 354. 193. @presentation_rect 0. 20. 517. 540. @outputoninteract 1 @filterduplicates 1 @separatorcolour 0. 0. 0. 0."
+									"patching_rect" : [ 230.0, 191.5, 312.0, 62.0 ],
+									"text" : "sprintf maple.filelist @itemattr text @itemattrcolwidths %d @patching_rect 128. 195. 354. 193. @presentation_rect 0. 20. 517. 540. @outputoninteract 1 @filterduplicates 1 @idcolwidth 30."
 								}
 
 							}

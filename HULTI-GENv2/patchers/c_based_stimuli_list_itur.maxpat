@@ -70,7 +70,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 30.0, 24.0, 5.0, 27.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 20.0, 0.0, 5.0, 20.0 ]
+					"presentation_rect" : [ 30.0, 0.0, 5.0, 20.0 ]
 				}
 
 			}
@@ -1017,7 +1017,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 30.0, 0.0, 65.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 21.0, 0.0, 496.0, 20.0 ],
+					"presentation_rect" : [ 31.0, 0.0, 486.0, 20.0 ],
 					"text" : "Filename"
 				}
 
@@ -1032,7 +1032,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 0.0, 0.0, 28.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 0.0, 0.0, 21.0, 20.0 ],
+					"presentation_rect" : [ 0.0, 0.0, 31.0, 20.0 ],
 					"text" : "ID"
 				}
 
@@ -3150,8 +3150,8 @@
 									"numinlets" : 1,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 505.0, 481.0, 484.0, 35.0 ],
-									"text" : "append @patching_rect 128. 282. 354. 193. @presentation_rect 0. 20. 517. 540. @outputoninteract 1 @filterduplicates 1 @separatorcolour 0. 0. 0. 0. @drawemptyitems 0"
+									"patching_rect" : [ 505.0, 481.0, 441.0, 35.0 ],
+									"text" : "append @patching_rect 128. 282. 354. 193. @presentation_rect 0. 20. 517. 540. @outputoninteract 1 @filterduplicates 1 @drawemptyitems 0 @idcolwidth 30."
 								}
 
 							}
