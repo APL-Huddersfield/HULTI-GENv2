@@ -2411,8 +2411,7 @@
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 73.0, 101.0, 287.0, 173.0 ],
 									"presentation" : 1,
-									"presentation_rect" : [ 0.0, 20.0, 538.0, 541.0 ],
-									"separatorcolour" : [ 0.501960784313725, 0.501960784313725, 0.501960784313725, 0.0 ]
+									"presentation_rect" : [ 0.0, 20.0, 538.0, 541.0 ]
 								}
 
 							}

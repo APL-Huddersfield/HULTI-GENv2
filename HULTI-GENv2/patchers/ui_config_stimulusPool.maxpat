@@ -40,6 +40,141 @@
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-70",
+					"maxclass" : "live.line",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 959.0, 58.0, 108.0, 5.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 356.0, 91.0, 548.0, 5.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-69",
+					"maxclass" : "live.line",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 918.0, 43.0, 5.0, 100.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 356.0, 91.0, 5.0, 20.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"bordercolor" : [ 0.349019607843137, 0.349019607843137, 0.349019607843137, 1.0 ],
+					"hidden" : 1,
+					"id" : "obj-4",
+					"maxclass" : "dropfile",
+					"numinlets" : 1,
+					"numoutlets" : 2,
+					"outlettype" : [ "", "" ],
+					"patching_rect" : [ 358.0, 103.0, 320.0, 67.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 357.0, 112.0, 546.0, 480.0 ],
+					"varname" : "dnd"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontsize" : 24.0,
+					"hidden" : 1,
+					"id" : "obj-28",
+					"linecount" : 2,
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 358.0, 31.0, 174.0, 60.0 ],
+					"presentation" : 1,
+					"presentation_linecount" : 2,
+					"presentation_rect" : [ 539.5, 302.0, 181.0, 60.0 ],
+					"text" : "Drag 'n' Drop files here...",
+					"textcolor" : [ 0.996078431372549, 0.996078431372549, 0.996078431372549, 1.0 ],
+					"textjustification" : 1,
+					"varname" : "dndText"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"angle" : 270.0,
+					"bgcolor" : [ 0.0, 0.0, 0.0, 0.5 ],
+					"border" : 1,
+					"bordercolor" : [ 0.996078431372549, 0.996078431372549, 0.996078431372549, 0.0 ],
+					"hidden" : 1,
+					"id" : "obj-30",
+					"maxclass" : "panel",
+					"mode" : 0,
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 608.0, 37.5, 70.0, 47.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 357.0, 92.0, 546.0, 500.0 ],
+					"proportion" : 0.5,
+					"rounded" : 0,
+					"varname" : "dndGreyout"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-59",
+					"maxclass" : "live.line",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 944.0, 43.0, 5.0, 100.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 903.0, 91.0, 5.0, 20.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-65",
+					"maxclass" : "live.line",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 928.0, 43.0, 5.0, 100.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 386.0, 91.0, 5.0, 20.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"bgcolor" : [ 1.0, 1.0, 1.0, 1.0 ],
+					"fontface" : 1,
+					"id" : "obj-66",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 742.0, 43.0, 159.0, 20.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 387.0, 91.0, 517.0, 20.0 ],
+					"text" : "Filename"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"bgcolor" : [ 1.0, 1.0, 1.0, 1.0 ],
+					"fontface" : 1,
+					"id" : "obj-67",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 713.0, 43.0, 24.0, 20.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 356.0, 91.0, 31.0, 20.0 ],
+					"text" : "ID"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-45",
 					"maxclass" : "newobj",
 					"numinlets" : 2,
@@ -1473,26 +1608,6 @@
 			}
 , 			{
 				"box" : 				{
-					"fontsize" : 24.0,
-					"hidden" : 1,
-					"id" : "obj-28",
-					"linecount" : 2,
-					"maxclass" : "comment",
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 358.0, 31.0, 174.0, 60.0 ],
-					"presentation" : 1,
-					"presentation_linecount" : 2,
-					"presentation_rect" : [ 539.5, 302.0, 181.0, 60.0 ],
-					"text" : "Drag 'n' Drop files here...",
-					"textcolor" : [ 0.996078431372549, 0.996078431372549, 0.996078431372549, 1.0 ],
-					"textjustification" : 1,
-					"varname" : "dndText"
-				}
-
-			}
-, 			{
-				"box" : 				{
 					"id" : "obj-25",
 					"maxclass" : "message",
 					"numinlets" : 2,
@@ -1637,52 +1752,19 @@
 			}
 , 			{
 				"box" : 				{
-					"bordercolor" : [ 0.349019607843137, 0.349019607843137, 0.349019607843137, 1.0 ],
-					"hidden" : 1,
-					"id" : "obj-4",
-					"maxclass" : "dropfile",
-					"numinlets" : 1,
-					"numoutlets" : 2,
-					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 358.0, 103.0, 320.0, 67.0 ],
-					"presentation" : 1,
-					"presentation_rect" : [ 357.0, 112.0, 546.0, 480.0 ],
-					"varname" : "dnd"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"angle" : 270.0,
-					"bgcolor" : [ 0.0, 0.0, 0.0, 0.5 ],
-					"border" : 1,
-					"bordercolor" : [ 0.996078431372549, 0.996078431372549, 0.996078431372549, 0.0 ],
-					"hidden" : 1,
-					"id" : "obj-30",
-					"maxclass" : "panel",
-					"mode" : 0,
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 608.0, 37.5, 70.0, 47.0 ],
-					"presentation" : 1,
-					"presentation_rect" : [ 357.0, 92.0, 546.0, 500.0 ],
-					"proportion" : 0.5,
-					"rounded" : 0,
-					"varname" : "dndGreyout"
-				}
-
-			}
-, 			{
-				"box" : 				{
 					"filterduplicates" : 1,
+					"fontface" : 0,
+					"fontname" : "Arial",
+					"fontsize" : 12.0,
 					"id" : "obj-27",
+					"idcolwidth" : 30.0,
 					"maxclass" : "maple.filelist",
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 358.0, 368.0, 549.0, 255.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 356.0, 91.0, 548.0, 502.0 ]
+					"presentation_rect" : [ 356.0, 111.0, 548.0, 481.0 ]
 				}
 
 			}
