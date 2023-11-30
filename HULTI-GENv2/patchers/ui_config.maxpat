@@ -2010,7 +2010,7 @@
 										}
 ,
 										"classnamespace" : "box",
-										"rect" : [ 1233.0, 671.0, 561.0, 442.0 ],
+										"rect" : [ 1181.0, 685.0, 561.0, 442.0 ],
 										"bglocked" : 0,
 										"openinpresentation" : 0,
 										"default_fontsize" : 12.0,
@@ -3958,7 +3958,6 @@
 																		"boxes" : [ 																			{
 																				"box" : 																				{
 																					"id" : "obj-2",
-																					"linecount" : 3,
 																					"maxclass" : "newobj",
 																					"numinlets" : 1,
 																					"numoutlets" : 1,
@@ -4128,7 +4127,6 @@
 , 																			{
 																				"box" : 																				{
 																					"id" : "obj-15",
-																					"linecount" : 3,
 																					"maxclass" : "newobj",
 																					"numinlets" : 1,
 																					"numoutlets" : 1,
@@ -4165,7 +4163,6 @@
 , 																			{
 																				"box" : 																				{
 																					"id" : "obj-12",
-																					"linecount" : 3,
 																					"maxclass" : "newobj",
 																					"numinlets" : 1,
 																					"numoutlets" : 1,
@@ -4226,7 +4223,6 @@
 , 																			{
 																				"box" : 																				{
 																					"id" : "obj-1",
-																					"linecount" : 3,
 																					"maxclass" : "newobj",
 																					"numinlets" : 1,
 																					"numoutlets" : 1,
@@ -5998,7 +5994,7 @@
 , 															{
 																"box" : 																{
 																	"id" : "obj-15",
-																	"linecount" : 3,
+																	"linecount" : 2,
 																	"maxclass" : "newobj",
 																	"numinlets" : 1,
 																	"numoutlets" : 1,
@@ -6493,7 +6489,6 @@
 , 															{
 																"box" : 																{
 																	"id" : "obj-2",
-																	"linecount" : 3,
 																	"maxclass" : "newobj",
 																	"numinlets" : 1,
 																	"numoutlets" : 1,
@@ -7280,7 +7275,6 @@
 , 											{
 												"box" : 												{
 													"id" : "obj-11",
-													"linecount" : 3,
 													"maxclass" : "newobj",
 													"numinlets" : 1,
 													"numoutlets" : 1,
@@ -7293,7 +7287,6 @@
 , 											{
 												"box" : 												{
 													"id" : "obj-13",
-													"linecount" : 3,
 													"maxclass" : "newobj",
 													"numinlets" : 1,
 													"numoutlets" : 1,
@@ -8415,6 +8408,29 @@
 										"assistshowspatchername" : 0,
 										"boxes" : [ 											{
 												"box" : 												{
+													"id" : "obj-3",
+													"maxclass" : "message",
+													"numinlets" : 2,
+													"numoutlets" : 1,
+													"outlettype" : [ "" ],
+													"patching_rect" : [ 439.0, 168.0, 29.5, 22.0 ],
+													"text" : "init"
+												}
+
+											}
+, 											{
+												"box" : 												{
+													"id" : "obj-11",
+													"maxclass" : "newobj",
+													"numinlets" : 1,
+													"numoutlets" : 0,
+													"patching_rect" : [ 439.0, 231.0, 76.0, 22.0 ],
+													"text" : "s toAssignUI"
+												}
+
+											}
+, 											{
+												"box" : 												{
 													"id" : "obj-4",
 													"maxclass" : "message",
 													"numinlets" : 2,
@@ -8481,7 +8497,7 @@
 													"numinlets" : 0,
 													"numoutlets" : 1,
 													"outlettype" : [ "bang" ],
-													"patching_rect" : [ 316.0, 97.0, 30.0, 30.0 ]
+													"patching_rect" : [ 439.0, 90.0, 30.0, 30.0 ]
 												}
 
 											}
@@ -8490,6 +8506,13 @@
 												"patchline" : 												{
 													"destination" : [ "obj-31", 0 ],
 													"source" : [ "obj-1", 0 ]
+												}
+
+											}
+, 											{
+												"patchline" : 												{
+													"destination" : [ "obj-11", 0 ],
+													"source" : [ "obj-3", 0 ]
 												}
 
 											}
@@ -8510,7 +8533,15 @@
 , 											{
 												"patchline" : 												{
 													"destination" : [ "obj-1", 0 ],
-													"order" : 1,
+													"order" : 2,
+													"source" : [ "obj-6", 0 ]
+												}
+
+											}
+, 											{
+												"patchline" : 												{
+													"destination" : [ "obj-3", 0 ],
+													"order" : 0,
 													"source" : [ "obj-6", 0 ]
 												}
 
@@ -8518,7 +8549,7 @@
 , 											{
 												"patchline" : 												{
 													"destination" : [ "obj-4", 0 ],
-													"order" : 0,
+													"order" : 1,
 													"source" : [ "obj-6", 0 ]
 												}
 
@@ -9909,6 +9940,17 @@
 										"assistshowspatchername" : 0,
 										"boxes" : [ 											{
 												"box" : 												{
+													"id" : "obj-11",
+													"maxclass" : "newobj",
+													"numinlets" : 1,
+													"numoutlets" : 0,
+													"patching_rect" : [ 364.0, 436.0, 76.0, 22.0 ],
+													"text" : "s toAssignUI"
+												}
+
+											}
+, 											{
+												"box" : 												{
 													"id" : "obj-12",
 													"maxclass" : "newobj",
 													"numinlets" : 2,
@@ -10402,7 +10444,7 @@
 , 															{
 																"box" : 																{
 																	"id" : "obj-14",
-																	"linecount" : 3,
+																	"linecount" : 2,
 																	"maxclass" : "newobj",
 																	"numinlets" : 1,
 																	"numoutlets" : 1,
@@ -10427,7 +10469,7 @@
 , 															{
 																"box" : 																{
 																	"id" : "obj-57",
-																	"linecount" : 3,
+																	"linecount" : 2,
 																	"maxclass" : "newobj",
 																	"numinlets" : 1,
 																	"numoutlets" : 1,
@@ -10464,7 +10506,7 @@
 , 															{
 																"box" : 																{
 																	"id" : "obj-9",
-																	"linecount" : 3,
+																	"linecount" : 2,
 																	"maxclass" : "newobj",
 																	"numinlets" : 1,
 																	"numoutlets" : 1,
@@ -10501,7 +10543,7 @@
 , 															{
 																"box" : 																{
 																	"id" : "obj-6",
-																	"linecount" : 3,
+																	"linecount" : 2,
 																	"maxclass" : "newobj",
 																	"numinlets" : 1,
 																	"numoutlets" : 1,
@@ -10526,7 +10568,7 @@
 , 															{
 																"box" : 																{
 																	"id" : "obj-3",
-																	"linecount" : 3,
+																	"linecount" : 2,
 																	"maxclass" : "newobj",
 																	"numinlets" : 1,
 																	"numoutlets" : 1,
@@ -10551,7 +10593,7 @@
 , 															{
 																"box" : 																{
 																	"id" : "obj-19",
-																	"linecount" : 3,
+																	"linecount" : 2,
 																	"maxclass" : "newobj",
 																	"numinlets" : 1,
 																	"numoutlets" : 1,
@@ -10594,7 +10636,7 @@
 , 															{
 																"box" : 																{
 																	"id" : "obj-17",
-																	"linecount" : 3,
+																	"linecount" : 2,
 																	"maxclass" : "newobj",
 																	"numinlets" : 1,
 																	"numoutlets" : 1,
@@ -10607,7 +10649,7 @@
 , 															{
 																"box" : 																{
 																	"id" : "obj-16",
-																	"linecount" : 3,
+																	"linecount" : 2,
 																	"maxclass" : "newobj",
 																	"numinlets" : 1,
 																	"numoutlets" : 1,
@@ -11190,7 +11232,6 @@
 , 																			{
 																				"box" : 																				{
 																					"id" : "obj-9",
-																					"linecount" : 3,
 																					"maxclass" : "newobj",
 																					"numinlets" : 1,
 																					"numoutlets" : 1,
@@ -11299,7 +11340,6 @@
 , 																			{
 																				"box" : 																				{
 																					"id" : "obj-44",
-																					"linecount" : 3,
 																					"maxclass" : "newobj",
 																					"numinlets" : 1,
 																					"numoutlets" : 1,
@@ -11353,7 +11393,6 @@
 , 																			{
 																				"box" : 																				{
 																					"id" : "obj-8",
-																					"linecount" : 3,
 																					"maxclass" : "newobj",
 																					"numinlets" : 1,
 																					"numoutlets" : 1,
@@ -12590,6 +12629,7 @@
 					"clickthrough" : 0,
 					"enablehscroll" : 0,
 					"enablevscroll" : 0,
+					"hidden" : 1,
 					"id" : "obj-7",
 					"lockeddragscroll" : 0,
 					"lockedsize" : 0,
@@ -12671,7 +12711,125 @@
 				}
 
 			}
- ]
+ ],
+		"dependency_cache" : [ 			{
+				"name" : "adaptivePsychophysical.txt",
+				"bootpath" : "~/Dev/HULTI-GENv2/HULTI-GENv2/data",
+				"patcherrelativepath" : "../data",
+				"type" : "TEXT",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "addRemoveSessions.js",
+				"bootpath" : "~/Dev/HULTI-GENv2/HULTI-GENv2/code",
+				"patcherrelativepath" : "../code",
+				"type" : "TEXT",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "be_config_getDependencies.maxpat",
+				"bootpath" : "~/Dev/HULTI-GENv2/HULTI-GENv2/patchers",
+				"patcherrelativepath" : ".",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "configSessionsSidemenu4.js",
+				"bootpath" : "~/Dev/HULTI-GENv2/HULTI-GENv2/code",
+				"patcherrelativepath" : "../code",
+				"type" : "TEXT",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "gradingTests.txt",
+				"bootpath" : "~/Dev/HULTI-GENv2/HULTI-GENv2/data",
+				"patcherrelativepath" : "../data",
+				"type" : "TEXT",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "maple.filelist.mxo",
+				"type" : "iLaX"
+			}
+, 			{
+				"name" : "multicomp_subinterface.maxpat",
+				"bootpath" : "~/Dev/HULTI-GENv2/HULTI-GENv2/patchers",
+				"patcherrelativepath" : ".",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "nonAdaptivePsychophysical.txt",
+				"bootpath" : "~/Dev/HULTI-GENv2/HULTI-GENv2/data",
+				"patcherrelativepath" : "../data",
+				"type" : "TEXT",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "rating_slider.maxpat",
+				"bootpath" : "~/Dev/HULTI-GENv2/HULTI-GENv2/patchers",
+				"patcherrelativepath" : ".",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "rating_sliderbank.maxpat",
+				"bootpath" : "~/Dev/HULTI-GENv2/HULTI-GENv2/patchers",
+				"patcherrelativepath" : ".",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "ui_accordion.maxpat",
+				"bootpath" : "~/Dev/HULTI-GENv2/HULTI-GENv2/patchers",
+				"patcherrelativepath" : ".",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "ui_config_chooseTest.maxpat",
+				"bootpath" : "~/Dev/HULTI-GENv2/HULTI-GENv2/patchers",
+				"patcherrelativepath" : ".",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "ui_config_interfaceCustomisation.maxpat",
+				"bootpath" : "~/Dev/HULTI-GENv2/HULTI-GENv2/patchers",
+				"patcherrelativepath" : ".",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "ui_config_stimulusPool.maxpat",
+				"bootpath" : "~/Dev/HULTI-GENv2/HULTI-GENv2/patchers",
+				"patcherrelativepath" : ".",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "ui_config_stimulusassign.maxpat",
+				"bootpath" : "~/Dev/HULTI-GENv2/HULTI-GENv2/patchers",
+				"patcherrelativepath" : ".",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "ui_config_testSetup.maxpat",
+				"bootpath" : "~/Dev/HULTI-GENv2/HULTI-GENv2/patchers",
+				"patcherrelativepath" : ".",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "ui_params_grading.maxpat",
+				"bootpath" : "~/Dev/HULTI-GENv2/HULTI-GENv2/patchers",
+				"patcherrelativepath" : ".",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+ ],
+		"autosave" : 0
 	}
 
 }
