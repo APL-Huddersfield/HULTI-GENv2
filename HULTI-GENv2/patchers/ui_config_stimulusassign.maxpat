@@ -2405,7 +2405,7 @@
 									"fontsize" : 12.0,
 									"id" : "obj-59",
 									"idcolwidth" : 30.0,
-									"maxclass" : "maple.filelist",
+									"maxclass" : "maple.itemlist",
 									"numinlets" : 1,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
@@ -11560,7 +11560,7 @@
 				"implicit" : 1
 			}
 , 			{
-				"name" : "maple.filelist.mxo",
+				"name" : "maple.itemlist.mxo",
 				"type" : "iLaX"
 			}
 , 			{

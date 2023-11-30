@@ -996,7 +996,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 230.0, 191.5, 312.0, 62.0 ],
-									"text" : "sprintf maple.filelist @itemattr text @itemattrcolwidths %d @patching_rect 128. 195. 354. 193. @presentation_rect 0. 20. 517. 540. @outputoninteract 1 @filterduplicates 1 @idcolwidth 30."
+									"text" : "sprintf maple.itemlist @itemattr text @itemattrcolwidths %d @patching_rect 128. 195. 354. 193. @presentation_rect 0. 20. 517. 540. @outputoninteract 1 @filterduplicates 1 @idcolwidth 30."
 								}
 
 							}

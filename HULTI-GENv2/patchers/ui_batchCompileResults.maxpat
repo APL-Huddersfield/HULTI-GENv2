@@ -84,7 +84,7 @@
 					"idcolwidth" : 30.0,
 					"itemattr" : [ "text" ],
 					"itemattrcolwidths" : [ 150 ],
-					"maxclass" : "maple.filelist",
+					"maxclass" : "maple.itemlist",
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
@@ -1854,7 +1854,7 @@
 			}
  ],
 		"dependency_cache" : [ 			{
-				"name" : "maple.filelist.mxo",
+				"name" : "maple.itemlist.mxo",
 				"type" : "iLaX"
 			}
  ],
