@@ -551,7 +551,7 @@ function onObjectClicked(x, y, i, shift) {
 onObjectClicked.local = 1;
 
 function onSessionClicked(x, y, sesh, shift) {
-    if (x < 20) {
+    if (!sesh.expanded || x < 20) {
         expandsession(sesh.id);
     }
     else {
