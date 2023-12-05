@@ -1,5 +1,17 @@
 # Changelog
 
+## 2.1.0-beta (2023-12-05)
+
+### What's new
+
+* Replaced Max-based item list patchers with C-based objects. This vastly improves loading speeds and fixes HULTI-GEN for Windows.
+* Recompiled hash generator object so that it will work on Apple Silicon / ARM64 based Macs.
+
+### Bug Fixes
+
+* Fix scrolling issue in stimulus assignment accordion menu where large sessions could not be displayed.
+* Filenames with spaces can now be loaded after fixing the handling of symbols in sprintf objects.
+
 ## 2.0.5 (2020-12-02)
 
 ### Bug Fixes
