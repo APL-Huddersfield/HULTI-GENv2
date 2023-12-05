@@ -36814,7 +36814,7 @@
 													"numoutlets" : 1,
 													"outlettype" : [ "" ],
 													"patching_rect" : [ 448.75, 188.0, 77.0, 22.0 ],
-													"text" : "version 2.0.5"
+													"text" : "version 2.1.0b"
 												}
 
 											}
