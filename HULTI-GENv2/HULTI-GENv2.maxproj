@@ -2,7 +2,7 @@
 	"name" : "HULTI-GENv2",
 	"version" : 1,
 	"creationdate" : 3666872002,
-	"modificationdate" : 3782738296,
+	"modificationdate" : 3784619807,
 	"viewrect" : [ 1436.0, 118.0, 461.0, 826.0 ],
 	"autoorganize" : 0,
 	"hideprojectwindow" : 1,
@@ -81,11 +81,6 @@
 				"local" : 1
 			}
 ,
-			"c_based_stimuli_list_itur.maxpat" : 			{
-				"kind" : "patcher",
-				"local" : 1
-			}
-,
 			"ui_config_chooseTest.maxpat" : 			{
 				"kind" : "patcher",
 				"local" : 1
@@ -142,6 +137,11 @@
 			}
 ,
 			"ui_subjectMenu.maxpat" : 			{
+				"kind" : "patcher",
+				"local" : 1
+			}
+,
+			"c_based_stimuli_list_itur.maxpat" : 			{
 				"kind" : "patcher",
 				"local" : 1
 			}
@@ -849,7 +849,12 @@
 		}
 ,
 		"externals" : 		{
-			"hashbrown.mxo" : 			{
+			"maple.itemlist.mxo" : 			{
+				"kind" : "object",
+				"local" : 1
+			}
+,
+			"maple.hashgen.mxo" : 			{
 				"kind" : "object",
 				"local" : 1
 			}
@@ -872,26 +877,6 @@
 			"sofa~.mxo" : 			{
 				"kind" : "object",
 				"local" : 1
-			}
-,
-			"hashbrown.mxe" : 			{
-				"kind" : "object",
-				"local" : 1,
-				"singleton" : 				{
-					"bootpath" : "~/Dev/HULTI-GENv2/HULTI-GENv2/externals",
-					"projectrelativepath" : "./externals"
-				}
-
-			}
-,
-			"hashbrown.mxe64" : 			{
-				"kind" : "object",
-				"local" : 1,
-				"singleton" : 				{
-					"bootpath" : "~/Dev/HULTI-GENv2/HULTI-GENv2/externals",
-					"projectrelativepath" : "./externals"
-				}
-
 			}
 ,
 			"multiconvolve~.mxe" : 			{
