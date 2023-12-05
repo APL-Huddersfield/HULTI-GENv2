@@ -2,8 +2,8 @@
 	"name" : "HULTI-GENv2",
 	"version" : 1,
 	"creationdate" : 3666872002,
-	"modificationdate" : 3784619807,
-	"viewrect" : [ 1436.0, 118.0, 461.0, 826.0 ],
+	"modificationdate" : 3784637425,
+	"viewrect" : [ 1208.0, 93.0, 461.0, 685.0 ],
 	"autoorganize" : 0,
 	"hideprojectwindow" : 1,
 	"showdependencies" : 1,
@@ -947,6 +947,16 @@
 					"projectrelativepath" : "./externals"
 				}
 
+			}
+,
+			"maple.hashgen.mxe64" : 			{
+				"kind" : "object",
+				"local" : 1
+			}
+,
+			"maple.itemlist.mxe64" : 			{
+				"kind" : "object",
+				"local" : 1
 			}
 
 		}
