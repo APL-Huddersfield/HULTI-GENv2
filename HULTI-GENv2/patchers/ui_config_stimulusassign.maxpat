@@ -2590,7 +2590,7 @@
 													"numoutlets" : 1,
 													"outlettype" : [ "" ],
 													"patching_rect" : [ 50.0, 99.5, 293.0, 35.0 ],
-													"text" : "replace c_based_stimuli_list_psycho.maxpat, args 1, presentation_rect 733. 71. 517. 561."
+													"text" : "replace ui_stimulilist_psycho.maxpat, args 1, presentation_rect 733. 71. 517. 561."
 												}
 
 											}
@@ -3059,7 +3059,7 @@
 													"numoutlets" : 1,
 													"outlettype" : [ "" ],
 													"patching_rect" : [ 50.0, 100.0, 181.0, 22.0 ],
-													"text" : "c_based_stimuli_list_itur.maxpat"
+													"text" : "ui_stimulilist_itur.maxpat"
 												}
 
 											}

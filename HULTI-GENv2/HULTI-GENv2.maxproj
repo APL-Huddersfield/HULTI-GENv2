@@ -141,7 +141,7 @@
 				"local" : 1
 			}
 ,
-			"c_based_stimuli_list_itur.maxpat" : 			{
+			"ui_stimulilist_itur.maxpat" : 			{
 				"kind" : "patcher",
 				"local" : 1
 			}
@@ -651,7 +651,7 @@
 
 			}
 ,
-			"c_based_stimuli_list_psycho.maxpat" : 			{
+			"ui_stimulilist_psycho.maxpat" : 			{
 				"kind" : "patcher",
 				"local" : 1,
 				"singleton" : 				{
