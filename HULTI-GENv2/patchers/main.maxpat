@@ -45655,7 +45655,7 @@
 				"implicit" : 1
 			}
 , 			{
-				"name" : "configSessionsSidemenu4.js",
+				"name" : "configSessionsSidemenu.js",
 				"bootpath" : "~/Dev/HULTI-GENv2/HULTI-GENv2/code",
 				"patcherrelativepath" : "../code",
 				"type" : "TEXT",

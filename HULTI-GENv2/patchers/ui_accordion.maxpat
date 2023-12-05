@@ -127,7 +127,7 @@
 , 			{
 				"box" : 				{
 					"border" : 0,
-					"filename" : "Macintosh HD:/Users/dale/Documents/Max 8/Projects/PsychoBox/PsychoBox/code/configSessionsSidemenu4.js",
+					"filename" : "configSessionsSidemenu.js",
 					"id" : "obj-4",
 					"maxclass" : "jsui",
 					"numinlets" : 1,

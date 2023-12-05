@@ -673,7 +673,7 @@
 				"local" : 1
 			}
 ,
-			"configSessionsSidemenu4.js" : 			{
+			"configSessionsSidemenu.js" : 			{
 				"kind" : "javascript",
 				"local" : 1
 			}
@@ -723,11 +723,6 @@
 				"local" : 1
 			}
 ,
-			"configSessionsSidemenu3.js" : 			{
-				"kind" : "javascript",
-				"local" : 1
-			}
-,
 			"configValidator.js" : 			{
 				"kind" : "javascript",
 				"local" : 1
@@ -749,11 +744,6 @@
 			}
 ,
 			"accordionMenu.js" : 			{
-				"kind" : "javascript",
-				"local" : 1
-			}
-,
-			"configSessionsSidemenu2.js" : 			{
 				"kind" : "javascript",
 				"local" : 1
 			}

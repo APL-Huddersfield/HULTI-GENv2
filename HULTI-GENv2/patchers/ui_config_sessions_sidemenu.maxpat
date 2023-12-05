@@ -108,7 +108,7 @@
 				"implicit" : 1
 			}
 , 			{
-				"name" : "configSessionsSidemenu4.js",
+				"name" : "configSessionsSidemenu.js",
 				"bootpath" : "~/Documents/Max 8/Projects/PsychoBox/PsychoBox/code",
 				"patcherrelativepath" : "../code",
 				"type" : "TEXT",
