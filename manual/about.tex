@@ -8,6 +8,13 @@ Version 2.0 introduces an overhauled test setup assistant, and a suite of psycho
 Before using HULTI-GEN, the user must have a clear idea of their testing format with consideration toward the number stimuli, the number of sessions that subjects will undertake, and what attributes are being tested. It is therefore recommended that a testing plan is documented before configuring and running an experiment.
 \subsubsection{Software requirements}
 HULTI-GEN requires Max 8 or higher available from \href{https://cycling74.com/downloads}{https://cycling74.com/downloads}. It will \textbf{NOT} run on earlier versions due to the use of the Multi-Channel (MC) audio features only available since Max 8. A Max license is only required to save any modifications to the source patcher file.
+
+If you are using Windows, in order for the SOFA file binauralisation functionalities to work, you will need to move some additional files into place. In the "Windows Dependencies" folder you will find .dll files. These should be moved to the following locations depending on the bit-ness of Max you use:
+\begin{itemize}
+    \item "C:\textbackslash Program Files (x86)\textbackslash Cycling '74\textbackslash Max" for 32-bit Max,
+    \item "C:\textbackslash Program Files\textbackslash Cycling '74\textbackslash Max" for 64-bit Max.
+\end{itemize}
+
 \subsubsection{Important information}
 \textbf{Before running HULTI-GEN}, ensure that the \textit{Overdrive} feature of Max is disabled, and that any stimuli files imported that should accompany the test configuration file should be included in the same folder as the HULTI-GEN project file (HULTI-GENv2.maxproj).
 \\
